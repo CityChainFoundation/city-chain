@@ -12,7 +12,7 @@ skip_tags: true
 branches:
   # whitelist
   only:
-    - master
+    - citychain
 
 environment:
   github_access_token:
