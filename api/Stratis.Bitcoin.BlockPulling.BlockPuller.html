@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -326,7 +326,8 @@ peer node has its list of assigned tasks here and there is an equivalence betwee
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_AskBlocks_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.AskBlocks*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_AskBlocks_NBitcoin_ChainedHeader___" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.AskBlocks(NBitcoin.ChainedHeader[])">AskBlocks(ChainedHeader[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Prepares and invokes download tasks from peer nodes for blocks the node is missing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -345,7 +346,9 @@ peer node has its list of assigned tasks here and there is an equivalence betwee
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a>[]</td>
         <td><span class="parametername">downloadRequests</span></td>
-        <td></td>
+        <td><p>Array of block descriptions that need to be downloaded. Must not be empty.
+Blocks in the array have to be unique - it is not supported for a single block to be included twice in this array.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -407,7 +410,8 @@ This method is to be overridden by derived classes. In the base class it only lo
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_CheckBlockStatus_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.CheckBlockStatus*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_CheckBlockStatus_NBitcoin_uint256_System_Boolean__System_Boolean__" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.CheckBlockStatus(NBitcoin.uint256,System.Boolean@,System.Boolean@)">CheckBlockStatus(uint256, out Boolean, out Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check status of the block in the context of the puller.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -426,17 +430,20 @@ This method is to be overridden by derived classes. In the base class it only lo
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">hash</span></td>
-        <td></td>
+        <td><p>Hash of the block header.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">IsDownloading</span></td>
-        <td></td>
+        <td><p>This is set to <code>true</code> if the block with the given hash is currently being downloaded.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">IsReady</span></td>
-        <td></td>
+        <td><p>This is set to <code>true</code> if the block with the given hash has been downloaded and is ready to be consumed.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -555,7 +562,8 @@ This method is to be overridden by derived classes. In the base class it only lo
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_InjectBlock_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.InjectBlock*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_InjectBlock_NBitcoin_uint256_Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlock_CancellationToken_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.InjectBlock(NBitcoin.uint256,Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock,CancellationToken)">InjectBlock(uint256, BlockPuller.DownloadedBlock, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inject blocks directly to the puller's list of downloaded blocks, which is used for testing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -574,17 +582,20 @@ This method is to be overridden by derived classes. In the base class it only lo
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">blockHash</span></td>
-        <td></td>
+        <td><p>Hash of the block to inject.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock.html">BlockPuller.DownloadedBlock</a></td>
         <td><span class="parametername">downloadedBlock</span></td>
-        <td></td>
+        <td><p>Desciption of the inject block as if it was downloaded.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Cancellation token to allow the caller to cancel the execution of the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

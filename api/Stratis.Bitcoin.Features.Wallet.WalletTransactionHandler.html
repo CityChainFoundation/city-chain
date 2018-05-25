@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -189,7 +189,8 @@ TODO: Implement subtractFeeFromOutputs</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_BuildTransaction_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.BuildTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_BuildTransaction_Stratis_Bitcoin_Features_Wallet_TransactionBuildContext_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.BuildTransaction(Stratis.Bitcoin.Features.Wallet.TransactionBuildContext)">BuildTransaction(TransactionBuildContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Builds a new transaction based on information from the <a class="xref" href="Stratis.Bitcoin.Features.Wallet.TransactionBuildContext.html">TransactionBuildContext</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,7 +209,8 @@ TODO: Implement subtractFeeFromOutputs</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.TransactionBuildContext.html">TransactionBuildContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The context that is used to build a new transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -223,7 +225,8 @@ TODO: Implement subtractFeeFromOutputs</p>
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
-        <td></td>
+        <td><p>The new transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -236,7 +239,8 @@ TODO: Implement subtractFeeFromOutputs</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_EstimateFee_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.EstimateFee*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_EstimateFee_Stratis_Bitcoin_Features_Wallet_TransactionBuildContext_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.EstimateFee(Stratis.Bitcoin.Features.Wallet.TransactionBuildContext)">EstimateFee(TransactionBuildContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Estimates the fee for the transaction based on information from the <a class="xref" href="Stratis.Bitcoin.Features.Wallet.TransactionBuildContext.html">TransactionBuildContext</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -255,7 +259,8 @@ TODO: Implement subtractFeeFromOutputs</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.TransactionBuildContext.html">TransactionBuildContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The context that is used to build a new transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -270,7 +275,8 @@ TODO: Implement subtractFeeFromOutputs</p>
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
-        <td></td>
+        <td><p>The estimated fee.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -283,7 +289,8 @@ TODO: Implement subtractFeeFromOutputs</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_FundTransaction_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.FundTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_FundTransaction_Stratis_Bitcoin_Features_Wallet_TransactionBuildContext_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.FundTransaction(Stratis.Bitcoin.Features.Wallet.TransactionBuildContext,NBitcoin.Transaction)">FundTransaction(TransactionBuildContext, Transaction)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds inputs to a transaction until it has enough in value to meet its out value.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -302,15 +309,24 @@ TODO: Implement subtractFeeFromOutputs</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.TransactionBuildContext.html">TransactionBuildContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The context associated with the current transaction being built.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
         <td><span class="parametername">transaction</span></td>
-        <td></td>
+        <td><p>The transaction that will have more inputs added to it.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_FundTransaction_Stratis_Bitcoin_Features_Wallet_TransactionBuildContext_NBitcoin_Transaction__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will not modify existing inputs, and will add at most one change output to the outputs.
+No existing outputs will be modified unless <a class="xref" href="Stratis.Bitcoin.Features.Wallet.Recipient.html#Stratis_Bitcoin_Features_Wallet_Recipient_SubtractFeeFromAmount">SubtractFeeFromAmount</a> is specified.
+Note that inputs which were signed may need to be resigned after completion since in/outputs have been added.
+The inputs added may be signed depending on <a class="xref" href="Stratis.Bitcoin.Features.Wallet.TransactionBuildContext.html#Stratis_Bitcoin_Features_Wallet_TransactionBuildContext_Sign">Sign</a>, use signrawtransaction for that.
+Note that all existing inputs must have their previous output transaction be in the wallet.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_GetMaximumSpendableAmount_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_Stratis_Bitcoin_Features_Wallet_FeeType_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.GetMaximumSpendableAmount(Stratis.Bitcoin.Features.Wallet.WalletAccountReference%2CStratis.Bitcoin.Features.Wallet.FeeType%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -320,7 +336,8 @@ TODO: Implement subtractFeeFromOutputs</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_GetMaximumSpendableAmount_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.GetMaximumSpendableAmount*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletTransactionHandler_GetMaximumSpendableAmount_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_Stratis_Bitcoin_Features_Wallet_FeeType_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.GetMaximumSpendableAmount(Stratis.Bitcoin.Features.Wallet.WalletAccountReference,Stratis.Bitcoin.Features.Wallet.FeeType,System.Boolean)">GetMaximumSpendableAmount(WalletAccountReference, FeeType, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates the maximum amount a user can spend in a single transaction, taking into account the fees required.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -339,17 +356,20 @@ TODO: Implement subtractFeeFromOutputs</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletAccountReference.html">WalletAccountReference</a></td>
         <td><span class="parametername">accountReference</span></td>
-        <td></td>
+        <td><p>The account from which to calculate the amount.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.FeeType.html">FeeType</a></td>
         <td><span class="parametername">feeType</span></td>
-        <td></td>
+        <td><p>The type of fee used to calculate the maximum amount the user can spend. The higher the fee, the smaller this amount will be.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">allowUnconfirmed</span></td>
-        <td></td>
+        <td><p><code>true</code> to include unconfirmed transactions in the calculation, <code>false</code> otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -364,7 +384,8 @@ TODO: Implement subtractFeeFromOutputs</p>
     <tbody>
       <tr>
         <td><span class="xref">System.</span></td>
-        <td></td>
+        <td><p>The maximum amount the user can spend in a single transaction, along with the fee required.</p>
+</td>
       </tr>
     </tbody>
   </table>

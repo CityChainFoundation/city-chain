@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -453,7 +453,10 @@ See either the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNode
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_AcceptBlockAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.AcceptBlockAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_AcceptBlockAsync_Stratis_Bitcoin_Features_Consensus_BlockValidationContext_" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.AcceptBlockAsync(Stratis.Bitcoin.Features.Consensus.BlockValidationContext)">AcceptBlockAsync(BlockValidationContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A method that will accept a new block to the node.
+The block will be validated and the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a> db will be updated.
+If it's a new block that was mined or staked it will extend the chain and the new block will set <a class="xref" href="NBitcoin.ConcurrentChain.html#NBitcoin_ConcurrentChain_Tip">Tip</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -472,7 +475,8 @@ See either the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNode
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.BlockValidationContext.html">BlockValidationContext</a></td>
         <td><span class="parametername">blockValidationContext</span></td>
-        <td></td>
+        <td><p>Information about the block to validate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -500,7 +504,8 @@ See either the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNode
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_FlushAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.FlushAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_FlushAsync_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.FlushAsync(System.Boolean)">FlushAsync(Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Flushes changes in the cached coinview to the disk.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -519,7 +524,8 @@ See either the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNode
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">force</span></td>
-        <td></td>
+        <td><p><code>true</code> to enforce flush, <code>false</code> to flush only if the cached coinview itself wants to be flushed.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -547,7 +553,8 @@ See either the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNode
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_StartAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.StartAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_StartAsync" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.StartAsync">StartAsync()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialize components in <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.html">ConsensusLoop</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -577,7 +584,8 @@ See either the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNode
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_Stop_" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.Stop*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_Stop" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.Stop">Stop()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dispose components in <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.html">ConsensusLoop</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -592,7 +600,8 @@ See either the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNode
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_ValidateBlock_" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.ValidateBlock*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ConsensusLoop_ValidateBlock_Stratis_Bitcoin_Features_Consensus_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.ValidateBlock(Stratis.Bitcoin.Features.Consensus.RuleContext)">ValidateBlock(RuleContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validates a block using the consensus rules.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

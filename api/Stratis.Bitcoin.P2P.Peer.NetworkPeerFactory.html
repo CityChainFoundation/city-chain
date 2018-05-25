@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -162,7 +162,8 @@
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_IPEndPoint_Stratis_Bitcoin_P2P_Peer_NetworkPeerConnectionParameters_Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync(IPEndPoint,Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters,Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer)">CreateConnectedNetworkPeerAsync(IPEndPoint, NetworkPeerConnectionParameters, NetworkPeerDisposer)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new network peer which is connected to a specified counterparty.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -181,17 +182,20 @@
       <tr>
         <td><span class="xref">IPEndPoint</span></td>
         <td><span class="parametername">peerEndPoint</span></td>
-        <td></td>
+        <td><p>Address and port of the counterparty to connect to.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters.html">NetworkPeerConnectionParameters</a></td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>Parameters specifying how the connection with the counterparty should be established, or <code>null</code> to use default parameters.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html">NetworkPeerDisposer</a></td>
         <td><span class="parametername">networkPeerDisposer</span></td>
-        <td></td>
+        <td><p>Maintains a list of connected peers and ensures their proper disposal. Or <code>null</code> if case disposal should be handled from user code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -206,7 +210,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a>&gt;</td>
-        <td></td>
+        <td><p>Network peer connected to the specified counterparty.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -219,7 +224,8 @@
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_System_String_NBitcoin_Protocol_ProtocolVersion_System_Boolean_CancellationToken_Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync(System.String,NBitcoin.Protocol.ProtocolVersion,System.Boolean,CancellationToken,Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer)">CreateConnectedNetworkPeerAsync(String, ProtocolVersion, Boolean, CancellationToken, NetworkPeerDisposer)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new network peer which is connected to a specified counterparty.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -238,27 +244,32 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">endPoint</span></td>
-        <td></td>
+        <td><p>Address and port of the counterparty to connect to.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Protocol.ProtocolVersion.html">ProtocolVersion</a></td>
         <td><span class="parametername">myVersion</span></td>
-        <td></td>
+        <td><p>Version of the protocol that the node supports.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isRelay</span></td>
-        <td></td>
+        <td><p>Whether the remote peer should announce relayed transactions or not. See <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.VersionPayload.html#Stratis_Bitcoin_P2P_Protocol_Payloads_VersionPayload_Relay">Relay</a> for more information.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellation</span></td>
-        <td></td>
+        <td><p>Cancallation token that allows to interrupt establishing of the connection.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html">NetworkPeerDisposer</a></td>
         <td><span class="parametername">networkPeerDisposer</span></td>
-        <td></td>
+        <td><p>Maintains a list of connected peers and ensures their proper disposal. Or <code>null</code> if case disposal should be handled from user code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -273,7 +284,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a>&gt;</td>
-        <td></td>
+        <td><p>Network peer connected to the specified counterparty.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -286,7 +298,8 @@
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeer*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeer_TcpClient_Stratis_Bitcoin_P2P_Peer_NetworkPeerConnectionParameters_Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeer(TcpClient,Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters,Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer)">CreateNetworkPeer(TcpClient, NetworkPeerConnectionParameters, NetworkPeerDisposer)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a network peer using already established network connection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -305,17 +318,20 @@
       <tr>
         <td><span class="xref">TcpClient</span></td>
         <td><span class="parametername">client</span></td>
-        <td></td>
+        <td><p>Already connected network client.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters.html">NetworkPeerConnectionParameters</a></td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>Parameters of the established connection, or <code>null</code> to use default parameters.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html">NetworkPeerDisposer</a></td>
         <td><span class="parametername">networkPeerDisposer</span></td>
-        <td></td>
+        <td><p>Maintains a list of connected peers and ensures their proper disposal. Or <code>null</code> if case disposal should be handled from user code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -330,7 +346,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
-        <td></td>
+        <td><p>New network peer that is connected via the established connection.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -343,7 +360,8 @@
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerConnection_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerConnection*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerConnection_Stratis_Bitcoin_P2P_Peer_INetworkPeer_TcpClient_Stratis_Bitcoin_P2P_Protocol_ProcessMessageAsync_Stratis_Bitcoin_P2P_Protocol_IncomingMessage__" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerConnection(Stratis.Bitcoin.P2P.Peer.INetworkPeer,TcpClient,Stratis.Bitcoin.P2P.Protocol.ProcessMessageAsync{Stratis.Bitcoin.P2P.Protocol.IncomingMessage})">CreateNetworkPeerConnection(INetworkPeer, TcpClient, ProcessMessageAsync&lt;IncomingMessage&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new representation of the network connection using TCP client object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -362,17 +380,20 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
         <td><span class="parametername">peer</span></td>
-        <td></td>
+        <td><p>Network peer the node is connected to, or will connect to.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">TcpClient</span></td>
         <td><span class="parametername">client</span></td>
-        <td></td>
+        <td><p>Initialized and possibly connected TCP client to the peer.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.ProcessMessageAsync-1.html">ProcessMessageAsync</a>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Protocol.IncomingMessage.html">IncomingMessage</a>&gt;</td>
         <td><span class="parametername">processMessageAsync</span></td>
-        <td></td>
+        <td><p>Callback to be called when a new message arrives from the peer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -400,7 +421,9 @@
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerServer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerServer*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerServer_IPEndPoint_IPEndPoint_NBitcoin_Protocol_ProtocolVersion_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerServer(IPEndPoint,IPEndPoint,NBitcoin.Protocol.ProtocolVersion)">CreateNetworkPeerServer(IPEndPoint, IPEndPoint, ProtocolVersion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new network peer server.</p>
+<p>When created, the server is ready to be started, but this method does not start listening.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -419,17 +442,20 @@
       <tr>
         <td><span class="xref">IPEndPoint</span></td>
         <td><span class="parametername">localEndPoint</span></td>
-        <td></td>
+        <td><p>IP address and port to listen on.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">IPEndPoint</span></td>
         <td><span class="parametername">externalEndPoint</span></td>
-        <td></td>
+        <td><p>IP address and port that the server is reachable from the Internet on.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Protocol.ProtocolVersion.html">ProtocolVersion</a></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>Version of the network protocol that the server should run.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +470,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerServer.html">NetworkPeerServer</a></td>
-        <td></td>
+        <td><p>Newly created network peer server, which is ready to be started.</p>
+</td>
       </tr>
     </tbody>
   </table>

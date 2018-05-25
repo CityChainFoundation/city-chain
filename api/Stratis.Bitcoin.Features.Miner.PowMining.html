@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -275,7 +275,8 @@ Block is measured in weight units. Data which touches the UTXO (What addresses a
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PowMining_GenerateBlocks_" data-uid="Stratis.Bitcoin.Features.Miner.PowMining.GenerateBlocks*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PowMining_GenerateBlocks_Stratis_Bitcoin_Features_Miner_ReserveScript_System_UInt64_System_UInt64_" data-uid="Stratis.Bitcoin.Features.Miner.PowMining.GenerateBlocks(Stratis.Bitcoin.Features.Miner.ReserveScript,System.UInt64,System.UInt64)">GenerateBlocks(ReserveScript, UInt64, UInt64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates up to a specified number of blocks with a limited number of attempts.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -294,17 +295,20 @@ Block is measured in weight units. Data which touches the UTXO (What addresses a
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.ReserveScript.html">ReserveScript</a></td>
         <td><span class="parametername">reserveScript</span></td>
-        <td></td>
+        <td><p>The reserve script.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">generate</span></td>
-        <td></td>
+        <td><p>Number of blocks to generate. It is possible that less than the required number of blocks will be mined.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">maxTries</span></td>
-        <td></td>
+        <td><p>Maximum number of attempts the miner will calculate PoW hash in order to find suitable ones to generate specified amount of blocks.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -319,7 +323,8 @@ Block is measured in weight units. Data which touches the UTXO (What addresses a
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
-        <td></td>
+        <td><p>List with generated block's hashes</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -332,7 +337,8 @@ Block is measured in weight units. Data which touches the UTXO (What addresses a
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PowMining_IncrementExtraNonce_" data-uid="Stratis.Bitcoin.Features.Miner.PowMining.IncrementExtraNonce*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PowMining_IncrementExtraNonce_NBitcoin_Block_NBitcoin_ChainedHeader_System_Int32_" data-uid="Stratis.Bitcoin.Features.Miner.PowMining.IncrementExtraNonce(NBitcoin.Block,NBitcoin.ChainedHeader,System.Int32)">IncrementExtraNonce(Block, ChainedHeader, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Increments or resets the extra nonce based on the previous hash block value on on the pow miner and the passed nExtraNonce.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -351,17 +357,20 @@ Block is measured in weight units. Data which touches the UTXO (What addresses a
       <tr>
         <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
         <td><span class="parametername">pblock</span></td>
-        <td></td>
+        <td><p>The template block.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
         <td><span class="parametername">pindexPrev</span></td>
-        <td></td>
+        <td><p>The previous chained block.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">nExtraNonce</span></td>
-        <td></td>
+        <td><p>The extra nonce counter.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,7 +385,8 @@ Block is measured in weight units. Data which touches the UTXO (What addresses a
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The new extra nonce after incrementing.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -389,7 +399,8 @@ Block is measured in weight units. Data which touches the UTXO (What addresses a
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PowMining_Mine_" data-uid="Stratis.Bitcoin.Features.Miner.PowMining.Mine*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PowMining_Mine_NBitcoin_Script_" data-uid="Stratis.Bitcoin.Features.Miner.PowMining.Mine(NBitcoin.Script)">Mine(Script)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts a new async mining loop or returns the existing running mining loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -408,7 +419,8 @@ Block is measured in weight units. Data which touches the UTXO (What addresses a
       <tr>
         <td><a class="xref" href="NBitcoin.Script.html">Script</a></td>
         <td><span class="parametername">reserveScript</span></td>
-        <td></td>
+        <td><p>The reserve script to use in the mining loop.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -421,7 +433,8 @@ Block is measured in weight units. Data which touches the UTXO (What addresses a
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PowMining_StopMining_" data-uid="Stratis.Bitcoin.Features.Miner.PowMining.StopMining*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PowMining_StopMining" data-uid="Stratis.Bitcoin.Features.Miner.PowMining.StopMining">StopMining()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Stops the async mining loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

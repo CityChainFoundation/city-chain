@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -500,7 +500,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PosMinting_CreateCoinstakeAsync_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.CreateCoinstakeAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_CreateCoinstakeAsync_List_Stratis_Bitcoin_Features_Miner_PosMinting_UtxoStakeDescription__NBitcoin_Block_NBitcoin_ChainedHeader_System_Int64_System_Int64_Stratis_Bitcoin_Features_Miner_PosMinting_CoinstakeContext_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.CreateCoinstakeAsync(List{Stratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription},NBitcoin.Block,NBitcoin.ChainedHeader,System.Int64,System.Int64,Stratis.Bitcoin.Features.Miner.PosMinting.CoinstakeContext)">CreateCoinstakeAsync(List&lt;PosMinting.UtxoStakeDescription&gt;, Block, ChainedHeader, Int64, Int64, PosMinting.CoinstakeContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a coinstake transaction with kernel that satisfies POS staking target.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -519,32 +520,38 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription.html">PosMinting.UtxoStakeDescription</a>&gt;</td>
         <td><span class="parametername">utxoStakeDescriptions</span></td>
-        <td></td>
+        <td><p>List of UTXOs that are available in the wallet for staking.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
         <td><span class="parametername">block</span></td>
-        <td></td>
+        <td><p>Template of the block that we are trying to mine.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
         <td><span class="parametername">chainTip</span></td>
-        <td></td>
+        <td><p>Tip of the best chain.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">searchInterval</span></td>
-        <td></td>
+        <td><p>Length of an unexplored block time space in seconds. It only makes sense to look for a solution within this interval.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">fees</span></td>
-        <td></td>
+        <td><p>Transaction fees from the transactions included in the block if we mine it.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.CoinstakeContext.html">PosMinting.CoinstakeContext</a></td>
         <td><span class="parametername">coinstakeContext</span></td>
-        <td></td>
+        <td><p>Information about coinstake transaction and its private key that is to be filled when the kernel is found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -559,7 +566,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p><code>true</code> if the function succeeds, <code>false</code> otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -572,7 +580,11 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GenerateBlocksAsync_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GenerateBlocksAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GenerateBlocksAsync_Stratis_Bitcoin_Features_Miner_PosMinting_WalletSecret_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GenerateBlocksAsync(Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret)">GenerateBlocksAsync(PosMinting.WalletSecret)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Attempts to stake new blocks in a loop.</p>
+<p>
+Staking is attempted only if the node is fully synchronized and connected to the network.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -591,7 +603,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret.html">PosMinting.WalletSecret</a></td>
         <td><span class="parametername">walletSecret</span></td>
-        <td></td>
+        <td><p>Credentials to the wallet with which will be used for staking.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -619,7 +632,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GetDifficulty_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetDifficulty*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetDifficulty_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetDifficulty(NBitcoin.ChainedHeader)">GetDifficulty(ChainedHeader)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates staking difficulty for a specific block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -638,7 +652,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
         <td><span class="parametername">block</span></td>
-        <td></td>
+        <td><p>Block at which to calculate the difficulty.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -653,10 +668,15 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td></td>
+        <td><p>Staking difficulty.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetDifficulty_NBitcoin_ChainedHeader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The actual idea behind the calculation is a mystery. It was simply ported from
+<see cref="!:https://github.com/stratisproject/stratisX/blob/47851b7337f528f52ec20e86dca7dcead8191cf5/src/rpcblockchain.cpp#L16"></see>.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_GetGetStakingInfoModel.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.GetGetStakingInfoModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -666,7 +686,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GetGetStakingInfoModel_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetGetStakingInfoModel*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetGetStakingInfoModel" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetGetStakingInfoModel">GetGetStakingInfoModel()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs model for RPC &quot;getstakinginfo&quot; call.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -683,7 +704,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.Models.GetStakingInfoModel.html">GetStakingInfoModel</a></td>
-        <td></td>
+        <td><p>Staking information RPC response.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -696,7 +718,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GetMatureBalance_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetMatureBalance*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetMatureBalance_List_Stratis_Bitcoin_Features_Miner_PosMinting_UtxoStakeDescription__" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetMatureBalance(List{Stratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription})">GetMatureBalance(List&lt;PosMinting.UtxoStakeDescription&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates the total balance from all UTXOs in the wallet that are mature.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -715,7 +738,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription.html">PosMinting.UtxoStakeDescription</a>&gt;</td>
         <td><span class="parametername">utxoStakeDescriptions</span></td>
-        <td></td>
+        <td><p>Description of coins in the wallet that will be used for staking.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -730,7 +754,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
-        <td></td>
+        <td><p>Total balance from all UTXOs in the wallet that are mature.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -743,7 +768,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GetNetworkWeight_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetNetworkWeight*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetNetworkWeight" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetNetworkWeight">GetNetworkWeight()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Estimates the total staking weight of the network.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -760,10 +786,22 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td></td>
+        <td><p>Estimated amount of money that is used by all stakers on the network.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetNetworkWeight_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The idea behind estimating the network staking weight is very similar to estimating
+the total hash power of PoW network. The difficulty retarget algorithm tries to make
+sure of certain distribution of the blocks over a period of time. Base on real distribution
+and using the actual difficulty targets, one is able to compute how much stake was
+presented on the network to generate each block.</p>
+<p>
+The method was ported from
+<see cref="!:https://github.com/stratisproject/stratisX/blob/47851b7337f528f52ec20e86dca7dcead8191cf5/src/rpcblockchain.cpp#L74"></see>.
+</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_Stake_Stratis_Bitcoin_Features_Miner_PosMinting_WalletSecret_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.Stake(Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -773,7 +811,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PosMinting_Stake_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.Stake*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_Stake_Stratis_Bitcoin_Features_Miner_PosMinting_WalletSecret_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.Stake(Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret)">Stake(PosMinting.WalletSecret)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts the main POS staking loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -792,7 +831,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret.html">PosMinting.WalletSecret</a></td>
         <td><span class="parametername">walletSecret</span></td>
-        <td></td>
+        <td><p>Credentials to the wallet with which will be used for staking.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -805,7 +845,8 @@ multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_PosMinting_StopStake_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.StopStake*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_StopStake" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.StopStake">StopStake()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Stop the main POS staking loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

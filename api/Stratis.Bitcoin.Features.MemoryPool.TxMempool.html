@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -423,7 +423,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_AddTransactionsUpdated_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.AddTransactionsUpdated*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_AddTransactionsUpdated_System_Int32_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.AddTransactionsUpdated(System.Int32)">AddTransactionsUpdated(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Increments number of transaction that have been updated counter.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -442,7 +443,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">n</span></td>
-        <td></td>
+        <td><p>Number of transactions to increment by.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -455,7 +457,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_AddUnchecked_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.AddUnchecked*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_AddUnchecked_NBitcoin_uint256_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetEntries_System_Boolean_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.AddUnchecked(NBitcoin.uint256,Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry,Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries,System.Boolean)">AddUnchecked(uint256, TxMempoolEntry, TxMempool.SetEntries, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Add to memory pool without checking anything.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,22 +477,26 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">hash</span></td>
-        <td></td>
+        <td><p>Transaction hash.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry.html">TxMempoolEntry</a></td>
         <td><span class="parametername">entry</span></td>
-        <td></td>
+        <td><p>Memory pool entry.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries.html">TxMempool.SetEntries</a></td>
         <td><span class="parametername">setAncestors</span></td>
-        <td></td>
+        <td><p>Transaction ancestors.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">validFeeEstimate</span></td>
-        <td></td>
+        <td><p>Whether to update fee estimate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -504,10 +511,14 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Whether transaction was added successfully.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_AddUnchecked_NBitcoin_uint256_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetEntries_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Used by AcceptToMemoryPool(), which DOES do all the appropriate checks.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_TxMempool_AddUnchecked_NBitcoin_uint256_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.TxMempool.AddUnchecked(NBitcoin.uint256%2CStratis.Bitcoin.Features.MemoryPool.TxMempoolEntry%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -517,7 +528,9 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_AddUnchecked_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.AddUnchecked*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_AddUnchecked_NBitcoin_uint256_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_System_Boolean_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.AddUnchecked(NBitcoin.uint256,Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry,System.Boolean)">AddUnchecked(uint256, TxMempoolEntry, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Add to memory pool without checking anything after calculating transaction ancestors.
+Must update state for all ancestors of a given transaction, to track size/count of descendant transactions.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -536,17 +549,20 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">hash</span></td>
-        <td></td>
+        <td><p>Transaction hash.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry.html">TxMempoolEntry</a></td>
         <td><span class="parametername">entry</span></td>
-        <td></td>
+        <td><p>Memory pool entry.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">validFeeEstimate</span></td>
-        <td></td>
+        <td><p>Whether to update fee estimate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -561,10 +577,15 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Whether transaction was added successfully.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_AddUnchecked_NBitcoin_uint256_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>First version of AddUnchecked can be used to have it call CalculateMemPoolAncestors(), and
+then invoke the second version.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_TxMempool_AllowFree_System_Double_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.TxMempool.AllowFree(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -651,7 +672,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_ApplyDeltas_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.ApplyDeltas*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_ApplyDeltas_NBitcoin_uint256_System_Double__NBitcoin_Money__" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.ApplyDeltas(NBitcoin.uint256,System.Double@,NBitcoin.Money@)">ApplyDeltas(uint256, ref Double, ref Money)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Apply transaction priority and fee deltas.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -670,17 +692,20 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">hash</span></td>
-        <td></td>
+        <td><p>Hash of the transaction.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">dPriorityDelta</span></td>
-        <td></td>
+        <td><p>Priority delta to update.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
         <td><span class="parametername">nFeeDelta</span></td>
-        <td></td>
+        <td><p>Fee delta to update.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -693,7 +718,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_CalculateDescendants_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.CalculateDescendants*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_CalculateDescendants_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetEntries_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.CalculateDescendants(Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry,Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries)">CalculateDescendants(TxMempoolEntry, TxMempool.SetEntries)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates descendants of entry that are not already in setDescendants, and adds to setDecendants.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -712,15 +738,24 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry.html">TxMempoolEntry</a></td>
         <td><span class="parametername">entryit</span></td>
-        <td></td>
+        <td><p>Memory pool entry.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries.html">TxMempool.SetEntries</a></td>
         <td><span class="parametername">setDescendants</span></td>
-        <td></td>
+        <td><p>Set of entry decendants to add to.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_CalculateDescendants_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetEntries__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Assumes entryit is already a tx in the mempool and setMemPoolChildren
+is correct for tx and all descendants.
+Also assumes that if an entry is in setDescendants already, then all
+in-mempool descendants of it are already in setDescendants as well, so that we
+can save time by not iterating over those entries.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_TxMempool_CalculateMemPoolAncestors_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetEntries_System_Int64_System_Int64_System_Int64_System_Int64_System_String__System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.TxMempool.CalculateMemPoolAncestors(Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry%2CStratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.String%40%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -730,7 +765,9 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_CalculateMemPoolAncestors_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.CalculateMemPoolAncestors*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_CalculateMemPoolAncestors_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetEntries_System_Int64_System_Int64_System_Int64_System_Int64_System_String__System_Boolean_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.CalculateMemPoolAncestors(Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry,Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries,System.Int64,System.Int64,System.Int64,System.Int64,System.String@,System.Boolean)">CalculateMemPoolAncestors(TxMempoolEntry, TxMempool.SetEntries, Int64, Int64, Int64, Int64, out String, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Try to calculate all in-mempool ancestors of entry.
+(these are all calculated including the tx itself)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -749,42 +786,50 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry.html">TxMempoolEntry</a></td>
         <td><span class="parametername">entry</span></td>
-        <td></td>
+        <td><p>Memory pool entry.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries.html">TxMempool.SetEntries</a></td>
         <td><span class="parametername">setAncestors</span></td>
-        <td></td>
+        <td><p>Set of ancestors that the ancestors are added to.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">limitAncestorCount</span></td>
-        <td></td>
+        <td><p>Sax number of ancestorsUpdateTransactionsFromBlock.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">limitAncestorSize</span></td>
-        <td></td>
+        <td><p>Max size of ancestors.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">limitDescendantCount</span></td>
-        <td></td>
+        <td><p>Max number of descendants any ancestor can have.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">limitDescendantSize</span></td>
-        <td></td>
+        <td><p>Max size of descendants any ancestor can have.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">errString</span></td>
-        <td></td>
+        <td><p>Populated with error reason if any limits are hit.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">fSearchForParents</span></td>
-        <td></td>
+        <td><p>Whether to search a tx's vin for in-mempool parents, or look up parents from mapLinks. Must be true for entries not in the mempool.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -799,7 +844,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Whether operation was successful.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -812,7 +858,11 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Check_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Check*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Check_Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Check(Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView)">Check(CoinView)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>If sanity-checking is turned on, check makes sure the pool is consistent.
+(does not contain two transactions that spend the same inputs,
+all inputs are in the mapNextTx array). If sanity-checking is turned off,
+check does nothing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -831,7 +881,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></td>
         <td><span class="parametername">pcoins</span></td>
-        <td></td>
+        <td><p>Coin view of the transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -844,7 +895,9 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Clear_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Clear*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Clear" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Clear">Clear()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clears the collections that contain the memory pool transactions,
+and increments the running total of transactions updated.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -891,7 +944,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_EstimateFee_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.EstimateFee*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_EstimateFee_System_Int32_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.EstimateFee(System.Int32)">EstimateFee(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the estimated fee using <a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html#Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_MinerPolicyEstimator">MinerPolicyEstimator</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -910,7 +964,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">nBlocks</span></td>
-        <td></td>
+        <td><p>The confirmation target blocks.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -925,7 +980,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.FeeRate.html">FeeRate</a></td>
-        <td></td>
+        <td><p>The fee rate estimate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -938,7 +994,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_EstimatePriority_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.EstimatePriority*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_EstimatePriority_System_Int32_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.EstimatePriority(System.Int32)">EstimatePriority(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Estimates the priority using <a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html#Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_MinerPolicyEstimator">MinerPolicyEstimator</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -957,7 +1014,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">nBlocks</span></td>
-        <td></td>
+        <td><p>The confirmation target blocks.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -972,7 +1030,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td></td>
+        <td><p>The estimated priority.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -985,7 +1044,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_EstimateSmartFee_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.EstimateSmartFee*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_EstimateSmartFee_System_Int32_System_Int32__" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.EstimateSmartFee(System.Int32,System.Int32@)">EstimateSmartFee(Int32, out Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Estimates the smart fee using <a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html#Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_MinerPolicyEstimator">MinerPolicyEstimator</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1004,12 +1064,14 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">nBlocks</span></td>
-        <td></td>
+        <td><p>The confirmation target blocks.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">answerFoundAtBlocks</span></td>
-        <td></td>
+        <td><p>The block where the fee was found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1024,7 +1086,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.FeeRate.html">FeeRate</a></td>
-        <td></td>
+        <td><p>The fee rate estimate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1037,7 +1100,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_EstimateSmartPriority_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.EstimateSmartPriority*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_EstimateSmartPriority_System_Int32_System_Int32__" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.EstimateSmartPriority(System.Int32,System.Int32@)">EstimateSmartPriority(Int32, out Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Estimates the smart priority using <a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html#Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_MinerPolicyEstimator">MinerPolicyEstimator</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1056,12 +1120,14 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">nBlocks</span></td>
-        <td></td>
+        <td><p>The confirmation target blocks.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">answerFoundAtBlocks</span></td>
-        <td></td>
+        <td><p>The block where the priority was found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1076,7 +1142,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td></td>
+        <td><p>The estimated priority.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1089,7 +1156,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Exists_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Exists*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Exists_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Exists(NBitcoin.uint256)">Exists(uint256)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Whether the transaction hash exists in the memory pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1108,7 +1176,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">hash</span></td>
-        <td></td>
+        <td><p>Transaction hash.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1123,7 +1192,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Whether the transaction exists.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1136,7 +1206,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Expire_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Expire*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Expire_System_Int64_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Expire(System.Int64)">Expire(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Expire all transaction (and their dependencies) in the mempool older than time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1155,7 +1226,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">time</span></td>
-        <td></td>
+        <td><p>Expiry time.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1170,7 +1242,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Return the number of removed transactions.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1183,7 +1256,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Get_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Get*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_Get_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.Get(NBitcoin.uint256)">Get(uint256)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the transaction from the memory pool based upon the transaction hash.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1202,7 +1276,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">hash</span></td>
-        <td></td>
+        <td><p>Transaction hash.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1217,7 +1292,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
-        <td></td>
+        <td><p>The transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1230,7 +1306,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_GetMinFee_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.GetMinFee*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_GetMinFee_System_Int64_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.GetMinFee(System.Int64)">GetMinFee(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The minimum fee to get into the mempool, which may itself not be enough for larger-sized transactions.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1249,7 +1326,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">sizelimit</span></td>
-        <td></td>
+        <td><p>Size limit of the memory pool in bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1264,10 +1342,16 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.FeeRate.html">FeeRate</a></td>
-        <td></td>
+        <td><p>The minimum fee.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_GetMinFee_System_Int64__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The minReasonableRelayFee constructor arg is used to bound the time it
+takes the fee rate to go back down all the way to 0. When the feerate
+would otherwise be half of this, it is set to 0 instead.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_TxMempool_GetTransactionsUpdated.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.TxMempool.GetTransactionsUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1277,7 +1361,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_GetTransactionsUpdated_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.GetTransactionsUpdated*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_GetTransactionsUpdated" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.GetTransactionsUpdated">GetTransactionsUpdated()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get number of transactions that have been updated.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1294,7 +1379,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Number of transactions.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1307,7 +1393,9 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_HasNoInputsOf_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.HasNoInputsOf*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_HasNoInputsOf_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.HasNoInputsOf(NBitcoin.Transaction)">HasNoInputsOf(Transaction)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check that none of this transactions inputs are in the mempool, and thus
+the tx is not dependent on other mempool transactions to be included in a block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1326,7 +1414,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
         <td><span class="parametername">tx</span></td>
-        <td></td>
+        <td><p>The transaction to check.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1341,7 +1430,8 @@ the feerate of the transaction without any descendants.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Whether the transaction is not dependent on other transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1354,7 +1444,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_ReadFeeEstimates_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.ReadFeeEstimates*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_ReadFeeEstimates_NBitcoin_BitcoinStream_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.ReadFeeEstimates(NBitcoin.BitcoinStream)">ReadFeeEstimates(BitcoinStream)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read fee estimates from a stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1373,7 +1464,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.BitcoinStream.html">BitcoinStream</a></td>
         <td><span class="parametername">stream</span></td>
-        <td></td>
+        <td><p>Stream to read from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1386,7 +1478,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_RemoveForBlock_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.RemoveForBlock*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_RemoveForBlock_IEnumerable_NBitcoin_Transaction__System_Int32_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.RemoveForBlock(IEnumerable{NBitcoin.Transaction},System.Int32)">RemoveForBlock(IEnumerable&lt;Transaction&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when a block is connected. Removes transactions from mempool and updates the miner fee estimator.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1405,12 +1498,14 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="NBitcoin.Transaction.html">Transaction</a>&gt;</td>
         <td><span class="parametername">vtx</span></td>
-        <td></td>
+        <td><p>Collection of transactions.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">blockHeight</span></td>
-        <td></td>
+        <td><p>Height to connect the block.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1423,7 +1518,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_RemoveRecursive_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.RemoveRecursive*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_RemoveRecursive_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.RemoveRecursive(NBitcoin.Transaction)">RemoveRecursive(Transaction)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes the transaction from the memory pool recursively.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1442,7 +1538,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
         <td><span class="parametername">origTx</span></td>
-        <td></td>
+        <td><p>The original transaction to remove.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1455,7 +1552,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_RemoveStaged_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.RemoveStaged*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_RemoveStaged_Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetEntries_System_Boolean_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.RemoveStaged(Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries,System.Boolean)">RemoveStaged(TxMempool.SetEntries, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Remove a set of transactions from the mempool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1474,15 +1572,24 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries.html">TxMempool.SetEntries</a></td>
         <td><span class="parametername">stage</span></td>
-        <td></td>
+        <td><p>Staged transactions.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">updateDescendants</span></td>
-        <td></td>
+        <td><p>Whether to update decendants.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_RemoveStaged_Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetEntries_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If a transaction is in this set, then all in-mempool descendants must
+also be in the set, unless this transaction is being removed for being
+in a block.
+Set updateDescendants to true when removing a tx that was in a block, so
+that any in-mempool descendants have their ancestor state updated.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetSanityCheck_System_Double_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetSanityCheck(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1492,7 +1599,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetSanityCheck_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetSanityCheck*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_SetSanityCheck_System_Double_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetSanityCheck(System.Double)">SetSanityCheck(Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set how frequent the sanity check is executed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1511,7 +1619,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">dFrequency</span></td>
-        <td></td>
+        <td><p>The frequency of the sanity check.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1524,7 +1633,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_TrimToSize_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.TrimToSize*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_TrimToSize_System_Int64_List_NBitcoin_uint256__" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.TrimToSize(System.Int64,List{NBitcoin.uint256})">TrimToSize(Int64, List&lt;uint256&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Trims the memory pool to a size limite.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1543,12 +1653,14 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">sizelimit</span></td>
-        <td></td>
+        <td><p>Size limit to trim memory pool to.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
         <td><span class="parametername">pvNoSpendsRemaining</span></td>
-        <td></td>
+        <td><p>Collection of no spends transactions remaining.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1561,7 +1673,8 @@ the feerate of the transaction without any descendants.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_WriteFeeEstimates_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.WriteFeeEstimates*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_TxMempool_WriteFeeEstimates_NBitcoin_BitcoinStream_" data-uid="Stratis.Bitcoin.Features.MemoryPool.TxMempool.WriteFeeEstimates(NBitcoin.BitcoinStream)">WriteFeeEstimates(BitcoinStream)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Write fee estimates to a stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1580,7 +1693,8 @@ the feerate of the transaction without any descendants.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.BitcoinStream.html">BitcoinStream</a></td>
         <td><span class="parametername">stream</span></td>
-        <td></td>
+        <td><p>Stream to write to.</p>
+</td>
       </tr>
     </tbody>
   </table>

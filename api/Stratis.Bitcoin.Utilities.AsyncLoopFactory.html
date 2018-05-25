@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,8 @@
   
   <h1 id="Stratis_Bitcoin_Utilities_AsyncLoopFactory" data-uid="Stratis.Bitcoin.Utilities.AsyncLoopFactory" class="text-break">Class AsyncLoopFactory
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Factory for creating and also possibly starting application defined tasks inside async loop.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -140,7 +141,8 @@
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncLoopFactory_Create_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoopFactory.Create*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncLoopFactory_Create_System_String_Func_CancellationToken_Task__" data-uid="Stratis.Bitcoin.Utilities.AsyncLoopFactory.Create(System.String,Func{CancellationToken,Task})">Create(String, Func&lt;CancellationToken, Task&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new async loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -159,12 +161,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>Name of the loop.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Func</span>&lt;<span class="xref">CancellationToken</span>, <span class="xref">Task</span>&gt;</td>
         <td><span class="parametername">loop</span></td>
-        <td></td>
+        <td><p>Application defined task that will be called and awaited in the async loop.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -179,7 +183,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoop.html">IAsyncLoop</a></td>
-        <td></td>
+        <td><p>Newly created async loop that can be started on demand.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -192,7 +197,8 @@
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncLoopFactory_Run_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoopFactory.Run*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncLoopFactory_Run_System_String_Func_CancellationToken_Task__CancellationToken_System_Nullable_TimeSpan__System_Nullable_TimeSpan__" data-uid="Stratis.Bitcoin.Utilities.AsyncLoopFactory.Run(System.String,Func{CancellationToken,Task},CancellationToken,System.Nullable{TimeSpan},System.Nullable{TimeSpan})">Run(String, Func&lt;CancellationToken, Task&gt;, CancellationToken, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts an application defined task inside a newly created async loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -211,27 +217,34 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>Name of the loop.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Func</span>&lt;<span class="xref">CancellationToken</span>, <span class="xref">Task</span>&gt;</td>
         <td><span class="parametername">loop</span></td>
-        <td></td>
+        <td><p>Application defined task that will be called and awaited in the async loop.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellation</span></td>
-        <td></td>
+        <td><p>Cancellation token that triggers when the task and the loop should be cancelled.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">repeatEvery</span></td>
-        <td></td>
+        <td><p>Interval between each execution of the task.
+If this is <a class="xref" href="Stratis.Bitcoin.Utilities.TimeSpans.html#Stratis_Bitcoin_Utilities_TimeSpans_RunOnce">RunOnce</a>, the task is only run once and there is no loop.
+If this is null, the task is repeated every 1 second by default.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">startAfter</span></td>
-        <td></td>
+        <td><p>Delay before the first run of the task, or null if no startup delay is required.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -259,7 +272,8 @@
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncLoopFactory_Run_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoopFactory.Run*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncLoopFactory_Run_System_String_Func_CancellationToken_Task__System_Nullable_TimeSpan__System_Nullable_TimeSpan__" data-uid="Stratis.Bitcoin.Utilities.AsyncLoopFactory.Run(System.String,Func{CancellationToken,Task},System.Nullable{TimeSpan},System.Nullable{TimeSpan})">Run(String, Func&lt;CancellationToken, Task&gt;, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts an application defined task inside a newly created async loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -278,22 +292,28 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>Name of the loop.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Func</span>&lt;<span class="xref">CancellationToken</span>, <span class="xref">Task</span>&gt;</td>
         <td><span class="parametername">loop</span></td>
-        <td></td>
+        <td><p>Application defined task that will be called and awaited in the async loop.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">repeatEvery</span></td>
-        <td></td>
+        <td><p>Interval between each execution of the task.
+If this is <a class="xref" href="Stratis.Bitcoin.Utilities.TimeSpans.html#Stratis_Bitcoin_Utilities_TimeSpans_RunOnce">RunOnce</a>, the task is only run once and there is no loop.
+If this is null, the task is repeated every 1 second by default.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">startAfter</span></td>
-        <td></td>
+        <td><p>Delay before the first run of the task, or null if no startup delay is required.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -321,7 +341,13 @@
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncLoopFactory_RunUntil_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoopFactory.RunUntil*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncLoopFactory_RunUntil_System_String_CancellationToken_Func_System_Boolean__Action_Action_Exception__TimeSpan_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoopFactory.RunUntil(System.String,CancellationToken,Func{System.Boolean},Action,Action{Exception},TimeSpan)">RunUntil(String, CancellationToken, Func&lt;Boolean&gt;, Action, Action&lt;Exception&gt;, TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits until a condition is met, then executes the action and completes.</p>
+<p>
+Waiting is implemented using the async loop for which the task is defined as execution of the condition method
+followed by execution of the action if the condition is satisfied - i.e. returns true. If the condition is
+not satisfied, the loop waits as per <see cref="!:repeatEvery"></see> setting and then it can be attempted again.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -340,32 +366,40 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>Name of the loop.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">nodeCancellationToken</span></td>
-        <td></td>
+        <td><p>Cancellation token that triggers when the task and the loop should be cancelled.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">condition</span></td>
-        <td></td>
+        <td><p>Condition to be tested.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Action</span></td>
         <td><span class="parametername">action</span></td>
-        <td></td>
+        <td><p>Method to execute once the condition is met.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Action</span>&lt;<span class="xref">Exception</span>&gt;</td>
         <td><span class="parametername">onException</span></td>
-        <td></td>
+        <td><p>Method to execute if an exception occurs during evaluation of the condition or during execution of the <see cref="!:action"></see>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">repeatEvery</span></td>
-        <td></td>
+        <td><p>Interval between each execution of the task.
+If this is <a class="xref" href="Stratis.Bitcoin.Utilities.TimeSpans.html#Stratis_Bitcoin_Utilities_TimeSpans_RunOnce">RunOnce</a>, the task is only run once and there is no loop.
+If this is null, the task is repeated every 1 second by default.</p>
+</td>
       </tr>
     </tbody>
   </table>

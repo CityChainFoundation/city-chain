@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -266,7 +266,8 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_Location_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.Location*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_Location" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.Location">Location</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the current location of the puller to a specific block header.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -422,7 +423,11 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_BlockPushed_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.BlockPushed*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_BlockPushed_NBitcoin_uint256_Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlock_CancellationToken_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.BlockPushed(NBitcoin.uint256,Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock,CancellationToken)">BlockPushed(uint256, BlockPuller.DownloadedBlock, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Method called when a new block is downloaded and pushed to the puller.</p>
+<p>
+This method is to be overridden by derived classes. In the base class it only logs the event.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -441,17 +446,20 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">blockHash</span></td>
-        <td></td>
+        <td><p>Hash of the newly downloaded block.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock.html">BlockPuller.DownloadedBlock</a></td>
         <td><span class="parametername">downloadedBlock</span></td>
-        <td></td>
+        <td><p>Desciption of the newly downloaded block.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Cancellation token to be used by derived classes that allows the caller to cancel the execution of the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -482,7 +490,8 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_NextBlock_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.NextBlock*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_NextBlock_CancellationToken_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.NextBlock(CancellationToken)">NextBlock(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits for a next block to be available (downloaded) and returns it to the consumer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -501,7 +510,8 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Cancellation token to allow the caller to cancel waiting for the next block.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -516,7 +526,8 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.LookaheadResult.html">LookaheadResult</a></td>
-        <td></td>
+        <td><p>Next block or null if a reorganization happened on the chain.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -529,7 +540,8 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_RequestOptions_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.RequestOptions*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_RequestOptions_NBitcoin_TransactionOptions_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.RequestOptions(NBitcoin.TransactionOptions)">RequestOptions(TransactionOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a specific requirement to all peer nodes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -548,7 +560,8 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
       <tr>
         <td><a class="xref" href="NBitcoin.TransactionOptions.html">TransactionOptions</a></td>
         <td><span class="parametername">transactionOptions</span></td>
-        <td></td>
+        <td><p>Specifies the requirement on nodes to add.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -561,7 +574,8 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_SetLocation_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.SetLocation*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_SetLocation_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.SetLocation(NBitcoin.ChainedHeader)">SetLocation(ChainedHeader)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the current location of the puller to a specific block header.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -593,7 +607,8 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_TryGetLookahead_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.TryGetLookahead*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_LookaheadBlockPuller_TryGetLookahead_System_Int32_" data-uid="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.TryGetLookahead(System.Int32)">TryGetLookahead(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Tries to retrieve a block that is in front of the current puller's position by a specific height.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -612,7 +627,9 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>How many blocks ahead (minus one) should the returned block be ahead of the current puller's position.
+A value of zero will provide the next block, a value of one will provide a block that is 2 blocks ahead.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -627,7 +644,9 @@ but should the ActualLookahead be adjusted, they can be requested in the near fu
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
-        <td></td>
+        <td><p>The block which height is <code data-dev-comment-type="paramref" class="paramref">count</code>+1 higher than current puller's position,
+or null if such a block is not downloaded or does not exist.</p>
+</td>
       </tr>
     </tbody>
   </table>

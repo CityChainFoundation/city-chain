@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -138,7 +138,8 @@ the naming convention should be <code>Use[Feature]()</code>.
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FullNodeFeature_Initialize_" data-uid="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.Initialize*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FullNodeFeature_Initialize" data-uid="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.Initialize">Initialize()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Triggered when the FullNode host has fully started.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -153,7 +154,8 @@ the naming convention should be <code>Use[Feature]()</code>.
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FullNodeFeature_LoadConfiguration_" data-uid="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.LoadConfiguration*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FullNodeFeature_LoadConfiguration" data-uid="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.LoadConfiguration">LoadConfiguration()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called on all the features prior to calling Initialize on all the features.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -168,7 +170,8 @@ the naming convention should be <code>Use[Feature]()</code>.
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FullNodeFeature_ValidateDependencies_" data-uid="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.ValidateDependencies*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FullNodeFeature_ValidateDependencies_Stratis_Bitcoin_Builder_IFullNodeServiceProvider_" data-uid="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.ValidateDependencies(Stratis.Bitcoin.Builder.IFullNodeServiceProvider)">ValidateDependencies(IFullNodeServiceProvider)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validates the feature's required dependencies are all present.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -187,7 +190,24 @@ the naming convention should be <code>Use[Feature]()</code>.
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Builder.IFullNodeServiceProvider.html">IFullNodeServiceProvider</a></td>
         <td><span class="parametername">services</span></td>
-        <td></td>
+        <td><p>Services and features registered to node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Builder.Feature.MissingDependencyException.html">MissingDependencyException</a></td>
+        <td><p>should be thrown if dependency is missing</p>
+</td>
       </tr>
     </tbody>
   </table>

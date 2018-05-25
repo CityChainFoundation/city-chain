@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -588,7 +588,9 @@
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolValidator_AcceptToMemoryPool_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolValidator.AcceptToMemoryPool*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolValidator_AcceptToMemoryPool_Stratis_Bitcoin_Features_MemoryPool_MempoolValidationState_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolValidator.AcceptToMemoryPool(Stratis.Bitcoin.Features.MemoryPool.MempoolValidationState,NBitcoin.Transaction)">AcceptToMemoryPool(MempoolValidationState, Transaction)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Accept transaction to memory pool.
+Sets the validation state accept time to now.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -607,12 +609,14 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolValidationState.html">MempoolValidationState</a></td>
         <td><span class="parametername">state</span></td>
-        <td></td>
+        <td><p>Validation state.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
         <td><span class="parametername">tx</span></td>
-        <td></td>
+        <td><p>Transaction to accept.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -627,7 +631,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>Whether the transaction is accepted or not.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -640,7 +645,9 @@
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolValidator_AcceptToMemoryPoolWithTime_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolValidator.AcceptToMemoryPoolWithTime*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolValidator_AcceptToMemoryPoolWithTime_Stratis_Bitcoin_Features_MemoryPool_MempoolValidationState_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolValidator.AcceptToMemoryPoolWithTime(Stratis.Bitcoin.Features.MemoryPool.MempoolValidationState,NBitcoin.Transaction)">AcceptToMemoryPoolWithTime(MempoolValidationState, Transaction)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Accept transaction to memory pool.
+Honors the validation state accept time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -659,12 +666,14 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolValidationState.html">MempoolValidationState</a></td>
         <td><span class="parametername">state</span></td>
-        <td></td>
+        <td><p>Validation state.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
         <td><span class="parametername">tx</span></td>
-        <td></td>
+        <td><p>Transaction to accept.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -679,7 +688,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>Whether the transaction was accepted to the memory pool.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -974,7 +984,8 @@ Takes into account witness options in the computation.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolValidator_SanityCheck_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolValidator.SanityCheck*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolValidator_SanityCheck" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolValidator.SanityCheck">SanityCheck()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes the memory pool sanity check here <a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempool.html#Stratis_Bitcoin_Features_MemoryPool_TxMempool_Check_Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_">Check(CoinView)</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

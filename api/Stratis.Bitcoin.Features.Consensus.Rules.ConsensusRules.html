@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,8 @@
   
   <h1 id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules" class="text-break">Class ConsensusRules
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>An engine that enforce the execution and validation of consensus rule.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -91,6 +92,10 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class ConsensusRules : object, IConsensusRules</code></pre>
   </div>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>In order for a block to be valid it has to successfully pass the rules checks.
+A block  that is not valid will result in the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.BlockValidationContext.html#Stratis_Bitcoin_Features_Consensus_BlockValidationContext_Error">Error</a> as not <code>null</code>.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
@@ -384,7 +389,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_PerformanceCounter_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.PerformanceCounter*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_PerformanceCounter" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.PerformanceCounter">PerformanceCounter</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Keeps track of how much time different actions took to execute and how many times they were executed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -414,7 +420,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_Rules_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.Rules*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_Rules" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.Rules">Rules</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Collection of all the rules that are registered with the engine.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -446,7 +453,10 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_AcceptBlockAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.AcceptBlockAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_AcceptBlockAsync_Stratis_Bitcoin_Features_Consensus_BlockValidationContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.AcceptBlockAsync(Stratis.Bitcoin.Features.Consensus.BlockValidationContext)">AcceptBlockAsync(BlockValidationContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A method that will accept a new block to the node.
+The block will be validated and the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a> db will be updated.
+If it's a new block that was mined or staked it will extend the chain and the new block will set <a class="xref" href="NBitcoin.ConcurrentChain.html#NBitcoin_ConcurrentChain_Tip">Tip</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -465,7 +475,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.BlockValidationContext.html">BlockValidationContext</a></td>
         <td><span class="parametername">blockValidationContext</span></td>
-        <td></td>
+        <td><p>Information about the block to validate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -493,12 +504,12 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_GetRule_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.GetRule*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_GetRule__1" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.GetRule``1">GetRule&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the consensus rule that is assignable to the supplied generic type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public T GetRule&lt;T&gt;()
-
     where T : ConsensusRule</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -540,7 +551,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_Register_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.Register*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_Register_Stratis_Bitcoin_Features_Consensus_Rules_IRuleRegistration_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.Register(Stratis.Bitcoin.Features.Consensus.Rules.IRuleRegistration)">Register(IRuleRegistration)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Register a new rule to the engine</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -559,7 +571,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.IRuleRegistration.html">IRuleRegistration</a></td>
         <td><span class="parametername">ruleRegistration</span></td>
-        <td></td>
+        <td><p>A container of rules to register.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -619,7 +632,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_ValidateAndExecuteAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.ValidateAndExecuteAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_ValidateAndExecuteAsync_Stratis_Bitcoin_Features_Consensus_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.ValidateAndExecuteAsync(Stratis.Bitcoin.Features.Consensus.RuleContext)">ValidateAndExecuteAsync(RuleContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Execute the consensus rule engine.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -638,7 +652,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.RuleContext.html">RuleContext</a></td>
         <td><span class="parametername">ruleContext</span></td>
-        <td></td>
+        <td><p>A context that holds information about the current validated block.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -653,7 +668,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td></td>
+        <td><p>The processing task.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -666,7 +682,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_ValidateAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.ValidateAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRules_ValidateAsync_Stratis_Bitcoin_Features_Consensus_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.ValidateAsync(Stratis.Bitcoin.Features.Consensus.RuleContext)">ValidateAsync(RuleContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Execute the consensus rule engine in validation mode only, no state will be changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -685,7 +702,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.RuleContext.html">RuleContext</a></td>
         <td><span class="parametername">ruleContext</span></td>
-        <td></td>
+        <td><p>A context that holds information about the current validated block.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -700,7 +718,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td></td>
+        <td><p>The processing task.</p>
+</td>
       </tr>
     </tbody>
   </table>

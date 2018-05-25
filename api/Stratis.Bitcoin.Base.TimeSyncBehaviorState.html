@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -388,7 +388,8 @@ the time syncing feature will be switched off.</p>
   </span>
   <a id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_IsSystemTimeOutOfSync_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.IsSystemTimeOutOfSync*"></a>
   <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_IsSystemTimeOutOfSync" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.IsSystemTimeOutOfSync">IsSystemTimeOutOfSync</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A value indicating whether the system time is not in sync and needs adjustment.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -483,7 +484,9 @@ went over the maximal allowed value, <code>false</code> otherwise.</p>
   </span>
   <a id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_AddTimeData_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.AddTimeData*"></a>
   <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_AddTimeData_IPAddress_TimeSpan_System_Boolean_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.AddTimeData(IPAddress,TimeSpan,System.Boolean)">AddTimeData(IPAddress, TimeSpan, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a time offset sample to the internal database of samples.</p>
+<p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -502,17 +505,21 @@ went over the maximal allowed value, <code>false</code> otherwise.</p>
       <tr>
         <td><span class="xref">IPAddress</span></td>
         <td><span class="parametername">peerAddress</span></td>
-        <td></td>
+        <td><p>IP address of the peer that the sample relates to.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">offsetSample</span></td>
-        <td></td>
+        <td><p>Difference in the peer's time and our system time.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isInboundConnection</span></td>
-        <td></td>
+        <td><p><code>true</code> if the sample comes from a peer that connected to our node,
+<code>false</code> if the sample comes from a peer that our node connected to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -527,7 +534,8 @@ went over the maximal allowed value, <code>false</code> otherwise.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if the sample was added to the mix, <code>false</code> otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>

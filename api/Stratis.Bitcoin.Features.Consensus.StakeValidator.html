@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -199,7 +199,8 @@ are Unix epoch timestamps with seconds precision.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_StakeValidator_CheckKernel_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.CheckKernel*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_StakeValidator_CheckKernel_Stratis_Bitcoin_Features_Consensus_ContextStakeInformation_NBitcoin_ChainedHeader_System_UInt32_System_Int64_NBitcoin_OutPoint_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.CheckKernel(Stratis.Bitcoin.Features.Consensus.ContextStakeInformation,NBitcoin.ChainedHeader,System.UInt32,System.Int64,NBitcoin.OutPoint)">CheckKernel(ContextStakeInformation, ChainedHeader, UInt32, Int64, OutPoint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks that UTXO is valid for staking and then checks kernel hash.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -218,27 +219,32 @@ are Unix epoch timestamps with seconds precision.</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ContextStakeInformation.html">ContextStakeInformation</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>Staking context.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
         <td><span class="parametername">prevChainedHeader</span></td>
-        <td></td>
+        <td><p>Previous chained block.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">headerBits</span></td>
-        <td></td>
+        <td><p>Chained block's header bits, which define the difficulty target.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">transactionTime</span></td>
-        <td></td>
+        <td><p>Transaction time.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.OutPoint.html">OutPoint</a></td>
         <td><span class="parametername">prevout</span></td>
-        <td></td>
+        <td><p>Information about transaction id and index.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -251,7 +257,8 @@ are Unix epoch timestamps with seconds precision.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_StakeValidator_CheckProofOfStake_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.CheckProofOfStake*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_StakeValidator_CheckProofOfStake_Stratis_Bitcoin_Features_Consensus_ContextStakeInformation_NBitcoin_ChainedHeader_NBitcoin_BlockStake_NBitcoin_Transaction_System_UInt32_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.CheckProofOfStake(Stratis.Bitcoin.Features.Consensus.ContextStakeInformation,NBitcoin.ChainedHeader,NBitcoin.BlockStake,NBitcoin.Transaction,System.UInt32)">CheckProofOfStake(ContextStakeInformation, ChainedHeader, BlockStake, Transaction, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if provided transaction is a valid coinstake transaction.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -270,27 +277,32 @@ are Unix epoch timestamps with seconds precision.</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ContextStakeInformation.html">ContextStakeInformation</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>Staking context.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
         <td><span class="parametername">prevChainedHeader</span></td>
-        <td></td>
+        <td><p>Previous chained block.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.BlockStake.html">BlockStake</a></td>
         <td><span class="parametername">prevBlockStake</span></td>
-        <td></td>
+        <td><p>Information about previous staked block.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
         <td><span class="parametername">transaction</span></td>
-        <td></td>
+        <td><p>The transaction.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">headerBits</span></td>
-        <td></td>
+        <td><p>Chained block's header bits, which define the difficulty target.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -303,7 +315,8 @@ are Unix epoch timestamps with seconds precision.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_StakeValidator_ComputeStakeModifierV2_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.ComputeStakeModifierV2*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_StakeValidator_ComputeStakeModifierV2_NBitcoin_ChainedHeader_NBitcoin_BlockStake_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.ComputeStakeModifierV2(NBitcoin.ChainedHeader,NBitcoin.BlockStake,NBitcoin.uint256)">ComputeStakeModifierV2(ChainedHeader, BlockStake, uint256)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Computes stake modifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -322,17 +335,20 @@ are Unix epoch timestamps with seconds precision.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
         <td><span class="parametername">prevChainedHeader</span></td>
-        <td></td>
+        <td><p>Previous chained block.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.BlockStake.html">BlockStake</a></td>
         <td><span class="parametername">blockStakePrev</span></td>
-        <td></td>
+        <td><p>Previous PoS block.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">kernel</span></td>
-        <td></td>
+        <td><p>The PoS kernel.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -347,7 +363,8 @@ are Unix epoch timestamps with seconds precision.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
-        <td></td>
+        <td><p>Stake modifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -360,7 +377,9 @@ are Unix epoch timestamps with seconds precision.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_StakeValidator_GetLastPowPosChainedBlock_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.GetLastPowPosChainedBlock*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_StakeValidator_GetLastPowPosChainedBlock_Stratis_Bitcoin_Features_Consensus_IStakeChain_NBitcoin_ChainedHeader_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.GetLastPowPosChainedBlock(Stratis.Bitcoin.Features.Consensus.IStakeChain,NBitcoin.ChainedHeader,System.Boolean)">GetLastPowPosChainedBlock(IStakeChain, ChainedHeader, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the last block in the chain that was generated using
+PoS if <code data-dev-comment-type="paramref" class="paramref">proofOfStake</code> is <code>true</code> or PoW if <code data-dev-comment-type="paramref" class="paramref">proofOfStake</code> is <code>false</code>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -379,17 +398,20 @@ are Unix epoch timestamps with seconds precision.</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.IStakeChain.html">IStakeChain</a></td>
         <td><span class="parametername">stakeChain</span></td>
-        <td></td>
+        <td><p>Database of stake related data for the current blockchain.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
         <td><span class="parametername">startChainedHeader</span></td>
-        <td></td>
+        <td><p>Block that we start from. Only blocks before that one will be checked.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">proofOfStake</span></td>
-        <td></td>
+        <td><p>Specifies what kind of block we are looking for: <code>true</code> for PoS or <code>false</code> for PoW.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -404,7 +426,8 @@ are Unix epoch timestamps with seconds precision.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
-        <td></td>
+        <td><p>Last block in the chain that satisfies provided requirements.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -417,7 +440,8 @@ are Unix epoch timestamps with seconds precision.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_StakeValidator_GetNextTargetRequired_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.GetNextTargetRequired*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_StakeValidator_GetNextTargetRequired_Stratis_Bitcoin_Features_Consensus_IStakeChain_NBitcoin_ChainedHeader_NBitcoin_Consensus_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.GetNextTargetRequired(Stratis.Bitcoin.Features.Consensus.IStakeChain,NBitcoin.ChainedHeader,NBitcoin.Consensus,System.Boolean)">GetNextTargetRequired(IStakeChain, ChainedHeader, Consensus, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates the difficulty target for the next block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -436,22 +460,26 @@ are Unix epoch timestamps with seconds precision.</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.IStakeChain.html">IStakeChain</a></td>
         <td><span class="parametername">stakeChain</span></td>
-        <td></td>
+        <td><p>Database of stake related data for the current blockchain.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
         <td><span class="parametername">chainedHeader</span></td>
-        <td></td>
+        <td><p>Block header for which to calculate the target difficulty.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Consensus.html">Consensus</a></td>
         <td><span class="parametername">consensus</span></td>
-        <td></td>
+        <td><p>Consensus rules for the current network.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">proofOfStake</span></td>
-        <td></td>
+        <td><p><code>true</code> for calculation of PoS difficulty target, <code>false</code> for calculation of PoW difficulty target.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -466,10 +494,26 @@ are Unix epoch timestamps with seconds precision.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.Target.html">Target</a></td>
-        <td></td>
+        <td><p>The difficulty target for the next block after <code data-dev-comment-type="paramref" class="paramref">chainedHeader</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_StakeValidator_GetNextTargetRequired_Stratis_Bitcoin_Features_Consensus_IStakeChain_NBitcoin_ChainedHeader_NBitcoin_Consensus_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The calculation of the next target is based on the last target value and the block time (aka spacing) of <code data-dev-comment-type="paramref" class="paramref">chainedHeader</code>
+(i.e. difference in time stamp of this block and its immediate predecessor). The target changes every block and it is adjusted
+down (i.e. towards harder to reach, or more difficult) if the time to mine last block was lower than the target block time.
+And it is adjusted up if it took longer than the target block time. The adjustments are done in a way the target is moving towards
+the target-spacing (expected block time) exponentially, so even a big change in the mining power on the network will be fixed by retargeting relatively quickly.</p>
+<p>
+Over <see cref="!:RetargetIntervalMinutes"></see> minutes there are certain number (say <code>N</code>) of blocks expected to be mined if the target block time
+of <see cref="!:TargetSpacingSeconds"></see> was reached every time. Then the next target is calculated as follows:</p>
+<pre><code>NewTarget = PrevTarget * ((N - 1) * TargetSpacingSeconds + 2 * LastBlockTime) / ((N + 1) * TargetSpacingSeconds)</code></pre>
+<p>
+Which basically says that the block time of the last block is counted twice instead of two optimal block times.
+And the <code>N</code> determines how strongly will the deviation of the last block time affect the difficulty.
+</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Interfaces.IStakeValidator.html">IStakeValidator</a>

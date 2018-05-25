@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -156,7 +156,8 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerFilePath_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerFilePath*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerFilePath" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerFilePath">PeerFilePath</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Data folder of where the json peer file is located.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -186,7 +187,8 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_Peers_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.Peers*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_Peers" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.Peers">Peers</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A collection of all discovered peers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -249,7 +251,11 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_AddPeer_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.AddPeer*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_AddPeer_IPEndPoint_IPAddress_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.AddPeer(IPEndPoint,IPAddress)">AddPeer(IPEndPoint, IPAddress)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a peer to the <a class="xref" href="Stratis.Bitcoin.P2P.IPeerAddressManager.html#Stratis_Bitcoin_P2P_IPeerAddressManager_Peers">Peers</a> dictionary.</p>
+<p>
+Only routable IP addresses will be added. See <see cref="!:IpExtensions.IsRoutable(IPAddress, bool)"></see>.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -286,7 +292,11 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_AddPeers_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.AddPeers*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_AddPeers_IPEndPoint___IPAddress_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.AddPeers(IPEndPoint[],IPAddress)">AddPeers(IPEndPoint[], IPAddress)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Add a set of peers to the <a class="xref" href="Stratis.Bitcoin.P2P.IPeerAddressManager.html#Stratis_Bitcoin_P2P_IPeerAddressManager_Peers">Peers</a> dictionary.</p>
+<p>
+Only routable IP addresses will be added. <see cref="!:IpExtensions.IsRoutable(IPAddress, bool)"></see>
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -338,7 +348,8 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_FindPeer_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.FindPeer*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_FindPeer_IPEndPoint_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.FindPeer(IPEndPoint)">FindPeer(IPEndPoint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Find a peer by endpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -385,7 +396,8 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_LoadPeers_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.LoadPeers*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_LoadPeers" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.LoadPeers">LoadPeers()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Loads peers from a json formatted file on disk.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -400,7 +412,11 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerAttempted_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerAttempted*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerAttempted_IPEndPoint_DateTime_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerAttempted(IPEndPoint,DateTime)">PeerAttempted(IPEndPoint, DateTime)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A connection attempt was made to a peer.</p>
+<p>
+Increments <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_ConnectionAttempts">ConnectionAttempts</a> of the peer as well as the <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_LastConnectionSuccess">LastConnectionSuccess</a>
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -437,7 +453,12 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerConnected_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerConnected*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerConnected_IPEndPoint_DateTimeOffset_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerConnected(IPEndPoint,DateTimeOffset)">PeerConnected(IPEndPoint, DateTimeOffset)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A peer was successfully connected to.</p>
+<p>
+Resets the <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_ConnectionAttempts">ConnectionAttempts</a> and <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_LastAttempt">LastAttempt</a> of the peer.
+Sets the peer&apos;s <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_LastConnectionSuccess">LastConnectionSuccess</a> to now.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +495,8 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerDiscoveredFrom_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerDiscoveredFrom*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerDiscoveredFrom_IPEndPoint_DateTime_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerDiscoveredFrom(IPEndPoint,DateTime)">PeerDiscoveredFrom(IPEndPoint, DateTime)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the last time the peer was asked for addresses via discovery.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -511,7 +533,11 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerHandshaked_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerHandshaked*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerHandshaked_IPEndPoint_DateTimeOffset_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerHandshaked(IPEndPoint,DateTimeOffset)">PeerHandshaked(IPEndPoint, DateTimeOffset)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A version handshake between two peers was successful.</p>
+<p>
+Sets the peer&apos;s <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_LastConnectionHandshake">LastConnectionHandshake</a> time to now.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -548,7 +574,8 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerSeen_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerSeen*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_PeerSeen_IPEndPoint_DateTime_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.PeerSeen(IPEndPoint,DateTime)">PeerSeen(IPEndPoint, DateTime)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the last time the peer was seen.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -585,7 +612,8 @@ The manager updates peer state according to how recent they have been connected 
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManager_SavePeers_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.SavePeers*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManager_SavePeers" data-uid="Stratis.Bitcoin.P2P.PeerAddressManager.SavePeers">SavePeers()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Persist peers to disk in json format.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

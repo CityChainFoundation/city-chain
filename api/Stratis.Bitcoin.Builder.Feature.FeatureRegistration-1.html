@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -168,7 +168,9 @@
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_FeatureStartupType_" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.FeatureStartupType*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_FeatureStartupType" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.FeatureStartupType">FeatureStartupType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Type of the feature startup class. If it implements ConfigureServices method,
+it is invoked to configure the feature's services.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,7 +200,8 @@
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_FeatureType_" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.FeatureType*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_FeatureType" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.FeatureType">FeatureType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Type of the feature class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -230,7 +233,9 @@
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_BuildFeature_" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.BuildFeature*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_BuildFeature_IServiceCollection_" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.BuildFeature(IServiceCollection)">BuildFeature(IServiceCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes feature registration DI services and calls configuration delegates of each service
+and the startup type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -249,7 +254,8 @@
       <tr>
         <td><span class="xref">IServiceCollection</span></td>
         <td><span class="parametername">serviceCollection</span></td>
-        <td></td>
+        <td><p>Collection of feature registration's DI services.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -262,12 +268,12 @@
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_DependOn_" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.DependOn*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_DependOn__1" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.DependOn``1">DependOn&lt;TFeatureImplementation&gt;()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a feature type to the dependency feature list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IFeatureRegistration DependOn&lt;TFeatureImplementation&gt;()
-
     where TFeatureImplementation : class, IFullNodeFeature</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -281,7 +287,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Builder.Feature.IFeatureRegistration.html">IFeatureRegistration</a></td>
-        <td></td>
+        <td><p>This interface to allow fluent code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -309,7 +316,8 @@
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_EnsureDependencies_" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.EnsureDependencies*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_EnsureDependencies_List_Stratis_Bitcoin_Builder_Feature_IFeatureRegistration__" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.EnsureDependencies(List{Stratis.Bitcoin.Builder.Feature.IFeatureRegistration})">EnsureDependencies(List&lt;IFeatureRegistration&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Ensures dependency feature types are present in the registered features list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -328,7 +336,24 @@
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Builder.Feature.IFeatureRegistration.html">IFeatureRegistration</a>&gt;</td>
         <td><span class="parametername">featureRegistrations</span></td>
-        <td></td>
+        <td><p>List of registered features.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Builder.Feature.MissingDependencyException.html">MissingDependencyException</a></td>
+        <td><p>Thrown if feature type is missing.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -341,7 +366,8 @@
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_FeatureServices_" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.FeatureServices*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_FeatureServices_Action_IServiceCollection__" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.FeatureServices(Action{IServiceCollection})">FeatureServices(Action&lt;IServiceCollection&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the list of delegates to configure DI services of the feature registration.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -360,7 +386,8 @@
       <tr>
         <td><span class="xref">Action</span>&lt;<span class="xref">IServiceCollection</span>&gt;</td>
         <td><span class="parametername">configureServices</span></td>
-        <td></td>
+        <td><p>List of delegates to configure DI services of the feature registration.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -375,7 +402,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Builder.Feature.IFeatureRegistration.html">IFeatureRegistration</a></td>
-        <td></td>
+        <td><p>This interface to allow fluent code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -388,7 +416,8 @@
   </span>
   <a id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_UseStartup_" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.UseStartup*"></a>
   <h4 id="Stratis_Bitcoin_Builder_Feature_FeatureRegistration_1_UseStartup__1" data-uid="Stratis.Bitcoin.Builder.Feature.FeatureRegistration`1.UseStartup``1">UseStartup&lt;TStartup&gt;()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the specific startup type to be used by the feature registration.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -405,7 +434,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Builder.Feature.IFeatureRegistration.html">IFeatureRegistration</a></td>
-        <td></td>
+        <td><p>This interface to allow fluent code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -420,7 +450,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TStartup</span></td>
-        <td></td>
+        <td><p>Type of feature startup class to use.</p>
+</td>
       </tr>
     </tbody>
   </table>

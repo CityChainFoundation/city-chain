@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -229,7 +229,9 @@ the root of that tree is included in the block header.</p>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_BlockMerkleRootRule_RunAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.BlockMerkleRootRule.RunAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_BlockMerkleRootRule_RunAsync_Stratis_Bitcoin_Features_Consensus_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.BlockMerkleRootRule.RunAsync(Stratis.Bitcoin.Features.Consensus.RuleContext)">RunAsync(RuleContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Execute the logic in the current rule.
+If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ConsensusErrorException.html">ConsensusErrorException</a> will throw.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -248,7 +250,8 @@ the root of that tree is included in the block header.</p>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.RuleContext.html">RuleContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The context that has all info that needs to be validated.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -263,7 +266,8 @@ the root of that tree is included in the block header.</p>
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td></td>
+        <td><p>The execution task.</p>
+</td>
       </tr>
     </tbody>
   </table>

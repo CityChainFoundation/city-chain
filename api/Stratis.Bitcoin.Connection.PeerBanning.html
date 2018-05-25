@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -152,7 +152,8 @@ This will manage banning of peers and checking for banned peers.</p>
   </span>
   <a id="Stratis_Bitcoin_Connection_PeerBanning_BanPeer_" data-uid="Stratis.Bitcoin.Connection.PeerBanning.BanPeer*"></a>
   <h4 id="Stratis_Bitcoin_Connection_PeerBanning_BanPeer_IPEndPoint_System_Int32_System_String_" data-uid="Stratis.Bitcoin.Connection.PeerBanning.BanPeer(IPEndPoint,System.Int32,System.String)">BanPeer(IPEndPoint, Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set a peer as banned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -171,17 +172,20 @@ This will manage banning of peers and checking for banned peers.</p>
       <tr>
         <td><span class="xref">IPEndPoint</span></td>
         <td><span class="parametername">endpoint</span></td>
-        <td></td>
+        <td><p>The endpoint to set that it was banned.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">banTimeSeconds</span></td>
-        <td></td>
+        <td><p>The time in seconds this peer should be banned.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">reason</span></td>
-        <td></td>
+        <td><p>An optional reason for the ban, the 'reason' is only use for tracing.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -194,7 +198,8 @@ This will manage banning of peers and checking for banned peers.</p>
   </span>
   <a id="Stratis_Bitcoin_Connection_PeerBanning_IsBanned_" data-uid="Stratis.Bitcoin.Connection.PeerBanning.IsBanned*"></a>
   <h4 id="Stratis_Bitcoin_Connection_PeerBanning_IsBanned_IPEndPoint_" data-uid="Stratis.Bitcoin.Connection.PeerBanning.IsBanned(IPEndPoint)">IsBanned(IPEndPoint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if a peer is banned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,7 +218,8 @@ This will manage banning of peers and checking for banned peers.</p>
       <tr>
         <td><span class="xref">IPEndPoint</span></td>
         <td><span class="parametername">endpoint</span></td>
-        <td></td>
+        <td><p>The endpoint to check if it was banned.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -228,7 +234,8 @@ This will manage banning of peers and checking for banned peers.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if the peer was banned.</p>
+</td>
       </tr>
     </tbody>
   </table>

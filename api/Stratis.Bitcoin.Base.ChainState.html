@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -207,7 +207,8 @@ these components to share that data without creating extra dependencies.</p>
   </span>
   <a id="Stratis_Bitcoin_Base_ChainState_IsMarkedInvalid_" data-uid="Stratis.Bitcoin.Base.ChainState.IsMarkedInvalid*"></a>
   <h4 id="Stratis_Bitcoin_Base_ChainState_IsMarkedInvalid_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Base.ChainState.IsMarkedInvalid(NBitcoin.uint256)">IsMarkedInvalid(uint256)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if a block is marked as invalid.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -226,7 +227,8 @@ these components to share that data without creating extra dependencies.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">hashBlock</span></td>
-        <td></td>
+        <td><p>The block hash to check.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -241,7 +243,8 @@ these components to share that data without creating extra dependencies.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if the block is marked as invalid.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -254,7 +257,8 @@ these components to share that data without creating extra dependencies.</p>
   </span>
   <a id="Stratis_Bitcoin_Base_ChainState_MarkBlockInvalid_" data-uid="Stratis.Bitcoin.Base.ChainState.MarkBlockInvalid*"></a>
   <h4 id="Stratis_Bitcoin_Base_ChainState_MarkBlockInvalid_NBitcoin_uint256_System_Nullable_DateTime__" data-uid="Stratis.Bitcoin.Base.ChainState.MarkBlockInvalid(NBitcoin.uint256,System.Nullable{DateTime})">MarkBlockInvalid(uint256, Nullable&lt;DateTime&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Marks a block as invalid. This is used to prevent DOS attacks as the next time the block is seen, it is not processed again.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -273,12 +277,14 @@ these components to share that data without creating extra dependencies.</p>
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">hashBlock</span></td>
-        <td></td>
+        <td><p>The block hash to mark as invalid.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td><span class="parametername">rejectedUntil</span></td>
-        <td></td>
+        <td><p>Time in UTC after which the block is no longer considered as invalid, or <code>null</code> if the block is to be considered invalid forever.</p>
+</td>
       </tr>
     </tbody>
   </table>

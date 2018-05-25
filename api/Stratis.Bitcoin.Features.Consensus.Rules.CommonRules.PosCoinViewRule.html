@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -124,7 +124,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_CheckBlockReward_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.CheckBlockReward*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_CheckBlockReward_Stratis_Bitcoin_Features_Consensus_RuleContext_NBitcoin_Money_System_Int32_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.CheckBlockReward(Stratis.Bitcoin.Features.Consensus.RuleContext,NBitcoin.Money,System.Int32,NBitcoin.Block)">CheckBlockReward(RuleContext, Money, Int32, Block)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that block has correct coinbase transaction with appropriate reward and fees summ.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -143,22 +144,26 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.RuleContext.html">RuleContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>Context that contains variety of information regarding blocks validation and execution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
         <td><span class="parametername">fees</span></td>
-        <td></td>
+        <td><p>Total amount of fees from transactions that are included in that block.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">height</span></td>
-        <td></td>
+        <td><p>Block's height.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
         <td><span class="parametername">block</span></td>
-        <td></td>
+        <td><p>Block for which reward amount is checked.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -173,7 +178,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_CheckMaturity_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.CheckMaturity*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_CheckMaturity_Stratis_Bitcoin_Utilities_UnspentOutputs_System_Int32_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.CheckMaturity(Stratis.Bitcoin.Utilities.UnspentOutputs,System.Int32)">CheckMaturity(UnspentOutputs, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks the maturity of UTXOs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -192,12 +198,14 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Utilities.UnspentOutputs.html">UnspentOutputs</a></td>
         <td><span class="parametername">coins</span></td>
-        <td></td>
+        <td><p>UTXOs to check the maturity of.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">spendHeight</span></td>
-        <td></td>
+        <td><p>Height at which coins are attempted to be spent.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -262,7 +270,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_GetProofOfWorkReward_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.GetProofOfWorkReward*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_GetProofOfWorkReward_System_Int32_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.GetProofOfWorkReward(System.Int32)">GetProofOfWorkReward(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the proof of work reward amount for the block at provided height.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -281,7 +290,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">height</span></td>
-        <td></td>
+        <td><p>Height of the block that we're calculating the reward for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -296,7 +306,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
-        <td></td>
+        <td><p>Reward amount.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -311,7 +322,10 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_Initialize_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.Initialize*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_Initialize" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.Initialize">Initialize()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Allow a rule to initialize itself.
+The rule can verify that other rules are present using the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.IConsensusRules.html#Stratis_Bitcoin_Features_Consensus_Rules_IConsensusRules_Rules">Rules</a>.
+The rule can internally initialize its state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -328,7 +342,9 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_RunAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.RunAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_RunAsync_Stratis_Bitcoin_Features_Consensus_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.RunAsync(Stratis.Bitcoin.Features.Consensus.RuleContext)">RunAsync(RuleContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Execute the logic in the current rule.
+If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ConsensusErrorException.html">ConsensusErrorException</a> will throw.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -347,7 +363,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.RuleContext.html">RuleContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The context that has all info that needs to be validated.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -362,7 +379,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td></td>
+        <td><p>The execution task.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -377,7 +395,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_UpdateCoinView_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.UpdateCoinView*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinViewRule_UpdateCoinView_Stratis_Bitcoin_Features_Consensus_RuleContext_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinViewRule.UpdateCoinView(Stratis.Bitcoin.Features.Consensus.RuleContext,NBitcoin.Transaction)">UpdateCoinView(RuleContext, Transaction)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates context's UTXO set.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -396,12 +415,14 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.RuleContext.html">RuleContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>Context that contains variety of information regarding blocks validation and execution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
         <td><span class="parametername">transaction</span></td>
-        <td></td>
+        <td><p>Transaction which outputs will be added to the context's <a class="xref" href="Stratis.Bitcoin.Features.Consensus.UnspentOutputSet.html">UnspentOutputSet</a> and which inputs will be removed from it.</p>
+</td>
       </tr>
     </tbody>
   </table>

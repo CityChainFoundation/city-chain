@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -156,7 +156,8 @@ to make the task run only once. Running the task for other than one or infinite 
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncLoop_Name_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.Name*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncLoop_Name" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Name of the loop. It is used for logging.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -186,7 +187,8 @@ to make the task run only once. Running the task for other than one or infinite 
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncLoop_RepeatEvery_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.RepeatEvery*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncLoop_RepeatEvery" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.RepeatEvery">RepeatEvery</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interval between each execution of the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -216,7 +218,8 @@ to make the task run only once. Running the task for other than one or infinite 
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncLoop_RunningTask_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.RunningTask*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncLoop_RunningTask" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.RunningTask">RunningTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The task representing the loop being executed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -264,7 +267,8 @@ to make the task run only once. Running the task for other than one or infinite 
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncLoop_Run_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.Run*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncLoop_Run_CancellationToken_System_Nullable_TimeSpan__System_Nullable_TimeSpan__" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.Run(CancellationToken,System.Nullable{TimeSpan},System.Nullable{TimeSpan})">Run(CancellationToken, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts an application defined task inside the async loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -283,17 +287,22 @@ to make the task run only once. Running the task for other than one or infinite 
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellation</span></td>
-        <td></td>
+        <td><p>Cancellation token that triggers when the task and the loop should be cancelled.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">repeatEvery</span></td>
-        <td></td>
+        <td><p>Interval between each execution of the task.
+If this is <a class="xref" href="Stratis.Bitcoin.Utilities.TimeSpans.html#Stratis_Bitcoin_Utilities_TimeSpans_RunOnce">RunOnce</a>, the task is only run once and there is no loop.
+If this is null, the task is repeated every 1 second by default.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">startAfter</span></td>
-        <td></td>
+        <td><p>Delay before the first run of the task, or null if no startup delay is required.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -321,7 +330,8 @@ to make the task run only once. Running the task for other than one or infinite 
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncLoop_Run_" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.Run*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncLoop_Run_System_Nullable_TimeSpan__System_Nullable_TimeSpan__" data-uid="Stratis.Bitcoin.Utilities.AsyncLoop.Run(System.Nullable{TimeSpan},System.Nullable{TimeSpan})">Run(Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts an application defined task inside the async loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -340,12 +350,16 @@ to make the task run only once. Running the task for other than one or infinite 
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">repeatEvery</span></td>
-        <td></td>
+        <td><p>Interval between each execution of the task.
+If this is <a class="xref" href="Stratis.Bitcoin.Utilities.TimeSpans.html#Stratis_Bitcoin_Utilities_TimeSpans_RunOnce">RunOnce</a>, the task is only run once and there is no loop.
+If this is null, the task is repeated every 1 second by default.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">startAfter</span></td>
-        <td></td>
+        <td><p>Delay before the first run of the task, or null if no startup delay is required.</p>
+</td>
       </tr>
     </tbody>
   </table>

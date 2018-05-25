@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -315,7 +315,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessBlock_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessBlock*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessBlock_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessBlock(NBitcoin.Block)">ProcessBlock(Block)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Processes a new block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -347,7 +348,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessTransaction_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessTransaction_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessTransaction(NBitcoin.Transaction)">ProcessTransaction(Transaction)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Processes a new transaction which is in a pending state (not included in a block).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -379,7 +381,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Start_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Start*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Start" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Start">Start()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts the walletSyncManager.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -394,7 +397,12 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Stop_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Stop*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Stop" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Stop">Stop()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Stops the walletSyncManager.</p>
+<p>
+We need to call <a class="xref" href="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletSyncManager.html#Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletSyncManager_Stop">Stop()</a> explicitly to check that the internal async loop isn&apos;t still running
+and subsequentlly dispose of it properly.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,7 +417,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromDate_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromDate*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromDate_DateTime_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromDate(DateTime)">SyncFromDate(DateTime)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Synchronize the wallet starting from the date passed as a parameter.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -428,7 +437,8 @@
       <tr>
         <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">date</span></td>
-        <td></td>
+        <td><p>The date from which to start the sync process.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -441,7 +451,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromHeight_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromHeight*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromHeight_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromHeight(System.Int32)">SyncFromHeight(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Synchronize the wallet starting from the height passed as a parameter.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -460,7 +471,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">height</span></td>
-        <td></td>
+        <td><p>The height from which to start the sync process.</p>
+</td>
       </tr>
     </tbody>
   </table>

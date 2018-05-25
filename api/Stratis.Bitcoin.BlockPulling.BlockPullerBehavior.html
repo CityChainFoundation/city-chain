@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,8 @@
   
   <h1 id="Stratis_Bitcoin_BlockPulling_BlockPullerBehavior" data-uid="Stratis.Bitcoin.BlockPulling.BlockPullerBehavior" class="text-break">Class BlockPullerBehavior
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Relation of the node's puller to a network peer node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -291,7 +292,9 @@ It is used during component shutdown.</p>
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_BlockPullerBehavior_QualityScore_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPullerBehavior.QualityScore*"></a>
   <h4 id="Stratis_Bitcoin_BlockPulling_BlockPullerBehavior_QualityScore" data-uid="Stratis.Bitcoin.BlockPulling.BlockPullerBehavior.QualityScore">QualityScore</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluation of the past experience with this node.
+The higher the score, the better experience we have had with it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -315,6 +318,11 @@ It is used during component shutdown.</p>
   <h5 id="Stratis_Bitcoin_BlockPulling_BlockPullerBehavior_QualityScore_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Write access to this object has to be protected by <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPullerBehavior.qualityScoreLock</span>.</p>
 </div>
+  <h5 id="Stratis_Bitcoin_BlockPulling_BlockPullerBehavior_QualityScore_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Stratis.Bitcoin.BlockPulling.QualityScore.html#Stratis_Bitcoin_BlockPulling_QualityScore_MaxScore">MaxScore</a></div>
+      <div><a class="xref" href="Stratis.Bitcoin.BlockPulling.QualityScore.html#Stratis_Bitcoin_BlockPulling_QualityScore_MinScore">MinScore</a></div>
+  </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">

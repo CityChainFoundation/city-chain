@@ -12,7 +12,7 @@
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,12 @@
   
   <h1 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer" class="text-break">Class NetworkPeer
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a counterparty of the node on the network. This is usually another node, but it can be
+a wallet, an analytical robot, or any other network client or server that understands the protocol.</p>
+<p>The network peer is connected either inbound, if it was the counterparty that established 
+the connection to our node&apos;s listener, or outbound, if our node was the one connecting to a remote server.
+</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -267,7 +272,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Behaviors_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Behaviors*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Behaviors" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Behaviors">Behaviors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>List of node's modules attached to the peer to receive notifications about various events related to the peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -297,7 +303,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Connection_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Connection*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Connection" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Connection">Connection</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Component representing the network connection to the peer that is responsible for sending and receiving messages.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -327,7 +334,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_ConnectionParameters_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.ConnectionParameters*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_ConnectionParameters" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.ConnectionParameters">ConnectionParameters</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Various settings and requirements related to how the connections with peers are going to be established.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -357,7 +365,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Counter_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Counter*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Counter" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Counter">Counter</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Statistics about the number of bytes transferred from and to the peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -387,7 +396,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_DisconnectReason_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.DisconnectReason*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_DisconnectReason" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.DisconnectReason">DisconnectReason</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>When a peer is disconnected this is set to human readable information about why it happened.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -417,7 +427,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Inbound_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Inbound*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Inbound" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Inbound">Inbound</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><code>true</code> if the peer connected to the node, <code>false</code> if the node connected to the peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -447,7 +458,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_IsConnected_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.IsConnected*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_IsConnected" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.IsConnected">IsConnected</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><code>true</code> if the connection to the peer is considered active, <code>false</code> otherwise, including any case of error.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -477,7 +489,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_MessageProducer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.MessageProducer*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_MessageProducer" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.MessageProducer">MessageProducer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Queue of the connections' incoming messages distributed to message consumers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -507,7 +520,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_MessageReceived_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.MessageReceived*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_MessageReceived" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.MessageReceived">MessageReceived</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event that is triggered when a new message is received from a network peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -528,6 +542,9 @@ have the same functionality and the disconnecting method is provided only for be
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_MessageReceived_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not dispose the peer from this callback.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_MyVersion.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.MyVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -537,7 +554,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_MyVersion_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.MyVersion*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_MyVersion" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.MyVersion">MyVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Node's version message payload that is sent to the peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -567,7 +585,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Network_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Network*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Network" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Network">Network</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specification of the network the node runs on - regtest/testnet/mainnet.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -597,7 +616,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_PeerEndPoint_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.PeerEndPoint*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_PeerEndPoint" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.PeerEndPoint">PeerEndPoint</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>IP address and port on the side of the peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -627,7 +647,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_PeerVersion_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.PeerVersion*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_PeerVersion" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.PeerVersion">PeerVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Version message payload received from the peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -657,7 +678,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RemoteSocketAddress_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RemoteSocketAddress*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RemoteSocketAddress" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RemoteSocketAddress">RemoteSocketAddress</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>IP address part of <a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html#Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketEndpoint">RemoteSocketEndpoint</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -687,7 +709,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RemoteSocketEndpoint_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RemoteSocketEndpoint*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RemoteSocketEndpoint" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RemoteSocketEndpoint">RemoteSocketEndpoint</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>IP address and port of the connected peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -717,7 +740,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RemoteSocketPort_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RemoteSocketPort*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RemoteSocketPort" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RemoteSocketPort">RemoteSocketPort</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Port part of <a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html#Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketEndpoint">RemoteSocketEndpoint</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -747,7 +771,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_State_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.State*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_State" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.State">State</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>State of the network connection to the peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -777,7 +802,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_StateChanged_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.StateChanged*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_StateChanged" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.StateChanged">StateChanged</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event that is triggered when the peer's network state is changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -798,6 +824,9 @@ have the same functionality and the disconnecting method is provided only for be
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_StateChanged_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not dispose the peer from this callback.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_SupportedTransactionOptions.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.SupportedTransactionOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -807,7 +836,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_SupportedTransactionOptions_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.SupportedTransactionOptions*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_SupportedTransactionOptions" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.SupportedTransactionOptions">SupportedTransactionOptions</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Transaction options supported by the peer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -837,7 +867,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_TimeOffset_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.TimeOffset*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_TimeOffset" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.TimeOffset">TimeOffset</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Difference between the local clock and the clock that peer claims, or <code>null</code> if this information has not been initialized yet.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -867,7 +898,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Version_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Version*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Version" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Version">Version</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The negotiated protocol version (minimum of supported version between <a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html#Stratis_Bitcoin_P2P_Peer_INetworkPeer_MyVersion">MyVersion</a> and the <a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html#Stratis_Bitcoin_P2P_Peer_INetworkPeer_PeerVersion">PeerVersion</a>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -899,7 +931,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_AddSupportedOptions_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.AddSupportedOptions*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_AddSupportedOptions_Stratis_Bitcoin_P2P_Protocol_InventoryType_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.AddSupportedOptions(Stratis.Bitcoin.P2P.Protocol.InventoryType)">AddSupportedOptions(InventoryType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Add supported option to the inventory type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -918,7 +951,8 @@ have the same functionality and the disconnecting method is provided only for be
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.InventoryType.html">InventoryType</a></td>
         <td><span class="parametername">inventoryType</span></td>
-        <td></td>
+        <td><p>Inventory type to extend.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -933,7 +967,8 @@ have the same functionality and the disconnecting method is provided only for be
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.InventoryType.html">InventoryType</a></td>
-        <td></td>
+        <td><p>Inventory type possibly extended with new options.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -946,12 +981,12 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Behavior_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Behavior*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Behavior__1" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Behavior``1">Behavior&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Finds all behaviors of a specific behavior type among the peer's behaviors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public T Behavior&lt;T&gt;()
-
     where T : NetworkPeerBehavior</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -965,7 +1000,8 @@ have the same functionality and the disconnecting method is provided only for be
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>Collection of behaviors of specific type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -980,7 +1016,8 @@ have the same functionality and the disconnecting method is provided only for be
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>Type of the behavior to find.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -993,7 +1030,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_ConnectAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.ConnectAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_ConnectAsync_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.ConnectAsync(CancellationToken)">ConnectAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Connects the node to an outbound peer using already initialized information about the peer and starts receiving messages in a separate task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1012,7 +1050,8 @@ have the same functionality and the disconnecting method is provided only for be
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellation</span></td>
-        <td></td>
+        <td><p>Cancellation that allows aborting establishing the connection with the peer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1040,7 +1079,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Disconnect_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Disconnect*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Disconnect_System_String_Exception_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Disconnect(System.String,Exception)">Disconnect(String, Exception)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Disconnects the peer and cleans up.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1059,12 +1099,14 @@ have the same functionality and the disconnecting method is provided only for be
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">reason</span></td>
-        <td></td>
+        <td><p>Human readable reason for disconnecting.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Exception</span></td>
         <td><span class="parametername">exception</span></td>
-        <td></td>
+        <td><p>Exception because of which the disconnection happened, or <code>null</code> if there were no exception.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1092,7 +1134,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RespondToHandShakeAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RespondToHandShakeAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RespondToHandShakeAsync_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RespondToHandShakeAsync(CancellationToken)">RespondToHandShakeAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sends &quot;version&quot; message to the peer and waits for the response in form of &quot;verack&quot; or &quot;reject&quot; message.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1111,7 +1154,8 @@ have the same functionality and the disconnecting method is provided only for be
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Cancellation that allows aborting the operation at any stage.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1130,6 +1174,22 @@ have the same functionality and the disconnecting method is provided only for be
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolException.html">ProtocolException</a></td>
+        <td><p>Thrown when the peer rejected our &quot;version&quot; message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_SendMessageAsync_Stratis_Bitcoin_P2P_Protocol_Payloads_Payload_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.SendMessageAsync(Stratis.Bitcoin.P2P.Protocol.Payloads.Payload%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1139,7 +1199,8 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_SendMessageAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.SendMessageAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_SendMessageAsync_Stratis_Bitcoin_P2P_Protocol_Payloads_Payload_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.SendMessageAsync(Stratis.Bitcoin.P2P.Protocol.Payloads.Payload,CancellationToken)">SendMessageAsync(Payload, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Send a message to the peer asynchronously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1158,12 +1219,14 @@ have the same functionality and the disconnecting method is provided only for be
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.Payload.html">Payload</a></td>
         <td><span class="parametername">payload</span></td>
-        <td></td>
+        <td><p>The payload to send.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellation</span></td>
-        <td></td>
+        <td><p>Cancellation token that allows aborting the sending operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1191,7 +1254,10 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync(CancellationToken)">VersionHandshakeAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Exchanges &quot;version&quot; and &quot;verack&quot; messages with the peer.</p>
+<p>Both parties have to send their &quot;version&quot; messages to the other party 
+as well as to acknowledge that they are happy with the other party&apos;s &quot;version&quot; information.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1210,7 +1276,8 @@ have the same functionality and the disconnecting method is provided only for be
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Cancellation that allows aborting the operation at any stage.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1229,6 +1296,22 @@ have the same functionality and the disconnecting method is provided only for be
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolException.html">ProtocolException</a></td>
+        <td><p>Thrown when the peer rejected our &quot;version&quot; message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_Stratis_Bitcoin_P2P_Peer_NetworkPeerRequirement_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync(Stratis.Bitcoin.P2P.Peer.NetworkPeerRequirement%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1238,7 +1321,10 @@ have the same functionality and the disconnecting method is provided only for be
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_Stratis_Bitcoin_P2P_Peer_NetworkPeerRequirement_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync(Stratis.Bitcoin.P2P.Peer.NetworkPeerRequirement,CancellationToken)">VersionHandshakeAsync(NetworkPeerRequirement, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Exchanges &quot;version&quot; and &quot;verack&quot; messages with the peer.</p>
+<p>Both parties have to send their &quot;version&quot; messages to the other party 
+as well as to acknowledge that they are happy with the other party&apos;s &quot;version&quot; information.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1257,12 +1343,14 @@ have the same functionality and the disconnecting method is provided only for be
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerRequirement.html">NetworkPeerRequirement</a></td>
         <td><span class="parametername">requirements</span></td>
-        <td></td>
+        <td><p>Protocol requirement for network peers the node wants to be connected to.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Cancellation that allows aborting the operation at any stage.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1278,6 +1366,22 @@ have the same functionality and the disconnecting method is provided only for be
       <tr>
         <td><span class="xref">Task</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolException.html">ProtocolException</a></td>
+        <td><p>Thrown when the peer rejected our &quot;version&quot; message.</p>
+</td>
       </tr>
     </tbody>
   </table>
