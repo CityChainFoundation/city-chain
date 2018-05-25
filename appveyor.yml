@@ -5,7 +5,7 @@
 
 version: 1.4.0.{build}
 pull_requests:
-  do_not_increment_build_number: true
+  do_not_increment_build_number: false
 skip_tags: true
 
 # branches to build 
@@ -25,6 +25,8 @@ environment:
 #---------------------------------#
 
 image: Visual Studio 2017
+
+clone_depth: 1
 clone_folder: c:\projects\fullnode
 
 install:
@@ -44,62 +46,62 @@ init:
 #---------------------------------#
 #       build configuration       #
 #---------------------------------#
-build_script:
-- ps: |
-      cd src
-      Write-Host "[$env:configuration] STARTED dotnet build" -foregroundcolor "magenta"
-      dotnet build -c $env:configuration -v m 
-      Write-Host "[$env:configuration] FINISHED dotnet build" -foregroundcolor "magenta"
-      if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
+# build_script:
+# - ps: |
+#       cd src
+#       Write-Host "[$env:configuration] STARTED dotnet build" -foregroundcolor "magenta"
+#       dotnet build -c $env:configuration -v m 
+#       Write-Host "[$env:configuration] FINISHED dotnet build" -foregroundcolor "magenta"
+#       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
 
 # scripts to run after build
-after_build:
-- ps: |
-      if($env:configuration -eq 'Release')
-      {
-        Write-Host "[$env:configuration] STARTED dotnet pack" -foregroundcolor "magenta"
+# after_build:
+# - ps: |
+#       if($env:configuration -eq 'Release')
+#       {
+#         Write-Host "[$env:configuration] STARTED dotnet pack" -foregroundcolor "magenta"
         
-        cd Stratis.Bitcoin
-        dotnet pack -c $env:configuration -v m --no-build -o $env:APPVEYOR_BUILD_FOLDER\nuget\
+#         cd Stratis.Bitcoin
+#         dotnet pack -c $env:configuration -v m --no-build -o $env:APPVEYOR_BUILD_FOLDER\nuget\
         
-        cd ../Stratis.Bitcoin.Api
-        dotnet pack -c $env:configuration -v m --no-build -o $env:APPVEYOR_BUILD_FOLDER\nuget\
+#         cd ../Stratis.Bitcoin.Api
+#         dotnet pack -c $env:configuration -v m --no-build -o $env:APPVEYOR_BUILD_FOLDER\nuget\
 
-        cd ../Stratis.Bitcoin.Features.LightWallet
-        dotnet pack -c $env:configuration -v m --no-build -o $env:APPVEYOR_BUILD_FOLDER\nuget\
+#         cd ../Stratis.Bitcoin.Features.LightWallet
+#         dotnet pack -c $env:configuration -v m --no-build -o $env:APPVEYOR_BUILD_FOLDER\nuget\
         
-        Write-Host "[$env:configuration] FINISHED dotnet pack" -foregroundcolor "magenta"
-      }
+#         Write-Host "[$env:configuration] FINISHED dotnet pack" -foregroundcolor "magenta"
+#       }
 
-      if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
+#       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
     
-test_script:
-- ps: |
-      Write-Host "[$env:configuration] STARTED dotnet test" -foregroundcolor "magenta"
-      cd $env:APPVEYOR_BUILD_FOLDER/src
+# test_script:
+# - ps: |
+#       Write-Host "[$env:configuration] STARTED dotnet test" -foregroundcolor "magenta"
+#       cd $env:APPVEYOR_BUILD_FOLDER/src
       
-      $anyFailures = $FALSE;
+#       $anyFailures = $FALSE;
       
-      foreach ($testFolder in ls *.Tests) {
+#       foreach ($testFolder in ls *.Tests) {
 
-            # exclude integration tests
-            if ($testFolder -like '*Integration.Tests*' -Or $testFolder -like '*IntegrationTests*' -Or $testFolder -like '*NBitcoin.Tests*') { continue }
+#             # exclude integration tests
+#             if ($testFolder -like '*Integration.Tests*' -Or $testFolder -like '*IntegrationTests*' -Or $testFolder -like '*NBitcoin.Tests*') { continue }
             
-            Push-Location $testFolder
+#             Push-Location $testFolder
 
-            Write-Host "[$env:configuration] Running tests in $testFolder" -foregroundcolor "magenta"
-            dotnet test -c $env:configuration --no-build
+#             Write-Host "[$env:configuration] Running tests in $testFolder" -foregroundcolor "magenta"
+#             dotnet test -c $env:configuration --no-build
             
-            if ($LastExitCode -ne 0) { 
-                $anyFailures = $TRUE
-                Add-AppveyorMessage -Message "Some tests failed in $testFolder."
-            }
+#             if ($LastExitCode -ne 0) { 
+#                 $anyFailures = $TRUE
+#                 Add-AppveyorMessage -Message "Some tests failed in $testFolder."
+#             }
     
-            Pop-Location
-      }  
+#             Pop-Location
+#       }  
 
-      Write-Host "[$env:configuration] FINISHED dotnet test" -foregroundcolor "magenta"
-      if ($anyFailures -eq $TRUE) { $host.SetShouldExit(1) }
+#       Write-Host "[$env:configuration] FINISHED dotnet test" -foregroundcolor "magenta"
+#       if ($anyFailures -eq $TRUE) { $host.SetShouldExit(1) }
 
 #---------------------------------#
 #      artifacts configuration    #
@@ -115,7 +117,7 @@ deploy_script:
 - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
 - git config --global user.email %github_email%
 - git config --global user.name "sondreb"
-- sh: ./release-doc.sh
+- bash releaseDocs.sh
 
 on_success:
   - ps: Invoke-RestMethod https://raw.githubusercontent.com/k3rn31p4nic/appveyor-discord-webhook/master/send.ps1 -o send.ps1
