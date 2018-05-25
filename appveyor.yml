@@ -8,12 +8,17 @@ pull_requests:
   do_not_increment_build_number: true
 skip_tags: true
 
-
 # branches to build 
 branches:
   # whitelist
   only:
     - master
+
+environment:
+  github_access_token:
+    secure: 5jC9tX1KFkTKayJB2ifWK1hru/gDPcEn/pyws8824r8GVVrV9sriQ3xJ1BG5dYRN
+  github_email:
+    secure: G83oRB/p3ii9we5e5CI7eZV17+GMbAJL2wbZ3pZGpTk=
 
 #---------------------------------#
 #    environment configuration    #
@@ -21,6 +26,9 @@ branches:
 
 image: Visual Studio 2017
 clone_folder: c:\projects\fullnode
+
+install:
+  - cinst docfx
 
 configuration:
 - Debug
@@ -101,3 +109,10 @@ test_script:
 artifacts:
 - path: nuget\*.nupkg
   name: nuget packages
+
+deploy_script:
+- git config --global credential.helper store
+- ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
+- git config --global user.email %github_email%
+- git config --global user.name "sondreb"
+- bash release-doc.sh
