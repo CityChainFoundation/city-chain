@@ -32,7 +32,7 @@ install:
 
 configuration:
 - Debug
-- Release
+#- Release
 
 # build cache to preserve files/folders between builds
 cache:
@@ -106,9 +106,9 @@ test_script:
 #---------------------------------#
 
 # pushing all files in build directory recursively
-artifacts:
-- path: nuget\*.nupkg
-  name: nuget packages
+#artifacts:
+#- path: nuget\*.nupkg
+#  name: nuget packages
 
 deploy_script:
 - git config --global credential.helper store
