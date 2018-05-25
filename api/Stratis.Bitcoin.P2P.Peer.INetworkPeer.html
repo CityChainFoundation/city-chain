@@ -1,0 +1,1240 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface INetworkPeer
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface INetworkPeer
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer">
+  
+  
+  <h1 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer" class="text-break">Interface INetworkPeer
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a counterparty of the node on the network. This is usually another node, but it can be
+a wallet, an analytical robot, or any other network client or server that understands the protocol.</p>
+<p>The network peer is connected either inbound, if it was the counterparty that established 
+the connection to our node&apos;s listener, or outbound, if our node was the one connecting to a remote server.
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.P2P.Peer.html">Stratis.Bitcoin.P2P.Peer</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
+  <h5 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface INetworkPeer : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_Behaviors.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.Behaviors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L39">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Behaviors_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Behaviors*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Behaviors" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Behaviors">Behaviors</h4>
+  <div class="markdown level1 summary"><p>List of node's modules attached to the peer to receive notifications about various events related to the peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NetworkPeerBehaviorsCollection Behaviors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehaviorsCollection.html">NetworkPeerBehaviorsCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_Connection.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.Connection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L48">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Connection_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Connection*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Connection" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Connection">Connection</h4>
+  <div class="markdown level1 summary"><p>Component representing the network connection to the peer that is responsible for sending and receiving messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NetworkPeerConnection Connection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerConnection.html">NetworkPeerConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_ConnectionParameters.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.ConnectionParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L85">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_ConnectionParameters_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.ConnectionParameters*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_ConnectionParameters" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.ConnectionParameters">ConnectionParameters</h4>
+  <div class="markdown level1 summary"><p>Various settings and requirements related to how the connections with peers are going to be established.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NetworkPeerConnectionParameters ConnectionParameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters.html">NetworkPeerConnectionParameters</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_Counter.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.Counter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L51">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Counter_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Counter*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Counter" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Counter">Counter</h4>
+  <div class="markdown level1 summary"><p>Statistics about the number of bytes transferred from and to the peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PerformanceCounter Counter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.PerformanceCounter.html">PerformanceCounter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_DisconnectReason.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.DisconnectReason%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L71">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_DisconnectReason_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.DisconnectReason*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_DisconnectReason" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.DisconnectReason">DisconnectReason</h4>
+  <div class="markdown level1 summary"><p>When a peer is disconnected this is set to human readable information about why it happened.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NetworkPeerDisconnectReason DisconnectReason { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisconnectReason.html">NetworkPeerDisconnectReason</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_Inbound.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.Inbound%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L36">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Inbound_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Inbound*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Inbound" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Inbound">Inbound</h4>
+  <div class="markdown level1 summary"><p><code>true</code> if the peer connected to the node, <code>false</code> if the node connected to the peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Inbound { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_IsConnected.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.IsConnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L59">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_IsConnected_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.IsConnected*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_IsConnected" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.IsConnected">IsConnected</h4>
+  <div class="markdown level1 summary"><p><code>true</code> if the connection to the peer is considered active, <code>false</code> otherwise, including any case of error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsConnected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_MessageProducer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.MessageProducer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L88">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_MessageProducer_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.MessageProducer*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_MessageProducer" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.MessageProducer">MessageProducer</h4>
+  <div class="markdown level1 summary"><p>Queue of the connections' incoming messages distributed to message consumers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MessageProducer&lt;IncomingMessage&gt; MessageProducer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.MessageProducer-1.html">MessageProducer</a>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Protocol.IncomingMessage.html">IncomingMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_MessageReceived.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.MessageReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L82">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_MessageReceived_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.MessageReceived*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_MessageReceived" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.MessageReceived">MessageReceived</h4>
+  <div class="markdown level1 summary"><p>Event that is triggered when a new message is received from a network peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AsyncExecutionEvent&lt;INetworkPeer, IncomingMessage&gt; MessageReceived { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncExecutionEvent-2.html">AsyncExecutionEvent</a>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a>, <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.IncomingMessage.html">IncomingMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_MessageReceived_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not dispose the peer from this callback.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_MyVersion.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.MyVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L62">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_MyVersion_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.MyVersion*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_MyVersion" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.MyVersion">MyVersion</h4>
+  <div class="markdown level1 summary"><p>Node's version message payload that is sent to the peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VersionPayload MyVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.VersionPayload.html">VersionPayload</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_Network.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L74">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Network_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Network*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Network" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Network">Network</h4>
+  <div class="markdown level1 summary"><p>Specification of the network the node runs on - regtest/testnet/mainnet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Network Network { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_PeerEndPoint.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.PeerEndPoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L42">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_PeerEndPoint_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.PeerEndPoint*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_PeerEndPoint" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.PeerEndPoint">PeerEndPoint</h4>
+  <div class="markdown level1 summary"><p>IP address and port on the side of the peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPEndPoint PeerEndPoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_PeerVersion.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.PeerVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L65">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_PeerVersion_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.PeerVersion*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_PeerVersion" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.PeerVersion">PeerVersion</h4>
+  <div class="markdown level1 summary"><p>Version message payload received from the peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VersionPayload PeerVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.VersionPayload.html">VersionPayload</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketAddress.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.RemoteSocketAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L30">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketAddress_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.RemoteSocketAddress*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketAddress" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.RemoteSocketAddress">RemoteSocketAddress</h4>
+  <div class="markdown level1 summary"><p>IP address part of <a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html#Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketEndpoint">RemoteSocketEndpoint</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPAddress RemoteSocketAddress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketEndpoint.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.RemoteSocketEndpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L27">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketEndpoint_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.RemoteSocketEndpoint*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketEndpoint" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.RemoteSocketEndpoint">RemoteSocketEndpoint</h4>
+  <div class="markdown level1 summary"><p>IP address and port of the connected peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPEndPoint RemoteSocketEndpoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketPort.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.RemoteSocketPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L33">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketPort_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.RemoteSocketPort*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketPort" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.RemoteSocketPort">RemoteSocketPort</h4>
+  <div class="markdown level1 summary"><p>Port part of <a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html#Stratis_Bitcoin_P2P_Peer_INetworkPeer_RemoteSocketEndpoint">RemoteSocketEndpoint</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int RemoteSocketPort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_State.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L24">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_State_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.State*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_State" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.State">State</h4>
+  <div class="markdown level1 summary"><p>State of the network connection to the peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NetworkPeerState State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerState.html">NetworkPeerState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_StateChanged.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.StateChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L78">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_StateChanged_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.StateChanged*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_StateChanged" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.StateChanged">StateChanged</h4>
+  <div class="markdown level1 summary"><p>Event that is triggered when the peer's network state is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AsyncExecutionEvent&lt;INetworkPeer, NetworkPeerState&gt; StateChanged { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncExecutionEvent-2.html">AsyncExecutionEvent</a>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a>, <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerState.html">NetworkPeerState</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_StateChanged_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not dispose the peer from this callback.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_SupportedTransactionOptions.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.SupportedTransactionOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L68">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_SupportedTransactionOptions_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.SupportedTransactionOptions*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_SupportedTransactionOptions" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.SupportedTransactionOptions">SupportedTransactionOptions</h4>
+  <div class="markdown level1 summary"><p>Transaction options supported by the peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TransactionOptions SupportedTransactionOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.TransactionOptions.html">TransactionOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_TimeOffset.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.TimeOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L45">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_TimeOffset_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.TimeOffset*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_TimeOffset" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.TimeOffset">TimeOffset</h4>
+  <div class="markdown level1 summary"><p>Difference between the local clock and the clock that peer claims, or <code>null</code> if this information has not been initialized yet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TimeSpan? TimeOffset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_Version.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L56">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Version_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Version*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Version" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Version">Version</h4>
+  <div class="markdown level1 summary"><p>The negotiated protocol version (minimum of supported version between <a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html#Stratis_Bitcoin_P2P_Peer_INetworkPeer_MyVersion">MyVersion</a> and the <a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html#Stratis_Bitcoin_P2P_Peer_INetworkPeer_PeerVersion">PeerVersion</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProtocolVersion Version { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_AddSupportedOptions_Stratis_Bitcoin_P2P_Protocol_InventoryType_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.AddSupportedOptions(Stratis.Bitcoin.P2P.Protocol.InventoryType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L146">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_AddSupportedOptions_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.AddSupportedOptions*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_AddSupportedOptions_Stratis_Bitcoin_P2P_Protocol_InventoryType_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.AddSupportedOptions(Stratis.Bitcoin.P2P.Protocol.InventoryType)">AddSupportedOptions(InventoryType)</h4>
+  <div class="markdown level1 summary"><p>Add supported option to the inventory type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InventoryType AddSupportedOptions(InventoryType inventoryType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.InventoryType.html">InventoryType</a></td>
+        <td><span class="parametername">inventoryType</span></td>
+        <td><p>Inventory type to extend.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.InventoryType.html">InventoryType</a></td>
+        <td><p>Inventory type possibly extended with new options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_Behavior__1.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.Behavior%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L153">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Behavior_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Behavior*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Behavior__1" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Behavior``1">Behavior&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Finds all behaviors of a specific behavior type among the peer's behaviors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T Behavior&lt;T&gt;()
+
+    where T : NetworkPeerBehavior</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Collection of behaviors of specific type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the behavior to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_ConnectAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.ConnectAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L95">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_ConnectAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.ConnectAsync*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_ConnectAsync_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.ConnectAsync(CancellationToken)">ConnectAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Connects the node to an outbound peer using already initialized information about the peer and starts receiving messages in a separate task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ConnectAsync(CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Cancellation that allows aborting establishing the connection with the peer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_Disconnect_System_String_Exception_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.Disconnect(System.String%2CException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L139">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Disconnect_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Disconnect*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_Disconnect_System_String_Exception_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.Disconnect(System.String,Exception)">Disconnect(String, Exception)</h4>
+  <div class="markdown level1 summary"><p>Disconnects the peer and cleans up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Disconnect(string reason, Exception exception = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Human readable reason for disconnecting.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Exception because of which the disconnection happened, or <code>null</code> if there were no exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_RespondToHandShakeAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.RespondToHandShakeAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L132">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_RespondToHandShakeAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.RespondToHandShakeAsync*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_RespondToHandShakeAsync_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.RespondToHandShakeAsync(CancellationToken)">RespondToHandShakeAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends &quot;version&quot; message to the peer and waits for the response in form of &quot;verack&quot; or &quot;reject&quot; message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task RespondToHandShakeAsync(CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation that allows aborting the operation at any stage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolException.html">ProtocolException</a></td>
+        <td><p>Thrown when the peer rejected our &quot;version&quot; message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_SendMessageAsync_Stratis_Bitcoin_P2P_Protocol_Payloads_Payload_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.SendMessageAsync(Stratis.Bitcoin.P2P.Protocol.Payloads.Payload%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L103">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_SendMessageAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.SendMessageAsync*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_SendMessageAsync_Stratis_Bitcoin_P2P_Protocol_Payloads_Payload_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.SendMessageAsync(Stratis.Bitcoin.P2P.Protocol.Payloads.Payload,CancellationToken)">SendMessageAsync(Payload, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Send a message to the peer asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendMessageAsync(Payload payload, CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.Payload.html">Payload</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td><p>The payload to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Cancellation token that allows aborting the sending operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_VersionHandshakeAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.VersionHandshakeAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L113">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_VersionHandshakeAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.VersionHandshakeAsync*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_VersionHandshakeAsync_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.VersionHandshakeAsync(CancellationToken)">VersionHandshakeAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Exchanges &quot;version&quot; and &quot;verack&quot; messages with the peer.</p>
+<p>Both parties have to send their &quot;version&quot; messages to the other party 
+as well as to acknowledge that they are happy with the other party&apos;s &quot;version&quot; information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task VersionHandshakeAsync(CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation that allows aborting the operation at any stage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolException.html">ProtocolException</a></td>
+        <td><p>Thrown when the peer rejected our &quot;version&quot; message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer_VersionHandshakeAsync_Stratis_Bitcoin_P2P_Peer_NetworkPeerRequirement_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer.VersionHandshakeAsync(Stratis.Bitcoin.P2P.Peer.NetworkPeerRequirement%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L124">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_VersionHandshakeAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.VersionHandshakeAsync*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_INetworkPeer_VersionHandshakeAsync_Stratis_Bitcoin_P2P_Peer_NetworkPeerRequirement_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.INetworkPeer.VersionHandshakeAsync(Stratis.Bitcoin.P2P.Peer.NetworkPeerRequirement,CancellationToken)">VersionHandshakeAsync(NetworkPeerRequirement, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Exchanges &quot;version&quot; and &quot;verack&quot; messages with the peer.</p>
+<p>Both parties have to send their &quot;version&quot; messages to the other party 
+as well as to acknowledge that they are happy with the other party&apos;s &quot;version&quot; information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task VersionHandshakeAsync(NetworkPeerRequirement requirements, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerRequirement.html">NetworkPeerRequirement</a></td>
+        <td><span class="parametername">requirements</span></td>
+        <td><p>Protocol requirement for network peers the node wants to be connected to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation that allows aborting the operation at any stage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolException.html">ProtocolException</a></td>
+        <td><p>Thrown when the peer rejected our &quot;version&quot; message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_INetworkPeer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.INetworkPeer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/INetworkPeer.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

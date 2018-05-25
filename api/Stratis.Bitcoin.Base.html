@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Stratis.Bitcoin.Base
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Stratis.Bitcoin.Base
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Base">
+  
+  <h1 id="Stratis_Bitcoin_Base" data-uid="Stratis.Bitcoin.Base" class="text-break">Namespace Stratis.Bitcoin.Base
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.BaseFeature.html">BaseFeature</a></h4>
+      <section><p>Base node services, these are the services a node has to have.
+The ConnectionManager feature is also part of the base but may go in a feature of its own.
+The base features are the minimal components required to connect to peers and maintain the best chain.</p>
+<p>
+The base node services for a node are:
+<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.BestChainSelector.html">BestChainSelector</a></h4>
+      <section><p>Selects the best available chain based on tips provided by the peers and switches to it.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.ChainHeadersBehavior.html">ChainHeadersBehavior</a></h4>
+      <section><p>The Chain Behavior is responsible for keeping a ConcurrentChain up to date with the peer, it also responds to getheaders messages.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.ChainRepository.html">ChainRepository</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.ChainState.html">ChainState</a></h4>
+      <section><p>Chain state holds various information related to the status of the chain and its validation.
+The data are provided by different components and the chaine state is a mechanism that allows
+these components to share that data without creating extra dependencies.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.FullNodeBuilderBaseFeatureExtension.html">FullNodeBuilderBaseFeatureExtension</a></h4>
+      <section><p>A class providing extension methods for <a class="xref" href="Stratis.Bitcoin.Builder.IFullNodeBuilder.html">IFullNodeBuilder</a>.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.InvalidBlockHashStore.html">InvalidBlockHashStore</a></h4>
+      <section><p>In memory store of invalid block header hashes.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.TimeSyncBehavior.html">TimeSyncBehavior</a></h4>
+      <section><p>Node behavior that collects time offset samples from network &quot;version&quot; messages
+from each peer.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.TimeSyncBehaviorState.html">TimeSyncBehaviorState</a></h4>
+      <section><p>State of time synchronization feature that stores collected data samples
+and calculates adjustments to system time.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.TimeSyncBehaviorState.TimestampOffsetSample.html">TimeSyncBehaviorState.TimestampOffsetSample</a></h4>
+      <section><p>Description of a single timestamp offset sample from a peer.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.IChainRepository.html">IChainRepository</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.IChainState.html">IChainState</a></h4>
+      <section><p>Chain state holds various information related to the status of the chain and its validation.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.IInvalidBlockHashStore.html">IInvalidBlockHashStore</a></h4>
+      <section><p>Contract of a store of block header hashes that are considered invalid.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.ITimeSyncBehaviorState.html">ITimeSyncBehaviorState</a></h4>
+      <section><p>Methods related to network peers time synchronization feature.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

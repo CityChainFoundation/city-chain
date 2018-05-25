@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Stratis.Bitcoin.BlockPulling
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Stratis.Bitcoin.BlockPulling
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.BlockPulling">
+  
+  <h1 id="Stratis_Bitcoin_BlockPulling" data-uid="Stratis.Bitcoin.BlockPulling" class="text-break">Namespace Stratis.Bitcoin.BlockPulling
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.html">BlockPuller</a></h4>
+      <section><p>Base class for pullers that download blocks from peers.</p>
+<p>
+This must be inherited and the implementing class
+needs to handle taking blocks off the queue and stalling.
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock.html">BlockPuller.DownloadedBlock</a></h4>
+      <section><p>Description of a block together with its size.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPullerBehavior.html">BlockPullerBehavior</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.DownloadAssignment.html">DownloadAssignment</a></h4>
+      <section><p>Describes the assigned download tasks.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.html">LookaheadBlockPuller</a></h4>
+      <section><p>Puller that is used for fast sync during initial block download (IBD). It implements a strategy of downloading
+multiple blocks from multiple peers at once, so that IBD is fast enough, but does not consume too many resources.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.LookaheadResult.html">LookaheadResult</a></h4>
+      <section><p>A result from the <a class="xref" href="Stratis.Bitcoin.BlockPulling.ILookaheadBlockPuller.html">ILookaheadBlockPuller</a> containing the downloaded block and the <see cref="!:IPEndPoint"></see> of the peer that it came from.
+Block will be <code>null</code> if the current chain was reorganized.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.PullerDownloadAssignments.html">PullerDownloadAssignments</a></h4>
+      <section><p>Implements a strategy for a block puller that needs to download
+a set of blocks from its connected peers.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.PullerDownloadAssignments.PeerInformation.html">PullerDownloadAssignments.PeerInformation</a></h4>
+      <section><p>Information about a connected peer.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.QualityScore.html">QualityScore</a></h4>
+      <section><p>Implements logic of evaluation of quality of node network peers based on
+the recent past experience with them with respect to other node's network peers.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.StoreBlockPuller.html">StoreBlockPuller</a></h4>
+      <section><p>Puller that downloads blocks from peers.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.PeerSample.html">PeerSample</a></h4>
+      <section><p>Single historic sample item for quality score calculations.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.IBlockPuller.html">IBlockPuller</a></h4>
+      <section><p>Puller that download blocks from peers.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.IBlockPullerBehavior.html">IBlockPullerBehavior</a></h4>
+      <section><p>Relation of the node's puller to a network peer node.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.ILookaheadBlockPuller.html">ILookaheadBlockPuller</a></h4>
+      <section><p>Block puller used for fast sync during initial block download (IBD).</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

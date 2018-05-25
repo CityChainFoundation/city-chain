@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CachedCoinView
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CachedCoinView
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView" class="text-break">Class CachedCoinView
+  </h1>
+  <div class="markdown level0 summary"><p>Cache layer for coinview prevents too frequent updates of the data in the underlaying storage.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></div>
+    <div class="level2"><span class="xref">CachedCoinView</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.IBackedCoinView.html">IBackedCoinView</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_GetBlockHashAsync">CoinView.GetBlockHashAsync()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.html">Stratis.Bitcoin.Features.Consensus.CoinViews</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Consensus.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CachedCoinView : CoinView, IBackedCoinView, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Features_Consensus_StakeChainStore_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.%23ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.Features.Consensus.StakeChainStore)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L120">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView__ctor_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Features_Consensus_StakeChainStore_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.#ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.Features.Consensus.StakeChainStore)">CachedCoinView(DBreezeCoinView, IDateTimeProvider, ILoggerFactory, StakeChainStore)</h4>
+  <div class="markdown level1 summary"><p>Initializes instance of the object based on DBreeze based coinview.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CachedCoinView(DBreezeCoinView inner, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, StakeChainStore stakeChainStore = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.html">DBreezeCoinView</a></td>
+        <td><span class="parametername">inner</span></td>
+        <td><p>Underlaying coinview with database storage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td><p>Provider of time functions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>Factory to be used to create logger for the puller.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.StakeChainStore.html">StakeChainStore</a></td>
+        <td><span class="parametername">stakeChainStore</span></td>
+        <td><p>Storage of POS block information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Features_Consensus_StakeChainStore_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.%23ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.Features.Consensus.StakeChainStore)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L138">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView__ctor_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Features_Consensus_StakeChainStore_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.#ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.Features.Consensus.StakeChainStore)">CachedCoinView(InMemoryCoinView, IDateTimeProvider, ILoggerFactory, StakeChainStore)</h4>
+  <div class="markdown level1 summary"><p>Initializes instance of the object based on memory based coinview.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CachedCoinView(InMemoryCoinView inner, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, StakeChainStore stakeChainStore = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.html">InMemoryCoinView</a></td>
+        <td><span class="parametername">inner</span></td>
+        <td><p>Underlaying coinview with memory based storage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td><p>Provider of time functions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>Factory to be used to create logger for the puller.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.StakeChainStore.html">StakeChainStore</a></td>
+        <td><span class="parametername">stakeChainStore</span></td>
+        <td><p>Storage of POS block information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Features_Consensus_StakeChainStore__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is used for testing the coinview.
+It allows a coin view that only has in-memory entries.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheFlushTimeIntervalSeconds.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.CacheFlushTimeIntervalSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L62">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheFlushTimeIntervalSeconds" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.CacheFlushTimeIntervalSeconds">CacheFlushTimeIntervalSeconds</h4>
+  <div class="markdown level1 summary"><p>Length of the coinview cache flushing interval in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int CacheFlushTimeIntervalSeconds = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheFlushTimeIntervalSeconds_seealso">See Also</h5>
+  <div class="seealso">
+      <div><span class="xref">Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.lastCacheFlushTime</span></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheMaxItemsDefault.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.CacheMaxItemsDefault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L58">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheMaxItemsDefault" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.CacheMaxItemsDefault">CacheMaxItemsDefault</h4>
+  <div class="markdown level1 summary"><p>Default maximum number of transactions in the cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int CacheMaxItemsDefault = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheEntryCount.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.CacheEntryCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L102">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheEntryCount_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.CacheEntryCount*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheEntryCount" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.CacheEntryCount">CacheEntryCount</h4>
+  <div class="markdown level1 summary"><p>Number of items in the cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CacheEntryCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheEntryCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The getter violates the lock contract on <span class="xref">Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.unspents</span>, but the lock here is unnecessary as the <span class="xref">Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.unspents</span> is marked as readonly.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_Inner.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.Inner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L88">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_Inner_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.Inner*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_Inner" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.Inner">Inner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoinView Inner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_MaxItems.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.MaxItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L68">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_MaxItems_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.MaxItems*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_MaxItems" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.MaxItems">MaxItems</h4>
+  <div class="markdown level1 summary"><p>Maximum number of transactions in the cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxItems { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_PerformanceCounter.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.PerformanceCounter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L71">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_PerformanceCounter_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.PerformanceCounter*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_PerformanceCounter" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.PerformanceCounter">PerformanceCounter</h4>
+  <div class="markdown level1 summary"><p>Statistics of hits and misses in the cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CachePerformanceCounter PerformanceCounter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CachePerformanceCounter.html">CachePerformanceCounter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L407">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_Dispose_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_Dispose" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_FetchCoinsAsync_NBitcoin_uint256___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.FetchCoinsAsync(NBitcoin.uint256%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L164">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_FetchCoinsAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.FetchCoinsAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_FetchCoinsAsync_NBitcoin_uint256___" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.FetchCoinsAsync(NBitcoin.uint256[])">FetchCoinsAsync(uint256[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;FetchCoinsResponse&gt; FetchCoinsAsync(uint256[] txIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a>[]</td>
+        <td><span class="parametername">txIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.FetchCoinsResponse.html">FetchCoinsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_FetchCoinsAsync_NBitcoin_uint256___">CoinView.FetchCoinsAsync(uint256[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_FlushAsync_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.FlushAsync(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L244">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_FlushAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.FlushAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_FlushAsync_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.FlushAsync(System.Boolean)">FlushAsync(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds all changed records in the cache and persists them to the underlaying coinview.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task FlushAsync(bool force = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p><code>true</code> to enforce flush, <code>false</code> to flush only if <span class="xref">Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.lastCacheFlushTime</span> is older than <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_CacheFlushTimeIntervalSeconds">CacheFlushTimeIntervalSeconds</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_FlushAsync_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>WARNING: This method can only be run from <see cref="!:ConsensusLoop.Execute(System.Threading.CancellationToken)"></see> thread context
+or when consensus loop is stopped. Otherwise, there is a risk of race condition when the consensus loop accepts new block.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_Rewind.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.Rewind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L375">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_Rewind_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.Rewind*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_Rewind" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.Rewind">Rewind()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;uint256&gt; Rewind()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_Rewind">CoinView.Rewind()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.SaveChangesAsync(IEnumerable%7BStratis.Bitcoin.Utilities.UnspentOutputs%7D%2CIEnumerable%7BNBitcoin.TxOut%5B%5D%7D%2CNBitcoin.uint256%2CNBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L326">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_SaveChangesAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.SaveChangesAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.SaveChangesAsync(IEnumerable{Stratis.Bitcoin.Utilities.UnspentOutputs},IEnumerable{NBitcoin.TxOut[]},NBitcoin.uint256,NBitcoin.uint256)">SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt;, IEnumerable&lt;TxOut[]&gt;, uint256, uint256)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt; unspentOutputs, IEnumerable&lt;TxOut[]&gt; originalOutputs, uint256 oldBlockHash, uint256 nextBlockHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Utilities.UnspentOutputs.html">UnspentOutputs</a>&gt;</td>
+        <td><span class="parametername">unspentOutputs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="NBitcoin.TxOut.html">TxOut</a>[]&gt;</td>
+        <td><span class="parametername">originalOutputs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">oldBlockHash</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">nextBlockHash</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_">CoinView.SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt;, IEnumerable&lt;TxOut[]&gt;, uint256, uint256)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.IBackedCoinView.html">IBackedCoinView</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_CachedCoinView.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/CoinViews/CachedCoinView.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

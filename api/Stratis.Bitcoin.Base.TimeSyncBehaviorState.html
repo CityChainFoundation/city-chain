@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TimeSyncBehaviorState
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TimeSyncBehaviorState
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState">
+  
+  
+  <h1 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState" class="text-break">Class TimeSyncBehaviorState
+  </h1>
+  <div class="markdown level0 summary"><p>State of time synchronization feature that stores collected data samples
+and calculates adjustments to system time.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TimeSyncBehaviorState</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Base.ITimeSyncBehaviorState.html">ITimeSyncBehaviorState</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Base.html">Stratis.Bitcoin.Base</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
+  <h5 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TimeSyncBehaviorState : object, ITimeSyncBehaviorState, IDisposable</code></pre>
+  </div>
+  <h5 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Bitcoin introduced so called adjusted time, which is implemented as a time offset added
+to node's system time. The offset is result of time syncing feature with network peers that
+collects samples from &quot;version&quot; network message from anyone who connects with our node
+(in any direction). The median of the collected samples is used as the final time offset
+the node uses to calculate the adjusted time.</p>
+<p>
+The actual source of adjusted time is <a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a>. It is the logic
+behind its calculation and collection of samples that resides in this class. This class
+modifies the date time provider using its interface every time a new time offset sample
+that affects the final offset is collected.
+</p>
+<p>
+Bitcoin allowed up to 70 minutes of time adjustment to be made using this mechanism.
+However, Bitcoin also allowed the blocks to be mined with timestamps that are off by up
+to 2 hours. This is very unlike Stratis&apos; POS, which uses very narrow windows for block
+timestamps. This is why we implemented our mechanism of time syncing with peers
+and adjusted time calculation slightly differently.
+</p>
+<p>
+We also collect samples from network &quot;version&quot; messages and calculate time difference
+for every peer. We DO distinguish between inbound and outbound connections, however.
+We consider inbound connections as less reliable sources of information and we introduce
+<a class="xref" href="Stratis.Bitcoin.Base.TimeSyncBehaviorState.html#Stratis_Bitcoin_Base_TimeSyncBehaviorState_OffsetWeightSecurityConstant">OffsetWeightSecurityConstant</a> to reflect that. We keep outbound time offset
+samples separated from inbound samples. Our final offset is also a median of collected
+samples, but outbound samples have much greater weight in the median calculation
+as per the given weight, which is dynamically adjusted depending on the inbound outbound ratio
+in order to protect us from all inbound and an accepted percentage of outbound. 
+</p>
+<p>
+Bitcoin&apos;s implementation only allows certain number of samples to be collected
+and once the limit is reached, no more samples are allowed. We do not replicate this
+behavior and we implement circular array to store the time offset samples.
+This means that once the limit is reached, we replace oldest samples with the new ones.
+</p>
+<p>
+Finally, as the POS chain is much more sensitive to correct time settings, our user
+alerting mechanism is triggered much earlier (for much lower time difference) than
+the one in Bitcoin.
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_ILoggerFactory_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.%23ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CILoggerFactory%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L183">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Base_TimeSyncBehaviorState__ctor_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_ILoggerFactory_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.#ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,ILoggerFactory,NBitcoin.Network)">TimeSyncBehaviorState(IDateTimeProvider, INodeLifetime, IAsyncLoopFactory, ILoggerFactory, Network)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSyncBehaviorState(IDateTimeProvider dateTimeProvider, INodeLifetime nodeLifetime, IAsyncLoopFactory asyncLoopFactory, ILoggerFactory loggerFactory, Network network)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td><p>Provider of time functions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeLifetime.html">INodeLifetime</a></td>
+        <td><span class="parametername">nodeLifetime</span></td>
+        <td><p>Global application life cycle control - triggers when application shuts down.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoopFactory.html">IAsyncLoopFactory</a></td>
+        <td><span class="parametername">asyncLoopFactory</span></td>
+        <td><p>Factory for creating background async loop tasks.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>Factory for creating loggers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td><p>The network the node is running on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_MaxInboundSamples.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.MaxInboundSamples%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L96">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_MaxInboundSamples" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.MaxInboundSamples">MaxInboundSamples</h4>
+  <div class="markdown level1 summary"><p>Maximal number of samples to keep inside <span class="xref">Stratis.Bitcoin.Base.TimeSyncBehaviorState.inboundTimestampOffsets</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxInboundSamples = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_MaxOutboundSamples.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.MaxOutboundSamples%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L99">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_MaxOutboundSamples" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.MaxOutboundSamples">MaxOutboundSamples</h4>
+  <div class="markdown level1 summary"><p>Maximal number of samples to keep inside <span class="xref">Stratis.Bitcoin.Base.TimeSyncBehaviorState.outboundTimestampOffsets</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxOutboundSamples = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_MaxTimeOffsetSeconds.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.MaxTimeOffsetSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L113">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_MaxTimeOffsetSeconds" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.MaxTimeOffsetSeconds">MaxTimeOffsetSeconds</h4>
+  <div class="markdown level1 summary"><p>Maximal value for <span class="xref">Stratis.Bitcoin.Base.TimeSyncBehaviorState.timeOffset</span>. If the newly calculated value is over this limit,
+the time syncing feature will be switched off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxTimeOffsetSeconds = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_MinOutboundSampleCount.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.MinOutboundSampleCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L118">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_MinOutboundSampleCount" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.MinOutboundSampleCount">MinOutboundSampleCount</h4>
+  <div class="markdown level1 summary"><p>Minimal amount of outbound samples that should be collected before time adjustment <span class="xref">Stratis.Bitcoin.Base.TimeSyncBehaviorState.timeOffset</span> is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MinOutboundSampleCount = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_OffsetWeightSecurityConstant.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.OffsetWeightSecurityConstant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L104">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_OffsetWeightSecurityConstant" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.OffsetWeightSecurityConstant">OffsetWeightSecurityConstant</h4>
+  <div class="markdown level1 summary"><p>The value of 3 provides enough security to be protected against up to 33.3% of outbound samples being malicious and all inbound being malicious.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int OffsetWeightSecurityConstant = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_TimeOffsetWarningThresholdSeconds.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.TimeOffsetWarningThresholdSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L107">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_TimeOffsetWarningThresholdSeconds" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.TimeOffsetWarningThresholdSeconds">TimeOffsetWarningThresholdSeconds</h4>
+  <div class="markdown level1 summary"><p>Maximal value for <span class="xref">Stratis.Bitcoin.Base.TimeSyncBehaviorState.timeOffset</span> in seconds that does not trigger warnings to user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TimeOffsetWarningThresholdSeconds = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_IsSystemTimeOutOfSync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.IsSystemTimeOutOfSync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L173">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_IsSystemTimeOutOfSync_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.IsSystemTimeOutOfSync*"></a>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_IsSystemTimeOutOfSync" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.IsSystemTimeOutOfSync">IsSystemTimeOutOfSync</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSystemTimeOutOfSync { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_SwitchedOff.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.SwitchedOff%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L160">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_SwitchedOff_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.SwitchedOff*"></a>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_SwitchedOff" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.SwitchedOff">SwitchedOff</h4>
+  <div class="markdown level1 summary"><p><code>true</code> if the time sync with peers has been switched off, <code>false</code> otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SwitchedOff { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_SwitchedOffLimitReached.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.SwitchedOffLimitReached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L166">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_SwitchedOffLimitReached_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.SwitchedOffLimitReached*"></a>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_SwitchedOffLimitReached" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.SwitchedOffLimitReached">SwitchedOffLimitReached</h4>
+  <div class="markdown level1 summary"><p><code>true</code> if the reason for switching the time sync feature off was that <span class="xref">Stratis.Bitcoin.Base.TimeSyncBehaviorState.timeOffset</span>
+went over the maximal allowed value, <code>false</code> otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SwitchedOffLimitReached { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_AddTimeData_IPAddress_TimeSpan_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.AddTimeData(IPAddress%2CTimeSpan%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L200">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_AddTimeData_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.AddTimeData*"></a>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_AddTimeData_IPAddress_TimeSpan_System_Boolean_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.AddTimeData(IPAddress,TimeSpan,System.Boolean)">AddTimeData(IPAddress, TimeSpan, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddTimeData(IPAddress peerAddress, TimeSpan offsetSample, bool isInboundConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">peerAddress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">offsetSample</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isInboundConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L374">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_Dispose_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_Base_TimeSyncBehaviorState_Dispose" data-uid="Stratis.Bitcoin.Base.TimeSyncBehaviorState.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Base.ITimeSyncBehaviorState.html">ITimeSyncBehaviorState</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehaviorState.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehaviorState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L81" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

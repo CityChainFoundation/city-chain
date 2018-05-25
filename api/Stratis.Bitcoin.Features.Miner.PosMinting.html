@@ -1,0 +1,859 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PosMinting
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PosMinting
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_Miner_PosMinting" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting" class="text-break">Class PosMinting
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.html">PosMinting</a> is used in order to generate new blocks. It involves a sort of lottery, similar to proof-of-work,
+but the chances of winning this lottery is proportional to how many coins you are staking, not on hashing power.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PosMinting</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.html">IPosMinting</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Miner.html">Stratis.Bitcoin.Features.Miner</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Miner.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_Miner_PosMinting_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PosMinting : object, IPosMinting</code></pre>
+  </div>
+  <h5 id="Stratis_Bitcoin_Features_Miner_PosMinting_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Staking is attempted only if the node is fully synchronized and connected to the network.
+If not it will wait till node is synced. Only transactions that were confirmed at least
+<see cref="!:PosConsensusOptions.StakeMinConfirmations"></see> blocks ago are eligible for staking.</p>
+<p>
+The overall process for &quot;attempting&quot; to mine a PoS block looks like this:
+<ol><li></li><li></li><li></li><li></li><li></li></ol>
+</p>
+<p>
+Coinstake transaction invalidates previous inputs and spends the inputs to new outputs with the additional stake reward.
+</p>
+<p>
+The purpose of stake modifier is to prevent a UTXO owner from computing future proof-of-stake
+generated by this UTXO at the time of transaction confirmation. As described above, the stake modifier
+is included in the hash that must meet the difficulty target. As the stake modifier changes with each block
+and the new value depends on the kernel, it is hard to predict its value in the future.
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting__ctor_Stratis_Bitcoin_Features_Miner_PosBlockAssembler_IConsensusLoop_NBitcoin_ConcurrentChain_NBitcoin_Network_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_Stratis_Bitcoin_Utilities_INodeLifetime_CoinView_IStakeChain_IStakeValidator_Stratis_Bitcoin_Features_MemoryPool_MempoolSchedulerLock_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.%23ctor(Stratis.Bitcoin.Features.Miner.PosBlockAssembler%2CIConsensusLoop%2CNBitcoin.ConcurrentChain%2CNBitcoin.Network%2CStratis.Bitcoin.Connection.IConnectionManager%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.Interfaces.IInitialBlockDownloadState%2CStratis.Bitcoin.Utilities.INodeLifetime%2CCoinView%2CIStakeChain%2CIStakeValidator%2CStratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock%2CStratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CStratis.Bitcoin.Base.ITimeSyncBehaviorState%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L329">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_PosMinting__ctor_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting__ctor_Stratis_Bitcoin_Features_Miner_PosBlockAssembler_IConsensusLoop_NBitcoin_ConcurrentChain_NBitcoin_Network_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_Stratis_Bitcoin_Utilities_INodeLifetime_CoinView_IStakeChain_IStakeValidator_Stratis_Bitcoin_Features_MemoryPool_MempoolSchedulerLock_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_ILoggerFactory_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.#ctor(Stratis.Bitcoin.Features.Miner.PosBlockAssembler,IConsensusLoop,NBitcoin.ConcurrentChain,NBitcoin.Network,Stratis.Bitcoin.Connection.IConnectionManager,Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState,Stratis.Bitcoin.Utilities.INodeLifetime,CoinView,IStakeChain,IStakeValidator,Stratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock,Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,Stratis.Bitcoin.Base.ITimeSyncBehaviorState,ILoggerFactory)">PosMinting(PosBlockAssembler, IConsensusLoop, ConcurrentChain, Network, IConnectionManager, IDateTimeProvider, IInitialBlockDownloadState, INodeLifetime, CoinView, IStakeChain, IStakeValidator, MempoolSchedulerLock, ITxMempool, IWalletManager, IAsyncLoopFactory, ITimeSyncBehaviorState, ILoggerFactory)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.html">PosMinting</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PosMinting(PosBlockAssembler blockBuilder, IConsensusLoop consensusLoop, ConcurrentChain chain, Network network, IConnectionManager connectionManager, IDateTimeProvider dateTimeProvider, IInitialBlockDownloadState initialBlockDownloadState, INodeLifetime nodeLifetime, CoinView coinView, IStakeChain stakeChain, IStakeValidator stakeValidator, MempoolSchedulerLock mempoolLock, ITxMempool mempool, IWalletManager walletManager, IAsyncLoopFactory asyncLoopFactory, ITimeSyncBehaviorState timeSyncBehaviorState, ILoggerFactory loggerFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosBlockAssembler.html">PosBlockAssembler</a></td>
+        <td><span class="parametername">blockBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IConsensusLoop</span></td>
+        <td><span class="parametername">consensusLoop</span></td>
+        <td><p>Consumes incoming blocks, validates and executes them.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
+        <td><span class="parametername">chain</span></td>
+        <td><p>Thread safe access to the best chain of block headers (that the node is aware of) from genesis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td><p>Specification of the network the node runs on - regtest/testnet/mainnet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Connection.IConnectionManager.html">IConnectionManager</a></td>
+        <td><span class="parametername">connectionManager</span></td>
+        <td><p>Provider of information about the node's connection to it's network peers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td><p>Provides date time functionality.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState.html">IInitialBlockDownloadState</a></td>
+        <td><span class="parametername">initialBlockDownloadState</span></td>
+        <td><p>Provider of IBD state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeLifetime.html">INodeLifetime</a></td>
+        <td><span class="parametername">nodeLifetime</span></td>
+        <td><p>Global application life cycle control - triggers when application shuts down.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CoinView</span></td>
+        <td><span class="parametername">coinView</span></td>
+        <td><p>Consensus' view of UTXO set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IStakeChain</span></td>
+        <td><span class="parametername">stakeChain</span></td>
+        <td><p>Database of stake related data for the current blockchain.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IStakeValidator</span></td>
+        <td><span class="parametername">stakeValidator</span></td>
+        <td><p>Provides functionality for checking validity of PoS blocks.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock.html">MempoolSchedulerLock</a></td>
+        <td><span class="parametername">mempoolLock</span></td>
+        <td><p>A lock for managing asynchronous access to memory pool.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html">ITxMempool</a></td>
+        <td><span class="parametername">mempool</span></td>
+        <td><p>Memory pool of pending transactions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.html">IWalletManager</a></td>
+        <td><span class="parametername">walletManager</span></td>
+        <td><p>A manager providing operations on wallets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoopFactory.html">IAsyncLoopFactory</a></td>
+        <td><span class="parametername">asyncLoopFactory</span></td>
+        <td><p>Factory for creating background async loop tasks.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.ITimeSyncBehaviorState.html">ITimeSyncBehaviorState</a></td>
+        <td><span class="parametername">timeSyncBehaviorState</span></td>
+        <td><p>State of time synchronization feature that stores collected data samples.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>Factory for creating loggers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_CoinstakeSplitEnabled.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.CoinstakeSplitEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L189">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_CoinstakeSplitEnabled" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.CoinstakeSplitEnabled">CoinstakeSplitEnabled</h4>
+  <div class="markdown level1 summary"><p><code>true</code> if coinstake transaction splits the coin and generates extra UTXO
+to prevent halting chain; <code>false</code> to disable coinstake splitting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const bool CoinstakeSplitEnabled = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Miner_PosMinting_CoinstakeSplitEnabled_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>TODO: It should be configurable option, not constant. <see cref="!:https://github.com/stratisproject/StratisBitcoinFullNode/issues/550"></see></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_CoinstakeSplitLimitMultiplier.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.CoinstakeSplitLimitMultiplier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L194">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_CoinstakeSplitLimitMultiplier" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.CoinstakeSplitLimitMultiplier">CoinstakeSplitLimitMultiplier</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.html#Stratis_Bitcoin_Features_Miner_PosMinting_CoinstakeSplitEnabled">CoinstakeSplitEnabled</a> is set, the coinstake will be split if
+the number of non-empty UTXOs in the wallet is lower than the required coin age for staking plus 1,
+multiplied by this value. See <span class="xref">Stratis.Bitcoin.Features.Miner.PosMinting.GetSplitStake(System.Int32)</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int CoinstakeSplitLimitMultiplier = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_MaxBlockSize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.MaxBlockSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L178">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_MaxBlockSize" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.MaxBlockSize">MaxBlockSize</h4>
+  <div class="markdown level1 summary"><p>The maximum allowed size for a serialized block, in bytes (network rule).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxBlockSize = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_MaxBlockSizeGen.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.MaxBlockSizeGen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L181">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_MaxBlockSizeGen" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.MaxBlockSizeGen">MaxBlockSizeGen</h4>
+  <div class="markdown level1 summary"><p>The maximum size for mined blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxBlockSizeGen = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_mempool.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.mempool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L269">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_mempool" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.mempool">mempool</h4>
+  <div class="markdown level1 summary"><p>Memory pool of pending transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ITxMempool mempool</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html">ITxMempool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_mempoolLock.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.mempoolLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L266">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_mempoolLock" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.mempoolLock">mempoolLock</h4>
+  <div class="markdown level1 summary"><p>A lock for managing asynchronous access to memory pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly MempoolSchedulerLock mempoolLock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock.html">MempoolSchedulerLock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_StakeInProgress.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.StakeInProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L248">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_StakeInProgress" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.StakeInProgress">StakeInProgress</h4>
+  <div class="markdown level1 summary"><p>Indicates that the stake flag is in progress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int StakeInProgress = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_StakeNotInProgress.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.StakeNotInProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L245">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_StakeNotInProgress" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.StakeNotInProgress">StakeNotInProgress</h4>
+  <div class="markdown level1 summary"><p>Indicates that the stake flag is not in progress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int StakeNotInProgress = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_CreateCoinstakeAsync_List_Stratis_Bitcoin_Features_Miner_PosMinting_UtxoStakeDescription__NBitcoin_Block_NBitcoin_ChainedHeader_System_Int64_System_Int64_Stratis_Bitcoin_Features_Miner_PosMinting_CoinstakeContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.CreateCoinstakeAsync(List%7BStratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription%7D%2CNBitcoin.Block%2CNBitcoin.ChainedHeader%2CSystem.Int64%2CSystem.Int64%2CStratis.Bitcoin.Features.Miner.PosMinting.CoinstakeContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L696">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_PosMinting_CreateCoinstakeAsync_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.CreateCoinstakeAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_CreateCoinstakeAsync_List_Stratis_Bitcoin_Features_Miner_PosMinting_UtxoStakeDescription__NBitcoin_Block_NBitcoin_ChainedHeader_System_Int64_System_Int64_Stratis_Bitcoin_Features_Miner_PosMinting_CoinstakeContext_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.CreateCoinstakeAsync(List{Stratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription},NBitcoin.Block,NBitcoin.ChainedHeader,System.Int64,System.Int64,Stratis.Bitcoin.Features.Miner.PosMinting.CoinstakeContext)">CreateCoinstakeAsync(List&lt;PosMinting.UtxoStakeDescription&gt;, Block, ChainedHeader, Int64, Int64, PosMinting.CoinstakeContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; CreateCoinstakeAsync(List&lt;PosMinting.UtxoStakeDescription&gt; utxoStakeDescriptions, Block block, ChainedHeader chainTip, long searchInterval, long fees, PosMinting.CoinstakeContext coinstakeContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription.html">PosMinting.UtxoStakeDescription</a>&gt;</td>
+        <td><span class="parametername">utxoStakeDescriptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainTip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">searchInterval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">fees</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.CoinstakeContext.html">PosMinting.CoinstakeContext</a></td>
+        <td><span class="parametername">coinstakeContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_GenerateBlocksAsync_Stratis_Bitcoin_Features_Miner_PosMinting_WalletSecret_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.GenerateBlocksAsync(Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L458">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GenerateBlocksAsync_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GenerateBlocksAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GenerateBlocksAsync_Stratis_Bitcoin_Features_Miner_PosMinting_WalletSecret_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GenerateBlocksAsync(Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret)">GenerateBlocksAsync(PosMinting.WalletSecret)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task GenerateBlocksAsync(PosMinting.WalletSecret walletSecret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret.html">PosMinting.WalletSecret</a></td>
+        <td><span class="parametername">walletSecret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_GetDifficulty_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.GetDifficulty(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L1109">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GetDifficulty_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetDifficulty*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetDifficulty_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetDifficulty(NBitcoin.ChainedHeader)">GetDifficulty(ChainedHeader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDifficulty(ChainedHeader block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">block</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_GetGetStakingInfoModel.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.GetGetStakingInfoModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L1194">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GetGetStakingInfoModel_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetGetStakingInfoModel*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetGetStakingInfoModel" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetGetStakingInfoModel">GetGetStakingInfoModel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GetStakingInfoModel GetGetStakingInfoModel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.Models.GetStakingInfoModel.html">GetStakingInfoModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_GetMatureBalance_List_Stratis_Bitcoin_Features_Miner_PosMinting_UtxoStakeDescription__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.GetMatureBalance(List%7BStratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L997">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GetMatureBalance_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetMatureBalance*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetMatureBalance_List_Stratis_Bitcoin_Features_Miner_PosMinting_UtxoStakeDescription__" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetMatureBalance(List{Stratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription})">GetMatureBalance(List&lt;PosMinting.UtxoStakeDescription&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Money GetMatureBalance(List&lt;PosMinting.UtxoStakeDescription&gt; utxoStakeDescriptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.UtxoStakeDescription.html">PosMinting.UtxoStakeDescription</a>&gt;</td>
+        <td><span class="parametername">utxoStakeDescriptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_GetNetworkWeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.GetNetworkWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L1153">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_PosMinting_GetNetworkWeight_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetNetworkWeight*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_GetNetworkWeight" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.GetNetworkWeight">GetNetworkWeight()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetNetworkWeight()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_Stake_Stratis_Bitcoin_Features_Miner_PosMinting_WalletSecret_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.Stake(Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L378">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_PosMinting_Stake_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.Stake*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_Stake_Stratis_Bitcoin_Features_Miner_PosMinting_WalletSecret_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.Stake(Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret)">Stake(PosMinting.WalletSecret)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stake(PosMinting.WalletSecret walletSecret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret.html">PosMinting.WalletSecret</a></td>
+        <td><span class="parametername">walletSecret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting_StopStake.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting.StopStake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L435">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_PosMinting_StopStake_" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.StopStake*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_PosMinting_StopStake" data-uid="Stratis.Bitcoin.Features.Miner.PosMinting.StopStake">StopStake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopStake()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.html">IPosMinting</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_PosMinting.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.PosMinting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PosMinting.cs/#L63" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

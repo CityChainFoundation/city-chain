@@ -1,0 +1,1241 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlockAssembler
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlockAssembler
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_Miner_BlockAssembler" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler" class="text-break">Class BlockAssembler
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BlockAssembler</span></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosBlockAssembler.html">PosBlockAssembler</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Miner.PowBlockAssembler.html">PowBlockAssembler</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Miner.html">Stratis.Bitcoin.Features.Miner</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Miner.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BlockAssembler : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler__ctor_IConsensusLoop_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Features_MemoryPool_MempoolSchedulerLock_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_AssemblerOptions_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.%23ctor(IConsensusLoop%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool%2CStratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock%2CNBitcoin.Network%2CStratis.Bitcoin.Features.Miner.AssemblerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L102">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockAssembler__ctor_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler__ctor_IConsensusLoop_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Features_MemoryPool_MempoolSchedulerLock_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_AssemblerOptions_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.#ctor(IConsensusLoop,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool,Stratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock,NBitcoin.Network,Stratis.Bitcoin.Features.Miner.AssemblerOptions)">BlockAssembler(IConsensusLoop, IDateTimeProvider, ILoggerFactory, ITxMempool, MempoolSchedulerLock, Network, AssemblerOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BlockAssembler(IConsensusLoop consensusLoop, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, ITxMempool mempool, MempoolSchedulerLock mempoolLock, Network network, AssemblerOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IConsensusLoop</span></td>
+        <td><span class="parametername">consensusLoop</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html">ITxMempool</a></td>
+        <td><span class="parametername">mempool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock.html">MempoolSchedulerLock</a></td>
+        <td><span class="parametername">mempoolLock</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.AssemblerOptions.html">AssemblerOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_block.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.block%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L69">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_block" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.block">block</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Block block</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockMaxSize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockMaxSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockMaxSize" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockMaxSize">BlockMaxSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected uint BlockMaxSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockMaxWeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockMaxWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockMaxWeight" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockMaxWeight">BlockMaxWeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected uint BlockMaxWeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockMinFeeRate.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockMinFeeRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L78">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockMinFeeRate" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockMinFeeRate">BlockMinFeeRate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FeeRate BlockMinFeeRate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.FeeRate.html">FeeRate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockSigOpsCost.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockSigOpsCost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L87">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockSigOpsCost" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockSigOpsCost">BlockSigOpsCost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long BlockSigOpsCost</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockSize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L83">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockSize" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockSize">BlockSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long BlockSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockTemplate.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L66">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockTemplate" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockTemplate">BlockTemplate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BlockTemplate BlockTemplate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.BlockTemplate.html">BlockTemplate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockTx.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockTx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L85">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockTx" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockTx">BlockTx</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long BlockTx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockWeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L81">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_BlockWeight" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.BlockWeight">BlockWeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long BlockWeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_ChainTip.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.ChainTip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L23">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_ChainTip" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.ChainTip">ChainTip</h4>
+  <div class="markdown level1 summary"><p>Tip of the chain that this instance will work with without touching any shared chain resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ChainedHeader ChainTip</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_coinbase.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.coinbase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L93">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_coinbase" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.coinbase">coinbase</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Transaction coinbase</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_ConsensusLoop.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.ConsensusLoop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_ConsensusLoop" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.ConsensusLoop">ConsensusLoop</h4>
+  <div class="markdown level1 summary"><p>Manager of the longest fully validated chain of blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IConsensusLoop ConsensusLoop</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IConsensusLoop</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_DateTimeProvider.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.DateTimeProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L29">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_DateTimeProvider" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.DateTimeProvider">DateTimeProvider</h4>
+  <div class="markdown level1 summary"><p>Provider of date time functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IDateTimeProvider DateTimeProvider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_fees.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.fees%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L89">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_fees" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.fees">fees</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Money fees</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_height.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L96">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_height" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.height">height</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int height</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_inBlock.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.inBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L91">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_inBlock" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.inBlock">inBlock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TxMempool.SetEntries inBlock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempool.SetEntries.html">TxMempool.SetEntries</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_IncludeWitness.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.IncludeWitness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L72">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_IncludeWitness" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.IncludeWitness">IncludeWitness</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IncludeWitness</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_LastBlockSize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.LastBlockSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_LastBlockSize" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.LastBlockSize">LastBlockSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long LastBlockSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_LastBlockTx.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.LastBlockTx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_LastBlockTx" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.LastBlockTx">LastBlockTx</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long LastBlockTx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_LastBlockWeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.LastBlockWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L61">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_LastBlockWeight" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.LastBlockWeight">LastBlockWeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long LastBlockWeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_LockTimeCutoff.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.LockTimeCutoff%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L98">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_LockTimeCutoff" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.LockTimeCutoff">LockTimeCutoff</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long LockTimeCutoff</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_MaxConsecutiveAddTransactionFailures.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.MaxConsecutiveAddTransactionFailures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L51">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_MaxConsecutiveAddTransactionFailures" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.MaxConsecutiveAddTransactionFailures">MaxConsecutiveAddTransactionFailures</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int MaxConsecutiveAddTransactionFailures = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_MedianTimePast.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.MedianTimePast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L63">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_MedianTimePast" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.MedianTimePast">MedianTimePast</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long MedianTimePast</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_Mempool.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.Mempool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L35">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_Mempool" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.Mempool">Mempool</h4>
+  <div class="markdown level1 summary"><p>Transaction memory pool for managing transactions in the memory pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ITxMempool Mempool</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html">ITxMempool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_MempoolLock.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.MempoolLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L38">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_MempoolLock" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.MempoolLock">MempoolLock</h4>
+  <div class="markdown level1 summary"><p>Lock for memory pool access.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly MempoolSchedulerLock MempoolLock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock.html">MempoolSchedulerLock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_NeedSizeAccounting.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.NeedSizeAccounting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L76">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_NeedSizeAccounting" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.NeedSizeAccounting">NeedSizeAccounting</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool NeedSizeAccounting</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_Network.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L41">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_Network" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.Network">Network</h4>
+  <div class="markdown level1 summary"><p>The current network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly Network Network</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_Options.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L44">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_Options" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.Options">Options</h4>
+  <div class="markdown level1 summary"><p>Assembler options specific to the assembler e.g. <a class="xref" href="Stratis.Bitcoin.Features.Miner.AssemblerOptions.html#Stratis_Bitcoin_Features_Miner_AssemblerOptions_BlockMaxSize">BlockMaxSize</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AssemblerOptions Options</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.AssemblerOptions.html">AssemblerOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_scriptPubKey.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.scriptPubKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L100">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_scriptPubKey" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.scriptPubKey">scriptPubKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Script scriptPubKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Script.html">Script</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_AddTransactions_System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.AddTransactions(System.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L306">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockAssembler_AddTransactions_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.AddTransactions*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_AddTransactions_System_Int32__System_Int32__" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.AddTransactions(System.Int32@,System.Int32@)">AddTransactions(out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddTransactions(out int nPackagesSelected, out int nDescendantsUpdated)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nPackagesSelected</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDescendantsUpdated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_Build_NBitcoin_ChainedHeader_NBitcoin_Script_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.Build(NBitcoin.ChainedHeader%2CNBitcoin.Script)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L559">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockAssembler_Build_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.Build*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_Build_NBitcoin_ChainedHeader_NBitcoin_Script_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.Build(NBitcoin.ChainedHeader,NBitcoin.Script)">Build(ChainedHeader, Script)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract BlockTemplate Build(ChainedHeader chainTip, Script scriptPubKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainTip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Script.html">Script</a></td>
+        <td><span class="parametername">scriptPubKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.BlockTemplate.html">BlockTemplate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_ComputeBlockVersion.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.ComputeBlockVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L153">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockAssembler_ComputeBlockVersion_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.ComputeBlockVersion*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_ComputeBlockVersion" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.ComputeBlockVersion">ComputeBlockVersion()</h4>
+  <div class="markdown level1 summary"><p>Compute the block version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ComputeBlockVersion()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_CreateCoinbase.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.CreateCoinbase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L164">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockAssembler_CreateCoinbase_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.CreateCoinbase*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_CreateCoinbase" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.CreateCoinbase">CreateCoinbase()</h4>
+  <div class="markdown level1 summary"><p>Create coinbase transaction.
+Set the coin base with zero money.
+Once we have the fee we can update the amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CreateCoinbase()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_OnBuild_NBitcoin_ChainedHeader_NBitcoin_Script_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.OnBuild(NBitcoin.ChainedHeader%2CNBitcoin.Script)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L198">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockAssembler_OnBuild_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.OnBuild*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_OnBuild_NBitcoin_ChainedHeader_NBitcoin_Script_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.OnBuild(NBitcoin.ChainedHeader,NBitcoin.Script)">OnBuild(ChainedHeader, Script)</h4>
+  <div class="markdown level1 summary"><p>Constructs a block template which will be passed to consensus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnBuild(ChainedHeader chainTip, Script scriptPubKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainTip</span></td>
+        <td><p>Tip of the chain that this instance will work with without touching any shared chain resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Script.html">Script</a></td>
+        <td><span class="parametername">scriptPubKey</span></td>
+        <td><p>Script that explains what conditions must be met to claim ownership of a coin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_OnTestBlockValidity.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.OnTestBlockValidity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L561">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockAssembler_OnTestBlockValidity_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.OnTestBlockValidity*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_OnTestBlockValidity" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.OnTestBlockValidity">OnTestBlockValidity()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnTestBlockValidity()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler_OnUpdateHeaders.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler.OnUpdateHeaders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L560">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockAssembler_OnUpdateHeaders_" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.OnUpdateHeaders*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockAssembler_OnUpdateHeaders" data-uid="Stratis.Bitcoin.Features.Miner.BlockAssembler.OnUpdateHeaders">OnUpdateHeaders()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnUpdateHeaders()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockAssembler.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockAssembler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Miner/PowBlockAssembler.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

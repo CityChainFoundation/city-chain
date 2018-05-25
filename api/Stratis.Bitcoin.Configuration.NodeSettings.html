@@ -1,0 +1,1042 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NodeSettings
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NodeSettings
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Configuration.NodeSettings">
+  
+  
+  <h1 id="Stratis_Bitcoin_Configuration_NodeSettings" data-uid="Stratis.Bitcoin.Configuration.NodeSettings" class="text-break">Class NodeSettings
+  </h1>
+  <div class="markdown level0 summary"><p>Node configuration complied from both the application command line arguments and the configuration file.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NodeSettings</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Configuration.html">Stratis.Bitcoin.Configuration</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
+  <h5 id="Stratis_Bitcoin_Configuration_NodeSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NodeSettings : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings__ctor_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_System_String_System_String___System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.%23ctor(NBitcoin.Network%2CNBitcoin.Protocol.ProtocolVersion%2CSystem.String%2CSystem.String%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L49">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings__ctor_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings__ctor_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_System_String_System_String___System_Boolean_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.#ctor(NBitcoin.Network,NBitcoin.Protocol.ProtocolVersion,System.String,System.String[],System.Boolean)">NodeSettings(Network, ProtocolVersion, String, String[], Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodeSettings(Network innerNetwork = null, ProtocolVersion protocolVersion = default(ProtocolVersion), string agent = &quot;StratisBitcoin&quot;, string[] args = null, bool loadConfiguration = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">innerNetwork</span></td>
+        <td><p>Specification of the network the node runs on - regtest/testnet/mainnet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td><span class="parametername">protocolVersion</span></td>
+        <td><p>Supported protocol version for which to create the configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td><p>The nodes user agent that will be shared with peers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The command-line arguments.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">loadConfiguration</span></td>
+        <td><p>Determines whether to load the configuration file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_SupportedProtocolVersion.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.SupportedProtocolVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L39">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_SupportedProtocolVersion" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.SupportedProtocolVersion">SupportedProtocolVersion</h4>
+  <div class="markdown level1 summary"><p>Version of the protocol the current implementation supports.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const ProtocolVersion SupportedProtocolVersion = default(ProtocolVersion)</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_Agent.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.Agent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L175">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_Agent_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Agent*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_Agent" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Agent">Agent</h4>
+  <div class="markdown level1 summary"><p>The node's user agent that will be shared with peers in the version handshake.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Agent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_ConfigReader.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.ConfigReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L186">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_ConfigReader_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConfigReader*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_ConfigReader" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConfigReader">ConfigReader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextFileConfiguration ConfigReader { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.TextFileConfiguration.html">TextFileConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_ConfigurationFile.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.ConfigurationFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L149">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_ConfigurationFile_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConfigurationFile*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_ConfigurationFile" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConfigurationFile">ConfigurationFile</h4>
+  <div class="markdown level1 summary"><p>Path to the configuration file. This value is read-only and is set in the constructor's args.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConfigurationFile { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_DataDir.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.DataDir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L146">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_DataDir_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.DataDir*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_DataDir" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.DataDir">DataDir</h4>
+  <div class="markdown level1 summary"><p>Path to the data directory. This value is read-only and is set in the constructor's args.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DataDir { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_DataFolder.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.DataFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L143">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_DataFolder_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.DataFolder*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_DataFolder" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.DataFolder">DataFolder</h4>
+  <div class="markdown level1 summary"><p>List of paths to important files and folders.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataFolder DataFolder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.DataFolder.html">DataFolder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_FallbackTxFeeRate.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.FallbackTxFeeRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L181">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_FallbackTxFeeRate_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.FallbackTxFeeRate*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_FallbackTxFeeRate" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.FallbackTxFeeRate">FallbackTxFeeRate</h4>
+  <div class="markdown level1 summary"><p>Fall back transaction fee for network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeeRate FallbackTxFeeRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.FeeRate.html">FeeRate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_LoadArgs.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.LoadArgs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L134">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_LoadArgs_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.LoadArgs*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_LoadArgs" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.LoadArgs">LoadArgs</h4>
+  <div class="markdown level1 summary"><p>Arguments to load.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] LoadArgs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_Log.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.Log%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L140">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_Log_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Log*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_Log" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Log">Log</h4>
+  <div class="markdown level1 summary"><p>Configuration related to logging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LogSettings Log { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.Settings.LogSettings.html">LogSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_Logger.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L137">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_Logger_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Logger*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_Logger" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>Instance logger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_LoggerFactory.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.LoggerFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L131">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_LoggerFactory_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.LoggerFactory*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_LoggerFactory" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.LoggerFactory">LoggerFactory</h4>
+  <div class="markdown level1 summary"><p>Factory to create instance logger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILoggerFactory LoggerFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_MaxTipAge.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.MaxTipAge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L166">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_MaxTipAge_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MaxTipAge*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_MaxTipAge" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MaxTipAge">MaxTipAge</h4>
+  <div class="markdown level1 summary"><p>Maximum tip age in seconds to consider node in initial block download.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxTipAge { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_MinRelayTxFeeRate.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.MinRelayTxFeeRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L184">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_MinRelayTxFeeRate_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MinRelayTxFeeRate*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_MinRelayTxFeeRate" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MinRelayTxFeeRate">MinRelayTxFeeRate</h4>
+  <div class="markdown level1 summary"><p>Minimum relay transaction fee for network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeeRate MinRelayTxFeeRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.FeeRate.html">FeeRate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_MinTxFeeRate.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.MinTxFeeRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L178">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_MinTxFeeRate_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MinTxFeeRate*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_MinTxFeeRate" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MinTxFeeRate">MinTxFeeRate</h4>
+  <div class="markdown level1 summary"><p>Minimum transaction fee for network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeeRate MinTxFeeRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.FeeRate.html">FeeRate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_Network.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L172">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_Network_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Network*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_Network" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Network">Network</h4>
+  <div class="markdown level1 summary"><p>Specification of the network the node runs on - regtest/testnet/mainnet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Network Network { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_PrintHelpAndExit.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.PrintHelpAndExit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L155">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_PrintHelpAndExit_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.PrintHelpAndExit*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_PrintHelpAndExit" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.PrintHelpAndExit">PrintHelpAndExit</h4>
+  <div class="markdown level1 summary"><p>Determines whether to print help and exit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PrintHelpAndExit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_ProtocolVersion.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.ProtocolVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L169">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_ProtocolVersion_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ProtocolVersion*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_ProtocolVersion" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ProtocolVersion">ProtocolVersion</h4>
+  <div class="markdown level1 summary"><p>Supported protocol version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProtocolVersion ProtocolVersion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_RequireStandard.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.RequireStandard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L152">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_RequireStandard_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.RequireStandard*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_RequireStandard" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.RequireStandard">RequireStandard</h4>
+  <div class="markdown level1 summary"><p>Option to skip (most) non-standard transaction checks, for testnet/regtest only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequireStandard { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_SyncTimeEnabled.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.SyncTimeEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L189">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_SyncTimeEnabled_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.SyncTimeEnabled*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_SyncTimeEnabled" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.SyncTimeEnabled">SyncTimeEnabled</h4>
+  <div class="markdown level1 summary"><p><code>true</code> to sync time with other peers and calculate adjusted time, <code>false</code> to use our system clock only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SyncTimeEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_BuildDefaultConfigurationFile_StringBuilder_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.BuildDefaultConfigurationFile(StringBuilder%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L431">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_BuildDefaultConfigurationFile_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.BuildDefaultConfigurationFile*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_BuildDefaultConfigurationFile_StringBuilder_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.BuildDefaultConfigurationFile(StringBuilder,NBitcoin.Network)">BuildDefaultConfigurationFile(StringBuilder, Network)</h4>
+  <div class="markdown level1 summary"><p>Get the default configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BuildDefaultConfigurationFile(StringBuilder builder, Network network)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StringBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The string builder to add the settings to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td><p>The network to base the defaults off.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_ConvertIpAddressToEndpoint_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.ConvertIpAddressToEndpoint(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L280">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_ConvertIpAddressToEndpoint_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConvertIpAddressToEndpoint*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_ConvertIpAddressToEndpoint_System_String_System_Int32_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConvertIpAddressToEndpoint(System.String,System.Int32)">ConvertIpAddressToEndpoint(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts a string to an IP endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPEndPoint ConvertIpAddressToEndpoint(string ipAddress, int port)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ipAddress</span></td>
+        <td><p>String to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port to use if <code data-dev-comment-type="paramref" class="paramref">ipAddress</code> does not specify it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><p>IP end point representation of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Configuration_NodeSettings_ConvertIpAddressToEndpoint_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>IP addresses can have a port specified such that the format of <code data-dev-comment-type="paramref" class="paramref">ipAddress</code> is as such: address:port.
+IPv4 and IPv6 addresses are supported.
+In the case where the default port is passed and the IP address has a port specified in it, the IP address's port will take precedence.
+Examples of addresses that are supported are: 15.61.23.23, 15.61.23.23:1500, [1233:3432:2434:2343:3234:2345:6546:4534], [1233:3432:2434:2343:3234:2345:6546:4534]:8333.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_Default_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.Default(NBitcoin.Network%2CNBitcoin.Protocol.ProtocolVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L197">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_Default_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Default*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_Default_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Default(NBitcoin.Network,NBitcoin.Protocol.ProtocolVersion)">Default(Network, ProtocolVersion)</h4>
+  <div class="markdown level1 summary"><p>Initializes default configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NodeSettings Default(Network network = null, ProtocolVersion protocolVersion = default(ProtocolVersion))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td><p>Specification of the network the node runs on - regtest/testnet/mainnet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Protocol.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td><span class="parametername">protocolVersion</span></td>
+        <td><p>Supported protocol version for which to create the configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
+        <td><p>Default node configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_LoadConfiguration_List_Stratis_Bitcoin_Builder_Feature_IFeatureRegistration__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.LoadConfiguration(List%7BStratis.Bitcoin.Builder.Feature.IFeatureRegistration%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L208">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_LoadConfiguration_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.LoadConfiguration*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_LoadConfiguration_List_Stratis_Bitcoin_Builder_Feature_IFeatureRegistration__" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.LoadConfiguration(List{Stratis.Bitcoin.Builder.Feature.IFeatureRegistration})">LoadConfiguration(List&lt;IFeatureRegistration&gt;)</h4>
+  <div class="markdown level1 summary"><p>Loads the configuration file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodeSettings LoadConfiguration(List&lt;IFeatureRegistration&gt; features = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Builder.Feature.IFeatureRegistration.html">IFeatureRegistration</a>&gt;</td>
+        <td><span class="parametername">features</span></td>
+        <td><p>The features to include in the configuration file if a default file has to be created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
+        <td><p>Initialized node configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.ConfigurationException.html">ConfigurationException</a></td>
+        <td><p>Thrown in case of any problems with the configuration file or command line arguments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_PrintHelp_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.PrintHelp(NBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L392">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Configuration_NodeSettings_PrintHelp_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.PrintHelp*"></a>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_PrintHelp_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.PrintHelp(NBitcoin.Network)">PrintHelp(Network)</h4>
+  <div class="markdown level1 summary"><p>Displays command-line help.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintHelp(Network network)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td><p>The network to extract values from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

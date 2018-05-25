@@ -1,0 +1,901 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConnectionManager
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConnectionManager
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Connection.ConnectionManager">
+  
+  
+  <h1 id="Stratis_Bitcoin_Connection_ConnectionManager" data-uid="Stratis.Bitcoin.Connection.ConnectionManager" class="text-break">Class ConnectionManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ConnectionManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Connection.IConnectionManager.html">IConnectionManager</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Connection.html">Stratis.Bitcoin.Connection</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
+  <h5 id="Stratis_Bitcoin_Connection_ConnectionManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ConnectionManager : object, IConnectionManager, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_P2P_Peer_INetworkPeerFactory_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_P2P_Peer_NetworkPeerConnectionParameters_Stratis_Bitcoin_P2P_IPeerAddressManager_IEnumerable_Stratis_Bitcoin_P2P_IPeerConnector__Stratis_Bitcoin_P2P_IPeerDiscovery_Stratis_Bitcoin_Configuration_Settings_ConnectionManagerSettings_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.%23ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CNBitcoin.Network%2CStratis.Bitcoin.P2P.Peer.INetworkPeerFactory%2CStratis.Bitcoin.Configuration.NodeSettings%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters%2CStratis.Bitcoin.P2P.IPeerAddressManager%2CIEnumerable%7BStratis.Bitcoin.P2P.IPeerConnector%7D%2CStratis.Bitcoin.P2P.IPeerDiscovery%2CStratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L140">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager__ctor_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_P2P_Peer_INetworkPeerFactory_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_P2P_Peer_NetworkPeerConnectionParameters_Stratis_Bitcoin_P2P_IPeerAddressManager_IEnumerable_Stratis_Bitcoin_P2P_IPeerConnector__Stratis_Bitcoin_P2P_IPeerDiscovery_Stratis_Bitcoin_Configuration_Settings_ConnectionManagerSettings_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.#ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,NBitcoin.Network,Stratis.Bitcoin.P2P.Peer.INetworkPeerFactory,Stratis.Bitcoin.Configuration.NodeSettings,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters,Stratis.Bitcoin.P2P.IPeerAddressManager,IEnumerable{Stratis.Bitcoin.P2P.IPeerConnector},Stratis.Bitcoin.P2P.IPeerDiscovery,Stratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings)">ConnectionManager(IDateTimeProvider, ILoggerFactory, Network, INetworkPeerFactory, NodeSettings, INodeLifetime, NetworkPeerConnectionParameters, IPeerAddressManager, IEnumerable&lt;IPeerConnector&gt;, IPeerDiscovery, ConnectionManagerSettings)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectionManager(IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, Network network, INetworkPeerFactory networkPeerFactory, NodeSettings nodeSettings, INodeLifetime nodeLifetime, NetworkPeerConnectionParameters parameters, IPeerAddressManager peerAddressManager, IEnumerable&lt;IPeerConnector&gt; peerConnectors, IPeerDiscovery peerDiscovery, ConnectionManagerSettings connectionSettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeerFactory.html">INetworkPeerFactory</a></td>
+        <td><span class="parametername">networkPeerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
+        <td><span class="parametername">nodeSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeLifetime.html">INodeLifetime</a></td>
+        <td><span class="parametername">nodeLifetime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters.html">NetworkPeerConnectionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.IPeerAddressManager.html">IPeerAddressManager</a></td>
+        <td><span class="parametername">peerAddressManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.IPeerConnector.html">IPeerConnector</a>&gt;</td>
+        <td><span class="parametername">peerConnectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.IPeerDiscovery.html">IPeerDiscovery</a></td>
+        <td><span class="parametername">peerDiscovery</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings.html">ConnectionManagerSettings</a></td>
+        <td><span class="parametername">connectionSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_MaxInventorySize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.MaxInventorySize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L89">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_MaxInventorySize" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.MaxInventorySize">MaxInventorySize</h4>
+  <div class="markdown level1 summary"><p>The maximum number of entries in an 'inv' protocol message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxInventorySize = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_ConnectedPeers.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.ConnectedPeers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L126">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_ConnectedPeers_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.ConnectedPeers*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_ConnectedPeers" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.ConnectedPeers">ConnectedPeers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyNetworkPeerCollection ConnectedPeers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.IReadOnlyNetworkPeerCollection.html">IReadOnlyNetworkPeerCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_ConnectionSettings.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.ConnectionSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L110">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_ConnectionSettings_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.ConnectionSettings*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_ConnectionSettings" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.ConnectionSettings">ConnectionSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectionManagerSettings ConnectionSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings.html">ConnectionManagerSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_Network.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L98">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_Network_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Network*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_Network" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Network">Network</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Network Network { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_NetworkPeerFactory.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.NetworkPeerFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L101">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_NetworkPeerFactory_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.NetworkPeerFactory*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_NetworkPeerFactory" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.NetworkPeerFactory">NetworkPeerFactory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public INetworkPeerFactory NetworkPeerFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeerFactory.html">INetworkPeerFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_NodeSettings.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.NodeSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L107">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_NodeSettings_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.NodeSettings*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_NodeSettings" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.NodeSettings">NodeSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodeSettings NodeSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_Parameters.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.Parameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L113">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_Parameters_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Parameters*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_Parameters" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Parameters">Parameters</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkPeerConnectionParameters Parameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters.html">NetworkPeerConnectionParameters</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_PeerConnectors.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.PeerConnectors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L116">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_PeerConnectors_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.PeerConnectors*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_PeerConnectors" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.PeerConnectors">PeerConnectors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IPeerConnector&gt; PeerConnectors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.IPeerConnector.html">IPeerConnector</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_Servers.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.Servers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L135">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_Servers_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Servers*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_Servers" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Servers">Servers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;NetworkPeerServer&gt; Servers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerServer.html">NetworkPeerServer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_AddConnectedPeer_Stratis_Bitcoin_P2P_Peer_INetworkPeer_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.AddConnectedPeer(Stratis.Bitcoin.P2P.Peer.INetworkPeer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L348">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_AddConnectedPeer_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.AddConnectedPeer*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_AddConnectedPeer_Stratis_Bitcoin_P2P_Peer_INetworkPeer_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.AddConnectedPeer(Stratis.Bitcoin.P2P.Peer.INetworkPeer)">AddConnectedPeer(INetworkPeer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddConnectedPeer(INetworkPeer peer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td><span class="parametername">peer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_AddDiscoveredNodesRequirement_Stratis_Bitcoin_P2P_Protocol_Payloads_NetworkPeerServices_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.AddDiscoveredNodesRequirement(Stratis.Bitcoin.P2P.Protocol.Payloads.NetworkPeerServices)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L233">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_AddDiscoveredNodesRequirement_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.AddDiscoveredNodesRequirement*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_AddDiscoveredNodesRequirement_Stratis_Bitcoin_P2P_Protocol_Payloads_NetworkPeerServices_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.AddDiscoveredNodesRequirement(Stratis.Bitcoin.P2P.Protocol.Payloads.NetworkPeerServices)">AddDiscoveredNodesRequirement(NetworkPeerServices)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDiscoveredNodesRequirement(NetworkPeerServices services)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.NetworkPeerServices.html">NetworkPeerServices</a></td>
+        <td><span class="parametername">services</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_AddNodeAddress_IPEndPoint_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.AddNodeAddress(IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L388">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_AddNodeAddress_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.AddNodeAddress*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_AddNodeAddress_IPEndPoint_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.AddNodeAddress(IPEndPoint)">AddNodeAddress(IPEndPoint)</h4>
+  <div class="markdown level1 summary"><p>Adds a node to the -addnode collection.</p>
+<p>
+Usually called via RPC.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNodeAddress(IPEndPoint ipEndpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">ipEndpoint</span></td>
+        <td><p>The endpoint of the peer to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_ConnectAsync_IPEndPoint_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.ConnectAsync(IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L424">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_ConnectAsync_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.ConnectAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_ConnectAsync_IPEndPoint_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.ConnectAsync(IPEndPoint)">ConnectAsync(IPEndPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;INetworkPeer&gt; ConnectAsync(IPEndPoint ipEndpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">ipEndpoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L329">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_Dispose_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_Dispose" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_FindLocalNode.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.FindLocalNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L376">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_FindLocalNode_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.FindLocalNode*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_FindLocalNode" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.FindLocalNode">FindLocalNode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public INetworkPeer FindLocalNode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_FindNodeByEndpoint_IPEndPoint_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.FindNodeByEndpoint(IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L366">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_FindNodeByEndpoint_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.FindNodeByEndpoint*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_FindNodeByEndpoint_IPEndPoint_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.FindNodeByEndpoint(IPEndPoint)">FindNodeByEndpoint(IPEndPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public INetworkPeer FindNodeByEndpoint(IPEndPoint ipEndpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">ipEndpoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_FindNodeByIp_IPAddress_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.FindNodeByIp(IPAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L371">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_FindNodeByIp_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.FindNodeByIp*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_FindNodeByIp_IPAddress_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.FindNodeByIp(IPAddress)">FindNodeByIp(IPAddress)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public INetworkPeer FindNodeByIp(IPAddress ipAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">ipAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_GetNodeStats.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.GetNodeStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L296">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_GetNodeStats_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.GetNodeStats*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_GetNodeStats" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.GetNodeStats">GetNodeStats()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetNodeStats()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_GetStats.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.GetStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L253">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_GetStats_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.GetStats*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_GetStats" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.GetStats">GetStats()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetStats()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L179">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_Initialize_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Initialize*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_Initialize" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager_RemoveNodeAddress_IPEndPoint_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager.RemoveNodeAddress(IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L414">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Connection_ConnectionManager_RemoveNodeAddress_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.RemoveNodeAddress*"></a>
+  <h4 id="Stratis_Bitcoin_Connection_ConnectionManager_RemoveNodeAddress_IPEndPoint_" data-uid="Stratis.Bitcoin.Connection.ConnectionManager.RemoveNodeAddress(IPEndPoint)">RemoveNodeAddress(IPEndPoint)</h4>
+  <div class="markdown level1 summary"><p>Disconnect a peer.</p>
+<p>
+Usually called via RPC.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveNodeAddress(IPEndPoint ipEndpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">ipEndpoint</span></td>
+        <td><p>The endpoint of the peer to disconnect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Connection.IConnectionManager.html">IConnectionManager</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Connection_ConnectionManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Connection.ConnectionManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Connection/ConnectionManager.cs/#L83" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Stratis.Bitcoin.Utilities
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Stratis.Bitcoin.Utilities
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Utilities">
+  
+  <h1 id="Stratis_Bitcoin_Utilities" data-uid="Stratis.Bitcoin.Utilities" class="text-break">Namespace Stratis.Bitcoin.Utilities
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncExecutionEvent-2.html">AsyncExecutionEvent&lt;TSender, TArg&gt;</a></h4>
+      <section><p>Execution event is a specific moment in the execution flow of that a component
+that other components are allowed to be subscribed to and get notified about
+when it occurs.</p>
+<p>
+This implementation allows components to register asynchronous event handlers.
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncLock.html">AsyncLock</a></h4>
+      <section><p>An async synchronization primitive that allows the caller to await inside the critical section.</p>
+<p>
+The lock is disposable, which allows the caller to use the convenient <code>using</code> statement
+and avoid caring about releasing the lock.
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncLoop.html">AsyncLoop</a></h4>
+      <section><p>Allows running application defined in a loop with specific timing.</p>
+<p>
+It is possible to specify a startup delay, which will cause the first execution of the task to be delayed.
+It is also possible to specify a delay between two executions of the task. And finally, it is possible
+to make the task run only once. Running the task for other than one or infinite number of times is not supported.
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncLoopFactory.html">AsyncLoopFactory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncManualResetEvent.html">AsyncManualResetEvent</a></h4>
+      <section><p>An async-compatible manual-reset event.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncQueue-1.html">AsyncQueue&lt;T&gt;</a></h4>
+      <section><p>Async queue is a thread-safe queue that can operate in callback mode or blocking dequeue mode.
+In callback mode it asynchronously executes a user-defined callback when a new item is added to the queue.
+In blocking dequeue mode, <a class="xref" href="Stratis.Bitcoin.Utilities.AsyncQueue-1.html#Stratis_Bitcoin_Utilities_AsyncQueue_1_DequeueAsync_CancellationToken_">DequeueAsync(CancellationToken)</a> is used to wait for and dequeue
+an item from the queue once it becomes available.</p>
+<p>
+In callback mode, the queue guarantees that the user-defined callback is executed only once at the time. 
+If another item is added to the queue, the callback is called again after the current execution 
+is finished.
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.CircularArray-1.html">CircularArray&lt;T&gt;</a></h4>
+      <section><p>Generic circular array is a fixed length array which stores collection
+of items. Once the array is full, adding a new item removes the oldest entry.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.DateTimeProvider.html">DateTimeProvider</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.DBreezeSerializer.html">DBreezeSerializer</a></h4>
+      <section><p>Implementation of serialization and deserialization of objects that go into the DBreeze database.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.FileStorage-1.html">FileStorage&lt;T&gt;</a></h4>
+      <section><p>Class providing methods to save objects as files on the file system.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.FullNodeExtensions.html">FullNodeExtensions</a></h4>
+      <section><p>Extension methods for IFullNode interface.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.Guard.html">Guard</a></h4>
+      <section><p>Collection of guard methods.</p>
+<p>
+Guards are typically used at the beginning of a method to protect the body of
+the method being called with invalid set of parameters or object states.
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.LinqExtensions.html">LinqExtensions</a></h4>
+      <section><p>Extension methods for IEnumerable interface.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.LoggingExtensions.html">LoggingExtensions</a></h4>
+      <section><p>Extension methods for classes and interfaces related to logging.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.html">MemoryCache&lt;TKey, TValue&gt;</a></h4>
+      <section><p>Memory cache that implements the Least Recently Used (LRU) policy.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.NetworkExtensions.html">NetworkExtensions</a></h4>
+      <section><p>Extension methods for NBitcoin's Network class.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.NetworkHelpers.html">NetworkHelpers</a></h4>
+      <section><p>Contains a collection of helpers methods.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.NodeLifetime.html">NodeLifetime</a></h4>
+      <section><p>Allows consumers to perform cleanup during a graceful shutdown.
+Borrowed from asp.net core</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.ParallelAsync.html">ParallelAsync</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.PeriodicTask.html">PeriodicTask</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.PrefixLogger.html">PrefixLogger</a></h4>
+      <section><p>Logger that prefixes every log with specified string.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.ProtocolExtensions.html">ProtocolExtensions</a></h4>
+      <section><p>Extension methods related to the network protocol.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.RewindData.html">RewindData</a></h4>
+      <section><p>Information about a previous state of the coinview that contains all information
+needed to rewind the coinview from the current state to the previous state.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.SchedulerLock.html">SchedulerLock</a></h4>
+      <section><p>An async reader writer lock for concurrent and exclusive work.</p>
+<p>
+The class uses ConcurrentExclusiveSchedulerPair to access two task schedulers - concurrent
+scheduler and exclusive scheduler. The exclusive scheduler guarantees only one task to be run
+at the same, which is what is used as a writer lock. The concurrent scheduler allows multiple
+tasks to run simultaneously, but the exclusivity of exclusive scheduler is respected, so it is
+used as a reader lock.
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.StopwatchDisposable.html">StopwatchDisposable</a></h4>
+      <section><p>Replacement for the <see cref="!:System.Diagnostics.Stopwatch"></see> class that allows the caller
+to use a convenient way of calling the watch with the <code>using</code> statement due to
+the implementation of <see cref="!:IDisposable"></see> interface.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.TimerExtensions.html">TimerExtensions</a></h4>
+      <section><p>Extension methods for the <see cref="!:Timer"></see> class.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.TimeSpans.html">TimeSpans</a></h4>
+      <section><p>Commonly used time spans.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.UnspentOutputs.html">UnspentOutputs</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoop.html">IAsyncLoop</a></h4>
+      <section><p>Allows running application defined in a loop with specific timing.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoopFactory.html">IAsyncLoopFactory</a></h4>
+      <section><p>Factory for creating and also possibly starting application defined tasks inside async loop.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></h4>
+      <section><p>Providing date time functionality.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.INodeLifetime.html">INodeLifetime</a></h4>
+      <section><p>Allows consumers to perform cleanup during a graceful shutdown.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.IPeriodicTask.html">IPeriodicTask</a></h4>
+      <section><p>Periodic task executes an application defined task in a loop with a specified delay between two runs.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.ISchedulerLock.html">ISchedulerLock</a></h4>
+      <section><p>An async reader writer lock for concurrent and exclusive work.</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncExecutionEventCallback-2.html">AsyncExecutionEventCallback&lt;TSender, TArg&gt;</a></h4>
+      <section><p>Asynchronous event handler that can be registered with <a class="xref" href="Stratis.Bitcoin.Utilities.AsyncExecutionEvent-2.html">AsyncExecutionEvent&lt;TSender, TArg&gt;</a>.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncQueue-1.OnEnqueueAsync.html">AsyncQueue&lt;T&gt;.OnEnqueueAsync</a></h4>
+      <section><p>Represents a callback method to be executed when a new item is added to the queue.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1252 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlockRepository
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlockRepository
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository" class="text-break">Class BlockRepository
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BlockRepository</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Features.BlockStore.IBlockRepository.html">IBlockRepository</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.BlockStore.html">Stratis.Bitcoin.Features.BlockStore</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.BlockStore.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BlockRepository : object, IBlockRepository, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository__ctor_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.%23ctor(NBitcoin.Network%2CStratis.Bitcoin.Configuration.DataFolder%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L120">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository__ctor_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository__ctor_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.#ctor(NBitcoin.Network,Stratis.Bitcoin.Configuration.DataFolder,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory)">BlockRepository(Network, DataFolder, IDateTimeProvider, ILoggerFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockRepository(Network network, DataFolder dataFolder, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.DataFolder.html">DataFolder</a></td>
+        <td><span class="parametername">dataFolder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository__ctor_NBitcoin_Network_System_String_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.%23ctor(NBitcoin.Network%2CSystem.String%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L125">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository__ctor_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository__ctor_NBitcoin_Network_System_String_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.#ctor(NBitcoin.Network,System.String,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory)">BlockRepository(Network, String, IDateTimeProvider, ILoggerFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockRepository(Network network, string folder, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">folder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_BlockHashKey.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.BlockHashKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L104">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_BlockHashKey" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.BlockHashKey">BlockHashKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly byte[] BlockHashKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_dateTimeProvider.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.dateTimeProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L115">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_dateTimeProvider" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.dateTimeProvider">dateTimeProvider</h4>
+  <div class="markdown level1 summary"><p>Provider of time functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IDateTimeProvider dateTimeProvider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_DBreeze.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.DBreeze%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L100">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_DBreeze" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.DBreeze">DBreeze</h4>
+  <div class="markdown level1 summary"><p>Access to DBreeze database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly DBreezeEngine DBreeze</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DBreezeEngine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_network.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L102">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_network" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.network">network</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly Network network</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_TxIndexKey.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.TxIndexKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L106">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_TxIndexKey" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.TxIndexKey">TxIndexKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly byte[] TxIndexKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_BlockHash.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.BlockHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L108">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_BlockHash_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.BlockHash*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_BlockHash" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.BlockHash">BlockHash</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint256 BlockHash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_HighestPersistedBlock.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.HighestPersistedBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L118">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_HighestPersistedBlock_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.HighestPersistedBlock*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_HighestPersistedBlock" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.HighestPersistedBlock">HighestPersistedBlock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChainedHeader HighestPersistedBlock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_PerformanceCounter.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.PerformanceCounter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L110">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_PerformanceCounter_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.PerformanceCounter*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_PerformanceCounter" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.PerformanceCounter">PerformanceCounter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockStoreRepositoryPerformanceCounter PerformanceCounter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.BlockStore.BlockStoreRepositoryPerformanceCounter.html">BlockStoreRepositoryPerformanceCounter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_TxIndex.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.TxIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L112">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_TxIndex_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.TxIndex*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_TxIndex" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.TxIndex">TxIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TxIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_DeleteAsync_NBitcoin_uint256_List_NBitcoin_uint256__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.DeleteAsync(NBitcoin.uint256%2CList%7BNBitcoin.uint256%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L666">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_DeleteAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.DeleteAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_DeleteAsync_NBitcoin_uint256_List_NBitcoin_uint256__" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.DeleteAsync(NBitcoin.uint256,List{NBitcoin.uint256})">DeleteAsync(uint256, List&lt;uint256&gt;)</h4>
+  <div class="markdown level1 summary"><p>Wipe our blocks and their transactions then replace with a new block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteAsync(uint256 newBlockHash, List&lt;uint256&gt; hashes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">newBlockHash</span></td>
+        <td><p>Hash of the new block</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
+        <td><span class="parametername">hashes</span></td>
+        <td><p>List of all block hashes to be deleted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L700">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_Dispose_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_Dispose" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_ExistAsync_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.ExistAsync(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L553">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_ExistAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.ExistAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_ExistAsync_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.ExistAsync(NBitcoin.uint256)">ExistAsync(uint256)</h4>
+  <div class="markdown level1 summary"><p>Determine if a block already exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; ExistAsync(uint256 hash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">hash</span></td>
+        <td><p>The hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the block hash can be found in the database, otherwise return <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetAsync_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetAsync(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L485">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetAsync_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetAsync(NBitcoin.uint256)">GetAsync(uint256)</h4>
+  <div class="markdown level1 summary"><p>Get block from the database by block hash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Block&gt; GetAsync(uint256 hash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">hash</span></td>
+        <td><p>The block hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.Block.html">Block</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetBlocksAsync_List_NBitcoin_uint256__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetBlocksAsync(List%7BNBitcoin.uint256%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L521">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetBlocksAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetBlocksAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetBlocksAsync_List_NBitcoin_uint256__" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetBlocksAsync(List{NBitcoin.uint256})">GetBlocksAsync(List&lt;uint256&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Block&gt;&gt; GetBlocksAsync(List&lt;uint256&gt; hashes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
+        <td><span class="parametername">hashes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.Block.html">Block</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetDbreezeEngine.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetDbreezeEngine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L694">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetDbreezeEngine_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetDbreezeEngine*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetDbreezeEngine" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetDbreezeEngine">GetDbreezeEngine()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBreezeEngine GetDbreezeEngine()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DBreezeEngine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetTrxAsync_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetTrxAsync(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L185">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetTrxAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetTrxAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetTrxAsync_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetTrxAsync(NBitcoin.uint256)">GetTrxAsync(uint256)</h4>
+  <div class="markdown level1 summary"><p>Retreive the transaction information asynchronously using transaction hash</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Transaction&gt; GetTrxAsync(uint256 trxid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">trxid</span></td>
+        <td><p>The transaction id to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.Transaction.html">Transaction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetTrxBlockIdAsync_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetTrxBlockIdAsync(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L231">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetTrxBlockIdAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetTrxBlockIdAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_GetTrxBlockIdAsync_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.GetTrxBlockIdAsync(NBitcoin.uint256)">GetTrxBlockIdAsync(uint256)</h4>
+  <div class="markdown level1 summary"><p>Get the corresponding block hash by using transaction hash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; GetTrxBlockIdAsync(uint256 trxid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">trxid</span></td>
+        <td><p>transaction hash</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_InitializeAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.InitializeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L146">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_InitializeAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.InitializeAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_InitializeAsync" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.InitializeAsync">InitializeAsync()</h4>
+  <div class="markdown level1 summary"><p>Initializes the blockchain storage and ensure the genesis block has been created in the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task InitializeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnDeleteBlocks_DBreeze_Transactions_Transaction_List_NBitcoin_Block__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnDeleteBlocks(DBreeze.Transactions.Transaction%2CList%7BNBitcoin.Block%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L600">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnDeleteBlocks_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnDeleteBlocks*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnDeleteBlocks_DBreeze_Transactions_Transaction_List_NBitcoin_Block__" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnDeleteBlocks(DBreeze.Transactions.Transaction,List{NBitcoin.Block})">OnDeleteBlocks(DBreeze.Transactions.Transaction, List&lt;Block&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDeleteBlocks(DBreeze.Transactions.Transaction dbreezeTransaction, List&lt;Block&gt; blocks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DBreeze.Transactions.Transaction</span></td>
+        <td><span class="parametername">dbreezeTransaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.Block.html">Block</a>&gt;</td>
+        <td><span class="parametername">blocks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnDeleteTransactions_DBreeze_Transactions_Transaction_List_System_ValueTuple_NBitcoin_Transaction_NBitcoin_Block___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnDeleteTransactions(DBreeze.Transactions.Transaction%2CList%7BSystem.ValueTuple%7BNBitcoin.Transaction%2CNBitcoin.Block%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L587">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnDeleteTransactions_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnDeleteTransactions*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnDeleteTransactions_DBreeze_Transactions_Transaction_List_System_ValueTuple_NBitcoin_Transaction_NBitcoin_Block___" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnDeleteTransactions(DBreeze.Transactions.Transaction,List{System.ValueTuple{NBitcoin.Transaction,NBitcoin.Block}})">OnDeleteTransactions(DBreeze.Transactions.Transaction, List&lt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDeleteTransactions(DBreeze.Transactions.Transaction dbreezeTransaction, List&lt;&gt; transactions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DBreeze.Transactions.Transaction</span></td>
+        <td><span class="parametername">dbreezeTransaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.</span>&gt;</td>
+        <td><span class="parametername">transactions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnInsertBlocks_DBreeze_Transactions_Transaction_List_NBitcoin_Block__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnInsertBlocks(DBreeze.Transactions.Transaction%2CList%7BNBitcoin.Block%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L270">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnInsertBlocks_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnInsertBlocks*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnInsertBlocks_DBreeze_Transactions_Transaction_List_NBitcoin_Block__" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnInsertBlocks(DBreeze.Transactions.Transaction,List{NBitcoin.Block})">OnInsertBlocks(DBreeze.Transactions.Transaction, List&lt;Block&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnInsertBlocks(DBreeze.Transactions.Transaction dbreezeTransaction, List&lt;Block&gt; blocks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DBreeze.Transactions.Transaction</span></td>
+        <td><span class="parametername">dbreezeTransaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.Block.html">Block</a>&gt;</td>
+        <td><span class="parametername">blocks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnInsertTransactions_DBreeze_Transactions_Transaction_List_System_ValueTuple_NBitcoin_Transaction_NBitcoin_Block___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnInsertTransactions(DBreeze.Transactions.Transaction%2CList%7BSystem.ValueTuple%7BNBitcoin.Transaction%2CNBitcoin.Block%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L321">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnInsertTransactions_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnInsertTransactions*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_OnInsertTransactions_DBreeze_Transactions_Transaction_List_System_ValueTuple_NBitcoin_Transaction_NBitcoin_Block___" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.OnInsertTransactions(DBreeze.Transactions.Transaction,List{System.ValueTuple{NBitcoin.Transaction,NBitcoin.Block}})">OnInsertTransactions(DBreeze.Transactions.Transaction, List&lt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnInsertTransactions(DBreeze.Transactions.Transaction dbreezeTransaction, List&lt;&gt; transactions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DBreeze.Transactions.Transaction</span></td>
+        <td><span class="parametername">dbreezeTransaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.</span>&gt;</td>
+        <td><span class="parametername">transactions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_PerformanceCounterFactory.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.PerformanceCounterFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L138">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_PerformanceCounterFactory_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.PerformanceCounterFactory*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_PerformanceCounterFactory" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.PerformanceCounterFactory">PerformanceCounterFactory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BlockStoreRepositoryPerformanceCounter PerformanceCounterFactory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.BlockStore.BlockStoreRepositoryPerformanceCounter.html">BlockStoreRepositoryPerformanceCounter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_PutAsync_NBitcoin_uint256_List_NBitcoin_Block__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.PutAsync(NBitcoin.uint256%2CList%7BNBitcoin.Block%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L343">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_PutAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.PutAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_PutAsync_NBitcoin_uint256_List_NBitcoin_Block__" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.PutAsync(NBitcoin.uint256,List{NBitcoin.Block})">PutAsync(uint256, List&lt;Block&gt;)</h4>
+  <div class="markdown level1 summary"><p>Persist the next block hash and insert new blocks into the database</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task PutAsync(uint256 nextBlockHash, List&lt;Block&gt; blocks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">nextBlockHash</span></td>
+        <td><p>next block has</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.Block.html">Block</a>&gt;</td>
+        <td><span class="parametername">blocks</span></td>
+        <td><p>blocks to be inserted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_SaveTxIndex_DBreeze_Transactions_Transaction_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.SaveTxIndex(DBreeze.Transactions.Transaction%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L393">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_SaveTxIndex_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.SaveTxIndex*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_SaveTxIndex_DBreeze_Transactions_Transaction_System_Boolean_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.SaveTxIndex(DBreeze.Transactions.Transaction,System.Boolean)">SaveTxIndex(DBreeze.Transactions.Transaction, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SaveTxIndex(DBreeze.Transactions.Transaction dbreezeTransaction, bool txIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DBreeze.Transactions.Transaction</span></td>
+        <td><span class="parametername">dbreezeTransaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">txIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_SetBlockHashAsync_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.SetBlockHashAsync(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L448">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_SetBlockHashAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.SetBlockHashAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_SetBlockHashAsync_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.SetBlockHashAsync(NBitcoin.uint256)">SetBlockHashAsync(uint256)</h4>
+  <div class="markdown level1 summary"><p>Set the next block hash and persist it in the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetBlockHashAsync(uint256 nextBlockHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">nextBlockHash</span></td>
+        <td><p>The next block hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository_SetTxIndexAsync_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository.SetTxIndexAsync(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L404">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_SetTxIndexAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.SetTxIndexAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockRepository_SetTxIndexAsync_System_Boolean_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockRepository.SetTxIndexAsync(System.Boolean)">SetTxIndexAsync(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetTxIndexAsync(bool txIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">txIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.BlockStore.IBlockRepository.html">IBlockRepository</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockRepository.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.BlockStore/BlockRepository.cs/#L94" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

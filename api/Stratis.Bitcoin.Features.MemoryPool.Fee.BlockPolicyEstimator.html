@@ -1,0 +1,699 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlockPolicyEstimator
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlockPolicyEstimator
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator" class="text-break">Class BlockPolicyEstimator
+  </h1>
+  <div class="markdown level0 summary"><p>The BlockPolicyEstimator is used for estimating the feerate needed
+for a transaction to be included in a block within a certain number of
+blocks.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BlockPolicyEstimator</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Fee.html">Stratis.Bitcoin.Features.MemoryPool.Fee</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.MemoryPool.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BlockPolicyEstimator : object</code></pre>
+  </div>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>At a high level the algorithm works by grouping transactions into buckets
+based on having similar feerates and then tracking how long it
+takes transactions in the various buckets to be mined.  It operates under
+the assumption that in general transactions of higher feerate will be
+included in blocks before transactions of lower feerate.   So for
+example if you wanted to know what feerate you should put on a transaction to
+be included in a block within the next 5 blocks, you would start by looking
+at the bucket with the highest feerate transactions and verifying that a
+sufficiently high percentage of them were confirmed within 5 blocks and
+then you would look at the next highest feerate bucket, and so on, stopping at
+the last bucket to pass the test.   The average feerate of transactions in this
+bucket will give you an indication of the lowest feerate you can put on a
+transaction and still have a sufficiently high chance of being confirmed
+within your desired 5 blocks.</p>
+<p>Here is a brief description of the implementation:
+When a transaction enters the mempool, we
+track the height of the block chain at entry.  Whenever a block comes in,
+we count the number of transactions in each bucket and the total amount of feerate
+paid in each bucket. Then we calculate how many blocks Y it took each
+transaction to be mined and we track an array of counters in each bucket
+for how long it to took transactions to get confirmed from 1 to a max of 25
+and we increment all the counters from Y up to 25. This is because for any
+number Z&gt;=Y the transaction was successfully mined within Z blocks.  We
+want to save a history of this information, so at any time we have a
+counter of the total number of transactions that happened in a given feerate
+bucket and the total number that were confirmed in each number 1-25 blocks
+or less for any bucket.   We save this history by keeping an exponentially
+decaying moving average of each one of these stats.  Furthermore we also
+keep track of the number unmined (in mempool) transactions in each bucket
+and for how many blocks they have been outstanding and use that to increase
+the number of transactions we've seen in that feerate bucket when calculating
+an estimate for any number of confirmations below the number of blocks
+they've been outstanding.</p>
+<p>We will instantiate an instance of this class to track transactions that were
+included in a block. We will lump transactions into a bucket according to their
+approximate feerate and then track how long it took for those txs to be included in a block</p>
+<p>The tracking of unconfirmed (mempool) transactions is completely independent of the
+historical tracking of transactions that have been confirmed in a block.</p>
+<p>We want to be able to estimate feerates that are needed on tx's to be included in
+a certain number of blocks.Every time a block is added to the best chain, this class records
+stats on the transactions included in that block</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator__ctor_Stratis_Bitcoin_Features_MemoryPool_MempoolSettings_ILoggerFactory_Stratis_Bitcoin_Configuration_NodeSettings_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.%23ctor(Stratis.Bitcoin.Features.MemoryPool.MempoolSettings%2CILoggerFactory%2CStratis.Bitcoin.Configuration.NodeSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L131">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator__ctor_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator__ctor_Stratis_Bitcoin_Features_MemoryPool_MempoolSettings_ILoggerFactory_Stratis_Bitcoin_Configuration_NodeSettings_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.#ctor(Stratis.Bitcoin.Features.MemoryPool.MempoolSettings,ILoggerFactory,Stratis.Bitcoin.Configuration.NodeSettings)">BlockPolicyEstimator(MempoolSettings, ILoggerFactory, NodeSettings)</h4>
+  <div class="markdown level1 summary"><p>Constructs an instance of the block policy estimator object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockPolicyEstimator(MempoolSettings mempoolSettings, ILoggerFactory loggerFactory, NodeSettings nodeSettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolSettings.html">MempoolSettings</a></td>
+        <td><span class="parametername">mempoolSettings</span></td>
+        <td><p>Mempool settings.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>Factory for creating loggers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
+        <td><span class="parametername">nodeSettings</span></td>
+        <td><p>Full node settings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_InfPriority.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.InfPriority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L93">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_InfPriority" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.InfPriority">InfPriority</h4>
+  <div class="markdown level1 summary"><p>Value for infinite priority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double InfPriority = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimateFee_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimateFee(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L281">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimateFee_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimateFee*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimateFee_System_Int32_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimateFee(System.Int32)">EstimateFee(Int32)</h4>
+  <div class="markdown level1 summary"><p>Return a feerate estimate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeeRate EstimateFee(int confTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">confTarget</span></td>
+        <td><p>The desired number of confirmations to be included in a block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.FeeRate.html">FeeRate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimatePriority_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimatePriority(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L360">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimatePriority_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimatePriority*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimatePriority_System_Int32_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimatePriority(System.Int32)">EstimatePriority(Int32)</h4>
+  <div class="markdown level1 summary"><p>Return an estimate of the priority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double EstimatePriority(int confTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">confTarget</span></td>
+        <td><p>The desired number of confirmations to be included in a block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Estimate of the priority.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimatePriority_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>TODO: Implement priority estimation</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimateSmartFee_System_Int32_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_System_Int32__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimateSmartFee(System.Int32%2CStratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L302">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimateSmartFee_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimateSmartFee*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimateSmartFee_System_Int32_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_System_Int32__" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimateSmartFee(System.Int32,Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool,System.Int32@)">EstimateSmartFee(Int32, ITxMempool, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Estimate feerate needed to be included in a block within
+confTarget blocks. If no answer can be given at confTarget, return an
+estimate at the lowest target where one can be given.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeeRate EstimateSmartFee(int confTarget, ITxMempool pool, out int answerFoundAtTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">confTarget</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html">ITxMempool</a></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">answerFoundAtTarget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.FeeRate.html">FeeRate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimateSmartPriority_System_Int32_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_System_Int32__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimateSmartPriority(System.Int32%2CStratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L372">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimateSmartPriority_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimateSmartPriority*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_EstimateSmartPriority_System_Int32_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_System_Int32__" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.EstimateSmartPriority(System.Int32,Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool,System.Int32@)">EstimateSmartPriority(Int32, ITxMempool, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Return an estimated smart priority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double EstimateSmartPriority(int confTarget, ITxMempool pool, out int answerFoundAtTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">confTarget</span></td>
+        <td><p>The desired number of confirmations to be included in a block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html">ITxMempool</a></td>
+        <td><span class="parametername">pool</span></td>
+        <td><p>Memory pool transactions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">answerFoundAtTarget</span></td>
+        <td><p>Block height where answer was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The smart priority.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_ProcessBlock_System_Int32_List_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.ProcessBlock(System.Int32%2CList%7BStratis.Bitcoin.Features.MemoryPool.TxMempoolEntry%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L158">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_ProcessBlock_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.ProcessBlock*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_ProcessBlock_System_Int32_List_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry__" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.ProcessBlock(System.Int32,List{Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry})">ProcessBlock(Int32, List&lt;TxMempoolEntry&gt;)</h4>
+  <div class="markdown level1 summary"><p>Process all the transactions that have been included in a block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProcessBlock(int nBlockHeight, List&lt;TxMempoolEntry&gt; entries)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nBlockHeight</span></td>
+        <td><p>The block height for the block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry.html">TxMempoolEntry</a>&gt;</td>
+        <td><span class="parametername">entries</span></td>
+        <td><p>Collection of memory pool entries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_ProcessTransaction_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.ProcessTransaction(Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L223">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_ProcessTransaction_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.ProcessTransaction*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_ProcessTransaction_Stratis_Bitcoin_Features_MemoryPool_TxMempoolEntry_System_Boolean_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.ProcessTransaction(Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry,System.Boolean)">ProcessTransaction(TxMempoolEntry, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Process a transaction accepted to the mempool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProcessTransaction(TxMempoolEntry entry, bool validFeeEstimate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry.html">TxMempoolEntry</a></td>
+        <td><span class="parametername">entry</span></td>
+        <td><p>Memory pool entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">validFeeEstimate</span></td>
+        <td><p>Whether to update fee estimate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_Read_Stream_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.Read(Stream%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L350">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_Read_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.Read*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_Read_Stream_System_Int32_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.Read(Stream,System.Int32)">Read(Stream, Int32)</h4>
+  <div class="markdown level1 summary"><p>Read estimation data from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Read(Stream filein, int nFileVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">filein</span></td>
+        <td><p>Stream to read data from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFileVersion</span></td>
+        <td><p>Version number of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_Read_Stream_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>TODO: Implement read estimation</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_RemoveTx_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.RemoveTx(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L265">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_RemoveTx_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.RemoveTx*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_RemoveTx_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.RemoveTx(NBitcoin.uint256)">RemoveTx(uint256)</h4>
+  <div class="markdown level1 summary"><p>Remove a transaction from the mempool tracking stats.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveTx(uint256 hash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">hash</span></td>
+        <td><p>Transaction hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the transaction was successfully removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_RemoveTx_NBitcoin_uint256__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function is called from TxMemPool.RemoveUnchecked to ensure
+txs removed from the mempool for any reason are no longer
+tracked. Txs that were part of a block have already been removed in
+ProcessBlockTx to ensure they are never double tracked, but it is
+of no harm to try to remove them again.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_Write_Stream_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.Write(Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L340">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_Write_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.Write*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_Write_Stream_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator.Write(Stream)">Write(Stream)</h4>
+  <div class="markdown level1 summary"><p>Write estimation data to a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Stream fileout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">fileout</span></td>
+        <td><p>Stream to write to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator_Write_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>TODO: Implement write estimation</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Fee_BlockPolicyEstimator.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Fee.BlockPolicyEstimator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/Fee/BlockPolicyEstimator.cs/#L62" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

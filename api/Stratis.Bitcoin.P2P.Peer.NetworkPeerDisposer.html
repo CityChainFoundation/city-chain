@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NetworkPeerDisposer
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NetworkPeerDisposer
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer">
+  
+  
+  <h1 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer" class="text-break">Class NetworkPeerDisposer
+  </h1>
+  <div class="markdown level0 summary"><p>Maintains a list of connected peers and ensures their proper disposal.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NetworkPeerDisposer</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.P2P.Peer.html">Stratis.Bitcoin.P2P.Peer</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
+  <h5 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NetworkPeerDisposer : IDisposable</code></pre>
+  </div>
+  <h5 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Each component that creates instances of <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeer.html">NetworkPeer</a> should be responsible for disposing it.</p>
+<p>
+Implementing this functionality in such components will lead to having similar code in these components.
+Instead, this class could be used in order to provide such functionality.
+This means that the responsibility for destroying the peer can delegated to this class, which simplifies the
+code of the owning component.   
+</p>
+<p>
+When a new peer is created (and the <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html#Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_OnPeerDisconnectedHandler_Stratis_Bitcoin_P2P_Peer_INetworkPeer_">OnPeerDisconnectedHandler(INetworkPeer)</a> callback is used as an <span class="xref">Stratis.Bitcoin.P2P.Peer.NetworkPeer.onDisconnected</span> in the constructor)
+by a component that utilizes this class, <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html#Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_AddPeer_Stratis_Bitcoin_P2P_Peer_INetworkPeer_">AddPeer(INetworkPeer)</a> should be used to inform  this class about it. Once the peer is added, the owning component no 
+longer needs to care about this peer&apos;s disposal. 
+When a peer disconnects, this class will invoke peer&apos;s disposal in a separated task.
+Also when <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html#Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_Dispose">Dispose()</a> is called, all connected peers added to this component will be disposed. 
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer__ctor_ILoggerFactory_Action_Stratis_Bitcoin_P2P_Peer_INetworkPeer__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.%23ctor(ILoggerFactory%2CAction%7BStratis.Bitcoin.P2P.Peer.INetworkPeer%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerDisposer.cs/#L52">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer__ctor_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer__ctor_ILoggerFactory_Action_Stratis_Bitcoin_P2P_Peer_INetworkPeer__" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.#ctor(ILoggerFactory,Action{Stratis.Bitcoin.P2P.Peer.INetworkPeer})">NetworkPeerDisposer(ILoggerFactory, Action&lt;INetworkPeer&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html">NetworkPeerDisposer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkPeerDisposer(ILoggerFactory loggerFactory, Action&lt;INetworkPeer&gt; onPeerDisposed = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>Factory for creating loggers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a>&gt;</td>
+        <td><span class="parametername">onPeerDisposed</span></td>
+        <td><p>Callback that is called before the peer is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_ConnectedPeersCount.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.ConnectedPeersCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerDisposer.cs/#L42">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_ConnectedPeersCount_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.ConnectedPeersCount*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_ConnectedPeersCount" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.ConnectedPeersCount">ConnectedPeersCount</h4>
+  <div class="markdown level1 summary"><p>Gets the connected peers count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConnectedPeersCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_AddPeer_Stratis_Bitcoin_P2P_Peer_INetworkPeer_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.AddPeer(Stratis.Bitcoin.P2P.Peer.INetworkPeer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerDisposer.cs/#L96">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_AddPeer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.AddPeer*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_AddPeer_Stratis_Bitcoin_P2P_Peer_INetworkPeer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.AddPeer(Stratis.Bitcoin.P2P.Peer.INetworkPeer)">AddPeer(INetworkPeer)</h4>
+  <div class="markdown level1 summary"><p>Adds the peer to the collection of connected peers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPeer(INetworkPeer peer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td><span class="parametername">peer</span></td>
+        <td><p>The peer to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerDisposer.cs/#L102">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_Dispose_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_Dispose" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_OnPeerDisconnectedHandler_Stratis_Bitcoin_P2P_Peer_INetworkPeer_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.OnPeerDisconnectedHandler(Stratis.Bitcoin.P2P.Peer.INetworkPeer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerDisposer.cs/#L83">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_OnPeerDisconnectedHandler_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.OnPeerDisconnectedHandler*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_OnPeerDisconnectedHandler_Stratis_Bitcoin_P2P_Peer_INetworkPeer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.OnPeerDisconnectedHandler(Stratis.Bitcoin.P2P.Peer.INetworkPeer)">OnPeerDisconnectedHandler(INetworkPeer)</h4>
+  <div class="markdown level1 summary"><p>Handles peer's disconnection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPeerDisconnectedHandler(INetworkPeer peer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td><span class="parametername">peer</span></td>
+        <td><p>Peer which disposal should be safely handled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerDisposer.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

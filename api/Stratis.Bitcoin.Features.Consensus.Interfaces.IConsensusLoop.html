@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IConsensusLoop
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IConsensusLoop
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop" class="text-break">Interface IConsensusLoop
+  </h1>
+  <div class="markdown level0 summary"><p>Interface for a consensus loop.
+Consumes incoming blocks, validates and executes them.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Interfaces.html">Stratis.Bitcoin.Features.Consensus.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Consensus.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IConsensusLoop</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Chain.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Chain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L17">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Chain_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Chain*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Chain" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Chain">Chain</h4>
+  <div class="markdown level1 summary"><p>A chain of headers all the way to genesis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ConcurrentChain Chain { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_ConsensusRules.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.ConsensusRules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L35">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_ConsensusRules_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.ConsensusRules*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_ConsensusRules" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.ConsensusRules">ConsensusRules</h4>
+  <div class="markdown level1 summary"><p>The rules engine for validation logic for the consensus rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IConsensusRules ConsensusRules { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.IConsensusRules.html">IConsensusRules</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_NodeDeployments.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.NodeDeployments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L20">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_NodeDeployments_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.NodeDeployments*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_NodeDeployments" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.NodeDeployments">NodeDeployments</h4>
+  <div class="markdown level1 summary"><p>Contain information about deployment and activation of features in the chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NodeDeployments NodeDeployments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.Deployments.NodeDeployments.html">NodeDeployments</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Puller.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Puller%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L23">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Puller_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Puller*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Puller" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Puller">Puller</h4>
+  <div class="markdown level1 summary"><p>A puller that can pull blocks from peers on demand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LookaheadBlockPuller Puller { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.html">LookaheadBlockPuller</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_StakeChain.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.StakeChain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L26">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_StakeChain_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.StakeChain*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_StakeChain" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.StakeChain">StakeChain</h4>
+  <div class="markdown level1 summary"><p>Information holding POS data chained.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IStakeChain StakeChain { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.IStakeChain.html">IStakeChain</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Tip.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Tip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L29">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Tip_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Tip*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Tip" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Tip">Tip</h4>
+  <div class="markdown level1 summary"><p>The current tip of the chain that has been validated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChainedHeader Tip { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_UTXOSet.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.UTXOSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L32">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_UTXOSet_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.UTXOSet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_UTXOSet" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.UTXOSet">UTXOSet</h4>
+  <div class="markdown level1 summary"><p>The consensus db, containing all unspent UTXO in the chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CoinView UTXOSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_AcceptBlockAsync_Stratis_Bitcoin_Features_Consensus_BlockValidationContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.AcceptBlockAsync(Stratis.Bitcoin.Features.Consensus.BlockValidationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L43">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_AcceptBlockAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.AcceptBlockAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_AcceptBlockAsync_Stratis_Bitcoin_Features_Consensus_BlockValidationContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.AcceptBlockAsync(Stratis.Bitcoin.Features.Consensus.BlockValidationContext)">AcceptBlockAsync(BlockValidationContext)</h4>
+  <div class="markdown level1 summary"><p>A method that will accept a new block to the node.
+The block will be validated and the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a> db will be updated.
+If it's a new block that was mined or staked it will extend the chain and the new block will set <a class="xref" href="NBitcoin.ConcurrentChain.html#NBitcoin_ConcurrentChain_Tip">Tip</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AcceptBlockAsync(BlockValidationContext blockValidationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.BlockValidationContext.html">BlockValidationContext</a></td>
+        <td><span class="parametername">blockValidationContext</span></td>
+        <td><p>Information about the block to validate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_FlushAsync_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.FlushAsync(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L49">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_FlushAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.FlushAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_FlushAsync_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.FlushAsync(System.Boolean)">FlushAsync(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Flushes changes in the cached coinview to the disk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task FlushAsync(bool force)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p><code>true</code> to enforce flush, <code>false</code> to flush only if the cached coinview itself wants to be flushed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_StartAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.StartAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L54">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_StartAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.StartAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_StartAsync" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.StartAsync">StartAsync()</h4>
+  <div class="markdown level1 summary"><p>Initialize components in <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.html">ConsensusLoop</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task StartAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Stop.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L59">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Stop_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Stop*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_Stop" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Dispose components in <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ConsensusLoop.html">ConsensusLoop</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Stop()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_ValidateBlock_Stratis_Bitcoin_Features_Consensus_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.ValidateBlock(Stratis.Bitcoin.Features.Consensus.RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L64">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_ValidateBlock_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.ValidateBlock*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_ValidateBlock_Stratis_Bitcoin_Features_Consensus_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.ValidateBlock(Stratis.Bitcoin.Features.Consensus.RuleContext)">ValidateBlock(RuleContext)</h4>
+  <div class="markdown level1 summary"><p>Validates a block using the consensus rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateBlock(RuleContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.RuleContext.html">RuleContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Interfaces/IConsensusLoop.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

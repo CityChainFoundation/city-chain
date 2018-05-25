@@ -1,0 +1,585 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IPeerAddressManager
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IPeerAddressManager
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="..//images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager">
+  
+  
+  <h1 id="Stratis_Bitcoin_P2P_IPeerAddressManager" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager" class="text-break">Interface IPeerAddressManager
+  </h1>
+  <div class="markdown level0 summary"><p>Contract for <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddressManager.html">PeerAddressManager</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.P2P.html">Stratis.Bitcoin.P2P</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
+  <h5 id="Stratis_Bitcoin_P2P_IPeerAddressManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPeerAddressManager : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_PeerFilePath.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.PeerFilePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L18">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerFilePath_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerFilePath*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerFilePath" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerFilePath">PeerFilePath</h4>
+  <div class="markdown level1 summary"><p>Data folder of where the json peer file is located.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DataFolder PeerFilePath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.DataFolder.html">DataFolder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_Peers.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.Peers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L21">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_Peers_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.Peers*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_Peers" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.Peers">Peers</h4>
+  <div class="markdown level1 summary"><p>A collection of all discovered peers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;PeerAddress&gt; Peers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html">PeerAddress</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_PeerSelector.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.PeerSelector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L84">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerSelector_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerSelector*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerSelector" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerSelector">PeerSelector</h4>
+  <div class="markdown level1 summary"><p>Peer selector instance, used to select peers to connect to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPeerSelector PeerSelector { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.IPeerSelector.html">IPeerSelector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_AddPeer_IPEndPoint_IPAddress_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.AddPeer(IPEndPoint%2CIPAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L29">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_AddPeer_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.AddPeer*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_AddPeer_IPEndPoint_IPAddress_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.AddPeer(IPEndPoint,IPAddress)">AddPeer(IPEndPoint, IPAddress)</h4>
+  <div class="markdown level1 summary"><p>Adds a peer to the <a class="xref" href="Stratis.Bitcoin.P2P.IPeerAddressManager.html#Stratis_Bitcoin_P2P_IPeerAddressManager_Peers">Peers</a> dictionary.</p>
+<p>
+Only routable IP addresses will be added. See <see cref="!:IpExtensions.IsRoutable(IPAddress, bool)"></see>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddPeer(IPEndPoint endPoint, IPAddress source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endPoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_AddPeers_IPEndPoint___IPAddress_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.AddPeers(IPEndPoint%5B%5D%2CIPAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L37">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_AddPeers_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.AddPeers*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_AddPeers_IPEndPoint___IPAddress_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.AddPeers(IPEndPoint[],IPAddress)">AddPeers(IPEndPoint[], IPAddress)</h4>
+  <div class="markdown level1 summary"><p>Add a set of peers to the <a class="xref" href="Stratis.Bitcoin.P2P.IPeerAddressManager.html#Stratis_Bitcoin_P2P_IPeerAddressManager_Peers">Peers</a> dictionary.</p>
+<p>
+Only routable IP addresses will be added. <see cref="!:IpExtensions.IsRoutable(IPAddress, bool)"></see>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddPeers(IPEndPoint[] endPoints, IPAddress source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span>[]</td>
+        <td><span class="parametername">endPoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_FindPeer_IPEndPoint_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.FindPeer(IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L40">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_FindPeer_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.FindPeer*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_FindPeer_IPEndPoint_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.FindPeer(IPEndPoint)">FindPeer(IPEndPoint)</h4>
+  <div class="markdown level1 summary"><p>Find a peer by endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PeerAddress FindPeer(IPEndPoint endPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html">PeerAddress</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_LoadPeers.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.LoadPeers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L43">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_LoadPeers_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.LoadPeers*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_LoadPeers" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.LoadPeers">LoadPeers()</h4>
+  <div class="markdown level1 summary"><p>Loads peers from a json formatted file on disk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LoadPeers()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_PeerAttempted_IPEndPoint_DateTime_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.PeerAttempted(IPEndPoint%2CDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L54">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerAttempted_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerAttempted*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerAttempted_IPEndPoint_DateTime_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerAttempted(IPEndPoint,DateTime)">PeerAttempted(IPEndPoint, DateTime)</h4>
+  <div class="markdown level1 summary"><p>A connection attempt was made to a peer.</p>
+<p>
+Increments <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_ConnectionAttempts">ConnectionAttempts</a> of the peer as well as the <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_LastConnectionSuccess">LastConnectionSuccess</a>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PeerAttempted(IPEndPoint endpoint, DateTime peerAttemptedAt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">peerAttemptedAt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_PeerConnected_IPEndPoint_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.PeerConnected(IPEndPoint%2CDateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L63">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerConnected_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerConnected*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerConnected_IPEndPoint_DateTimeOffset_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerConnected(IPEndPoint,DateTimeOffset)">PeerConnected(IPEndPoint, DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>A peer was successfully connected to.</p>
+<p>
+Resets the <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_ConnectionAttempts">ConnectionAttempts</a> and <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_LastAttempt">LastAttempt</a> of the peer.
+Sets the peer&apos;s <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_LastConnectionSuccess">LastConnectionSuccess</a> to now.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PeerConnected(IPEndPoint endpoint, DateTimeOffset peerAttemptedAt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="parametername">peerAttemptedAt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_PeerDiscoveredFrom_IPEndPoint_DateTime_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.PeerDiscoveredFrom(IPEndPoint%2CDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L68">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerDiscoveredFrom_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerDiscoveredFrom*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerDiscoveredFrom_IPEndPoint_DateTime_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerDiscoveredFrom(IPEndPoint,DateTime)">PeerDiscoveredFrom(IPEndPoint, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Sets the last time the peer was asked for addresses via discovery.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PeerDiscoveredFrom(IPEndPoint endpoint, DateTime peerDiscoveredFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">peerDiscoveredFrom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_PeerHandshaked_IPEndPoint_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.PeerHandshaked(IPEndPoint%2CDateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L76">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerHandshaked_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerHandshaked*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerHandshaked_IPEndPoint_DateTimeOffset_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerHandshaked(IPEndPoint,DateTimeOffset)">PeerHandshaked(IPEndPoint, DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>A version handshake between two peers was successful.</p>
+<p>
+Sets the peer&apos;s <a class="xref" href="Stratis.Bitcoin.P2P.PeerAddress.html#Stratis_Bitcoin_P2P_PeerAddress_LastConnectionHandshake">LastConnectionHandshake</a> time to now.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PeerHandshaked(IPEndPoint endpoint, DateTimeOffset peerAttemptedAt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="parametername">peerAttemptedAt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_PeerSeen_IPEndPoint_DateTime_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.PeerSeen(IPEndPoint%2CDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L81">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerSeen_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerSeen*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_PeerSeen_IPEndPoint_DateTime_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.PeerSeen(IPEndPoint,DateTime)">PeerSeen(IPEndPoint, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Sets the last time the peer was seen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PeerSeen(IPEndPoint endpoint, DateTime peerSeenAt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">peerSeenAt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager_SavePeers.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager.SavePeers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L46">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_IPeerAddressManager_SavePeers_" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.SavePeers*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerAddressManager_SavePeers" data-uid="Stratis.Bitcoin.P2P.IPeerAddressManager.SavePeers">SavePeers()</h4>
+  <div class="markdown level1 summary"><p>Persist peers to disk in json format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SavePeers()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerAddressManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerAddressManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/P2P/PeerAddressManager.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
