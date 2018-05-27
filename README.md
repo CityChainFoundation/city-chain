@@ -8,6 +8,7 @@
 City Chain
 ===============
 
+Offical homepage:
 https://city-chain.org
 
 Blockchain for the Smart City Platform
@@ -59,6 +60,8 @@ Check this guides for more info:
 * [Wiki Page](https://stratisplatform.atlassian.net/wiki/spaces/WIKI/overview)
 
 There is a lot to do and we welcome contributers developers and testers who want to get some Blockchain experience.
+
+Specification and API reference for source code is published to [https://citychainfoundation.github.io/city-chain/](https://citychainfoundation.github.io/city-chain/).
 
 Testing
 -------
