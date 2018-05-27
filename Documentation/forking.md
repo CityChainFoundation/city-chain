@@ -19,6 +19,16 @@ git merge upstream/master
 ```
 
 
+After changes are merged from upstream (source) into the master (fork), then changes can be further updated into feature branches.
+
+```
+git checkout feature/my-new-feature
+git rebase master
+```
+
+Then resolve any issues that occurs.
+
+
 ## Resources
 
 [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
