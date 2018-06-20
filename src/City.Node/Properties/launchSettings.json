@@ -1,0 +1,19 @@
+{
+  "profiles": {
+    "City.Node": {
+      "commandName": "Project"
+    },
+    "City.Node Test": {
+      "commandName": "Project",
+      "commandLineArgs": "-testnet"
+    },
+    "City.Node Test with RPC": {
+      "commandName": "Project",
+      "commandLineArgs": "-testnet -server -rpcpassword=password -rpcuser=user"
+    },
+    "City.Node Test Keepalive 60s": {
+      "commandName": "Project",
+      "commandLineArgs": "-testnet -keepalive=60"
+    }
+  }
+}

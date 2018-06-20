@@ -150,7 +150,7 @@ namespace Stratis.Bitcoin.P2P.Peer
                     this.MessageProducer.PushMessage(incomingMessage);
                 }
             }
-            catch (OperationCanceledException)
+            catch (OperationCanceledException oce)
             {
                 this.logger.LogTrace("Receiving cancelled.");
                 this.peer.Disconnect("Receiving cancelled.");
