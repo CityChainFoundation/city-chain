@@ -5,6 +5,30 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/City.Chain.DNS.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/City.Chain.DNS.Program.html",
+          "hash": "edcCaIVG9p5gmYa5VP1Vng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/City.Chain.DNS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/City.Chain.DNS.html",
+          "hash": "BKzq3CoLAT4HsfBKh8NIsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/City.Chain.Features.SimpleWallet.FullNodeBuilderSimpleWalletExtension.yml",
       "output": {
         ".html": {
@@ -17076,7 +17100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "tcZj8rFMhXX2xV52DRuF5g=="
+          "hash": "0KYAGxE88aL2+ddauGb1xw=="
         }
       },
       "is_incremental": false,
@@ -17161,6 +17185,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
@@ -17172,11 +17201,6 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
