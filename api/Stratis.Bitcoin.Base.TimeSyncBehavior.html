@@ -86,14 +86,12 @@ from each peer.</p>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.INetworkPeerBehavior.html">INetworkPeerBehavior</a></div>
+    <div><span class="xref">IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html#Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AttachedPeer">NetworkPeerBehavior.AttachedPeer</a>
-    </div>
-    <div>
-      <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html#Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_RegisterDisposable_IDisposable_">NetworkPeerBehavior.RegisterDisposable(IDisposable)</a>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html#Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Attach_Stratis_Bitcoin_P2P_Peer_INetworkPeer_">NetworkPeerBehavior.Attach(INetworkPeer)</a>
@@ -105,6 +103,9 @@ from each peer.</p>
       <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html#Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Detach">NetworkPeerBehavior.Detach()</a>
     </div>
     <div>
+      <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html#Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Dispose">NetworkPeerBehavior.Dispose()</a>
+    </div>
+    <div>
       <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html#Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Stratis_Bitcoin_P2P_Protocol_Behaviors_INetworkPeerBehavior_Clone">NetworkPeerBehavior.INetworkPeerBehavior.Clone()</a>
     </div>
   </div>
@@ -112,16 +113,16 @@ from each peer.</p>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
   <h5 id="Stratis_Bitcoin_Base_TimeSyncBehavior_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TimeSyncBehavior : NetworkPeerBehavior, INetworkPeerBehavior</code></pre>
+    <pre><code class="lang-csharp hljs">public class TimeSyncBehavior : NetworkPeerBehavior, INetworkPeerBehavior, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior__ctor_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior.%23ctor(Stratis.Bitcoin.Base.ITimeSyncBehaviorState%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior__ctor_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior.%23ctor(Stratis.Bitcoin.Base.ITimeSyncBehaviorState%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L408">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L408">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Base_TimeSyncBehavior__ctor_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehavior.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Base_TimeSyncBehavior__ctor_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehavior.#ctor(Stratis.Bitcoin.Base.ITimeSyncBehaviorState,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory)">TimeSyncBehavior(ITimeSyncBehaviorState, IDateTimeProvider, ILoggerFactory)</h4>
@@ -166,10 +167,10 @@ from each peer.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior_AttachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior.AttachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior_AttachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior.AttachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L417">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L417">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Base_TimeSyncBehavior_AttachCore_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehavior.AttachCore*"></a>
   <h4 id="Stratis_Bitcoin_Base_TimeSyncBehavior_AttachCore" data-uid="Stratis.Bitcoin.Base.TimeSyncBehavior.AttachCore">AttachCore()</h4>
@@ -183,10 +184,10 @@ from each peer.</p>
   <div><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html#Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AttachCore">NetworkPeerBehavior.AttachCore()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior_Clone.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior_Clone.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L437">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L437">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Base_TimeSyncBehavior_Clone_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehavior.Clone*"></a>
   <h4 id="Stratis_Bitcoin_Base_TimeSyncBehavior_Clone" data-uid="Stratis.Bitcoin.Base.TimeSyncBehavior.Clone">Clone()</h4>
@@ -215,10 +216,10 @@ from each peer.</p>
   <div><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html#Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Clone">NetworkPeerBehavior.Clone()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior_DetachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior.DetachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior_DetachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior.DetachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L427">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L427">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Base_TimeSyncBehavior_DetachCore_" data-uid="Stratis.Bitcoin.Base.TimeSyncBehavior.DetachCore*"></a>
   <h4 id="Stratis_Bitcoin_Base_TimeSyncBehavior_DetachCore" data-uid="Stratis.Bitcoin.Base.TimeSyncBehavior.DetachCore">DetachCore()</h4>
@@ -234,6 +235,9 @@ from each peer.</p>
   <div>
       <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.INetworkPeerBehavior.html">INetworkPeerBehavior</a>
   </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
 </article>
           </div>
           
@@ -242,10 +246,10 @@ from each peer.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_TimeSyncBehavior.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.TimeSyncBehavior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L388" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/TimeSyncBehavior.cs/#L388" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

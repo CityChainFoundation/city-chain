@@ -77,12 +77,19 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.AssemblerOptions.html">AssemblerOptions</a></h4>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.BlockDefinition.html">BlockDefinition</a></h4>
+      <section><p>A high level class that will allow the ability to override or inject functionality based on what type of block creation logic is used.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.html">BlockDefinitionOptions</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.BlockAssembler.html">BlockAssembler</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.BlockTemplate.html">BlockTemplate</a></h4>
-      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.BlockProvider.html">BlockProvider</a></h4>
+      <section><p>The block provider class is called by <see cref="!:PosMinting"></see> and <see cref="!:PowMining"></see>
+to create a block based on whether or not the node is mining or staking.</p>
+<p>
+The create block logic is abstracted away from the miner or staker so that
+different implementations can be injected via dependency injection.
+</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.FullNodeBuilderMiningExtension.html">FullNodeBuilderMiningExtension</a></h4>
       <section><p>A class providing extension methods for <a class="xref" href="Stratis.Bitcoin.Builder.IFullNodeBuilder.html">IFullNodeBuilder</a>.</p>
 </section>
@@ -97,7 +104,7 @@
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.MiningRPCController.html">MiningRPCController</a></h4>
       <section><p>RPC controller for calls related to PoW mining and PoS minting.</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosBlockAssembler.html">PosBlockAssembler</a></h4>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosBlockDefinition.html">PosBlockDefinition</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.html">PosMinting</a></h4>
       <section><p><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.html">PosMinting</a> is used in order to generate new blocks. It involves a sort of lottery, similar to proof-of-work,
@@ -118,18 +125,18 @@ but the chances of winning this lottery is proportional to how many coins you ar
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosMinting.WalletSecret.html">PosMinting.WalletSecret</a></h4>
       <section><p>Credentials to wallet that contains the private key for the staking UTXO.</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PowBlockAssembler.html">PowBlockAssembler</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PowBlockAssembler.CompareModifiedEntry.html">PowBlockAssembler.CompareModifiedEntry</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PowBlockAssembler.CompareTxIterByAncestorCount.html">PowBlockAssembler.CompareTxIterByAncestorCount</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PowBlockAssembler.TxMemPoolModifiedEntry.html">PowBlockAssembler.TxMemPoolModifiedEntry</a></h4>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PosPowBlockDefinition.html">PosPowBlockDefinition</a></h4>
+      <section><p>Defines how a proof of work block will be built on a proof of stake network.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PowBlockDefinition.html">PowBlockDefinition</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.PowMining.html">PowMining</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.ReserveScript.html">ReserveScript</a></h4>
       <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Miner.TxMemPoolModifiedEntry.html">TxMemPoolModifiedEntry</a></h4>
+      <section><p>Container for tracking updates to ancestor feerate as we include (parent) transactions in a block.</p>
+</section>
 </article>
           </div>
           

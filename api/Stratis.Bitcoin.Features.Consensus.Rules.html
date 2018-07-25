@@ -77,49 +77,19 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRule.html">ConsensusRule</a></h4>
-      <section><p>An abstract rule for implementing consensus rules.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRuleDescriptor.html">ConsensusRuleDescriptor</a></h4>
-      <section><p>Provide additional information about a consensus rule that can be used by the rule engine.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRules.html">ConsensusRules</a></h4>
-      <section><p>An engine that enforce the execution and validation of consensus rule.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRulesExtension.html">ConsensusRulesExtension</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ExecutionRuleAttribute.html">ExecutionRuleAttribute</a></h4>
-      <section><p>Whether the rule is manipulating the consensus state, making changes to the store.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.MempoolRuleAttribute.html">MempoolRuleAttribute</a></h4>
-      <section><p>Whether the rule is manipulating the consensus state, making changes to the store.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRules.html">PosConsensusRules</a></h4>
       <section><p>Extension of consensus rules that provide access to a PoS store.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRules.html">PowConsensusRules</a></h4>
       <section><p>Extension of consensus rules that provide access to a store based on UTXO (Unspent transaction outputs).</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.RuleAttribute.html">RuleAttribute</a></h4>
-      <section><p>An attribute that can be attached to a <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRule.html">ConsensusRule</a>.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.StakeStoreConsensusRule.html">StakeStoreConsensusRule</a></h4>
       <section><p>Rules that provide easy access to the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.IStakeChain.html">IStakeChain</a> which is the store for a PoS system.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.UtxoStoreConsensusRule.html">UtxoStoreConsensusRule</a></h4>
-      <section><p>Rules that provide easy access to the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a> which is the store for a PoW system.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ValidationRuleAttribute.html">ValidationRuleAttribute</a></h4>
-      <section><p>Whether the rule will be considered a rule that only does validation and does not manipulate state in any way.
-When <code>true</code> rule is allowed to skip validation when the <see cref="!:BlockValidationContext.SkipValidation"></see> is set to <code>true</code>.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.IConsensusRules.html">IConsensusRules</a></h4>
-      <section><p>An engine that enforce the execution and validation of consensus rule.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.IRuleRegistration.html">IRuleRegistration</a></h4>
-      <section><p>An interface that will allow the registration of bulk consensus rules in to the engine.</p>
+      <section><p>Rules that provide easy access to the <see cref="!:CoinView"></see> which is the store for a PoW system.</p>
 </section>
 </article>
           </div>

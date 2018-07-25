@@ -79,29 +79,47 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Network</span></div>
+      <div class="level2"><a class="xref" href="NBitcoin.Networks.BitcoinMain.html">BitcoinMain</a></div>
+      <div class="level2"><a class="xref" href="NBitcoin.Networks.StratisMain.html">StratisMain</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="NBitcoin.html">NBitcoin</a></h6>
   <h6><strong>Assembly</strong>: NBitcoin.dll</h6>
   <h5 id="NBitcoin_Network_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Network : object</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Network : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network__ctor.md&amp;value=---%0Auid%3A%20NBitcoin.Network.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L39">View Source</a>
+  </span>
+  <a id="NBitcoin_Network__ctor_" data-uid="NBitcoin.Network.#ctor*"></a>
+  <h4 id="NBitcoin_Network__ctor" data-uid="NBitcoin.Network.#ctor">Network()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Network()</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_BitcoinDefaultConfigFilename.md&amp;value=---%0Auid%3A%20NBitcoin.Network.BitcoinDefaultConfigFilename%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Genesis.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Genesis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L29">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L37">View Source</a>
   </span>
-  <h4 id="NBitcoin_Network_BitcoinDefaultConfigFilename" data-uid="NBitcoin.Network.BitcoinDefaultConfigFilename">BitcoinDefaultConfigFilename</h4>
-  <div class="markdown level1 summary"><p>The default name used for the Bitcoin configuration file.</p>
-</div>
+  <h4 id="NBitcoin_Network_Genesis" data-uid="NBitcoin.Network.Genesis">Genesis</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string BitcoinDefaultConfigFilename = null</code></pre>
+    <pre><code class="lang-csharp hljs">protected Block Genesis</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -113,110 +131,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_BitcoinDefaultMaxTipAgeInSeconds.md&amp;value=---%0Auid%3A%20NBitcoin.Network.BitcoinDefaultMaxTipAgeInSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_MagicBytesArray.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MagicBytesArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L20">View Source</a>
-  </span>
-  <h4 id="NBitcoin_Network_BitcoinDefaultMaxTipAgeInSeconds" data-uid="NBitcoin.Network.BitcoinDefaultMaxTipAgeInSeconds">BitcoinDefaultMaxTipAgeInSeconds</h4>
-  <div class="markdown level1 summary"><p>Bitcoin default value for the maximum tip age in seconds to consider the node in initial block download (24 hours).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int BitcoinDefaultMaxTipAgeInSeconds = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_BitcoinMaxTimeOffsetSeconds.md&amp;value=---%0Auid%3A%20NBitcoin.Network.BitcoinMaxTimeOffsetSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L14">View Source</a>
-  </span>
-  <h4 id="NBitcoin_Network_BitcoinMaxTimeOffsetSeconds" data-uid="NBitcoin.Network.BitcoinMaxTimeOffsetSeconds">BitcoinMaxTimeOffsetSeconds</h4>
-  <div class="markdown level1 summary"><p>Bitcoin maximal value for the calculated time offset. If the value is over this limit, the time syncing feature will be switched off.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int BitcoinMaxTimeOffsetSeconds = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_BitcoinRootFolderName.md&amp;value=---%0Auid%3A%20NBitcoin.Network.BitcoinRootFolderName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L26">View Source</a>
-  </span>
-  <h4 id="NBitcoin_Network_BitcoinRootFolderName" data-uid="NBitcoin.Network.BitcoinRootFolderName">BitcoinRootFolderName</h4>
-  <div class="markdown level1 summary"><p>The name of the root folder containing the different Bitcoin blockchains (Main, TestNet, RegTest).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string BitcoinRootFolderName = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_MagicBytesArray.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MagicBytesArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L305">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L149">View Source</a>
   </span>
   <h4 id="NBitcoin_Network_MagicBytesArray" data-uid="NBitcoin.Network.MagicBytesArray">MagicBytesArray</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Byte array representation of a magic number.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -237,142 +166,24 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisDefaultConfigFilename.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisDefaultConfigFilename%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L35">View Source</a>
-  </span>
-  <h4 id="NBitcoin_Network_StratisDefaultConfigFilename" data-uid="NBitcoin.Network.StratisDefaultConfigFilename">StratisDefaultConfigFilename</h4>
-  <div class="markdown level1 summary"><p>The default name used for the Stratis configuration file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string StratisDefaultConfigFilename = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisDefaultMaxTipAgeInSeconds.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisDefaultMaxTipAgeInSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L23">View Source</a>
-  </span>
-  <h4 id="NBitcoin_Network_StratisDefaultMaxTipAgeInSeconds" data-uid="NBitcoin.Network.StratisDefaultMaxTipAgeInSeconds">StratisDefaultMaxTipAgeInSeconds</h4>
-  <div class="markdown level1 summary"><p>Stratis default value for the maximum tip age in seconds to consider the node in initial block download (2 hours).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int StratisDefaultMaxTipAgeInSeconds = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisMaxTimeOffsetSeconds.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisMaxTimeOffsetSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L17">View Source</a>
-  </span>
-  <h4 id="NBitcoin_Network_StratisMaxTimeOffsetSeconds" data-uid="NBitcoin.Network.StratisMaxTimeOffsetSeconds">StratisMaxTimeOffsetSeconds</h4>
-  <div class="markdown level1 summary"><p>Stratis maximal value for the calculated time offset. If the value is over this limit, the time syncing feature will be switched off.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int StratisMaxTimeOffsetSeconds = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisRootFolderName.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisRootFolderName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L32">View Source</a>
-  </span>
-  <h4 id="NBitcoin_Network_StratisRootFolderName" data-uid="NBitcoin.Network.StratisRootFolderName">StratisRootFolderName</h4>
-  <div class="markdown level1 summary"><p>The name of the root folder containing the different Stratis blockchains (StratisMain, StratisTest, StratisRegTest).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string StratisRootFolderName = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_AlertPubKey.md&amp;value=---%0Auid%3A%20NBitcoin.Network.AlertPubKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_AdditionalNames.md&amp;value=---%0Auid%3A%20NBitcoin.Network.AdditionalNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L255">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L95">View Source</a>
   </span>
-  <a id="NBitcoin_Network_AlertPubKey_" data-uid="NBitcoin.Network.AlertPubKey*"></a>
-  <h4 id="NBitcoin_Network_AlertPubKey" data-uid="NBitcoin.Network.AlertPubKey">AlertPubKey</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="NBitcoin_Network_AdditionalNames_" data-uid="NBitcoin.Network.AdditionalNames*"></a>
+  <h4 id="NBitcoin_Network_AdditionalNames" data-uid="NBitcoin.Network.AdditionalNames">AdditionalNames</h4>
+  <div class="markdown level1 summary"><p>A list of additional names the network can be referred as.
+For example, Bitcoin Main can have &quot;Mainnet&quot; as an additional name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PubKey AlertPubKey { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; AdditionalNames { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -384,25 +195,89 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.PubKey.html">PubKey</a></td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_Checkpoints.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Checkpoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Base58Prefixes.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Base58Prefixes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L297">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L131">View Source</a>
   </span>
-  <a id="NBitcoin_Network_Checkpoints_" data-uid="NBitcoin.Network.Checkpoints*"></a>
-  <h4 id="NBitcoin_Network_Checkpoints" data-uid="NBitcoin.Network.Checkpoints">Checkpoints</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="NBitcoin_Network_Base58Prefixes_" data-uid="NBitcoin.Network.Base58Prefixes*"></a>
+  <h4 id="NBitcoin_Network_Base58Prefixes" data-uid="NBitcoin.Network.Base58Prefixes">Base58Prefixes</h4>
+  <div class="markdown level1 summary"><p>List of prefixes used in Base58 addresses.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, CheckpointInfo&gt; Checkpoints { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public byte[][] Base58Prefixes { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[][]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Bech32Encoders.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Bech32Encoders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L136">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_Bech32Encoders_" data-uid="NBitcoin.Network.Bech32Encoders*"></a>
+  <h4 id="NBitcoin_Network_Bech32Encoders" data-uid="NBitcoin.Network.Bech32Encoders">Bech32Encoders</h4>
+  <div class="markdown level1 summary"><p>A list of Bech32 encoders.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bech32Encoder[] Bech32Encoders { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.DataEncoders.Bech32Encoder.html">Bech32Encoder</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Checkpoints.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Checkpoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L126">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_Checkpoints_" data-uid="NBitcoin.Network.Checkpoints*"></a>
+  <h4 id="NBitcoin_Network_Checkpoints" data-uid="NBitcoin.Network.Checkpoints">Checkpoints</h4>
+  <div class="markdown level1 summary"><p>A list of well-known block hashes.
+The node considers all transactions and blocks up to these checkpoints as valid and irreversible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, CheckpointInfo&gt; Checkpoints { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -421,49 +296,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_Consensus.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Consensus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CoinTicker.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CoinTicker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L283">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L100">View Source</a>
   </span>
-  <a id="NBitcoin_Network_Consensus_" data-uid="NBitcoin.Network.Consensus*"></a>
-  <h4 id="NBitcoin_Network_Consensus" data-uid="NBitcoin.Network.Consensus">Consensus</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Consensus Consensus { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.Consensus.html">Consensus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_DefaultConfigFilename.md&amp;value=---%0Auid%3A%20NBitcoin.Network.DefaultConfigFilename%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L291">View Source</a>
-  </span>
-  <a id="NBitcoin_Network_DefaultConfigFilename_" data-uid="NBitcoin.Network.DefaultConfigFilename*"></a>
-  <h4 id="NBitcoin_Network_DefaultConfigFilename" data-uid="NBitcoin.Network.DefaultConfigFilename">DefaultConfigFilename</h4>
-  <div class="markdown level1 summary"><p>The default name used for the network configuration file.</p>
+  <a id="NBitcoin_Network_CoinTicker_" data-uid="NBitcoin.Network.CoinTicker*"></a>
+  <h4 id="NBitcoin_Network_CoinTicker" data-uid="NBitcoin.Network.CoinTicker">CoinTicker</h4>
+  <div class="markdown level1 summary"><p>An indicative coin ticker for use with external applications.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DefaultConfigFilename { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string CoinTicker { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -482,18 +327,81 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_DefaultPort.md&amp;value=---%0Auid%3A%20NBitcoin.Network.DefaultPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Consensus.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Consensus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L281">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L84">View Source</a>
   </span>
-  <a id="NBitcoin_Network_DefaultPort_" data-uid="NBitcoin.Network.DefaultPort*"></a>
-  <h4 id="NBitcoin_Network_DefaultPort" data-uid="NBitcoin.Network.DefaultPort">DefaultPort</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="NBitcoin_Network_Consensus_" data-uid="NBitcoin.Network.Consensus*"></a>
+  <h4 id="NBitcoin_Network_Consensus" data-uid="NBitcoin.Network.Consensus">Consensus</h4>
+  <div class="markdown level1 summary"><p>The consensus for this network.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DefaultPort { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Consensus Consensus { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Consensus.html">Consensus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_DefaultConfigFilename.md&amp;value=---%0Auid%3A%20NBitcoin.Network.DefaultConfigFilename%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L110">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_DefaultConfigFilename_" data-uid="NBitcoin.Network.DefaultConfigFilename*"></a>
+  <h4 id="NBitcoin_Network_DefaultConfigFilename" data-uid="NBitcoin.Network.DefaultConfigFilename">DefaultConfigFilename</h4>
+  <div class="markdown level1 summary"><p>The default name used for the network configuration file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DefaultConfigFilename { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_DefaultPort.md&amp;value=---%0Auid%3A%20NBitcoin.Network.DefaultPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L79">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_DefaultPort_" data-uid="NBitcoin.Network.DefaultPort*"></a>
+  <h4 id="NBitcoin_Network_DefaultPort" data-uid="NBitcoin.Network.DefaultPort">DefaultPort</h4>
+  <div class="markdown level1 summary"><p>The default port on which nodes of this network communicate with external clients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DefaultPort { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -512,18 +420,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_DNSSeeds.md&amp;value=---%0Auid%3A%20NBitcoin.Network.DNSSeeds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_DNSSeeds.md&amp;value=---%0Auid%3A%20NBitcoin.Network.DNSSeeds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L295">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L120">View Source</a>
   </span>
   <a id="NBitcoin_Network_DNSSeeds_" data-uid="NBitcoin.Network.DNSSeeds*"></a>
   <h4 id="NBitcoin_Network_DNSSeeds" data-uid="NBitcoin.Network.DNSSeeds">DNSSeeds</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The list of DNS seeds from which to get IP addresses when bootstrapping a node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;DNSSeedData&gt; DNSSeeds { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;DNSSeedData&gt; DNSSeeds { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -542,18 +451,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_FallbackFee.md&amp;value=---%0Auid%3A%20NBitcoin.Network.FallbackFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_FallbackFee.md&amp;value=---%0Auid%3A%20NBitcoin.Network.FallbackFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L275">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L64">View Source</a>
   </span>
   <a id="NBitcoin_Network_FallbackFee_" data-uid="NBitcoin.Network.FallbackFee*"></a>
   <h4 id="NBitcoin_Network_FallbackFee" data-uid="NBitcoin.Network.FallbackFee">FallbackFee</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A fee rate that will be used when fee estimation has insufficient data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long FallbackFee { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long FallbackFee { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -572,10 +482,41 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_GenesisHash.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GenesisHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GenesisBits.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GenesisBits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L655">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L189">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_GenesisBits_" data-uid="NBitcoin.Network.GenesisBits*"></a>
+  <h4 id="NBitcoin_Network_GenesisBits" data-uid="NBitcoin.Network.GenesisBits">GenesisBits</h4>
+  <div class="markdown level1 summary"><p>Represents the encoded form of the target threshold as it appears in the block header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GenesisBits { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GenesisHash.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GenesisHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L596">View Source</a>
   </span>
   <a id="NBitcoin_Network_GenesisHash_" data-uid="NBitcoin.Network.GenesisHash*"></a>
   <h4 id="NBitcoin_Network_GenesisHash" data-uid="NBitcoin.Network.GenesisHash">GenesisHash</h4>
@@ -602,18 +543,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_Magic.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Magic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GenesisNonce.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GenesisNonce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L303">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L184">View Source</a>
   </span>
-  <a id="NBitcoin_Network_Magic_" data-uid="NBitcoin.Network.Magic*"></a>
-  <h4 id="NBitcoin_Network_Magic" data-uid="NBitcoin.Network.Magic">Magic</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="NBitcoin_Network_GenesisNonce_" data-uid="NBitcoin.Network.GenesisNonce*"></a>
+  <h4 id="NBitcoin_Network_GenesisNonce" data-uid="NBitcoin.Network.GenesisNonce">GenesisNonce</h4>
+  <div class="markdown level1 summary"><p>A hash which proves that a sufficient amount of computation has been carried out to create the genesis block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint Magic { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint GenesisNonce { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -632,14 +574,144 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_MagicBytes.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MagicBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GenesisReward.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GenesisReward%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L307">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L199">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_GenesisReward_" data-uid="NBitcoin.Network.GenesisReward*"></a>
+  <h4 id="NBitcoin_Network_GenesisReward" data-uid="NBitcoin.Network.GenesisReward">GenesisReward</h4>
+  <div class="markdown level1 summary"><p>The reward for the genesis block, which is unspendable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Money GenesisReward { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GenesisTime.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GenesisTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L179">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_GenesisTime_" data-uid="NBitcoin.Network.GenesisTime*"></a>
+  <h4 id="NBitcoin_Network_GenesisTime" data-uid="NBitcoin.Network.GenesisTime">GenesisTime</h4>
+  <div class="markdown level1 summary"><p>The UNIX time at inception of the genesis block for this network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GenesisTime { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GenesisVersion.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GenesisVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L194">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_GenesisVersion_" data-uid="NBitcoin.Network.GenesisVersion*"></a>
+  <h4 id="NBitcoin_Network_GenesisVersion" data-uid="NBitcoin.Network.GenesisVersion">GenesisVersion</h4>
+  <div class="markdown level1 summary"><p>The version of the genesis block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GenesisVersion { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Magic.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Magic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L144">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_Magic_" data-uid="NBitcoin.Network.Magic*"></a>
+  <h4 id="NBitcoin_Network_Magic" data-uid="NBitcoin.Network.Magic">Magic</h4>
+  <div class="markdown level1 summary"><p>A number used to identify the network.
+The message start string is designed to be unlikely to occur in normal data.
+The characters are rarely used upper ascii, not valid as UTF-8, and produce
+a large 4-byte int at any alignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Magic { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_MagicBytes.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MagicBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L156">View Source</a>
   </span>
   <a id="NBitcoin_Network_MagicBytes_" data-uid="NBitcoin.Network.MagicBytes*"></a>
   <h4 id="NBitcoin_Network_MagicBytes" data-uid="NBitcoin.Network.MagicBytes">MagicBytes</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Byte representation of a magic number.
+Uses <a class="xref" href="NBitcoin.Network.html#NBitcoin_Network_Magic">Magic</a> if <a class="xref" href="NBitcoin.Network.html#NBitcoin_Network_MagicBytesArray">MagicBytesArray</a> is null.
+TODO: Merge these 3 magic properties into fewer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -662,10 +734,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_Main.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Main%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Main.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Main%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L37">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Networks.cs/#L7">View Source</a>
   </span>
   <a id="NBitcoin_Network_Main_" data-uid="NBitcoin.Network.Main*"></a>
   <h4 id="NBitcoin_Network_Main" data-uid="NBitcoin.Network.Main">Main</h4>
@@ -692,19 +764,20 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_MaxTimeOffsetSeconds.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MaxTimeOffsetSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_MaxTimeOffsetSeconds.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MaxTimeOffsetSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L268">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L48">View Source</a>
   </span>
   <a id="NBitcoin_Network_MaxTimeOffsetSeconds_" data-uid="NBitcoin.Network.MaxTimeOffsetSeconds*"></a>
   <h4 id="NBitcoin_Network_MaxTimeOffsetSeconds" data-uid="NBitcoin.Network.MaxTimeOffsetSeconds">MaxTimeOffsetSeconds</h4>
-  <div class="markdown level1 summary"><p>Maximal value for the calculated time offset. If the value is over this limit, the time syncing feature will be switched off.</p>
+  <div class="markdown level1 summary"><p>Maximal value for the calculated time offset.
+If the value is over this limit, the time syncing feature will be switched off.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MaxTimeOffsetSeconds { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int MaxTimeOffsetSeconds { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -723,10 +796,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_MaxTipAge.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MaxTipAge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_MaxTipAge.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MaxTipAge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L271">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L53">View Source</a>
   </span>
   <a id="NBitcoin_Network_MaxTipAge_" data-uid="NBitcoin.Network.MaxTipAge*"></a>
   <h4 id="NBitcoin_Network_MaxTipAge" data-uid="NBitcoin.Network.MaxTipAge">MaxTipAge</h4>
@@ -735,7 +808,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MaxTipAge { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int MaxTipAge { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -754,18 +827,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_MinRelayTxFee.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MinRelayTxFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_MinRelayTxFee.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MinRelayTxFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L277">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L69">View Source</a>
   </span>
   <a id="NBitcoin_Network_MinRelayTxFee_" data-uid="NBitcoin.Network.MinRelayTxFee*"></a>
   <h4 id="NBitcoin_Network_MinRelayTxFee" data-uid="NBitcoin.Network.MinRelayTxFee">MinRelayTxFee</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The minimum fee under which transactions may be rejected from being relayed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long MinRelayTxFee { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long MinRelayTxFee { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -784,18 +858,20 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_MinTxFee.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MinTxFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_MinTxFee.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MinTxFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L273">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L59">View Source</a>
   </span>
   <a id="NBitcoin_Network_MinTxFee_" data-uid="NBitcoin.Network.MinTxFee*"></a>
   <h4 id="NBitcoin_Network_MinTxFee" data-uid="NBitcoin.Network.MinTxFee">MinTxFee</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Mininum fee rate for all transactions.
+Fees smaller than this are considered zero fee for transaction creation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long MinTxFee { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long MinTxFee { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -814,18 +890,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_Name.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Name.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L285">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L89">View Source</a>
   </span>
   <a id="NBitcoin_Network_Name_" data-uid="NBitcoin.Network.Name*"></a>
   <h4 id="NBitcoin_Network_Name" data-uid="NBitcoin.Network.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The name of the network.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Name { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -844,10 +921,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_RegTest.md&amp;value=---%0Auid%3A%20NBitcoin.Network.RegTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_RegTest.md&amp;value=---%0Auid%3A%20NBitcoin.Network.RegTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L41">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Networks.cs/#L11">View Source</a>
   </span>
   <a id="NBitcoin_Network_RegTest_" data-uid="NBitcoin.Network.RegTest*"></a>
   <h4 id="NBitcoin_Network_RegTest" data-uid="NBitcoin.Network.RegTest">RegTest</h4>
@@ -874,10 +951,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_RootFolderName.md&amp;value=---%0Auid%3A%20NBitcoin.Network.RootFolderName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_RootFolderName.md&amp;value=---%0Auid%3A%20NBitcoin.Network.RootFolderName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L288">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L105">View Source</a>
   </span>
   <a id="NBitcoin_Network_RootFolderName_" data-uid="NBitcoin.Network.RootFolderName*"></a>
   <h4 id="NBitcoin_Network_RootFolderName" data-uid="NBitcoin.Network.RootFolderName">RootFolderName</h4>
@@ -886,7 +963,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string RootFolderName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string RootFolderName { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -905,18 +982,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_RPCPort.md&amp;value=---%0Auid%3A%20NBitcoin.Network.RPCPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_RPCPort.md&amp;value=---%0Auid%3A%20NBitcoin.Network.RPCPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L279">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L74">View Source</a>
   </span>
   <a id="NBitcoin_Network_RPCPort_" data-uid="NBitcoin.Network.RPCPort*"></a>
   <h4 id="NBitcoin_Network_RPCPort" data-uid="NBitcoin.Network.RPCPort">RPCPort</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Port on which to listen for incoming RPC connections.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int RPCPort { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int RPCPort { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -935,18 +1013,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_SeedNodes.md&amp;value=---%0Auid%3A%20NBitcoin.Network.SeedNodes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_SeedNodes.md&amp;value=---%0Auid%3A%20NBitcoin.Network.SeedNodes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L293">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L115">View Source</a>
   </span>
   <a id="NBitcoin_Network_SeedNodes_" data-uid="NBitcoin.Network.SeedNodes*"></a>
   <h4 id="NBitcoin_Network_SeedNodes" data-uid="NBitcoin.Network.SeedNodes">SeedNodes</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The list of nodes on the network that our current node tries to connect to.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;NetworkAddress&gt; SeedNodes { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;NetworkAddress&gt; SeedNodes { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -965,10 +1044,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisMain.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisMain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisMain.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisMain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L43">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Networks.cs/#L13">View Source</a>
   </span>
   <a id="NBitcoin_Network_StratisMain_" data-uid="NBitcoin.Network.StratisMain*"></a>
   <h4 id="NBitcoin_Network_StratisMain" data-uid="NBitcoin.Network.StratisMain">StratisMain</h4>
@@ -995,10 +1074,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisRegTest.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisRegTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisRegTest.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisRegTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L47">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Networks.cs/#L17">View Source</a>
   </span>
   <a id="NBitcoin_Network_StratisRegTest_" data-uid="NBitcoin.Network.StratisRegTest*"></a>
   <h4 id="NBitcoin_Network_StratisRegTest" data-uid="NBitcoin.Network.StratisRegTest">StratisRegTest</h4>
@@ -1025,10 +1104,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisTest.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_StratisTest.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StratisTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L45">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Networks.cs/#L15">View Source</a>
   </span>
   <a id="NBitcoin_Network_StratisTest_" data-uid="NBitcoin.Network.StratisTest*"></a>
   <h4 id="NBitcoin_Network_StratisTest" data-uid="NBitcoin.Network.StratisTest">StratisTest</h4>
@@ -1055,10 +1134,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_TestNet.md&amp;value=---%0Auid%3A%20NBitcoin.Network.TestNet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_TestNet.md&amp;value=---%0Auid%3A%20NBitcoin.Network.TestNet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L39">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Networks.cs/#L9">View Source</a>
   </span>
   <a id="NBitcoin_Network_TestNet_" data-uid="NBitcoin.Network.TestNet*"></a>
   <h4 id="NBitcoin_Network_TestNet" data-uid="NBitcoin.Network.TestNet">TestNet</h4>
@@ -1087,10 +1166,94 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateAssetId_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateAssetId(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Assert_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Assert(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L595">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L303">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_Assert_" data-uid="NBitcoin.Network.Assert*"></a>
+  <h4 id="NBitcoin_Network_Assert_System_Boolean_" data-uid="NBitcoin.Network.Assert(System.Boolean)">Assert(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void Assert(bool condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_ConvertToNetworkAddresses_System_String___System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.ConvertToNetworkAddresses(System.String%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L682">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_ConvertToNetworkAddresses_" data-uid="NBitcoin.Network.ConvertToNetworkAddresses*"></a>
+  <h4 id="NBitcoin_Network_ConvertToNetworkAddresses_System_String___System_Int32_" data-uid="NBitcoin.Network.ConvertToNetworkAddresses(System.String[],System.Int32)">ConvertToNetworkAddresses(String[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;NetworkAddress&gt; ConvertToNetworkAddresses(string[] seeds, int defaultPort)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">seeds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">defaultPort</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="NBitcoin.Protocol.NetworkAddress.html">NetworkAddress</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateAssetId_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateAssetId(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L521">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateAssetId_" data-uid="NBitcoin.Network.CreateAssetId*"></a>
   <h4 id="NBitcoin_Network_CreateAssetId_System_String_" data-uid="NBitcoin.Network.CreateAssetId(System.String)">CreateAssetId(String)</h4>
@@ -1134,57 +1297,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinAddress_NBitcoin_KeyId_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinAddress(NBitcoin.KeyId)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L706">View Source</a>
-  </span>
-  <a id="NBitcoin_Network_CreateBitcoinAddress_" data-uid="NBitcoin.Network.CreateBitcoinAddress*"></a>
-  <h4 id="NBitcoin_Network_CreateBitcoinAddress_NBitcoin_KeyId_" data-uid="NBitcoin.Network.CreateBitcoinAddress(NBitcoin.KeyId)">CreateBitcoinAddress(KeyId)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BitcoinPubKeyAddress CreateBitcoinAddress(KeyId dest)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.KeyId.html">KeyId</a></td>
-        <td><span class="parametername">dest</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.BitcoinPubKeyAddress.html">BitcoinPubKeyAddress</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L372">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L323">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinAddress_" data-uid="NBitcoin.Network.CreateBitcoinAddress*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinAddress_System_String_" data-uid="NBitcoin.Network.CreateBitcoinAddress(System.String)">CreateBitcoinAddress(String)</h4>
@@ -1231,10 +1347,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinExtKey_NBitcoin_ExtKey_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinExtKey(NBitcoin.ExtKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinExtKey_NBitcoin_ExtKey_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinExtKey(NBitcoin.ExtKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L630">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L556">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinExtKey_" data-uid="NBitcoin.Network.CreateBitcoinExtKey*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinExtKey_NBitcoin_ExtKey_" data-uid="NBitcoin.Network.CreateBitcoinExtKey(NBitcoin.ExtKey)">CreateBitcoinExtKey(ExtKey)</h4>
@@ -1278,10 +1394,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinExtKey_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinExtKey(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinExtKey_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinExtKey(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L640">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L566">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinExtKey_" data-uid="NBitcoin.Network.CreateBitcoinExtKey*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinExtKey_System_String_" data-uid="NBitcoin.Network.CreateBitcoinExtKey(System.String)">CreateBitcoinExtKey(String)</h4>
@@ -1325,10 +1441,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinExtPubKey_NBitcoin_ExtPubKey_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinExtPubKey(NBitcoin.ExtPubKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinExtPubKey_NBitcoin_ExtPubKey_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinExtPubKey(NBitcoin.ExtPubKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L635">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L561">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinExtPubKey_" data-uid="NBitcoin.Network.CreateBitcoinExtPubKey*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinExtPubKey_NBitcoin_ExtPubKey_" data-uid="NBitcoin.Network.CreateBitcoinExtPubKey(NBitcoin.ExtPubKey)">CreateBitcoinExtPubKey(ExtPubKey)</h4>
@@ -1372,10 +1488,104 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinScriptAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinScriptAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinPubKeyAddress_NBitcoin_KeyId_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinPubKeyAddress(NBitcoin.KeyId)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L384">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L576">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_CreateBitcoinPubKeyAddress_" data-uid="NBitcoin.Network.CreateBitcoinPubKeyAddress*"></a>
+  <h4 id="NBitcoin_Network_CreateBitcoinPubKeyAddress_NBitcoin_KeyId_" data-uid="NBitcoin.Network.CreateBitcoinPubKeyAddress(NBitcoin.KeyId)">CreateBitcoinPubKeyAddress(KeyId)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BitcoinPubKeyAddress CreateBitcoinPubKeyAddress(KeyId dest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.KeyId.html">KeyId</a></td>
+        <td><span class="parametername">dest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.BitcoinPubKeyAddress.html">BitcoinPubKeyAddress</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinPubKeyAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinPubKeyAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L581">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_CreateBitcoinPubKeyAddress_" data-uid="NBitcoin.Network.CreateBitcoinPubKeyAddress*"></a>
+  <h4 id="NBitcoin_Network_CreateBitcoinPubKeyAddress_System_String_" data-uid="NBitcoin.Network.CreateBitcoinPubKeyAddress(System.String)">CreateBitcoinPubKeyAddress(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BitcoinPubKeyAddress CreateBitcoinPubKeyAddress(string base58)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">base58</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.BitcoinPubKeyAddress.html">BitcoinPubKeyAddress</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinScriptAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinScriptAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L511">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinScriptAddress_" data-uid="NBitcoin.Network.CreateBitcoinScriptAddress*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinScriptAddress_System_String_" data-uid="NBitcoin.Network.CreateBitcoinScriptAddress(System.String)">CreateBitcoinScriptAddress(String)</h4>
@@ -1419,10 +1629,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinSecret_NBitcoin_Key_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinSecret(NBitcoin.Key)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinSecret_NBitcoin_Key_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinSecret(NBitcoin.Key)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L701">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L571">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinSecret_" data-uid="NBitcoin.Network.CreateBitcoinSecret*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinSecret_NBitcoin_Key_" data-uid="NBitcoin.Network.CreateBitcoinSecret(NBitcoin.Key)">CreateBitcoinSecret(Key)</h4>
@@ -1466,10 +1676,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinSecret_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinSecret(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinSecret_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinSecret(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L361">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L312">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinSecret_" data-uid="NBitcoin.Network.CreateBitcoinSecret*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinSecret_System_String_" data-uid="NBitcoin.Network.CreateBitcoinSecret(System.String)">CreateBitcoinSecret(String)</h4>
@@ -1513,10 +1723,40 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateStealthAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateStealthAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBlock.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L600">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L700">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_CreateBlock_" data-uid="NBitcoin.Network.CreateBlock*"></a>
+  <h4 id="NBitcoin_Network_CreateBlock" data-uid="NBitcoin.Network.CreateBlock">CreateBlock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Block CreateBlock()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateStealthAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateStealthAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L526">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateStealthAddress_" data-uid="NBitcoin.Network.CreateStealthAddress*"></a>
   <h4 id="NBitcoin_Network_CreateStealthAddress_System_String_" data-uid="NBitcoin.Network.CreateStealthAddress(System.String)">CreateStealthAddress(String)</h4>
@@ -1560,10 +1800,134 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_GetBech32Encoder_NBitcoin_Bech32Type_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetBech32Encoder(NBitcoin.Bech32Type%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateTransaction.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L772">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L705">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_CreateTransaction_" data-uid="NBitcoin.Network.CreateTransaction*"></a>
+  <h4 id="NBitcoin_Network_CreateTransaction" data-uid="NBitcoin.Network.CreateTransaction">CreateTransaction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transaction CreateTransaction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateTransaction_System_Byte___.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateTransaction(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L715">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_CreateTransaction_" data-uid="NBitcoin.Network.CreateTransaction*"></a>
+  <h4 id="NBitcoin_Network_CreateTransaction_System_Byte___" data-uid="NBitcoin.Network.CreateTransaction(System.Byte[])">CreateTransaction(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transaction CreateTransaction(byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateTransaction_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateTransaction(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L710">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_CreateTransaction_" data-uid="NBitcoin.Network.CreateTransaction*"></a>
+  <h4 id="NBitcoin_Network_CreateTransaction_System_String_" data-uid="NBitcoin.Network.CreateTransaction(System.String)">CreateTransaction(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transaction CreateTransaction(string hex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GetBech32Encoder_NBitcoin_Bech32Type_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetBech32Encoder(NBitcoin.Bech32Type%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L638">View Source</a>
   </span>
   <a id="NBitcoin_Network_GetBech32Encoder_" data-uid="NBitcoin.Network.GetBech32Encoder*"></a>
   <h4 id="NBitcoin_Network_GetBech32Encoder_NBitcoin_Bech32Type_System_Boolean_" data-uid="NBitcoin.Network.GetBech32Encoder(NBitcoin.Bech32Type,System.Boolean)">GetBech32Encoder(Bech32Type, Boolean)</h4>
@@ -1612,10 +1976,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_GetGenesis.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetGenesis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GetGenesis.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetGenesis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L650">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L591">View Source</a>
   </span>
   <a id="NBitcoin_Network_GetGenesis_" data-uid="NBitcoin.Network.GetGenesis*"></a>
   <h4 id="NBitcoin_Network_GetGenesis" data-uid="NBitcoin.Network.GetGenesis">GetGenesis()</h4>
@@ -1642,140 +2006,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_GetNetwork_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetNetwork(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GetReward_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetReward(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L687">View Source</a>
-  </span>
-  <a id="NBitcoin_Network_GetNetwork_" data-uid="NBitcoin.Network.GetNetwork*"></a>
-  <h4 id="NBitcoin_Network_GetNetwork_System_String_" data-uid="NBitcoin.Network.GetNetwork(System.String)">GetNetwork(String)</h4>
-  <div class="markdown level1 summary"><p>Get network from name</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Network GetNetwork(string name)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>main,mainnet,testnet,test,testnet3,reg,regtest,seg,segnet</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
-        <td><p>The network or null of the name does not match any network</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_GetNetwork_System_UInt32_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetNetwork(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L677">View Source</a>
-  </span>
-  <a id="NBitcoin_Network_GetNetwork_" data-uid="NBitcoin.Network.GetNetwork*"></a>
-  <h4 id="NBitcoin_Network_GetNetwork_System_UInt32_" data-uid="NBitcoin.Network.GetNetwork(System.UInt32)">GetNetwork(UInt32)</h4>
-  <div class="markdown level1 summary"><p>Get network from protocol magic number</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Network GetNetwork(uint magic)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">magic</span></td>
-        <td><p>Magic number</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
-        <td><p>The network, or null of the magic number does not match any network</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_GetNetworks.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetNetworks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L657">View Source</a>
-  </span>
-  <a id="NBitcoin_Network_GetNetworks_" data-uid="NBitcoin.Network.GetNetworks*"></a>
-  <h4 id="NBitcoin_Network_GetNetworks" data-uid="NBitcoin.Network.GetNetworks">GetNetworks()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Network&gt; GetNetworks()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="NBitcoin.Network.html">Network</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_GetReward_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetReward(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L735">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L598">View Source</a>
   </span>
   <a id="NBitcoin_Network_GetReward_" data-uid="NBitcoin.Network.GetReward*"></a>
   <h4 id="NBitcoin_Network_GetReward_System_Int32_" data-uid="NBitcoin.Network.GetReward(System.Int32)">GetReward(Int32)</h4>
@@ -1819,10 +2053,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_GetVersionBytes_NBitcoin_Base58Type_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetVersionBytes(NBitcoin.Base58Type%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GetVersionBytes_NBitcoin_Base58Type_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetVersionBytes(NBitcoin.Base58Type%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L781">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L650">View Source</a>
   </span>
   <a id="NBitcoin_Network_GetVersionBytes_" data-uid="NBitcoin.Network.GetVersionBytes*"></a>
   <h4 id="NBitcoin_Network_GetVersionBytes_NBitcoin_Base58Type_System_Boolean_" data-uid="NBitcoin.Network.GetVersionBytes(NBitcoin.Base58Type,System.Boolean)">GetVersionBytes(Base58Type, Boolean)</h4>
@@ -1871,10 +2105,104 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_MineGenesisBlock_NBitcoin_ConsensusFactory_System_String_NBitcoin_Target_NBitcoin_Money_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MineGenesisBlock(NBitcoin.ConsensusFactory%2CSystem.String%2CNBitcoin.Target%2CNBitcoin.Money%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L430">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L242">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_MineGenesisBlock_" data-uid="NBitcoin.Network.MineGenesisBlock*"></a>
+  <h4 id="NBitcoin_Network_MineGenesisBlock_NBitcoin_ConsensusFactory_System_String_NBitcoin_Target_NBitcoin_Money_System_Int32_" data-uid="NBitcoin.Network.MineGenesisBlock(NBitcoin.ConsensusFactory,System.String,NBitcoin.Target,NBitcoin.Money,System.Int32)">MineGenesisBlock(ConsensusFactory, String, Target, Money, Int32)</h4>
+  <div class="markdown level1 summary"><p>Mines a new genesis block, to use with a new network.
+Typically, 3 such genesis blocks need to be created when bootstrapping a new coin: for Main, Test and Reg networks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Block MineGenesisBlock(ConsensusFactory consensusFactory, string coinbaseText, Target target, Money genesisReward, int version = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ConsensusFactory.html">ConsensusFactory</a></td>
+        <td><span class="parametername">consensusFactory</span></td>
+        <td><p>The consensus factory used to create transactions and blocks.
+Use <a class="xref" href="NBitcoin.PosConsensusFactory.html">PosConsensusFactory</a> for proof-of-stake based networks.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">coinbaseText</span></td>
+        <td><p>Traditionally a news headline from the day of the launch, but could be any string or link.
+This will be inserted in the input coinbase transaction script.
+It should be shorter than 92 characters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Target.html">Target</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The difficulty target under which the hash of the block need to be.
+Some more details: As an example, the target for the Stratis Main network is 00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
+To make it harder to mine the genesis block, have more zeros at the beginning (keeping the length the same). This will make the target smaller, so finding a number under it will be more difficult.
+To make it easier to mine the genesis block ,do the opposite. Example of an easy one: 00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
+Make the Test and Reg targets ones easier to find than the Main one so that you don't wait too long to mine the genesis block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
+        <td><span class="parametername">genesisReward</span></td>
+        <td><p>Specify how many coins to put in the genesis transaction's output. These coins are unspendable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version of the transaction and the block header set in the genesis block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><p>A genesis block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NBitcoin_Network_MineGenesisBlock_NBitcoin_ConsensusFactory_System_String_NBitcoin_Target_NBitcoin_Money_System_Int32__examples">Examples</h5>
+  <p>The following example shows the creation of a genesis block.</p>
+<pre><code>Block genesis = MineGenesisBlock(new PosConsensusFactory(), &quot;Some topical headline.&quot;, new Target(new uint256(&quot;000fffff00000000000000000000000000000000000000000000000000000000&quot;)), Money.Coins(50m));
+BlockHeader header = genesis.Header;
+Console.WriteLine(&quot;Make a note of the following values:&quot;);
+Console.WriteLine(&quot;bits: &quot; + header.Bits);
+Console.WriteLine(&quot;nonce: &quot; + header.Nonce);
+Console.WriteLine(&quot;time: &quot; + header.Time);
+Console.WriteLine(&quot;version: &quot; + header.Version);
+Console.WriteLine(&quot;hash: &quot; + header.GetHash());
+Console.WriteLine(&quot;merkleroot: &quot; + header.HashMerkleRoot);</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L351">View Source</a>
   </span>
   <a id="NBitcoin_Network_Parse_" data-uid="NBitcoin.Network.Parse*"></a>
   <h4 id="NBitcoin_Network_Parse_System_String_" data-uid="NBitcoin.Network.Parse(System.String)">Parse(String)</h4>
@@ -1918,10 +2246,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse_System_String_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse(System.String%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse_System_String_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse(System.String%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L440">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L361">View Source</a>
   </span>
   <a id="NBitcoin_Network_Parse_" data-uid="NBitcoin.Network.Parse*"></a>
   <h4 id="NBitcoin_Network_Parse_System_String_NBitcoin_Network_" data-uid="NBitcoin.Network.Parse(System.String,NBitcoin.Network)">Parse(String, Network)</h4>
@@ -1970,10 +2298,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse__1_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse__1_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L435">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L356">View Source</a>
   </span>
   <a id="NBitcoin_Network_Parse_" data-uid="NBitcoin.Network.Parse*"></a>
   <h4 id="NBitcoin_Network_Parse__1_System_String_" data-uid="NBitcoin.Network.Parse``1(System.String)">Parse&lt;T&gt;(String)</h4>
@@ -2033,10 +2361,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse__1_System_String_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse%60%601(System.String%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse__1_System_String_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse%60%601(System.String%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L445">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L366">View Source</a>
   </span>
   <a id="NBitcoin_Network_Parse_" data-uid="NBitcoin.Network.Parse*"></a>
   <h4 id="NBitcoin_Network_Parse__1_System_String_NBitcoin_Network_" data-uid="NBitcoin.Network.Parse``1(System.String,NBitcoin.Network)">Parse&lt;T&gt;(String, Network)</h4>
@@ -2101,10 +2429,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_ReadMagic_Stream_CancellationToken_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.ReadMagic(Stream%2CCancellationToken%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_ReadMagic_Stream_CancellationToken_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.ReadMagic(Stream%2CCancellationToken%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L750">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L613">View Source</a>
   </span>
   <a id="NBitcoin_Network_ReadMagic_" data-uid="NBitcoin.Network.ReadMagic*"></a>
   <h4 id="NBitcoin_Network_ReadMagic_Stream_CancellationToken_System_Boolean_" data-uid="NBitcoin.Network.ReadMagic(Stream,CancellationToken,System.Boolean)">ReadMagic(Stream, CancellationToken, Boolean)</h4>
@@ -2158,10 +2486,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network_ToString.md&amp;value=---%0Auid%3A%20NBitcoin.Network.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_ToString.md&amp;value=---%0Auid%3A%20NBitcoin.Network.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Network.cs/#L645">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L586">View Source</a>
   </span>
   <a id="NBitcoin_Network_ToString_" data-uid="NBitcoin.Network.ToString*"></a>
   <h4 id="NBitcoin_Network_ToString" data-uid="NBitcoin.Network.ToString">ToString()</h4>
@@ -2191,6 +2519,9 @@
       <a class="xref" href="Stratis.Bitcoin.Utilities.NetworkExtensions.html#Stratis_Bitcoin_Utilities_NetworkExtensions_IsTest_NBitcoin_Network_">NetworkExtensions.IsTest(Network)</a>
   </div>
   <div>
+      <a class="xref" href="Stratis.Bitcoin.Utilities.NetworkExtensions.html#Stratis_Bitcoin_Utilities_NetworkExtensions_IsRegTest_NBitcoin_Network_">NetworkExtensions.IsRegTest(Network)</a>
+  </div>
+  <div>
       <a class="xref" href="Stratis.Bitcoin.Utilities.NetworkExtensions.html#Stratis_Bitcoin_Utilities_NetworkExtensions_IsBitcoin_NBitcoin_Network_">NetworkExtensions.IsBitcoin(Network)</a>
   </div>
 </article>
@@ -2201,10 +2532,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=NBitcoin_Network.md&amp;value=---%0Auid%3A%20NBitcoin.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network.md&amp;value=---%0Auid%3A%20NBitcoin.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/NBitcoin/Networks.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Networks.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

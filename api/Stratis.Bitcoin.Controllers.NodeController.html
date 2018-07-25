@@ -73,7 +73,8 @@
   
   <h1 id="Stratis_Bitcoin_Controllers_NodeController" data-uid="Stratis.Bitcoin.Controllers.NodeController" class="text-break">Class NodeController
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides methods that interact with the full node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -90,18 +91,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController__ctor_Stratis_Bitcoin_IFullNode_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Connection_IConnectionManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.%23ctor(Stratis.Bitcoin.IFullNode%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Configuration.NodeSettings%2CStratis.Bitcoin.Connection.IConnectionManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController__ctor_Stratis_Bitcoin_IFullNode_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Connection_IConnectionManager_NBitcoin_ConcurrentChain_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IPooledTransaction_Stratis_Bitcoin_Interfaces_IPooledGetUnspentTransaction_Stratis_Bitcoin_Interfaces_IGetUnspentTransaction_Stratis_Bitcoin_Interfaces_INetworkDifficulty_Stratis_Bitcoin_Interfaces_IBlockStore_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.%23ctor(Stratis.Bitcoin.IFullNode%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Configuration.NodeSettings%2CStratis.Bitcoin.Connection.IConnectionManager%2CNBitcoin.ConcurrentChain%2CNBitcoin.Network%2CStratis.Bitcoin.Interfaces.IPooledTransaction%2CStratis.Bitcoin.Interfaces.IPooledGetUnspentTransaction%2CStratis.Bitcoin.Interfaces.IGetUnspentTransaction%2CStratis.Bitcoin.Interfaces.INetworkDifficulty%2CStratis.Bitcoin.Interfaces.IBlockStore)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L39">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L65">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_NodeController__ctor_" data-uid="Stratis.Bitcoin.Controllers.NodeController.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Controllers_NodeController__ctor_Stratis_Bitcoin_IFullNode_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Connection_IConnectionManager_" data-uid="Stratis.Bitcoin.Controllers.NodeController.#ctor(Stratis.Bitcoin.IFullNode,ILoggerFactory,Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Configuration.NodeSettings,Stratis.Bitcoin.Connection.IConnectionManager)">NodeController(IFullNode, ILoggerFactory, IDateTimeProvider, IChainState, NodeSettings, IConnectionManager)</h4>
+  <h4 id="Stratis_Bitcoin_Controllers_NodeController__ctor_Stratis_Bitcoin_IFullNode_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Connection_IConnectionManager_NBitcoin_ConcurrentChain_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IPooledTransaction_Stratis_Bitcoin_Interfaces_IPooledGetUnspentTransaction_Stratis_Bitcoin_Interfaces_IGetUnspentTransaction_Stratis_Bitcoin_Interfaces_INetworkDifficulty_Stratis_Bitcoin_Interfaces_IBlockStore_" data-uid="Stratis.Bitcoin.Controllers.NodeController.#ctor(Stratis.Bitcoin.IFullNode,ILoggerFactory,Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Configuration.NodeSettings,Stratis.Bitcoin.Connection.IConnectionManager,NBitcoin.ConcurrentChain,NBitcoin.Network,Stratis.Bitcoin.Interfaces.IPooledTransaction,Stratis.Bitcoin.Interfaces.IPooledGetUnspentTransaction,Stratis.Bitcoin.Interfaces.IGetUnspentTransaction,Stratis.Bitcoin.Interfaces.INetworkDifficulty,Stratis.Bitcoin.Interfaces.IBlockStore)">NodeController(IFullNode, ILoggerFactory, IDateTimeProvider, IChainState, NodeSettings, IConnectionManager, ConcurrentChain, Network, IPooledTransaction, IPooledGetUnspentTransaction, IGetUnspentTransaction, INetworkDifficulty, IBlockStore)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NodeController(IFullNode fullNode, ILoggerFactory loggerFactory, IDateTimeProvider dateTimeProvider, IChainState chainState, NodeSettings nodeSettings, IConnectionManager connectionManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public NodeController(IFullNode fullNode, ILoggerFactory loggerFactory, IDateTimeProvider dateTimeProvider, IChainState chainState, NodeSettings nodeSettings, IConnectionManager connectionManager, ConcurrentChain chain, Network network, IPooledTransaction pooledTransaction = null, IPooledGetUnspentTransaction pooledGetUnspentTransaction = null, IGetUnspentTransaction getUnspentTransaction = null, INetworkDifficulty networkDifficulty = null, IBlockStore blockStore = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,20 +144,238 @@
         <td><span class="parametername">connectionManager</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IPooledTransaction.html">IPooledTransaction</a></td>
+        <td><span class="parametername">pooledTransaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IPooledGetUnspentTransaction.html">IPooledGetUnspentTransaction</a></td>
+        <td><span class="parametername">pooledGetUnspentTransaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IGetUnspentTransaction.html">IGetUnspentTransaction</a></td>
+        <td><span class="parametername">getUnspentTransaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.INetworkDifficulty.html">INetworkDifficulty</a></td>
+        <td><span class="parametername">networkDifficulty</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IBlockStore.html">IBlockStore</a></td>
+        <td><span class="parametername">blockStore</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController_Shutdown.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController_GetBlockHeader_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.GetBlockHeader(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L109">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L171">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_NodeController_GetBlockHeader_" data-uid="Stratis.Bitcoin.Controllers.NodeController.GetBlockHeader*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_NodeController_GetBlockHeader_System_String_System_Boolean_" data-uid="Stratis.Bitcoin.Controllers.NodeController.GetBlockHeader(System.String,System.Boolean)">GetBlockHeader(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the block header of the block identified by the hash.
+API implementation of RPC call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActionResult GetBlockHeader(string hash, bool isJsonFormat = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hash</span></td>
+        <td><p>The block hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isJsonFormat</span></td>
+        <td><p><code>True to return Json formatted block header.</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IActionResult</span></td>
+        <td><p>Json formatted <a class="xref" href="Stratis.Bitcoin.Controllers.Models.BlockHeaderModel.html">BlockHeaderModel</a>. <code>null</code> if block not found. Returns <see cref="!:IActionResult"></see> formatted error if fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Controllers_NodeController_GetBlockHeader_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Binary serialization is not supported with this method.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController_GetRawTransactionAsync_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.GetRawTransactionAsync(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L212">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_NodeController_GetRawTransactionAsync_" data-uid="Stratis.Bitcoin.Controllers.NodeController.GetRawTransactionAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_NodeController_GetRawTransactionAsync_System_String_System_Boolean_" data-uid="Stratis.Bitcoin.Controllers.NodeController.GetRawTransactionAsync(System.String,System.Boolean)">GetRawTransactionAsync(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets a raw, possibly pooled, transaction from the full node.
+API implementation of RPC call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IActionResult&gt; GetRawTransactionAsync(string trxid, bool verbose = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">trxid</span></td>
+        <td><p>The transaction hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">verbose</span></td>
+        <td><p><code>True if <a class="xref" href="Stratis.Bitcoin.Controllers.Models.TransactionVerboseModel.html">TransactionVerboseModel</a> is wanted.</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
+        <td><p>Json formatted <a class="xref" href="Stratis.Bitcoin.Controllers.Models.TransactionBriefModel.html">TransactionBriefModel</a> or <a class="xref" href="Stratis.Bitcoin.Controllers.Models.TransactionVerboseModel.html">TransactionVerboseModel</a>. <code>null</code> if transaction not found. Returns <see cref="!:IActionResult"></see> formatted error if otherwise fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Controllers_NodeController_GetRawTransactionAsync_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Requires txindex=1, otherwise only txes that spend or create UTXOs for a wallet can be returned.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController_GetTxOutAsync_System_String_System_UInt32_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.GetTxOutAsync(System.String%2CSystem.UInt32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L313">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_NodeController_GetTxOutAsync_" data-uid="Stratis.Bitcoin.Controllers.NodeController.GetTxOutAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_NodeController_GetTxOutAsync_System_String_System_UInt32_System_Boolean_" data-uid="Stratis.Bitcoin.Controllers.NodeController.GetTxOutAsync(System.String,System.UInt32,System.Boolean)">GetTxOutAsync(String, UInt32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the unspent outputs given a transaction id and vout number.
+API implementation of RPC call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IActionResult&gt; GetTxOutAsync(string trxid, uint vout = null, bool includeMemPool = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">trxid</span></td>
+        <td><p>The transaction ID as hash string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">vout</span></td>
+        <td><p>The vout to get unspent outputs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeMemPool</span></td>
+        <td><p>Boolean to look in Mempool.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
+        <td><p>Json formatted <a class="xref" href="Stratis.Bitcoin.Controllers.Models.GetTxOutModel.html">GetTxOutModel</a>. <code>null</code> if no unspent outputs given parameters. Returns <see cref="!:IActionResult"></see> formatted error if fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController_Shutdown.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L355">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_NodeController_Shutdown_" data-uid="Stratis.Bitcoin.Controllers.NodeController.Shutdown*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_NodeController_Shutdown" data-uid="Stratis.Bitcoin.Controllers.NodeController.Shutdown">Shutdown()</h4>
-  <div class="markdown level1 summary"><p>Trigger a shoutdown of the current running node.</p>
+  <div class="markdown level1 summary"><p>Triggers a shutdown of the currently running node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -174,16 +393,17 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p><see cref="!:OkResult"></see></p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController_Status.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController_Status.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L53">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L102">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_NodeController_Status_" data-uid="Stratis.Bitcoin.Controllers.NodeController.Status*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_NodeController_Status" data-uid="Stratis.Bitcoin.Controllers.NodeController.Status">Status()</h4>
@@ -205,7 +425,59 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Stratis.Bitcoin.Controllers.Models.StatusModel.html">StatusModel</a> with information about the node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController_ValidateAddress_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController.ValidateAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L263">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_NodeController_ValidateAddress_" data-uid="Stratis.Bitcoin.Controllers.NodeController.ValidateAddress*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_NodeController_ValidateAddress_System_String_" data-uid="Stratis.Bitcoin.Controllers.NodeController.ValidateAddress(System.String)">ValidateAddress(String)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a bech32 or base58 bitcoin address.
+API implementation of RPC call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActionResult ValidateAddress(string address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>A valid address in string format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IActionResult</span></td>
+        <td><p>Json formatted <a class="xref" href="NBitcoin.ValidatedAddress.html">ValidatedAddress</a> containing a boolean indicating address validity. Returns <see cref="!:IActionResult"></see> formatted error if fails.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -217,10 +489,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_NodeController.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.NodeController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L18" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/NodeController.cs/#L23" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

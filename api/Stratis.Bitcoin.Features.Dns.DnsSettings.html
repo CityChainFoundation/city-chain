@@ -91,14 +91,14 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings__ctor.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings__ctor.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L44">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L44">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings__ctor_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings__ctor" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.#ctor">DnsSettings()</h4>
-  <div class="markdown level1 summary"><p>Constructs this object.</p>
+  <div class="markdown level1 summary"><p>Initializes an instance of the object from the default configuration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -107,20 +107,19 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings__ctor_Action_Stratis_Bitcoin_Features_Dns_DnsSettings__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.%23ctor(Action%7BStratis.Bitcoin.Features.Dns.DnsSettings%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings__ctor_Stratis_Bitcoin_Configuration_NodeSettings_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.%23ctor(Stratis.Bitcoin.Configuration.NodeSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L53">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L52">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings__ctor_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings__ctor_Action_Stratis_Bitcoin_Features_Dns_DnsSettings__" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.#ctor(Action{Stratis.Bitcoin.Features.Dns.DnsSettings})">DnsSettings(Action&lt;DnsSettings&gt;)</h4>
-  <div class="markdown level1 summary"><p>Constructs this object whilst providing a callback to override/constrain/extend
-the settings provided by the Load method.</p>
+  <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings__ctor_Stratis_Bitcoin_Configuration_NodeSettings_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.#ctor(Stratis.Bitcoin.Configuration.NodeSettings)">DnsSettings(NodeSettings)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the object from the node configuration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DnsSettings(Action&lt;DnsSettings&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public DnsSettings(NodeSettings nodeSettings)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,9 +132,9 @@ the settings provided by the Load method.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Dns.DnsSettings.html">DnsSettings</a>&gt;</td>
-        <td><span class="parametername">callback</span></td>
-        <td><p>The callback used to override/constrain/extend the settings provided by the Load method.</p>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
+        <td><span class="parametername">nodeSettings</span></td>
+        <td><p>The node configuration.</p>
 </td>
       </tr>
     </tbody>
@@ -144,10 +143,10 @@ the settings provided by the Load method.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DefaultDnsListenPort.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DefaultDnsListenPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DefaultDnsListenPort.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DefaultDnsListenPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L15">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L15">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_DefaultDnsListenPort" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DefaultDnsListenPort">DefaultDnsListenPort</h4>
   <div class="markdown level1 summary"><p>The default value for the DNS listen port.</p>
@@ -174,10 +173,10 @@ the settings provided by the Load method.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DefaultDnsPeerBlacklistThresholdInSeconds.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DefaultDnsPeerBlacklistThresholdInSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DefaultDnsPeerBlacklistThresholdInSeconds.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DefaultDnsPeerBlacklistThresholdInSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L18">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_DefaultDnsPeerBlacklistThresholdInSeconds" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DefaultDnsPeerBlacklistThresholdInSeconds">DefaultDnsPeerBlacklistThresholdInSeconds</h4>
   <div class="markdown level1 summary"><p>The default value which a peer should have last have been connected before being blacklisted in DNS nodes.</p>
@@ -206,10 +205,10 @@ the settings provided by the Load method.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsFullNode.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsFullNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsFullNode.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsFullNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L27">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L30">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsFullNode_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsFullNode*"></a>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsFullNode" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsFullNode">DnsFullNode</h4>
@@ -237,10 +236,10 @@ the settings provided by the Load method.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsHostName.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsHostName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsHostName.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsHostName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L24">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L27">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsHostName_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsHostName*"></a>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsHostName" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsHostName">DnsHostName</h4>
@@ -268,10 +267,10 @@ the settings provided by the Load method.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsListenPort.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsListenPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsListenPort.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsListenPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L30">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L33">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsListenPort_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsListenPort*"></a>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsListenPort" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsListenPort">DnsListenPort</h4>
@@ -299,10 +298,10 @@ the settings provided by the Load method.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsMailBox.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsMailBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsMailBox.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsMailBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L36">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L39">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsMailBox_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsMailBox*"></a>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsMailBox" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsMailBox">DnsMailBox</h4>
@@ -330,10 +329,10 @@ the settings provided by the Load method.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsNameServer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsNameServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsNameServer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsNameServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L33">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L36">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsNameServer_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsNameServer*"></a>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsNameServer" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsNameServer">DnsNameServer</h4>
@@ -361,10 +360,10 @@ the settings provided by the Load method.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsPeerBlacklistThresholdInSeconds.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsPeerBlacklistThresholdInSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_DnsPeerBlacklistThresholdInSeconds.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.DnsPeerBlacklistThresholdInSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L21">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L24">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsPeerBlacklistThresholdInSeconds_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsPeerBlacklistThresholdInSeconds*"></a>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_DnsPeerBlacklistThresholdInSeconds" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.DnsPeerBlacklistThresholdInSeconds">DnsPeerBlacklistThresholdInSeconds</h4>
@@ -394,10 +393,10 @@ the settings provided by the Load method.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_BuildDefaultConfigurationFile_StringBuilder_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.BuildDefaultConfigurationFile(StringBuilder%2CNetwork)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_BuildDefaultConfigurationFile_StringBuilder_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.BuildDefaultConfigurationFile(StringBuilder%2CNetwork)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L119">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L92">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings_BuildDefaultConfigurationFile_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.BuildDefaultConfigurationFile*"></a>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_BuildDefaultConfigurationFile_StringBuilder_Network_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.BuildDefaultConfigurationFile(StringBuilder,Network)">BuildDefaultConfigurationFile(StringBuilder, Network)</h4>
@@ -434,59 +433,10 @@ the settings provided by the Load method.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_Load_Stratis_Bitcoin_Configuration_NodeSettings_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.Load(Stratis.Bitcoin.Configuration.NodeSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_PrintHelp_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.PrintHelp(Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L64">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_Dns_DnsSettings_Load_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.Load*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_Load_Stratis_Bitcoin_Configuration_NodeSettings_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.Load(Stratis.Bitcoin.Configuration.NodeSettings)">Load(NodeSettings)</h4>
-  <div class="markdown level1 summary"><p>Loads the DNS related settings from the application configuration.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DnsSettings Load(NodeSettings nodeSettings)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
-        <td><span class="parametername">nodeSettings</span></td>
-        <td><p>Application configuration.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.Dns.DnsSettings.html">DnsSettings</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings_PrintHelp_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings.PrintHelp(Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L100">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L73">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Dns_DnsSettings_PrintHelp_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.PrintHelp*"></a>
   <h4 id="Stratis_Bitcoin_Features_Dns_DnsSettings_PrintHelp_Network_" data-uid="Stratis.Bitcoin.Features.Dns.DnsSettings.PrintHelp(Network)">PrintHelp(Network)</h4>
@@ -523,10 +473,10 @@ the settings provided by the Load method.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsSettings.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsSettings.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

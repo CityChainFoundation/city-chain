@@ -142,6 +142,8 @@ of the block.</p>
       <h4><a class="xref" href="NBitcoin.BloomFilter.html">BloomFilter</a></h4>
       <section><p>Used by SPV client, represent the set of interesting addresses tracked by SPV client with plausible deniability</p>
 </section>
+      <h4><a class="xref" href="NBitcoin.ByteArrayExtensions.html">ByteArrayExtensions</a></h4>
+      <section></section>
       <h4><a class="xref" href="NBitcoin.CachedNoSqlRepository.html">CachedNoSqlRepository</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.CachedTransactionRepository.html">CachedTransactionRepository</a></h4>
@@ -170,11 +172,11 @@ of the block.</p>
       <section></section>
       <h4><a class="xref" href="NBitcoin.Consensus.BuriedDeploymentsArray.html">Consensus.BuriedDeploymentsArray</a></h4>
       <section></section>
-      <h4><a class="xref" href="NBitcoin.Consensus.ConsensusOptions.html">Consensus.ConsensusOptions</a></h4>
-      <section><p>An extension to <a class="xref" href="NBitcoin.Consensus.html">Consensus</a> to enable additional options to the consensus data.</p>
-</section>
       <h4><a class="xref" href="NBitcoin.ConsensusFactory.html">ConsensusFactory</a></h4>
       <section><p>A factory to create protocol types.</p>
+</section>
+      <h4><a class="xref" href="NBitcoin.ConsensusOptions.html">ConsensusOptions</a></h4>
+      <section><p>An extension to <a class="xref" href="NBitcoin.Consensus.html">Consensus</a> to enable additional options to the consensus data.</p>
 </section>
       <h4><a class="xref" href="NBitcoin.ContextStack-1.html">ContextStack&lt;T&gt;</a></h4>
       <section><p>ContextStack is used internally by the bitcoin script evaluator. This class contains
@@ -187,8 +189,14 @@ Insert, Swap, Erase and Top (Peek w/index)</p>
       <section><p>Algorithm implemented by bitcoin core <a href="https://github.com/bitcoin/bitcoin/blob/master/src/wallet.cpp#L1276">https://github.com/bitcoin/bitcoin/blob/master/src/wallet.cpp#L1276</a>
 Minimize the change</p>
 </section>
+      <h4><a class="xref" href="NBitcoin.DefaultConsensusFactory.html">DefaultConsensusFactory</a></h4>
+      <section><p>A default object factory to create instances that is not block, block header or transaction.</p>
+</section>
       <h4><a class="xref" href="NBitcoin.DNSSeedData.html">DNSSeedData</a></h4>
-      <section></section>
+      <section><p>Represent a DNS seed.
+This is intended to help nodes to connect to the network on their first run.
+As such, DNS seeds must be run by entities in which some level of trust if given by the community running the nodes.</p>
+</section>
       <h4><a class="xref" href="NBitcoin.EncryptedKeyResult.html">EncryptedKeyResult</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.Extensions.html">Extensions</a></h4>
@@ -244,6 +252,9 @@ Bitcoin:1ETQjMkR1NNh4jwLuN5LxY7bMsHC9PUPSV</p>
       <section></section>
       <h4><a class="xref" href="NBitcoin.Network.html">Network</a></h4>
       <section></section>
+      <h4><a class="xref" href="NBitcoin.NetworksContainer.html">NetworksContainer</a></h4>
+      <section><p>A container for storing/retrieving known networks</p>
+</section>
       <h4><a class="xref" href="NBitcoin.NoSqlRepository.html">NoSqlRepository</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.NoSqlTransactionRepository.html">NoSqlTransactionRepository</a></h4>
@@ -312,8 +323,6 @@ Bitcoin:1ETQjMkR1NNh4jwLuN5LxY7bMsHC9PUPSV</p>
       <section><p>Wraps ReaderWriterLockSlim with disposable interface so that
 it is possible to use using construct to avoid forgotten lock releases.</p>
 </section>
-      <h4><a class="xref" href="NBitcoin.RPCTransactionRepository.html">RPCTransactionRepository</a></h4>
-      <section></section>
       <h4><a class="xref" href="NBitcoin.Scope.html">Scope</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.Script.html">Script</a></h4>

@@ -107,20 +107,20 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled__ctor_Stratis_Bitcoin_Features_MemoryPool_MempoolManager_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.%23ctor(Stratis.Bitcoin.Features.MemoryPool.MempoolManager%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Connection.IConnectionManager%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled__ctor_Stratis_Bitcoin_Features_MemoryPool_MempoolManager_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Features_MemoryPool_MempoolSchedulerLock_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Features_MemoryPool_IMempoolValidator_Stratis_Bitcoin_Features_MemoryPool_MempoolOrphans_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.%23ctor(Stratis.Bitcoin.Features.MemoryPool.MempoolManager%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Connection.IConnectionManager%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CStratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock%2CStratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool%2CStratis.Bitcoin.Features.MemoryPool.IMempoolValidator%2CStratis.Bitcoin.Features.MemoryPool.MempoolOrphans)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L48">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L60">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled__ctor_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled__ctor_Stratis_Bitcoin_Features_MemoryPool_MempoolManager_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.#ctor(Stratis.Bitcoin.Features.MemoryPool.MempoolManager,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Connection.IConnectionManager,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Utilities.IAsyncLoopFactory)">MempoolSignaled(MempoolManager, ConcurrentChain, IConnectionManager, INodeLifetime, IAsyncLoopFactory)</h4>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled__ctor_Stratis_Bitcoin_Features_MemoryPool_MempoolManager_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Features_MemoryPool_MempoolSchedulerLock_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Features_MemoryPool_IMempoolValidator_Stratis_Bitcoin_Features_MemoryPool_MempoolOrphans_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.#ctor(Stratis.Bitcoin.Features.MemoryPool.MempoolManager,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Connection.IConnectionManager,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,Stratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock,Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool,Stratis.Bitcoin.Features.MemoryPool.IMempoolValidator,Stratis.Bitcoin.Features.MemoryPool.MempoolOrphans)">MempoolSignaled(MempoolManager, ConcurrentChain, IConnectionManager, INodeLifetime, IAsyncLoopFactory, MempoolSchedulerLock, ITxMempool, IMempoolValidator, MempoolOrphans)</h4>
   <div class="markdown level1 summary"><p>Constructs an instance of a MempoolSignaled object.
 Starts the block notification loop to memory pool behaviors for connected nodes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MempoolSignaled(MempoolManager manager, ConcurrentChain chain, IConnectionManager connection, INodeLifetime nodeLifetime, IAsyncLoopFactory asyncLoopFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public MempoolSignaled(MempoolManager manager, ConcurrentChain chain, IConnectionManager connection, INodeLifetime nodeLifetime, IAsyncLoopFactory asyncLoopFactory, MempoolSchedulerLock mempoolLock, ITxMempool memPool, IMempoolValidator validator, MempoolOrphans mempoolOrphans)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,16 +162,40 @@ Starts the block notification loop to memory pool behaviors for connected nodes.
         <td><p>Asynchronous loop factory injected dependency.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolSchedulerLock.html">MempoolSchedulerLock</a></td>
+        <td><span class="parametername">mempoolLock</span></td>
+        <td><p>The mempool lock.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.html">ITxMempool</a></td>
+        <td><span class="parametername">memPool</span></td>
+        <td><p>the mempool.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.IMempoolValidator.html">IMempoolValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td><p>The mempool validator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolOrphans.html">MempoolOrphans</a></td>
+        <td><span class="parametername">mempoolOrphans</span></td>
+        <td><p>The mempool orphan list.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_OnNextCore_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.OnNextCore(NBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_OnNextCore_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.OnNextCore(NBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L59">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L83">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_OnNextCore_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.OnNextCore*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_OnNextCore_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.OnNextCore(NBitcoin.Block)">OnNextCore(Block)</h4>
@@ -200,14 +224,69 @@ Starts the block notification loop to memory pool behaviors for connected nodes.
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_Start.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_RemoveForBlock_NBitcoin_Block_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.RemoveForBlock(NBitcoin.Block%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L73">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L99">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_RemoveForBlock_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.RemoveForBlock*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_RemoveForBlock_NBitcoin_Block_System_Int32_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.RemoveForBlock(NBitcoin.Block,System.Int32)">RemoveForBlock(Block, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes transaction from a block in memory pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RemoveForBlock(Block block, int blockHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>Block of transactions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">blockHeight</span></td>
+        <td><p>Location of the block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_Start.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L118">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_Start_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.Start*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_Start" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.Start">Start()</h4>
-  <div class="markdown level1 summary"><p>Announces blocks on all connected nodes memory pool behaviours every ten seconds.</p>
+  <div class="markdown level1 summary"><p>Announces blocks on all connected nodes memory pool behaviors every five seconds.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -216,10 +295,10 @@ Starts the block notification loop to memory pool behaviors for connected nodes.
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_Stop.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_Stop.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L91">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L136">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_Stop_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.Stop*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled_Stop" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.Stop">Stop()</h4>
@@ -247,10 +326,10 @@ Starts the block notification loop to memory pool behaviors for connected nodes.
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolSignaled.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MempoolSignaled.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

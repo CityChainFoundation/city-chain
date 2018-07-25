@@ -1,0 +1,829 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IChainedHeaderTree
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IChainedHeaderTree
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.37.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree">
+  
+  
+  <h1 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree" class="text-break">Interface IChainedHeaderTree
+  </h1>
+  <div class="markdown level0 summary"><p>Tree of chained block headers that are being claimed by the connected peers and the node itself.
+It represents all chains we potentially can sync with.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Consensus.html">Stratis.Bitcoin.Consensus</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
+  <h5 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IChainedHeaderTree</code></pre>
+  </div>
+  <h5 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This component is an extension of <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusManager.html">ConsensusManager</a> and is strongly linked to its functionality, it should never be called outside of CM.</p>
+<p>
+View of the chains that are presented by connected peers might be incomplete because we always
+receive only chunk of headers claimed by the peer in one message.
+</p>
+<p>
+It is a role of the consensus manager to decide which of the presented chains is going to be treated as our best chain.
+<span class="xref">Stratis.Bitcoin.Consensus.ChainedHeaderTree</span> only advices which chains it might be interesting to download.
+</p>
+<p>
+This class is not thread safe and it the role of the component that uses this class to prevent race conditions.
+</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_UnconsumedBlocksDataBytes.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.UnconsumedBlocksDataBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L42">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_UnconsumedBlocksDataBytes_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.UnconsumedBlocksDataBytes*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_UnconsumedBlocksDataBytes" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.UnconsumedBlocksDataBytes">UnconsumedBlocksDataBytes</h4>
+  <div class="markdown level1 summary"><p>Total size of unconsumed blocks data in bytes.
+It represents amount of memory which is occupied by block data that is waiting to be processed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long UnconsumedBlocksDataBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_UnconsumedBlocksDataBytes_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is increased every time a new block is downloaded.
+It's decreased when block header is being disconnected or when consensus tip is changed.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_BlockDataDownloaded_NBitcoin_ChainedHeader_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.BlockDataDownloaded(NBitcoin.ChainedHeader%2CNBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L111">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_BlockDataDownloaded_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.BlockDataDownloaded*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_BlockDataDownloaded_NBitcoin_ChainedHeader_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.BlockDataDownloaded(NBitcoin.ChainedHeader,NBitcoin.Block)">BlockDataDownloaded(ChainedHeader, Block)</h4>
+  <div class="markdown level1 summary"><p>Handles situation when the blocks data is downloaded for a given chained header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool BlockDataDownloaded(ChainedHeader chainedHeader, Block block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainedHeader</span></td>
+        <td><p>Chained header that represents <code data-dev-comment-type="paramref" class="paramref">block</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>Block data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> in case partial validation is required for the downloaded block, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_ConnectNewHeaders_System_Int32_List_NBitcoin_BlockHeader__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.ConnectNewHeaders(System.Int32%2CList%7BNBitcoin.BlockHeader%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L129">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_ConnectNewHeaders_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.ConnectNewHeaders*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_ConnectNewHeaders_System_Int32_List_NBitcoin_BlockHeader__" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.ConnectNewHeaders(System.Int32,List{NBitcoin.BlockHeader})">ConnectNewHeaders(Int32, List&lt;BlockHeader&gt;)</h4>
+  <div class="markdown level1 summary"><p>A new list of headers are presented by a peer, the headers will try to be connected to the tree.
+Blocks associated with headers that are interesting (i.e. represent a chain with greater chainwork than our consensus tip)
+will be requested for download.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ConnectNewHeadersResult ConnectNewHeaders(int networkPeerId, List&lt;BlockHeader&gt; headers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">networkPeerId</span></td>
+        <td><p>Id of a peer that presented the headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.BlockHeader.html">BlockHeader</a>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>The list of headers to connect to the tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ConnectNewHeadersResult.html">ConnectNewHeadersResult</a></td>
+        <td><p>Information about which blocks need to be downloaded together with information about which input headers were processed.
+Only headers that we can validate will be processed. The rest of the headers will be submitted later again for processing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_ConnectNewHeaders_System_Int32_List_NBitcoin_BlockHeader___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The headers are assumed to be in consecutive order.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ConnectHeaderException.html">ConnectHeaderException</a></td>
+        <td><p>Thrown when first presented header can't be connected to any known chain in the tree.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.CheckpointMismatchException.html">CheckpointMismatchException</a></td>
+        <td><p>Thrown if checkpointed header doesn't match the checkpoint hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_ConsensusTipChanged_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.ConsensusTipChanged(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L95">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_ConsensusTipChanged_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.ConsensusTipChanged*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_ConsensusTipChanged_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.ConsensusTipChanged(NBitcoin.ChainedHeader)">ConsensusTipChanged(ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Handles situation when consensuses tip was changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;int&gt; ConsensusTipChanged(ChainedHeader newConsensusTip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">newConsensusTip</span></td>
+        <td><p>The new consensus tip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>List of peer Ids that violate max reorg rule.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_ConsensusTipChanged_NBitcoin_ChainedHeader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>All peers are checked against max reorg violation and if they violate their chain will be reset.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_CreateChainedHeaderWithBlock_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.CreateChainedHeaderWithBlock(NBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L136">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_CreateChainedHeaderWithBlock_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.CreateChainedHeaderWithBlock*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_CreateChainedHeaderWithBlock_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.CreateChainedHeaderWithBlock(NBitcoin.Block)">CreateChainedHeaderWithBlock(Block)</h4>
+  <div class="markdown level1 summary"><p>Creates the chained header for a new block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChainedHeader CreateChainedHeaderWithBlock(Block block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><p>Newly created and connected chained header for the specified block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_FindHeaderAndVerifyBlockIntegrity_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.FindHeaderAndVerifyBlockIntegrity(NBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L103">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_FindHeaderAndVerifyBlockIntegrity_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.FindHeaderAndVerifyBlockIntegrity*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_FindHeaderAndVerifyBlockIntegrity_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.FindHeaderAndVerifyBlockIntegrity(NBitcoin.Block)">FindHeaderAndVerifyBlockIntegrity(Block)</h4>
+  <div class="markdown level1 summary"><p>Finds the header and verifies block integrity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChainedHeader FindHeaderAndVerifyBlockIntegrity(Block block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><p>Chained header for a given block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.BlockDownloadedForMissingChainedHeaderException.html">BlockDownloadedForMissingChainedHeaderException</a></td>
+        <td><p>Thrown when block data is presented for a chained block that doesn't exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_FullValidationSucceeded_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.FullValidationSucceeded(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L63">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_FullValidationSucceeded_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.FullValidationSucceeded*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_FullValidationSucceeded_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.FullValidationSucceeded(NBitcoin.ChainedHeader)">FullValidationSucceeded(ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Mark a <a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a> as <a class="xref" href="NBitcoin.ValidationState.html#NBitcoin_ValidationState_FullyValidated">FullyValidated</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void FullValidationSucceeded(ChainedHeader chainedHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainedHeader</span></td>
+        <td><p>The fully validated header.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_GetChainedHeader_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.GetChainedHeader(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L150">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_GetChainedHeader_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.GetChainedHeader*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_GetChainedHeader_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.GetChainedHeader(NBitcoin.uint256)">GetChainedHeader(uint256)</h4>
+  <div class="markdown level1 summary"><p>Get the chained header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChainedHeader GetChainedHeader(uint256 blockHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">blockHash</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><p>Chained header for specified block hash if it exists, <code>null</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_GetChainedHeaderBlock_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.GetChainedHeaderBlock(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L146">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_GetChainedHeaderBlock_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.GetChainedHeaderBlock*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_GetChainedHeaderBlock_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.GetChainedHeaderBlock(NBitcoin.uint256)">GetChainedHeaderBlock(uint256)</h4>
+  <div class="markdown level1 summary"><p>Get the block and its chained header if it exists.
+If the header is not in the tree <a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a> will be <code>null</code>, the <a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html#Stratis_Bitcoin_Primitives_ChainedHeaderBlock_Block">Block</a> may also be null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChainedHeaderBlock GetChainedHeaderBlock(uint256 blockHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">blockHash</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a></td>
+        <td><p>The block and its chained header (the <a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html#Stratis_Bitcoin_Primitives_ChainedHeaderBlock_Block">Block</a> can be <code>null</code> or the <a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a> result can be <code>null</code>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_GetChainedHeaderBlock_NBitcoin_uint256__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The block can be <code>null</code> when the block data has not yet been downloaded or if the block data has been persisted to the database and removed from the memory.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_Initialize_NBitcoin_ChainedHeader_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.Initialize(NBitcoin.ChainedHeader%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L50">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_Initialize_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.Initialize*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_Initialize_NBitcoin_ChainedHeader_System_Boolean_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.Initialize(NBitcoin.ChainedHeader,System.Boolean)">Initialize(ChainedHeader, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initialize the tree with consensus tip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Initialize(ChainedHeader consensusTip, bool blockStoreAvailable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">consensusTip</span></td>
+        <td><p>The consensus tip.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">blockStoreAvailable</span></td>
+        <td><p>Specifies if block store is enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusException.html">ConsensusException</a></td>
+        <td><p>Thrown in case given <code data-dev-comment-type="paramref" class="paramref">consensusTip</code> is on a wrong network.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_PartialOrFullValidationFailed_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.PartialOrFullValidationFailed(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L85">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_PartialOrFullValidationFailed_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.PartialOrFullValidationFailed*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_PartialOrFullValidationFailed_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.PartialOrFullValidationFailed(NBitcoin.ChainedHeader)">PartialOrFullValidationFailed(ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Handles situation when block data was considered to be invalid
+for a given header during the partial or full validation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;int&gt; PartialOrFullValidationFailed(ChainedHeader chainedHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainedHeader</span></td>
+        <td><p>Chained header which block data failed the validation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>List of peer Ids that were claiming chain that contains an invalid block. Such peers should be banned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_PartialValidationSucceeded_NBitcoin_ChainedHeader_System_Boolean__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.PartialValidationSucceeded(NBitcoin.ChainedHeader%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L77">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_PartialValidationSucceeded_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.PartialValidationSucceeded*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_PartialValidationSucceeded_NBitcoin_ChainedHeader_System_Boolean__" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.PartialValidationSucceeded(NBitcoin.ChainedHeader,System.Boolean@)">PartialValidationSucceeded(ChainedHeader, out Boolean)</h4>
+  <div class="markdown level1 summary"><p>Handles situation when partial validation for block data for a given <a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a> was successful.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;ChainedHeaderBlock&gt; PartialValidationSucceeded(ChainedHeader chainedHeader, out bool fullValidationRequired)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainedHeader</span></td>
+        <td><p>The chained header.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fullValidationRequired</span></td>
+        <td><p><code>true</code> in case we want to switch our consensus tip to <code data-dev-comment-type="paramref" class="paramref">chainedHeader</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a>&gt;</td>
+        <td><p>List of chained header blocks with block data that should be partially validated next. Or <code>null</code> if none should be validated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_PartialValidationSucceeded_NBitcoin_ChainedHeader_System_Boolean___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case partial validation was successful we want to partially validate all the next blocks for which we have block data for.</p>
+<p>
+If block that was just partially validated has more cumulative chainwork than our consensus tip we want to switch our consensus tip to this block.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree_PeerDisconnected_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree.PeerDisconnected(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L57">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_PeerDisconnected_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.PeerDisconnected*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_IChainedHeaderTree_PeerDisconnected_System_Int32_" data-uid="Stratis.Bitcoin.Consensus.IChainedHeaderTree.PeerDisconnected(System.Int32)">PeerDisconnected(Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove a peer and the entire branch of the tree that it claims unless the
+headers are part of our consensus chain or are claimed by other peers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PeerDisconnected(int networkPeerId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">networkPeerId</span></td>
+        <td><p>Id of a peer that was disconnected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_IChainedHeaderTree.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.IChainedHeaderTree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ChainedHeaderTree.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -79,9 +79,10 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRule.html">ConsensusRule</a></div>
+    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html">ConsensusRule</a></div>
     <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.StakeStoreConsensusRule.html">StakeStoreConsensusRule</a></div>
     <div class="level3"><span class="xref">PosFutureDriftRule</span></div>
+      <div class="level4"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.StratisBigFixPosFutureDriftRule.html">StratisBigFixPosFutureDriftRule</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -92,10 +93,13 @@
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.StakeStoreConsensusRule.html#Stratis_Bitcoin_Features_Consensus_Rules_StakeStoreConsensusRule_Initialize">StakeStoreConsensusRule.Initialize()</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRule_Logger">ConsensusRule.Logger</a>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Logger">ConsensusRule.Logger</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRule_Parent">ConsensusRule.Parent</a>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Parent">ConsensusRule.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_">ConsensusRule.Run(RuleContext)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.html">Stratis.Bitcoin.Features.Consensus.Rules.CommonRules</a></h6>
@@ -108,18 +112,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_DriftingBugFixTimestamp.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.DriftingBugFixTimestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_FutureDriftSeconds.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.FutureDriftSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/PosFutureDriftRule.cs/#L13">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/PosFutureDriftRule.cs/#L55">View Source</a>
   </span>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_DriftingBugFixTimestamp" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.DriftingBugFixTimestamp">DriftingBugFixTimestamp</h4>
-  <div class="markdown level1 summary"><p>Drifting Bug Fix, hardfork on Sat, 19 Nov 2016 00:00:00 GMT.</p>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_FutureDriftSeconds" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.FutureDriftSeconds">FutureDriftSeconds</h4>
+  <div class="markdown level1 summary"><p>The future drift in seconds.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const long DriftingBugFixTimestamp = null</code></pre>
+    <pre><code class="lang-csharp hljs">protected const int FutureDriftSeconds = null</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,7 +135,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -140,10 +144,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_GetFutureDrift_System_Int64_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.GetFutureDrift(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_GetFutureDrift_System_Int64_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.GetFutureDrift(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/PosFutureDriftRule.cs/#L50">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/PosFutureDriftRule.cs/#L86">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_GetFutureDrift_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.GetFutureDrift*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_GetFutureDrift_System_Int64_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.GetFutureDrift(System.Int64)">GetFutureDrift(Int64)</h4>
@@ -152,7 +156,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long GetFutureDrift(long time)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual long GetFutureDrift(long time)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -194,65 +198,15 @@ If this difference is greater block won't be accepted.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_IsDriftReduced_System_Int64_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.IsDriftReduced(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.RunAsync(Stratis.Bitcoin.Consensus.Rules.RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/PosFutureDriftRule.cs/#L60">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_IsDriftReduced_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.IsDriftReduced*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_IsDriftReduced_System_Int64_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.IsDriftReduced(System.Int64)">IsDriftReduced(Int64)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the future drift should be reduced after provided timestamp.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsDriftReduced(long time)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">time</span></td>
-        <td><p>UNIX timestamp.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if for this timestamp future drift should be reduced, <code>false</code> otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_RunAsync_Stratis_Bitcoin_Features_Consensus_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.RunAsync(Stratis.Bitcoin.Features.Consensus.RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/PosFutureDriftRule.cs/#L23">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/PosFutureDriftRule.cs/#L59">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_RunAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.RunAsync*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_RunAsync_Stratis_Bitcoin_Features_Consensus_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.RunAsync(Stratis.Bitcoin.Features.Consensus.RuleContext)">RunAsync(RuleContext)</h4>
-  <div class="markdown level1 summary"><p>Execute the logic in the current rule.
-If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ConsensusErrorException.html">ConsensusErrorException</a> will throw.</p>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.RunAsync(Stratis.Bitcoin.Consensus.Rules.RuleContext)">RunAsync(RuleContext)</h4>
+  <div class="markdown level1 summary"><p>Execute the logic in the current rule in an async approach.
+If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusErrorException.html">ConsensusErrorException</a> will be thrown.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -270,7 +224,7 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Feat
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.RuleContext.html">RuleContext</a></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html">RuleContext</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>The context that has all info that needs to be validated.</p>
 </td>
@@ -294,7 +248,7 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Feat
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Features_Consensus_Rules_ConsensusRule_RunAsync_Stratis_Bitcoin_Features_Consensus_RuleContext_">ConsensusRule.RunAsync(RuleContext)</a></div>
+  <div><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_">ConsensusRule.RunAsync(RuleContext)</a></div>
 </article>
           </div>
           
@@ -303,10 +257,10 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Feat
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/citychain/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosFutureDriftRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/citychain/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/PosFutureDriftRule.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/PosFutureDriftRule.cs/#L51" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
