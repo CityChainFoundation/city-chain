@@ -130,18 +130,18 @@ and if applicable ,adding any refunds due.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_SmartContractResultRefundProcessor_Process_Stratis_SmartContracts_Executor_Reflection_SmartContractCarrier_Money_Gas_Exception_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.SmartContractResultRefundProcessor.Process(Stratis.SmartContracts.Executor.Reflection.SmartContractCarrier%2CMoney%2CGas%2CException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_SmartContractResultRefundProcessor_Process_Stratis_SmartContracts_Executor_Reflection_ContractTxData_System_UInt64_uint160_Gas_Exception_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.SmartContractResultRefundProcessor.Process(Stratis.SmartContracts.Executor.Reflection.ContractTxData%2CSystem.UInt64%2Cuint160%2CGas%2CException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractResultRefundProcessor.cs/#L23">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_SmartContractResultRefundProcessor_Process_" data-uid="Stratis.SmartContracts.Executor.Reflection.SmartContractResultRefundProcessor.Process*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_SmartContractResultRefundProcessor_Process_Stratis_SmartContracts_Executor_Reflection_SmartContractCarrier_Money_Gas_Exception_" data-uid="Stratis.SmartContracts.Executor.Reflection.SmartContractResultRefundProcessor.Process(Stratis.SmartContracts.Executor.Reflection.SmartContractCarrier,Money,Gas,Exception)">Process(SmartContractCarrier, Money, Gas, Exception)</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_SmartContractResultRefundProcessor_Process_Stratis_SmartContracts_Executor_Reflection_ContractTxData_System_UInt64_uint160_Gas_Exception_" data-uid="Stratis.SmartContracts.Executor.Reflection.SmartContractResultRefundProcessor.Process(Stratis.SmartContracts.Executor.Reflection.ContractTxData,System.UInt64,uint160,Gas,Exception)">Process(ContractTxData, UInt64, uint160, Gas, Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Process(SmartContractCarrier carrier, Money mempoolFee, Gas gasConsumed, Exception exception)</code></pre>
+    <pre><code class="lang-csharp hljs">public Process(ContractTxData contractTxData, ulong mempoolFee, uint160 sender, Gas gasConsumed, Exception exception)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -154,13 +154,18 @@ and if applicable ,adding any refunds due.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.SmartContractCarrier.html">SmartContractCarrier</a></td>
-        <td><span class="parametername">carrier</span></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ContractTxData.html">ContractTxData</a></td>
+        <td><span class="parametername">contractTxData</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Money</span></td>
+        <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">mempoolFee</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint160</span></td>
+        <td><span class="parametername">sender</span></td>
         <td></td>
       </tr>
       <tr>

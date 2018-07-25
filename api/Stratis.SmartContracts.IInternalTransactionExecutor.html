@@ -89,6 +89,83 @@ An example could be a transfer of funds to another contract.
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IInternalTransactionExecutor_Create__1_Stratis_SmartContracts_ISmartContractState_System_Object___System_UInt64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IInternalTransactionExecutor.Create%60%601(Stratis.SmartContracts.ISmartContractState%2CSystem.Object%5B%5D%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IInternalTransactionExecutor.cs/#L27">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_IInternalTransactionExecutor_Create_" data-uid="Stratis.SmartContracts.IInternalTransactionExecutor.Create*"></a>
+  <h4 id="Stratis_SmartContracts_IInternalTransactionExecutor_Create__1_Stratis_SmartContracts_ISmartContractState_System_Object___System_UInt64_" data-uid="Stratis.SmartContracts.IInternalTransactionExecutor.Create``1(Stratis.SmartContracts.ISmartContractState,System.Object[],System.UInt64)">Create&lt;T&gt;(ISmartContractState, Object[], UInt64)</h4>
+  <div class="markdown level1 summary"><p>Create a new contract.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateResult Create&lt;T&gt;(ISmartContractState smartContractState, object[] parameters, ulong amountToTransfer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.ISmartContractState.html">ISmartContractState</a></td>
+        <td><span class="parametername">smartContractState</span></td>
+        <td><p>State repository to track and persist changes to the contract.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Parameters to be sent to the constructor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">amountToTransfer</span></td>
+        <td><p>Amount to send in stratoshi.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.ICreateResult.html">ICreateResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of contract to create.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IInternalTransactionExecutor_TransferFunds_Stratis_SmartContracts_ISmartContractState_Stratis_SmartContracts_Address_System_UInt64_Stratis_SmartContracts_TransferFundsToContract_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IInternalTransactionExecutor.TransferFunds(Stratis.SmartContracts.ISmartContractState%2CStratis.SmartContracts.Address%2CSystem.UInt64%2CStratis.SmartContracts.TransferFundsToContract)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">

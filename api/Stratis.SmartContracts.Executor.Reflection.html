@@ -84,10 +84,20 @@ the contract</p>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.BasicKeyEncodingStrategy.html">BasicKeyEncodingStrategy</a></h4>
       <section><p>Leaves keys untouched.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CallSmartContract.html">CallSmartContract</a></h4>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CallData.html">CallData</a></h4>
+      <section><p>Smart contract transaction data for a method call</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CallDataSerializer.html">CallDataSerializer</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CreateSmartContract.html">CreateSmartContract</a></h4>
-      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ContractTxData.html">ContractTxData</a></h4>
+      <section><p>Fields that are serialized and sent as data with a smart contract transaction</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CreateData.html">CreateData</a></h4>
+      <section><p>Smart contract transaction data for a contract creation</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.Executor.html">Executor</a></h4>
+      <section><p>Deserializes raw contract transaction data, dispatches a call to the VM and commits the result to the state repository</p>
+</section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.GasMeter.html">GasMeter</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.GasPriceList.html">GasPriceList</a></h4>
@@ -153,17 +163,24 @@ and if applicable ,adding any refunds due.</p>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.SmartContractState.html">SmartContractState</a></h4>
       <section><p>Smart contract state that gets injected into the smart contract by the <a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ReflectionVirtualMachine.html">ReflectionVirtualMachine</a>.</p>
 </section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.TransactionContext.html">TransactionContext</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.TransferResult.html">TransferResult</a></h4>
       <section><p>Returned when making a transfer from a smart contract.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.VmExecutionResult.html">VmExecutionResult</a></h4>
       <section></section>
-    <h3 id="structs">Structs
-  </h3>
-      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CallData.html">CallData</a></h4>
-      <section></section>
     <h3 id="interfaces">Interfaces
   </h3>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IBaseContractTransactionData.html">IBaseContractTransactionData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ICallData.html">ICallData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ICallDataSerializer.html">ICallDataSerializer</a></h4>
+      <section><p>Serializer for call data sent with a transaction</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ICreateData.html">ICreateData</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IKeyEncodingStrategy.html">IKeyEncodingStrategy</a></h4>
       <section><p>Provides functionality to encode keys before they're stored in a KV store.</p>
 </section>
@@ -179,6 +196,8 @@ and if applicable ,adding any refunds due.</p>
       <section><p>Handles value transfers as a result of smart contract execution.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.html">ISmartContractVirtualMachine</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ITransactionContext.html">ITransactionContext</a></h4>
       <section></section>
     <h3 id="enums">Enums
   </h3>
