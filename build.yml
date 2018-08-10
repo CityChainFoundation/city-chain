@@ -11,11 +11,38 @@ phases:
   displayName: ${{ parameters.displayName }}
   queue: ${{ parameters.queue }}
   steps:
+
+  - powershell: |
+    $version = (Get-Content package.json) -join "`n" | ConvertFrom-Json | Select -ExpandProperty "version"
+    Write-Host "##vso[task.setvariable variable=Build.BuildNumber]$version"
+    Write-Host "##vso[task.setvariable variable=App.BuildNumber]$version" 
+    displayName: Get Version Number
+
   - task: DotNetCoreCLI@2
     displayName: dotnet publish
     inputs:
       command: publish
-      publishWebProjects: false
       projects: '**/City.Chain.csproj'
       workingDirectory: 'src/City.Chain'
+      publishWebProjects: false
+      zipAfterPublish: false
+      modifyOutputPath: false
       arguments: ${{ format('-c {0} -r {1}-{2} -v m', parameters.configuration, parameters.platform, parameters.arch) }}
+
+  - task: ArchiveFiles@2
+    displayName: Archive src/City.Chain/bin/Release/netcoreapp2.1/publish/
+    inputs:
+      rootFolderOrFile: ${{ format('src/City.Chain/bin/{0}/netcoreapp2.1/publish/', parameters.configuration) }}
+      includeRootFolder: false
+      archiveFile: '$(Build.ArtifactStagingDirectory)/City.Chain-$(App.BuildNumber).zip'
+
+  - task: marcelo-formentao.github-tools.github-release-publish-task.GitHubReleasePublish@0
+    displayName: Create or Modify GitHub Release
+    inputs:
+      githubEndpoint: github
+      githubRepository: 'CityChainFoundation/city-chain'
+      githubReleaseTitle: 'City Chain $(Build.BuildNumber) (Preview Release)'
+      githubReleasePrerelease: true
+      githubReleaseAsset: '$(Build.ArtifactStagingDirectory)/City.Chain*.zip'
+      manifestJson: package.json
+      githubEditRelease: true
