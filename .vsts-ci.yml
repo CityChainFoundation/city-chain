@@ -4,14 +4,12 @@ phases:
     name: macOS
     platform: osx
     queue: Hosted macOS Preview
-    displayName: City Chain (macOS)
 
 - template: build.yml
   parameters:
     name: Linux
     platform: linux
     queue: Hosted Linux Preview
-    displayName: City Chain (Linux)
 
 - template: build.yml
   parameters:
@@ -19,13 +17,11 @@ phases:
     platform: win
     arch: x86
     queue: Hosted VS2017
-    displayName: City Chain (Windows x86)
 
 - template: build.yml
   parameters:
     name: Windows_x64
     platform: win
     queue: Hosted VS2017
-    displayName: City Chain (Windows x64)
 
 name: $(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.rr)

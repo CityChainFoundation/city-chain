@@ -1,14 +1,13 @@
 parameters:
   name: ''
   queue: ''
-  displayName: ''
   platform: ''
   arch: 'x64' # Only overriden by 32-bit Windows
   configuration: 'Release' # Only do debug if specified
 
 phases:
 - phase: ${{ parameters.name }}
-  displayName: ${{ parameters.displayName }}
+  displayName: ${{ format('City Chain ({0}-{1})', parameters.platform, parameters.arch) }}
   queue: ${{ parameters.queue }}
   steps:
 
@@ -16,7 +15,7 @@ phases:
       $version = (Get-Content package.json) -join "`n" | ConvertFrom-Json | Select -ExpandProperty "version"
       Write-Host "##vso[task.setvariable variable=Build.BuildNumber]$version"
       Write-Host "##vso[task.setvariable variable=App.BuildNumber]$version" 
-    displayName: Get Version Number
+    displayName: version number
 
   - task: DotNetCoreCLI@2
     displayName: dotnet publish
@@ -32,7 +31,7 @@ phases:
   - ${{ if eq(parameters.platform, 'linux') }}:
     - task: ArchiveFiles@2
       #condition: and(succeeded(), in(variables['agent.os'], 'linux'))
-      displayName: Archive src/City.Chain/bin/Release/netcoreapp2.1/publish/
+      displayName: archive
       inputs:
         rootFolderOrFile: ${{ format('src/City.Chain/bin/{0}/netcoreapp2.1/{1}-{2}/publish/', parameters.configuration, parameters.platform, parameters.arch) }}
         includeRootFolder: false
@@ -42,14 +41,14 @@ phases:
   - ${{ if ne(parameters.platform, 'linux') }}:
     - task: ArchiveFiles@2
       #condition: and(succeeded(), in(variables['agent.os'], 'linux'))
-      displayName: Archive src/City.Chain/bin/Release/netcoreapp2.1/publish/
+      displayName: archive
       inputs:
         rootFolderOrFile: ${{ format('src/City.Chain/bin/{0}/netcoreapp2.1/{1}-{2}/publish/', parameters.configuration, parameters.platform, parameters.arch) }}
         includeRootFolder: false
         archiveFile: ${{ format('$(Build.ArtifactStagingDirectory)/City.Chain-$(App.BuildNumber)-{0}-{1}.zip', parameters.platform, parameters.arch) }}
 
   - task: marcelo-formentao.github-tools.github-release-publish-task.GitHubReleasePublish@0
-    displayName: Create or Modify GitHub Release
+    displayName: github release
     inputs:
       githubEndpoint: github
       githubRepository: 'CityChainFoundation/city-chain'
