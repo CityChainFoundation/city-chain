@@ -16,6 +16,9 @@ phases:
       $version = (Get-Content package.json) -join "`n" | ConvertFrom-Json | Select -ExpandProperty "version"
       Write-Host "##vso[task.setvariable variable=Build.BuildNumber]$version"
       Write-Host "##vso[task.setvariable variable=App.BuildNumber]$version" 
+      Write-Host "##vso[task.setvariable variable=App.Configuration]$parameters.configuration" 
+      Write-Host "##vso[task.setvariable variable=App.Platform]$parameters.platform" 
+      Write-Host "##vso[task.setvariable variable=App.Arch]$parameters.arch" 
     displayName: Get Version Number
 
   - task: DotNetCoreCLI@2
@@ -34,7 +37,7 @@ phases:
     inputs:
       rootFolderOrFile: ${{ format('src/City.Chain/bin/{0}/netcoreapp2.1/{1}-{2}/publish/', parameters.configuration, parameters.platform, parameters.arch) }}
       includeRootFolder: false
-      archiveFile: '$(Build.ArtifactStagingDirectory)/City.Chain-$(App.BuildNumber)-$(parameters.arch).zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/City.Chain-$(App.BuildNumber)-$(App.Arch)-$(App.Configuration)-$(App.Platform).zip'
 
   - task: marcelo-formentao.github-tools.github-release-publish-task.GitHubReleasePublish@0
     displayName: Create or Modify GitHub Release
