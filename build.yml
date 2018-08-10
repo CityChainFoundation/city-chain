@@ -1,0 +1,19 @@
+parameters:
+  name: ''
+  queue: ''
+  displayName: ''
+  platform: ''
+  arch: 'x64' # Only overriden by 32-bit Windows
+  configuration: 'Release' # Only do debug if specified
+
+phases:
+- phase: ${{ parameters.name }}
+  displayName: ${{ parameters.displayName }}
+  queue: ${{ parameters.queue }}
+  steps:
+  - task: DotNetCoreCLI@2
+    displayName: dotnet publish
+    inputs:
+      command: publish
+      arguments: '-c ${{ parameters.configuration }} -r ${{ parameters.platform }}-${{ parameters.arch }} -v m'
+      workingDirectory: 'src/City.Chain'
