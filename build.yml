@@ -13,7 +13,11 @@ phases:
   steps:
   - task: DotNetCoreCLI@2
     displayName: dotnet publish
+    env: 
+      buildConfiguration: ${{ parameters.configuration }}
+      buildPlatform: ${{ parameters.platform }}
+      buildArchitecture: ${{ parameters.arch }}
     inputs:
       command: publish
-      arguments: '-c ${{ parameters.configuration }} -r ${{ parameters.platform }}-${{ parameters.arch }} -v m'
+      arguments: '-c %buildConfiguration% -r %buildPlatform%-%buildArchitecture% -v m'
       workingDirectory: 'src/City.Chain'
