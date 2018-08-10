@@ -17,5 +17,5 @@ phases:
     displayName: dotnet publish
     inputs:
       command: publish
-      arguments: ${{ format('-c {0} -r {1}-{2} -v m', parameters.configuration, parameters.platform, parameters.arch) }}
-      workingDirectory: 'src/City.Chain'
+      arguments: ${{ format('src/City.Chain/City.Chain.csproj -c {0} -r {1}-{2} -v m', parameters.configuration, parameters.platform, parameters.arch) }}
+      #workingDirectory: 'src/City.Chain/City.Chain.csproj'
