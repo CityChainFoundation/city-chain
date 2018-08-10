@@ -11,12 +11,11 @@ phases:
   displayName: ${{ parameters.displayName }}
   queue: ${{ parameters.queue }}
   steps:
-  # - script: ${{ format('echo {0}', parameters.arch) }}
-  # - script: ${{ format('echo {0}', parameters.arch) }}
   - task: DotNetCoreCLI@2
     displayName: dotnet publish
     inputs:
       command: publish
-      projects: "**/City.Chain.csproj"
-      arguments: ${{ format('-c {0} -r {1}-{2} -v m', parameters.configuration, parameters.platform, parameters.arch) }}
-      workingDirectory: 'src/City.Chain/'
+      publishWebProjects: false
+      projects: '**/City.Chain.csproj'
+      workingDirectory: 'src/City.Chain'
+      #arguments: ${{ format('-c {0} -r {1}-{2} -v m', parameters.configuration, parameters.platform, parameters.arch) }}
