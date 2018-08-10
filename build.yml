@@ -37,7 +37,8 @@ phases:
     inputs:
       rootFolderOrFile: ${{ format('src/City.Chain/bin/{0}/netcoreapp2.1/{1}-{2}/publish/', parameters.configuration, parameters.platform, parameters.arch) }}
       includeRootFolder: false
-      archiveFile: '$(Build.ArtifactStagingDirectory)/City.Chain-$(App.BuildNumber)-$(App.Arch)-$(App.Configuration)-$(App.Platform).zip'
+      archiveFile: ${{ format('{0}/City.Chain-{1}-{2}-{3}-{4}.zip', $(Build.ArtifactStagingDirectory), $(App.BuildNumber), parameters.configuration, parameters.platform, parameters.arch) }}
+      #archiveFile: '$(Build.ArtifactStagingDirectory)/City.Chain-$(App.BuildNumber)-$(App.Arch)-$(App.Configuration)-$(App.Platform).zip'
 
   - task: marcelo-formentao.github-tools.github-release-publish-task.GitHubReleasePublish@0
     displayName: Create or Modify GitHub Release
