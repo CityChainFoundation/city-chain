@@ -18,4 +18,4 @@ phases:
       publishWebProjects: false
       projects: '**/City.Chain.csproj'
       workingDirectory: 'src/City.Chain'
-      #arguments: ${{ format('-c {0} -r {1}-{2} -v m', parameters.configuration, parameters.platform, parameters.arch) }}
+      arguments: ${{ format('-c {0} -r {1}-{2} -v m', parameters.configuration, parameters.platform, parameters.arch) }}
