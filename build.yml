@@ -11,7 +11,7 @@ phases:
   displayName: ${{ parameters.displayName }}
   queue: ${{ parameters.queue }}
   steps:
-  - script: ${{ format('echo {0}', parameters.arch }}
+  - script: ${{ format('echo {0}', parameters.arch) }}
   # - task: DotNetCoreCLI@2
   #   displayName: dotnet publish
   #   inputs:
