@@ -31,7 +31,7 @@ phases:
 
   - ${{ if eq(parameters.platform, 'linux') }}:
     - task: ArchiveFiles@2
-      condition: and(succeeded(), in(variables['agent.os'], 'linux'))
+      #condition: and(succeeded(), in(variables['agent.os'], 'linux'))
       displayName: Archive src/City.Chain/bin/Release/netcoreapp2.1/publish/
       inputs:
         rootFolderOrFile: ${{ format('src/City.Chain/bin/{0}/netcoreapp2.1/{1}-{2}/publish/', parameters.configuration, parameters.platform, parameters.arch) }}
@@ -41,7 +41,7 @@ phases:
 
   - ${{ if ne(parameters.platform, 'linux') }}:
     - task: ArchiveFiles@2
-      condition: and(succeeded(), in(variables['agent.os'], 'linux'))
+      #condition: and(succeeded(), in(variables['agent.os'], 'linux'))
       displayName: Archive src/City.Chain/bin/Release/netcoreapp2.1/publish/
       inputs:
         rootFolderOrFile: ${{ format('src/City.Chain/bin/{0}/netcoreapp2.1/{1}-{2}/publish/', parameters.configuration, parameters.platform, parameters.arch) }}
