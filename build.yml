@@ -13,9 +13,9 @@ phases:
   steps:
 
   - powershell: |
-    $version = (Get-Content package.json) -join "`n" | ConvertFrom-Json | Select -ExpandProperty "version"
-    Write-Host "##vso[task.setvariable variable=Build.BuildNumber]$version"
-    Write-Host "##vso[task.setvariable variable=App.BuildNumber]$version" 
+      $version = (Get-Content package.json) -join "`n" | ConvertFrom-Json | Select -ExpandProperty "version"
+      Write-Host "##vso[task.setvariable variable=Build.BuildNumber]$version"
+      Write-Host "##vso[task.setvariable variable=App.BuildNumber]$version" 
     displayName: Get Version Number
 
   - task: DotNetCoreCLI@2
