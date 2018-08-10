@@ -11,9 +11,10 @@ phases:
   displayName: ${{ parameters.displayName }}
   queue: ${{ parameters.queue }}
   steps:
-  - task: DotNetCoreCLI@2
-    displayName: dotnet publish
-    inputs:
-      command: publish
-      arguments: '-c $(parameters.configuration) -r $(parameters.platform)-$(parameters.arch) -v m'
-      workingDirectory: 'src/City.Chain'
+  - script: ${{ format('echo {0}', parameters.arch }}
+  # - task: DotNetCoreCLI@2
+  #   displayName: dotnet publish
+  #   inputs:
+  #     command: publish
+  #     arguments: '-c $(parameters.configuration) -r $(parameters.platform)-$(parameters.arch) -v m'
+  #     workingDirectory: 'src/City.Chain'
