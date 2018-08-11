@@ -15,6 +15,12 @@ phases:
       $version = (Get-Content package.json) -join "`n" | ConvertFrom-Json | Select -ExpandProperty "version"
       Write-Host "##vso[task.setvariable variable=Build.BuildNumber]$version"
       Write-Host "##vso[task.setvariable variable=App.BuildNumber]$version" 
+      Write-Host "BUILD_REASON: $Env:BUILD_REASON"
+      Write-Host "BUILD_SOURCEBRANCH: $Env:BUILD_SOURCEBRANCH"
+      Write-Host "BUILD_SOURCEBRANCHNAME: $Env:BUILD_SOURCEBRANCHNAME"
+      Write-Host "SYSTEM_PULLREQUEST_PULLREQUESTID: $Env:SYSTEM_PULLREQUEST_PULLREQUESTID"
+      Write-Host "SYSTEM_PULLREQUEST_PULLREQUESTNUMBER: $Env:SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
+      Write-Host "SYSTEM_PULLREQUEST_SOURCEBRANCH: $Env:SYSTEM_PULLREQUEST_SOURCEBRANCH"
     displayName: version number
 
   - task: DotNetCoreCLI@2
@@ -42,7 +48,7 @@ phases:
 
   - task: marcelo-formentao.github-tools.github-release-publish-task.GitHubReleasePublish@0
     displayName: github release
-    condition: and(succeeded(), ne(variables['build.reason'], 'PullRequest'))
+    #condition: and(succeeded(), ne(variables['system.PullRequest.PullRequestNumber'], 'PullRequest'))
     inputs:
       githubEndpoint: github
       githubRepository: 'CityChainFoundation/city-chain'
