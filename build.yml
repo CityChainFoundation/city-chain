@@ -48,7 +48,7 @@ phases:
 
   - task: marcelo-formentao.github-tools.github-release-publish-task.GitHubReleasePublish@0
     displayName: github release
-    #condition: and(succeeded(), ne(variables['system.PullRequest.PullRequestNumber'], 'PullRequest'))
+    condition: and(succeeded(), eq(variables['build.sourcebranch'], 'refs/heads/master'))
     inputs:
       githubEndpoint: github
       githubRepository: 'CityChainFoundation/city-chain'
