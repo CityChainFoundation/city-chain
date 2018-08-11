@@ -42,6 +42,7 @@ phases:
 
   - task: marcelo-formentao.github-tools.github-release-publish-task.GitHubReleasePublish@0
     displayName: github release
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest')) # Run publish release for everything other than PRs.
     inputs:
       githubEndpoint: github
       githubRepository: 'CityChainFoundation/city-chain'
