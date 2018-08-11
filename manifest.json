@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/City.Chain.Program.html",
-          "hash": "s8eXTSWTWX1us05Rwww5sQ=="
+          "hash": "FawzE9ts8qQankhZ4YS0qA=="
         }
       },
       "is_incremental": false,
@@ -17490,10 +17490,6 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
@@ -17501,6 +17497,10 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
