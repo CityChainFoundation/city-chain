@@ -89,7 +89,6 @@ namespace City.Chain
                 args = args
                     .Append("-apiport=" + networkConfiguration.ApiPort)
                     .Append("-txindex=1") // Required for History (Block) explorer.
-                    .Append("-testnet")
                     .Append("-wsport=" + networkConfiguration.WsPort).ToArray();
 
                 var nodeSettings = new NodeSettings(
