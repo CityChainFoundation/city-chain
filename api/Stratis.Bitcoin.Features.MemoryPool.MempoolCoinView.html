@@ -80,42 +80,36 @@ Provides coin view representation of memory pool transactions via a backed coin 
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></div>
-    <div class="level2"><span class="xref">MempoolCoinView</span></div>
+    <div class="level1"><span class="xref">MempoolCoinView</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a></div>
     <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.IBackedCoinView.html">IBackedCoinView</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_GetBlockHashAsync">CoinView.GetBlockHashAsync()</a>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.html">Stratis.Bitcoin.Features.MemoryPool</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.MemoryPool.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MempoolCoinView : CoinView, IBackedCoinView</code></pre>
+    <pre><code class="lang-csharp hljs">public class MempoolCoinView : object, ICoinView, IBackedCoinView</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Utilities_SchedulerLock_Stratis_Bitcoin_Features_MemoryPool_IMempoolValidator_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.%23ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView%2CStratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool%2CStratis.Bitcoin.Utilities.SchedulerLock%2CStratis.Bitcoin.Features.MemoryPool.IMempoolValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Utilities_SchedulerLock_Stratis_Bitcoin_Features_MemoryPool_IMempoolValidator_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.%23ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView%2CStratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool%2CStratis.Bitcoin.Utilities.SchedulerLock%2CStratis.Bitcoin.Features.MemoryPool.IMempoolValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L36">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L37">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView__ctor_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Utilities_SchedulerLock_Stratis_Bitcoin_Features_MemoryPool_IMempoolValidator_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.#ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView,Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool,Stratis.Bitcoin.Utilities.SchedulerLock,Stratis.Bitcoin.Features.MemoryPool.IMempoolValidator)">MempoolCoinView(CoinView, ITxMempool, SchedulerLock, IMempoolValidator)</h4>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Stratis_Bitcoin_Utilities_SchedulerLock_Stratis_Bitcoin_Features_MemoryPool_IMempoolValidator_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.#ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView,Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool,Stratis.Bitcoin.Utilities.SchedulerLock,Stratis.Bitcoin.Features.MemoryPool.IMempoolValidator)">MempoolCoinView(ICoinView, ITxMempool, SchedulerLock, IMempoolValidator)</h4>
   <div class="markdown level1 summary"><p>Constructs a memory pool coin view.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MempoolCoinView(CoinView inner, ITxMempool memPool, SchedulerLock mempoolLock, IMempoolValidator mempoolValidator)</code></pre>
+    <pre><code class="lang-csharp hljs">public MempoolCoinView(ICoinView inner, ITxMempool memPool, SchedulerLock mempoolLock, IMempoolValidator mempoolValidator)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,7 +122,7 @@ Provides coin view representation of memory pool transactions via a backed coin 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a></td>
         <td><span class="parametername">inner</span></td>
         <td><p>The backing coin view.</p>
 </td>
@@ -160,7 +154,7 @@ Provides coin view representation of memory pool transactions via a backed coin 
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_Inner.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.Inner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L53">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L54">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_Inner_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.Inner*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_Inner" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.Inner">Inner</h4>
@@ -169,7 +163,7 @@ Provides coin view representation of memory pool transactions via a backed coin 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CoinView Inner { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ICoinView Inner { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,7 +175,7 @@ Provides coin view representation of memory pool transactions via a backed coin 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -191,7 +185,7 @@ Provides coin view representation of memory pool transactions via a backed coin 
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_Set.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.Set%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L48">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L49">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_Set_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.Set*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_Set" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.Set">Set</h4>
@@ -221,19 +215,18 @@ Provides coin view representation of memory pool transactions via a backed coin 
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_FetchCoinsAsync_NBitcoin_uint256___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.FetchCoinsAsync(NBitcoin.uint256%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_FetchCoinsAsync_NBitcoin_uint256___CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.FetchCoinsAsync(NBitcoin.uint256%5B%5D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L63">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L70">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_FetchCoinsAsync_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.FetchCoinsAsync*"></a>
-  <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_FetchCoinsAsync_NBitcoin_uint256___" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.FetchCoinsAsync(NBitcoin.uint256[])">FetchCoinsAsync(uint256[])</h4>
-  <div class="markdown level1 summary"><p>Obtains information about unspent outputs for specific transactions and also retrieves information about the coinview's tip.</p>
-</div>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_FetchCoinsAsync_NBitcoin_uint256___CancellationToken_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.FetchCoinsAsync(NBitcoin.uint256[],CancellationToken)">FetchCoinsAsync(uint256[], CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task&lt;FetchCoinsResponse&gt; FetchCoinsAsync(uint256[] txIds)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;FetchCoinsResponse&gt; FetchCoinsAsync(uint256[] txIds, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -248,8 +241,12 @@ Provides coin view representation of memory pool transactions via a backed coin 
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a>[]</td>
         <td><span class="parametername">txIds</span></td>
-        <td><p>Transaction identifiers for which to retrieve information about unspent outputs.</p>
-</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -264,23 +261,16 @@ Provides coin view representation of memory pool transactions via a backed coin 
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.FetchCoinsResponse.html">FetchCoinsResponse</a>&gt;</td>
-        <td><p>Coinview tip's hash and information about unspent outputs in the requested transactions.</p>
-<p>
-i-th item in <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.FetchCoinsResponse.html#Stratis_Bitcoin_Features_Consensus_CoinViews_FetchCoinsResponse_UnspentOutputs">UnspentOutputs</a> array is the information of the unspent outputs for i-th transaction in <code data-dev-comment-type="paramref" class="paramref">txIds</code>.
-If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.FetchCoinsResponse.html#Stratis_Bitcoin_Features_Consensus_CoinViews_FetchCoinsResponse_UnspentOutputs">UnspentOutputs</a> is <code>null</code>, it means that there are no unspent outputs in the given transaction.
-</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_FetchCoinsAsync_NBitcoin_uint256___">CoinView.FetchCoinsAsync(uint256[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetCoins_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetCoins(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L104">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L111">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetCoins_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetCoins*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetCoins_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetCoins(NBitcoin.uint256)">GetCoins(uint256)</h4>
@@ -330,7 +320,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetOutputFor_NBitcoin_TxIn_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetOutputFor(NBitcoin.TxIn)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L205">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L212">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetOutputFor_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetOutputFor*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetOutputFor_NBitcoin_TxIn_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetOutputFor(NBitcoin.TxIn)">GetOutputFor(TxIn)</h4>
@@ -380,7 +370,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetPriority_NBitcoin_Transaction_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetPriority(NBitcoin.Transaction%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L128">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L135">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetPriority_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetPriority*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetPriority_NBitcoin_Transaction_System_Int32_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetPriority(NBitcoin.Transaction,System.Int32)">GetPriority(Transaction, Int32)</h4>
@@ -433,10 +423,57 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetTipHashAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetTipHashAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L64">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetTipHashAsync_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetTipHashAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetTipHashAsync_CancellationToken_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetTipHashAsync(CancellationToken)">GetTipHashAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; GetTipHashAsync(CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetValueIn_NBitcoin_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetValueIn(NBitcoin.Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L195">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L202">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetValueIn_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetValueIn*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_GetValueIn_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.GetValueIn(NBitcoin.Transaction)">GetValueIn(Transaction)</h4>
@@ -486,7 +523,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_HaveCoins_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.HaveCoins(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L114">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L121">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_HaveCoins_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.HaveCoins*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_HaveCoins_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.HaveCoins(NBitcoin.uint256)">HaveCoins(uint256)</h4>
@@ -536,7 +573,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_HaveInputs_NBitcoin_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.HaveInputs(NBitcoin.Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L185">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L192">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_HaveInputs_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.HaveInputs*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_HaveInputs_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.HaveInputs(NBitcoin.Transaction)">HaveInputs(Transaction)</h4>
@@ -586,7 +623,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_LoadViewAsync_NBitcoin_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.LoadViewAsync(NBitcoin.Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L78">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L85">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_LoadViewAsync_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.LoadViewAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_LoadViewAsync_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.LoadViewAsync(NBitcoin.Transaction)">LoadViewAsync(Transaction)</h4>
@@ -635,20 +672,15 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_Rewind.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.Rewind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L69">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L76">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_Rewind_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.Rewind*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_Rewind" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.Rewind">Rewind()</h4>
-  <div class="markdown level1 summary"><p>Rewinds the coinview to the last saved state.</p>
-<p>
-This operation includes removing the UTXOs of the recent transactions
-and restoring recently spent outputs as UTXOs.
-</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task&lt;uint256&gt; Rewind()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; Rewind()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -661,19 +693,16 @@ and restoring recently spent outputs as UTXOs.
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
-        <td><p>Hash of the block header which is now the tip of the rewound coinview.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_Rewind">CoinView.Rewind()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.SaveChangesAsync(IEnumerable%7BStratis.Bitcoin.Utilities.UnspentOutputs%7D%2CIEnumerable%7BNBitcoin.TxOut%5B%5D%7D%2CNBitcoin.uint256%2CNBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L56">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L57">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_SaveChangesAsync_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.SaveChangesAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.SaveChangesAsync(IEnumerable{Stratis.Bitcoin.Utilities.UnspentOutputs},IEnumerable{NBitcoin.TxOut[]},NBitcoin.uint256,NBitcoin.uint256)">SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt;, IEnumerable&lt;TxOut[]&gt;, uint256, uint256)</h4>
@@ -681,7 +710,7 @@ and restoring recently spent outputs as UTXOs.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt; unspentOutputs, IEnumerable&lt;TxOut[]&gt; originalOutputs, uint256 oldBlockHash, uint256 nextBlockHash)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt; unspentOutputs, IEnumerable&lt;TxOut[]&gt; originalOutputs, uint256 oldBlockHash, uint256 nextBlockHash)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -735,7 +764,7 @@ and restoring recently spent outputs as UTXOs.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_SpendsCoinBase_NBitcoin_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.SpendsCoinBase(NBitcoin.Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L168">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L175">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_SpendsCoinBase_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.SpendsCoinBase*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView_SpendsCoinBase_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.SpendsCoinBase(NBitcoin.Transaction)">SpendsCoinBase(Transaction)</h4>
@@ -782,6 +811,9 @@ and restoring recently spent outputs as UTXOs.
   </table>
   <h3 id="implements">Implements</h3>
   <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a>
+  </div>
+  <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.IBackedCoinView.html">IBackedCoinView</a>
   </div>
 </article>
@@ -795,7 +827,7 @@ and restoring recently spent outputs as UTXOs.
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_MempoolCoinView.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/MemPoolCoinView.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

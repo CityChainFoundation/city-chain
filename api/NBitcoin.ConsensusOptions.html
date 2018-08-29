@@ -73,14 +73,15 @@
   
   <h1 id="NBitcoin_ConsensusOptions" data-uid="NBitcoin.ConsensusOptions" class="text-break">Class ConsensusOptions
   </h1>
-  <div class="markdown level0 summary"><p>An extension to <a class="xref" href="NBitcoin.Consensus.html">Consensus</a> to enable additional options to the consensus data.</p>
+  <div class="markdown level0 summary"><p>An extension to <a class="xref" href="NBitcoin.Consensus.html">Consensus</a> to enable additional options to the consensus data.
+TODO: Make immutable.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ConsensusOptions</span></div>
-      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.PosConsensusOptions.html">PosConsensusOptions</a></div>
+      <div class="level2"><a class="xref" href="NBitcoin.PosConsensusOptions.html">PosConsensusOptions</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="NBitcoin.html">NBitcoin</a></h6>
   <h6><strong>Assembly</strong>: NBitcoin.dll</h6>
@@ -95,17 +96,160 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions__ctor.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L39">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L45">View Source</a>
   </span>
   <a id="NBitcoin_ConsensusOptions__ctor_" data-uid="NBitcoin.ConsensusOptions.#ctor*"></a>
   <h4 id="NBitcoin_ConsensusOptions__ctor" data-uid="NBitcoin.ConsensusOptions.#ctor">ConsensusOptions()</h4>
-  <div class="markdown level1 summary"><p>Initializes the default values.</p>
+  <div class="markdown level1 summary"><p>Initializes the default values. Currently only used for initialising Bitcoin networks and testing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ConsensusOptions()</code></pre>
   </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions__ctor_System_UInt32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.%23ctor(System.UInt32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L81">View Source</a>
+  </span>
+  <a id="NBitcoin_ConsensusOptions__ctor_" data-uid="NBitcoin.ConsensusOptions.#ctor*"></a>
+  <h4 id="NBitcoin_ConsensusOptions__ctor_System_UInt32_System_Int32_System_Int32_System_Int32_" data-uid="NBitcoin.ConsensusOptions.#ctor(System.UInt32,System.Int32,System.Int32,System.Int32)">ConsensusOptions(UInt32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes values for networks that use block size rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConsensusOptions(uint maxBlockBaseSize, int maxStandardVersion, int maxStandardTxWeight, int maxBlockSigopsCost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxBlockBaseSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxStandardVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxStandardTxWeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxBlockSigopsCost</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions__ctor_System_UInt32_System_UInt32_System_UInt32_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.%23ctor(System.UInt32%2CSystem.UInt32%2CSystem.UInt32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L60">View Source</a>
+  </span>
+  <a id="NBitcoin_ConsensusOptions__ctor_" data-uid="NBitcoin.ConsensusOptions.#ctor*"></a>
+  <h4 id="NBitcoin_ConsensusOptions__ctor_System_UInt32_System_UInt32_System_UInt32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="NBitcoin.ConsensusOptions.#ctor(System.UInt32,System.UInt32,System.UInt32,System.Int32,System.Int32,System.Int32,System.Int32)">ConsensusOptions(UInt32, UInt32, UInt32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes all values. Used by networks that use block weight rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConsensusOptions(uint maxBlockBaseSize, uint maxBlockWeight, uint maxBlockSerializedSize, int witnessScaleFactor, int maxStandardVersion, int maxStandardTxWeight, int maxBlockSigopsCost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxBlockBaseSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxBlockWeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxBlockSerializedSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">witnessScaleFactor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxStandardVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxStandardTxWeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxBlockSigopsCost</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions_SerializeTransactionNoWitness.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.SerializeTransactionNoWitness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L12">View Source</a>
+  </span>
+  <h4 id="NBitcoin_ConsensusOptions_SerializeTransactionNoWitness" data-uid="NBitcoin.ConsensusOptions.SerializeTransactionNoWitness">SerializeTransactionNoWitness</h4>
+  <div class="markdown level1 summary"><p>Flag used to detect SegWit transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SerializeTransactionNoWitness = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -113,15 +257,16 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions_MaxBlockBaseSize.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.MaxBlockBaseSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L31">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L15">View Source</a>
   </span>
   <a id="NBitcoin_ConsensusOptions_MaxBlockBaseSize_" data-uid="NBitcoin.ConsensusOptions.MaxBlockBaseSize*"></a>
   <h4 id="NBitcoin_ConsensusOptions_MaxBlockBaseSize" data-uid="NBitcoin.ConsensusOptions.MaxBlockBaseSize">MaxBlockBaseSize</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum size for a block in bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MaxBlockBaseSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint MaxBlockBaseSize { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,7 +278,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -143,7 +288,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions_MaxBlockSerializedSize.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.MaxBlockSerializedSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L9">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L21">View Source</a>
   </span>
   <a id="NBitcoin_ConsensusOptions_MaxBlockSerializedSize_" data-uid="NBitcoin.ConsensusOptions.MaxBlockSerializedSize*"></a>
   <h4 id="NBitcoin_ConsensusOptions_MaxBlockSerializedSize" data-uid="NBitcoin.ConsensusOptions.MaxBlockSerializedSize">MaxBlockSerializedSize</h4>
@@ -152,7 +297,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MaxBlockSerializedSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint MaxBlockSerializedSize { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -164,7 +309,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -174,7 +319,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions_MaxBlockSigopsCost.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.MaxBlockSigopsCost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L34">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L40">View Source</a>
   </span>
   <a id="NBitcoin_ConsensusOptions_MaxBlockSigopsCost_" data-uid="NBitcoin.ConsensusOptions.MaxBlockSigopsCost*"></a>
   <h4 id="NBitcoin_ConsensusOptions_MaxBlockSigopsCost" data-uid="NBitcoin.ConsensusOptions.MaxBlockSigopsCost">MaxBlockSigopsCost</h4>
@@ -205,7 +350,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions_MaxBlockWeight.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.MaxBlockWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L12">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L18">View Source</a>
   </span>
   <a id="NBitcoin_ConsensusOptions_MaxBlockWeight_" data-uid="NBitcoin.ConsensusOptions.MaxBlockWeight*"></a>
   <h4 id="NBitcoin_ConsensusOptions_MaxBlockWeight" data-uid="NBitcoin.ConsensusOptions.MaxBlockWeight">MaxBlockWeight</h4>
@@ -214,7 +359,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MaxBlockWeight { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint MaxBlockWeight { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -226,7 +371,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -236,7 +381,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions_MaxStandardTxWeight.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.MaxStandardTxWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L29">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L37">View Source</a>
   </span>
   <a id="NBitcoin_ConsensusOptions_MaxStandardTxWeight_" data-uid="NBitcoin.ConsensusOptions.MaxStandardTxWeight*"></a>
   <h4 id="NBitcoin_ConsensusOptions_MaxStandardTxWeight" data-uid="NBitcoin.ConsensusOptions.MaxStandardTxWeight">MaxStandardTxWeight</h4>
@@ -267,7 +412,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions_MaxStandardVersion.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.MaxStandardVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L26">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L34">View Source</a>
   </span>
   <a id="NBitcoin_ConsensusOptions_MaxStandardVersion_" data-uid="NBitcoin.ConsensusOptions.MaxStandardVersion*"></a>
   <h4 id="NBitcoin_ConsensusOptions_MaxStandardVersion" data-uid="NBitcoin.ConsensusOptions.MaxStandardVersion">MaxStandardVersion</h4>
@@ -296,44 +441,15 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions_SerializeTransactionNoWitness.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.SerializeTransactionNoWitness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L16">View Source</a>
-  </span>
-  <a id="NBitcoin_ConsensusOptions_SerializeTransactionNoWitness_" data-uid="NBitcoin.ConsensusOptions.SerializeTransactionNoWitness*"></a>
-  <h4 id="NBitcoin_ConsensusOptions_SerializeTransactionNoWitness" data-uid="NBitcoin.ConsensusOptions.SerializeTransactionNoWitness">SerializeTransactionNoWitness</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int SerializeTransactionNoWitness { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions_WitnessScaleFactor.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions.WitnessScaleFactor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L14">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L24">View Source</a>
   </span>
   <a id="NBitcoin_ConsensusOptions_WitnessScaleFactor_" data-uid="NBitcoin.ConsensusOptions.WitnessScaleFactor*"></a>
   <h4 id="NBitcoin_ConsensusOptions_WitnessScaleFactor" data-uid="NBitcoin.ConsensusOptions.WitnessScaleFactor">WitnessScaleFactor</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Scale of witness vs other transaction data. e.g. if set to 4, then witnesses have 1/4 the weight per byte of other transaction data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -365,7 +481,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_ConsensusOptions.md&amp;value=---%0Auid%3A%20NBitcoin.ConsensusOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/ConsensusOptions.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

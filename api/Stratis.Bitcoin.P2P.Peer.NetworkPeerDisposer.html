@@ -93,14 +93,14 @@
 Implementing this functionality in such components will lead to having similar code in these components.
 Instead, this class could be used in order to provide such functionality.
 This means that the responsibility for destroying the peer can delegated to this class, which simplifies the
-code of the owning component.   
+code of the owning component.
 </p>
 <p>
 When a new peer is created (and the <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html#Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_OnPeerDisconnectedHandler_Stratis_Bitcoin_P2P_Peer_INetworkPeer_">OnPeerDisconnectedHandler(INetworkPeer)</a> callback is used as an <span class="xref">Stratis.Bitcoin.P2P.Peer.NetworkPeer.onDisconnected</span> in the constructor)
-by a component that utilizes this class, <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html#Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_AddPeer_Stratis_Bitcoin_P2P_Peer_INetworkPeer_">AddPeer(INetworkPeer)</a> should be used to inform  this class about it. Once the peer is added, the owning component no 
-longer needs to care about this peer&apos;s disposal. 
+by a component that utilizes this class, <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html#Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_AddPeer_Stratis_Bitcoin_P2P_Peer_INetworkPeer_">AddPeer(INetworkPeer)</a> should be used to inform  this class about it. Once the peer is added, the owning component no
+longer needs to care about this peer&apos;s disposal.
 When a peer disconnects, this class will invoke peer&apos;s disposal in a separated task.
-Also when <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html#Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_Dispose">Dispose()</a> is called, all connected peers added to this component will be disposed. 
+Also when <a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer.html#Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_Dispose">Dispose()</a> is called, all connected peers added to this component will be disposed.
 </p>
 </div>
   <h3 id="constructors">Constructors

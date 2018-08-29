@@ -80,6 +80,8 @@
       <h4><a class="xref" href="NBitcoin.Base58Data.html">Base58Data</a></h4>
       <section><p>Base class for all Base58 check representation of data</p>
 </section>
+      <h4><a class="xref" href="NBitcoin.BIP9DeploymentsArray.html">BIP9DeploymentsArray</a></h4>
+      <section></section>
       <h4><a class="xref" href="NBitcoin.BIP9DeploymentsParameters.html">BIP9DeploymentsParameters</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.BitcoinAddress.html">BitcoinAddress</a></h4>
@@ -142,6 +144,8 @@ of the block.</p>
       <h4><a class="xref" href="NBitcoin.BloomFilter.html">BloomFilter</a></h4>
       <section><p>Used by SPV client, represent the set of interesting addresses tracked by SPV client with plausible deniability</p>
 </section>
+      <h4><a class="xref" href="NBitcoin.BuriedDeploymentsArray.html">BuriedDeploymentsArray</a></h4>
+      <section></section>
       <h4><a class="xref" href="NBitcoin.ByteArrayExtensions.html">ByteArrayExtensions</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.CachedNoSqlRepository.html">CachedNoSqlRepository</a></h4>
@@ -168,15 +172,12 @@ of the block.</p>
 </section>
       <h4><a class="xref" href="NBitcoin.Consensus.html">Consensus</a></h4>
       <section></section>
-      <h4><a class="xref" href="NBitcoin.Consensus.BIP9DeploymentsArray.html">Consensus.BIP9DeploymentsArray</a></h4>
-      <section></section>
-      <h4><a class="xref" href="NBitcoin.Consensus.BuriedDeploymentsArray.html">Consensus.BuriedDeploymentsArray</a></h4>
-      <section></section>
       <h4><a class="xref" href="NBitcoin.ConsensusFactory.html">ConsensusFactory</a></h4>
       <section><p>A factory to create protocol types.</p>
 </section>
       <h4><a class="xref" href="NBitcoin.ConsensusOptions.html">ConsensusOptions</a></h4>
-      <section><p>An extension to <a class="xref" href="NBitcoin.Consensus.html">Consensus</a> to enable additional options to the consensus data.</p>
+      <section><p>An extension to <a class="xref" href="NBitcoin.Consensus.html">Consensus</a> to enable additional options to the consensus data.
+TODO: Make immutable.</p>
 </section>
       <h4><a class="xref" href="NBitcoin.ContextStack-1.html">ContextStack&lt;T&gt;</a></h4>
       <section><p>ContextStack is used internally by the bitcoin script evaluator. This class contains
@@ -252,11 +253,6 @@ Bitcoin:1ETQjMkR1NNh4jwLuN5LxY7bMsHC9PUPSV</p>
       <section></section>
       <h4><a class="xref" href="NBitcoin.Network.html">Network</a></h4>
       <section></section>
-      <h4><a class="xref" href="NBitcoin.Networks.html">Networks</a></h4>
-      <section></section>
-      <h4><a class="xref" href="NBitcoin.NetworksContainer.html">NetworksContainer</a></h4>
-      <section><p>A container for storing/retrieving known networks</p>
-</section>
       <h4><a class="xref" href="NBitcoin.NoSqlRepository.html">NoSqlRepository</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.NoSqlTransactionRepository.html">NoSqlTransactionRepository</a></h4>
@@ -304,6 +300,11 @@ Bitcoin:1ETQjMkR1NNh4jwLuN5LxY7bMsHC9PUPSV</p>
 </section>
       <h4><a class="xref" href="NBitcoin.PosConsensusFactory.html">PosConsensusFactory</a></h4>
       <section><p>The consensus factory for creating POS protocol types.</p>
+</section>
+      <h4><a class="xref" href="NBitcoin.PosConsensusOptions.html">PosConsensusOptions</a></h4>
+      <section><p>Extension to ConsensusOptions for PoS-related parameters.</p>
+<p>TODO: When moving rules to be part of consensus for network, move this class to the appropriate project too.
+Doesn't make much sense for it to be in NBitcoin. Also remove the CoinstakeMinConfirmation consts and set CointakeMinConfirmation in Network building.</p>
 </section>
       <h4><a class="xref" href="NBitcoin.PosTransaction.html">PosTransaction</a></h4>
       <section><p>A Proof Of Stake transaction.</p>
@@ -440,6 +441,8 @@ it is possible to use using construct to avoid forgotten lock releases.</p>
       <h4><a class="xref" href="NBitcoin.ICoinSelector.html">ICoinSelector</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.IColoredCoin.html">IColoredCoin</a></h4>
+      <section></section>
+      <h4><a class="xref" href="NBitcoin.IConsensus.html">IConsensus</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.IDestination.html">IDestination</a></h4>
       <section><p>Represent any type which represent an underlying ScriptPubKey</p>

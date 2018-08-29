@@ -99,7 +99,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_MethodParamValidator_AllowedTypes.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.MethodParamValidator.AllowedTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/MethodParamValidator.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/Validators/Method/MethodParamValidator.cs/#L18">View Source</a>
   </span>
   <h4 id="Stratis_SmartContracts_Core_Validation_MethodParamValidator_AllowedTypes" data-uid="Stratis.SmartContracts.Core.Validation.MethodParamValidator.AllowedTypes">AllowedTypes</h4>
   <div class="markdown level1 summary"></div>
@@ -128,7 +128,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_MethodParamValidator_ErrorType.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.MethodParamValidator.ErrorType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/MethodParamValidator.cs/#L14">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/Validators/Method/MethodParamValidator.cs/#L15">View Source</a>
   </span>
   <h4 id="Stratis_SmartContracts_Core_Validation_MethodParamValidator_ErrorType" data-uid="Stratis.SmartContracts.Core.Validation.MethodParamValidator.ErrorType">ErrorType</h4>
   <div class="markdown level1 summary"></div>
@@ -156,10 +156,64 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_MethodParamValidator_IsValidParam_MethodDefinition_ParameterDefinition_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.MethodParamValidator.IsValidParam(MethodDefinition%2CParameterDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/Validators/Method/MethodParamValidator.cs/#L50">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_Validation_MethodParamValidator_IsValidParam_" data-uid="Stratis.SmartContracts.Core.Validation.MethodParamValidator.IsValidParam*"></a>
+  <h4 id="Stratis_SmartContracts_Core_Validation_MethodParamValidator_IsValidParam_MethodDefinition_ParameterDefinition_" data-uid="Stratis.SmartContracts.Core.Validation.MethodParamValidator.IsValidParam(MethodDefinition,ParameterDefinition)">IsValidParam(MethodDefinition, ParameterDefinition)</h4>
+  <div class="markdown level1 summary"><p>Checks that constructor methods contains an allowed parameter. Allowed parameters are <a class="xref" href="Stratis.SmartContracts.ISmartContractState.html">ISmartContractState</a>
+and the types defined in <a class="xref" href="Stratis.SmartContracts.Core.Validation.MethodParamValidator.html#Stratis_SmartContracts_Core_Validation_MethodParamValidator_AllowedTypes">AllowedTypes</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidParam(MethodDefinition methodDefinition, ParameterDefinition param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MethodDefinition</span></td>
+        <td><span class="parametername">methodDefinition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ParameterDefinition</span></td>
+        <td><span class="parametername">param</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_MethodParamValidator_Validate_MethodDefinition_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.MethodParamValidator.Validate(MethodDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/MethodParamValidator.cs/#L32">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/Validators/Method/MethodParamValidator.cs/#L33">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_Validation_MethodParamValidator_Validate_" data-uid="Stratis.SmartContracts.Core.Validation.MethodParamValidator.Validate*"></a>
   <h4 id="Stratis_SmartContracts_Core_Validation_MethodParamValidator_Validate_MethodDefinition_" data-uid="Stratis.SmartContracts.Core.Validation.MethodParamValidator.Validate(MethodDefinition)">Validate(MethodDefinition)</h4>
@@ -216,7 +270,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_MethodParamValidator.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.MethodParamValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/MethodParamValidator.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/Validators/Method/MethodParamValidator.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

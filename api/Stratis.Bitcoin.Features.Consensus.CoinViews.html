@@ -85,7 +85,7 @@ to perform database operations.</p>
       <section><p>Snapshot of a state of a performance counter taken at a certain time.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.html">CachedCoinView</a></h4>
-      <section><p>Cache layer for coinview prevents too frequent updates of the data in the underlaying storage.</p>
+      <section><p>Cache layer for coinview prevents too frequent updates of the data in the underlying storage.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CachePerformanceCounter.html">CachePerformanceCounter</a></h4>
       <section><p>Statistics to measure the hit rate of the cache.</p>
@@ -93,11 +93,8 @@ to perform database operations.</p>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CachePerformanceSnapshot.html">CachePerformanceSnapshot</a></h4>
       <section><p>Snapshot of a state of a performance counter taken at a certain time.</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></h4>
-      <section><p>Database of UTXOs.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinViewStack.html">CoinViewStack</a></h4>
-      <section><p>Stack of coinview layers. All classes in the stack have to be based on <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a> class
+      <section><p>Stack of coinview layers. All classes in the stack have to be based on <see cref="!:CoinView"></see> class
 and all classes except for the stack bottom class have to implement <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.IBackedCoinView.html">IBackedCoinView</a>
 interface.</p>
 </section>
@@ -105,7 +102,7 @@ interface.</p>
       <section><p>Persistent implementation of coinview using DBreeze database.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.FetchCoinsResponse.html">FetchCoinsResponse</a></h4>
-      <section><p>Return value of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_FetchCoinsAsync_NBitcoin_uint256___">FetchCoinsAsync(uint256[])</a>,
+      <section><p>Return value of <see cref="!:CoinView.FetchCoinsAsync(uint256[])"></see>,
 contains the coinview tip's hash and information about unspent coins in the requested transactions.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.html">InMemoryCoinView</a></h4>
@@ -116,6 +113,9 @@ contains the coinview tip's hash and information about unspent coins in the requ
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.IBackedCoinView.html">IBackedCoinView</a></h4>
       <section><p>Interface of coin views that are internally based on other, lower level, implementations of coin view.
 For example, we have a cached coin view that can internally use either in-memory coin view or a coin view based on the database.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a></h4>
+      <section><p>Database of UTXOs.</p>
 </section>
 </article>
           </div>

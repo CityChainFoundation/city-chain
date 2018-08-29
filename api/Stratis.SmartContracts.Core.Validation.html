@@ -77,18 +77,16 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.AssemblyReferenceValidator.html">AssemblyReferenceValidator</a></h4>
-      <section><p>Validates that a <see cref="!:Mono.Cecil.ModuleDefinition"></see> only references allowed assemblies</p>
-</section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.ConstructorParamValidator.html">ConstructorParamValidator</a></h4>
-      <section><p>Validates that a <see cref="!:Mono.Cecil.TypeDefinition"></see>'s constructor has a first param of type <a class="xref" href="Stratis.SmartContracts.ISmartContractState.html">ISmartContractState</a></p>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.DeterminismPolicy.html">DeterminismPolicy</a></h4>
+      <section><p>Defines a policy used to evaluate a TypeDefinition for uses of non-deterministic Types</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.FieldDefinitionValidator.html">FieldDefinitionValidator</a></h4>
       <section><p>Validates whether a type defines any fields</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.FieldReferenceValidator.html">FieldReferenceValidator</a></h4>
-      <section><p>Validates that a method does not set any local fields</p>
-</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.FieldDefinitionValidator.FieldDefinitionValidationResult.html">FieldDefinitionValidator.FieldDefinitionValidationResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.FormatPolicy.html">FormatPolicy</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.InheritsSmartContractValidator.html">InheritsSmartContractValidator</a></h4>
       <section><p>Validates that <see cref="!:Mono.Cecil.TypeDefinition"></see> inherits from <a class="xref" href="Stratis.SmartContracts.SmartContract.html">SmartContract</a></p>
 </section>
@@ -96,22 +94,18 @@
       <section><p>Validate that a <see cref="!:Mono.Cecil.MethodDefinition"></see> only has parameters of types that are currently supported in the
 <see cref="!:MethodParameterSerializer"></see></p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.NewObjectTypeValidator.html">NewObjectTypeValidator</a></h4>
-      <section><p>Validates that a <see cref="!:Mono.Cecil.MethodDefinition"></see> only does not create objects whose Type is blacklisted</p>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.MethodParamValidator.MethodParamValidationResult.html">MethodParamValidator.MethodParamValidationResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.ModulePolicyValidator.html">ModulePolicyValidator</a></h4>
+      <section><p>Validator for a <see cref="!:ModuleDefinition"></see> using a given <a class="xref" href="Stratis.SmartContracts.Core.Validation.ValidationPolicy.html">ValidationPolicy</a></p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.ReferencedMethodReturnTypeValidator.html">ReferencedMethodReturnTypeValidator</a></h4>
-      <section><p>Validates that a <see cref="!:Mono.Cecil.MethodDefinition"></see> does not reference a method with a known forbidden return type</p>
-</section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.SmartContractDecompilation.html">SmartContractDecompilation</a></h4>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.Primitives.html">Primitives</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.html">SmartContractDeterminismValidator</a></h4>
       <section><p>Checks for non-deterministic properties inside smart contracts by validating them at the bytecode level.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.SmartContractFormatValidator.html">SmartContractFormatValidator</a></h4>
-      <section><p>Validates the format of a Smart Contract <a class="xref" href="Stratis.SmartContracts.Core.Validation.SmartContractDecompilation.html">SmartContractDecompilation</a></p>
-</section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.SmartContractTypeDefinitionValidator.html">SmartContractTypeDefinitionValidator</a></h4>
-      <section><p>Validates the Type definitions contained within a module definition</p>
+      <section><p>Validates the format of a Smart Contract <see cref="!:ModuleDefinition"></see></p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.SmartContractValidationResult.html">SmartContractValidationResult</a></h4>
       <section></section>
@@ -123,9 +117,30 @@
       <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.TryCatchValidator.html">TryCatchValidator</a></h4>
       <section><p>Validates that contracts don't contain any try-catch clauses.</p>
 </section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.TryCatchValidator.TryCatchValidationResult.html">TryCatchValidator.TryCatchValidationResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.TypePolicyValidator.html">TypePolicyValidator</a></h4>
+      <section><p>Validator for a <see cref="!:TypeDefinition"></see> using a given <a class="xref" href="Stratis.SmartContracts.Core.Validation.ValidationPolicy.html">ValidationPolicy</a></p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.ValidationPolicy.html">ValidationPolicy</a></h4>
+      <section><p>Defines a policy for validating a <see cref="!:ModuleDefinition"></see> and its member hierarchy</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.WhitelistPolicyFilter.html">WhitelistPolicyFilter</a></h4>
+      <section><p>Validates a namespace/type/member for whitelisting</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.PolicyValidationResult.html">PolicyValidationResult</a></h4>
+      <section></section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.ISmartContractValidator.html">ISmartContractValidator</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.NestedTypePolicy.html">NestedTypePolicy</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.Validation.PolicyValidatorResultKind.html">PolicyValidatorResultKind</a></h4>
       <section></section>
 </article>
           </div>

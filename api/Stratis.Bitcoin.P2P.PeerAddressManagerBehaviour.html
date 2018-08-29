@@ -122,18 +122,18 @@ the <a class="xref" href="Stratis.Bitcoin.P2P.IPeerAddressManager.html">IPeerAdd
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_P2P_IPeerAddressManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.%23ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.P2P.IPeerAddressManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_P2P_IPeerAddressManager_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.%23ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.P2P.IPeerAddressManager%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L46">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L53">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour__ctor_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_P2P_IPeerAddressManager_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.#ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.P2P.IPeerAddressManager)">PeerAddressManagerBehaviour(IDateTimeProvider, IPeerAddressManager)</h4>
+  <h4 id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_P2P_IPeerAddressManager_ILoggerFactory_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.#ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.P2P.IPeerAddressManager,ILoggerFactory)">PeerAddressManagerBehaviour(IDateTimeProvider, IPeerAddressManager, ILoggerFactory)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PeerAddressManagerBehaviour(IDateTimeProvider dateTimeProvider, IPeerAddressManager peerAddressManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public PeerAddressManagerBehaviour(IDateTimeProvider dateTimeProvider, IPeerAddressManager peerAddressManager, ILoggerFactory loggerFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,6 +155,11 @@ the <a class="xref" href="Stratis.Bitcoin.P2P.IPeerAddressManager.html">IPeerAdd
         <td><span class="parametername">peerAddressManager</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
@@ -164,7 +169,7 @@ the <a class="xref" href="Stratis.Bitcoin.P2P.IPeerAddressManager.html">IPeerAdd
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_Mode.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.Mode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L30">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L37">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_Mode_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.Mode*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_Mode" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.Mode">Mode</h4>
@@ -196,7 +201,7 @@ explanations.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_PeersToDiscover.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.PeersToDiscover%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L39">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L46">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_PeersToDiscover_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.PeersToDiscover*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_PeersToDiscover" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.PeersToDiscover">PeersToDiscover</h4>
@@ -230,7 +235,7 @@ explanations.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_AttachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.AttachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L57">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L66">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_AttachCore_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.AttachCore*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_AttachCore" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.AttachCore">AttachCore()</h4>
@@ -247,7 +252,7 @@ explanations.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_Clone.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L118">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L148">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_Clone_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.Clone*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_Clone" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.Clone">Clone()</h4>
@@ -279,7 +284,7 @@ explanations.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_DetachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.DetachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L112">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L142">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_DetachCore_" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.DetachCore*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour_DetachCore" data-uid="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.DetachCore">DetachCore()</h4>
@@ -309,7 +314,7 @@ explanations.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerAddressManagerBehaviour.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerAddressManagerBehaviour.cs/#L22" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

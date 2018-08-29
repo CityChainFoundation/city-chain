@@ -133,7 +133,7 @@ Blocks in the array have to be unique - it is not supported for a single block t
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void CheckBlockStatus(uint256 hash, out bool IsDownloading, out bool IsReady)</code></pre>
+    <pre><code class="lang-csharp hljs">void CheckBlockStatus(uint256 hash, out bool isDownloading, out bool isReady)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,13 +153,13 @@ Blocks in the array have to be unique - it is not supported for a single block t
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">IsDownloading</span></td>
+        <td><span class="parametername">isDownloading</span></td>
         <td><p>This is set to <code>true</code> if the block with the given hash is currently being downloaded.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">IsReady</span></td>
+        <td><span class="parametername">isReady</span></td>
         <td><p>This is set to <code>true</code> if the block with the given hash has been downloaded and is ready to be consumed.</p>
 </td>
       </tr>

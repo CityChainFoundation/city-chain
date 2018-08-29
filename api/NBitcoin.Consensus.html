@@ -80,29 +80,200 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Consensus</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NBitcoin.IConsensus.html">IConsensus</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="NBitcoin.html">NBitcoin</a></h6>
   <h6><strong>Assembly</strong>: NBitcoin.dll</h6>
   <h5 id="NBitcoin_Consensus_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Consensus : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class Consensus : object, IConsensus</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus__ctor.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus__ctor_NBitcoin_ConsensusFactory_NBitcoin_ConsensusOptions_System_Int32_NBitcoin_uint256_System_Int32_System_Int32_System_Int32_System_Int32_NBitcoin_BuriedDeploymentsArray_NBitcoin_BIP9DeploymentsArray_NBitcoin_uint256_System_Int32_System_Int32_System_UInt32_NBitcoin_uint256_System_Int64_System_Int64_System_Int64_NBitcoin_Money_NBitcoin_Money_TimeSpan_TimeSpan_System_Boolean_System_Boolean_NBitcoin_Target_NBitcoin_uint256_System_Boolean_System_Int32_NBitcoin_BouncyCastle_Math_BigInteger_NBitcoin_BouncyCastle_Math_BigInteger_NBitcoin_Money_.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.%23ctor(NBitcoin.ConsensusFactory%2CNBitcoin.ConsensusOptions%2CSystem.Int32%2CNBitcoin.uint256%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CNBitcoin.BuriedDeploymentsArray%2CNBitcoin.BIP9DeploymentsArray%2CNBitcoin.uint256%2CSystem.Int32%2CSystem.Int32%2CSystem.UInt32%2CNBitcoin.uint256%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CNBitcoin.Money%2CNBitcoin.Money%2CTimeSpan%2CTimeSpan%2CSystem.Boolean%2CSystem.Boolean%2CNBitcoin.Target%2CNBitcoin.uint256%2CSystem.Boolean%2CSystem.Int32%2CNBitcoin.BouncyCastle.Math.BigInteger%2CNBitcoin.BouncyCastle.Math.BigInteger%2CNBitcoin.Money)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L97">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L88">View Source</a>
   </span>
   <a id="NBitcoin_Consensus__ctor_" data-uid="NBitcoin.Consensus.#ctor*"></a>
-  <h4 id="NBitcoin_Consensus__ctor" data-uid="NBitcoin.Consensus.#ctor">Consensus()</h4>
+  <h4 id="NBitcoin_Consensus__ctor_NBitcoin_ConsensusFactory_NBitcoin_ConsensusOptions_System_Int32_NBitcoin_uint256_System_Int32_System_Int32_System_Int32_System_Int32_NBitcoin_BuriedDeploymentsArray_NBitcoin_BIP9DeploymentsArray_NBitcoin_uint256_System_Int32_System_Int32_System_UInt32_NBitcoin_uint256_System_Int64_System_Int64_System_Int64_NBitcoin_Money_NBitcoin_Money_TimeSpan_TimeSpan_System_Boolean_System_Boolean_NBitcoin_Target_NBitcoin_uint256_System_Boolean_System_Int32_NBitcoin_BouncyCastle_Math_BigInteger_NBitcoin_BouncyCastle_Math_BigInteger_NBitcoin_Money_" data-uid="NBitcoin.Consensus.#ctor(NBitcoin.ConsensusFactory,NBitcoin.ConsensusOptions,System.Int32,NBitcoin.uint256,System.Int32,System.Int32,System.Int32,System.Int32,NBitcoin.BuriedDeploymentsArray,NBitcoin.BIP9DeploymentsArray,NBitcoin.uint256,System.Int32,System.Int32,System.UInt32,NBitcoin.uint256,System.Int64,System.Int64,System.Int64,NBitcoin.Money,NBitcoin.Money,TimeSpan,TimeSpan,System.Boolean,System.Boolean,NBitcoin.Target,NBitcoin.uint256,System.Boolean,System.Int32,NBitcoin.BouncyCastle.Math.BigInteger,NBitcoin.BouncyCastle.Math.BigInteger,NBitcoin.Money)">Consensus(ConsensusFactory, ConsensusOptions, Int32, uint256, Int32, Int32, Int32, Int32, BuriedDeploymentsArray, BIP9DeploymentsArray, uint256, Int32, Int32, UInt32, uint256, Int64, Int64, Int64, Money, Money, TimeSpan, TimeSpan, Boolean, Boolean, Target, uint256, Boolean, Int32, BigInteger, BigInteger, Money)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Consensus()</code></pre>
+    <pre><code class="lang-csharp hljs">public Consensus(ConsensusFactory consensusFactory, ConsensusOptions consensusOptions, int coinType, uint256 hashGenesisBlock, int subsidyHalvingInterval, int majorityEnforceBlockUpgrade, int majorityRejectBlockOutdated, int majorityWindow, BuriedDeploymentsArray buriedDeployments, BIP9DeploymentsArray bip9Deployments, uint256 bip34Hash, int ruleChangeActivationThreshold, int minerConfirmationWindow, uint maxReorgLength, uint256 defaultAssumeValid, long maxMoney, long coinbaseMaturity, long premineHeight, Money premineReward, Money proofOfWorkReward, TimeSpan powTargetTimespan, TimeSpan powTargetSpacing, bool powAllowMinDifficultyBlocks, bool powNoRetargeting, Target powLimit, uint256 minimumChainWork, bool isProofOfStake, int lastPowBlock, BigInteger proofOfStakeLimit, BigInteger proofOfStakeLimitV2, Money proofOfStakeReward)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ConsensusFactory.html">ConsensusFactory</a></td>
+        <td><span class="parametername">consensusFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ConsensusOptions.html">ConsensusOptions</a></td>
+        <td><span class="parametername">consensusOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">coinType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">hashGenesisBlock</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">subsidyHalvingInterval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">majorityEnforceBlockUpgrade</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">majorityRejectBlockOutdated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">majorityWindow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.BuriedDeploymentsArray.html">BuriedDeploymentsArray</a></td>
+        <td><span class="parametername">buriedDeployments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.BIP9DeploymentsArray.html">BIP9DeploymentsArray</a></td>
+        <td><span class="parametername">bip9Deployments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">bip34Hash</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ruleChangeActivationThreshold</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minerConfirmationWindow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxReorgLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">defaultAssumeValid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">maxMoney</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">coinbaseMaturity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">premineHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
+        <td><span class="parametername">premineReward</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
+        <td><span class="parametername">proofOfWorkReward</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">powTargetTimespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">powTargetSpacing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">powAllowMinDifficultyBlocks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">powNoRetargeting</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Target.html">Target</a></td>
+        <td><span class="parametername">powLimit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><span class="parametername">minimumChainWork</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isProofOfStake</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lastPowBlock</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">proofOfStakeLimit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">proofOfStakeLimitV2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
+        <td><span class="parametername">proofOfStakeReward</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -110,7 +281,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_BIP34Hash.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.BIP34Hash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L117">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L45">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_BIP34Hash_" data-uid="NBitcoin.Consensus.BIP34Hash*"></a>
   <h4 id="NBitcoin_Consensus_BIP34Hash" data-uid="NBitcoin.Consensus.BIP34Hash">BIP34Hash</h4>
@@ -118,7 +289,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint256 BIP34Hash { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint256 BIP34Hash { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -140,7 +311,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_BIP9Deployments.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.BIP9Deployments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L107">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L35">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_BIP9Deployments_" data-uid="NBitcoin.Consensus.BIP9Deployments*"></a>
   <h4 id="NBitcoin_Consensus_BIP9Deployments" data-uid="NBitcoin.Consensus.BIP9Deployments">BIP9Deployments</h4>
@@ -148,7 +319,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Consensus.BIP9DeploymentsArray BIP9Deployments { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public BIP9DeploymentsArray BIP9Deployments { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -160,7 +331,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.Consensus.BIP9DeploymentsArray.html">Consensus.BIP9DeploymentsArray</a></td>
+        <td><a class="xref" href="NBitcoin.BIP9DeploymentsArray.html">BIP9DeploymentsArray</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -170,7 +341,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_BuriedDeployments.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.BuriedDeployments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L105">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L33">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_BuriedDeployments_" data-uid="NBitcoin.Consensus.BuriedDeployments*"></a>
   <h4 id="NBitcoin_Consensus_BuriedDeployments" data-uid="NBitcoin.Consensus.BuriedDeployments">BuriedDeployments</h4>
@@ -178,7 +349,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Consensus.BuriedDeploymentsArray BuriedDeployments { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public BuriedDeploymentsArray BuriedDeployments { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,7 +361,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.Consensus.BuriedDeploymentsArray.html">Consensus.BuriedDeploymentsArray</a></td>
+        <td><a class="xref" href="NBitcoin.BuriedDeploymentsArray.html">BuriedDeploymentsArray</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -200,11 +371,11 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_CoinbaseMaturity.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.CoinbaseMaturity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L29">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L11">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_CoinbaseMaturity_" data-uid="NBitcoin.Consensus.CoinbaseMaturity*"></a>
   <h4 id="NBitcoin_Consensus_CoinbaseMaturity" data-uid="NBitcoin.Consensus.CoinbaseMaturity">CoinbaseMaturity</h4>
-  <div class="markdown level1 summary"><p>How many blocks should be on top of a coinbase transaction until its outputs are considered spendable.</p>
+  <div class="markdown level1 summary"><p>How many blocks should be on top of a block that includes a coinbase transaction until its outputs are considered spendable.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -231,16 +402,16 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_CoinType.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.CoinType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L146">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L67">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_CoinType_" data-uid="NBitcoin.Consensus.CoinType*"></a>
   <h4 id="NBitcoin_Consensus_CoinType" data-uid="NBitcoin.Consensus.CoinType">CoinType</h4>
-  <div class="markdown level1 summary"><p>Specify the BIP44 coin type for this network</p>
+  <div class="markdown level1 summary"><p>Specify the BIP44 coin type for this network.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CoinType { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int CoinType { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -262,7 +433,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_ConsensusFactory.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.ConsensusFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L166">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L83">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_ConsensusFactory_" data-uid="NBitcoin.Consensus.ConsensusFactory*"></a>
   <h4 id="NBitcoin_Consensus_ConsensusFactory" data-uid="NBitcoin.Consensus.ConsensusFactory">ConsensusFactory</h4>
@@ -271,7 +442,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConsensusFactory ConsensusFactory { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ConsensusFactory ConsensusFactory { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -293,7 +464,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_DefaultAssumeValid.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.DefaultAssumeValid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L161">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L80">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_DefaultAssumeValid_" data-uid="NBitcoin.Consensus.DefaultAssumeValid*"></a>
   <h4 id="NBitcoin_Consensus_DefaultAssumeValid" data-uid="NBitcoin.Consensus.DefaultAssumeValid">DefaultAssumeValid</h4>
@@ -302,7 +473,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint256 DefaultAssumeValid { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint256 DefaultAssumeValid { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -321,40 +492,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_DifficultyAdjustmentInterval.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.DifficultyAdjustmentInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L134">View Source</a>
-  </span>
-  <a id="NBitcoin_Consensus_DifficultyAdjustmentInterval_" data-uid="NBitcoin.Consensus.DifficultyAdjustmentInterval*"></a>
-  <h4 id="NBitcoin_Consensus_DifficultyAdjustmentInterval" data-uid="NBitcoin.Consensus.DifficultyAdjustmentInterval">DifficultyAdjustmentInterval</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long DifficultyAdjustmentInterval { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_HashGenesisBlock.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.HashGenesisBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L129">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L57">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_HashGenesisBlock_" data-uid="NBitcoin.Consensus.HashGenesisBlock*"></a>
   <h4 id="NBitcoin_Consensus_HashGenesisBlock" data-uid="NBitcoin.Consensus.HashGenesisBlock">HashGenesisBlock</h4>
@@ -362,7 +503,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint256 HashGenesisBlock { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint256 HashGenesisBlock { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -384,7 +525,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_IsProofOfStake.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.IsProofOfStake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L158">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L77">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_IsProofOfStake_" data-uid="NBitcoin.Consensus.IsProofOfStake*"></a>
   <h4 id="NBitcoin_Consensus_IsProofOfStake" data-uid="NBitcoin.Consensus.IsProofOfStake">IsProofOfStake</h4>
@@ -393,7 +534,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsProofOfStake { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsProofOfStake { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -415,7 +556,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_LastPOWBlock.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.LastPOWBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L153">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L74">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_LastPOWBlock_" data-uid="NBitcoin.Consensus.LastPOWBlock*"></a>
   <h4 id="NBitcoin_Consensus_LastPOWBlock" data-uid="NBitcoin.Consensus.LastPOWBlock">LastPOWBlock</h4>
@@ -446,7 +587,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_MajorityEnforceBlockUpgrade.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.MajorityEnforceBlockUpgrade%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L111">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L39">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_MajorityEnforceBlockUpgrade_" data-uid="NBitcoin.Consensus.MajorityEnforceBlockUpgrade*"></a>
   <h4 id="NBitcoin_Consensus_MajorityEnforceBlockUpgrade" data-uid="NBitcoin.Consensus.MajorityEnforceBlockUpgrade">MajorityEnforceBlockUpgrade</h4>
@@ -454,7 +595,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MajorityEnforceBlockUpgrade { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int MajorityEnforceBlockUpgrade { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -476,7 +617,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_MajorityRejectBlockOutdated.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.MajorityRejectBlockOutdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L113">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L41">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_MajorityRejectBlockOutdated_" data-uid="NBitcoin.Consensus.MajorityRejectBlockOutdated*"></a>
   <h4 id="NBitcoin_Consensus_MajorityRejectBlockOutdated" data-uid="NBitcoin.Consensus.MajorityRejectBlockOutdated">MajorityRejectBlockOutdated</h4>
@@ -484,7 +625,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MajorityRejectBlockOutdated { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int MajorityRejectBlockOutdated { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -506,7 +647,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_MajorityWindow.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.MajorityWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L115">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L43">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_MajorityWindow_" data-uid="NBitcoin.Consensus.MajorityWindow*"></a>
   <h4 id="NBitcoin_Consensus_MajorityWindow" data-uid="NBitcoin.Consensus.MajorityWindow">MajorityWindow</h4>
@@ -514,7 +655,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MajorityWindow { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int MajorityWindow { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -536,7 +677,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_MaxMoney.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.MaxMoney%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L61">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L29">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_MaxMoney_" data-uid="NBitcoin.Consensus.MaxMoney*"></a>
   <h4 id="NBitcoin_Consensus_MaxMoney" data-uid="NBitcoin.Consensus.MaxMoney">MaxMoney</h4>
@@ -545,7 +686,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long MaxMoney { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long MaxMoney { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -567,7 +708,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_MaxReorgLength.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.MaxReorgLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L56">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L26">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_MaxReorgLength_" data-uid="NBitcoin.Consensus.MaxReorgLength*"></a>
   <h4 id="NBitcoin_Consensus_MaxReorgLength" data-uid="NBitcoin.Consensus.MaxReorgLength">MaxReorgLength</h4>
@@ -576,7 +717,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint MaxReorgLength { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint MaxReorgLength { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -598,7 +739,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_MinerConfirmationWindow.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.MinerConfirmationWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L139">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L62">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_MinerConfirmationWindow_" data-uid="NBitcoin.Consensus.MinerConfirmationWindow*"></a>
   <h4 id="NBitcoin_Consensus_MinerConfirmationWindow" data-uid="NBitcoin.Consensus.MinerConfirmationWindow">MinerConfirmationWindow</h4>
@@ -628,7 +769,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_MinimumChainWork.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.MinimumChainWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L132">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L60">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_MinimumChainWork_" data-uid="NBitcoin.Consensus.MinimumChainWork*"></a>
   <h4 id="NBitcoin_Consensus_MinimumChainWork" data-uid="NBitcoin.Consensus.MinimumChainWork">MinimumChainWork</h4>
@@ -637,7 +778,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint256 MinimumChainWork { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint256 MinimumChainWork { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -659,7 +800,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_Options.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L63">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L31">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_Options_" data-uid="NBitcoin.Consensus.Options*"></a>
   <h4 id="NBitcoin_Consensus_Options" data-uid="NBitcoin.Consensus.Options">Options</h4>
@@ -689,7 +830,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_PowAllowMinDifficultyBlocks.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.PowAllowMinDifficultyBlocks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L125">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L53">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_PowAllowMinDifficultyBlocks_" data-uid="NBitcoin.Consensus.PowAllowMinDifficultyBlocks*"></a>
   <h4 id="NBitcoin_Consensus_PowAllowMinDifficultyBlocks" data-uid="NBitcoin.Consensus.PowAllowMinDifficultyBlocks">PowAllowMinDifficultyBlocks</h4>
@@ -697,7 +838,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool PowAllowMinDifficultyBlocks { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool PowAllowMinDifficultyBlocks { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -719,7 +860,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_PowLimit.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.PowLimit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L119">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L47">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_PowLimit_" data-uid="NBitcoin.Consensus.PowLimit*"></a>
   <h4 id="NBitcoin_Consensus_PowLimit" data-uid="NBitcoin.Consensus.PowLimit">PowLimit</h4>
@@ -727,7 +868,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Target PowLimit { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Target PowLimit { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -749,7 +890,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_PowNoRetargeting.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.PowNoRetargeting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L127">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L55">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_PowNoRetargeting_" data-uid="NBitcoin.Consensus.PowNoRetargeting*"></a>
   <h4 id="NBitcoin_Consensus_PowNoRetargeting" data-uid="NBitcoin.Consensus.PowNoRetargeting">PowNoRetargeting</h4>
@@ -757,7 +898,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool PowNoRetargeting { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool PowNoRetargeting { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -779,7 +920,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_PowTargetSpacing.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.PowTargetSpacing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L123">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L51">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_PowTargetSpacing_" data-uid="NBitcoin.Consensus.PowTargetSpacing*"></a>
   <h4 id="NBitcoin_Consensus_PowTargetSpacing" data-uid="NBitcoin.Consensus.PowTargetSpacing">PowTargetSpacing</h4>
@@ -787,7 +928,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TimeSpan PowTargetSpacing { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TimeSpan PowTargetSpacing { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -809,7 +950,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_PowTargetTimespan.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.PowTargetTimespan%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L121">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L49">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_PowTargetTimespan_" data-uid="NBitcoin.Consensus.PowTargetTimespan*"></a>
   <h4 id="NBitcoin_Consensus_PowTargetTimespan" data-uid="NBitcoin.Consensus.PowTargetTimespan">PowTargetTimespan</h4>
@@ -817,7 +958,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TimeSpan PowTargetTimespan { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TimeSpan PowTargetTimespan { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -839,7 +980,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_PremineHeight.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.PremineHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L41">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L17">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_PremineHeight_" data-uid="NBitcoin.Consensus.PremineHeight*"></a>
   <h4 id="NBitcoin_Consensus_PremineHeight" data-uid="NBitcoin.Consensus.PremineHeight">PremineHeight</h4>
@@ -849,7 +990,7 @@ Set to 0 when there is no premine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long PremineHeight { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long PremineHeight { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -871,17 +1012,17 @@ Set to 0 when there is no premine.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_PremineReward.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.PremineReward%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L35">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L14">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_PremineReward_" data-uid="NBitcoin.Consensus.PremineReward*"></a>
   <h4 id="NBitcoin_Consensus_PremineReward" data-uid="NBitcoin.Consensus.PremineReward">PremineReward</h4>
   <div class="markdown level1 summary"><p>Amount of coins mined when a new network is bootstrapped.
-Set to Money.Zero when there is no premine.</p>
+Set to <a class="xref" href="NBitcoin.Money.html#NBitcoin_Money_Zero">Zero</a> when there is no premine.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Money PremineReward { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Money PremineReward { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -903,7 +1044,7 @@ Set to Money.Zero when there is no premine.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_ProofOfStakeLimit.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.ProofOfStakeLimit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L148">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L69">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_ProofOfStakeLimit_" data-uid="NBitcoin.Consensus.ProofOfStakeLimit*"></a>
   <h4 id="NBitcoin_Consensus_ProofOfStakeLimit" data-uid="NBitcoin.Consensus.ProofOfStakeLimit">ProofOfStakeLimit</h4>
@@ -911,7 +1052,7 @@ Set to Money.Zero when there is no premine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger ProofOfStakeLimit { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public BigInteger ProofOfStakeLimit { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -933,7 +1074,7 @@ Set to Money.Zero when there is no premine.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_ProofOfStakeLimitV2.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.ProofOfStakeLimitV2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L150">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L71">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_ProofOfStakeLimitV2_" data-uid="NBitcoin.Consensus.ProofOfStakeLimitV2*"></a>
   <h4 id="NBitcoin_Consensus_ProofOfStakeLimitV2" data-uid="NBitcoin.Consensus.ProofOfStakeLimitV2">ProofOfStakeLimitV2</h4>
@@ -941,7 +1082,7 @@ Set to Money.Zero when there is no premine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger ProofOfStakeLimitV2 { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public BigInteger ProofOfStakeLimitV2 { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -963,7 +1104,7 @@ Set to Money.Zero when there is no premine.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_ProofOfStakeReward.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.ProofOfStakeReward%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L51">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L23">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_ProofOfStakeReward_" data-uid="NBitcoin.Consensus.ProofOfStakeReward*"></a>
   <h4 id="NBitcoin_Consensus_ProofOfStakeReward" data-uid="NBitcoin.Consensus.ProofOfStakeReward">ProofOfStakeReward</h4>
@@ -972,7 +1113,7 @@ Set to Money.Zero when there is no premine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Money ProofOfStakeReward { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Money ProofOfStakeReward { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -994,7 +1135,7 @@ Set to Money.Zero when there is no premine.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_ProofOfWorkReward.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.ProofOfWorkReward%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L46">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L20">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_ProofOfWorkReward_" data-uid="NBitcoin.Consensus.ProofOfWorkReward*"></a>
   <h4 id="NBitcoin_Consensus_ProofOfWorkReward" data-uid="NBitcoin.Consensus.ProofOfWorkReward">ProofOfWorkReward</h4>
@@ -1003,7 +1144,7 @@ Set to Money.Zero when there is no premine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Money ProofOfWorkReward { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Money ProofOfWorkReward { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1025,7 +1166,7 @@ Set to Money.Zero when there is no premine.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_RuleChangeActivationThreshold.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.RuleChangeActivationThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L141">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L64">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_RuleChangeActivationThreshold_" data-uid="NBitcoin.Consensus.RuleChangeActivationThreshold*"></a>
   <h4 id="NBitcoin_Consensus_RuleChangeActivationThreshold" data-uid="NBitcoin.Consensus.RuleChangeActivationThreshold">RuleChangeActivationThreshold</h4>
@@ -1052,10 +1193,41 @@ Set to Money.Zero when there is no premine.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_Rules.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.Rules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L86">View Source</a>
+  </span>
+  <a id="NBitcoin_Consensus_Rules_" data-uid="NBitcoin.Consensus.Rules*"></a>
+  <h4 id="NBitcoin_Consensus_Rules" data-uid="NBitcoin.Consensus.Rules">Rules</h4>
+  <div class="markdown level1 summary"><p>Rules specific to the given network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;IConsensusRule&gt; Rules { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus_SubsidyHalvingInterval.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus.SubsidyHalvingInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L109">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L37">View Source</a>
   </span>
   <a id="NBitcoin_Consensus_SubsidyHalvingInterval_" data-uid="NBitcoin.Consensus.SubsidyHalvingInterval*"></a>
   <h4 id="NBitcoin_Consensus_SubsidyHalvingInterval" data-uid="NBitcoin.Consensus.SubsidyHalvingInterval">SubsidyHalvingInterval</h4>
@@ -1063,7 +1235,7 @@ Set to Money.Zero when there is no premine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int SubsidyHalvingInterval { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int SubsidyHalvingInterval { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1080,6 +1252,10 @@ Set to Money.Zero when there is no premine.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NBitcoin.IConsensus.html">IConsensus</a>
+  </div>
 </article>
           </div>
           
@@ -1091,7 +1267,7 @@ Set to Money.Zero when there is no premine.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Consensus.md&amp;value=---%0Auid%3A%20NBitcoin.Consensus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Consensus.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

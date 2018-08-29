@@ -285,7 +285,7 @@ Consumes incoming blocks, validates and executes them.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">CoinView UTXOSet { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">ICoinView UTXOSet { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -297,7 +297,7 @@ Consumes incoming blocks, validates and executes them.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -314,7 +314,7 @@ Consumes incoming blocks, validates and executes them.</p>
   <a id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_AcceptBlockAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.AcceptBlockAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_Interfaces_IConsensusLoop_AcceptBlockAsync_Stratis_Bitcoin_Consensus_ValidationContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Interfaces.IConsensusLoop.AcceptBlockAsync(Stratis.Bitcoin.Consensus.ValidationContext)">AcceptBlockAsync(ValidationContext)</h4>
   <div class="markdown level1 summary"><p>A method that will accept a new block to the node.
-The block will be validated and the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a> db will be updated.
+The block will be validated and the <see cref="!:CoinView"></see> db will be updated.
 If it's a new block that was mined or staked it will extend the chain and the new block will set <a class="xref" href="NBitcoin.ConcurrentChain.html#NBitcoin_ConcurrentChain_Tip">Tip</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

@@ -95,19 +95,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory__ctor_NBitcoin_Network_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_P2P_Protocol_Payloads_PayloadProvider_Stratis_Bitcoin_P2P_ISelfEndpointTracker_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.%23ctor(NBitcoin.Network%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.P2P.Protocol.Payloads.PayloadProvider%2CStratis.Bitcoin.P2P.ISelfEndpointTracker)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory__ctor_NBitcoin_Network_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_P2P_Protocol_Payloads_PayloadProvider_Stratis_Bitcoin_P2P_ISelfEndpointTracker_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_Stratis_Bitcoin_Configuration_Settings_ConnectionManagerSettings_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.%23ctor(NBitcoin.Network%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.P2P.Protocol.Payloads.PayloadProvider%2CStratis.Bitcoin.P2P.ISelfEndpointTracker%2CStratis.Bitcoin.Interfaces.IInitialBlockDownloadState%2CStratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L103">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L112">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory__ctor_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory__ctor_NBitcoin_Network_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_P2P_Protocol_Payloads_PayloadProvider_Stratis_Bitcoin_P2P_ISelfEndpointTracker_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.#ctor(NBitcoin.Network,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.P2P.Protocol.Payloads.PayloadProvider,Stratis.Bitcoin.P2P.ISelfEndpointTracker)">NetworkPeerFactory(Network, IDateTimeProvider, ILoggerFactory, PayloadProvider, ISelfEndpointTracker)</h4>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory__ctor_NBitcoin_Network_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_P2P_Protocol_Payloads_PayloadProvider_Stratis_Bitcoin_P2P_ISelfEndpointTracker_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_Stratis_Bitcoin_Configuration_Settings_ConnectionManagerSettings_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.#ctor(NBitcoin.Network,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.P2P.Protocol.Payloads.PayloadProvider,Stratis.Bitcoin.P2P.ISelfEndpointTracker,Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState,Stratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings)">NetworkPeerFactory(Network, IDateTimeProvider, ILoggerFactory, PayloadProvider, ISelfEndpointTracker, IInitialBlockDownloadState, ConnectionManagerSettings)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the factory.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetworkPeerFactory(Network network, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, PayloadProvider payloadProvider, ISelfEndpointTracker selfEndpointTracker)</code></pre>
+    <pre><code class="lang-csharp hljs">public NetworkPeerFactory(Network network, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, PayloadProvider payloadProvider, ISelfEndpointTracker selfEndpointTracker, IInitialBlockDownloadState initialBlockDownloadState, ConnectionManagerSettings connectionManagerSettings)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,6 +149,18 @@
         <td><p>Tracker for endpoints known to be self.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState.html">IInitialBlockDownloadState</a></td>
+        <td><span class="parametername">initialBlockDownloadState</span></td>
+        <td><p>Provider of IBD state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings.html">ConnectionManagerSettings</a></td>
+        <td><span class="parametername">connectionManagerSettings</span></td>
+        <td><p>Configuration related to incoming and outgoing connections.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
@@ -158,7 +170,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_IPEndPoint_Stratis_Bitcoin_P2P_Peer_NetworkPeerConnectionParameters_Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync(IPEndPoint%2CStratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters%2CStratis.Bitcoin.P2P.Peer.NetworkPeerDisposer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L158">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L175">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_IPEndPoint_Stratis_Bitcoin_P2P_Peer_NetworkPeerConnectionParameters_Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync(IPEndPoint,Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters,Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer)">CreateConnectedNetworkPeerAsync(IPEndPoint, NetworkPeerConnectionParameters, NetworkPeerDisposer)</h4>
@@ -220,7 +232,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_System_String_NBitcoin_Protocol_ProtocolVersion_System_Boolean_CancellationToken_Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync(System.String%2CNBitcoin.Protocol.ProtocolVersion%2CSystem.Boolean%2CCancellationToken%2CStratis.Bitcoin.P2P.Peer.NetworkPeerDisposer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L136">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L153">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateConnectedNetworkPeerAsync_System_String_NBitcoin_Protocol_ProtocolVersion_System_Boolean_CancellationToken_Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateConnectedNetworkPeerAsync(System.String,NBitcoin.Protocol.ProtocolVersion,System.Boolean,CancellationToken,Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer)">CreateConnectedNetworkPeerAsync(String, ProtocolVersion, Boolean, CancellationToken, NetworkPeerDisposer)</h4>
@@ -294,7 +306,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeer_TcpClient_Stratis_Bitcoin_P2P_Peer_NetworkPeerConnectionParameters_Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeer(TcpClient%2CStratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters%2CStratis.Bitcoin.P2P.Peer.NetworkPeerDisposer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L119">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L136">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeer*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeer_TcpClient_Stratis_Bitcoin_P2P_Peer_NetworkPeerConnectionParameters_Stratis_Bitcoin_P2P_Peer_NetworkPeerDisposer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeer(TcpClient,Stratis.Bitcoin.P2P.Peer.NetworkPeerConnectionParameters,Stratis.Bitcoin.P2P.Peer.NetworkPeerDisposer)">CreateNetworkPeer(TcpClient, NetworkPeerConnectionParameters, NetworkPeerDisposer)</h4>
@@ -356,7 +368,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerConnection_Stratis_Bitcoin_P2P_Peer_INetworkPeer_TcpClient_Stratis_Bitcoin_P2P_Protocol_ProcessMessageAsync_Stratis_Bitcoin_P2P_Protocol_IncomingMessage__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerConnection(Stratis.Bitcoin.P2P.Peer.INetworkPeer%2CTcpClient%2CStratis.Bitcoin.P2P.Protocol.ProcessMessageAsync%7BStratis.Bitcoin.P2P.Protocol.IncomingMessage%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L197">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L214">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerConnection_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerConnection*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerConnection_Stratis_Bitcoin_P2P_Peer_INetworkPeer_TcpClient_Stratis_Bitcoin_P2P_Protocol_ProcessMessageAsync_Stratis_Bitcoin_P2P_Protocol_IncomingMessage__" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerConnection(Stratis.Bitcoin.P2P.Peer.INetworkPeer,TcpClient,Stratis.Bitcoin.P2P.Protocol.ProcessMessageAsync{Stratis.Bitcoin.P2P.Protocol.IncomingMessage})">CreateNetworkPeerConnection(INetworkPeer, TcpClient, ProcessMessageAsync&lt;IncomingMessage&gt;)</h4>
@@ -417,7 +429,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerServer_IPEndPoint_IPEndPoint_NBitcoin_Protocol_ProtocolVersion_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerServer(IPEndPoint%2CIPEndPoint%2CNBitcoin.Protocol.ProtocolVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L188">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L205">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerServer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerServer*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory_CreateNetworkPeerServer_IPEndPoint_IPEndPoint_NBitcoin_Protocol_ProtocolVersion_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory.CreateNetworkPeerServer(IPEndPoint,IPEndPoint,NBitcoin.Protocol.ProtocolVersion)">CreateNetworkPeerServer(IPEndPoint, IPEndPoint, ProtocolVersion)</h4>
@@ -490,7 +502,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerFactory.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L72" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerFactory.cs/#L73" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -73,7 +73,7 @@
   
   <h1 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_StratisBigFixPosFutureDriftRule" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.StratisBigFixPosFutureDriftRule" class="text-break">Class StratisBigFixPosFutureDriftRule
   </h1>
-  <div class="markdown level0 summary"><p>A rule that will verify the block time drift is according to the PoS consensus rules for the <a class="xref" href="NBitcoin.Networks.html#NBitcoin_Networks_StratisMain">StratisMain</a> network (and its test networks).
+  <div class="markdown level0 summary"><p>A rule that will verify the block time drift is according to the PoS consensus rules for the <see cref="!:NBitcoin.Networks.StratisMain"></see> network (and its test networks).
 New networks must use the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.html">PosFutureDriftRule</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -84,6 +84,10 @@ New networks must use the <a class="xref" href="Stratis.Bitcoin.Features.Consens
     <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.StakeStoreConsensusRule.html">StakeStoreConsensusRule</a></div>
     <div class="level3"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.html">PosFutureDriftRule</a></div>
     <div class="level4"><span class="xref">StratisBigFixPosFutureDriftRule</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -113,7 +117,7 @@ New networks must use the <a class="xref" href="Stratis.Bitcoin.Features.Consens
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Consensus.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_StratisBigFixPosFutureDriftRule_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StratisBigFixPosFutureDriftRule : PosFutureDriftRule</code></pre>
+    <pre><code class="lang-csharp hljs">public class StratisBigFixPosFutureDriftRule : PosFutureDriftRule, IConsensusRule</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -205,6 +209,10 @@ New networks must use the <a class="xref" href="Stratis.Bitcoin.Features.Consens
   <div class="markdown level1 remarks"><p>Future drift is maximal allowed block's timestamp difference over adjusted time.
 If this difference is greater block won't be accepted.</p>
 </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a>
+  </div>
 </article>
           </div>
           

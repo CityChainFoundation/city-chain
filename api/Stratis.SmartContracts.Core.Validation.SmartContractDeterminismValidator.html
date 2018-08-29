@@ -91,104 +91,17 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SmartContractDeterminismValidator : object, ISmartContractValidator</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_NonDeterministicMethodReference.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.NonDeterministicMethodReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/SmartContractDeterminismValidator.cs/#L78">View Source</a>
-  </span>
-  <h4 id="Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_NonDeterministicMethodReference" data-uid="Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.NonDeterministicMethodReference">NonDeterministicMethodReference</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string NonDeterministicMethodReference = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_NonDeterministicError_MethodDefinition_MethodDefinition_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.NonDeterministicError(MethodDefinition%2CMethodDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_Validate_ModuleDefinition_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.Validate(ModuleDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/SmartContractDeterminismValidator.cs/#L207">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_NonDeterministicError_" data-uid="Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.NonDeterministicError*"></a>
-  <h4 id="Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_NonDeterministicError_MethodDefinition_MethodDefinition_" data-uid="Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.NonDeterministicError(MethodDefinition,MethodDefinition)">NonDeterministicError(MethodDefinition, MethodDefinition)</h4>
-  <div class="markdown level1 summary"><p>Returns an error when a referenced method is non-deterministic in a containing method.</p>
-<p>I.e. if in method A, method B is referenced and it is non-deterministic, use this method.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult NonDeterministicError(MethodDefinition userMethod, MethodDefinition referencedMethod)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">MethodDefinition</span></td>
-        <td><span class="parametername">userMethod</span></td>
-        <td><p>The containing method.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">MethodDefinition</span></td>
-        <td><span class="parametername">referencedMethod</span></td>
-        <td><p>The method that is non-deterministic in the containing method.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.ModuleValidation.Net.ValidationResult.html">ValidationResult</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_Validate_Stratis_SmartContracts_Core_Validation_SmartContractDecompilation_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.Validate(Stratis.SmartContracts.Core.Validation.SmartContractDecompilation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/SmartContractDeterminismValidator.cs/#L81">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/SmartContractDeterminismValidator.cs/#L13">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_Validate_" data-uid="Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.Validate*"></a>
-  <h4 id="Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_Validate_Stratis_SmartContracts_Core_Validation_SmartContractDecompilation_" data-uid="Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.Validate(Stratis.SmartContracts.Core.Validation.SmartContractDecompilation)">Validate(SmartContractDecompilation)</h4>
+  <h4 id="Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator_Validate_ModuleDefinition_" data-uid="Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.Validate(ModuleDefinition)">Validate(ModuleDefinition)</h4>
   <div class="markdown level1 summary"><p>Validate all user defined methods in the contract.</p>
 <p>
 All methods with an empty body will be ignored.
@@ -197,7 +110,7 @@ All methods with an empty body will be ignored.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SmartContractValidationResult Validate(SmartContractDecompilation decompilation)</code></pre>
+    <pre><code class="lang-csharp hljs">public SmartContractValidationResult Validate(ModuleDefinition moduleDefinition)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -210,8 +123,8 @@ All methods with an empty body will be ignored.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.Validation.SmartContractDecompilation.html">SmartContractDecompilation</a></td>
-        <td><span class="parametername">decompilation</span></td>
+        <td><span class="xref">ModuleDefinition</span></td>
+        <td><span class="parametername">moduleDefinition</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -246,7 +159,7 @@ All methods with an empty body will be ignored.
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Validation_SmartContractDeterminismValidator.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/SmartContractDeterminismValidator.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core.Validation/SmartContractDeterminismValidator.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

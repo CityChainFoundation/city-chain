@@ -82,6 +82,10 @@
     <div class="level1"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html">ConsensusRule</a></div>
     <div class="level2"><span class="xref">AssumeValidRule</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -98,7 +102,7 @@
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Consensus.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_AssumeValidRule_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AssumeValidRule : ConsensusRule</code></pre>
+    <pre><code class="lang-csharp hljs">public class AssumeValidRule : ConsensusRule, IConsensusRule</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -175,6 +179,10 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Cons
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_">ConsensusRule.RunAsync(RuleContext)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a>
+  </div>
 </article>
           </div>
           

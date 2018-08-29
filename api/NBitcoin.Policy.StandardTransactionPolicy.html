@@ -97,7 +97,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy__ctor_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.%23ctor(NBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L11">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L53">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy__ctor_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.#ctor*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy__ctor_NBitcoin_Network_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.#ctor(NBitcoin.Network)">StandardTransactionPolicy(Network)</h4>
@@ -131,10 +131,15 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_MaxScriptSigLength.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.MaxScriptSigLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L66">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L16">View Source</a>
   </span>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_MaxScriptSigLength" data-uid="NBitcoin.Policy.StandardTransactionPolicy.MaxScriptSigLength">MaxScriptSigLength</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Biggest 'standard' txin is a 15-of-15 P2SH multisig with compressed keys
+(remember the 520 byte limit on redeemScript size).
+That works out to a (15*(33+1))+3=513 byte redeemScript, 513+1+15*(73+1)+3=1627 bytes of scriptSig,
+which we round off to 1650 bytes for some minor future-proofing.
+That's also enough to spend a 20-of-20 CHECKMULTISIG scriptPubKey, though such a scriptPubKey is not considered standard.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -162,11 +167,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_CheckFee.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.CheckFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L54">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L44">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_CheckFee_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckFee*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_CheckFee" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckFee">CheckFee</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A value indicating whether to include checking the fee as part of checking the transaction.
+This is set to false in some unit tests but otherwise defaults to true.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -192,11 +199,11 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_CheckMalleabilitySafe.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.CheckMalleabilitySafe%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L50">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L38">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_CheckMalleabilitySafe_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckMalleabilitySafe*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_CheckMalleabilitySafe" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckMalleabilitySafe">CheckMalleabilitySafe</h4>
-  <div class="markdown level1 summary"><p>Check if the transaction is safe from malleability (default: false)</p>
+  <div class="markdown level1 summary"><p>Check if the transaction is safe from malleability (default: false).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -223,11 +230,11 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_CheckScriptPubKey.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.CheckScriptPubKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L236">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L49">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_CheckScriptPubKey_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckScriptPubKey*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_CheckScriptPubKey" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckScriptPubKey">CheckScriptPubKey</h4>
-  <div class="markdown level1 summary"><p>Check the standardness of scriptPubKey</p>
+  <div class="markdown level1 summary"><p>Check the standardness of scriptPubKey.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -254,11 +261,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_MaxTransactionSize.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.MaxTransactionSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L23">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L21">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_MaxTransactionSize_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.MaxTransactionSize*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_MaxTransactionSize" data-uid="NBitcoin.Policy.StandardTransactionPolicy.MaxTransactionSize">MaxTransactionSize</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The maximum size for transactions we're willing to relay/mine.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -284,11 +292,11 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_MaxTxFee.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.MaxTxFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L31">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L26">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_MaxTxFee_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.MaxTxFee*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_MaxTxFee" data-uid="NBitcoin.Policy.StandardTransactionPolicy.MaxTxFee">MaxTxFee</h4>
-  <div class="markdown level1 summary"><p>Safety check, if the FeeRate exceed this value, a policy error is raised</p>
+  <div class="markdown level1 summary"><p>Safety check, if the FeeRate exceed this value, a policy error is raised.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -315,11 +323,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_MinRelayTxFee.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.MinRelayTxFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L36">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L31">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_MinRelayTxFee_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.MinRelayTxFee*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_MinRelayTxFee" data-uid="NBitcoin.Policy.StandardTransactionPolicy.MinRelayTxFee">MinRelayTxFee</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Fees smaller than this (in satoshi) are considered zero fee (for relaying).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -345,7 +354,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_ScriptVerify.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.ScriptVerify%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L42">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L33">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_ScriptVerify_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.ScriptVerify*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_ScriptVerify" data-uid="NBitcoin.Policy.StandardTransactionPolicy.ScriptVerify">ScriptVerify</h4>
@@ -370,36 +379,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_UseConsensusLib.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.UseConsensusLib%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L60">View Source</a>
-  </span>
-  <a id="NBitcoin_Policy_StandardTransactionPolicy_UseConsensusLib_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.UseConsensusLib*"></a>
-  <h4 id="NBitcoin_Policy_StandardTransactionPolicy_UseConsensusLib" data-uid="NBitcoin.Policy.StandardTransactionPolicy.UseConsensusLib">UseConsensusLib</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UseConsensusLib { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -407,7 +386,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_Check_NBitcoin_Transaction_NBitcoin_ICoin___.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.Check(NBitcoin.Transaction%2CNBitcoin.ICoin%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L69">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L65">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_Check_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.Check*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_Check_NBitcoin_Transaction_NBitcoin_ICoin___" data-uid="NBitcoin.Policy.StandardTransactionPolicy.Check(NBitcoin.Transaction,NBitcoin.ICoin[])">Check(Transaction, ICoin[])</h4>
@@ -459,7 +438,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_CheckMinRelayTxFee_NBitcoin_Transaction_List_NBitcoin_Policy_TransactionPolicyError__.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.CheckMinRelayTxFee(NBitcoin.Transaction%2CList%7BNBitcoin.Policy.TransactionPolicyError%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L176">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L169">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_CheckMinRelayTxFee_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckMinRelayTxFee*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_CheckMinRelayTxFee_NBitcoin_Transaction_List_NBitcoin_Policy_TransactionPolicyError__" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckMinRelayTxFee(NBitcoin.Transaction,List{NBitcoin.Policy.TransactionPolicyError})">CheckMinRelayTxFee(Transaction, List&lt;TransactionPolicyError&gt;)</h4>
@@ -496,7 +475,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_CheckPubKey_NBitcoin_Transaction_List_NBitcoin_Policy_TransactionPolicyError__.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.CheckPubKey(NBitcoin.Transaction%2CList%7BNBitcoin.Policy.TransactionPolicyError%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L162">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L155">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_CheckPubKey_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckPubKey*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_CheckPubKey_NBitcoin_Transaction_List_NBitcoin_Policy_TransactionPolicyError__" data-uid="NBitcoin.Policy.StandardTransactionPolicy.CheckPubKey(NBitcoin.Transaction,List{NBitcoin.Policy.TransactionPolicyError})">CheckPubKey(Transaction, List&lt;TransactionPolicyError&gt;)</h4>
@@ -533,7 +512,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_Clone.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L218">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L188">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_Clone_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.Clone*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_Clone" data-uid="NBitcoin.Policy.StandardTransactionPolicy.Clone">Clone()</h4>
@@ -563,7 +542,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Policy_StandardTransactionPolicy_IsOpReturn_System_Byte___.md&amp;value=---%0Auid%3A%20NBitcoin.Policy.StandardTransactionPolicy.IsOpReturn(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L190">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Policy/StandardTransactionPolicy.cs/#L183">View Source</a>
   </span>
   <a id="NBitcoin_Policy_StandardTransactionPolicy_IsOpReturn_" data-uid="NBitcoin.Policy.StandardTransactionPolicy.IsOpReturn*"></a>
   <h4 id="NBitcoin_Policy_StandardTransactionPolicy_IsOpReturn_System_Byte___" data-uid="NBitcoin.Policy.StandardTransactionPolicy.IsOpReturn(System.Byte[])">IsOpReturn(Byte[])</h4>

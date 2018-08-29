@@ -94,18 +94,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext__ctor_uint256_System_UInt64_uint160_uint160_System_UInt64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.%23ctor(uint256%2CSystem.UInt64%2Cuint160%2Cuint160%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext__ctor_uint256_System_UInt64_uint160_uint160_System_UInt64_System_UInt64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.%23ctor(uint256%2CSystem.UInt64%2Cuint160%2Cuint160%2CSystem.UInt64%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L8">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransactionContext__ctor_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.#ctor*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext__ctor_uint256_System_UInt64_uint160_uint160_System_UInt64_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.#ctor(uint256,System.UInt64,uint160,uint160,System.UInt64)">TransactionContext(uint256, UInt64, uint160, uint160, UInt64)</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext__ctor_uint256_System_UInt64_uint160_uint160_System_UInt64_System_UInt64_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.#ctor(uint256,System.UInt64,uint160,uint160,System.UInt64,System.UInt64)">TransactionContext(uint256, UInt64, uint160, uint160, UInt64, UInt64)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TransactionContext(uint256 txHash, ulong blockHeight, uint160 coinbase, uint160 sender, ulong amount)</code></pre>
+    <pre><code class="lang-csharp hljs">public TransactionContext(uint256 txHash, ulong blockHeight, uint160 coinbase, uint160 sender, ulong amount, ulong nonce = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -142,6 +142,11 @@
         <td><span class="parametername">amount</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">nonce</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
@@ -151,11 +156,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext_Amount.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.Amount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L19">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_Amount_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.Amount*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_Amount" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.Amount">Amount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The amount sent with the transaction</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -181,11 +187,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext_BlockHeight.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.BlockHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L20">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L28">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_BlockHeight_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.BlockHeight*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_BlockHeight" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.BlockHeight">BlockHeight</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Height of the current block in the chain.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -211,11 +218,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext_Coinbase.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.Coinbase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L19">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L25">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_Coinbase_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.Coinbase*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_Coinbase" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.Coinbase">Coinbase</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Address of the coinbase for the current block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,11 +249,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext_From.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.From%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L21">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L31">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_From_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.From*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_From" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.From">From</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Address of the sender for the current contract call.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -268,14 +277,46 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext_Nonce.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.Nonce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L37">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_Nonce_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.Nonce*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_Nonce" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.Nonce">Nonce</h4>
+  <div class="markdown level1 summary"><p>The currently set nonce.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong Nonce { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext_To.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.To%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L22">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L34">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_To_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.To*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_To" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.To">To</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The destination address.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -301,11 +342,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext_TransactionHash.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.TransactionHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L22">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_TransactionHash_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.TransactionHash*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_TransactionHash" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.TransactionHash">TransactionHash</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Hash of the currently executing transaction.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -323,6 +365,42 @@
       <tr>
         <td><span class="xref">uint256</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransactionContext_GetNonceAndIncrement.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransactionContext.GetNonceAndIncrement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/SmartContractExecutionContext.cs/#L40">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_GetNonceAndIncrement_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.GetNonceAndIncrement*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_TransactionContext_GetNonceAndIncrement" data-uid="Stratis.SmartContracts.Executor.Reflection.TransactionContext.GetNonceAndIncrement">GetNonceAndIncrement()</h4>
+  <div class="markdown level1 summary"><p>Get the next number to use as the nonce in the contract address calculation and then
+increment the number behind the scenes, so that the next contract address calculation
+gets a new number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong GetNonceAndIncrement()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><p>The next nonce to use in the contract address formula.</p>
+</td>
       </tr>
     </tbody>
   </table>

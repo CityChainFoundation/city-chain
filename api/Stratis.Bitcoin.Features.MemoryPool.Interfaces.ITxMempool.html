@@ -442,7 +442,7 @@ then invoke the second version.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void CalculateDescendants(TxMempoolEntry entryit, TxMempool.SetEntries setDescendants)</code></pre>
+    <pre><code class="lang-csharp hljs">void CalculateDescendants(TxMempoolEntry entry, TxMempool.SetEntries setDescendants)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -456,7 +456,7 @@ then invoke the second version.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.TxMempoolEntry.html">TxMempoolEntry</a></td>
-        <td><span class="parametername">entryit</span></td>
+        <td><span class="parametername">entry</span></td>
         <td><p>Memory pool entry.</p>
 </td>
       </tr>
@@ -570,13 +570,13 @@ can save time by not iterating over those entries.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Check_Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.Check(Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Check_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.Check(Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.MemoryPool/Interfaces/ITxMempool.cs/#L103">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Check_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.Check*"></a>
-  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Check_Stratis_Bitcoin_Features_Consensus_CoinViews_CoinView_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.Check(Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView)">Check(CoinView)</h4>
+  <h4 id="Stratis_Bitcoin_Features_MemoryPool_Interfaces_ITxMempool_Check_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_" data-uid="Stratis.Bitcoin.Features.MemoryPool.Interfaces.ITxMempool.Check(Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView)">Check(ICoinView)</h4>
   <div class="markdown level1 summary"><p>If sanity-checking is turned on, check makes sure the pool is consistent.
 (does not contain two transactions that spend the same inputs,
 all inputs are in the mapNextTx array). If sanity-checking is turned off,
@@ -585,7 +585,7 @@ check does nothing.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Check(CoinView pcoins)</code></pre>
+    <pre><code class="lang-csharp hljs">void Check(ICoinView pcoins)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -598,7 +598,7 @@ check does nothing.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.CoinView.html">CoinView</a></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a></td>
         <td><span class="parametername">pcoins</span></td>
         <td><p>Coin view of the transaction.</p>
 </td>

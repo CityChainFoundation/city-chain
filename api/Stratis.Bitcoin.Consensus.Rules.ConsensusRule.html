@@ -94,19 +94,23 @@
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.EnsureCoinbaseRule.html">EnsureCoinbaseRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksPosRule.html">HeaderTimeChecksPosRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksRule.html">HeaderTimeChecksRule</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderVersionRule.html">HeaderVersionRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.SetActivationDeploymentsRule.html">SetActivationDeploymentsRule</a></div>
-      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.StratisHeaderVersionRule.html">StratisHeaderVersionRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.TemporarySetChainHeader.html">TemporarySetChainHeader</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.TransactionLocktimeActivationRule.html">TransactionLocktimeActivationRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.WitnessCommitmentsRule.html">WitnessCommitmentsRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.StakeStoreConsensusRule.html">StakeStoreConsensusRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.UtxoStoreConsensusRule.html">UtxoStoreConsensusRule</a></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.html">Stratis.Bitcoin.Consensus.Rules</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
   <h5 id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ConsensusRule : object</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ConsensusRule : object, IConsensusRule</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -115,7 +119,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Logger.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L15">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Logger_" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Logger*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Logger" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Logger">Logger</h4>
@@ -146,7 +150,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Parent.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L20">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L18">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Parent_" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Parent*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Parent" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Parent">Parent</h4>
@@ -179,7 +183,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L27">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L25">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Initialize_" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Initialize*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Initialize" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Initialize">Initialize()</h4>
@@ -197,7 +201,7 @@ The rule can internally initialize its state.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Run(Stratis.Bitcoin.Consensus.Rules.RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L48">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L46">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Run_" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Run*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.Run(Stratis.Bitcoin.Consensus.Rules.RuleContext)">Run(RuleContext)</h4>
@@ -232,7 +236,7 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Cons
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Rules_ConsensusRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Rules.ConsensusRule.RunAsync(Stratis.Bitcoin.Consensus.Rules.RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L37">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L35">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_RunAsync_" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.RunAsync*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_Rules_ConsensusRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_" data-uid="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.RunAsync(Stratis.Bitcoin.Consensus.Rules.RuleContext)">RunAsync(RuleContext)</h4>
@@ -278,6 +282,10 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Cons
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a>
+  </div>
 </article>
           </div>
           
@@ -289,7 +297,7 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Cons
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Rules_ConsensusRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Rules.ConsensusRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/ConsensusRule.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

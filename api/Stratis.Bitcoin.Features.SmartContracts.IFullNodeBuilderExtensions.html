@@ -93,7 +93,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_AddSmartContracts_IFullNodeBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.AddSmartContracts(IFullNodeBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L81">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L71">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_AddSmartContracts_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.AddSmartContracts*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_AddSmartContracts_IFullNodeBuilder_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.AddSmartContracts(IFullNodeBuilder)">AddSmartContracts(IFullNodeBuilder)</h4>
@@ -141,7 +141,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseReflectionExecutor_IFullNodeBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseReflectionExecutor(IFullNodeBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L189">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L258">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseReflectionExecutor_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseReflectionExecutor*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseReflectionExecutor_IFullNodeBuilder_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseReflectionExecutor(IFullNodeBuilder)">UseReflectionExecutor(IFullNodeBuilder)</h4>
@@ -192,11 +192,11 @@ Should we require another executor, we will need to create a separate daemon and
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractConsensus_IFullNodeBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractConsensus(IFullNodeBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L119">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L114">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractConsensus_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractConsensus*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractConsensus_IFullNodeBuilder_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractConsensus(IFullNodeBuilder)">UseSmartContractConsensus(IFullNodeBuilder)</h4>
-  <div class="markdown level1 summary"><p>Configures the node with the smart contract consensus model.</p>
+  <div class="markdown level1 summary"><p>Configures the node with the smart contract proof of work consensus model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -237,20 +237,117 @@ Should we require another executor, we will need to create a separate daemon and
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractMining_IFullNodeBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractMining(IFullNodeBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractPosConsensus_IFullNodeBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractPosConsensus(IFullNodeBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L158">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L155">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractMining_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractMining*"></a>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractMining_IFullNodeBuilder_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractMining(IFullNodeBuilder)">UseSmartContractMining(IFullNodeBuilder)</h4>
+  <a id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractPosConsensus_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractPosConsensus*"></a>
+  <h4 id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractPosConsensus_IFullNodeBuilder_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractPosConsensus(IFullNodeBuilder)">UseSmartContractPosConsensus(IFullNodeBuilder)</h4>
+  <div class="markdown level1 summary"><p>Configures the node with the smart contract proof of stake consensus model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFullNodeBuilder UseSmartContractPosConsensus(this IFullNodeBuilder fullNodeBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFullNodeBuilder</span></td>
+        <td><span class="parametername">fullNodeBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFullNodeBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractPosPowMining_IFullNodeBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractPosPowMining(IFullNodeBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L224">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractPosPowMining_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractPosPowMining*"></a>
+  <h4 id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractPosPowMining_IFullNodeBuilder_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractPosPowMining(IFullNodeBuilder)">UseSmartContractPosPowMining(IFullNodeBuilder)</h4>
   <div class="markdown level1 summary"><p>Adds mining to the smart contract node.</p>
 <p>We inject <a class="xref" href="Stratis.Bitcoin.Features.Miner.Interfaces.IPowMining.html">IPowMining</a> with a smart contract block provider and definition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IFullNodeBuilder UseSmartContractMining(this IFullNodeBuilder fullNodeBuilder)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IFullNodeBuilder UseSmartContractPosPowMining(this IFullNodeBuilder fullNodeBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFullNodeBuilder</span></td>
+        <td><span class="parametername">fullNodeBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFullNodeBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractPowMining_IFullNodeBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractPowMining(IFullNodeBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L195">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractPowMining_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractPowMining*"></a>
+  <h4 id="Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions_UseSmartContractPowMining_IFullNodeBuilder_" data-uid="Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions.UseSmartContractPowMining(IFullNodeBuilder)">UseSmartContractPowMining(IFullNodeBuilder)</h4>
+  <div class="markdown level1 summary"><p>Adds mining to the smart contract node.</p>
+<p>We inject <a class="xref" href="Stratis.Bitcoin.Features.Miner.Interfaces.IPowMining.html">IPowMining</a> with a smart contract block provider and definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFullNodeBuilder UseSmartContractPowMining(this IFullNodeBuilder fullNodeBuilder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -295,7 +392,7 @@ Should we require another executor, we will need to create a separate daemon and
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_IFullNodeBuilderExtensions.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.IFullNodeBuilderExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L76" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/SmartContractFeature.cs/#L66" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

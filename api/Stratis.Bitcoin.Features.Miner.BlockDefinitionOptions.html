@@ -73,7 +73,8 @@
   
   <h1 id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions" class="text-break">Class BlockDefinitionOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Semi- immutable settings to be used by <a class="xref" href="Stratis.Bitcoin.Features.Miner.BlockDefinition.html">BlockDefinition</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -86,23 +87,64 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class BlockDefinitionOptions : object</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions__ctor_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.%23ctor(System.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L23">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions__ctor_" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions__ctor_System_UInt32_System_UInt32_" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.#ctor(System.UInt32,System.UInt32)">BlockDefinitionOptions(UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockDefinitionOptions(uint blockMaxWeight, uint blockMaxSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">blockMaxWeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">blockMaxSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_BlockMaxSize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.BlockMaxSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L9">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L18">View Source</a>
   </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_BlockMaxSize_" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.BlockMaxSize*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_BlockMaxSize" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.BlockMaxSize">BlockMaxSize</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum block size (in bytes) for the blocks created by miner.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long BlockMaxSize</code></pre>
+    <pre><code class="lang-csharp hljs">public uint BlockMaxSize { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -112,7 +154,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -122,16 +164,18 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_BlockMaxWeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.BlockMaxWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L7">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L15">View Source</a>
   </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_BlockMaxWeight_" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.BlockMaxWeight*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_BlockMaxWeight" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.BlockMaxWeight">BlockMaxWeight</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum block weight (in weight units) for the blocks created by miner.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long BlockMaxWeight</code></pre>
+    <pre><code class="lang-csharp hljs">public uint BlockMaxWeight { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -141,7 +185,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -151,16 +195,18 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_BlockMinFeeRate.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.BlockMinFeeRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L11">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L21">View Source</a>
   </span>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_BlockMinFeeRate_" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.BlockMinFeeRate*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_BlockMinFeeRate" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.BlockMinFeeRate">BlockMinFeeRate</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Minimum fee rate for transactions to be included in blocks created by miner.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeeRate BlockMinFeeRate</code></pre>
+    <pre><code class="lang-csharp hljs">public FeeRate BlockMinFeeRate { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -175,21 +221,43 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_IsProofOfStake.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.IsProofOfStake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_RestrictForNetwork_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.RestrictForNetwork(NBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L13">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L34">View Source</a>
   </span>
-  <h4 id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_IsProofOfStake" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.IsProofOfStake">IsProofOfStake</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_RestrictForNetwork_" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.RestrictForNetwork*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions_RestrictForNetwork_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.RestrictForNetwork(NBitcoin.Network)">RestrictForNetwork(Network)</h4>
+  <div class="markdown level1 summary"><p>Restrict the options to within those allowed by network consensus rules.
+If set values are outside those allowed by consensus, set to nearest allowed value (minimum or maximum).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsProofOfStake</code></pre>
+    <pre><code class="lang-csharp hljs">public BlockDefinitionOptions RestrictForNetwork(Network network)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -199,7 +267,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions.html">BlockDefinitionOptions</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -215,7 +283,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_BlockDefinitionOptions.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.BlockDefinitionOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/BlockDefinitionOptions.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

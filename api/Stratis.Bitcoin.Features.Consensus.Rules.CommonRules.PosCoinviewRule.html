@@ -83,6 +83,10 @@
     <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html">CoinViewRule</a></div>
     <div class="level3"><span class="xref">PosCoinviewRule</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -120,7 +124,7 @@
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Consensus.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_PosCoinviewRule_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class PosCoinviewRule : CoinViewRule</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class PosCoinviewRule : CoinViewRule, IConsensusRule</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -489,6 +493,10 @@ Refer to <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRu
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_UpdateCoinView_Stratis_Bitcoin_Consensus_Rules_RuleContext_NBitcoin_Transaction_">CoinViewRule.UpdateCoinView(RuleContext, Transaction)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a>
+  </div>
 </article>
           </div>
           
