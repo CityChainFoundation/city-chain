@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class MultiCache&lt;V&gt;
+    <title>Class MultiCacheBase&lt;V&gt;
    | City Chain: Developer Reference </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class MultiCache&lt;V&gt;
+    <meta name="title" content="Class MultiCacheBase&lt;V&gt;
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.38.1.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,12 +68,13 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1">
+            <article class="content wrap" id="_content" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1">
   
   
-  <h1 id="Stratis_SmartContracts_Core_State_MultiCache_1" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1" class="text-break">Class MultiCache&lt;V&gt;
+  <h1 id="Stratis_SmartContracts_Core_State_MultiCacheBase_1" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1" class="text-break">Class MultiCacheBase&lt;V&gt;
   </h1>
   <div class="markdown level0 summary"><p>Adapted from EthereumJ.</p>
+<p>This is a cache of caches.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -82,8 +83,9 @@
     <div class="level1"><a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html">AbstractChainedSource</a>&lt;<span class="xref">System.Byte</span>[], V, <span class="xref">System.Byte</span>[], V&gt;</div>
     <div class="level2"><a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html">SourceChainBox</a>&lt;<span class="xref">System.Byte</span>[], V, <span class="xref">System.Byte</span>[], V&gt;</div>
     <div class="level3"><a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html">ReadWriteCache</a>&lt;V&gt;</div>
-    <div class="level4"><span class="xref">MultiCache&lt;V&gt;</span></div>
-      <div class="level5"><a class="xref" href="Stratis.SmartContracts.Core.State.RealMultiCache.html">RealMultiCache</a></div>
+    <div class="level4"><span class="xref">MultiCacheBase&lt;V&gt;</span></div>
+      <div class="level5"><a class="xref" href="Stratis.SmartContracts.Core.State.MultiCache.html">MultiCache</a></div>
+      <div class="level5"><a class="xref" href="Stratis.SmartContracts.Core.State.MultiStorageCache.html">MultiStorageCache</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -108,9 +110,6 @@
       <a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html#Stratis_SmartContracts_Core_State_ReadWriteCache_1_GetCached_System_Byte___">ReadWriteCache&lt;V&gt;.GetCached(Byte[])</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html#Stratis_SmartContracts_Core_State_ReadWriteCache_1_EstimateCacheSize">ReadWriteCache&lt;V&gt;.EstimateCacheSize()</a>
-    </div>
-    <div>
       <a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html#Stratis_SmartContracts_Core_State_SourceChainBox_4_Add_ISource__0__1__">SourceChainBox&lt;Byte[], V, Byte[], V&gt;.Add(ISource&lt;Byte[], V&gt;)</a>
     </div>
     <div>
@@ -126,13 +125,10 @@
       <a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html#Stratis_SmartContracts_Core_State_SourceChainBox_4_FlushImpl">SourceChainBox&lt;Byte[], V, Byte[], V&gt;.FlushImpl()</a>
     </div>
     <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Source">AbstractChainedSource&lt;Byte[], V, Byte[], V&gt;.Source</a>
+    </div>
+    <div>
       <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_flushSource">AbstractChainedSource&lt;Byte[], V, Byte[], V&gt;.flushSource</a>
-    </div>
-    <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_SetSource_ISource__2__3__">AbstractChainedSource&lt;Byte[], V, Byte[], V&gt;.SetSource(ISource&lt;Byte[], V&gt;)</a>
-    </div>
-    <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_GetSource">AbstractChainedSource&lt;Byte[], V, Byte[], V&gt;.GetSource()</a>
     </div>
     <div>
       <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_SetFlushSource_System_Boolean_">AbstractChainedSource&lt;Byte[], V, Byte[], V&gt;.SetFlushSource(Boolean)</a>
@@ -143,9 +139,9 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.SmartContracts.Core.State.html">Stratis.SmartContracts.Core.State</a></h6>
   <h6><strong>Assembly</strong>: Stratis.SmartContracts.Core.dll</h6>
-  <h5 id="Stratis_SmartContracts_Core_State_MultiCache_1_syntax">Syntax</h5>
+  <h5 id="Stratis_SmartContracts_Core_State_MultiCacheBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class MultiCache&lt;V&gt; : ReadWriteCache&lt;V&gt;, ICachedSource&lt;byte[], V&gt;, ISource&lt;byte[], V&gt; where V : ICachedSource&lt;byte[], byte[]&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class MultiCacheBase&lt;V&gt; : ReadWriteCache&lt;V&gt;, ICachedSource&lt;byte[], V&gt;, ISource&lt;byte[], V&gt; where V : ICachedSource&lt;byte[], byte[]&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,18 +162,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCache_1__ctor_Stratis_SmartContracts_Core_State_ICachedSource_System_Byte____0__.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCache%601.%23ctor(Stratis.SmartContracts.Core.State.ICachedSource%7BSystem.Byte%5B%5D%2C%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCacheBase_1__ctor_Stratis_SmartContracts_Core_State_ICachedSource_System_Byte____0__.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCacheBase%601.%23ctor(Stratis.SmartContracts.Core.State.ICachedSource%7BSystem.Byte%5B%5D%2C%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L9">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L10">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Core_State_MultiCache_1__ctor_" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.#ctor*"></a>
-  <h4 id="Stratis_SmartContracts_Core_State_MultiCache_1__ctor_Stratis_SmartContracts_Core_State_ICachedSource_System_Byte____0__" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.#ctor(Stratis.SmartContracts.Core.State.ICachedSource{System.Byte[],`0})">MultiCache(ICachedSource&lt;Byte[], V&gt;)</h4>
+  <a id="Stratis_SmartContracts_Core_State_MultiCacheBase_1__ctor_" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.#ctor*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_MultiCacheBase_1__ctor_Stratis_SmartContracts_Core_State_ICachedSource_System_Byte____0__" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.#ctor(Stratis.SmartContracts.Core.State.ICachedSource{System.Byte[],`0})">MultiCacheBase(ICachedSource&lt;Byte[], V&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MultiCache(ICachedSource&lt;byte[], V&gt; src)</code></pre>
+    <pre><code class="lang-csharp hljs">public MultiCacheBase(ICachedSource&lt;byte[], V&gt; src)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -200,13 +196,13 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCache_1_Create_System_Byte____0_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCache%601.Create(System.Byte%5B%5D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCacheBase_1_Create_System_Byte____0_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCacheBase%601.Create(System.Byte%5B%5D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L59">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L60">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Core_State_MultiCache_1_Create_" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.Create*"></a>
-  <h4 id="Stratis_SmartContracts_Core_State_MultiCache_1_Create_System_Byte____0_" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.Create(System.Byte[],`0)">Create(Byte[], V)</h4>
+  <a id="Stratis_SmartContracts_Core_State_MultiCacheBase_1_Create_" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.Create*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_MultiCacheBase_1_Create_System_Byte____0_" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.Create(System.Byte[],`0)">Create(Byte[], V)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -252,13 +248,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCache_1_FlushChild_System_Byte____0_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCache%601.FlushChild(System.Byte%5B%5D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCacheBase_1_FlushChild_System_Byte____0_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCacheBase%601.FlushChild(System.Byte%5B%5D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L54">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L55">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Core_State_MultiCache_1_FlushChild_" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.FlushChild*"></a>
-  <h4 id="Stratis_SmartContracts_Core_State_MultiCache_1_FlushChild_System_Byte____0_" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.FlushChild(System.Byte[],`0)">FlushChild(Byte[], V)</h4>
+  <a id="Stratis_SmartContracts_Core_State_MultiCacheBase_1_FlushChild_" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.FlushChild*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_MultiCacheBase_1_FlushChild_System_Byte____0_" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.FlushChild(System.Byte[],`0)">FlushChild(Byte[], V)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -304,13 +300,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCache_1_FlushImpl.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCache%601.FlushImpl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCacheBase_1_FlushImpl.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCacheBase%601.FlushImpl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L26">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L27">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Core_State_MultiCache_1_FlushImpl_" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.FlushImpl*"></a>
-  <h4 id="Stratis_SmartContracts_Core_State_MultiCache_1_FlushImpl" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.FlushImpl">FlushImpl()</h4>
+  <a id="Stratis_SmartContracts_Core_State_MultiCacheBase_1_FlushImpl_" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.FlushImpl*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_MultiCacheBase_1_FlushImpl" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.FlushImpl">FlushImpl()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -336,13 +332,13 @@
   <div><span class="xref">Stratis.SmartContracts.Core.State.SourceChainBox&lt;System.Byte[], V, System.Byte[], V&gt;.FlushImpl()</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCache_1_Get_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCache%601.Get(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCacheBase_1_Get_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCacheBase%601.Get(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L13">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L14">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Core_State_MultiCache_1_Get_" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.Get*"></a>
-  <h4 id="Stratis_SmartContracts_Core_State_MultiCache_1_Get_System_Byte___" data-uid="Stratis.SmartContracts.Core.State.MultiCache`1.Get(System.Byte[])">Get(Byte[])</h4>
+  <a id="Stratis_SmartContracts_Core_State_MultiCacheBase_1_Get_" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.Get*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_MultiCacheBase_1_Get_System_Byte___" data-uid="Stratis.SmartContracts.Core.State.MultiCacheBase`1.Get(System.Byte[])">Get(Byte[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -398,10 +394,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCache_1.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCache%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_MultiCacheBase_1.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.MultiCacheBase%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/MultiCache.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

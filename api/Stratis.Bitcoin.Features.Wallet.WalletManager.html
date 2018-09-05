@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WalletManager
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.38.1.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -1347,7 +1347,7 @@ at index (i - 1) contains transactions.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GetWalletsFiles()</code></pre>
+    <pre><code class="lang-csharp hljs">public (string folderPath, IEnumerable&lt;string&gt;)GetWalletsFiles()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1359,7 +1359,7 @@ at index (i - 1) contains transactions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.</span></td>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
         <td><p>The wallet filenames, along with the folder in which they're contained.</p>
 </td>
       </tr>
@@ -1795,7 +1795,7 @@ at index (i - 1) contains transactions.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HashSet&lt;&gt; RemoveAllTransactions(string walletName)</code></pre>
+    <pre><code class="lang-csharp hljs">public HashSet&lt;(uint256, DateTimeOffset)&gt; RemoveAllTransactions(string walletName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1825,7 +1825,7 @@ at index (i - 1) contains transactions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.</span>&gt;</td>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>, <span class="xref">DateTimeOffset</span>&gt;&gt;</td>
         <td><p>A list of objects made up of a transactions ID along with the time at which they were created.</p>
 </td>
       </tr>
@@ -1878,7 +1878,7 @@ at index (i - 1) contains transactions.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HashSet&lt;&gt; RemoveTransactionsByIdsLocked(string walletName, IEnumerable&lt;uint256&gt; transactionsIds)</code></pre>
+    <pre><code class="lang-csharp hljs">public HashSet&lt;(uint256, DateTimeOffset)&gt; RemoveTransactionsByIdsLocked(string walletName, IEnumerable&lt;uint256&gt; transactionsIds)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1914,7 +1914,7 @@ at index (i - 1) contains transactions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.</span>&gt;</td>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>, <span class="xref">DateTimeOffset</span>&gt;&gt;</td>
         <td><p>A list of objects made up of a transactions ID along with the time at which they were created.</p>
 </td>
       </tr>

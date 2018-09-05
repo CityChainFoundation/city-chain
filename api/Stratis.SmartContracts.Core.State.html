@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.SmartContracts.Core.State
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.38.1.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,12 +88,10 @@
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.AccountState.html">AccountState</a></h4>
       <section><p>A contract's state.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ByteArrayEstimator.html">ByteArrayEstimator</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ContractStateRepository.html">ContractStateRepository</a></h4>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ContractState.html">ContractState</a></h4>
       <section><p>Handles all of the state for smart contracts. Includes smart contract code, storage, and UTXO balances.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ContractStateRepositoryRoot.html">ContractStateRepositoryRoot</a></h4>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ContractStateRoot.html">ContractStateRoot</a></h4>
       <section><p>Really magic class. Has an underlying KV store injected into the constructor. Everything is stored in this KV store
 but in a series of tries that allow us to retrieve a 32-byte root that represents the current state.
 This 32-byte root can be used to rollback state as well.</p>
@@ -116,24 +114,32 @@ This 32-byte root can be used to rollback state as well.</p>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.DBreezeContractStateStore.html">DBreezeContractStateStore</a></h4>
       <section><p>Used for dependency injection. A contract state specific implementation of the above class.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.MultiCache-1.html">MultiCache&lt;V&gt;</a></h4>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.MultiCache.html">MultiCache</a></h4>
+      <section><p>Implementation of a cache of caches.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.MultiCacheBase-1.html">MultiCacheBase&lt;V&gt;</a></h4>
       <section><p>Adapted from EthereumJ.</p>
+<p>This is a cache of caches.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.MultiStorageCache.html">MultiStorageCache</a></h4>
+      <section><p>Adapted from EthereumJ.</p>
+<p>A cache of many storage caches.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.NoDeleteContractStateSource.html">NoDeleteContractStateSource</a></h4>
       <section><p>Used for dependency injection. A contract state specific implementation of the above class.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.NoDeleteSource-2.html">NoDeleteSource&lt;Key, Value&gt;</a></h4>
-      <section><p>Adapted from EthereumJ.
-Should be used in cases where you don't want to get rid of previous states. I.e. all contract storage changes.</p>
+      <section><p>Adapted from EthereumJ.</p>
+<p>Should be used in cases where you don't want to get rid of previous states. I.e. all contract storage changes.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ReadCache-1.html">ReadCache&lt;Value&gt;</a></h4>
       <section><p>Adapted from EthereumJ.</p>
+<p>When reading values, will cache them for performance.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html">ReadWriteCache&lt;Value&gt;</a></h4>
       <section><p>Adapted from EthereumJ.</p>
+<p>Wrapper for situations when you wish to cache the items being read and cache the values being set.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.RealMultiCache.html">RealMultiCache</a></h4>
-      <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.Serializers.html">Serializers</a></h4>
       <section><p>When we store contract data and their UTXO balances, we are serializing those data types to bytes and storing them
 in a byte[]/byte[] K/V store.
@@ -149,10 +155,15 @@ This class provides access to serializers used during this process.</p>
       <section><p>Adapted from EthereumJ.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.SourceCodec-4.html">SourceCodec&lt;Key, Value, SourceKey, SourceValue&gt;</a></h4>
-      <section><p>Adapted from EthereumJ. Used to transform one datatype into another on the way in or out of a source.</p>
+      <section><p>Adapted from EthereumJ.</p>
+<p>Used to transform one datatype into another on the way in or out of a source.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.StorageCache.html">StorageCache</a></h4>
+      <section><p>A wrapper for a specific account's storage.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html">WriteCache&lt;Value&gt;</a></h4>
       <section><p>Adapted from EthereumJ.</p>
+<p>Caches values in memory and flushes to another source.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.CacheEntry-1.html">WriteCache&lt;Value&gt;.CacheEntry&lt;V&gt;</a></h4>
       <section></section>
@@ -169,11 +180,10 @@ This class provides access to serializers used during this process.</p>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ICachedSource-2.html">ICachedSource&lt;Key, Value&gt;</a></h4>
       <section><p>Adapted from EthereumJ.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IContractStateRepository.html">IContractStateRepository</a></h4>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IContractState.html">IContractState</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IMemSizeEstimator-1.html">IMemSizeEstimator&lt;E&gt;</a></h4>
-      <section><p>Adapted from EthereumJ.</p>
-</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IContractStateRoot.html">IContractStateRoot</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ISerializer-2.html">ISerializer&lt;T, S&gt;</a></h4>
       <section></section>
     <h3 id="enums">Enums

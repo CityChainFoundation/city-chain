@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface ISmartContractVirtualMachine
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.38.1.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,18 +85,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_Create_IGasMeter_Stratis_SmartContracts_Core_State_IContractStateRepository_Stratis_SmartContracts_Executor_Reflection_ICreateData_Stratis_SmartContracts_Executor_Reflection_ITransactionContext_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.Create(IGasMeter%2CStratis.SmartContracts.Core.State.IContractStateRepository%2CStratis.SmartContracts.Executor.Reflection.ICreateData%2CStratis.SmartContracts.Executor.Reflection.ITransactionContext%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_Create_Stratis_SmartContracts_Core_State_IContractState_ISmartContractState_System_Byte___System_Object___System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.Create(Stratis.SmartContracts.Core.State.IContractState%2CISmartContractState%2CSystem.Byte%5B%5D%2CSystem.Object%5B%5D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/ISmartContractVirtualMachine.cs/#L7">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_Create_" data-uid="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.Create*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_Create_IGasMeter_Stratis_SmartContracts_Core_State_IContractStateRepository_Stratis_SmartContracts_Executor_Reflection_ICreateData_Stratis_SmartContracts_Executor_Reflection_ITransactionContext_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.Create(IGasMeter,Stratis.SmartContracts.Core.State.IContractStateRepository,Stratis.SmartContracts.Executor.Reflection.ICreateData,Stratis.SmartContracts.Executor.Reflection.ITransactionContext,System.String)">Create(IGasMeter, IContractStateRepository, ICreateData, ITransactionContext, String)</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_Create_Stratis_SmartContracts_Core_State_IContractState_ISmartContractState_System_Byte___System_Object___System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.Create(Stratis.SmartContracts.Core.State.IContractState,ISmartContractState,System.Byte[],System.Object[],System.String)">Create(IContractState, ISmartContractState, Byte[], Object[], String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">VmExecutionResult Create(IGasMeter gasMeter, IContractStateRepository repository, ICreateData createData, ITransactionContext transactionContext, string typeName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">VmExecutionResult Create(IContractState repository, ISmartContractState contractState, byte[] contractCode, object[] parameters, string typeName = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -109,23 +109,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IGasMeter</span></td>
-        <td><span class="parametername">gasMeter</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IContractStateRepository.html">IContractStateRepository</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IContractState.html">IContractState</a></td>
         <td><span class="parametername">repository</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ICreateData.html">ICreateData</a></td>
-        <td><span class="parametername">createData</span></td>
+        <td><span class="xref">ISmartContractState</span></td>
+        <td><span class="parametername">contractState</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ITransactionContext.html">ITransactionContext</a></td>
-        <td><span class="parametername">transactionContext</span></td>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">contractCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
         <td></td>
       </tr>
       <tr>
@@ -152,18 +152,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_ExecuteMethod_IGasMeter_Stratis_SmartContracts_Core_State_IContractStateRepository_Stratis_SmartContracts_Executor_Reflection_ICallData_Stratis_SmartContracts_Executor_Reflection_ITransactionContext_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.ExecuteMethod(IGasMeter%2CStratis.SmartContracts.Core.State.IContractStateRepository%2CStratis.SmartContracts.Executor.Reflection.ICallData%2CStratis.SmartContracts.Executor.Reflection.ITransactionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_ExecuteMethod_ISmartContractState_Stratis_SmartContracts_Executor_Reflection_MethodCall_System_Byte___System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.ExecuteMethod(ISmartContractState%2CStratis.SmartContracts.Executor.Reflection.MethodCall%2CSystem.Byte%5B%5D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/ISmartContractVirtualMachine.cs/#L14">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/ISmartContractVirtualMachine.cs/#L12">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_ExecuteMethod_" data-uid="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.ExecuteMethod*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_ExecuteMethod_IGasMeter_Stratis_SmartContracts_Core_State_IContractStateRepository_Stratis_SmartContracts_Executor_Reflection_ICallData_Stratis_SmartContracts_Executor_Reflection_ITransactionContext_" data-uid="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.ExecuteMethod(IGasMeter,Stratis.SmartContracts.Core.State.IContractStateRepository,Stratis.SmartContracts.Executor.Reflection.ICallData,Stratis.SmartContracts.Executor.Reflection.ITransactionContext)">ExecuteMethod(IGasMeter, IContractStateRepository, ICallData, ITransactionContext)</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_ExecuteMethod_ISmartContractState_Stratis_SmartContracts_Executor_Reflection_MethodCall_System_Byte___System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.ExecuteMethod(ISmartContractState,Stratis.SmartContracts.Executor.Reflection.MethodCall,System.Byte[],System.String)">ExecuteMethod(ISmartContractState, MethodCall, Byte[], String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">VmExecutionResult ExecuteMethod(IGasMeter gasMeter, IContractStateRepository repository, ICallData callData, ITransactionContext transactionContext)</code></pre>
+    <pre><code class="lang-csharp hljs">VmExecutionResult ExecuteMethod(ISmartContractState contractState, MethodCall methodCall, byte[] contractCode, string typeName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,23 +176,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IGasMeter</span></td>
-        <td><span class="parametername">gasMeter</span></td>
+        <td><span class="xref">ISmartContractState</span></td>
+        <td><span class="parametername">contractState</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IContractStateRepository.html">IContractStateRepository</a></td>
-        <td><span class="parametername">repository</span></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.MethodCall.html">MethodCall</a></td>
+        <td><span class="parametername">methodCall</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ICallData.html">ICallData</a></td>
-        <td><span class="parametername">callData</span></td>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">contractCode</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ITransactionContext.html">ITransactionContext</a></td>
-        <td><span class="parametername">transactionContext</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">typeName</span></td>
         <td></td>
       </tr>
     </tbody>

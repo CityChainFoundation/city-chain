@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.SmartContracts.Executor.Reflection
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.38.1.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,14 +83,16 @@
       <section><p>Provides a contract's balance during execution, accounting for transfers generated while executing
 the contract</p>
 </section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.BaseMessage.html">BaseMessage</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.BasicKeyEncodingStrategy.html">BasicKeyEncodingStrategy</a></h4>
       <section><p>Leaves keys untouched.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CallData.html">CallData</a></h4>
-      <section><p>Smart contract transaction data for a method call</p>
-</section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CallDataSerializer.html">CallDataSerializer</a></h4>
       <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CallMessage.html">CallMessage</a></h4>
+      <section><p>Base class for a call message.</p>
+</section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.Contract.html">Contract</a></h4>
       <section><p>A class representing a contract instance. Manages the lifecycle of a contract object and allows for constructor and method invocations.</p>
 </section>
@@ -99,16 +101,25 @@ the contract</p>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ContractModuleDefinition.html">ContractModuleDefinition</a></h4>
       <section><p>Represents a low-level contract module that can be modified (via IL rewriting) and validated.</p>
 </section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ContractTransferMessage.html">ContractTransferMessage</a></h4>
+      <section><p>Represents an internal contract transfer message. Occurs when a contract generates a funds transfer using
+its <see cref="!:SmartContract.Transfer"></see> method.  If the recipient is another contract, the recipient's
+receive handler will be invoked. If the recipient is a P2PKH, a UTXO will be generated and included in the
+transaction.</p>
+</section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ContractTxData.html">ContractTxData</a></h4>
       <section><p>Fields that are serialized and sent as data with a smart contract transaction</p>
-</section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CreateData.html">CreateData</a></h4>
-      <section><p>Smart contract transaction data for a contract creation</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.CreateResult.html">CreateResult</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.Executor.html">Executor</a></h4>
-      <section><p>Deserializes raw contract transaction data, dispatches a call to the VM and commits the result to the state repository</p>
+      <section><p>Deserializes raw contract transaction data, creates an external create/call message, and applies the message to the state.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ExternalCallMessage.html">ExternalCallMessage</a></h4>
+      <section><p>Represents an external contract method call message. Occurs when a transaction is received that contains contract method call data.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ExternalCreateMessage.html">ExternalCreateMessage</a></h4>
+      <section><p>Represents an external contract creation message. Occurs when a transaction is received that contains contract creation data.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.GasMeter.html">GasMeter</a></h4>
       <section></section>
@@ -117,6 +128,14 @@ the contract</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.HashHelper.html">HashHelper</a></h4>
       <section><p>Utilities to aid with hashing of data.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.InternalCallMessage.html">InternalCallMessage</a></h4>
+      <section><p>Represents an internal contract method call message. Occurs when a contract generates a method call to another contract
+using its <see cref="!:SmartContract.Call"></see> method.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.InternalCreateMessage.html">InternalCreateMessage</a></h4>
+      <section><p>Represents an internal contract creation message. Occurs when a contract creates another contract
+using its <see cref="!:SmartContract.Create&lt;T>"></see> method.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.InternalHashHelper.html">InternalHashHelper</a></h4>
       <section><p>This gets injected into the contract to provide implementations for the hashing of data.</p>
@@ -176,6 +195,27 @@ and if applicable ,adding any refunds due.</p>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.SmartContractState.html">SmartContractState</a></h4>
       <section><p>Smart contract state that gets injected into the smart contract by the <a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ReflectionVirtualMachine.html">ReflectionVirtualMachine</a>.</p>
 </section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.State.html">State</a></h4>
+      <section><p>Represents the current state of the world during a contract execution.</p>
+<p>
+The state contains several components:
+</p>
+- The state repository, which contains global account, code, and contract data.
+- Internal transfers, which are transfers generated internally by contracts.
+- Balance state, which represents the intermediate state of the balances based on the internal transfers list.
+- The log holder, which contains logs generated by contracts during execution.
+<p>
+When a message is applied to the state, the state is updated if the application was successful. Otherwise, the state
+is rolled back to a previous snapshot. This works equally for nested state transitions generated by internal creates,
+calls and transfers.
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.StateFactory.html">StateFactory</a></h4>
+      <section><p>Creates a new <a class="xref" href="Stratis.SmartContracts.Executor.Reflection.State.html">State</a> object.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.StateTransitionResult.html">StateTransitionResult</a></h4>
+      <section><p>The result of a state transition operation.</p>
+</section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.TransactionContext.html">TransactionContext</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.TransferResult.html">TransferResult</a></h4>
@@ -217,6 +257,10 @@ and if applicable ,adding any refunds due.</p>
       <section><p>Handles value transfers as a result of smart contract execution.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.html">ISmartContractVirtualMachine</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IState.html">IState</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IStateFactory.html">IStateFactory</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ITransactionContext.html">ITransactionContext</a></h4>
       <section></section>

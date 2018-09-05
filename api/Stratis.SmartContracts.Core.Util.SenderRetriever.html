@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GetSenderUtil
+    <title>Class SenderRetriever
    | City Chain: Developer Reference </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GetSenderUtil
+    <meta name="title" content="Class SenderRetriever
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.38.1.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,43 +68,45 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Stratis.SmartContracts.Core.Util.GetSenderUtil">
+            <article class="content wrap" id="_content" data-uid="Stratis.SmartContracts.Core.Util.SenderRetriever">
   
   
-  <h1 id="Stratis_SmartContracts_Core_Util_GetSenderUtil" data-uid="Stratis.SmartContracts.Core.Util.GetSenderUtil" class="text-break">Class GetSenderUtil
+  <h1 id="Stratis_SmartContracts_Core_Util_SenderRetriever" data-uid="Stratis.SmartContracts.Core.Util.SenderRetriever" class="text-break">Class SenderRetriever
   </h1>
-  <div class="markdown level0 summary"><p>To run smart contracts we need to have a 'From' address. This isn't natively included in a bitcoin transaction
-so to get it we check the script of the PrevOut to get an address we can use as 'From'</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">GetSenderUtil</span></div>
+    <div class="level1"><span class="xref">SenderRetriever</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.SmartContracts.Core.Util.ISenderRetriever.html">ISenderRetriever</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.SmartContracts.Core.Util.html">Stratis.SmartContracts.Core.Util</a></h6>
   <h6><strong>Assembly</strong>: Stratis.SmartContracts.Core.dll</h6>
-  <h5 id="Stratis_SmartContracts_Core_Util_GetSenderUtil_syntax">Syntax</h5>
+  <h5 id="Stratis_SmartContracts_Core_Util_SenderRetriever_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class GetSenderUtil : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class SenderRetriever : object, ISenderRetriever</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Util_GetSenderUtil_GetAddressFromScript_NBitcoin_Script_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Util.GetSenderUtil.GetAddressFromScript(NBitcoin.Script)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Util_SenderRetriever_GetAddressFromScript_NBitcoin_Script_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Util.SenderRetriever.GetAddressFromScript(NBitcoin.Script)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/Util/GetSenderUtil.cs/#L64">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/Util/SenderRetriever.cs/#L50">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Core_Util_GetSenderUtil_GetAddressFromScript_" data-uid="Stratis.SmartContracts.Core.Util.GetSenderUtil.GetAddressFromScript*"></a>
-  <h4 id="Stratis_SmartContracts_Core_Util_GetSenderUtil_GetAddressFromScript_NBitcoin_Script_" data-uid="Stratis.SmartContracts.Core.Util.GetSenderUtil.GetAddressFromScript(NBitcoin.Script)">GetAddressFromScript(Script)</h4>
-  <div class="markdown level1 summary"><p>Get the address from a P2PK or a P2PKH</p>
+  <a id="Stratis_SmartContracts_Core_Util_SenderRetriever_GetAddressFromScript_" data-uid="Stratis.SmartContracts.Core.Util.SenderRetriever.GetAddressFromScript*"></a>
+  <h4 id="Stratis_SmartContracts_Core_Util_SenderRetriever_GetAddressFromScript_NBitcoin_Script_" data-uid="Stratis.SmartContracts.Core.Util.SenderRetriever.GetAddressFromScript(NBitcoin.Script)">GetAddressFromScript(Script)</h4>
+  <div class="markdown level1 summary"><p>Get the address from a P2PK or a P2PKH.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GetSenderUtil.GetSenderResult GetAddressFromScript(Script script)</code></pre>
+    <pre><code class="lang-csharp hljs">public GetSenderResult GetAddressFromScript(Script script)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,26 +135,26 @@ so to get it we check the script of the PrevOut to get an address we can use as 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.Util.GetSenderUtil.GetSenderResult.html">GetSenderUtil.GetSenderResult</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.Util.GetSenderResult.html">GetSenderResult</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Util_GetSenderUtil_GetSender_NBitcoin_Transaction_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_IList_NBitcoin_Transaction__.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Util.GetSenderUtil.GetSender(NBitcoin.Transaction%2CStratis.Bitcoin.Features.Consensus.CoinViews.ICoinView%2CIList%7BNBitcoin.Transaction%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Util_SenderRetriever_GetSender_NBitcoin_Transaction_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_IList_NBitcoin_Transaction__.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Util.SenderRetriever.GetSender(NBitcoin.Transaction%2CStratis.Bitcoin.Features.Consensus.CoinViews.ICoinView%2CIList%7BNBitcoin.Transaction%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/Util/GetSenderUtil.cs/#L23">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/Util/SenderRetriever.cs/#L13">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Core_Util_GetSenderUtil_GetSender_" data-uid="Stratis.SmartContracts.Core.Util.GetSenderUtil.GetSender*"></a>
-  <h4 id="Stratis_SmartContracts_Core_Util_GetSenderUtil_GetSender_NBitcoin_Transaction_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_IList_NBitcoin_Transaction__" data-uid="Stratis.SmartContracts.Core.Util.GetSenderUtil.GetSender(NBitcoin.Transaction,Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView,IList{NBitcoin.Transaction})">GetSender(Transaction, ICoinView, IList&lt;Transaction&gt;)</h4>
+  <a id="Stratis_SmartContracts_Core_Util_SenderRetriever_GetSender_" data-uid="Stratis.SmartContracts.Core.Util.SenderRetriever.GetSender*"></a>
+  <h4 id="Stratis_SmartContracts_Core_Util_SenderRetriever_GetSender_NBitcoin_Transaction_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_IList_NBitcoin_Transaction__" data-uid="Stratis.SmartContracts.Core.Util.SenderRetriever.GetSender(NBitcoin.Transaction,Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView,IList{NBitcoin.Transaction})">GetSender(Transaction, ICoinView, IList&lt;Transaction&gt;)</h4>
   <div class="markdown level1 summary"><p>Get the 'sender' of a transaction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GetSenderUtil.GetSenderResult GetSender(Transaction tx, ICoinView coinView, IList&lt;Transaction&gt; blockTxs)</code></pre>
+    <pre><code class="lang-csharp hljs">public GetSenderResult GetSender(Transaction tx, ICoinView coinView, IList&lt;Transaction&gt; blockTxs)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,11 +193,15 @@ so to get it we check the script of the PrevOut to get an address we can use as 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.Util.GetSenderUtil.GetSenderResult.html">GetSenderUtil.GetSenderResult</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.Util.GetSenderResult.html">GetSenderResult</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.Util.ISenderRetriever.html">ISenderRetriever</a>
+  </div>
 </article>
           </div>
           
@@ -204,10 +210,10 @@ so to get it we check the script of the PrevOut to get an address we can use as 
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Util_GetSenderUtil.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Util.GetSenderUtil%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_Util_SenderRetriever.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.Util.SenderRetriever%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/Util/GetSenderUtil.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/Util/SenderRetriever.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

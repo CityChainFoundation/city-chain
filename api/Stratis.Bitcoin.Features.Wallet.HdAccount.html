@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class HdAccount
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.38.1.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -638,7 +638,7 @@ According to BIP44, an account at index (i) can only be created when the account
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GetSpendableAmount()</code></pre>
+    <pre><code class="lang-csharp hljs">public (Money ConfirmedAmount, Money UnConfirmedAmount)GetSpendableAmount()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -650,7 +650,7 @@ According to BIP44, an account at index (i) can only be created when the account
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.</span></td>
+        <td><span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="NBitcoin.Money.html">Money</a>, <a class="xref" href="NBitcoin.Money.html">Money</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
