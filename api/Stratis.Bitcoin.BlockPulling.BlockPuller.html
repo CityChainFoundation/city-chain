@@ -73,84 +73,40 @@
   
   <h1 id="Stratis_Bitcoin_BlockPulling_BlockPuller" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller" class="text-break">Class BlockPuller
   </h1>
-  <div class="markdown level0 summary"><p>Base class for pullers that download blocks from peers.</p>
-<p>
-This must be inherited and the implementing class
-needs to handle taking blocks off the queue and stalling.
-</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">BlockPuller</span></div>
-      <div class="level2"><a class="xref" href="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.html">LookaheadBlockPuller</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Stratis.Bitcoin.BlockPulling.IBlockPuller.html">IBlockPuller</a></div>
+    <div><span class="xref">IDisposable</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.BlockPulling.html">Stratis.Bitcoin.BlockPulling</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
   <h5 id="Stratis_Bitcoin_BlockPulling_BlockPuller_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BlockPuller : object, IBlockPuller</code></pre>
+    <pre><code class="lang-csharp hljs">public class BlockPuller : object, IBlockPuller, IDisposable</code></pre>
   </div>
-  <h5 id="Stratis_Bitcoin_BlockPulling_BlockPuller_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>There are 4 important objects that hold the state of the puller and that need to be kept in sync:
-<span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.assignedBlockTasks</span>, <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.pendingInventoryVectors</span>, <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.downloadedBlocks</span>,
-and <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.peersPendingDownloads</span>.</p>
-<p>
-<span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.downloadedBlocks</span> is a list of blocks that have been downloaded recently but not processed
-by the consumer of the puller.
-</p>
-<p>
-When a typical consumer wants a next block from the puller, it first checks <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.downloadedBlocks</span>,
-if the block is available (the consumer does know the header of the block it wants from the puller,
-if not, it simply waits until this information is available). If it is available, it is removed
-from <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.downloadedBlocks</span> and consumed. Otherwise, the consumer checks whether this block is being
-downloaded (or soon to be). If not, it asks the puller to request it from the connect network peers.
-<p>
-Besides this &quot;on demand&quot; way of requesting blocks from peers, the consumer also tries to keep puller
-ahead of the demand, so that the blocks are downloaded some time before they are needed.
-</p>
-</p>
-<p>
-For a block to be considered as currently (or soon to be) being downloaded, its hash has to be
-either in <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.assignedBlockTasks</span> or <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.pendingInventoryVectors</span>.
-</p>
-<p>
-When the puller is about to request blocks from the peers, it selects which of its peers will
-be asked to provide which blocks. These assignments of block downloading tasks is kept inside
-<span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.assignedBlockTasks</span>. Unsatisfied requests go to <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.pendingInventoryVectors</span>, which happens
-when the puller find out that neither of its peers can be asked for certain block. It also happens
-when something goes wrong (e.g. the peer disconnects) and the downloading request to a peer is not
-completed. Such requests need to be reassigned later. Note that it is possible for a peer
-to be operating well, but slowly, which can cause its quality score to go down and its work
-to be taken from it. However, this reassignment of the work does not mean the node is stopped
-in its current task and it is still possible that it will deliver the blocks it was asked for.
-Such late blocks deliveries are currently ignored and wasted.
-</p>
-<p><span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.peersPendingDownloads</span> is an inverse mapping to <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.assignedBlockTasks</span>. Each connected
-peer node has its list of assigned tasks here and there is an equivalence between tasks in both structures.</p>
-</div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller__ctor_NBitcoin_ConcurrentChain_Stratis_Bitcoin_P2P_Peer_IReadOnlyNetworkPeerCollection_NBitcoin_Protocol_ProtocolVersion_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.%23ctor(NBitcoin.ConcurrentChain%2CStratis.Bitcoin.P2P.Peer.IReadOnlyNetworkPeerCollection%2CNBitcoin.Protocol.ProtocolVersion%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller__ctor_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Utilities_INodeStats_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.%23ctor(Stratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Configuration.NodeSettings%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.Utilities.INodeStats%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L143">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L208">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_BlockPulling_BlockPuller__ctor_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller__ctor_NBitcoin_ConcurrentChain_Stratis_Bitcoin_P2P_Peer_IReadOnlyNetworkPeerCollection_NBitcoin_Protocol_ProtocolVersion_ILoggerFactory_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.#ctor(NBitcoin.ConcurrentChain,Stratis.Bitcoin.P2P.Peer.IReadOnlyNetworkPeerCollection,NBitcoin.Protocol.ProtocolVersion,ILoggerFactory)">BlockPuller(ConcurrentChain, IReadOnlyNetworkPeerCollection, ProtocolVersion, ILoggerFactory)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the object having a chain of block headers and a list of available nodes.</p>
-</div>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller__ctor_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Utilities_INodeStats_ILoggerFactory_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.#ctor(Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Configuration.NodeSettings,Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.Utilities.INodeStats,ILoggerFactory)">BlockPuller(IChainState, NodeSettings, IDateTimeProvider, INodeStats, ILoggerFactory)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected BlockPuller(ConcurrentChain chain, IReadOnlyNetworkPeerCollection nodes, ProtocolVersion protocolVersion, ILoggerFactory loggerFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public BlockPuller(IChainState chainState, NodeSettings nodeSettings, IDateTimeProvider dateTimeProvider, INodeStats nodeStats, ILoggerFactory loggerFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,153 +119,28 @@ peer node has its list of assigned tasks here and there is an equivalence betwee
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
-        <td><span class="parametername">chain</span></td>
-        <td><p>Chain of block headers.</p>
-</td>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.IChainState.html">IChainState</a></td>
+        <td><span class="parametername">chainState</span></td>
+        <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.IReadOnlyNetworkPeerCollection.html">IReadOnlyNetworkPeerCollection</a></td>
-        <td><span class="parametername">nodes</span></td>
-        <td><p>Network peers of the node.</p>
-</td>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
+        <td><span class="parametername">nodeSettings</span></td>
+        <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="NBitcoin.Protocol.ProtocolVersion.html">ProtocolVersion</a></td>
-        <td><span class="parametername">protocolVersion</span></td>
-        <td><p>Version of the protocol that the node supports.</p>
-</td>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeStats.html">INodeStats</a></td>
+        <td><span class="parametername">nodeStats</span></td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">ILoggerFactory</span></td>
         <td><span class="parametername">loggerFactory</span></td>
-        <td><p>Factory to be used to create logger for the puller.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_Chain.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.Chain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L125">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_Chain" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.Chain">Chain</h4>
-  <div class="markdown level1 summary"><p>Best chain that the node is aware of.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly ConcurrentChain Chain</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_Nodes.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.Nodes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L122">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_Nodes" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.Nodes">Nodes</h4>
-  <div class="markdown level1 summary"><p>Collection of available network peers.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly IReadOnlyNetworkPeerCollection Nodes</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.IReadOnlyNetworkPeerCollection.html">IReadOnlyNetworkPeerCollection</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlocksCount.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlocksCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L106">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlocksCount_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlocksCount*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlocksCount" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlocksCount">DownloadedBlocksCount</h4>
-  <div class="markdown level1 summary"><p>Number of items in <span class="xref">Stratis.Bitcoin.BlockPulling.BlockPuller.downloadedBlocks</span>. This is for statistical purposes only.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DownloadedBlocksCount { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_Requirements.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.Requirements%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L134">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_Requirements_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.Requirements*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_Requirements" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.Requirements">Requirements</h4>
-  <div class="markdown level1 summary"><p>Specification of requirements the puller has on its peer nodes to consider asking them to provide blocks.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual NetworkPeerRequirement Requirements { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.NetworkPeerRequirement.html">NetworkPeerRequirement</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -318,333 +149,213 @@ peer node has its list of assigned tasks here and there is an equivalence betwee
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_AskBlocks_NBitcoin_ChainedHeader___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.AskBlocks(NBitcoin.ChainedHeader%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L188">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L1078">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_AskBlocks_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.AskBlocks*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_AskBlocks_NBitcoin_ChainedHeader___" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.AskBlocks(NBitcoin.ChainedHeader[])">AskBlocks(ChainedHeader[])</h4>
-  <div class="markdown level1 summary"><p>Prepares and invokes download tasks from peer nodes for blocks the node is missing.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void AskBlocks(ChainedHeader[] downloadRequests)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a>[]</td>
-        <td><span class="parametername">downloadRequests</span></td>
-        <td><p>Array of block descriptions that need to be downloaded. Must not be empty.
-Blocks in the array have to be unique - it is not supported for a single block to be included twice in this array.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_BlockPushed_NBitcoin_uint256_Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlock_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.BlockPushed(NBitcoin.uint256%2CStratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L170">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_BlockPushed_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.BlockPushed*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_BlockPushed_NBitcoin_uint256_Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlock_CancellationToken_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.BlockPushed(NBitcoin.uint256,Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock,CancellationToken)">BlockPushed(uint256, BlockPuller.DownloadedBlock, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Method called when a new block is downloaded and pushed to the puller.</p>
-<p>
-This method is to be overridden by derived classes. In the base class it only logs the event.
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void BlockPushed(uint256 blockHash, BlockPuller.DownloadedBlock downloadedBlock, CancellationToken cancellationToken)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
-        <td><span class="parametername">blockHash</span></td>
-        <td><p>Hash of the newly downloaded block.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock.html">BlockPuller.DownloadedBlock</a></td>
-        <td><span class="parametername">downloadedBlock</span></td>
-        <td><p>Desciption of the newly downloaded block.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">CancellationToken</span></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Cancellation token to be used by derived classes that allows the caller to cancel the execution of the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_CheckBlockStatus_NBitcoin_uint256_System_Boolean__System_Boolean__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.CheckBlockStatus(NBitcoin.uint256%2CSystem.Boolean%40%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L260">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_CheckBlockStatus_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.CheckBlockStatus*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_CheckBlockStatus_NBitcoin_uint256_System_Boolean__System_Boolean__" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.CheckBlockStatus(NBitcoin.uint256,System.Boolean@,System.Boolean@)">CheckBlockStatus(uint256, out Boolean, out Boolean)</h4>
-  <div class="markdown level1 summary"><p>Check status of the block in the context of the puller.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CheckBlockStatus(uint256 hash, out bool isDownloading, out bool isReady)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
-        <td><span class="parametername">hash</span></td>
-        <td><p>Hash of the block header.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">isDownloading</span></td>
-        <td><p>This is set to <code>true</code> if the block with the given hash is currently being downloaded.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">isReady</span></td>
-        <td><p>This is set to <code>true</code> if the block with the given hash has been downloaded and is ready to be consumed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_CheckBlockTaskAssignment_Stratis_Bitcoin_BlockPulling_BlockPullerBehavior_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.CheckBlockTaskAssignment(Stratis.Bitcoin.BlockPulling.BlockPullerBehavior%2CNBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L757">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_CheckBlockTaskAssignment_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.CheckBlockTaskAssignment*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_CheckBlockTaskAssignment_Stratis_Bitcoin_BlockPulling_BlockPullerBehavior_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.CheckBlockTaskAssignment(Stratis.Bitcoin.BlockPulling.BlockPullerBehavior,NBitcoin.uint256)">CheckBlockTaskAssignment(BlockPullerBehavior, uint256)</h4>
-  <div class="markdown level1 summary"><p>Checks if the puller behavior is currently responsible for downloading specific block.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CheckBlockTaskAssignment(BlockPullerBehavior peer, uint256 blockHash)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPullerBehavior.html">BlockPullerBehavior</a></td>
-        <td><span class="parametername">peer</span></td>
-        <td><p>Peer's behavior to check the assignment for.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
-        <td><span class="parametername">blockHash</span></td>
-        <td><p>Hash of the block.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the <code data-dev-comment-type="paramref" class="paramref">peer</code> is currently responsible for downloading block with hash <code data-dev-comment-type="paramref" class="paramref">blockHash</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_GetDownloadedBlock_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.GetDownloadedBlock(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L652">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_GetDownloadedBlock_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.GetDownloadedBlock*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_GetDownloadedBlock_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.GetDownloadedBlock(NBitcoin.uint256)">GetDownloadedBlock(uint256)</h4>
-  <div class="markdown level1 summary"><p>Retrieves a downloaded block from list of downloaded blocks, but does not remove the block from the list.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected BlockPuller.DownloadedBlock GetDownloadedBlock(uint256 blockHash)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
-        <td><span class="parametername">blockHash</span></td>
-        <td><p>Hash of the block to obtain.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock.html">BlockPuller.DownloadedBlock</a></td>
-        <td><p>Downloaded block or null if block with the given hash is not on the list.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_InjectBlock_NBitcoin_uint256_Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlock_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.InjectBlock(NBitcoin.uint256%2CStratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L177">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_InjectBlock_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.InjectBlock*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_InjectBlock_NBitcoin_uint256_Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlock_CancellationToken_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.InjectBlock(NBitcoin.uint256,Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock,CancellationToken)">InjectBlock(uint256, BlockPuller.DownloadedBlock, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Inject blocks directly to the puller's list of downloaded blocks, which is used for testing.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InjectBlock(uint256 blockHash, BlockPuller.DownloadedBlock downloadedBlock, CancellationToken cancellationToken)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
-        <td><span class="parametername">blockHash</span></td>
-        <td><p>Hash of the block to inject.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock.html">BlockPuller.DownloadedBlock</a></td>
-        <td><span class="parametername">downloadedBlock</span></td>
-        <td><p>Desciption of the inject block as if it was downloaded.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">CancellationToken</span></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Cancellation token to allow the caller to cancel the execution of the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_OnStalling_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.OnStalling(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L279">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_OnStalling_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.OnStalling*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_OnStalling_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.OnStalling(NBitcoin.ChainedHeader)">OnStalling(ChainedHeader)</h4>
+  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_Dispose_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_Dispose" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void OnStalling(ChainedHeader chainedHeader)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_GetAverageBlockSizeBytes.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.GetAverageBlockSizeBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L290">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_GetAverageBlockSizeBytes_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.GetAverageBlockSizeBytes*"></a>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_GetAverageBlockSizeBytes" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.GetAverageBlockSizeBytes">GetAverageBlockSizeBytes()</h4>
+  <div class="markdown level1 summary"><p>Gets the average size of a block based on sizes of blocks that were previously downloaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetAverageBlockSizeBytes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
-        <td><span class="parametername">chainedHeader</span></td>
+        <td><span class="xref">System.Double</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_TryRemoveDownloadedBlock_NBitcoin_uint256_Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlock__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.TryRemoveDownloadedBlock(NBitcoin.uint256%2CStratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_Initialize_Stratis_Bitcoin_BlockPulling_BlockPuller_OnBlockDownloadedCallback_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.Initialize(Stratis.Bitcoin.BlockPulling.BlockPuller.OnBlockDownloadedCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L694">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L248">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_TryRemoveDownloadedBlock_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.TryRemoveDownloadedBlock*"></a>
-  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_TryRemoveDownloadedBlock_NBitcoin_uint256_Stratis_Bitcoin_BlockPulling_BlockPuller_DownloadedBlock__" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.TryRemoveDownloadedBlock(NBitcoin.uint256,Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock@)">TryRemoveDownloadedBlock(uint256, out BlockPuller.DownloadedBlock)</h4>
-  <div class="markdown level1 summary"><p>Get and remove a downloaded block from the list of downloaded blocks.</p>
+  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_Initialize_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.Initialize*"></a>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_Initialize_Stratis_Bitcoin_BlockPulling_BlockPuller_OnBlockDownloadedCallback_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.Initialize(Stratis.Bitcoin.BlockPulling.BlockPuller.OnBlockDownloadedCallback)">Initialize(BlockPuller.OnBlockDownloadedCallback)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(BlockPuller.OnBlockDownloadedCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.OnBlockDownloadedCallback.html">BlockPuller.OnBlockDownloadedCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_NewPeerTipClaimed_Stratis_Bitcoin_P2P_Peer_INetworkPeer_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.NewPeerTipClaimed(Stratis.Bitcoin.P2P.Peer.INetworkPeer%2CNBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L320">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_NewPeerTipClaimed_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.NewPeerTipClaimed*"></a>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_NewPeerTipClaimed_Stratis_Bitcoin_P2P_Peer_INetworkPeer_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.NewPeerTipClaimed(Stratis.Bitcoin.P2P.Peer.INetworkPeer,NBitcoin.ChainedHeader)">NewPeerTipClaimed(INetworkPeer, ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Updates puller's view of peer's tip.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool TryRemoveDownloadedBlock(uint256 blockHash, out BlockPuller.DownloadedBlock downloadedBlock)</code></pre>
+    <pre><code class="lang-csharp hljs">public void NewPeerTipClaimed(INetworkPeer peer, ChainedHeader newTip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td><span class="parametername">peer</span></td>
+        <td><p>The peer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">newTip</span></td>
+        <td><p>New tip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_BlockPulling_BlockPuller_NewPeerTipClaimed_Stratis_Bitcoin_P2P_Peer_INetworkPeer_NBitcoin_ChainedHeader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Should be called when a peer claims a new tip.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_OnIbdStateChanged_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.OnIbdStateChanged(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L304">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_OnIbdStateChanged_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.OnIbdStateChanged*"></a>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_OnIbdStateChanged_System_Boolean_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.OnIbdStateChanged(System.Boolean)">OnIbdStateChanged(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Updates puller behaviors when IDB state is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnIbdStateChanged(bool isIbd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isIbd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_BlockPulling_BlockPuller_OnIbdStateChanged_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Should be called when IBD state was changed or first calculated.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_PeerDisconnected_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.PeerDisconnected(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L354">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_PeerDisconnected_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.PeerDisconnected*"></a>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_PeerDisconnected_System_Int32_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.PeerDisconnected(System.Int32)">PeerDisconnected(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes information about the peer from the inner structures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PeerDisconnected(int peerId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">peerId</span></td>
+        <td><p>Unique peer identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_BlockPulling_BlockPuller_PeerDisconnected_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Adds download jobs that were assigned to this peer to reassign queue.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_PushBlock_NBitcoin_uint256_NBitcoin_Block_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.PushBlock(NBitcoin.uint256%2CNBitcoin.Block%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L842">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_PushBlock_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.PushBlock*"></a>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_PushBlock_NBitcoin_uint256_NBitcoin_Block_System_Int32_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.PushBlock(NBitcoin.uint256,NBitcoin.Block,System.Int32)">PushBlock(uint256, Block, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes assignments for the block which has been delivered by the peer assigned to it and calls the callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushBlock(uint256 blockHash, Block block, int peerId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -659,36 +370,114 @@ This method is to be overridden by derived classes. In the base class it only lo
       <tr>
         <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
         <td><span class="parametername">blockHash</span></td>
-        <td><p>Hash of the block to retrieve.</p>
+        <td><p>The block hash.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock.html">BlockPuller.DownloadedBlock</a></td>
-        <td><span class="parametername">downloadedBlock</span></td>
-        <td><p>If the function succeeds, this is filled with the downloaded block, which hash is <code data-dev-comment-type="paramref" class="paramref">blockHash</code>.</p>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">peerId</span></td>
+        <td><p>ID of a peer that delivered a block.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  <h5 id="Stratis_Bitcoin_BlockPulling_BlockPuller_PushBlock_NBitcoin_uint256_NBitcoin_Block_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is called for all blocks that were delivered. It is possible that block that wasn't requested
+from that peer or from any peer at all is delivered, in that case the block will be ignored.
+It is possible that block was reassigned from a peer who delivered it later, in that case it will be ignored from this peer.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_RequestBlocksDownload_List_NBitcoin_ChainedHeader__System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.RequestBlocksDownload(List%7BNBitcoin.ChainedHeader%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L369">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_RequestBlocksDownload_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.RequestBlocksDownload*"></a>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_RequestBlocksDownload_List_NBitcoin_ChainedHeader__System_Boolean_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.RequestBlocksDownload(List{NBitcoin.ChainedHeader},System.Boolean)">RequestBlocksDownload(List&lt;ChainedHeader&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Requests the blocks for download.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestBlocksDownload(List&lt;ChainedHeader&gt; headers, bool highPriority = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>Collection of consecutive headers (but gaps are ok: a1=a2=a3=a4=a8=a9).</p>
+</td>
+      </tr>
+      <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the function succeeds, <code>false</code> if the block with the given hash was not in the list.</p>
+        <td><span class="parametername">highPriority</span></td>
+        <td><p>If <code>true</code> headers will be assigned to peers before the headers that were asked normally.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_BlockPulling_BlockPuller_RequestBlocksDownload_List_NBitcoin_ChainedHeader__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Doesn't support asking for the same hash twice before getting a response.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller_RequestPeerServices_Stratis_Bitcoin_P2P_Protocol_Payloads_NetworkPeerServices_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller.RequestPeerServices(Stratis.Bitcoin.P2P.Protocol.Payloads.NetworkPeerServices)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L261">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_BlockPulling_BlockPuller_RequestPeerServices_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.RequestPeerServices*"></a>
+  <h4 id="Stratis_Bitcoin_BlockPulling_BlockPuller_RequestPeerServices_Stratis_Bitcoin_P2P_Protocol_Payloads_NetworkPeerServices_" data-uid="Stratis.Bitcoin.BlockPulling.BlockPuller.RequestPeerServices(Stratis.Bitcoin.P2P.Protocol.Payloads.NetworkPeerServices)">RequestPeerServices(NetworkPeerServices)</h4>
+  <div class="markdown level1 summary"><p>Adds required services to list of services that are required from all peers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestPeerServices(NetworkPeerServices services)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.NetworkPeerServices.html">NetworkPeerServices</a></td>
+        <td><span class="parametername">services</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_BlockPulling_BlockPuller_RequestPeerServices_Stratis_Bitcoin_P2P_Protocol_Payloads_NetworkPeerServices__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case some of the peers that we are already requesting block from don't support new
+service requirements those peers will be released from their assignments.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Stratis.Bitcoin.BlockPulling.IBlockPuller.html">IBlockPuller</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
   </div>
 </article>
           </div>
@@ -701,7 +490,7 @@ This method is to be overridden by derived classes. In the base class it only lo
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_BlockPulling_BlockPuller.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.BlockPulling.BlockPuller%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L60" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/BlockPulling/BlockPuller.cs/#L85" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

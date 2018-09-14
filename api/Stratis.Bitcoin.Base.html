@@ -86,12 +86,6 @@ The base node services for a node are:
 <ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
 </p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Base.BestChainSelector.html">BestChainSelector</a></h4>
-      <section><p>Selects the best available chain based on tips provided by the peers and switches to it.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Base.ChainHeadersBehavior.html">ChainHeadersBehavior</a></h4>
-      <section><p>Behavior that takes care of headers protocol. It also keeps the notion of peer's consensus tip.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Base.ChainRepository.html">ChainRepository</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Base.ChainState.html">ChainState</a></h4>
@@ -99,11 +93,11 @@ The base node services for a node are:
 The data are provided by different components and the chaine state is a mechanism that allows
 these components to share that data without creating extra dependencies.</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Base.ConsensusManagerBehavior.html">ConsensusManagerBehavior</a></h4>
-      <section><p>Behavior that takes care of headers protocol. It also keeps the notion of peer's consensus tip.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Base.FullNodeBuilderBaseFeatureExtension.html">FullNodeBuilderBaseFeatureExtension</a></h4>
       <section><p>A class providing extension methods for <a class="xref" href="Stratis.Bitcoin.Builder.IFullNodeBuilder.html">IFullNodeBuilder</a>.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.InitialBlockDownloadState.html">InitialBlockDownloadState</a></h4>
+      <section><p>Provides IBD (Initial Block Download) state.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Base.InvalidBlockHashStore.html">InvalidBlockHashStore</a></h4>
       <section><p>In memory store of invalid block header hashes.</p>
@@ -128,8 +122,8 @@ and calculates adjustments to system time.</p>
       <h4><a class="xref" href="Stratis.Bitcoin.Base.IChainState.html">IChainState</a></h4>
       <section><p>Chain state holds various information related to the status of the chain and its validation.</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Base.IFinalizedBlockHeight.html">IFinalizedBlockHeight</a></h4>
-      <section><p>Provider of the last finalized block height.</p>
+      <h4><a class="xref" href="Stratis.Bitcoin.Base.IFinalizedBlockInfo.html">IFinalizedBlockInfo</a></h4>
+      <section><p>Provider of the last finalized block's height and hash.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Base.IInvalidBlockHashStore.html">IInvalidBlockHashStore</a></h4>
       <section><p>Contract of a store of block header hashes that are considered invalid.</p>

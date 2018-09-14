@@ -90,18 +90,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_AreNodesSynced_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.AreNodesSynced(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode%2CStratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_AreNodesSynced_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.AreNodesSynced(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode%2CStratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L35">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L38">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_AreNodesSynced_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.AreNodesSynced*"></a>
-  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_AreNodesSynced_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.AreNodesSynced(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode,Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)">AreNodesSynced(CoreNode, CoreNode)</h4>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_AreNodesSynced_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_System_Boolean_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.AreNodesSynced(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode,Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode,System.Boolean)">AreNodesSynced(CoreNode, CoreNode, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool AreNodesSynced(CoreNode node1, CoreNode node2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool AreNodesSynced(CoreNode node1, CoreNode node2, bool ignoreMempool = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -123,6 +123,11 @@
         <td><span class="parametername">node2</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreMempool</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -142,10 +147,223 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_Connect_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.Connect(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode%2CStratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L236">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_Connect_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.Connect*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_Connect_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.Connect(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode,Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)">Connect(CoreNode, CoreNode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Connect(CoreNode from, CoreNode to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html">CoreNode</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html">CoreNode</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_ConnectAndSync_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.ConnectAndSync(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode%2CStratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L241">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_ConnectAndSync_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.ConnectAndSync*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_ConnectAndSync_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.ConnectAndSync(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode,Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)">ConnectAndSync(CoreNode, CoreNode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ConnectAndSync(CoreNode from, CoreNode to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html">CoreNode</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html">CoreNode</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_CreateTransactionBuildContext_NBitcoin_Network_System_String_System_String_System_String_ICollection_Stratis_Bitcoin_Features_Wallet_Recipient__Stratis_Bitcoin_Features_Wallet_FeeType_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.CreateTransactionBuildContext(NBitcoin.Network%2CSystem.String%2CSystem.String%2CSystem.String%2CICollection%7BStratis.Bitcoin.Features.Wallet.Recipient%7D%2CStratis.Bitcoin.Features.Wallet.FeeType%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L217">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_CreateTransactionBuildContext_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.CreateTransactionBuildContext*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_CreateTransactionBuildContext_NBitcoin_Network_System_String_System_String_System_String_ICollection_Stratis_Bitcoin_Features_Wallet_Recipient__Stratis_Bitcoin_Features_Wallet_FeeType_System_Int32_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.CreateTransactionBuildContext(NBitcoin.Network,System.String,System.String,System.String,ICollection{Stratis.Bitcoin.Features.Wallet.Recipient},Stratis.Bitcoin.Features.Wallet.FeeType,System.Int32)">CreateTransactionBuildContext(Network, String, String, String, ICollection&lt;Recipient&gt;, FeeType, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TransactionBuildContext CreateTransactionBuildContext(Network network, string sendingWalletName, string sendingAccountName, string sendingPassword, ICollection&lt;Recipient&gt; recipients, FeeType feeType, int minConfirmations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sendingWalletName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sendingAccountName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sendingPassword</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.Recipient.html">Recipient</a>&gt;</td>
+        <td><span class="parametername">recipients</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.FeeType.html">FeeType</a></td>
+        <td><span class="parametername">feeType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minConfirmations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.TransactionBuildContext.html">TransactionBuildContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_GenerateBlockManually_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_List_NBitcoin_Transaction__System_UInt32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.GenerateBlockManually(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode%2CList%7BNBitcoin.Transaction%7D%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L133">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_GenerateBlockManually_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.GenerateBlockManually*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_GenerateBlockManually_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_List_NBitcoin_Transaction__System_UInt32_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.GenerateBlockManually(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode,List{NBitcoin.Transaction},System.UInt32)">GenerateBlockManually(CoreNode, List&lt;Transaction&gt;, UInt32)</h4>
+  <div class="markdown level1 summary"><p>This should only be used if we need to create a block manually, in all other cases please use
+<a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html#Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_GenerateStratisWithMiner_System_Int32_">GenerateStratisWithMiner(Int32)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Block GenerateBlockManually(CoreNode coreNode, List&lt;Transaction&gt; transactions, uint nonce = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html">CoreNode</a></td>
+        <td><span class="parametername">coreNode</span></td>
+        <td><p>The node we want to create the block with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.Transaction.html">Transaction</a>&gt;</td>
+        <td><span class="parametername">transactions</span></td>
+        <td><p>Transactions we want to manually include in the block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">nonce</span></td>
+        <td><p>Optional nonce.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_IsNodeConnected_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.IsNodeConnected(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L63">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L86">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_IsNodeConnected_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.IsNodeConnected*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_IsNodeConnected_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.IsNodeConnected(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)">IsNodeConnected(CoreNode)</h4>
@@ -192,7 +410,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_IsNodeSynced_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.IsNodeSynced(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L46">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L65">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_IsNodeSynced_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.IsNodeSynced*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_IsNodeSynced_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.IsNodeSynced(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)">IsNodeSynced(CoreNode)</h4>
@@ -236,10 +454,124 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_MineBlocks_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.MineBlocks(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L103">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_MineBlocks_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.MineBlocks*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_MineBlocks_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_System_String_System_String_System_String_System_Int32_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.MineBlocks(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode,System.String,System.String,System.String,System.Int32)">MineBlocks(CoreNode, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (HdAddress AddressUsed, List&lt;uint256&gt; BlockHashes)MineBlocks(CoreNode node, string walletName, string walletPassword, string accountName, int numberOfBlocks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html">CoreNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletPassword</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accountName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numberOfBlocks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.HdAddress.html">HdAddress</a>, <span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_Reorder_List_NBitcoin_Transaction__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.Reorder(List%7BNBitcoin.Transaction%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L164">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_Reorder_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.Reorder*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_Reorder_List_NBitcoin_Transaction__" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.Reorder(List{NBitcoin.Transaction})">Reorder(List&lt;Transaction&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Transaction&gt; Reorder(List&lt;Transaction&gt; transactions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.Transaction.html">Transaction</a>&gt;</td>
+        <td><span class="parametername">transactions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.Transaction.html">Transaction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_TriggerSync_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.TriggerSync(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L57">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L80">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_TriggerSync_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.TriggerSync*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_TriggerSync_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.TriggerSync(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode)">TriggerSync(CoreNode)</h4>
@@ -268,10 +600,74 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_WaitForNodeToSync_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.WaitForNodeToSync(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L91">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_WaitForNodeToSync_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.WaitForNodeToSync*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_WaitForNodeToSync_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode___" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.WaitForNodeToSync(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode[])">WaitForNodeToSync(CoreNode[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WaitForNodeToSync(params CoreNode[] nodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html">CoreNode</a>[]</td>
+        <td><span class="parametername">nodes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_WaitForNodeToSyncIgnoreMempool_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.WaitForNodeToSyncIgnoreMempool(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L97">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_WaitForNodeToSyncIgnoreMempool_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.WaitForNodeToSyncIgnoreMempool*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_WaitForNodeToSyncIgnoreMempool_Stratis_Bitcoin_IntegrationTests_Common_EnvironmentMockUpHelpers_CoreNode___" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.WaitForNodeToSyncIgnoreMempool(Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode[])">WaitForNodeToSyncIgnoreMempool(CoreNode[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WaitForNodeToSyncIgnoreMempool(params CoreNode[] nodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html">CoreNode</a>[]</td>
+        <td><span class="parametername">nodes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper_WaitLoop_Func_System_Boolean__System_String_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper.WaitLoop(Func%7BSystem.Boolean%7D%2CSystem.String%2CSystem.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L15">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L18">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_WaitLoop_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.WaitLoop*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_TestHelper_WaitLoop_Func_System_Boolean__System_String_System_Int32_CancellationToken_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.TestHelper.WaitLoop(Func{System.Boolean},System.String,System.Int32,CancellationToken)">WaitLoop(Func&lt;Boolean&gt;, String, Int32, CancellationToken)</h4>
@@ -324,7 +720,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_TestHelper.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.TestHelper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/TestHelper.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

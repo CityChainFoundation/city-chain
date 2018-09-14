@@ -277,7 +277,7 @@ have the same functionality and the disconnecting method is provided only for be
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetworkPeerBehaviorsCollection Behaviors { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;INetworkPeerBehavior&gt; Behaviors { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -289,7 +289,7 @@ have the same functionality and the disconnecting method is provided only for be
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehaviorsCollection.html">NetworkPeerBehaviorsCollection</a></td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.INetworkPeerBehavior.html">INetworkPeerBehavior</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -927,7 +927,7 @@ have the same functionality and the disconnecting method is provided only for be
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_AddSupportedOptions_Stratis_Bitcoin_P2P_Protocol_InventoryType_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.AddSupportedOptions(Stratis.Bitcoin.P2P.Protocol.InventoryType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L889">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L894">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_AddSupportedOptions_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.AddSupportedOptions*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_AddSupportedOptions_Stratis_Bitcoin_P2P_Protocol_InventoryType_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.AddSupportedOptions(Stratis.Bitcoin.P2P.Protocol.InventoryType)">AddSupportedOptions(InventoryType)</h4>
@@ -977,7 +977,7 @@ have the same functionality and the disconnecting method is provided only for be
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_Behavior__1.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.Behavior%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L901">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L906">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Behavior_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Behavior*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Behavior__1" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Behavior``1">Behavior&lt;T&gt;()</h4>
@@ -1075,7 +1075,7 @@ have the same functionality and the disconnecting method is provided only for be
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_Disconnect_System_String_Exception_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.Disconnect(System.String%2CException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L795">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L800">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Disconnect_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Disconnect*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Disconnect_System_String_Exception_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Disconnect(System.String,Exception)">Disconnect(String, Exception)</h4>
@@ -1115,7 +1115,7 @@ have the same functionality and the disconnecting method is provided only for be
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L853">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L858">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Dispose_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_Dispose" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.Dispose">Dispose()</h4>
@@ -1130,7 +1130,7 @@ have the same functionality and the disconnecting method is provided only for be
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_RespondToHandShakeAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.RespondToHandShakeAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L761">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L766">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RespondToHandShakeAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RespondToHandShakeAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_RespondToHandShakeAsync_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.RespondToHandShakeAsync(CancellationToken)">RespondToHandShakeAsync(CancellationToken)</h4>
@@ -1195,7 +1195,7 @@ have the same functionality and the disconnecting method is provided only for be
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_SendMessageAsync_Stratis_Bitcoin_P2P_Protocol_Payloads_Payload_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.SendMessageAsync(Stratis.Bitcoin.P2P.Protocol.Payloads.Payload%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L660">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L665">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_SendMessageAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.SendMessageAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_SendMessageAsync_Stratis_Bitcoin_P2P_Protocol_Payloads_Payload_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.SendMessageAsync(Stratis.Bitcoin.P2P.Protocol.Payloads.Payload,CancellationToken)">SendMessageAsync(Payload, CancellationToken)</h4>
@@ -1250,7 +1250,7 @@ have the same functionality and the disconnecting method is provided only for be
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L677">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L682">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync(CancellationToken)">VersionHandshakeAsync(CancellationToken)</h4>
@@ -1317,7 +1317,7 @@ as well as to acknowledge that they are happy with the other party&apos;s &quot;
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_Stratis_Bitcoin_P2P_Peer_NetworkPeerRequirement_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync(Stratis.Bitcoin.P2P.Peer.NetworkPeerRequirement%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L683">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeer.cs/#L688">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeer_VersionHandshakeAsync_Stratis_Bitcoin_P2P_Peer_NetworkPeerRequirement_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeer.VersionHandshakeAsync(Stratis.Bitcoin.P2P.Peer.NetworkPeerRequirement,CancellationToken)">VersionHandshakeAsync(NetworkPeerRequirement, CancellationToken)</h4>

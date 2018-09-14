@@ -77,56 +77,31 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.AssignedDownload.html">AssignedDownload</a></h4>
+      <section><p>Represents a single download assignment to a peer.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.html">BlockPuller</a></h4>
-      <section><p>Base class for pullers that download blocks from peers.</p>
-<p>
-This must be inherited and the implementing class
-needs to handle taking blocks off the queue and stalling.
-</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.DownloadedBlock.html">BlockPuller.DownloadedBlock</a></h4>
-      <section><p>Description of a block together with its size.</p>
-</section>
+      <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPullerBehavior.html">BlockPullerBehavior</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.DownloadAssignment.html">DownloadAssignment</a></h4>
-      <section><p>Describes the assigned download tasks.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.LookaheadBlockPuller.html">LookaheadBlockPuller</a></h4>
-      <section><p>Puller that is used for fast sync during initial block download (IBD). It implements a strategy of downloading
-multiple blocks from multiple peers at once, so that IBD is fast enough, but does not consume too many resources.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.LookaheadResult.html">LookaheadResult</a></h4>
-      <section><p>A result from the <a class="xref" href="Stratis.Bitcoin.BlockPulling.ILookaheadBlockPuller.html">ILookaheadBlockPuller</a> containing the downloaded block and the <see cref="!:IPEndPoint"></see> of the peer that it came from.
-Block will be <code>null</code> if the current chain was reorganized.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.PullerDownloadAssignments.html">PullerDownloadAssignments</a></h4>
-      <section><p>Implements a strategy for a block puller that needs to download
-a set of blocks from its connected peers.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.PullerDownloadAssignments.PeerInformation.html">PullerDownloadAssignments.PeerInformation</a></h4>
-      <section><p>Information about a connected peer.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.QualityScore.html">QualityScore</a></h4>
-      <section><p>Implements logic of evaluation of quality of node network peers based on
-the recent past experience with them with respect to other node's network peers.</p>
-</section>
     <h3 id="structs">Structs
   </h3>
-      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.PeerSample.html">PeerSample</a></h4>
-      <section><p>Single historic sample item for quality score calculations.</p>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.DownloadJob.html">DownloadJob</a></h4>
+      <section><p>Represents consecutive collection of headers that are to be downloaded.</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.IBlockPuller.html">IBlockPuller</a></h4>
-      <section><p>Puller that download blocks from peers.</p>
+      <section><p>Thread-safe block puller which allows downloading blocks from all chains that the node is aware of.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.IBlockPullerBehavior.html">IBlockPullerBehavior</a></h4>
-      <section><p>Relation of the node's puller to a network peer node.</p>
+      <section><p>Relation of the node's puller to a network peer node.
+Keeps all peer-related values that <a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.html">BlockPuller</a> needs to know about a peer.</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.ILookaheadBlockPuller.html">ILookaheadBlockPuller</a></h4>
-      <section><p>Block puller used for fast sync during initial block download (IBD).</p>
-</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.OnBlockDownloadedCallback.html">BlockPuller.OnBlockDownloadedCallback</a></h4>
+      <section></section>
 </article>
           </div>
           

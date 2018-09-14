@@ -83,6 +83,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Interfaces.IBlockStoreQueue.html">IBlockStoreQueue</a></div>
     <div><a class="xref" href="Stratis.Bitcoin.Interfaces.IBlockStore.html">IBlockStore</a></div>
     <div><span class="xref">IDisposable</span></div>
   </div>
@@ -90,7 +91,7 @@
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.BlockStore.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BlockStoreQueue : object, IBlockStore, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class BlockStoreQueue : object, IBlockStoreQueue, IBlockStore, IDisposable</code></pre>
   </div>
   <h5 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>
@@ -109,18 +110,18 @@ When block store is being initialized we delete blocks that are not on the best 
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue__ctor_Stratis_Bitcoin_Features_BlockStore_IBlockRepository_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Utilities_INodeLifetime_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.%23ctor(Stratis.Bitcoin.Features.BlockStore.IBlockRepository%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Features.BlockStore.StoreSettings%2CStratis.Bitcoin.Utilities.INodeLifetime%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue__ctor_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Features_BlockStore_IBlockRepository_ILoggerFactory_Stratis_Bitcoin_Utilities_INodeStats_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.%23ctor(NBitcoin.ConcurrentChain%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Features.BlockStore.StoreSettings%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Features.BlockStore.IBlockRepository%2CILoggerFactory%2CStratis.Bitcoin.Utilities.INodeStats)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L72">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L77">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue__ctor_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue__ctor_Stratis_Bitcoin_Features_BlockStore_IBlockRepository_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Utilities_INodeLifetime_ILoggerFactory_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.#ctor(Stratis.Bitcoin.Features.BlockStore.IBlockRepository,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Features.BlockStore.StoreSettings,Stratis.Bitcoin.Utilities.INodeLifetime,ILoggerFactory)">BlockStoreQueue(IBlockRepository, ConcurrentChain, IChainState, StoreSettings, INodeLifetime, ILoggerFactory)</h4>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue__ctor_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Features_BlockStore_IBlockRepository_ILoggerFactory_Stratis_Bitcoin_Utilities_INodeStats_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.#ctor(NBitcoin.ConcurrentChain,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Features.BlockStore.StoreSettings,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Features.BlockStore.IBlockRepository,ILoggerFactory,Stratis.Bitcoin.Utilities.INodeStats)">BlockStoreQueue(ConcurrentChain, IChainState, StoreSettings, INodeLifetime, IBlockRepository, ILoggerFactory, INodeStats)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlockStoreQueue(IBlockRepository blockRepository, ConcurrentChain chain, IChainState chainState, StoreSettings storeSettings, INodeLifetime nodeLifetime, ILoggerFactory loggerFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public BlockStoreQueue(ConcurrentChain chain, IChainState chainState, StoreSettings storeSettings, INodeLifetime nodeLifetime, IBlockRepository blockRepository, ILoggerFactory loggerFactory, INodeStats nodeStats)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,11 +133,6 @@ When block store is being initialized we delete blocks that are not on the best 
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.BlockStore.IBlockRepository.html">IBlockRepository</a></td>
-        <td><span class="parametername">blockRepository</span></td>
-        <td></td>
-      </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
         <td><span class="parametername">chain</span></td>
@@ -158,8 +154,18 @@ When block store is being initialized we delete blocks that are not on the best 
         <td></td>
       </tr>
       <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.BlockStore.IBlockRepository.html">IBlockRepository</a></td>
+        <td><span class="parametername">blockRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><span class="xref">ILoggerFactory</span></td>
         <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeStats.html">INodeStats</a></td>
+        <td><span class="parametername">nodeStats</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -171,7 +177,7 @@ When block store is being initialized we delete blocks that are not on the best 
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_AddToPending_Stratis_Bitcoin_Primitives_ChainedHeaderBlock_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.AddToPending(Stratis.Bitcoin.Primitives.ChainedHeaderBlock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L252">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L270">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_AddToPending_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.AddToPending*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_AddToPending_Stratis_Bitcoin_Primitives_ChainedHeaderBlock_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.AddToPending(Stratis.Bitcoin.Primitives.ChainedHeaderBlock)">AddToPending(ChainedHeaderBlock)</h4>
@@ -205,7 +211,7 @@ When block store is being initialized we delete blocks that are not on the best 
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L429">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L455">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_Dispose_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_Dispose" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.Dispose">Dispose()</h4>
@@ -220,7 +226,7 @@ When block store is being initialized we delete blocks that are not on the best 
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_GetBlockAsync_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.GetBlockAsync(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L170">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L180">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_GetBlockAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.GetBlockAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_GetBlockAsync_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.GetBlockAsync(NBitcoin.uint256)">GetBlockAsync(uint256)</h4>
@@ -267,7 +273,7 @@ When block store is being initialized we delete blocks that are not on the best 
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_GetTrxAsync_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.GetTrxAsync(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L158">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L168">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_GetTrxAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.GetTrxAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_GetTrxAsync_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.GetTrxAsync(NBitcoin.uint256)">GetTrxAsync(uint256)</h4>
@@ -314,7 +320,7 @@ When block store is being initialized we delete blocks that are not on the best 
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_GetTrxBlockIdAsync_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.GetTrxBlockIdAsync(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L164">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L174">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_GetTrxBlockIdAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.GetTrxBlockIdAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_GetTrxBlockIdAsync_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.GetTrxBlockIdAsync(NBitcoin.uint256)">GetTrxBlockIdAsync(uint256)</h4>
@@ -361,7 +367,7 @@ When block store is being initialized we delete blocks that are not on the best 
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_InitializeAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.InitializeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L110">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L118">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_InitializeAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.InitializeAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_InitializeAsync" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.InitializeAsync">InitializeAsync()</h4>
@@ -392,40 +398,10 @@ To recover we walk back the chain until a common block header is found and set t
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_ShowStats_StringBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.ShowStats(StringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueue.cs/#L237">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_ShowStats_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.ShowStats*"></a>
-  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueue_ShowStats_StringBuilder_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.ShowStats(StringBuilder)">ShowStats(StringBuilder)</h4>
-  <div class="markdown level1 summary"><p>Shows the stats to the console.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ShowStats(StringBuilder benchLog)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">StringBuilder</span></td>
-        <td><span class="parametername">benchLog</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Interfaces.IBlockStoreQueue.html">IBlockStoreQueue</a>
+  </div>
   <div>
       <a class="xref" href="Stratis.Bitcoin.Interfaces.IBlockStore.html">IBlockStore</a>
   </div>

@@ -98,7 +98,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals__ctor.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L58">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L59">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Signals_Signals__ctor_" data-uid="Stratis.Bitcoin.Signals.Signals.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Signals_Signals__ctor" data-uid="Stratis.Bitcoin.Signals.Signals.#ctor">Signals()</h4>
@@ -111,19 +111,19 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals__ctor_Stratis_Bitcoin_Signals_ISignaler_NBitcoin_Block__Stratis_Bitcoin_Signals_ISignaler_NBitcoin_Block__Stratis_Bitcoin_Signals_ISignaler_NBitcoin_Transaction__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.%23ctor(Stratis.Bitcoin.Signals.ISignaler%7BNBitcoin.Block%7D%2CStratis.Bitcoin.Signals.ISignaler%7BNBitcoin.Block%7D%2CStratis.Bitcoin.Signals.ISignaler%7BNBitcoin.Transaction%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals__ctor_Stratis_Bitcoin_Signals_ISignaler_Stratis_Bitcoin_Primitives_ChainedHeaderBlock__Stratis_Bitcoin_Signals_ISignaler_Stratis_Bitcoin_Primitives_ChainedHeaderBlock__Stratis_Bitcoin_Signals_ISignaler_NBitcoin_Transaction__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.%23ctor(Stratis.Bitcoin.Signals.ISignaler%7BStratis.Bitcoin.Primitives.ChainedHeaderBlock%7D%2CStratis.Bitcoin.Signals.ISignaler%7BStratis.Bitcoin.Primitives.ChainedHeaderBlock%7D%2CStratis.Bitcoin.Signals.ISignaler%7BNBitcoin.Transaction%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L68">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L69">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Signals_Signals__ctor_" data-uid="Stratis.Bitcoin.Signals.Signals.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Signals_Signals__ctor_Stratis_Bitcoin_Signals_ISignaler_NBitcoin_Block__Stratis_Bitcoin_Signals_ISignaler_NBitcoin_Block__Stratis_Bitcoin_Signals_ISignaler_NBitcoin_Transaction__" data-uid="Stratis.Bitcoin.Signals.Signals.#ctor(Stratis.Bitcoin.Signals.ISignaler{NBitcoin.Block},Stratis.Bitcoin.Signals.ISignaler{NBitcoin.Block},Stratis.Bitcoin.Signals.ISignaler{NBitcoin.Transaction})">Signals(ISignaler&lt;Block&gt;, ISignaler&lt;Block&gt;, ISignaler&lt;Transaction&gt;)</h4>
+  <h4 id="Stratis_Bitcoin_Signals_Signals__ctor_Stratis_Bitcoin_Signals_ISignaler_Stratis_Bitcoin_Primitives_ChainedHeaderBlock__Stratis_Bitcoin_Signals_ISignaler_Stratis_Bitcoin_Primitives_ChainedHeaderBlock__Stratis_Bitcoin_Signals_ISignaler_NBitcoin_Transaction__" data-uid="Stratis.Bitcoin.Signals.Signals.#ctor(Stratis.Bitcoin.Signals.ISignaler{Stratis.Bitcoin.Primitives.ChainedHeaderBlock},Stratis.Bitcoin.Signals.ISignaler{Stratis.Bitcoin.Primitives.ChainedHeaderBlock},Stratis.Bitcoin.Signals.ISignaler{NBitcoin.Transaction})">Signals(ISignaler&lt;ChainedHeaderBlock&gt;, ISignaler&lt;ChainedHeaderBlock&gt;, ISignaler&lt;Transaction&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes the object with specific signalers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Signals(ISignaler&lt;Block&gt; blockConnectedSignaler, ISignaler&lt;Block&gt; blockDisonnectedSignaler, ISignaler&lt;Transaction&gt; transactionSignaler)</code></pre>
+    <pre><code class="lang-csharp hljs">public Signals(ISignaler&lt;ChainedHeaderBlock&gt; blockConnectedSignaler, ISignaler&lt;ChainedHeaderBlock&gt; blockDisonnectedSignaler, ISignaler&lt;Transaction&gt; transactionSignaler)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,13 +136,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Signals.ISignaler-1.html">ISignaler</a>&lt;<a class="xref" href="NBitcoin.Block.html">Block</a>&gt;</td>
+        <td><a class="xref" href="Stratis.Bitcoin.Signals.ISignaler-1.html">ISignaler</a>&lt;<a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a>&gt;</td>
         <td><span class="parametername">blockConnectedSignaler</span></td>
         <td><p>Signaler providing notifications about newly available blocks to its subscribers.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Signals.ISignaler-1.html">ISignaler</a>&lt;<a class="xref" href="NBitcoin.Block.html">Block</a>&gt;</td>
+        <td><a class="xref" href="Stratis.Bitcoin.Signals.ISignaler-1.html">ISignaler</a>&lt;<a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a>&gt;</td>
         <td><span class="parametername">blockDisonnectedSignaler</span></td>
         <td><p>Signaler providing notifications about a block being disconnected to its subscribers.</p>
 </td>
@@ -159,19 +159,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SignalBlockConnected_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SignalBlockConnected(NBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SignalBlockConnected_Stratis_Bitcoin_Primitives_ChainedHeaderBlock_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SignalBlockConnected(Stratis.Bitcoin.Primitives.ChainedHeaderBlock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L89">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L90">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Signals_Signals_SignalBlockConnected_" data-uid="Stratis.Bitcoin.Signals.Signals.SignalBlockConnected*"></a>
-  <h4 id="Stratis_Bitcoin_Signals_Signals_SignalBlockConnected_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Signals.Signals.SignalBlockConnected(NBitcoin.Block)">SignalBlockConnected(Block)</h4>
-  <div class="markdown level1 summary"><p>Notify subscribers about a new block being available.</p>
+  <h4 id="Stratis_Bitcoin_Signals_Signals_SignalBlockConnected_Stratis_Bitcoin_Primitives_ChainedHeaderBlock_" data-uid="Stratis.Bitcoin.Signals.Signals.SignalBlockConnected(Stratis.Bitcoin.Primitives.ChainedHeaderBlock)">SignalBlockConnected(ChainedHeaderBlock)</h4>
+  <div class="markdown level1 summary"><p>Notify subscribers about a new chained header block being available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SignalBlockConnected(Block block)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SignalBlockConnected(ChainedHeaderBlock chainedHeaderBlock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -184,28 +184,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
-        <td><span class="parametername">block</span></td>
-        <td><p>Newly added block.</p>
+        <td><a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a></td>
+        <td><span class="parametername">chainedHeaderBlock</span></td>
+        <td><p>Newly added chained header block.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SignalBlockDisconnected_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SignalBlockDisconnected(NBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SignalBlockDisconnected_Stratis_Bitcoin_Primitives_ChainedHeaderBlock_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SignalBlockDisconnected(Stratis.Bitcoin.Primitives.ChainedHeaderBlock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L97">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L98">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Signals_Signals_SignalBlockDisconnected_" data-uid="Stratis.Bitcoin.Signals.Signals.SignalBlockDisconnected*"></a>
-  <h4 id="Stratis_Bitcoin_Signals_Signals_SignalBlockDisconnected_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Signals.Signals.SignalBlockDisconnected(NBitcoin.Block)">SignalBlockDisconnected(Block)</h4>
-  <div class="markdown level1 summary"><p>Notify subscribers about a block being disconnected.</p>
+  <h4 id="Stratis_Bitcoin_Signals_Signals_SignalBlockDisconnected_Stratis_Bitcoin_Primitives_ChainedHeaderBlock_" data-uid="Stratis.Bitcoin.Signals.Signals.SignalBlockDisconnected(Stratis.Bitcoin.Primitives.ChainedHeaderBlock)">SignalBlockDisconnected(ChainedHeaderBlock)</h4>
+  <div class="markdown level1 summary"><p>Notify subscribers about a chained header block being disconnected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SignalBlockDisconnected(Block block)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SignalBlockDisconnected(ChainedHeaderBlock chainedHeaderBlock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -218,9 +218,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
-        <td><span class="parametername">block</span></td>
-        <td><p>Block that was disconnected.</p>
+        <td><a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a></td>
+        <td><span class="parametername">chainedHeaderBlock</span></td>
+        <td><p>Chained Header Block that was disconnected.</p>
 </td>
       </tr>
     </tbody>
@@ -230,7 +230,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SignalTransaction_NBitcoin_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SignalTransaction(NBitcoin.Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L105">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L106">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Signals_Signals_SignalTransaction_" data-uid="Stratis.Bitcoin.Signals.Signals.SignalTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Signals_Signals_SignalTransaction_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Signals.Signals.SignalTransaction(NBitcoin.Transaction)">SignalTransaction(Transaction)</h4>
@@ -261,19 +261,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksConnected_IObserver_NBitcoin_Block__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksConnected(IObserver%7BNBitcoin.Block%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksConnected_IObserver_Stratis_Bitcoin_Primitives_ChainedHeaderBlock__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksConnected(IObserver%7BStratis.Bitcoin.Primitives.ChainedHeaderBlock%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L113">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L114">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksConnected_" data-uid="Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksConnected*"></a>
-  <h4 id="Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksConnected_IObserver_NBitcoin_Block__" data-uid="Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksConnected(IObserver{NBitcoin.Block})">SubscribeForBlocksConnected(IObserver&lt;Block&gt;)</h4>
+  <h4 id="Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksConnected_IObserver_Stratis_Bitcoin_Primitives_ChainedHeaderBlock__" data-uid="Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksConnected(IObserver{Stratis.Bitcoin.Primitives.ChainedHeaderBlock})">SubscribeForBlocksConnected(IObserver&lt;ChainedHeaderBlock&gt;)</h4>
   <div class="markdown level1 summary"><p>Subscribes to receive notifications when a new block is available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IDisposable SubscribeForBlocksConnected(IObserver&lt;Block&gt; observer)</code></pre>
+    <pre><code class="lang-csharp hljs">public IDisposable SubscribeForBlocksConnected(IObserver&lt;ChainedHeaderBlock&gt; observer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -286,7 +286,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IObserver</span>&lt;<a class="xref" href="NBitcoin.Block.html">Block</a>&gt;</td>
+        <td><span class="xref">IObserver</span>&lt;<a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a>&gt;</td>
         <td><span class="parametername">observer</span></td>
         <td><p>Observer to be subscribed to receive signaler's messages.</p>
 </td>
@@ -311,19 +311,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksDisconnected_IObserver_NBitcoin_Block__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksDisconnected(IObserver%7BNBitcoin.Block%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksDisconnected_IObserver_Stratis_Bitcoin_Primitives_ChainedHeaderBlock__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksDisconnected(IObserver%7BStratis.Bitcoin.Primitives.ChainedHeaderBlock%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L121">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L122">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksDisconnected_" data-uid="Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksDisconnected*"></a>
-  <h4 id="Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksDisconnected_IObserver_NBitcoin_Block__" data-uid="Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksDisconnected(IObserver{NBitcoin.Block})">SubscribeForBlocksDisconnected(IObserver&lt;Block&gt;)</h4>
+  <h4 id="Stratis_Bitcoin_Signals_Signals_SubscribeForBlocksDisconnected_IObserver_Stratis_Bitcoin_Primitives_ChainedHeaderBlock__" data-uid="Stratis.Bitcoin.Signals.Signals.SubscribeForBlocksDisconnected(IObserver{Stratis.Bitcoin.Primitives.ChainedHeaderBlock})">SubscribeForBlocksDisconnected(IObserver&lt;ChainedHeaderBlock&gt;)</h4>
   <div class="markdown level1 summary"><p>Subscribes to receive notifications when a block was disconnected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IDisposable SubscribeForBlocksDisconnected(IObserver&lt;Block&gt; observer)</code></pre>
+    <pre><code class="lang-csharp hljs">public IDisposable SubscribeForBlocksDisconnected(IObserver&lt;ChainedHeaderBlock&gt; observer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -336,7 +336,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IObserver</span>&lt;<a class="xref" href="NBitcoin.Block.html">Block</a>&gt;</td>
+        <td><span class="xref">IObserver</span>&lt;<a class="xref" href="Stratis.Bitcoin.Primitives.ChainedHeaderBlock.html">ChainedHeaderBlock</a>&gt;</td>
         <td><span class="parametername">observer</span></td>
         <td><p>Observer to be subscribed to receive signaler's messages.</p>
 </td>
@@ -364,7 +364,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals_SubscribeForTransactions_IObserver_NBitcoin_Transaction__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals.SubscribeForTransactions(IObserver%7BNBitcoin.Transaction%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L129">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L130">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Signals_Signals_SubscribeForTransactions_" data-uid="Stratis.Bitcoin.Signals.Signals.SubscribeForTransactions*"></a>
   <h4 id="Stratis_Bitcoin_Signals_Signals_SubscribeForTransactions_IObserver_NBitcoin_Transaction__" data-uid="Stratis.Bitcoin.Signals.Signals.SubscribeForTransactions(IObserver{NBitcoin.Transaction})">SubscribeForTransactions(IObserver&lt;Transaction&gt;)</h4>
@@ -424,7 +424,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Signals_Signals.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Signals.Signals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L53" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Signals/Signals.cs/#L54" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

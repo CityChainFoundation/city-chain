@@ -79,52 +79,52 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html">ConsensusRule</a></div>
-    <div class="level2"><span class="xref">HeaderTimeChecksPosRule</span></div>
+    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html">ConsensusRuleBase</a></div>
+    <div class="level2"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.SyncConsensusRule.html">SyncConsensusRule</a></div>
+    <div class="level3"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.HeaderValidationConsensusRule.html">HeaderValidationConsensusRule</a></div>
+    <div class="level4"><span class="xref">HeaderTimeChecksPosRule</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a></div>
+    <div><a class="xref" href="NBitcoin.Rules.IHeaderValidationConsensusRule.html">IHeaderValidationConsensusRule</a></div>
+    <div><a class="xref" href="NBitcoin.Rules.IConsensusRuleBase.html">IConsensusRuleBase</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Logger">ConsensusRule.Logger</a>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_Logger">ConsensusRuleBase.Logger</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Parent">ConsensusRule.Parent</a>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_Parent">ConsensusRuleBase.Parent</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Initialize">ConsensusRule.Initialize()</a>
-    </div>
-    <div>
-      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_">ConsensusRule.Run(RuleContext)</a>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_Initialize">ConsensusRuleBase.Initialize()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.html">Stratis.Bitcoin.Features.Consensus.Rules.CommonRules</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Consensus.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_HeaderTimeChecksPosRule_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HeaderTimeChecksPosRule : ConsensusRule, IConsensusRule</code></pre>
+    <pre><code class="lang-csharp hljs">public class HeaderTimeChecksPosRule : HeaderValidationConsensusRule, IHeaderValidationConsensusRule, IConsensusRuleBase</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_HeaderTimeChecksPosRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksPosRule.RunAsync(Stratis.Bitcoin.Consensus.Rules.RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_HeaderTimeChecksPosRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksPosRule.Run(Stratis.Bitcoin.Consensus.Rules.RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/HeaderTimeChecksPosRule.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/HeaderTimeChecksPosRule.cs/#L13">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_HeaderTimeChecksPosRule_RunAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksPosRule.RunAsync*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_HeaderTimeChecksPosRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksPosRule.RunAsync(Stratis.Bitcoin.Consensus.Rules.RuleContext)">RunAsync(RuleContext)</h4>
-  <div class="markdown level1 summary"><p>Execute the logic in the current rule in an async approach.
+  <a id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_HeaderTimeChecksPosRule_Run_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksPosRule.Run*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_HeaderTimeChecksPosRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksPosRule.Run(Stratis.Bitcoin.Consensus.Rules.RuleContext)">Run(RuleContext)</h4>
+  <div class="markdown level1 summary"><p>Execute the logic in the current rule.
 If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusErrorException.html">ConsensusErrorException</a> will be thrown.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task RunAsync(RuleContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Run(RuleContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,27 +144,14 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Cons
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>The execution task.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_">ConsensusRule.RunAsync(RuleContext)</a></div>
+  <div><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.SyncConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_SyncConsensusRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_">SyncConsensusRule.Run(RuleContext)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a>
+      <a class="xref" href="NBitcoin.Rules.IHeaderValidationConsensusRule.html">IHeaderValidationConsensusRule</a>
+  </div>
+  <div>
+      <a class="xref" href="NBitcoin.Rules.IConsensusRuleBase.html">IConsensusRuleBase</a>
   </div>
 </article>
           </div>
@@ -177,7 +164,7 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Cons
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_HeaderTimeChecksPosRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksPosRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/HeaderTimeChecksPosRule.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/HeaderTimeChecksPosRule.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

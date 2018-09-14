@@ -82,45 +82,45 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IRuleRegistration</code></pre>
   </div>
+  <h5 id="Stratis_Bitcoin_Consensus_Rules_IRuleRegistration_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>It is important to note that there is high importance to the order the rules are registered
+with the engine, this is important for rules with dependencies on other rules.
+Rules are executed in the same order they are registered with the engine.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Rules_IRuleRegistration_GetRules.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Rules.IRuleRegistration.GetRules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Rules_IRuleRegistration_RegisterRules_NBitcoin_IConsensus_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Rules.IRuleRegistration.RegisterRules(NBitcoin.IConsensus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/IRuleRegistration.cs/#L20">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/IRuleRegistration.cs/#L17">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Consensus_Rules_IRuleRegistration_GetRules_" data-uid="Stratis.Bitcoin.Consensus.Rules.IRuleRegistration.GetRules*"></a>
-  <h4 id="Stratis_Bitcoin_Consensus_Rules_IRuleRegistration_GetRules" data-uid="Stratis.Bitcoin.Consensus.Rules.IRuleRegistration.GetRules">GetRules()</h4>
-  <div class="markdown level1 summary"><p>The rules that will be registered with the rules engine.</p>
-</div>
+  <a id="Stratis_Bitcoin_Consensus_Rules_IRuleRegistration_RegisterRules_" data-uid="Stratis.Bitcoin.Consensus.Rules.IRuleRegistration.RegisterRules*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_Rules_IRuleRegistration_RegisterRules_NBitcoin_IConsensus_" data-uid="Stratis.Bitcoin.Consensus.Rules.IRuleRegistration.RegisterRules(NBitcoin.IConsensus)">RegisterRules(IConsensus)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ICollection&lt;IConsensusRule&gt; GetRules()</code></pre>
+    <pre><code class="lang-csharp hljs">void RegisterRules(IConsensus consensus)</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a>&gt;</td>
-        <td><p>A list of rules.</p>
-</td>
+        <td><a class="xref" href="NBitcoin.IConsensus.html">IConsensus</a></td>
+        <td><span class="parametername">consensus</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Stratis_Bitcoin_Consensus_Rules_IRuleRegistration_GetRules_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>It is important to note that there is high importance to the order the rules are registered
-with the engine, this is important for rules with dependencies on other rules.
-Rules are executed in the same order they are registered with the engine.</p>
-</div>
 </article>
           </div>
           
@@ -132,7 +132,7 @@ Rules are executed in the same order they are registered with the engine.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Rules_IRuleRegistration.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Rules.IRuleRegistration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/IRuleRegistration.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Rules/IRuleRegistration.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

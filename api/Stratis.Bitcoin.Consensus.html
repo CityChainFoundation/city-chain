@@ -79,6 +79,10 @@
   </h3>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.BlockDownloadedForMissingChainedHeaderException.html">BlockDownloadedForMissingChainedHeaderException</a></h4>
       <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ChainedHeaderTree.html">ChainedHeaderTree</a></h4>
+      <section><p>Tree of chained block headers that are being claimed by the connected peers and the node itself.
+It represents all chains we potentially can sync with.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.CheckpointMismatchException.html">CheckpointMismatchException</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.Checkpoints.html">Checkpoints</a></h4>
@@ -88,7 +92,7 @@ already is a consensus on the network. This allows speeding up IBD, especially o
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConnectHeaderException.html">ConnectHeaderException</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConnectNewHeadersResult.html">ConnectNewHeadersResult</a></h4>
-      <section><p>Represents the result of the <span class="xref">Stratis.Bitcoin.Consensus.ChainedHeaderTree.ConnectNewHeaders(System.Int32,List{NBitcoin.BlockHeader})</span> method.</p>
+      <section><p>Represents the result of the <a class="xref" href="Stratis.Bitcoin.Consensus.ChainedHeaderTree.html#Stratis_Bitcoin_Consensus_ChainedHeaderTree_ConnectNewHeaders_System_Int32_List_NBitcoin_BlockHeader__">ConnectNewHeaders(Int32, List&lt;BlockHeader&gt;)</a> method.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusError.html">ConsensusError</a></h4>
       <section><p>A consensus error that is used to specify different types of reasons a block does not confirm to the consensus rules.</p>
@@ -96,16 +100,37 @@ already is a consensus on the network. This allows speeding up IBD, especially o
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusErrorException.html">ConsensusErrorException</a></h4>
       <section><p>An exception that is used when consensus breaking errors are found.</p>
 </section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusErrors.html">ConsensusErrors</a></h4>
+      <section><p>A class that holds consensus errors.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusException.html">ConsensusException</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusManager.html">ConsensusManager</a></h4>
       <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.html">ConsensusManagerBehavior</a></h4>
+      <section><p>Behavior that takes care of headers protocol. It also keeps the notion of peer's consensus tip.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusPerformanceCounter.html">ConsensusPerformanceCounter</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusPerformanceSnapshot.html">ConsensusPerformanceSnapshot</a></h4>
       <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html">ConsensusRuleEngine</a></h4>
+      <section><p>An engine that enforce the execution and validation of consensus rule.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleException.html">ConsensusRuleException</a></h4>
+      <section><p>An exception that is contains exception coming from the <a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a> execution.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.HeaderInvalidException.html">HeaderInvalidException</a></h4>
+      <section><p>This throws when the header of a previously block that failed
+partial or full validation and was marked as invalid is passed to the node.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.IntegrityValidationFailedException.html">IntegrityValidationFailedException</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.MaxReorgViolationException.html">MaxReorgViolationException</a></h4>
       <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.RewindState.html">RewindState</a></h4>
+      <section><p>A class that is used to store transitions of state of consensus underline storage.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ScriptAddressReader.html">ScriptAddressReader</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ValidationContext.html">ValidationContext</a></h4>
@@ -123,6 +148,9 @@ It represents all chains we potentially can sync with.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusManager.html">IConsensusManager</a></h4>
       <section><p>TODO add a big nice comment.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a></h4>
+      <section><p>An engine that enforce the execution and validation of consensus rule.</p>
 </section>
     <h3 id="delegates">Delegates
   </h3>

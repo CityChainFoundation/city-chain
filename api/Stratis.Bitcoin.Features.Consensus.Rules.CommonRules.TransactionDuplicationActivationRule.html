@@ -79,13 +79,16 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html">ConsensusRule</a></div>
-    <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.UtxoStoreConsensusRule.html">UtxoStoreConsensusRule</a></div>
-    <div class="level3"><span class="xref">TransactionDuplicationActivationRule</span></div>
+    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html">ConsensusRuleBase</a></div>
+    <div class="level2"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.AsyncConsensusRule.html">AsyncConsensusRule</a></div>
+    <div class="level3"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.FullValidationConsensusRule.html">FullValidationConsensusRule</a></div>
+    <div class="level4"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.UtxoStoreConsensusRule.html">UtxoStoreConsensusRule</a></div>
+    <div class="level5"><span class="xref">TransactionDuplicationActivationRule</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a></div>
+    <div><a class="xref" href="NBitcoin.Rules.IFullValidationConsensusRule.html">IFullValidationConsensusRule</a></div>
+    <div><a class="xref" href="NBitcoin.Rules.IConsensusRuleBase.html">IConsensusRuleBase</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -96,20 +99,17 @@
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.UtxoStoreConsensusRule.html#Stratis_Bitcoin_Features_Consensus_Rules_UtxoStoreConsensusRule_Initialize">UtxoStoreConsensusRule.Initialize()</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Logger">ConsensusRule.Logger</a>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_Logger">ConsensusRuleBase.Logger</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Parent">ConsensusRule.Parent</a>
-    </div>
-    <div>
-      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_">ConsensusRule.Run(RuleContext)</a>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_Parent">ConsensusRuleBase.Parent</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.html">Stratis.Bitcoin.Features.Consensus.Rules.CommonRules</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Consensus.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_TransactionDuplicationActivationRule_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TransactionDuplicationActivationRule : UtxoStoreConsensusRule, IConsensusRule</code></pre>
+    <pre><code class="lang-csharp hljs">public class TransactionDuplicationActivationRule : UtxoStoreConsensusRule, IFullValidationConsensusRule, IConsensusRuleBase</code></pre>
   </div>
   <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_TransactionDuplicationActivationRule_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>More info here <a href="https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki">https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki</a></p>
@@ -168,10 +168,13 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Cons
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_">ConsensusRule.RunAsync(RuleContext)</a></div>
+  <div><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.AsyncConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_AsyncConsensusRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_">AsyncConsensusRule.RunAsync(RuleContext)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="NBitcoin.Rules.IConsensusRule.html">IConsensusRule</a>
+      <a class="xref" href="NBitcoin.Rules.IFullValidationConsensusRule.html">IFullValidationConsensusRule</a>
+  </div>
+  <div>
+      <a class="xref" href="NBitcoin.Rules.IConsensusRuleBase.html">IConsensusRuleBase</a>
   </div>
 </article>
           </div>
@@ -184,7 +187,7 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Cons
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_TransactionDuplicationActivationRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.TransactionDuplicationActivationRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/TransactionDuplicationActivationRule.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/CommonRules/TransactionDuplicationActivationRule.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

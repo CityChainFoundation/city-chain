@@ -77,9 +77,6 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.AssumeValidRule.html">AssumeValidRule</a></h4>
-      <section><p>Assume valid will allow to skip validation on blocks that are assumed to be valid.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.BitcoinActivationRule.html">BitcoinActivationRule</a></h4>
       <section><p>Check that a <see cref="!:BitcoinMain"></see> network block has the correct version according to the defined active deployments.</p>
 </section>
@@ -93,7 +90,7 @@
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.BlockSizeRule.html">BlockSizeRule</a></h4>
       <section><p>This rule will validate the block size and weight.</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckDifficultykHybridRule.html">CheckDifficultykHybridRule</a></h4>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckDifficultyHybridRule.html">CheckDifficultyHybridRule</a></h4>
       <section><p>Calculate the difficulty of a POS network for both Pow/POS blocks.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckDifficultyPosRule.html">CheckDifficultyPosRule</a></h4>
@@ -102,9 +99,6 @@ This rule is only activated after the POW epoch is finished according to the val
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckDifficultyPowRule.html">CheckDifficultyPowRule</a></h4>
       <section><p>Calculate the difficulty for a POW network and check that it is correct.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckpointsRule.html">CheckpointsRule</a></h4>
-      <section><p>A rule that verifies checkpoints, this rules depends on per network override classes.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckPosTransactionRule.html">CheckPosTransactionRule</a></h4>
       <section><p>Validate a PoS transaction.</p>
@@ -159,18 +153,18 @@ this rule allows a chain to have BIP34 activated as a deployment rule.</p>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.SaveCoinviewRule.html">SaveCoinviewRule</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.SetActivationDeploymentsRule.html">SetActivationDeploymentsRule</a></h4>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.SetActivationDeploymentsFullValidationRule.html">SetActivationDeploymentsFullValidationRule</a></h4>
+      <section><p>Set the <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html#Stratis_Bitcoin_Consensus_Rules_RuleContext_Flags">Flags</a> property that defines what deployments have been activated.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.SetActivationDeploymentsPartialValidationRule.html">SetActivationDeploymentsPartialValidationRule</a></h4>
       <section><p>Set the <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html#Stratis_Bitcoin_Consensus_Rules_RuleContext_Flags">Flags</a> property that defines what deployments have been activated.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.StratisBigFixPosFutureDriftRule.html">StratisBigFixPosFutureDriftRule</a></h4>
-      <section><p>A rule that will verify the block time drift is according to the PoS consensus rules for the <see cref="!:NBitcoin.Networks.StratisMain"></see> network (and its test networks).
+      <section><p>A rule that will verify the block time drift is according to the PoS consensus rules for the <see cref="!:StratisMain"></see> network (and its test networks).
 New networks must use the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.html">PosFutureDriftRule</a>.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.StratisHeaderVersionRule.html">StratisHeaderVersionRule</a></h4>
       <section><p>Checks if <see cref="!:StratisMain"></see> network block's header has a valid block version.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.TemporarySetChainHeader.html">TemporarySetChainHeader</a></h4>
-      <section><p>This rule is temporary until CM is activated.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.TransactionDuplicationActivationRule.html">TransactionDuplicationActivationRule</a></h4>
       <section><p>Prevent duplicate transactions in the coinbase.</p>

@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PosConsensusRuleEngine
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PosConsensusRuleEngine
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine" class="text-break">Class PosConsensusRuleEngine
+  </h1>
+  <div class="markdown level0 summary"><p>Extension of consensus rules that provide access to a PoS store.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html">ConsensusRuleEngine</a></div>
+    <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html">PowConsensusRuleEngine</a></div>
+    <div class="level3"><span class="xref">PosConsensusRuleEngine</span></div>
+      <div class="level4"><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Consensus.SmartContractPosConsensusRuleEngine.html">SmartContractPosConsensusRuleEngine</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html#Stratis_Bitcoin_Features_Consensus_Rules_PowConsensusRuleEngine_UtxoSet">PowConsensusRuleEngine.UtxoSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html#Stratis_Bitcoin_Features_Consensus_Rules_PowConsensusRuleEngine_GetBlockHashAsync">PowConsensusRuleEngine.GetBlockHashAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html#Stratis_Bitcoin_Features_Consensus_Rules_PowConsensusRuleEngine_RewindAsync">PowConsensusRuleEngine.RewindAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html#Stratis_Bitcoin_Features_Consensus_Rules_PowConsensusRuleEngine_Dispose">PowConsensusRuleEngine.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_logger">ConsensusRuleEngine.logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Network">ConsensusRuleEngine.Network</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_DateTimeProvider">ConsensusRuleEngine.DateTimeProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Chain">ConsensusRuleEngine.Chain</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_NodeDeployments">ConsensusRuleEngine.NodeDeployments</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ConsensusParams">ConsensusRuleEngine.ConsensusParams</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ConsensusSettings">ConsensusRuleEngine.ConsensusSettings</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Checkpoints">ConsensusRuleEngine.Checkpoints</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ChainState">ConsensusRuleEngine.ChainState</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_PerformanceCounter">ConsensusRuleEngine.PerformanceCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Register">ConsensusRuleEngine.Register()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_SetErrorHandler_Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_">ConsensusRuleEngine.SetErrorHandler(ConsensusRuleBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_HeaderValidation_NBitcoin_ChainedHeader_">ConsensusRuleEngine.HeaderValidation(ChainedHeader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_IntegrityValidation_NBitcoin_ChainedHeader_NBitcoin_Block_">ConsensusRuleEngine.IntegrityValidation(ChainedHeader, Block)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_FullValidationAsync_NBitcoin_ChainedHeader_NBitcoin_Block_">ConsensusRuleEngine.FullValidationAsync(ChainedHeader, Block)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_PartialValidationAsync_NBitcoin_ChainedHeader_NBitcoin_Block_">ConsensusRuleEngine.PartialValidationAsync(ChainedHeader, Block)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_GetRule__1">ConsensusRuleEngine.GetRule&lt;T&gt;()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.html">Stratis.Bitcoin.Features.Consensus.Rules</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Consensus.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PosConsensusRuleEngine : PowConsensusRuleEngine, IConsensusRuleEngine, IDisposable</code></pre>
+  </div>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>A Proof-Of-Stake blockchain as implemented in this code base represents a hybrid POS/POW consensus model.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine__ctor_NBitcoin_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Configuration_Settings_ConsensusSettings_Stratis_Bitcoin_Consensus_ICheckpoints_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_Stratis_Bitcoin_Features_Consensus_IStakeChain_Stratis_Bitcoin_Features_Consensus_Interfaces_IStakeValidator_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Base_IInvalidBlockHashStore_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.%23ctor(NBitcoin.Network%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Base.Deployments.NodeDeployments%2CStratis.Bitcoin.Configuration.Settings.ConsensusSettings%2CStratis.Bitcoin.Consensus.ICheckpoints%2CStratis.Bitcoin.Features.Consensus.CoinViews.ICoinView%2CStratis.Bitcoin.Features.Consensus.IStakeChain%2CStratis.Bitcoin.Features.Consensus.Interfaces.IStakeValidator%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Base.IInvalidBlockHashStore)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/PosConsensusRuleEngine.cs/#L32">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine__ctor_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine__ctor_NBitcoin_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Configuration_Settings_ConsensusSettings_Stratis_Bitcoin_Consensus_ICheckpoints_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_Stratis_Bitcoin_Features_Consensus_IStakeChain_Stratis_Bitcoin_Features_Consensus_Interfaces_IStakeValidator_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Base_IInvalidBlockHashStore_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.#ctor(NBitcoin.Network,ILoggerFactory,Stratis.Bitcoin.Utilities.IDateTimeProvider,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Base.Deployments.NodeDeployments,Stratis.Bitcoin.Configuration.Settings.ConsensusSettings,Stratis.Bitcoin.Consensus.ICheckpoints,Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView,Stratis.Bitcoin.Features.Consensus.IStakeChain,Stratis.Bitcoin.Features.Consensus.Interfaces.IStakeValidator,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Base.IInvalidBlockHashStore)">PosConsensusRuleEngine(Network, ILoggerFactory, IDateTimeProvider, ConcurrentChain, NodeDeployments, ConsensusSettings, ICheckpoints, ICoinView, IStakeChain, IStakeValidator, IChainState, IInvalidBlockHashStore)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PosConsensusRuleEngine(Network network, ILoggerFactory loggerFactory, IDateTimeProvider dateTimeProvider, ConcurrentChain chain, NodeDeployments nodeDeployments, ConsensusSettings consensusSettings, ICheckpoints checkpoints, ICoinView utxoSet, IStakeChain stakeChain, IStakeValidator stakeValidator, IChainState chainState, IInvalidBlockHashStore invalidBlockHashStore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.Deployments.NodeDeployments.html">NodeDeployments</a></td>
+        <td><span class="parametername">nodeDeployments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.Settings.ConsensusSettings.html">ConsensusSettings</a></td>
+        <td><span class="parametername">consensusSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ICheckpoints.html">ICheckpoints</a></td>
+        <td><span class="parametername">checkpoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a></td>
+        <td><span class="parametername">utxoSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.IStakeChain.html">IStakeChain</a></td>
+        <td><span class="parametername">stakeChain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Interfaces.IStakeValidator.html">IStakeValidator</a></td>
+        <td><span class="parametername">stakeValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.IChainState.html">IChainState</a></td>
+        <td><span class="parametername">chainState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.IInvalidBlockHashStore.html">IInvalidBlockHashStore</a></td>
+        <td><span class="parametername">invalidBlockHashStore</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_StakeChain.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.StakeChain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/PosConsensusRuleEngine.cs/#L24">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_StakeChain_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.StakeChain*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_StakeChain" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.StakeChain">StakeChain</h4>
+  <div class="markdown level1 summary"><p>Database of stake related data for the current blockchain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStakeChain StakeChain { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.IStakeChain.html">IStakeChain</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_StakeValidator.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.StakeValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/PosConsensusRuleEngine.cs/#L27">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_StakeValidator_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.StakeValidator*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_StakeValidator" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.StakeValidator">StakeValidator</h4>
+  <div class="markdown level1 summary"><p>Provides functionality for checking validity of PoS blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStakeValidator StakeValidator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Interfaces.IStakeValidator.html">IStakeValidator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_CreateRuleContext_Stratis_Bitcoin_Consensus_ValidationContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.CreateRuleContext(Stratis.Bitcoin.Consensus.ValidationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/PosConsensusRuleEngine.cs/#L42">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_CreateRuleContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.CreateRuleContext*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_CreateRuleContext_Stratis_Bitcoin_Consensus_ValidationContext_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.CreateRuleContext(Stratis.Bitcoin.Consensus.ValidationContext)">CreateRuleContext(ValidationContext)</h4>
+  <div class="markdown level1 summary"><p>Create an instance of the <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html">RuleContext</a> to be used by consensus validation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override RuleContext CreateRuleContext(ValidationContext validationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ValidationContext.html">ValidationContext</a></td>
+        <td><span class="parametername">validationContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html">RuleContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html#Stratis_Bitcoin_Features_Consensus_Rules_PowConsensusRuleEngine_CreateRuleContext_Stratis_Bitcoin_Consensus_ValidationContext_">PowConsensusRuleEngine.CreateRuleContext(ValidationContext)</a></div>
+  <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_CreateRuleContext_Stratis_Bitcoin_Consensus_ValidationContext__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Each network type can specify it's own <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html">RuleContext</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/PosConsensusRuleEngine.cs/#L48">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_Initialize_" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.Initialize*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine_Initialize" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Initialize the rules engine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task Initialize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html#Stratis_Bitcoin_Features_Consensus_Rules_PowConsensusRuleEngine_Initialize">PowConsensusRuleEngine.Initialize()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_Rules_PosConsensusRuleEngine.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/Rules/PosConsensusRuleEngine.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

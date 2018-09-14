@@ -125,7 +125,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransferResult_Success.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransferResult.Success%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/TransferResult.cs/#L19">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/TransferResult.cs/#L14">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransferResult_Success_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.Success*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_TransferResult_Success" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.Success">Success</h4>
@@ -151,37 +151,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransferResult_ThrownException.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransferResult.ThrownException%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/TransferResult.cs/#L16">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_TransferResult_ThrownException_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.ThrownException*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_TransferResult_ThrownException" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.ThrownException">ThrownException</h4>
-  <div class="markdown level1 summary"><p>If there was an error during execution of the selected method it will be stored here.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Exception ThrownException { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Exception</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -189,11 +158,11 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransferResult_Empty.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransferResult.Empty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/TransferResult.cs/#L29">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/TransferResult.cs/#L24">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransferResult_Empty_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.Empty*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_TransferResult_Empty" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.Empty">Empty()</h4>
-  <div class="markdown level1 summary"><p>Constructs a an empty result i.e. a transfer from a contract was not defined/executed.</p>
+  <div class="markdown level1 summary"><p>Constructs a result when the transfer is a funds transfer only and no return value is expected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -217,38 +186,20 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransferResult_Failed_Exception_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransferResult.Failed(Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransferResult_Failed.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransferResult.Failed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/TransferResult.cs/#L38">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/TransferResult.cs/#L32">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransferResult_Failed_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.Failed*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_TransferResult_Failed_Exception_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.Failed(Exception)">Failed(Exception)</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_TransferResult_Failed" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.Failed">Failed()</h4>
   <div class="markdown level1 summary"><p>Constructs a result when a transfer from a contract failed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TransferResult Failed(Exception thrownException)</code></pre>
+    <pre><code class="lang-csharp hljs">public static TransferResult Failed()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Exception</span></td>
-        <td><span class="parametername">thrownException</span></td>
-        <td><p>The exception that was thrown by the executor.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -269,11 +220,11 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_TransferResult_Transferred_System_Object_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.TransferResult.Transferred(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/TransferResult.cs/#L51">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/TransferResult.cs/#L41">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_TransferResult_Transferred_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.Transferred*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_TransferResult_Transferred_System_Object_" data-uid="Stratis.SmartContracts.Executor.Reflection.TransferResult.Transferred(System.Object)">Transferred(Object)</h4>
-  <div class="markdown level1 summary"><p>Constructs a result when a transfer from a contract succeeded.</p>
+  <div class="markdown level1 summary"><p>Constructs a result when a transfer from a contract succeeded and a return value is expected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

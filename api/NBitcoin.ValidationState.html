@@ -93,16 +93,9 @@
     <thead>
     <tbody>
       <tr>
-        <td id="NBitcoin_ValidationState_AssumedValid">AssumedValid</td>
-        <td><p>Blocks represented by headers with this state are assumed to be valid and only minimal validation is required for them when they are downloaded.
-This state is used for blocks before the last checkpoint or for blocks that are on the chain of assume valid block.
-Once a block is fully validated this state will change to <a class="xref" href="NBitcoin.ValidationState.html#NBitcoin_ValidationState_PartiallyValidated">PartiallyValidated</a>.</p>
-</td>
-      </tr>
-      <tr>
         <td id="NBitcoin_ValidationState_FullyValidated">FullyValidated</td>
         <td><p>Validated using all the rules.
-Some rules validation may be skipped for blocks previously marked as <a class="xref" href="NBitcoin.ValidationState.html#NBitcoin_ValidationState_AssumedValid">AssumedValid</a>.</p>
+Some validation rules may be skipped for blocks previously marked as assumed valid.</p>
 </td>
       </tr>
       <tr>
@@ -113,12 +106,7 @@ Some rules validation may be skipped for blocks previously marked as <a class="x
       <tr>
         <td id="NBitcoin_ValidationState_PartiallyValidated">PartiallyValidated</td>
         <td><p>Validated using all rules that don't require change of state.
-Some rules validation may be skipped for blocks previously marked as <a class="xref" href="NBitcoin.ValidationState.html#NBitcoin_ValidationState_AssumedValid">AssumedValid</a>.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="NBitcoin_ValidationState_Unknown">Unknown</td>
-        <td><p>No validation was performed.</p>
+Some validation rules may be skipped for blocks previously marked as assumed valid.</p>
 </td>
       </tr>
     </tbody>

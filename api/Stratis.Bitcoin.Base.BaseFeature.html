@@ -92,7 +92,6 @@ The base node services for a node are:
     <h5>Implements</h5>
     <div><a class="xref" href="Stratis.Bitcoin.Builder.Feature.IFullNodeFeature.html">IFullNodeFeature</a></div>
     <div><span class="xref">IDisposable</span></div>
-    <div><a class="xref" href="Stratis.Bitcoin.Interfaces.INodeStats.html">INodeStats</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -104,25 +103,24 @@ The base node services for a node are:
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
   <h5 id="Stratis_Bitcoin_Base_BaseFeature_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class BaseFeature : FullNodeFeature, IFullNodeFeature, IDisposable, INodeStats</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class BaseFeature : FullNodeFeature, IFullNodeFeature, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_BaseFeature__ctor_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_INodeLifetime_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Base_IChainRepository_Stratis_Bitcoin_Base_IFinalizedBlockHeight_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Utilities_DBreezeSerializer_ILoggerFactory_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_Stratis_Bitcoin_Connection_IPeerBanning_Stratis_Bitcoin_P2P_IPeerAddressManager_Stratis_Bitcoin_Base_BestChainSelector_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.BaseFeature.%23ctor(Stratis.Bitcoin.Configuration.NodeSettings%2CStratis.Bitcoin.Configuration.DataFolder%2CStratis.Bitcoin.Utilities.INodeLifetime%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Connection.IConnectionManager%2CStratis.Bitcoin.Base.IChainRepository%2CStratis.Bitcoin.Base.IFinalizedBlockHeight%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CStratis.Bitcoin.Base.ITimeSyncBehaviorState%2CStratis.Bitcoin.Utilities.DBreezeSerializer%2CILoggerFactory%2CStratis.Bitcoin.Interfaces.IInitialBlockDownloadState%2CStratis.Bitcoin.Connection.IPeerBanning%2CStratis.Bitcoin.P2P.IPeerAddressManager%2CStratis.Bitcoin.Base.BestChainSelector)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_BaseFeature__ctor_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_INodeLifetime_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Base_IChainRepository_Stratis_Bitcoin_Base_IFinalizedBlockInfo_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Utilities_DBreezeSerializer_ILoggerFactory_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_Stratis_Bitcoin_Connection_IPeerBanning_Stratis_Bitcoin_P2P_IPeerAddressManager_Stratis_Bitcoin_Consensus_IConsensusManager_Stratis_Bitcoin_Consensus_IConsensusRuleEngine_Stratis_Bitcoin_Consensus_Validators_IPartialValidator_Stratis_Bitcoin_BlockPulling_IBlockPuller_Stratis_Bitcoin_Interfaces_IBlockStore_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.BaseFeature.%23ctor(Stratis.Bitcoin.Configuration.NodeSettings%2CStratis.Bitcoin.Configuration.DataFolder%2CStratis.Bitcoin.Utilities.INodeLifetime%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Connection.IConnectionManager%2CStratis.Bitcoin.Base.IChainRepository%2CStratis.Bitcoin.Base.IFinalizedBlockInfo%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CStratis.Bitcoin.Base.ITimeSyncBehaviorState%2CStratis.Bitcoin.Utilities.DBreezeSerializer%2CILoggerFactory%2CStratis.Bitcoin.Interfaces.IInitialBlockDownloadState%2CStratis.Bitcoin.Connection.IPeerBanning%2CStratis.Bitcoin.P2P.IPeerAddressManager%2CStratis.Bitcoin.Consensus.IConsensusManager%2CStratis.Bitcoin.Consensus.IConsensusRuleEngine%2CStratis.Bitcoin.Consensus.Validators.IPartialValidator%2CStratis.Bitcoin.BlockPulling.IBlockPuller%2CStratis.Bitcoin.Interfaces.IBlockStore%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L129">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L119">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Base_BaseFeature__ctor_" data-uid="Stratis.Bitcoin.Base.BaseFeature.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Base_BaseFeature__ctor_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_INodeLifetime_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Base_IChainRepository_Stratis_Bitcoin_Base_IFinalizedBlockHeight_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Utilities_DBreezeSerializer_ILoggerFactory_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_Stratis_Bitcoin_Connection_IPeerBanning_Stratis_Bitcoin_P2P_IPeerAddressManager_Stratis_Bitcoin_Base_BestChainSelector_" data-uid="Stratis.Bitcoin.Base.BaseFeature.#ctor(Stratis.Bitcoin.Configuration.NodeSettings,Stratis.Bitcoin.Configuration.DataFolder,Stratis.Bitcoin.Utilities.INodeLifetime,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Connection.IConnectionManager,Stratis.Bitcoin.Base.IChainRepository,Stratis.Bitcoin.Base.IFinalizedBlockHeight,Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,Stratis.Bitcoin.Base.ITimeSyncBehaviorState,Stratis.Bitcoin.Utilities.DBreezeSerializer,ILoggerFactory,Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState,Stratis.Bitcoin.Connection.IPeerBanning,Stratis.Bitcoin.P2P.IPeerAddressManager,Stratis.Bitcoin.Base.BestChainSelector)">BaseFeature(NodeSettings, DataFolder, INodeLifetime, ConcurrentChain, IChainState, IConnectionManager, IChainRepository, IFinalizedBlockHeight, IDateTimeProvider, IAsyncLoopFactory, ITimeSyncBehaviorState, DBreezeSerializer, ILoggerFactory, IInitialBlockDownloadState, IPeerBanning, IPeerAddressManager, BestChainSelector)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the object.</p>
-</div>
+  <h4 id="Stratis_Bitcoin_Base_BaseFeature__ctor_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_INodeLifetime_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Base_IChainRepository_Stratis_Bitcoin_Base_IFinalizedBlockInfo_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Utilities_DBreezeSerializer_ILoggerFactory_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_Stratis_Bitcoin_Connection_IPeerBanning_Stratis_Bitcoin_P2P_IPeerAddressManager_Stratis_Bitcoin_Consensus_IConsensusManager_Stratis_Bitcoin_Consensus_IConsensusRuleEngine_Stratis_Bitcoin_Consensus_Validators_IPartialValidator_Stratis_Bitcoin_BlockPulling_IBlockPuller_Stratis_Bitcoin_Interfaces_IBlockStore_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Base.BaseFeature.#ctor(Stratis.Bitcoin.Configuration.NodeSettings,Stratis.Bitcoin.Configuration.DataFolder,Stratis.Bitcoin.Utilities.INodeLifetime,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Connection.IConnectionManager,Stratis.Bitcoin.Base.IChainRepository,Stratis.Bitcoin.Base.IFinalizedBlockInfo,Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,Stratis.Bitcoin.Base.ITimeSyncBehaviorState,Stratis.Bitcoin.Utilities.DBreezeSerializer,ILoggerFactory,Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState,Stratis.Bitcoin.Connection.IPeerBanning,Stratis.Bitcoin.P2P.IPeerAddressManager,Stratis.Bitcoin.Consensus.IConsensusManager,Stratis.Bitcoin.Consensus.IConsensusRuleEngine,Stratis.Bitcoin.Consensus.Validators.IPartialValidator,Stratis.Bitcoin.BlockPulling.IBlockPuller,Stratis.Bitcoin.Interfaces.IBlockStore,NBitcoin.Network)">BaseFeature(NodeSettings, DataFolder, INodeLifetime, ConcurrentChain, IChainState, IConnectionManager, IChainRepository, IFinalizedBlockInfo, IDateTimeProvider, IAsyncLoopFactory, ITimeSyncBehaviorState, DBreezeSerializer, ILoggerFactory, IInitialBlockDownloadState, IPeerBanning, IPeerAddressManager, IConsensusManager, IConsensusRuleEngine, IPartialValidator, IBlockPuller, IBlockStore, Network)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BaseFeature(NodeSettings nodeSettings, DataFolder dataFolder, INodeLifetime nodeLifetime, ConcurrentChain chain, IChainState chainState, IConnectionManager connectionManager, IChainRepository chainRepository, IFinalizedBlockHeight finalizedBlockHeight, IDateTimeProvider dateTimeProvider, IAsyncLoopFactory asyncLoopFactory, ITimeSyncBehaviorState timeSyncBehaviorState, DBreezeSerializer dbreezeSerializer, ILoggerFactory loggerFactory, IInitialBlockDownloadState initialBlockDownloadState, IPeerBanning peerBanning, IPeerAddressManager peerAddressManager, BestChainSelector bestChainSelector)</code></pre>
+    <pre><code class="lang-csharp hljs">public BaseFeature(NodeSettings nodeSettings, DataFolder dataFolder, INodeLifetime nodeLifetime, ConcurrentChain chain, IChainState chainState, IConnectionManager connectionManager, IChainRepository chainRepository, IFinalizedBlockInfo finalizedBlockInfo, IDateTimeProvider dateTimeProvider, IAsyncLoopFactory asyncLoopFactory, ITimeSyncBehaviorState timeSyncBehaviorState, DBreezeSerializer dbreezeSerializer, ILoggerFactory loggerFactory, IInitialBlockDownloadState initialBlockDownloadState, IPeerBanning peerBanning, IPeerAddressManager peerAddressManager, IConsensusManager consensusManager, IConsensusRuleEngine consensusRules, IPartialValidator partialValidator, IBlockPuller blockPuller, IBlockStore blockStore, Network network)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,86 +135,72 @@ The base node services for a node are:
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
         <td><span class="parametername">nodeSettings</span></td>
-        <td><p>User defined node settings.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Configuration.DataFolder.html">DataFolder</a></td>
         <td><span class="parametername">dataFolder</span></td>
-        <td><p>Locations of important folders and files on disk.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeLifetime.html">INodeLifetime</a></td>
         <td><span class="parametername">nodeLifetime</span></td>
-        <td><p>Global application life cycle control - triggers when application shuts down.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
         <td><span class="parametername">chain</span></td>
-        <td><p>Thread safe access to the best chain of block headers (that the node is aware of) from genesis.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Base.IChainState.html">IChainState</a></td>
         <td><span class="parametername">chainState</span></td>
-        <td><p>Information about node's chain.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Connection.IConnectionManager.html">IConnectionManager</a></td>
         <td><span class="parametername">connectionManager</span></td>
-        <td><p>Manager of node's network connections.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Base.IChainRepository.html">IChainRepository</a></td>
         <td><span class="parametername">chainRepository</span></td>
-        <td><p>Access to the database of blocks.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Base.IFinalizedBlockHeight.html">IFinalizedBlockHeight</a></td>
-        <td><span class="parametername">finalizedBlockHeight</span></td>
-        <td><p><inheritdoc cref="T:Stratis.Bitcoin.Base.IFinalizedBlockHeight"></inheritdoc></p>
-</td>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.IFinalizedBlockInfo.html">IFinalizedBlockInfo</a></td>
+        <td><span class="parametername">finalizedBlockInfo</span></td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
         <td><span class="parametername">dateTimeProvider</span></td>
-        <td><p>Provider of time functions.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoopFactory.html">IAsyncLoopFactory</a></td>
         <td><span class="parametername">asyncLoopFactory</span></td>
-        <td><p>Factory for creating background async loop tasks.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Base.ITimeSyncBehaviorState.html">ITimeSyncBehaviorState</a></td>
         <td><span class="parametername">timeSyncBehaviorState</span></td>
-        <td><p>State of time synchronization feature that stores collected data samples.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Utilities.DBreezeSerializer.html">DBreezeSerializer</a></td>
         <td><span class="parametername">dbreezeSerializer</span></td>
-        <td><p>Provider of binary (de)serialization for data stored in the database.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">ILoggerFactory</span></td>
         <td><span class="parametername">loggerFactory</span></td>
-        <td><p>Factory to be used to create logger for the node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState.html">IInitialBlockDownloadState</a></td>
         <td><span class="parametername">initialBlockDownloadState</span></td>
-        <td><p>Provider of IBD state.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Connection.IPeerBanning.html">IPeerBanning</a></td>
@@ -229,10 +213,34 @@ The base node services for a node are:
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Base.BestChainSelector.html">BestChainSelector</a></td>
-        <td><span class="parametername">bestChainSelector</span></td>
-        <td><p>Selects the best available chain based on tips provided by the peers and switches to it.</p>
-</td>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusManager.html">IConsensusManager</a></td>
+        <td><span class="parametername">consensusManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a></td>
+        <td><span class="parametername">consensusRules</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.Validators.IPartialValidator.html">IPartialValidator</a></td>
+        <td><span class="parametername">partialValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.BlockPulling.IBlockPuller.html">IBlockPuller</a></td>
+        <td><span class="parametername">blockPuller</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IBlockStore.html">IBlockStore</a></td>
+        <td><span class="parametername">blockStore</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -240,82 +248,10 @@ The base node services for a node are:
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_BaseFeature_AddNodeStats_StringBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.BaseFeature.AddNodeStats(StringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L173">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Base_BaseFeature_AddNodeStats_" data-uid="Stratis.Bitcoin.Base.BaseFeature.AddNodeStats*"></a>
-  <h4 id="Stratis_Bitcoin_Base_BaseFeature_AddNodeStats_StringBuilder_" data-uid="Stratis.Bitcoin.Base.BaseFeature.AddNodeStats(StringBuilder)">AddNodeStats(StringBuilder)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddNodeStats(StringBuilder benchLogs)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">StringBuilder</span></td>
-        <td><span class="parametername">benchLogs</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_BaseFeature_BuildDefaultConfigurationFile_StringBuilder_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.BaseFeature.BuildDefaultConfigurationFile(StringBuilder%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L225">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Base_BaseFeature_BuildDefaultConfigurationFile_" data-uid="Stratis.Bitcoin.Base.BaseFeature.BuildDefaultConfigurationFile*"></a>
-  <h4 id="Stratis_Bitcoin_Base_BaseFeature_BuildDefaultConfigurationFile_StringBuilder_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Base.BaseFeature.BuildDefaultConfigurationFile(StringBuilder,NBitcoin.Network)">BuildDefaultConfigurationFile(StringBuilder, Network)</h4>
-  <div class="markdown level1 summary"><p>Get the default configuration.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void BuildDefaultConfigurationFile(StringBuilder builder, Network network)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">StringBuilder</span></td>
-        <td><span class="parametername">builder</span></td>
-        <td><p>The string builder to add the settings to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
-        <td><span class="parametername">network</span></td>
-        <td><p>The network to base the defaults off.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_BaseFeature_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.BaseFeature.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L286">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L271">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Base_BaseFeature_Dispose_" data-uid="Stratis.Bitcoin.Base.BaseFeature.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Base_BaseFeature_Dispose" data-uid="Stratis.Bitcoin.Base.BaseFeature.Dispose">Dispose()</h4>
@@ -332,7 +268,7 @@ The base node services for a node are:
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_BaseFeature_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.BaseFeature.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L181">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L172">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Base_BaseFeature_Initialize_" data-uid="Stratis.Bitcoin.Base.BaseFeature.Initialize*"></a>
   <h4 id="Stratis_Bitcoin_Base_BaseFeature_Initialize" data-uid="Stratis.Bitcoin.Base.BaseFeature.Initialize">Initialize()</h4>
@@ -345,49 +281,12 @@ The base node services for a node are:
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_Initialize">FullNodeFeature.Initialize()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_BaseFeature_PrintHelp_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.BaseFeature.PrintHelp(NBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L215">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Base_BaseFeature_PrintHelp_" data-uid="Stratis.Bitcoin.Base.BaseFeature.PrintHelp*"></a>
-  <h4 id="Stratis_Bitcoin_Base_BaseFeature_PrintHelp_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Base.BaseFeature.PrintHelp(NBitcoin.Network)">PrintHelp(Network)</h4>
-  <div class="markdown level1 summary"><p>Prints command-line help.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void PrintHelp(Network network)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
-        <td><span class="parametername">network</span></td>
-        <td><p>The network to extract values from.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Stratis.Bitcoin.Builder.Feature.IFullNodeFeature.html">IFullNodeFeature</a>
   </div>
   <div>
       <span class="xref">IDisposable</span>
-  </div>
-  <div>
-      <a class="xref" href="Stratis.Bitcoin.Interfaces.INodeStats.html">INodeStats</a>
   </div>
 </article>
           </div>
@@ -400,7 +299,7 @@ The base node services for a node are:
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Base_BaseFeature.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Base.BaseFeature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L46" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/BaseFeature.cs/#L49" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
