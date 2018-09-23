@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/City.Chain.Features.SimpleWallet.FullNodeBuilderSimpleWalletExtension.html",
-          "hash": "cLOfmCbdnoun1osxm2ve2w=="
+          "hash": "ziyDimHBgYmvb0oLXXJJvQ=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/City.Chain.Features.SimpleWallet.SimpleWalletFeature.html",
-          "hash": "MSiRKDaqCdBiWjna91kj4g=="
+          "hash": "mm4lMzE7kc5BA+8lvNIc0A=="
         }
       },
       "is_incremental": false,
@@ -19002,13 +19002,13 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
