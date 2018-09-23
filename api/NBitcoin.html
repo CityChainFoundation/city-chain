@@ -314,6 +314,16 @@ Doesn't make much sense for it to be in NBitcoin. Also remove the CoinstakeMinCo
       <h4><a class="xref" href="NBitcoin.ProtocolCapabilities.html">ProtocolCapabilities</a></h4>
       <section><p>A class with a set of flags representing the capabilities of the protocol.</p>
 </section>
+      <h4><a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a></h4>
+      <section><p>
+Extension to an existing <a class="xref" href="NBitcoin.BlockHeader.html">BlockHeader</a> which is used in PoS to prevent attacker from constructing
+a fake chain of headers that has more work than the valid chain and attacking a node.
+</p>
+<p>
+Proven header prevents such an attack by including additional information that can be validated and confirmed whether
+the header is fake or real.
+</p>
+</section>
       <h4><a class="xref" href="NBitcoin.PubKey.html">PubKey</a></h4>
       <section></section>
       <h4><a class="xref" href="NBitcoin.QBitNinjaTransactionRepository.html">QBitNinjaTransactionRepository</a></h4>

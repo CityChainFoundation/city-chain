@@ -96,19 +96,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.%23ctor(NBitcoin.Network%2CStratis.Bitcoin.Configuration.DataFolder%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Utilities_INodeStats_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.%23ctor(NBitcoin.Network%2CStratis.Bitcoin.Configuration.DataFolder%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.Utilities.INodeStats)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L56">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L50">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.#ctor(NBitcoin.Network,Stratis.Bitcoin.Configuration.DataFolder,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory)">DBreezeCoinView(Network, DataFolder, IDateTimeProvider, ILoggerFactory)</h4>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Utilities_INodeStats_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.#ctor(NBitcoin.Network,Stratis.Bitcoin.Configuration.DataFolder,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.Utilities.INodeStats)">DBreezeCoinView(Network, DataFolder, IDateTimeProvider, ILoggerFactory, INodeStats)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DBreezeCoinView(Network network, DataFolder dataFolder, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public DBreezeCoinView(Network network, DataFolder dataFolder, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, INodeStats nodeStats)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,23 +144,28 @@
         <td><p>Factory to be used to create logger for the puller.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeStats.html">INodeStats</a></td>
+        <td><span class="parametername">nodeStats</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_NBitcoin_Network_System_String_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.%23ctor(NBitcoin.Network%2CSystem.String%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_NBitcoin_Network_System_String_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Utilities_INodeStats_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.%23ctor(NBitcoin.Network%2CSystem.String%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.Utilities.INodeStats)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L68">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L62">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_NBitcoin_Network_System_String_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.#ctor(NBitcoin.Network,System.String,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory)">DBreezeCoinView(Network, String, IDateTimeProvider, ILoggerFactory)</h4>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView__ctor_NBitcoin_Network_System_String_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Utilities_INodeStats_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.#ctor(NBitcoin.Network,System.String,Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.Utilities.INodeStats)">DBreezeCoinView(Network, String, IDateTimeProvider, ILoggerFactory, INodeStats)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DBreezeCoinView(Network network, string folder, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public DBreezeCoinView(Network network, string folder, IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, INodeStats nodeStats)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,69 +201,9 @@
         <td><p>Factory to be used to create logger for the puller.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_dateTimeProvider.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.dateTimeProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L47">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_dateTimeProvider" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.dateTimeProvider">dateTimeProvider</h4>
-  <div class="markdown level1 summary"><p>Provider of time functions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly IDateTimeProvider dateTimeProvider</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_PerformanceCounter.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.PerformanceCounter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L41">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_PerformanceCounter_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.PerformanceCounter*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_PerformanceCounter" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.PerformanceCounter">PerformanceCounter</h4>
-  <div class="markdown level1 summary"><p>Performance counter to measure performance of the database insert and query operations.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BackendPerformanceCounter PerformanceCounter { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.BackendPerformanceCounter.html">BackendPerformanceCounter</a></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeStats.html">INodeStats</a></td>
+        <td><span class="parametername">nodeStats</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -270,7 +215,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L421">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L434">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_Dispose_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_Dispose" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.Dispose">Dispose()</h4>
@@ -285,7 +230,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_FetchCoinsAsync_NBitcoin_uint256___CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.FetchCoinsAsync(NBitcoin.uint256%5B%5D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L140">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L135">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_FetchCoinsAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.FetchCoinsAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_FetchCoinsAsync_NBitcoin_uint256___CancellationToken_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.FetchCoinsAsync(NBitcoin.uint256[],CancellationToken)">FetchCoinsAsync(uint256[], CancellationToken)</h4>
@@ -344,7 +289,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_GetStakeAsync_IEnumerable_Stratis_Bitcoin_Features_Consensus_StakeItem__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.GetStakeAsync(IEnumerable%7BStratis.Bitcoin.Features.Consensus.StakeItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L390">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L385">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_GetStakeAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.GetStakeAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_GetStakeAsync_IEnumerable_Stratis_Bitcoin_Features_Consensus_StakeItem__" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.GetStakeAsync(IEnumerable{Stratis.Bitcoin.Features.Consensus.StakeItem})">GetStakeAsync(IEnumerable&lt;StakeItem&gt;)</h4>
@@ -393,7 +338,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_GetTipHashAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.GetTipHashAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L118">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L113">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_GetTipHashAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.GetTipHashAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_GetTipHashAsync_CancellationToken_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.GetTipHashAsync(CancellationToken)">GetTipHashAsync(CancellationToken)</h4>
@@ -442,7 +387,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_InitializeAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.InitializeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L86">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L81">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_InitializeAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.InitializeAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_InitializeAsync" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.InitializeAsync">InitializeAsync()</h4>
@@ -473,7 +418,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_PutStakeAsync_IEnumerable_Stratis_Bitcoin_Features_Consensus_StakeItem__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.PutStakeAsync(IEnumerable%7BStratis.Bitcoin.Features.Consensus.StakeItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L350">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L345">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_PutStakeAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.PutStakeAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_PutStakeAsync_IEnumerable_Stratis_Bitcoin_Features_Consensus_StakeItem__" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.PutStakeAsync(IEnumerable{Stratis.Bitcoin.Features.Consensus.StakeItem})">PutStakeAsync(IEnumerable&lt;StakeItem&gt;)</h4>
@@ -522,7 +467,7 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_Rewind.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.Rewind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L296">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L291">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_Rewind_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.Rewind*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_Rewind" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.Rewind">Rewind()</h4>
@@ -558,7 +503,7 @@ and restoring recently spent outputs as UTXOs.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_List_Stratis_Bitcoin_Utilities_RewindData__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.SaveChangesAsync(IEnumerable%7BStratis.Bitcoin.Utilities.UnspentOutputs%7D%2CIEnumerable%7BNBitcoin.TxOut%5B%5D%7D%2CNBitcoin.uint256%2CNBitcoin.uint256%2CList%7BStratis.Bitcoin.Utilities.RewindData%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L213">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L208">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_SaveChangesAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.SaveChangesAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_List_Stratis_Bitcoin_Utilities_RewindData__" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.SaveChangesAsync(IEnumerable{Stratis.Bitcoin.Utilities.UnspentOutputs},IEnumerable{NBitcoin.TxOut[]},NBitcoin.uint256,NBitcoin.uint256,List{Stratis.Bitcoin.Utilities.RewindData})">SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt;, IEnumerable&lt;TxOut[]&gt;, uint256, uint256, List&lt;RewindData&gt;)</h4>
@@ -654,7 +599,7 @@ and which were not.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/DBreezeCoinView.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

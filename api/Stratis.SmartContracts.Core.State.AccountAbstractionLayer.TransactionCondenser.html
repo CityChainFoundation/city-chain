@@ -92,18 +92,18 @@ The condensing transaction aids this process.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransactionCondenser__ctor_NBitcoin_uint160_ILoggerFactory_IReadOnlyList_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransferInfo__Stratis_SmartContracts_Core_State_IContractState_NBitcoin_Network_Stratis_SmartContracts_Core_ISmartContractTransactionContext_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransactionCondenser.%23ctor(NBitcoin.uint160%2CILoggerFactory%2CIReadOnlyList%7BStratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo%7D%2CStratis.SmartContracts.Core.State.IContractState%2CNBitcoin.Network%2CStratis.SmartContracts.Core.ISmartContractTransactionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransactionCondenser__ctor_NBitcoin_uint160_ILoggerFactory_IReadOnlyList_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransferInfo__Stratis_SmartContracts_Core_State_IStateRepository_NBitcoin_Network_Stratis_SmartContracts_Core_IContractTransactionContext_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransactionCondenser.%23ctor(NBitcoin.uint160%2CILoggerFactory%2CIReadOnlyList%7BStratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo%7D%2CStratis.SmartContracts.Core.State.IStateRepository%2CNBitcoin.Network%2CStratis.SmartContracts.Core.IContractTransactionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/AccountAbstractionLayer/TransactionCondenser.cs/#L55">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransactionCondenser__ctor_" data-uid="Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransactionCondenser.#ctor*"></a>
-  <h4 id="Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransactionCondenser__ctor_NBitcoin_uint160_ILoggerFactory_IReadOnlyList_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransferInfo__Stratis_SmartContracts_Core_State_IContractState_NBitcoin_Network_Stratis_SmartContracts_Core_ISmartContractTransactionContext_" data-uid="Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransactionCondenser.#ctor(NBitcoin.uint160,ILoggerFactory,IReadOnlyList{Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo},Stratis.SmartContracts.Core.State.IContractState,NBitcoin.Network,Stratis.SmartContracts.Core.ISmartContractTransactionContext)">TransactionCondenser(uint160, ILoggerFactory, IReadOnlyList&lt;TransferInfo&gt;, IContractState, Network, ISmartContractTransactionContext)</h4>
+  <h4 id="Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransactionCondenser__ctor_NBitcoin_uint160_ILoggerFactory_IReadOnlyList_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransferInfo__Stratis_SmartContracts_Core_State_IStateRepository_NBitcoin_Network_Stratis_SmartContracts_Core_IContractTransactionContext_" data-uid="Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransactionCondenser.#ctor(NBitcoin.uint160,ILoggerFactory,IReadOnlyList{Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo},Stratis.SmartContracts.Core.State.IStateRepository,NBitcoin.Network,Stratis.SmartContracts.Core.IContractTransactionContext)">TransactionCondenser(uint160, ILoggerFactory, IReadOnlyList&lt;TransferInfo&gt;, IStateRepository, Network, IContractTransactionContext)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TransactionCondenser(uint160 contractAddress, ILoggerFactory loggerFactory, IReadOnlyList&lt;TransferInfo&gt; transfers, IContractState stateRepository, Network network, ISmartContractTransactionContext transactionContext)</code></pre>
+    <pre><code class="lang-csharp hljs">public TransactionCondenser(uint160 contractAddress, ILoggerFactory loggerFactory, IReadOnlyList&lt;TransferInfo&gt; transfers, IStateRepository stateRepository, Network network, IContractTransactionContext transactionContext)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,7 +131,7 @@ The condensing transaction aids this process.</p>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IContractState.html">IContractState</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepository.html">IStateRepository</a></td>
         <td><span class="parametername">stateRepository</span></td>
         <td></td>
       </tr>
@@ -141,7 +141,7 @@ The condensing transaction aids this process.</p>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.ISmartContractTransactionContext.html">ISmartContractTransactionContext</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.IContractTransactionContext.html">IContractTransactionContext</a></td>
         <td><span class="parametername">transactionContext</span></td>
         <td></td>
       </tr>

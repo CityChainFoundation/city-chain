@@ -95,18 +95,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_StateFactory__ctor_Network_Stratis_SmartContracts_Executor_Reflection_Serialization_IContractPrimitiveSerializer_Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_Stratis_SmartContracts_Executor_Reflection_IAddressGenerator_Stratis_SmartContracts_Executor_Reflection_InternalTransactionExecutorFactory_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.StateFactory.%23ctor(Network%2CStratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer%2CStratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine%2CStratis.SmartContracts.Executor.Reflection.IAddressGenerator%2CStratis.SmartContracts.Executor.Reflection.InternalTransactionExecutorFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_StateFactory__ctor_Network_Stratis_SmartContracts_Executor_Reflection_ISmartContractStateFactory_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.StateFactory.%23ctor(Network%2CStratis.SmartContracts.Executor.Reflection.ISmartContractStateFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/StateFactory.cs/#L18">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_StateFactory__ctor_" data-uid="Stratis.SmartContracts.Executor.Reflection.StateFactory.#ctor*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_StateFactory__ctor_Network_Stratis_SmartContracts_Executor_Reflection_Serialization_IContractPrimitiveSerializer_Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_Stratis_SmartContracts_Executor_Reflection_IAddressGenerator_Stratis_SmartContracts_Executor_Reflection_InternalTransactionExecutorFactory_" data-uid="Stratis.SmartContracts.Executor.Reflection.StateFactory.#ctor(Network,Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer,Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine,Stratis.SmartContracts.Executor.Reflection.IAddressGenerator,Stratis.SmartContracts.Executor.Reflection.InternalTransactionExecutorFactory)">StateFactory(Network, IContractPrimitiveSerializer, ISmartContractVirtualMachine, IAddressGenerator, InternalTransactionExecutorFactory)</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_StateFactory__ctor_Network_Stratis_SmartContracts_Executor_Reflection_ISmartContractStateFactory_" data-uid="Stratis.SmartContracts.Executor.Reflection.StateFactory.#ctor(Network,Stratis.SmartContracts.Executor.Reflection.ISmartContractStateFactory)">StateFactory(Network, ISmartContractStateFactory)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateFactory(Network network, IContractPrimitiveSerializer contractPrimitiveSerializer, ISmartContractVirtualMachine vm, IAddressGenerator addressGenerator, InternalTransactionExecutorFactory internalTransactionExecutorFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public StateFactory(Network network, ISmartContractStateFactory smartContractStateFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,23 +124,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer.html">IContractPrimitiveSerializer</a></td>
-        <td><span class="parametername">contractPrimitiveSerializer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.html">ISmartContractVirtualMachine</a></td>
-        <td><span class="parametername">vm</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IAddressGenerator.html">IAddressGenerator</a></td>
-        <td><span class="parametername">addressGenerator</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.InternalTransactionExecutorFactory.html">InternalTransactionExecutorFactory</a></td>
-        <td><span class="parametername">internalTransactionExecutorFactory</span></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ISmartContractStateFactory.html">ISmartContractStateFactory</a></td>
+        <td><span class="parametername">smartContractStateFactory</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -149,18 +134,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_StateFactory_Create_Stratis_SmartContracts_Core_State_IContractStateRoot_IBlock_System_UInt64_uint256_Gas_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.StateFactory.Create(Stratis.SmartContracts.Core.State.IContractStateRoot%2CIBlock%2CSystem.UInt64%2Cuint256%2CGas)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_StateFactory_Create_Stratis_SmartContracts_Core_State_IStateRepository_IBlock_System_UInt64_uint256_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.StateFactory.Create(Stratis.SmartContracts.Core.State.IStateRepository%2CIBlock%2CSystem.UInt64%2Cuint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/StateFactory.cs/#L33">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/StateFactory.cs/#L25">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_StateFactory_Create_" data-uid="Stratis.SmartContracts.Executor.Reflection.StateFactory.Create*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_StateFactory_Create_Stratis_SmartContracts_Core_State_IContractStateRoot_IBlock_System_UInt64_uint256_Gas_" data-uid="Stratis.SmartContracts.Executor.Reflection.StateFactory.Create(Stratis.SmartContracts.Core.State.IContractStateRoot,IBlock,System.UInt64,uint256,Gas)">Create(IContractStateRoot, IBlock, UInt64, uint256, Gas)</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_StateFactory_Create_Stratis_SmartContracts_Core_State_IStateRepository_IBlock_System_UInt64_uint256_" data-uid="Stratis.SmartContracts.Executor.Reflection.StateFactory.Create(Stratis.SmartContracts.Core.State.IStateRepository,IBlock,System.UInt64,uint256)">Create(IStateRepository, IBlock, UInt64, uint256)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IState Create(IContractStateRoot stateRoot, IBlock block, ulong txOutValue, uint256 transactionHash, Gas gasLimit)</code></pre>
+    <pre><code class="lang-csharp hljs">public IState Create(IStateRepository stateRoot, IBlock block, ulong txOutValue, uint256 transactionHash)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,7 +158,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IContractStateRoot.html">IContractStateRoot</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepository.html">IStateRepository</a></td>
         <td><span class="parametername">stateRoot</span></td>
         <td></td>
       </tr>
@@ -190,11 +175,6 @@
       <tr>
         <td><span class="xref">uint256</span></td>
         <td><span class="parametername">transactionHash</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Gas</span></td>
-        <td><span class="parametername">gasLimit</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -229,7 +209,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_StateFactory.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.StateFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/StateFactory.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/StateFactory.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

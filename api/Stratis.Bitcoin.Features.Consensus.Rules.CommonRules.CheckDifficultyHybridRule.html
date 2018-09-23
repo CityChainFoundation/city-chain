@@ -81,12 +81,12 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html">ConsensusRuleBase</a></div>
     <div class="level2"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.AsyncConsensusRule.html">AsyncConsensusRule</a></div>
-    <div class="level3"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.PartialValidationConsensusRule.html">PartialValidationConsensusRule</a></div>
+    <div class="level3"><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.FullValidationConsensusRule.html">FullValidationConsensusRule</a></div>
     <div class="level4"><span class="xref">CheckDifficultyHybridRule</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="NBitcoin.Rules.IPartialValidationConsensusRule.html">IPartialValidationConsensusRule</a></div>
+    <div><a class="xref" href="NBitcoin.Rules.IFullValidationConsensusRule.html">IFullValidationConsensusRule</a></div>
     <div><a class="xref" href="NBitcoin.Rules.IConsensusRuleBase.html">IConsensusRuleBase</a></div>
   </div>
   <div class="inheritedMembers">
@@ -102,7 +102,7 @@
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Consensus.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CheckDifficultyHybridRule_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CheckDifficultyHybridRule : PartialValidationConsensusRule, IPartialValidationConsensusRule, IConsensusRuleBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class CheckDifficultyHybridRule : FullValidationConsensusRule, IFullValidationConsensusRule, IConsensusRuleBase</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -213,7 +213,7 @@ If the validation of the rule fails a <a class="xref" href="Stratis.Bitcoin.Cons
   <div><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.AsyncConsensusRule.html#Stratis_Bitcoin_Consensus_Rules_AsyncConsensusRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_">AsyncConsensusRule.RunAsync(RuleContext)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="NBitcoin.Rules.IPartialValidationConsensusRule.html">IPartialValidationConsensusRule</a>
+      <a class="xref" href="NBitcoin.Rules.IFullValidationConsensusRule.html">IFullValidationConsensusRule</a>
   </div>
   <div>
       <a class="xref" href="NBitcoin.Rules.IConsensusRuleBase.html">IConsensusRuleBase</a>

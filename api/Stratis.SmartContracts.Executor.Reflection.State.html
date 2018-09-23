@@ -107,18 +107,18 @@ calls and transfers.
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State__ctor_Stratis_SmartContracts_Executor_Reflection_Serialization_IContractPrimitiveSerializer_Stratis_SmartContracts_Executor_Reflection_InternalTransactionExecutorFactory_Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_Stratis_SmartContracts_Core_State_IContractStateRoot_IBlock_Network_System_UInt64_uint256_Stratis_SmartContracts_Executor_Reflection_IAddressGenerator_Gas_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.%23ctor(Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer%2CStratis.SmartContracts.Executor.Reflection.InternalTransactionExecutorFactory%2CStratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine%2CStratis.SmartContracts.Core.State.IContractStateRoot%2CIBlock%2CNetwork%2CSystem.UInt64%2Cuint256%2CStratis.SmartContracts.Executor.Reflection.IAddressGenerator%2CGas)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State__ctor_Stratis_SmartContracts_Executor_Reflection_ISmartContractStateFactory_Stratis_SmartContracts_Core_State_IStateRepository_Stratis_SmartContracts_Executor_Reflection_ContractLogging_IContractLogHolder_List_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransferInfo__IBlock_Network_System_UInt64_uint256_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.%23ctor(Stratis.SmartContracts.Executor.Reflection.ISmartContractStateFactory%2CStratis.SmartContracts.Core.State.IStateRepository%2CStratis.SmartContracts.Executor.Reflection.ContractLogging.IContractLogHolder%2CList%7BStratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo%7D%2CIBlock%2CNetwork%2CSystem.UInt64%2Cuint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L55">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_State__ctor_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.#ctor*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State__ctor_Stratis_SmartContracts_Executor_Reflection_Serialization_IContractPrimitiveSerializer_Stratis_SmartContracts_Executor_Reflection_InternalTransactionExecutorFactory_Stratis_SmartContracts_Executor_Reflection_ISmartContractVirtualMachine_Stratis_SmartContracts_Core_State_IContractStateRoot_IBlock_Network_System_UInt64_uint256_Stratis_SmartContracts_Executor_Reflection_IAddressGenerator_Gas_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.#ctor(Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer,Stratis.SmartContracts.Executor.Reflection.InternalTransactionExecutorFactory,Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine,Stratis.SmartContracts.Core.State.IContractStateRoot,IBlock,Network,System.UInt64,uint256,Stratis.SmartContracts.Executor.Reflection.IAddressGenerator,Gas)">State(IContractPrimitiveSerializer, InternalTransactionExecutorFactory, ISmartContractVirtualMachine, IContractStateRoot, IBlock, Network, UInt64, uint256, IAddressGenerator, Gas)</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State__ctor_Stratis_SmartContracts_Executor_Reflection_ISmartContractStateFactory_Stratis_SmartContracts_Core_State_IStateRepository_Stratis_SmartContracts_Executor_Reflection_ContractLogging_IContractLogHolder_List_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransferInfo__IBlock_Network_System_UInt64_uint256_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.#ctor(Stratis.SmartContracts.Executor.Reflection.ISmartContractStateFactory,Stratis.SmartContracts.Core.State.IStateRepository,Stratis.SmartContracts.Executor.Reflection.ContractLogging.IContractLogHolder,List{Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo},IBlock,Network,System.UInt64,uint256)">State(ISmartContractStateFactory, IStateRepository, IContractLogHolder, List&lt;TransferInfo&gt;, IBlock, Network, UInt64, uint256)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public State(IContractPrimitiveSerializer serializer, InternalTransactionExecutorFactory internalTransactionExecutorFactory, ISmartContractVirtualMachine vm, IContractStateRoot repository, IBlock block, Network network, ulong txAmount, uint256 transactionHash, IAddressGenerator addressGenerator, Gas gasLimit)</code></pre>
+    <pre><code class="lang-csharp hljs">public State(ISmartContractStateFactory smartContractStateFactory, IStateRepository repository, IContractLogHolder contractLogHolder, List&lt;TransferInfo&gt; internalTransfers, IBlock block, Network network, ulong txAmount, uint256 transactionHash)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,23 +131,23 @@ calls and transfers.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer.html">IContractPrimitiveSerializer</a></td>
-        <td><span class="parametername">serializer</span></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ISmartContractStateFactory.html">ISmartContractStateFactory</a></td>
+        <td><span class="parametername">smartContractStateFactory</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.InternalTransactionExecutorFactory.html">InternalTransactionExecutorFactory</a></td>
-        <td><span class="parametername">internalTransactionExecutorFactory</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.html">ISmartContractVirtualMachine</a></td>
-        <td><span class="parametername">vm</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IContractStateRoot.html">IContractStateRoot</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepository.html">IStateRepository</a></td>
         <td><span class="parametername">repository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ContractLogging.IContractLogHolder.html">IContractLogHolder</a></td>
+        <td><span class="parametername">contractLogHolder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo.html">TransferInfo</a>&gt;</td>
+        <td><span class="parametername">internalTransfers</span></td>
         <td></td>
       </tr>
       <tr>
@@ -170,56 +170,16 @@ calls and transfers.
         <td><span class="parametername">transactionHash</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IAddressGenerator.html">IAddressGenerator</a></td>
-        <td><span class="parametername">addressGenerator</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Gas</span></td>
-        <td><span class="parametername">gasLimit</span></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_AddressGenerator.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.AddressGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L86">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_AddressGenerator_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.AddressGenerator*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_AddressGenerator" data-uid="Stratis.SmartContracts.Executor.Reflection.State.AddressGenerator">AddressGenerator</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IAddressGenerator AddressGenerator { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IAddressGenerator.html">IAddressGenerator</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_BalanceState.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.BalanceState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L100">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L86">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_State_BalanceState_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.BalanceState*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_State_BalanceState" data-uid="Stratis.SmartContracts.Executor.Reflection.State.BalanceState">BalanceState</h4>
@@ -249,7 +209,7 @@ calls and transfers.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Block.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Block%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L90">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L78">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_State_Block_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Block*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Block" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Block">Block</h4>
@@ -276,18 +236,18 @@ calls and transfers.
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_GasRemaining.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.GasRemaining%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_ContractState.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.ContractState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L84">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L95">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_GasRemaining_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GasRemaining*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_GasRemaining" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GasRemaining">GasRemaining</h4>
+  <a id="Stratis_SmartContracts_Executor_Reflection_State_ContractState_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.ContractState*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_ContractState" data-uid="Stratis.SmartContracts.Executor.Reflection.State.ContractState">ContractState</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Gas GasRemaining { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IStateRepository ContractState { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -299,37 +259,7 @@ calls and transfers.
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Gas</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_InternalTransactionExecutorFactory.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.InternalTransactionExecutorFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L104">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_InternalTransactionExecutorFactory_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.InternalTransactionExecutorFactory*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_InternalTransactionExecutorFactory" data-uid="Stratis.SmartContracts.Executor.Reflection.State.InternalTransactionExecutorFactory">InternalTransactionExecutorFactory</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InternalTransactionExecutorFactory InternalTransactionExecutorFactory { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.InternalTransactionExecutorFactory.html">InternalTransactionExecutorFactory</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepository.html">IStateRepository</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -339,7 +269,7 @@ calls and transfers.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_InternalTransfers.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.InternalTransfers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L102">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L88">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_State_InternalTransfers_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.InternalTransfers*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_State_InternalTransfers" data-uid="Stratis.SmartContracts.Executor.Reflection.State.InternalTransfers">InternalTransfers</h4>
@@ -369,7 +299,7 @@ calls and transfers.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_LogHolder.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.LogHolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L98">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L84">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_State_LogHolder_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.LogHolder*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_State_LogHolder" data-uid="Stratis.SmartContracts.Executor.Reflection.State.LogHolder">LogHolder</h4>
@@ -396,40 +326,10 @@ calls and transfers.
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Network.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L94">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_Network_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Network*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Network" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Network">Network</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Network Network { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Network</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Nonce.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Nonce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L92">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L82">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_State_Nonce_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Nonce*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Nonce" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Nonce">Nonce</h4>
@@ -456,40 +356,10 @@ calls and transfers.
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Serializer.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Serializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L82">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_Serializer_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Serializer*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Serializer" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Serializer">Serializer</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IContractPrimitiveSerializer Serializer { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer.html">IContractPrimitiveSerializer</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_TransactionHash.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.TransactionHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L88">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L76">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_State_TransactionHash_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.TransactionHash*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_State_TransactionHash" data-uid="Stratis.SmartContracts.Executor.Reflection.State.TransactionHash">TransactionHash</h4>
@@ -514,53 +384,22 @@ calls and transfers.
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Vm.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Vm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L106">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_Vm_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Vm*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Vm" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Vm">Vm</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISmartContractVirtualMachine Vm { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ISmartContractVirtualMachine.html">ISmartContractVirtualMachine</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_ContractTransferMessage_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.ContractTransferMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_AddInternalTransfer_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransferInfo_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.AddInternalTransfer(Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L337">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L137">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_Apply_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_ContractTransferMessage_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.ContractTransferMessage)">Apply(ContractTransferMessage)</h4>
-  <div class="markdown level1 summary"><p>Applies an internally generated contract funds transfer message to the current state.</p>
-</div>
+  <a id="Stratis_SmartContracts_Executor_Reflection_State_AddInternalTransfer_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.AddInternalTransfer*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_AddInternalTransfer_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_TransferInfo_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.AddInternalTransfer(Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo)">AddInternalTransfer(TransferInfo)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateTransitionResult Apply(ContractTransferMessage message)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddInternalTransfer(TransferInfo transferInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -573,8 +412,61 @@ calls and transfers.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ContractTransferMessage.html">ContractTransferMessage</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.AccountAbstractionLayer.TransferInfo.html">TransferInfo</a></td>
+        <td><span class="parametername">transferInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_CreateSmartContractState_Stratis_SmartContracts_Executor_Reflection_IState_Stratis_SmartContracts_Executor_Reflection_GasMeter_uint160_Stratis_SmartContracts_Executor_Reflection_BaseMessage_Stratis_SmartContracts_Core_State_IStateRepository_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.CreateSmartContractState(Stratis.SmartContracts.Executor.Reflection.IState%2CStratis.SmartContracts.Executor.Reflection.GasMeter%2Cuint160%2CStratis.SmartContracts.Executor.Reflection.BaseMessage%2CStratis.SmartContracts.Core.State.IStateRepository)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L100">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Executor_Reflection_State_CreateSmartContractState_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.CreateSmartContractState*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_CreateSmartContractState_Stratis_SmartContracts_Executor_Reflection_IState_Stratis_SmartContracts_Executor_Reflection_GasMeter_uint160_Stratis_SmartContracts_Executor_Reflection_BaseMessage_Stratis_SmartContracts_Core_State_IStateRepository_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.CreateSmartContractState(Stratis.SmartContracts.Executor.Reflection.IState,Stratis.SmartContracts.Executor.Reflection.GasMeter,uint160,Stratis.SmartContracts.Executor.Reflection.BaseMessage,Stratis.SmartContracts.Core.State.IStateRepository)">CreateSmartContractState(IState, GasMeter, uint160, BaseMessage, IStateRepository)</h4>
+  <div class="markdown level1 summary"><p>Sets up a new <see cref="!:ISmartContractState"></see> based on the current state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISmartContractState CreateSmartContractState(IState state, GasMeter gasMeter, uint160 address, BaseMessage message, IStateRepository repository)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IState.html">IState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.GasMeter.html">GasMeter</a></td>
+        <td><span class="parametername">gasMeter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint160</span></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.BaseMessage.html">BaseMessage</a></td>
         <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepository.html">IStateRepository</a></td>
+        <td><span class="parametername">repository</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -589,26 +481,25 @@ calls and transfers.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.StateTransitionResult.html">StateTransitionResult</a></td>
+        <td><span class="xref">ISmartContractState</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_ExternalCallMessage_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.ExternalCallMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_GenerateAddress_Stratis_SmartContracts_Executor_Reflection_IAddressGenerator_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.GenerateAddress(Stratis.SmartContracts.Executor.Reflection.IAddressGenerator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L322">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L147">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_Apply_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_ExternalCallMessage_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.ExternalCallMessage)">Apply(ExternalCallMessage)</h4>
-  <div class="markdown level1 summary"><p>Applies an externally generated contract method call message to the current state.</p>
-</div>
+  <a id="Stratis_SmartContracts_Executor_Reflection_State_GenerateAddress_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GenerateAddress*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_GenerateAddress_Stratis_SmartContracts_Executor_Reflection_IAddressGenerator_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GenerateAddress(Stratis.SmartContracts.Executor.Reflection.IAddressGenerator)">GenerateAddress(IAddressGenerator)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateTransitionResult Apply(ExternalCallMessage message)</code></pre>
+    <pre><code class="lang-csharp hljs">public uint160 GenerateAddress(IAddressGenerator addressGenerator)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -621,8 +512,8 @@ calls and transfers.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ExternalCallMessage.html">ExternalCallMessage</a></td>
-        <td><span class="parametername">message</span></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IAddressGenerator.html">IAddressGenerator</a></td>
+        <td><span class="parametername">addressGenerator</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -637,26 +528,25 @@ calls and transfers.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.StateTransitionResult.html">StateTransitionResult</a></td>
+        <td><span class="xref">uint160</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_ExternalCreateMessage_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.ExternalCreateMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_GetBalance_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.GetBalance(uint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L204">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L142">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_Apply_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_ExternalCreateMessage_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.ExternalCreateMessage)">Apply(ExternalCreateMessage)</h4>
-  <div class="markdown level1 summary"><p>Applies an externally generated contract creation message to the current state.</p>
-</div>
+  <a id="Stratis_SmartContracts_Executor_Reflection_State_GetBalance_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GetBalance*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_GetBalance_uint160_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GetBalance(uint160)">GetBalance(uint160)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateTransitionResult Apply(ExternalCreateMessage message)</code></pre>
+    <pre><code class="lang-csharp hljs">public ulong GetBalance(uint160 address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -669,8 +559,8 @@ calls and transfers.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.ExternalCreateMessage.html">ExternalCreateMessage</a></td>
-        <td><span class="parametername">message</span></td>
+        <td><span class="xref">uint160</span></td>
+        <td><span class="parametername">address</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -685,123 +575,44 @@ calls and transfers.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.StateTransitionResult.html">StateTransitionResult</a></td>
+        <td><span class="xref">System.UInt64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_InternalCallMessage_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.InternalCallMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_GetLogs_Stratis_SmartContracts_Executor_Reflection_Serialization_IContractPrimitiveSerializer_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.GetLogs(Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L288">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_Apply_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_InternalCallMessage_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.InternalCallMessage)">Apply(InternalCallMessage)</h4>
-  <div class="markdown level1 summary"><p>Applies an internally generated contract method call message to the current state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateTransitionResult Apply(InternalCallMessage message)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.InternalCallMessage.html">InternalCallMessage</a></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.StateTransitionResult.html">StateTransitionResult</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_InternalCreateMessage_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.InternalCreateMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L212">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Executor_Reflection_State_Apply_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Apply_Stratis_SmartContracts_Executor_Reflection_InternalCreateMessage_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Apply(Stratis.SmartContracts.Executor.Reflection.InternalCreateMessage)">Apply(InternalCreateMessage)</h4>
-  <div class="markdown level1 summary"><p>Applies an internally generated contract creation message to the current state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateTransitionResult Apply(InternalCreateMessage message)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.InternalCreateMessage.html">InternalCreateMessage</a></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.StateTransitionResult.html">StateTransitionResult</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_GetLogs.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.GetLogs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L116">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L108">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_State_GetLogs_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GetLogs*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_GetLogs" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GetLogs">GetLogs()</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_GetLogs_Stratis_SmartContracts_Executor_Reflection_Serialization_IContractPrimitiveSerializer_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GetLogs(Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer)">GetLogs(IContractPrimitiveSerializer)</h4>
   <div class="markdown level1 summary"><p>Returns contract logs in the log type used by consensus.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IList&lt;Log&gt; GetLogs()</code></pre>
+    <pre><code class="lang-csharp hljs">public IList&lt;Log&gt; GetLogs(IContractPrimitiveSerializer serializer)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer.html">IContractPrimitiveSerializer</a></td>
+        <td><span class="parametername">serializer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -813,6 +624,101 @@ calls and transfers.
     <tbody>
       <tr>
         <td><span class="xref">IList</span>&lt;<a class="xref" href="Stratis.SmartContracts.Core.Receipts.Log.html">Log</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_GetNonceAndIncrement.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.GetNonceAndIncrement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L90">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Executor_Reflection_State_GetNonceAndIncrement_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GetNonceAndIncrement*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_GetNonceAndIncrement" data-uid="Stratis.SmartContracts.Executor.Reflection.State.GetNonceAndIncrement">GetNonceAndIncrement()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong GetNonceAndIncrement()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_Snapshot.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.Snapshot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L157">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Executor_Reflection_State_Snapshot_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Snapshot*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_Snapshot" data-uid="Stratis.SmartContracts.Executor.Reflection.State.Snapshot">Snapshot()</h4>
+  <div class="markdown level1 summary"><p>Returns a mutable snapshot of the current state. Changes can be made to the snapshot, then discarded or applied to the parent state.
+To update this state with changes made to the snapshot, call <a class="xref" href="Stratis.SmartContracts.Executor.Reflection.State.html#Stratis_SmartContracts_Executor_Reflection_State_TransitionTo_Stratis_SmartContracts_Executor_Reflection_IState_">TransitionTo(IState)</a>. Only one valid snapshot can exist. If a new
+snapshot is created, the parent state will reject any transitions from older snapshots.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IState Snapshot()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IState.html">IState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State_TransitionTo_Stratis_SmartContracts_Executor_Reflection_IState_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State.TransitionTo(Stratis.SmartContracts.Executor.Reflection.IState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L113">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Executor_Reflection_State_TransitionTo_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.TransitionTo*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_State_TransitionTo_Stratis_SmartContracts_Executor_Reflection_IState_" data-uid="Stratis.SmartContracts.Executor.Reflection.State.TransitionTo(Stratis.SmartContracts.Executor.Reflection.IState)">TransitionTo(IState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransitionTo(IState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.IState.html">IState</a></td>
+        <td><span class="parametername">state</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -832,7 +738,7 @@ calls and transfers.
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_State.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/State.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

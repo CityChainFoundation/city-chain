@@ -88,26 +88,6 @@
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.AccountState.html">AccountState</a></h4>
       <section><p>A contract's state.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ContractState.html">ContractState</a></h4>
-      <section><p>Handles all of the state for smart contracts. Includes smart contract code, storage, and UTXO balances.</p>
-</section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ContractStateRoot.html">ContractStateRoot</a></h4>
-      <section><p>Really magic class. Has an underlying KV store injected into the constructor. Everything is stored in this KV store
-but in a series of tries that allow us to retrieve a 32-byte root that represents the current state.
-This 32-byte root can be used to rollback state as well.</p>
-<p>What's happening here:
--A basic underlying byte[]/byte[] K/V store is injected in the constructor. In live daemon this will be a DbreezeByteStore.
--A complex caching structure is built up. Any changes through the IContractStateRepository API are pushed into the cache
-(e.g. SetCode, SetStorageValue).
--Commit() will push all of the data inside the cache into the underlying K/V store, via a patricia trie.
--The current state can now be represented by the 'root' retrieved from GetRoot()
--Now if we ever need to load the current state, we can do GetSnapShotTo(root)</p>
-<p>The ideal pattern:
--Get a new repository object via StartTracking()
--Make all changes to this repository
--If all successful, do commit() and changes will be pushed to the root.
--If unsuccessful, just rollback() the particular changes that didn't work.</p>
-</section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.DBreezeByteStore.html">DBreezeByteStore</a></h4>
       <section><p>A basic Key/Value store in DBreeze.</p>
 </section>
@@ -147,9 +127,9 @@ This class provides access to serializers used during this process.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.Serializers.AccountStateSerializer.html">Serializers.AccountStateSerializer</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.Serializers.NoSerializer-1.html">Serializers.NoSerializer&lt;T&gt;</a></h4>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.Serializers.ContractUnspentOutputSerializer.html">Serializers.ContractUnspentOutputSerializer</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.Serializers.StoredVinSerializer.html">Serializers.StoredVinSerializer</a></h4>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.Serializers.NoSerializer-1.html">Serializers.NoSerializer&lt;T&gt;</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html">SourceChainBox&lt;Key, Value, SourceKey, SourceValue&gt;</a></h4>
       <section><p>Adapted from EthereumJ.</p>
@@ -157,6 +137,26 @@ This class provides access to serializers used during this process.</p>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.SourceCodec-4.html">SourceCodec&lt;Key, Value, SourceKey, SourceValue&gt;</a></h4>
       <section><p>Adapted from EthereumJ.</p>
 <p>Used to transform one datatype into another on the way in or out of a source.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.StateRepository.html">StateRepository</a></h4>
+      <section><p>Handles all of the state for smart contracts. Includes smart contract code, storage, and UTXO balances.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.StateRepositoryRoot.html">StateRepositoryRoot</a></h4>
+      <section><p>Really magic class. Has an underlying KV store injected into the constructor. Everything is stored in this KV store
+but in a series of tries that allow us to retrieve a 32-byte root that represents the current state.
+This 32-byte root can be used to rollback state as well.</p>
+<p>What's happening here:
+-A basic underlying byte[]/byte[] K/V store is injected in the constructor. In live daemon this will be a DbreezeByteStore.
+-A complex caching structure is built up. Any changes through the IContractStateRepository API are pushed into the cache
+(e.g. SetCode, SetStorageValue).
+-Commit() will push all of the data inside the cache into the underlying K/V store, via a patricia trie.
+-The current state can now be represented by the 'root' retrieved from GetRoot()
+-Now if we ever need to load the current state, we can do GetSnapShotTo(root)</p>
+<p>The ideal pattern:
+-Get a new repository object via StartTracking()
+-Make all changes to this repository
+-If all successful, do commit() and changes will be pushed to the root.
+-If unsuccessful, just rollback() the particular changes that didn't work.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.StorageCache.html">StorageCache</a></h4>
       <section><p>A wrapper for a specific account's storage.</p>
@@ -180,11 +180,11 @@ This class provides access to serializers used during this process.</p>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ICachedSource-2.html">ICachedSource&lt;Key, Value&gt;</a></h4>
       <section><p>Adapted from EthereumJ.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IContractState.html">IContractState</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IContractStateRoot.html">IContractStateRoot</a></h4>
-      <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ISerializer-2.html">ISerializer&lt;T, S&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepository.html">IStateRepository</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepositoryRoot.html">IStateRepositoryRoot</a></h4>
       <section></section>
     <h3 id="enums">Enums
   </h3>
