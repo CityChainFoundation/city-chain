@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/City.Chain.Features.SimpleWallet.FullNodeBuilderSimpleWalletExtension.html",
-          "hash": "eAqNPtoIKlO86uxj2t9c6Q=="
+          "hash": "cLOfmCbdnoun1osxm2ve2w=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/City.Chain.Features.SimpleWallet.SimpleWalletFeature.html",
-          "hash": "kCAaNtmKV/8eIG8fcHii1Q=="
+          "hash": "MSiRKDaqCdBiWjna91kj4g=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/City.Chain.Features.SimpleWallet.SimpleWalletManager.html",
-          "hash": "kB1XpnTxCJdoWFp8uJZczg=="
+          "hash": "Qd3s5wzlbTnEMDBvV+cACQ=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/City.Chain.Program.html",
-          "hash": "7raZ0SlIHink/2MpRgeysg=="
+          "hash": "xniHv0BkZ952yNXinb6MXg=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/City.Networks.CityMain.html",
-          "hash": "WZQ6fZH0TM1BvGziuy6A8w=="
+          "hash": "pyNzlNgLjHcpnKdA/7o8nA=="
         }
       },
       "is_incremental": false,
@@ -6009,7 +6009,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.V2.Controllers.BlockStoreController.html",
-          "hash": "q4BZ1m8E0FK2wvIwnI8Stw=="
+          "hash": "JWN1CUVBC6/uMEkjWcoucQ=="
         }
       },
       "is_incremental": false,
@@ -6021,7 +6021,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.V2.Controllers.TransactionStoreController.html",
-          "hash": "Ql/V30Ou0XtM9KiKj8gxaA=="
+          "hash": "cDSx1DDhZf0X9KehSyHe9g=="
         }
       },
       "is_incremental": false,
@@ -13161,7 +13161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.AddrPayload.html",
-          "hash": "kN7BcNMtdARuGiX4PFktTA=="
+          "hash": "BbzoJI8qFAZkX0P+rcgUUw=="
         }
       },
       "is_incremental": false,
@@ -18753,14 +18753,14 @@
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
