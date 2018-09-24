@@ -46,7 +46,7 @@ phases:
         projects: '**/*.Tests.csproj'
       ${{ if ne(parameters.reason, 'Schedule') }}:
         projects: '**/City.*.Tests.csproj'
-      arguments: ${{ format('--no-build -c {0} -v m', parameters.configuration) }}
+      arguments: ${{ format('-c {0} -v m', parameters.configuration) }}
 
   - task: ArchiveFiles@2
     displayName: archive
