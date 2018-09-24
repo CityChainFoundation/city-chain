@@ -39,9 +39,9 @@ phases:
 
   # Run all unit tests, by applying the "*.Tests.csproj" filter it should avoid IntegrationTests projects.
   # Only run tests on Linux.
-  ${{ if eq(parameters.platform, 'linux') }}:
   - task: DotNetCoreCLI@2
     displayName: dotnet test
+    condition: and(succeeded(), eq($(parameters.platform), 'linux'))
     inputs:
       command: test
       ${{ if eq(parameters.reason, 'Schedule') }}:
