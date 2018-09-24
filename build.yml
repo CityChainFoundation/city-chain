@@ -41,7 +41,7 @@ phases:
   # Only run tests on Linux.
   - task: DotNetCoreCLI@2
     displayName: dotnet test
-    condition: and(succeeded(), eq(variables['parameters.platform'], 'linux'))
+    #condition: and(succeeded(), eq(variables['parameters.platform'], 'linux')) # Unable to get condition to work.
     inputs:
       command: test
       ${{ if eq(parameters.reason, 'Schedule') }}:
