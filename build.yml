@@ -36,6 +36,12 @@ phases:
       modifyOutputPath: false
       arguments: ${{ format('-c {0} -r {1}-{2} -v m', parameters.configuration, parameters.platform, parameters.arch) }}
 
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: test
+      projects: '**/*Tests.csproj'
+      arguments: '--configuration release'
+
   - task: ArchiveFiles@2
     displayName: archive
     inputs:
