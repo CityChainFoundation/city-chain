@@ -540,7 +540,7 @@ A block  that is not valid will result in the <a class="xref" href="Stratis.Bitc
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ValidationContext&gt; FullValidationAsync(ChainedHeader header, Block block)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ValidationContext&gt; FullValidationAsync(ChainedHeader header, Block block)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -674,7 +674,7 @@ A block  that is not valid will result in the <a class="xref" href="Stratis.Bitc
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ValidationContext HeaderValidation(ChainedHeader header)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual ValidationContext HeaderValidation(ChainedHeader header)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -755,7 +755,7 @@ A block  that is not valid will result in the <a class="xref" href="Stratis.Bitc
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ValidationContext IntegrityValidation(ChainedHeader header, Block block)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual ValidationContext IntegrityValidation(ChainedHeader header, Block block)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -811,7 +811,7 @@ A block  that is not valid will result in the <a class="xref" href="Stratis.Bitc
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ValidationContext&gt; PartialValidationAsync(ChainedHeader header, Block block)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ValidationContext&gt; PartialValidationAsync(ChainedHeader header, Block block)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

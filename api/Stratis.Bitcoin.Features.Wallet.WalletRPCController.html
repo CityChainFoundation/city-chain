@@ -115,18 +115,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController__ctor_IServiceProvider_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.%23ctor(IServiceProvider%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController__ctor_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stratis_Bitcoin_IFullNode_Stratis_Bitcoin_Features_Wallet_Interfaces_IBroadcasterManager_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.%23ctor(Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager%2CStratis.Bitcoin.IFullNode%2CStratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L14">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L28">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController__ctor_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController__ctor_IServiceProvider_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.#ctor(IServiceProvider,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager)">WalletRPCController(IServiceProvider, IWalletManager)</h4>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController__ctor_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stratis_Bitcoin_IFullNode_Stratis_Bitcoin_Features_Wallet_Interfaces_IBroadcasterManager_ILoggerFactory_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.#ctor(Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager,Stratis.Bitcoin.IFullNode,Stratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager,ILoggerFactory)">WalletRPCController(IWalletManager, IFullNode, IBroadcasterManager, ILoggerFactory)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WalletRPCController(IServiceProvider serviceProvider, IWalletManager walletManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public WalletRPCController(IWalletManager walletManager, IFullNode fullNode, IBroadcasterManager broadcasterManager, ILoggerFactory loggerFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,35 +139,47 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceProvider</span></td>
-        <td><span class="parametername">serviceProvider</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.html">IWalletManager</a></td>
         <td><span class="parametername">walletManager</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IFullNode.html">IFullNode</a></td>
+        <td><span class="parametername">fullNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager.html">IBroadcasterManager</a></td>
+        <td><span class="parametername">broadcasterManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
+  <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_WalletManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.WalletManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetNewAddress.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetNewAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L22">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L69">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_WalletManager_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.WalletManager*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_WalletManager" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.WalletManager">WalletManager</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetNewAddress_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetNewAddress*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetNewAddress" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetNewAddress">GetNewAddress()</h4>
+  <div class="markdown level1 summary"><p>RPC method that gets a new address for receiving payments.
+Uses the first wallet and account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IWalletManager WalletManager { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public NewAddressModel GetNewAddress()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -177,19 +189,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.html">IWalletManager</a></td>
-        <td></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Models.NewAddressModel.html">NewAddressModel</a></td>
+        <td><p>The new address.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_SendToAddress_NBitcoin_BitcoinAddress_NBitcoin_Money_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.SendToAddress(NBitcoin.BitcoinAddress%2CNBitcoin.Money)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L24">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L36">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_SendToAddress_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.SendToAddress*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_SendToAddress_NBitcoin_BitcoinAddress_NBitcoin_Money_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.SendToAddress(NBitcoin.BitcoinAddress,NBitcoin.Money)">SendToAddress(BitcoinAddress, Money)</h4>
@@ -236,6 +247,56 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_SendTransactionAsync_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.SendTransactionAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L49">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_SendTransactionAsync_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.SendTransactionAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_SendTransactionAsync_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.SendTransactionAsync(System.String)">SendTransactionAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Broadcasts a raw transaction from hex to local node and network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; SendTransactionAsync(string hex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hex</span></td>
+        <td><p>Raw transaction in hex.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
+        <td><p>The transaction hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -247,7 +308,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
