@@ -91,19 +91,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Controllers_MiningController__ctor_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_Interfaces_IPowMining_ILoggerFactory_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Controllers.MiningController.%23ctor(NBitcoin.Network%2CStratis.Bitcoin.Features.Miner.Interfaces.IPowMining%2CILoggerFactory%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Controllers_MiningController__ctor_Stratis_Bitcoin_Consensus_IConsensusManager_Stratis_Bitcoin_IFullNode_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_Interfaces_IPowMining_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Controllers.MiningController.%23ctor(Stratis.Bitcoin.Consensus.IConsensusManager%2CStratis.Bitcoin.IFullNode%2CILoggerFactory%2CNBitcoin.Network%2CStratis.Bitcoin.Features.Miner.Interfaces.IPowMining%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Controllers/MiningController.cs/#L45">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Controllers/MiningController.cs/#L34">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_Controllers_MiningController__ctor_" data-uid="Stratis.Bitcoin.Features.Miner.Controllers.MiningController.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Miner_Controllers_MiningController__ctor_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_Interfaces_IPowMining_ILoggerFactory_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_" data-uid="Stratis.Bitcoin.Features.Miner.Controllers.MiningController.#ctor(NBitcoin.Network,Stratis.Bitcoin.Features.Miner.Interfaces.IPowMining,ILoggerFactory,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager)">MiningController(Network, IPowMining, ILoggerFactory, IWalletManager)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the object.</p>
-</div>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Controllers_MiningController__ctor_Stratis_Bitcoin_Consensus_IConsensusManager_Stratis_Bitcoin_IFullNode_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_Interfaces_IPowMining_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_" data-uid="Stratis.Bitcoin.Features.Miner.Controllers.MiningController.#ctor(Stratis.Bitcoin.Consensus.IConsensusManager,Stratis.Bitcoin.IFullNode,ILoggerFactory,NBitcoin.Network,Stratis.Bitcoin.Features.Miner.Interfaces.IPowMining,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager)">MiningController(IConsensusManager, IFullNode, ILoggerFactory, Network, IPowMining, IWalletManager)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MiningController(Network network, IPowMining powMining, ILoggerFactory loggerFactory, IWalletManager walletManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public MiningController(IConsensusManager consensusManager, IFullNode fullNode, ILoggerFactory loggerFactory, Network network, IPowMining powMining, IWalletManager walletManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -116,6 +115,21 @@
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusManager.html">IConsensusManager</a></td>
+        <td><span class="parametername">consensusManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.IFullNode.html">IFullNode</a></td>
+        <td><span class="parametername">fullNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
         <td><span class="parametername">network</span></td>
         <td></td>
@@ -123,20 +137,43 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.Interfaces.IPowMining.html">IPowMining</a></td>
         <td><span class="parametername">powMining</span></td>
-        <td><p>PoW miner.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ILoggerFactory</span></td>
-        <td><span class="parametername">loggerFactory</span></td>
-        <td><p>Factory to be used to create logger for the node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.html">IWalletManager</a></td>
         <td><span class="parametername">walletManager</span></td>
-        <td><p>The wallet manager.</p>
-</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Controllers_MiningController_LastPowBlockExceededMessage.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Controllers.MiningController.LastPowBlockExceededMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Controllers/MiningController.cs/#L25">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Controllers_MiningController_LastPowBlockExceededMessage" data-uid="Stratis.Bitcoin.Features.Miner.Controllers.MiningController.LastPowBlockExceededMessage">LastPowBlockExceededMessage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LastPowBlockExceededMessage = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -147,7 +184,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Controllers_MiningController_Generate_Stratis_Bitcoin_Features_Miner_Models_MiningRequest_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Controllers.MiningController.Generate(Stratis.Bitcoin.Features.Miner.Models.MiningRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Controllers/MiningController.cs/#L65">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Controllers/MiningController.cs/#L58">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_Controllers_MiningController_Generate_" data-uid="Stratis.Bitcoin.Features.Miner.Controllers.MiningController.Generate*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_Controllers_MiningController_Generate_Stratis_Bitcoin_Features_Miner_Models_MiningRequest_" data-uid="Stratis.Bitcoin.Features.Miner.Controllers.MiningController.Generate(Stratis.Bitcoin.Features.Miner.Models.MiningRequest)">Generate(MiningRequest)</h4>
@@ -196,6 +233,36 @@
   <div class="markdown level1 remarks"><p>It is possible that less than the required number of blocks will be mined because the generating function only
 tries all possible header nonces values.</p>
 </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Controllers_MiningController_StopMining.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Controllers.MiningController.StopMining%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Controllers/MiningController.cs/#L101">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_Controllers_MiningController_StopMining_" data-uid="Stratis.Bitcoin.Features.Miner.Controllers.MiningController.StopMining*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Controllers_MiningController_StopMining" data-uid="Stratis.Bitcoin.Features.Miner.Controllers.MiningController.StopMining">StopMining()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActionResult StopMining()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IActionResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -207,7 +274,7 @@ tries all possible header nonces values.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Controllers_MiningController.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Controllers.MiningController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Controllers/MiningController.cs/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Controllers/MiningController.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
