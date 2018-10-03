@@ -14133,7 +14133,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Utilities.AsyncLoop.html",
-          "hash": "Rmf2QUxU55vsUroxWMbaiw=="
+          "hash": "lduqHHsD2j/EfGFHI1YCnw=="
         }
       },
       "is_incremental": false,
@@ -18320,11 +18320,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterSerializer.yml",
+      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterStringSerializer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterSerializer.html",
-          "hash": "4Uqjv0YrGBSjfGz7twbTKQ=="
+          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterStringSerializer.html",
+          "hash": "0U4ACykIU22nhyIncrT15w=="
         }
       },
       "is_incremental": false,
@@ -18336,7 +18336,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.html",
-          "hash": "Q2FTXWNsq+VzlMWKbWq/og=="
+          "hash": "CEf/chAUoauhN7Y7bZ0n2Q=="
         }
       },
       "is_incremental": false,
@@ -18756,7 +18756,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.ContractInternalTransferTests.html",
-          "hash": "zO311v2WcqaYMYdOoNLg5A=="
+          "hash": "6SC/WFj72xoahgN6ksSjzg=="
         }
       },
       "is_incremental": false,
@@ -19428,7 +19428,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "EJLQKjvbtvhOkqJ6NZU2QQ=="
+          "hash": "/Y1QLGgreY4w5e/FDuevyA=="
         }
       },
       "is_incremental": false,
@@ -19513,22 +19513,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
