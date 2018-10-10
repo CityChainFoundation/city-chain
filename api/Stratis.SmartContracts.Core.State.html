@@ -88,22 +88,15 @@
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.AccountState.html">AccountState</a></h4>
       <section><p>A contract's state.</p>
 </section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.CachedStorageCaches.html">CachedStorageCaches</a></h4>
+      <section><p>Created for each new level of tracking. Introduces a WriteCache in front of the StorageCache itself.
+TODO: Rename</p>
+</section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.DBreezeByteStore.html">DBreezeByteStore</a></h4>
       <section><p>A basic Key/Value store in DBreeze.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.DBreezeContractStateStore.html">DBreezeContractStateStore</a></h4>
       <section><p>Used for dependency injection. A contract state specific implementation of the above class.</p>
-</section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.MultiCache.html">MultiCache</a></h4>
-      <section><p>Implementation of a cache of caches.</p>
-</section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.MultiCacheBase-1.html">MultiCacheBase&lt;V&gt;</a></h4>
-      <section><p>Adapted from EthereumJ.</p>
-<p>This is a cache of caches.</p>
-</section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.MultiStorageCache.html">MultiStorageCache</a></h4>
-      <section><p>Adapted from EthereumJ.</p>
-<p>A cache of many storage caches.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.NoDeleteContractStateSource.html">NoDeleteContractStateSource</a></h4>
       <section><p>Used for dependency injection. A contract state specific implementation of the above class.</p>
@@ -112,13 +105,8 @@
       <section><p>Adapted from EthereumJ.</p>
 <p>Should be used in cases where you don't want to get rid of previous states. I.e. all contract storage changes.</p>
 </section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ReadCache-1.html">ReadCache&lt;Value&gt;</a></h4>
-      <section><p>Adapted from EthereumJ.</p>
-<p>When reading values, will cache them for performance.</p>
-</section>
-      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html">ReadWriteCache&lt;Value&gt;</a></h4>
-      <section><p>Adapted from EthereumJ.</p>
-<p>Wrapper for situations when you wish to cache the items being read and cache the values being set.</p>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.RootStorageCaches.html">RootStorageCaches</a></h4>
+      <section><p>The place that all StorageCaches are spawned.</p>
 </section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.Serializers.html">Serializers</a></h4>
       <section><p>When we store contract data and their UTXO balances, we are serializing those data types to bytes and storing them
@@ -185,6 +173,8 @@ This 32-byte root can be used to rollback state as well.</p>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepository.html">IStateRepository</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepositoryRoot.html">IStateRepositoryRoot</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.Core.State.IStorageCaches.html">IStorageCaches</a></h4>
       <section></section>
     <h3 id="enums">Enums
   </h3>

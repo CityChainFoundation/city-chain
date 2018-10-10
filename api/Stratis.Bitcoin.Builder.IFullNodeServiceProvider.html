@@ -89,7 +89,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Builder_IFullNodeServiceProvider_Features.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Builder.IFullNodeServiceProvider.Features%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Builder/FullNodeServiceProvider.cs/#L14">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Builder/FullNodeServiceProvider.cs/#L15">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Builder_IFullNodeServiceProvider_Features_" data-uid="Stratis.Bitcoin.Builder.IFullNodeServiceProvider.Features*"></a>
   <h4 id="Stratis_Bitcoin_Builder_IFullNodeServiceProvider_Features" data-uid="Stratis.Bitcoin.Builder.IFullNodeServiceProvider.Features">Features</h4>
@@ -120,7 +120,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Builder_IFullNodeServiceProvider_ServiceProvider.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Builder.IFullNodeServiceProvider.ServiceProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Builder/FullNodeServiceProvider.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Builder/FullNodeServiceProvider.cs/#L18">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Builder_IFullNodeServiceProvider_ServiceProvider_" data-uid="Stratis.Bitcoin.Builder.IFullNodeServiceProvider.ServiceProvider*"></a>
   <h4 id="Stratis_Bitcoin_Builder_IFullNodeServiceProvider_ServiceProvider" data-uid="Stratis.Bitcoin.Builder.IFullNodeServiceProvider.ServiceProvider">ServiceProvider</h4>
@@ -146,6 +146,89 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Builder_IFullNodeServiceProvider_EnsureServiceIsRegistered__1.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Builder.IFullNodeServiceProvider.EnsureServiceIsRegistered%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Builder/FullNodeServiceProvider.cs/#L34">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Builder_IFullNodeServiceProvider_EnsureServiceIsRegistered_" data-uid="Stratis.Bitcoin.Builder.IFullNodeServiceProvider.EnsureServiceIsRegistered*"></a>
+  <h4 id="Stratis_Bitcoin_Builder_IFullNodeServiceProvider_EnsureServiceIsRegistered__1" data-uid="Stratis.Bitcoin.Builder.IFullNodeServiceProvider.EnsureServiceIsRegistered``1">EnsureServiceIsRegistered&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Guard method that check whether the service of the specified type T is registered.
+If it doesn't exists, thrown an exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EnsureServiceIsRegistered&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type to query against the service provider.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Builder_IFullNodeServiceProvider_IsServiceRegistered__1.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Builder.IFullNodeServiceProvider.IsServiceRegistered%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Builder/FullNodeServiceProvider.cs/#L27">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Builder_IFullNodeServiceProvider_IsServiceRegistered_" data-uid="Stratis.Bitcoin.Builder.IFullNodeServiceProvider.IsServiceRegistered*"></a>
+  <h4 id="Stratis_Bitcoin_Builder_IFullNodeServiceProvider_IsServiceRegistered__1" data-uid="Stratis.Bitcoin.Builder.IFullNodeServiceProvider.IsServiceRegistered``1">IsServiceRegistered&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Determines whether the service of the specified type T is registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsServiceRegistered&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is registered; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type to query against the service provider.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -157,7 +240,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Builder_IFullNodeServiceProvider.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Builder.IFullNodeServiceProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Builder/FullNodeServiceProvider.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Builder/FullNodeServiceProvider.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

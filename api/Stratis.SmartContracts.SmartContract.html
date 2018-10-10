@@ -97,7 +97,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract__ctor_Stratis_SmartContracts_ISmartContractState_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.%23ctor(Stratis.SmartContracts.ISmartContractState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L75">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L48">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract__ctor_" data-uid="Stratis.SmartContracts.SmartContract.#ctor*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract__ctor_Stratis_SmartContracts_ISmartContractState_" data-uid="Stratis.SmartContracts.SmartContract.#ctor(Stratis.SmartContracts.ISmartContractState)">SmartContract(ISmartContractState)</h4>
@@ -105,7 +105,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SmartContract(ISmartContractState smartContractState)</code></pre>
+    <pre><code class="lang-csharp hljs">public SmartContract(ISmartContractState state)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -119,129 +119,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.SmartContracts.ISmartContractState.html">ISmartContractState</a></td>
-        <td><span class="parametername">smartContractState</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Block.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Block%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L27">View Source</a>
-  </span>
-  <h4 id="Stratis_SmartContracts_SmartContract_Block" data-uid="Stratis.SmartContracts.SmartContract.Block">Block</h4>
-  <div class="markdown level1 summary"><p>Holds details about the current block.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly IBlock Block</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.IBlock.html">IBlock</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Message.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Message%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L32">View Source</a>
-  </span>
-  <h4 id="Stratis_SmartContracts_SmartContract_Message" data-uid="Stratis.SmartContracts.SmartContract.Message">Message</h4>
-  <div class="markdown level1 summary"><p>Holds details about the current transaction that has been sent.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly IMessage Message</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.IMessage.html">IMessage</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_PersistentState.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.PersistentState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L37">View Source</a>
-  </span>
-  <h4 id="Stratis_SmartContracts_SmartContract_PersistentState" data-uid="Stratis.SmartContracts.SmartContract.PersistentState">PersistentState</h4>
-  <div class="markdown level1 summary"><p>Provides functionality for the saving and retrieval of objects inside smart contracts.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly IPersistentState PersistentState</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.IPersistentState.html">IPersistentState</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Serializer.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Serializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L42">View Source</a>
-  </span>
-  <h4 id="Stratis_SmartContracts_SmartContract_Serializer" data-uid="Stratis.SmartContracts.SmartContract.Serializer">Serializer</h4>
-  <div class="markdown level1 summary"><p>Provides functionality for the serialization and deserialization of primitives to bytes inside smart contracts.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly ISerializer Serializer</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.ISerializer.html">ISerializer</a></td>
+        <td><span class="parametername">state</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -253,7 +131,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Address.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Address%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L16">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract_Address_" data-uid="Stratis.SmartContracts.SmartContract.Address*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract_Address" data-uid="Stratis.SmartContracts.SmartContract.Address">Address</h4>
@@ -284,7 +162,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Balance.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Balance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L22">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L21">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract_Balance_" data-uid="Stratis.SmartContracts.SmartContract.Balance*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract_Balance" data-uid="Stratis.SmartContracts.SmartContract.Balance">Balance</h4>
@@ -310,6 +188,130 @@ Provides base functionality to spend gas and transfer funds between contracts.
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Block.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Block%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L26">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_SmartContract_Block_" data-uid="Stratis.SmartContracts.SmartContract.Block*"></a>
+  <h4 id="Stratis_SmartContracts_SmartContract_Block" data-uid="Stratis.SmartContracts.SmartContract.Block">Block</h4>
+  <div class="markdown level1 summary"><p>Holds details about the current block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBlock Block { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.IBlock.html">IBlock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Message.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Message%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L31">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_SmartContract_Message_" data-uid="Stratis.SmartContracts.SmartContract.Message*"></a>
+  <h4 id="Stratis_SmartContracts_SmartContract_Message" data-uid="Stratis.SmartContracts.SmartContract.Message">Message</h4>
+  <div class="markdown level1 summary"><p>Holds details about the current transaction that has been sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMessage Message { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.IMessage.html">IMessage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_PersistentState.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.PersistentState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L36">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_SmartContract_PersistentState_" data-uid="Stratis.SmartContracts.SmartContract.PersistentState*"></a>
+  <h4 id="Stratis_SmartContracts_SmartContract_PersistentState" data-uid="Stratis.SmartContracts.SmartContract.PersistentState">PersistentState</h4>
+  <div class="markdown level1 summary"><p>Provides functionality for the saving and retrieval of objects inside smart contracts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPersistentState PersistentState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.IPersistentState.html">IPersistentState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Serializer.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Serializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L41">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_SmartContract_Serializer_" data-uid="Stratis.SmartContracts.SmartContract.Serializer*"></a>
+  <h4 id="Stratis_SmartContracts_SmartContract_Serializer" data-uid="Stratis.SmartContracts.SmartContract.Serializer">Serializer</h4>
+  <div class="markdown level1 summary"><p>Provides functionality for the serialization and deserialization of primitives to bytes inside smart contracts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISerializer Serializer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.ISerializer.html">ISerializer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -317,7 +319,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Assert_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Assert(System.Boolean%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L142">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L105">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract_Assert_" data-uid="Stratis.SmartContracts.SmartContract.Assert*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract_Assert_System_Boolean_System_String_" data-uid="Stratis.SmartContracts.SmartContract.Assert(System.Boolean,System.String)">Assert(Boolean, String)</h4>
@@ -355,7 +357,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Call_Stratis_SmartContracts_Address_System_UInt64_System_String_System_Object___System_UInt64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Call(Stratis.SmartContracts.Address%2CSystem.UInt64%2CSystem.String%2CSystem.Object%5B%5D%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L111">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L74">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract_Call_" data-uid="Stratis.SmartContracts.SmartContract.Call*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract_Call_Stratis_SmartContracts_Address_System_UInt64_System_String_System_Object___System_UInt64_" data-uid="Stratis.SmartContracts.SmartContract.Call(Stratis.SmartContracts.Address,System.UInt64,System.String,System.Object[],System.UInt64)">Call(Address, UInt64, String, Object[], UInt64)</h4>
@@ -428,7 +430,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Create__1_System_UInt64_System_Object___System_UInt64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Create%60%601(System.UInt64%2CSystem.Object%5B%5D%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L123">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L86">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract_Create_" data-uid="Stratis.SmartContracts.SmartContract.Create*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract_Create__1_System_UInt64_System_Object___System_UInt64_" data-uid="Stratis.SmartContracts.SmartContract.Create``1(System.UInt64,System.Object[],System.UInt64)">Create&lt;T&gt;(UInt64, Object[], UInt64)</h4>
@@ -506,7 +508,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Keccak256_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Keccak256(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L134">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L97">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract_Keccak256_" data-uid="Stratis.SmartContracts.SmartContract.Keccak256*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract_Keccak256_System_Byte___" data-uid="Stratis.SmartContracts.SmartContract.Keccak256(System.Byte[])">Keccak256(Byte[])</h4>
@@ -554,7 +556,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Log__1___0_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Log%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L153">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L116">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract_Log_" data-uid="Stratis.SmartContracts.SmartContract.Log*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract_Log__1___0_" data-uid="Stratis.SmartContracts.SmartContract.Log``1(``0)">Log&lt;T&gt;(T)</h4>
@@ -605,11 +607,16 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Receive.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Receive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L165">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L128">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract_Receive_" data-uid="Stratis.SmartContracts.SmartContract.Receive*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract_Receive" data-uid="Stratis.SmartContracts.SmartContract.Receive">Receive()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default method used to handle the receipt of funds. Override this method to define behaviour when the contract receives funds and
+no method name is provided or the method name in the calling transaction equals <see cref="!:string.Empty"></see>.</p>
+<p>
+This occurs when a contract sends funds to another contract using <a class="xref" href="Stratis.SmartContracts.SmartContract.html#Stratis_SmartContracts_SmartContract_Transfer_Stratis_SmartContracts_Address_System_UInt64_">Transfer(Address, UInt64)</a>.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -620,7 +627,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract_Transfer_Stratis_SmartContracts_Address_System_UInt64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract.Transfer(Stratis.SmartContracts.Address%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L98">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L61">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_SmartContract_Transfer_" data-uid="Stratis.SmartContracts.SmartContract.Transfer*"></a>
   <h4 id="Stratis_SmartContracts_SmartContract_Transfer_Stratis_SmartContracts_Address_System_UInt64_" data-uid="Stratis.SmartContracts.SmartContract.Transfer(Stratis.SmartContracts.Address,System.UInt64)">Transfer(Address, UInt64)</h4>
@@ -682,7 +689,7 @@ Provides base functionality to spend gas and transfer funds between contracts.
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_SmartContract.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.SmartContract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/SmartContract.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

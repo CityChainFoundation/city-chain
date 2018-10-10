@@ -112,18 +112,18 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository__ctor_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountState__ISource_System_Byte___System_Byte____Stratis_SmartContracts_Core_State_MultiCacheBase_Stratis_SmartContracts_Core_State_ICachedSource_System_Byte___System_Byte_____ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput__.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.%23ctor(ISource%7BSystem.Byte%5B%5D%2CStratis.SmartContracts.Core.State.AccountState%7D%2CISource%7BSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%7D%2CStratis.SmartContracts.Core.State.MultiCacheBase%7BStratis.SmartContracts.Core.State.ICachedSource%7BSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%7D%7D%2CISource%7BSystem.Byte%5B%5D%2CStratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository__ctor_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountState__ISource_System_Byte___System_Byte____Stratis_SmartContracts_Core_State_IStorageCaches_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput__.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.%23ctor(ISource%7BSystem.Byte%5B%5D%2CStratis.SmartContracts.Core.State.AccountState%7D%2CISource%7BSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%7D%2CStratis.SmartContracts.Core.State.IStorageCaches%2CISource%7BSystem.Byte%5B%5D%2CStratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L21">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository__ctor_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.#ctor*"></a>
-  <h4 id="Stratis_SmartContracts_Core_State_StateRepository__ctor_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountState__ISource_System_Byte___System_Byte____Stratis_SmartContracts_Core_State_MultiCacheBase_Stratis_SmartContracts_Core_State_ICachedSource_System_Byte___System_Byte_____ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput__" data-uid="Stratis.SmartContracts.Core.State.StateRepository.#ctor(ISource{System.Byte[],Stratis.SmartContracts.Core.State.AccountState},ISource{System.Byte[],System.Byte[]},Stratis.SmartContracts.Core.State.MultiCacheBase{Stratis.SmartContracts.Core.State.ICachedSource{System.Byte[],System.Byte[]}},ISource{System.Byte[],Stratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput})">StateRepository(ISource&lt;Byte[], AccountState&gt;, ISource&lt;Byte[], Byte[]&gt;, MultiCacheBase&lt;ICachedSource&lt;Byte[], Byte[]&gt;&gt;, ISource&lt;Byte[], ContractUnspentOutput&gt;)</h4>
+  <h4 id="Stratis_SmartContracts_Core_State_StateRepository__ctor_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountState__ISource_System_Byte___System_Byte____Stratis_SmartContracts_Core_State_IStorageCaches_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput__" data-uid="Stratis.SmartContracts.Core.State.StateRepository.#ctor(ISource{System.Byte[],Stratis.SmartContracts.Core.State.AccountState},ISource{System.Byte[],System.Byte[]},Stratis.SmartContracts.Core.State.IStorageCaches,ISource{System.Byte[],Stratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput})">StateRepository(ISource&lt;Byte[], AccountState&gt;, ISource&lt;Byte[], Byte[]&gt;, IStorageCaches, ISource&lt;Byte[], ContractUnspentOutput&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateRepository(ISource&lt;byte[], AccountState&gt; accountStateCache, ISource&lt;byte[], byte[]&gt; codeCache, MultiCacheBase&lt;ICachedSource&lt;byte[], byte[]&gt;&gt; storageCache, ISource&lt;byte[], ContractUnspentOutput&gt; vinCache)</code></pre>
+    <pre><code class="lang-csharp hljs">public StateRepository(ISource&lt;byte[], AccountState&gt; accountStateCache, ISource&lt;byte[], byte[]&gt; codeCache, IStorageCaches storageCaches, ISource&lt;byte[], ContractUnspentOutput&gt; vinCache)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,8 +146,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.State.MultiCacheBase-1.html">MultiCacheBase</a>&lt;<a class="xref" href="Stratis.SmartContracts.Core.State.ICachedSource-2.html">ICachedSource</a>&lt;<span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[]&gt;&gt;</td>
-        <td><span class="parametername">storageCache</span></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStorageCaches.html">IStorageCaches</a></td>
+        <td><span class="parametername">storageCaches</span></td>
         <td></td>
       </tr>
       <tr>
@@ -248,17 +248,17 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_storageCache.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.storageCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_storageCaches.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.storageCaches%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L17">View Source</a>
   </span>
-  <h4 id="Stratis_SmartContracts_Core_State_StateRepository_storageCache" data-uid="Stratis.SmartContracts.Core.State.StateRepository.storageCache">storageCache</h4>
+  <h4 id="Stratis_SmartContracts_Core_State_StateRepository_storageCaches" data-uid="Stratis.SmartContracts.Core.State.StateRepository.storageCaches">storageCaches</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected MultiCacheBase&lt;ICachedSource&lt;byte[], byte[]&gt;&gt; storageCache</code></pre>
+    <pre><code class="lang-csharp hljs">protected IStorageCaches storageCaches</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -270,7 +270,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.State.MultiCacheBase-1.html">MultiCacheBase</a>&lt;<a class="xref" href="Stratis.SmartContracts.Core.State.ICachedSource-2.html">ICachedSource</a>&lt;<span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[]&gt;&gt;</td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStorageCaches.html">IStorageCaches</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -311,7 +311,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_ClearUnspent_NBitcoin_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.ClearUnspent(NBitcoin.uint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L197">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L188">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_ClearUnspent_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.ClearUnspent*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_ClearUnspent_NBitcoin_uint160_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.ClearUnspent(NBitcoin.uint160)">ClearUnspent(uint160)</h4>
@@ -343,7 +343,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_Commit.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.Commit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L139">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L132">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_Commit_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Commit*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_Commit" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Commit">Commit()</h4>
@@ -402,42 +402,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_Delete_NBitcoin_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.Delete(NBitcoin.uint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L63">View Source</a>
-  </span>
-  <a id="Stratis_SmartContracts_Core_State_StateRepository_Delete_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Delete*"></a>
-  <h4 id="Stratis_SmartContracts_Core_State_StateRepository_Delete_NBitcoin_uint160_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Delete(NBitcoin.uint160)">Delete(uint160)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Delete(uint160 addr)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.uint160.html">uint160</a></td>
-        <td><span class="parametername">addr</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_Flush.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.Flush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L156">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L149">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_Flush_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Flush*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_Flush" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Flush">Flush()</h4>
@@ -499,7 +467,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_GetCode_NBitcoin_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.GetCode(NBitcoin.uint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L78">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L72">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_GetCode_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetCode*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_GetCode_NBitcoin_uint160_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetCode(NBitcoin.uint160)">GetCode(uint160)</h4>
@@ -546,7 +514,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_GetCodeHash_NBitcoin_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.GetCodeHash(NBitcoin.uint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L84">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L78">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_GetCodeHash_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetCodeHash*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_GetCodeHash_NBitcoin_uint160_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetCodeHash(NBitcoin.uint160)">GetCodeHash(uint160)</h4>
@@ -593,7 +561,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_GetContractType_NBitcoin_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.GetContractType(NBitcoin.uint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L103">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L97">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_GetContractType_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetContractType*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_GetContractType_NBitcoin_uint160_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetContractType(NBitcoin.uint160)">GetContractType(uint160)</h4>
@@ -640,7 +608,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_GetCurrentBalance_NBitcoin_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.GetCurrentBalance(NBitcoin.uint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L171">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L162">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_GetCurrentBalance_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetCurrentBalance*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_GetCurrentBalance_NBitcoin_uint160_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetCurrentBalance(NBitcoin.uint160)">GetCurrentBalance(uint160)</h4>
@@ -690,7 +658,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_GetSnapshotTo_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.GetSnapshotTo(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L134">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L127">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_GetSnapshotTo_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetSnapshotTo*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_GetSnapshotTo_System_Byte___" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetSnapshotTo(System.Byte[])">GetSnapshotTo(Byte[])</h4>
@@ -738,7 +706,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_GetStorageValue_NBitcoin_uint160_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.GetStorageValue(NBitcoin.uint160%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L97">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L91">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_GetStorageValue_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetStorageValue*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_GetStorageValue_NBitcoin_uint160_System_Byte___" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetStorageValue(NBitcoin.uint160,System.Byte[])">GetStorageValue(uint160, Byte[])</h4>
@@ -790,7 +758,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_GetUnspent_NBitcoin_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.GetUnspent(NBitcoin.uint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L191">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L182">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_GetUnspent_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetUnspent*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_GetUnspent_NBitcoin_uint160_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetUnspent(NBitcoin.uint160)">GetUnspent(uint160)</h4>
@@ -837,7 +805,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_GetUnspentHash_NBitcoin_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.GetUnspentHash(NBitcoin.uint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L182">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L173">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_GetUnspentHash_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetUnspentHash*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_GetUnspentHash_NBitcoin_uint160_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.GetUnspentHash(NBitcoin.uint160)">GetUnspentHash(uint160)</h4>
@@ -881,18 +849,18 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_Init_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountState__ISource_System_Byte___System_Byte____Stratis_SmartContracts_Core_State_MultiCacheBase_Stratis_SmartContracts_Core_State_ICachedSource_System_Byte___System_Byte_____ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput__.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.Init(ISource%7BSystem.Byte%5B%5D%2CStratis.SmartContracts.Core.State.AccountState%7D%2CISource%7BSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%7D%2CStratis.SmartContracts.Core.State.MultiCacheBase%7BStratis.SmartContracts.Core.State.ICachedSource%7BSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%7D%7D%2CISource%7BSystem.Byte%5B%5D%2CStratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_Init_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountState__ISource_System_Byte___System_Byte____Stratis_SmartContracts_Core_State_IStorageCaches_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput__.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.Init(ISource%7BSystem.Byte%5B%5D%2CStratis.SmartContracts.Core.State.AccountState%7D%2CISource%7BSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%7D%2CStratis.SmartContracts.Core.State.IStorageCaches%2CISource%7BSystem.Byte%5B%5D%2CStratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L27">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_Init_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Init*"></a>
-  <h4 id="Stratis_SmartContracts_Core_State_StateRepository_Init_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountState__ISource_System_Byte___System_Byte____Stratis_SmartContracts_Core_State_MultiCacheBase_Stratis_SmartContracts_Core_State_ICachedSource_System_Byte___System_Byte_____ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput__" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Init(ISource{System.Byte[],Stratis.SmartContracts.Core.State.AccountState},ISource{System.Byte[],System.Byte[]},Stratis.SmartContracts.Core.State.MultiCacheBase{Stratis.SmartContracts.Core.State.ICachedSource{System.Byte[],System.Byte[]}},ISource{System.Byte[],Stratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput})">Init(ISource&lt;Byte[], AccountState&gt;, ISource&lt;Byte[], Byte[]&gt;, MultiCacheBase&lt;ICachedSource&lt;Byte[], Byte[]&gt;&gt;, ISource&lt;Byte[], ContractUnspentOutput&gt;)</h4>
+  <h4 id="Stratis_SmartContracts_Core_State_StateRepository_Init_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountState__ISource_System_Byte___System_Byte____Stratis_SmartContracts_Core_State_IStorageCaches_ISource_System_Byte___Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput__" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Init(ISource{System.Byte[],Stratis.SmartContracts.Core.State.AccountState},ISource{System.Byte[],System.Byte[]},Stratis.SmartContracts.Core.State.IStorageCaches,ISource{System.Byte[],Stratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput})">Init(ISource&lt;Byte[], AccountState&gt;, ISource&lt;Byte[], Byte[]&gt;, IStorageCaches, ISource&lt;Byte[], ContractUnspentOutput&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void Init(ISource&lt;byte[], AccountState&gt; accountStateCache, ISource&lt;byte[], byte[]&gt; codeCache, MultiCacheBase&lt;ICachedSource&lt;byte[], byte[]&gt;&gt; storageCache, ISource&lt;byte[], ContractUnspentOutput&gt; vinCache)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void Init(ISource&lt;byte[], AccountState&gt; accountStateCache, ISource&lt;byte[], byte[]&gt; codeCache, IStorageCaches storageCaches, ISource&lt;byte[], ContractUnspentOutput&gt; vinCache)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -915,8 +883,8 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.State.MultiCacheBase-1.html">MultiCacheBase</a>&lt;<a class="xref" href="Stratis.SmartContracts.Core.State.ICachedSource-2.html">ICachedSource</a>&lt;<span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[]&gt;&gt;</td>
-        <td><span class="parametername">storageCache</span></td>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStorageCaches.html">IStorageCaches</a></td>
+        <td><span class="parametername">storageCaches</span></td>
         <td></td>
       </tr>
       <tr>
@@ -978,7 +946,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_Rollback.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.Rollback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L151">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L144">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_Rollback_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Rollback*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_Rollback" data-uid="Stratis.SmartContracts.Core.State.StateRepository.Rollback">Rollback()</h4>
@@ -993,7 +961,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_SetCode_NBitcoin_uint160_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.SetCode(NBitcoin.uint160%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L69">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L63">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_SetCode_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.SetCode*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_SetCode_NBitcoin_uint160_System_Byte___" data-uid="Stratis.SmartContracts.Core.State.StateRepository.SetCode(NBitcoin.uint160,System.Byte[])">SetCode(uint160, Byte[])</h4>
@@ -1030,7 +998,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_SetContractType_NBitcoin_uint160_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.SetContractType(NBitcoin.uint160%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L109">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L103">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_SetContractType_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.SetContractType*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_SetContractType_NBitcoin_uint160_System_String_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.SetContractType(NBitcoin.uint160,System.String)">SetContractType(uint160, String)</h4>
@@ -1067,7 +1035,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_SetStorageValue_NBitcoin_uint160_System_Byte___System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.SetStorageValue(NBitcoin.uint160%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L90">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L84">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_SetStorageValue_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.SetStorageValue*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_SetStorageValue_NBitcoin_uint160_System_Byte___System_Byte___" data-uid="Stratis.SmartContracts.Core.State.StateRepository.SetStorageValue(NBitcoin.uint160,System.Byte[],System.Byte[])">SetStorageValue(uint160, Byte[], Byte[])</h4>
@@ -1109,7 +1077,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_SetUnspent_NBitcoin_uint160_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.SetUnspent(NBitcoin.uint160%2CStratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L205">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L196">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_SetUnspent_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.SetUnspent*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_SetUnspent_NBitcoin_uint160_Stratis_SmartContracts_Core_State_AccountAbstractionLayer_ContractUnspentOutput_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.SetUnspent(NBitcoin.uint160,Stratis.SmartContracts.Core.State.AccountAbstractionLayer.ContractUnspentOutput)">SetUnspent(uint160, ContractUnspentOutput)</h4>
@@ -1146,7 +1114,7 @@ Balance = UTXO the contract currently owns, + all the funds it has received, - a
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_StateRepository_StartTracking.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.StateRepository.StartTracking%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L116">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/StateRepository.cs/#L110">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Core_State_StateRepository_StartTracking_" data-uid="Stratis.SmartContracts.Core.State.StateRepository.StartTracking*"></a>
   <h4 id="Stratis_SmartContracts_Core_State_StateRepository_StartTracking" data-uid="Stratis.SmartContracts.Core.State.StateRepository.StartTracking">StartTracking()</h4>

@@ -91,19 +91,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings__ctor_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_System_String_System_String___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.%23ctor(NBitcoin.Network%2CNBitcoin.Protocol.ProtocolVersion%2CSystem.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings__ctor_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_System_String_System_String___NBitcoin_NetworksSelector_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.%23ctor(NBitcoin.Network%2CNBitcoin.Protocol.ProtocolVersion%2CSystem.String%2CSystem.String%5B%5D%2CNBitcoin.NetworksSelector)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L95">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings__ctor_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings__ctor_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_System_String_System_String___" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.#ctor(NBitcoin.Network,NBitcoin.Protocol.ProtocolVersion,System.String,System.String[])">NodeSettings(Network, ProtocolVersion, String, String[])</h4>
+  <h4 id="Stratis_Bitcoin_Configuration_NodeSettings__ctor_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_System_String_System_String___NBitcoin_NetworksSelector_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.#ctor(NBitcoin.Network,NBitcoin.Protocol.ProtocolVersion,System.String,System.String[],NBitcoin.NetworksSelector)">NodeSettings(Network, ProtocolVersion, String, String[], NetworksSelector)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NodeSettings(Network network = null, ProtocolVersion protocolVersion = default(ProtocolVersion), string agent = &quot;StratisBitcoin&quot;, string[] args = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public NodeSettings(Network network = null, ProtocolVersion protocolVersion = default(ProtocolVersion), string agent = &quot;StratisBitcoin&quot;, string[] args = null, NetworksSelector networksSelector = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,9 +139,15 @@
         <td><p>The command-line arguments.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.NetworksSelector.html">NetworksSelector</a></td>
+        <td><span class="parametername">networksSelector</span></td>
+        <td><p>A selector class that delayed load a network for either - regtest/testnet/mainnet.</p>
+</td>
+      </tr>
     </tbody>
   </table>
-  <h5 id="Stratis_Bitcoin_Configuration_NodeSettings__ctor_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_System_String_System_String____remarks">Remarks</h5>
+  <h5 id="Stratis_Bitcoin_Configuration_NodeSettings__ctor_NBitcoin_Network_NBitcoin_Protocol_ProtocolVersion_System_String_System_String___NBitcoin_NetworksSelector__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Processing depends on whether a configuration file is passed via the command line.
 There are two main scenarios here:</p>
 <ul>
@@ -174,7 +180,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_SupportedProtocolVersion.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.SupportedProtocolVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L38">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L37">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_SupportedProtocolVersion" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.SupportedProtocolVersion">SupportedProtocolVersion</h4>
   <div class="markdown level1 summary"><p>Version of the protocol the current implementation supports.</p>
@@ -206,7 +212,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_Agent.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.Agent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L68">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L67">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_Agent_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Agent*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_Agent" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Agent">Agent</h4>
@@ -237,7 +243,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_ConfigReader.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.ConfigReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L59">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L58">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_ConfigReader_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConfigReader*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_ConfigReader" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConfigReader">ConfigReader</h4>
@@ -268,7 +274,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_ConfigurationFile.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.ConfigurationFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L56">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L55">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_ConfigurationFile_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConfigurationFile*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_ConfigurationFile" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ConfigurationFile">ConfigurationFile</h4>
@@ -299,7 +305,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_DataDir.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.DataDir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L53">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L52">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_DataDir_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.DataDir*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_DataDir" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.DataDir">DataDir</h4>
@@ -330,7 +336,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_DataFolder.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.DataFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L50">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L49">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_DataFolder_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.DataFolder*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_DataFolder" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.DataFolder">DataFolder</h4>
@@ -361,7 +367,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_FallbackTxFeeRate.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.FallbackTxFeeRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L74">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L73">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_FallbackTxFeeRate_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.FallbackTxFeeRate*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_FallbackTxFeeRate" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.FallbackTxFeeRate">FallbackTxFeeRate</h4>
@@ -392,7 +398,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_Log.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.Log%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L47">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L46">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_Log_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Log*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_Log" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Log">Log</h4>
@@ -423,7 +429,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_Logger.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L44">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L43">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_Logger_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Logger*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_Logger" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Logger">Logger</h4>
@@ -454,7 +460,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_LoggerFactory.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.LoggerFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L41">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L40">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_LoggerFactory_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.LoggerFactory*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_LoggerFactory" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.LoggerFactory">LoggerFactory</h4>
@@ -485,7 +491,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_MinRelayTxFeeRate.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.MinRelayTxFeeRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L77">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L76">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_MinRelayTxFeeRate_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MinRelayTxFeeRate*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_MinRelayTxFeeRate" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MinRelayTxFeeRate">MinRelayTxFeeRate</h4>
@@ -516,7 +522,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_MinTxFeeRate.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.MinTxFeeRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L71">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L70">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_MinTxFeeRate_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MinTxFeeRate*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_MinTxFeeRate" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.MinTxFeeRate">MinTxFeeRate</h4>
@@ -547,7 +553,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_Network.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L65">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L64">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_Network_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Network*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_Network" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.Network">Network</h4>
@@ -609,7 +615,7 @@ name would be determined. In this case we first need to determine the network.</
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings_ProtocolVersion.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings.ProtocolVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L62">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L61">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Configuration_NodeSettings_ProtocolVersion_" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ProtocolVersion*"></a>
   <h4 id="Stratis_Bitcoin_Configuration_NodeSettings_ProtocolVersion" data-uid="Stratis.Bitcoin.Configuration.NodeSettings.ProtocolVersion">ProtocolVersion</h4>
@@ -725,7 +731,7 @@ name would be determined. In this case we first need to determine the network.</
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static NodeSettings Default(Network network = null, ProtocolVersion protocolVersion = default(ProtocolVersion))</code></pre>
+    <pre><code class="lang-csharp hljs">public static NodeSettings Default(Network network, ProtocolVersion protocolVersion = default(ProtocolVersion))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -827,7 +833,7 @@ name would be determined. In this case we first need to determine the network.</
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Configuration_NodeSettings.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Configuration.NodeSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L35" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Configuration/NodeSettings.cs/#L34" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

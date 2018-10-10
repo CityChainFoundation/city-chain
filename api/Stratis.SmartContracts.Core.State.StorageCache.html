@@ -80,8 +80,8 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html">AbstractChainedSource</a>&lt;<span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[]&gt;</div>
-    <div class="level2"><a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html">SourceChainBox</a>&lt;<span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[]&gt;</div>
-    <div class="level3"><a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html">ReadWriteCache</a>&lt;<span class="xref">System.Byte</span>[]&gt;</div>
+    <div class="level2"><a class="xref" href="Stratis.SmartContracts.Core.State.AbstractCachedSource-2.html">AbstractCachedSource</a>&lt;<span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[]&gt;</div>
+    <div class="level3"><a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html">WriteCache</a>&lt;<span class="xref">System.Byte</span>[]&gt;</div>
     <div class="level4"><span class="xref">StorageCache</span></div>
   </div>
   <div classs="implements">
@@ -92,34 +92,52 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html#Stratis_SmartContracts_Core_State_ReadWriteCache_1_readCache">ReadWriteCache&lt;Byte[]&gt;.readCache</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_cache">WriteCache&lt;Byte[]&gt;.cache</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html#Stratis_SmartContracts_Core_State_ReadWriteCache_1_writeCache">ReadWriteCache&lt;Byte[]&gt;.writeCache</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_readLock">WriteCache&lt;Byte[]&gt;.readLock</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html#Stratis_SmartContracts_Core_State_ReadWriteCache_1_GetModified">ReadWriteCache&lt;Byte[]&gt;.GetModified()</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_writeLock">WriteCache&lt;Byte[]&gt;.writeLock</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html#Stratis_SmartContracts_Core_State_ReadWriteCache_1_HasModified">ReadWriteCache&lt;Byte[]&gt;.HasModified()</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_updateLock">WriteCache&lt;Byte[]&gt;.updateLock</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.ReadWriteCache-1.html#Stratis_SmartContracts_Core_State_ReadWriteCache_1_GetCached_System_Byte___">ReadWriteCache&lt;Byte[]&gt;.GetCached(Byte[])</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_WithCache_Dictionary_System_Byte___Stratis_SmartContracts_Core_State_WriteCache__0__CacheEntry__0___">WriteCache&lt;Byte[]&gt;.WithCache(Dictionary&lt;Byte[], WriteCache.CacheEntry&lt;Byte[]&gt;&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html#Stratis_SmartContracts_Core_State_SourceChainBox_4_Add_ISource__0__1__">SourceChainBox&lt;Byte[], Byte[], Byte[], Byte[]&gt;.Add(ISource&lt;Byte[], Byte[]&gt;)</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_GetModified">WriteCache&lt;Byte[]&gt;.GetModified()</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html#Stratis_SmartContracts_Core_State_SourceChainBox_4_Put__0__1_">SourceChainBox&lt;Byte[], Byte[], Byte[], Byte[]&gt;.Put(Byte[], Byte[])</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_HasModified">WriteCache&lt;Byte[]&gt;.HasModified()</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html#Stratis_SmartContracts_Core_State_SourceChainBox_4_Get__0_">SourceChainBox&lt;Byte[], Byte[], Byte[], Byte[]&gt;.Get(Byte[])</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_Put_System_Byte____0_">WriteCache&lt;Byte[]&gt;.Put(Byte[], Byte[])</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html#Stratis_SmartContracts_Core_State_SourceChainBox_4_Delete__0_">SourceChainBox&lt;Byte[], Byte[], Byte[], Byte[]&gt;.Delete(Byte[])</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_Get_System_Byte___">WriteCache&lt;Byte[]&gt;.Get(Byte[])</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.SmartContracts.Core.State.SourceChainBox-4.html#Stratis_SmartContracts_Core_State_SourceChainBox_4_FlushImpl">SourceChainBox&lt;Byte[], Byte[], Byte[], Byte[]&gt;.FlushImpl()</a>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_Delete_System_Byte___">WriteCache&lt;Byte[]&gt;.Delete(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_Flush">WriteCache&lt;Byte[]&gt;.Flush()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_FlushImpl">WriteCache&lt;Byte[]&gt;.FlushImpl()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html#Stratis_SmartContracts_Core_State_WriteCache_1_GetCached_System_Byte___">WriteCache&lt;Byte[]&gt;.GetCached(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractCachedSource-2.html#Stratis_SmartContracts_Core_State_AbstractCachedSource_2_GetCached__0_">AbstractCachedSource&lt;Byte[], Byte[]&gt;.GetCached(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractCachedSource-2.html#Stratis_SmartContracts_Core_State_AbstractCachedSource_2_GetModified">AbstractCachedSource&lt;Byte[], Byte[]&gt;.GetModified()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractCachedSource-2.html#Stratis_SmartContracts_Core_State_AbstractCachedSource_2_HasModified">AbstractCachedSource&lt;Byte[], Byte[]&gt;.HasModified()</a>
     </div>
     <div>
       <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Source">AbstractChainedSource&lt;Byte[], Byte[], Byte[], Byte[]&gt;.Source</a>
@@ -133,12 +151,24 @@
     <div>
       <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Flush">AbstractChainedSource&lt;Byte[], Byte[], Byte[], Byte[]&gt;.Flush()</a>
     </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_FlushImpl">AbstractChainedSource&lt;Byte[], Byte[], Byte[], Byte[]&gt;.FlushImpl()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Put__0__1_">AbstractChainedSource&lt;Byte[], Byte[], Byte[], Byte[]&gt;.Put(Byte[], Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Get__0_">AbstractChainedSource&lt;Byte[], Byte[], Byte[], Byte[]&gt;.Get(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Delete__0_">AbstractChainedSource&lt;Byte[], Byte[], Byte[], Byte[]&gt;.Delete(Byte[])</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.SmartContracts.Core.State.html">Stratis.SmartContracts.Core.State</a></h6>
   <h6><strong>Assembly</strong>: Stratis.SmartContracts.Core.dll</h6>
   <h5 id="Stratis_SmartContracts_Core_State_StorageCache_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StorageCache : ReadWriteCache&lt;byte[]&gt;, ICachedSource&lt;byte[], byte[]&gt;, ISource&lt;byte[], byte[]&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class StorageCache : WriteCache&lt;byte[]&gt;, ICachedSource&lt;byte[], byte[]&gt;, ISource&lt;byte[], byte[]&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
