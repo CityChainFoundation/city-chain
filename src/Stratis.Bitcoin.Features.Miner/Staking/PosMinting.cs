@@ -821,7 +821,12 @@ namespace Stratis.Bitcoin.Features.Miner.Staking
 
                         var contextInformation = new PosRuleContext(BlockStake.Load(block));
 
-                        this.stakeValidator.CheckKernel(contextInformation, chainTip, block.Header.Bits, txTime, prevoutStake);
+                        var found = this.stakeValidator.CheckKernel(contextInformation, chainTip, block.Header.Bits, txTime, prevoutStake);
+
+                        if (!found) // ConsensusErrors.StakeHashInvalidTarget
+                        {
+                            continue;
+                        }
 
                         if (context.Result.SetKernelFoundIndex(context.Index))
                         {

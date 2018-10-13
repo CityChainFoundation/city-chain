@@ -19,7 +19,7 @@ namespace Stratis.Bitcoin.Features.Consensus.Interfaces
         /// <param name="transactionTime">Transaction time.</param>
         /// <param name="prevout">Information about transaction id and index.</param>
         /// <param name="prevBlockTime">The previous block time.</param>
-        void CheckKernel(PosRuleContext context, ChainedHeader prevChainedHeader, uint headerBits, long transactionTime, OutPoint prevout);
+        bool CheckKernel(PosRuleContext context, ChainedHeader prevChainedHeader, uint headerBits, long transactionTime, OutPoint prevout);
 
         /// <summary>
         /// Checks if provided transaction is a valid coinstake transaction.
