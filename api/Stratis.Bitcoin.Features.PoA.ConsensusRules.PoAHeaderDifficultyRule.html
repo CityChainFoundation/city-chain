@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PoAHeaderDifficultyRule
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,8 @@
   
   <h1 id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderDifficultyRule" data-uid="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderDifficultyRule" class="text-break">Class PoAHeaderDifficultyRule
   </h1>
-  <div class="markdown level0 summary"><p>All PoA blocks should be of constant difficulty so chainwork always raises by constant amount with each new block.</p>
+  <div class="markdown level0 summary"><p>All PoA blocks should be of constant difficulty so chainwork always
+raises by constant amount with each new block.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -107,6 +108,10 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PoAHeaderDifficultyRule : HeaderValidationConsensusRule, IConsensusRuleBase, IHeaderValidationConsensusRule</code></pre>
   </div>
+  <h5 id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderDifficultyRule_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Having this rule guarantees that longest chain will always be
+the best chain in terms of chainwork.</p>
+</div>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
@@ -114,7 +119,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderDifficultyRule_PoABlockDifficulty.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderDifficultyRule.PoABlockDifficulty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderDifficultyRule.cs/#L11">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderDifficultyRule.cs/#L16">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderDifficultyRule_PoABlockDifficulty" data-uid="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderDifficultyRule.PoABlockDifficulty">PoABlockDifficulty</h4>
   <div class="markdown level1 summary"></div>
@@ -145,7 +150,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderDifficultyRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderDifficultyRule.Run(Stratis.Bitcoin.Consensus.Rules.RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderDifficultyRule.cs/#L13">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderDifficultyRule.cs/#L18">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderDifficultyRule_Run_" data-uid="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderDifficultyRule.Run*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderDifficultyRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_" data-uid="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderDifficultyRule.Run(Stratis.Bitcoin.Consensus.Rules.RuleContext)">Run(RuleContext)</h4>
@@ -192,7 +197,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderDifficultyRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderDifficultyRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderDifficultyRule.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderDifficultyRule.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

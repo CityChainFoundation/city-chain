@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IPersistentState
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -86,14 +86,49 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_Clear_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.Clear(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L148">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_IPersistentState_Clear_" data-uid="Stratis.SmartContracts.IPersistentState.Clear*"></a>
+  <h4 id="Stratis_SmartContracts_IPersistentState_Clear_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.Clear(System.String)">Clear(String)</h4>
+  <div class="markdown level1 summary"><p>Removes any bytes set at the value pointed to by the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Clear(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetAddress_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L14">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L30">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetAddress_" data-uid="Stratis.SmartContracts.IPersistentState.GetAddress*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetAddress_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetAddress(System.String)">GetAddress(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToAddress_System_Byte___">ToAddress(Byte[])</a> to
+deserialize the value to an Address. If deserialization is unsuccessful, returns default(Address).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -136,11 +171,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetArray__1_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetArray%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L30">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L78">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetArray_" data-uid="Stratis.SmartContracts.IPersistentState.GetArray*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetArray__1_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetArray``1(System.String)">GetArray&lt;T&gt;(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToArray__1_System_Byte___">ToArray&lt;T&gt;(Byte[])</a> to
+deserialize the value to an Array. If deserialization is unsuccessful, returns new T[0].</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,11 +235,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetBool_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetBool(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L16">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L36">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetBool_" data-uid="Stratis.SmartContracts.IPersistentState.GetBool*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetBool_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetBool(System.String)">GetBool(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToBool_System_Byte___">ToBool(Byte[])</a> to
+deserialize the value to a bool. If deserialization is unsuccessful, returns default(bool).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -245,11 +284,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetBytes_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetBytes(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L10">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L18">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetBytes_" data-uid="Stratis.SmartContracts.IPersistentState.GetBytes*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetBytes_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetBytes(System.String)">GetBytes(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -292,11 +332,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetChar_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetChar(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L12">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L24">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetChar_" data-uid="Stratis.SmartContracts.IPersistentState.GetChar*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetChar_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetChar(System.String)">GetChar(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToChar_System_Byte___">ToChar(Byte[])</a> to
+deserialize the value to a char. If deserialization is unsuccessful, returns default(char).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -339,11 +381,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetInt32_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetInt32(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L42">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetInt32_" data-uid="Stratis.SmartContracts.IPersistentState.GetInt32*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetInt32_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetInt32(System.String)">GetInt32(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToInt32_System_Byte___">ToInt32(Byte[])</a> to
+deserialize the value to an int. If deserialization is unsuccessful, returns default(int).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -386,11 +430,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetInt64_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetInt64(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L22">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L54">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetInt64_" data-uid="Stratis.SmartContracts.IPersistentState.GetInt64*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetInt64_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetInt64(System.String)">GetInt64(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToInt64_System_Byte___">ToInt64(Byte[])</a> to
+deserialize the value to a long. If deserialization is unsuccessful, returns default(long).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -433,11 +479,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetString_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L26">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L66">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetString_" data-uid="Stratis.SmartContracts.IPersistentState.GetString*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetString_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetString(System.String)">GetString(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToString_System_Byte___">ToString(Byte[])</a> to
+deserialize the value to a string. If deserialization is unsuccessful, returns <see cref="!:string.Empty"></see>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -480,11 +528,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetStruct__1_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetStruct%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L28">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L72">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetStruct_" data-uid="Stratis.SmartContracts.IPersistentState.GetStruct*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetStruct__1_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetStruct``1(System.String)">GetStruct&lt;T&gt;(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToStruct__1_System_Byte___">ToStruct&lt;T&gt;(Byte[])</a> to
+deserialize the value to a struct. If deserialization is unsuccessful, returns default(T).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -543,11 +593,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetUInt32_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetUInt32(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L20">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L48">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetUInt32_" data-uid="Stratis.SmartContracts.IPersistentState.GetUInt32*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetUInt32_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetUInt32(System.String)">GetUInt32(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToUInt32_System_Byte___">ToUInt32(Byte[])</a> to
+deserialize the value to a uint. If deserialization is unsuccessful, returns default(uint).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -590,11 +642,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_GetUInt64_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.GetUInt64(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L24">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L60">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_GetUInt64_" data-uid="Stratis.SmartContracts.IPersistentState.GetUInt64*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_GetUInt64_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.GetUInt64(System.String)">GetUInt64(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytes set at the value pointed to by the given key, and uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_ToUInt64_System_Byte___">ToUInt64(Byte[])</a> to
+deserialize the value to a ulong. If deserialization is unsuccessful, returns default(ulong).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -634,14 +688,64 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_IsContract_Stratis_SmartContracts_Address_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.IsContract(Stratis.SmartContracts.Address)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L13">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_IPersistentState_IsContract_" data-uid="Stratis.SmartContracts.IPersistentState.IsContract*"></a>
+  <h4 id="Stratis_SmartContracts_IPersistentState_IsContract_Stratis_SmartContracts_Address_" data-uid="Stratis.SmartContracts.IPersistentState.IsContract(Stratis.SmartContracts.Address)">IsContract(Address)</h4>
+  <div class="markdown level1 summary"><p>Returns true if a contract exists at the given Address. If the supplied Address is invalid, returns false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsContract(Address address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Address.html">Address</a></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetAddress_System_String_Stratis_SmartContracts_Address_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetAddress(System.String%2CStratis.SmartContracts.Address)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L36">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L95">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetAddress_" data-uid="Stratis.SmartContracts.IPersistentState.SetAddress*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetAddress_System_String_Stratis_SmartContracts_Address_" data-uid="Stratis.SmartContracts.IPersistentState.SetAddress(System.String,Stratis.SmartContracts.Address)">SetAddress(String, Address)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize_Stratis_SmartContracts_Address_">Serialize(Address)</a> to serialize an Address to its 20-byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -674,11 +778,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetArray_System_String_Array_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetArray(System.String%2CArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L52">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L143">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetArray_" data-uid="Stratis.SmartContracts.IPersistentState.SetArray*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetArray_System_String_Array_" data-uid="Stratis.SmartContracts.IPersistentState.SetArray(System.String,Array)">SetArray(String, Array)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize_Array_">Serialize(Array)</a> to serialize an array of primitives to its byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -711,11 +817,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetBool_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetBool(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L38">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L101">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetBool_" data-uid="Stratis.SmartContracts.IPersistentState.SetBool*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetBool_System_String_System_Boolean_" data-uid="Stratis.SmartContracts.IPersistentState.SetBool(System.String,System.Boolean)">SetBool(String, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize_System_Boolean_">Serialize(Boolean)</a> to serialize a bool to its 1-byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -748,11 +856,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetBytes_System_String_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetBytes(System.String%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L32">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L83">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetBytes_" data-uid="Stratis.SmartContracts.IPersistentState.SetBytes*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetBytes_System_String_System_Byte___" data-uid="Stratis.SmartContracts.IPersistentState.SetBytes(System.String,System.Byte[])">SetBytes(String, Byte[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the given bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -785,11 +894,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetChar_System_String_System_Char_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetChar(System.String%2CSystem.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L34">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L89">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetChar_" data-uid="Stratis.SmartContracts.IPersistentState.SetChar*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetChar_System_String_System_Char_" data-uid="Stratis.SmartContracts.IPersistentState.SetChar(System.String,System.Char)">SetChar(String, Char)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize_System_Char_">Serialize(Char)</a> to serialize a char to its 2-byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -822,11 +933,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetInt32_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetInt32(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L40">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L107">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetInt32_" data-uid="Stratis.SmartContracts.IPersistentState.SetInt32*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetInt32_System_String_System_Int32_" data-uid="Stratis.SmartContracts.IPersistentState.SetInt32(System.String,System.Int32)">SetInt32(String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize_System_Int32_">Serialize(Int32)</a> to serialize an int to its 4-byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -859,11 +972,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetInt64_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetInt64(System.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L44">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L119">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetInt64_" data-uid="Stratis.SmartContracts.IPersistentState.SetInt64*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetInt64_System_String_System_Int64_" data-uid="Stratis.SmartContracts.IPersistentState.SetInt64(System.String,System.Int64)">SetInt64(String, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize_System_Int64_">Serialize(Int64)</a> to serialize a long to its 8-byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -896,11 +1011,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetString_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetString(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L48">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L131">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetString_" data-uid="Stratis.SmartContracts.IPersistentState.SetString*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetString_System_String_System_String_" data-uid="Stratis.SmartContracts.IPersistentState.SetString(System.String,System.String)">SetString(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize_System_String_">Serialize(String)</a> to serialize a string to its UTF8 encoded byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -933,11 +1050,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetStruct__1_System_String___0_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetStruct%60%601(System.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L50">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L137">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetStruct_" data-uid="Stratis.SmartContracts.IPersistentState.SetStruct*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetStruct__1_System_String___0_" data-uid="Stratis.SmartContracts.IPersistentState.SetStruct``1(System.String,``0)">SetStruct&lt;T&gt;(String, T)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize__1___0_">Serialize&lt;T&gt;(T)</a> to serialize a struct to its byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -986,11 +1105,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetUInt32_System_String_System_UInt32_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetUInt32(System.String%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L42">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L113">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetUInt32_" data-uid="Stratis.SmartContracts.IPersistentState.SetUInt32*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetUInt32_System_String_System_UInt32_" data-uid="Stratis.SmartContracts.IPersistentState.SetUInt32(System.String,System.UInt32)">SetUInt32(String, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize_System_UInt32_">Serialize(UInt32)</a> to serialize a uint to its 4-byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1023,11 +1144,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_IPersistentState_SetUInt64_System_String_System_UInt64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.IPersistentState.SetUInt64(System.String%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L46">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/IPersistentState.cs/#L125">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_IPersistentState_SetUInt64_" data-uid="Stratis.SmartContracts.IPersistentState.SetUInt64*"></a>
   <h4 id="Stratis_SmartContracts_IPersistentState_SetUInt64_System_String_System_UInt64_" data-uid="Stratis.SmartContracts.IPersistentState.SetUInt64(System.String,System.UInt64)">SetUInt64(String, UInt64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Stratis.SmartContracts.ISerializer.html#Stratis_SmartContracts_ISerializer_Serialize_System_UInt64_">Serialize(UInt64)</a> to serialize a ulong to its 8-byte representation.
+Sets the serialized bytes against the given key in state storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

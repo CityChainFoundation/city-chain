@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PersistentState
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -90,20 +90,20 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState__ctor_Stratis_SmartContracts_Executor_Reflection_IPersistenceStrategy_Stratis_SmartContracts_Executor_Reflection_Serialization_IContractPrimitiveSerializer_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.%23ctor(Stratis.SmartContracts.Executor.Reflection.IPersistenceStrategy%2CStratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer%2Cuint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState__ctor_Stratis_SmartContracts_Executor_Reflection_IPersistenceStrategy_ISerializer_uint160_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.%23ctor(Stratis.SmartContracts.Executor.Reflection.IPersistenceStrategy%2CISerializer%2Cuint160)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L16">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState__ctor_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.#ctor*"></a>
-  <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState__ctor_Stratis_SmartContracts_Executor_Reflection_IPersistenceStrategy_Stratis_SmartContracts_Executor_Reflection_Serialization_IContractPrimitiveSerializer_uint160_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.#ctor(Stratis.SmartContracts.Executor.Reflection.IPersistenceStrategy,Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer,uint160)">PersistentState(IPersistenceStrategy, IContractPrimitiveSerializer, uint160)</h4>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState__ctor_Stratis_SmartContracts_Executor_Reflection_IPersistenceStrategy_ISerializer_uint160_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.#ctor(Stratis.SmartContracts.Executor.Reflection.IPersistenceStrategy,ISerializer,uint160)">PersistentState(IPersistenceStrategy, ISerializer, uint160)</h4>
   <div class="markdown level1 summary"><p>Instantiate a new PersistentState instance. Each PersistentState object represents
 a slice of state for a particular contract address.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PersistentState(IPersistenceStrategy persistenceStrategy, IContractPrimitiveSerializer contractPrimitiveSerializer, uint160 contractAddress)</code></pre>
+    <pre><code class="lang-csharp hljs">public PersistentState(IPersistenceStrategy persistenceStrategy, ISerializer serializer, uint160 contractAddress)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,8 +121,8 @@ a slice of state for a particular contract address.</p>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer.html">IContractPrimitiveSerializer</a></td>
-        <td><span class="parametername">contractPrimitiveSerializer</span></td>
+        <td><span class="xref">ISerializer</span></td>
+        <td><span class="parametername">serializer</span></td>
         <td></td>
       </tr>
       <tr>
@@ -139,7 +139,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_ContractAddress.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.ContractAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L10">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L8">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_ContractAddress_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.ContractAddress*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_ContractAddress" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.ContractAddress">ContractAddress</h4>
@@ -168,10 +168,42 @@ a slice of state for a particular contract address.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_Clear_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.Clear(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L184">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_Clear_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.Clear*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_Clear_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.Clear(System.String)">Clear(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetAddress_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L51">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L59">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetAddress_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetAddress*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetAddress_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetAddress(System.String)">GetAddress(String)</h4>
@@ -218,7 +250,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetArray__1_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetArray%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L91">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L115">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetArray_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetArray*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetArray__1_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetArray``1(System.String)">GetArray&lt;T&gt;(String)</h4>
@@ -280,7 +312,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetBool_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetBool(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L56">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L66">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetBool_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetBool*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetBool_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetBool(System.String)">GetBool(String)</h4>
@@ -374,7 +406,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetChar_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetChar(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L46">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L52">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetChar_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetChar*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetChar_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetChar(System.String)">GetChar(String)</h4>
@@ -421,7 +453,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetInt32_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetInt32(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L61">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L73">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetInt32_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetInt32*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetInt32_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetInt32(System.String)">GetInt32(String)</h4>
@@ -468,7 +500,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetInt64_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetInt64(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L71">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L87">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetInt64_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetInt64*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetInt64_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetInt64(System.String)">GetInt64(String)</h4>
@@ -515,7 +547,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetString_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L81">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L101">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetString_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetString*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetString_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetString(System.String)">GetString(String)</h4>
@@ -562,7 +594,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetStruct__1_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetStruct%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L86">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L108">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetStruct_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetStruct*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetStruct__1_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetStruct``1(System.String)">GetStruct&lt;T&gt;(String)</h4>
@@ -625,7 +657,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetUInt32_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetUInt32(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L66">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L80">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetUInt32_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetUInt32*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetUInt32_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetUInt32(System.String)">GetUInt32(String)</h4>
@@ -672,7 +704,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_GetUInt64_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.GetUInt64(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L76">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L94">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetUInt64_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetUInt64*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_GetUInt64_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.GetUInt64(System.String)">GetUInt64(String)</h4>
@@ -716,10 +748,57 @@ a slice of state for a particular contract address.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_IsContract_Address_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.IsContract(Address)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L27">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_IsContract_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.IsContract*"></a>
+  <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_IsContract_Address_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.IsContract(Address)">IsContract(Address)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsContract(Address address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Address</span></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetAddress_System_String_Address_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetAddress(System.String%2CAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L112">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L134">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetAddress_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetAddress*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetAddress_System_String_Address_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetAddress(System.String,Address)">SetAddress(String, Address)</h4>
@@ -756,7 +835,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetArray_System_String_Array_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetArray(System.String%2CArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L152">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L169">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetArray_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetArray*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetArray_System_String_Array_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetArray(System.String,Array)">SetArray(String, Array)</h4>
@@ -793,7 +872,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetBool_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetBool(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L117">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L139">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetBool_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetBool*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetBool_System_String_System_Boolean_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetBool(System.String,System.Boolean)">SetBool(String, Boolean)</h4>
@@ -830,7 +909,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetBytes_System_String_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetBytes(System.String%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L102">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L122">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetBytes_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetBytes*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetBytes_System_String_System_Byte___" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetBytes(System.String,System.Byte[])">SetBytes(String, Byte[])</h4>
@@ -867,7 +946,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetChar_System_String_System_Char_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetChar(System.String%2CSystem.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L107">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L129">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetChar_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetChar*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetChar_System_String_System_Char_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetChar(System.String,System.Char)">SetChar(String, Char)</h4>
@@ -904,7 +983,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetInt32_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetInt32(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L122">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L144">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetInt32_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetInt32*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetInt32_System_String_System_Int32_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetInt32(System.String,System.Int32)">SetInt32(String, Int32)</h4>
@@ -941,7 +1020,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetInt64_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetInt64(System.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L132">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L154">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetInt64_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetInt64*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetInt64_System_String_System_Int64_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetInt64(System.String,System.Int64)">SetInt64(String, Int64)</h4>
@@ -978,7 +1057,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetString_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetString(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L142">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L164">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetString_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetString*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetString_System_String_System_String_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetString(System.String,System.String)">SetString(String, String)</h4>
@@ -1015,7 +1094,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetStruct__1_System_String___0_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetStruct%60%601(System.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L147">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L174">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetStruct_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetStruct*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetStruct__1_System_String___0_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetStruct``1(System.String,``0)">SetStruct&lt;T&gt;(String, T)</h4>
@@ -1068,7 +1147,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetUInt32_System_String_System_UInt32_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetUInt32(System.String%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L127">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L149">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetUInt32_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetUInt32*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetUInt32_System_String_System_UInt32_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetUInt32(System.String,System.UInt32)">SetUInt32(String, UInt32)</h4>
@@ -1105,7 +1184,7 @@ a slice of state for a particular contract address.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState_SetUInt64_System_String_System_UInt64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState.SetUInt64(System.String%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L137">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L159">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetUInt64_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetUInt64*"></a>
   <h4 id="Stratis_SmartContracts_Executor_Reflection_PersistentState_SetUInt64_System_String_System_UInt64_" data-uid="Stratis.SmartContracts.Executor.Reflection.PersistentState.SetUInt64(System.String,System.UInt64)">SetUInt64(String, UInt64)</h4>
@@ -1148,7 +1227,7 @@ a slice of state for a particular contract address.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Executor_Reflection_PersistentState.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Executor.Reflection.PersistentState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Executor.Reflection/PersistentState.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

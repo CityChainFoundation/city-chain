@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.Features.Consensus.Rules.ProvenHeaderRules
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,6 +77,13 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ProvenHeaderRules.ProvenHeaderCoinstakeRule.html">ProvenHeaderCoinstakeRule</a></h4>
+      <section><p>Rule to check if the coinstake inside proven header is valid:</p>
+<ol><li>Check that coinstake tx has IsCoinStake property equal to true.</li><li>Header time is equal to the timestamp of the coinstake tx.</li><li>Check if coinstake tx timestamp is divisible by 16 (using timestamp mask).</li><li>Verify the coinstake age requirement (*).</li><li>
+        Verify all coinstake transaction inputs (*).
+<ol><li>Input comes from a UTXO.</li><li>Verify the ScriptSig</li></ol>
+</li><li>Check if the coinstake kernel hash satisfies the difficulty requirement (*).</li><li>Check that coinstake tx is in the merkle tree using the merkle proof.</li><li>Verify header signature with the key from coinstake kernel (*).</li></ol>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.ProvenHeaderRules.ProvenHeaderRuleBase.html">ProvenHeaderRuleBase</a></h4>
       <section><p>Base rule to be used by all proven header validation rules.</p>
 </section>

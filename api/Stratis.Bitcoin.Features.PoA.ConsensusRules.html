@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.Features.PoA.ConsensusRules
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,18 +78,23 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.PoA.ConsensusRules.HeaderTimeChecksPoARule.html">HeaderTimeChecksPoARule</a></h4>
-      <section></section>
+      <section><p>Ensures that timestamp of current block is greater than timestamp of previous block,
+that timestamp is not more than targetSpacing seconds far in the future and that it is devisible by target spacing.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoACoinviewRule.html">PoACoinviewRule</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAConsensusErrors.html">PoAConsensusErrors</a></h4>
-      <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderDifficultyRule.html">PoAHeaderDifficultyRule</a></h4>
-      <section><p>All PoA blocks should be of constant difficulty so chainwork always raises by constant amount with each new block.</p>
+      <section><p>All PoA blocks should be of constant difficulty so chainwork always
+raises by constant amount with each new block.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderSignatureRule.html">PoAHeaderSignatureRule</a></h4>
-      <section></section>
+      <section><p>Estimates which public key should be used for timestamp of a header being
+validated and uses this public key to verify header's signature.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAIntegritySignatureRule.html">PoAIntegritySignatureRule</a></h4>
-      <section></section>
+      <section><p>Checks that signature from header we wanted to download block data for
+is equal to signature in block we've received.</p>
+</section>
 </article>
           </div>
           

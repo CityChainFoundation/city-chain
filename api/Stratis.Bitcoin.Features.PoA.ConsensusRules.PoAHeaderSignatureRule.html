@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PoAHeaderSignatureRule
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,9 @@
   
   <h1 id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderSignatureRule" data-uid="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderSignatureRule" class="text-break">Class PoAHeaderSignatureRule
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Estimates which public key should be used for timestamp of a header being
+validated and uses this public key to verify header's signature.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -96,9 +98,6 @@
     <div>
       <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_Parent">ConsensusRuleBase.Parent</a>
     </div>
-    <div>
-      <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_Initialize">ConsensusRuleBase.Initialize()</a>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.PoA.ConsensusRules.html">Stratis.Bitcoin.Features.PoA.ConsensusRules</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.PoA.dll</h6>
@@ -110,10 +109,30 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderSignatureRule_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderSignatureRule.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderSignatureRule.cs/#L18">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderSignatureRule_Initialize_" data-uid="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderSignatureRule.Initialize*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderSignatureRule_Initialize" data-uid="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderSignatureRule.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Allow a rule to initialize itself.
+The rule can verify that other rules are present using the <see cref="!:IConsensusRuleEngine.Rules"></see>.
+The rule can internally initialize its state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html#Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_Initialize">ConsensusRuleBase.Initialize()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderSignatureRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderSignatureRule.Run(Stratis.Bitcoin.Consensus.Rules.RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderSignatureRule.cs/#L10">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderSignatureRule.cs/#L28">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderSignatureRule_Run_" data-uid="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderSignatureRule.Run*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderSignatureRule_Run_Stratis_Bitcoin_Consensus_Rules_RuleContext_" data-uid="Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderSignatureRule.Run(Stratis.Bitcoin.Consensus.Rules.RuleContext)">Run(RuleContext)</h4>
@@ -160,7 +179,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_ConsensusRules_PoAHeaderSignatureRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.ConsensusRules.PoAHeaderSignatureRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderSignatureRule.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/ConsensusRules/PoAHeaderSignatureRule.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

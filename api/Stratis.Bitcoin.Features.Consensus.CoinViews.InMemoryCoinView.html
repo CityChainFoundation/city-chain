@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InMemoryCoinView
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -242,13 +242,13 @@ If the i-th item of <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Coi
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_Rewind.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.Rewind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_RewindAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.RewindAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/InMemoryCoinView.cs/#L97">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_Rewind_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.Rewind*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_Rewind" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.Rewind">Rewind()</h4>
+  <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_RewindAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.RewindAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_RewindAsync" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.RewindAsync">RewindAsync()</h4>
   <div class="markdown level1 summary"><p>Rewinds the coinview to the last saved state.</p>
 <p>
 This operation includes removing the UTXOs of the recent transactions
@@ -258,7 +258,7 @@ and restoring recently spent outputs as UTXOs.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; Rewind()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; RewindAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -278,26 +278,26 @@ and restoring recently spent outputs as UTXOs.
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_List_Stratis_Bitcoin_Utilities_RewindData__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.SaveChangesAsync(IEnumerable%7BStratis.Bitcoin.Utilities.UnspentOutputs%7D%2CIEnumerable%7BNBitcoin.TxOut%5B%5D%7D%2CNBitcoin.uint256%2CNBitcoin.uint256%2CList%7BStratis.Bitcoin.Utilities.RewindData%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_SaveChangesAsync_IList_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_List_Stratis_Bitcoin_Utilities_RewindData__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.SaveChangesAsync(IList%7BStratis.Bitcoin.Utilities.UnspentOutputs%7D%2CIEnumerable%7BNBitcoin.TxOut%5B%5D%7D%2CNBitcoin.uint256%2CNBitcoin.uint256%2CList%7BStratis.Bitcoin.Utilities.RewindData%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinViews/InMemoryCoinView.cs/#L63">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_SaveChangesAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.SaveChangesAsync*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_List_Stratis_Bitcoin_Utilities_RewindData__" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.SaveChangesAsync(IEnumerable{Stratis.Bitcoin.Utilities.UnspentOutputs},IEnumerable{NBitcoin.TxOut[]},NBitcoin.uint256,NBitcoin.uint256,List{Stratis.Bitcoin.Utilities.RewindData})">SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt;, IEnumerable&lt;TxOut[]&gt;, uint256, uint256, List&lt;RewindData&gt;)</h4>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_CoinViews_InMemoryCoinView_SaveChangesAsync_IList_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_List_Stratis_Bitcoin_Utilities_RewindData__" data-uid="Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.SaveChangesAsync(IList{Stratis.Bitcoin.Utilities.UnspentOutputs},IEnumerable{NBitcoin.TxOut[]},NBitcoin.uint256,NBitcoin.uint256,List{Stratis.Bitcoin.Utilities.RewindData})">SaveChangesAsync(IList&lt;UnspentOutputs&gt;, IEnumerable&lt;TxOut[]&gt;, uint256, uint256, List&lt;RewindData&gt;)</h4>
   <div class="markdown level1 summary"><p>Persists changes to the coinview (with the tip hash <code data-dev-comment-type="paramref" class="paramref">oldBlockHash</code>) when a new block
 (hash <code data-dev-comment-type="paramref" class="paramref">nextBlockHash</code>) is added and becomes the new tip of the coinview.</p>
 <p>
 This method is provided (in <code data-dev-comment-type="paramref" class="paramref">unspentOutputs</code> parameter) with information about all
 transactions that are either new or were changed in the new block. It is also provided with information
 (in <see cref="!:originalOutputs"></see>) about the previous state of those transactions (if any),
-which is used for <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_Rewind">Rewind()</a> operation.
+which is used for <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_RewindAsync">RewindAsync()</a> operation.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt; unspentOutputs, IEnumerable&lt;TxOut[]&gt; originalOutputs, uint256 oldBlockHash, uint256 nextBlockHash, List&lt;RewindData&gt; rewindDataList = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task SaveChangesAsync(IList&lt;UnspentOutputs&gt; unspentOutputs, IEnumerable&lt;TxOut[]&gt; originalOutputs, uint256 oldBlockHash, uint256 nextBlockHash, List&lt;RewindData&gt; rewindDataList = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -310,7 +310,7 @@ which is used for <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinV
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Utilities.UnspentOutputs.html">UnspentOutputs</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Stratis.Bitcoin.Utilities.UnspentOutputs.html">UnspentOutputs</a>&gt;</td>
         <td><span class="parametername">unspentOutputs</span></td>
         <td><p>Information about the changes between the old block and the new block. An item in this list represents a list of all outputs
 for a specific transaction. If a specific output was spent, the output is <code>null</code>.</p>
@@ -339,7 +339,7 @@ and which were not.</p>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Utilities.RewindData.html">RewindData</a>&gt;</td>
         <td><span class="parametername">rewindDataList</span></td>
-        <td><p>List of rewind data items to be persisted. This should only be used when calling <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_SaveChangesAsync_IEnumerable_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_List_Stratis_Bitcoin_Utilities_RewindData__">SaveChangesAsync(IEnumerable&lt;UnspentOutputs&gt;, IEnumerable&lt;TxOut[]&gt;, uint256, uint256, List&lt;RewindData&gt;)</a>.</p>
+        <td><p>List of rewind data items to be persisted. This should only be used when calling <a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.html#Stratis_Bitcoin_Features_Consensus_CoinViews_DBreezeCoinView_SaveChangesAsync_IList_Stratis_Bitcoin_Utilities_UnspentOutputs__IEnumerable_NBitcoin_TxOut____NBitcoin_uint256_NBitcoin_uint256_List_Stratis_Bitcoin_Utilities_RewindData__">SaveChangesAsync(IList&lt;UnspentOutputs&gt;, IEnumerable&lt;TxOut[]&gt;, uint256, uint256, List&lt;RewindData&gt;)</a>.</p>
 </td>
       </tr>
     </tbody>
