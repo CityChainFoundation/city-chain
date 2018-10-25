@@ -6465,7 +6465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.Interfaces.IStakeValidator.html",
-          "hash": "PNS0xwfuEM4n4H1GTP+z1A=="
+          "hash": "m4DOCGvCfrBbrduFMXRuxA=="
         }
       },
       "is_incremental": false,
@@ -7137,7 +7137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.StakeValidator.html",
-          "hash": "KcTVZZsLW4J+YxWAaplRAQ=="
+          "hash": "0wB1mInrs7QFh2263wjWhQ=="
         }
       },
       "is_incremental": false,

@@ -287,7 +287,7 @@ And the <code>N</code> determines how strongly will the deviation of the last bl
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CheckKernel(PosRuleContext context, ChainedHeader prevChainedHeader, uint headerBits, long transactionTime, OutPoint prevout)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CheckKernel(PosRuleContext context, ChainedHeader prevChainedHeader, uint headerBits, long transactionTime, OutPoint prevout)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -327,6 +327,22 @@ And the <code>N</code> determines how strongly will the deviation of the last bl
         <td><a class="xref" href="NBitcoin.OutPoint.html">OutPoint</a></td>
         <td><span class="parametername">prevout</span></td>
         <td><p>Information about transaction id and index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if a correct hash was discovered.</p>
 </td>
       </tr>
     </tbody>
@@ -403,7 +419,7 @@ And the <code>N</code> determines how strongly will the deviation of the last bl
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CheckStakeKernelHash(PosRuleContext context, uint headerBits, BlockStake prevBlockStake, UnspentOutputs stakingCoins, OutPoint prevout, uint transactionTime)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CheckStakeKernelHash(PosRuleContext context, uint headerBits, BlockStake prevBlockStake, UnspentOutputs stakingCoins, OutPoint prevout, uint transactionTime)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -449,6 +465,22 @@ And the <code>N</code> determines how strongly will the deviation of the last bl
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">transactionTime</span></td>
         <td><p>Transaction time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if a correct hash was discovered.</p>
 </td>
       </tr>
     </tbody>
@@ -663,7 +695,7 @@ PoS if <code data-dev-comment-type="paramref" class="paramref">proofOfStake</cod
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_StakeValidator_IsConfirmedInNPrevBlocks_Stratis_Bitcoin_Utilities_UnspentOutputs_NBitcoin_ChainedHeader_System_Int64_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.StakeValidator.IsConfirmedInNPrevBlocks(Stratis.Bitcoin.Utilities.UnspentOutputs%2CNBitcoin.ChainedHeader%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/StakeValidator.cs/#L343">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/StakeValidator.cs/#L345">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_StakeValidator_IsConfirmedInNPrevBlocks_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.IsConfirmedInNPrevBlocks*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_StakeValidator_IsConfirmedInNPrevBlocks_Stratis_Bitcoin_Utilities_UnspentOutputs_NBitcoin_ChainedHeader_System_Int64_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.IsConfirmedInNPrevBlocks(Stratis.Bitcoin.Utilities.UnspentOutputs,NBitcoin.ChainedHeader,System.Int64)">IsConfirmedInNPrevBlocks(UnspentOutputs, ChainedHeader, Int64)</h4>
@@ -725,7 +757,7 @@ PoS if <code data-dev-comment-type="paramref" class="paramref">proofOfStake</cod
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_StakeValidator_VerifySignature_Stratis_Bitcoin_Utilities_UnspentOutputs_NBitcoin_Transaction_System_Int32_NBitcoin_ScriptVerify_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.StakeValidator.VerifySignature(Stratis.Bitcoin.Utilities.UnspentOutputs%2CNBitcoin.Transaction%2CSystem.Int32%2CNBitcoin.ScriptVerify)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/StakeValidator.cs/#L322">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/StakeValidator.cs/#L324">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_StakeValidator_VerifySignature_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.VerifySignature*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_StakeValidator_VerifySignature_Stratis_Bitcoin_Utilities_UnspentOutputs_NBitcoin_Transaction_System_Int32_NBitcoin_ScriptVerify_" data-uid="Stratis.Bitcoin.Features.Consensus.StakeValidator.VerifySignature(Stratis.Bitcoin.Utilities.UnspentOutputs,NBitcoin.Transaction,System.Int32,NBitcoin.ScriptVerify)">VerifySignature(UnspentOutputs, Transaction, Int32, ScriptVerify)</h4>
