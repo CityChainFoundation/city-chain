@@ -590,7 +590,7 @@
   </span>
   <a id="Stratis_SmartContracts_ISerializer_ToAddress_" data-uid="Stratis.SmartContracts.ISerializer.ToAddress*"></a>
   <h4 id="Stratis_SmartContracts_ISerializer_ToAddress_System_Byte___" data-uid="Stratis.SmartContracts.ISerializer.ToAddress(System.Byte[])">ToAddress(Byte[])</h4>
-  <div class="markdown level1 summary"><p>Deserializes 20-bytes into an address. If the given bytes are null, empty, or deserialization fails, returns default(Address).</p>
+  <div class="markdown level1 summary"><p>Deserializes 20-bytes into an address. If the given bytes are null, empty, or deserialization fails, returns <a class="xref" href="Stratis.SmartContracts.Address.html#Stratis_SmartContracts_Address_Zero">Zero</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -631,10 +631,58 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_ISerializer_ToAddress_System_String_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.ISerializer.ToAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L72">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_ISerializer_ToAddress_" data-uid="Stratis.SmartContracts.ISerializer.ToAddress*"></a>
+  <h4 id="Stratis_SmartContracts_ISerializer_ToAddress_System_String_" data-uid="Stratis.SmartContracts.ISerializer.ToAddress(System.String)">ToAddress(String)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a string into an address. If the given string is null, empty, or deserialization fails, returns <a class="xref" href="Stratis.SmartContracts.Address.html#Stratis_SmartContracts_Address_Zero">Zero</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Address ToAddress(string val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Address.html">Address</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_ISerializer_ToArray__1_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.ISerializer.ToArray%60%601(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L103">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L108">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_ISerializer_ToArray_" data-uid="Stratis.SmartContracts.ISerializer.ToArray*"></a>
   <h4 id="Stratis_SmartContracts_ISerializer_ToArray__1_System_Byte___" data-uid="Stratis.SmartContracts.ISerializer.ToArray``1(System.Byte[])">ToArray&lt;T&gt;(Byte[])</h4>
@@ -746,7 +794,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_ISerializer_ToChar_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.ISerializer.ToChar(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L97">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L102">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_ISerializer_ToChar_" data-uid="Stratis.SmartContracts.ISerializer.ToChar*"></a>
   <h4 id="Stratis_SmartContracts_ISerializer_ToChar_System_Byte___" data-uid="Stratis.SmartContracts.ISerializer.ToChar(System.Byte[])">ToChar(Byte[])</h4>
@@ -794,7 +842,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_ISerializer_ToInt32_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.ISerializer.ToInt32(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L72">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L77">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_ISerializer_ToInt32_" data-uid="Stratis.SmartContracts.ISerializer.ToInt32*"></a>
   <h4 id="Stratis_SmartContracts_ISerializer_ToInt32_System_Byte___" data-uid="Stratis.SmartContracts.ISerializer.ToInt32(System.Byte[])">ToInt32(Byte[])</h4>
@@ -842,7 +890,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_ISerializer_ToInt64_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.ISerializer.ToInt64(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L82">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L87">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_ISerializer_ToInt64_" data-uid="Stratis.SmartContracts.ISerializer.ToInt64*"></a>
   <h4 id="Stratis_SmartContracts_ISerializer_ToInt64_System_Byte___" data-uid="Stratis.SmartContracts.ISerializer.ToInt64(System.Byte[])">ToInt64(Byte[])</h4>
@@ -890,7 +938,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_ISerializer_ToString_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.ISerializer.ToString(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L92">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L97">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_ISerializer_ToString_" data-uid="Stratis.SmartContracts.ISerializer.ToString*"></a>
   <h4 id="Stratis_SmartContracts_ISerializer_ToString_System_Byte___" data-uid="Stratis.SmartContracts.ISerializer.ToString(System.Byte[])">ToString(Byte[])</h4>
@@ -938,7 +986,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_ISerializer_ToStruct__1_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.ISerializer.ToStruct%60%601(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L109">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L114">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_ISerializer_ToStruct_" data-uid="Stratis.SmartContracts.ISerializer.ToStruct*"></a>
   <h4 id="Stratis_SmartContracts_ISerializer_ToStruct__1_System_Byte___" data-uid="Stratis.SmartContracts.ISerializer.ToStruct``1(System.Byte[])">ToStruct&lt;T&gt;(Byte[])</h4>
@@ -1003,7 +1051,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_ISerializer_ToUInt32_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.ISerializer.ToUInt32(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L77">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L82">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_ISerializer_ToUInt32_" data-uid="Stratis.SmartContracts.ISerializer.ToUInt32*"></a>
   <h4 id="Stratis_SmartContracts_ISerializer_ToUInt32_System_Byte___" data-uid="Stratis.SmartContracts.ISerializer.ToUInt32(System.Byte[])">ToUInt32(Byte[])</h4>
@@ -1051,7 +1099,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_ISerializer_ToUInt64_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.ISerializer.ToUInt64(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L87">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts/ISerializer.cs/#L92">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_ISerializer_ToUInt64_" data-uid="Stratis.SmartContracts.ISerializer.ToUInt64*"></a>
   <h4 id="Stratis_SmartContracts_ISerializer_ToUInt64_System_Byte___" data-uid="Stratis.SmartContracts.ISerializer.ToUInt64(System.Byte[])">ToUInt64(Byte[])</h4>

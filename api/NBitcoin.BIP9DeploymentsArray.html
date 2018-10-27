@@ -73,52 +73,45 @@
   
   <h1 id="NBitcoin_BIP9DeploymentsArray" data-uid="NBitcoin.BIP9DeploymentsArray" class="text-break">Class BIP9DeploymentsArray
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Used for recording deployment parameters and returning deployment flags.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">BIP9DeploymentsArray</span></div>
+      <div class="level2"><a class="xref" href="City.Networks.CityBIP9Deployments.html">CityBIP9Deployments</a></div>
+      <div class="level2"><a class="xref" href="NBitcoin.NoBIP9Deployments.html">NoBIP9Deployments</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Networks.Deployments.BitcoinBIP9Deployments.html">BitcoinBIP9Deployments</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Networks.Deployments.StratisBIP9Deployments.html">StratisBIP9Deployments</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NBitcoin.IBIP9DeploymentsArray.html">IBIP9DeploymentsArray</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="NBitcoin.html">NBitcoin</a></h6>
   <h6><strong>Assembly</strong>: NBitcoin.dll</h6>
   <h5 id="NBitcoin_BIP9DeploymentsArray_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BIP9DeploymentsArray : object</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BIP9DeploymentsArray : object, IBIP9DeploymentsArray</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_BIP9DeploymentsArray__ctor.md&amp;value=---%0Auid%3A%20NBitcoin.BIP9DeploymentsArray.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_BIP9DeploymentsArray__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.BIP9DeploymentsArray.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/BIP9DeploymentsArray.cs/#L9">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/BIP9DeploymentsArray.cs/#L53">View Source</a>
   </span>
   <a id="NBitcoin_BIP9DeploymentsArray__ctor_" data-uid="NBitcoin.BIP9DeploymentsArray.#ctor*"></a>
-  <h4 id="NBitcoin_BIP9DeploymentsArray__ctor" data-uid="NBitcoin.BIP9DeploymentsArray.#ctor">BIP9DeploymentsArray()</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="NBitcoin_BIP9DeploymentsArray__ctor_System_Int32_" data-uid="NBitcoin.BIP9DeploymentsArray.#ctor(System.Int32)">BIP9DeploymentsArray(Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs a deployments array of the given length.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BIP9DeploymentsArray()</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_BIP9DeploymentsArray_Item_NBitcoin_BIP9Deployments_.md&amp;value=---%0Auid%3A%20NBitcoin.BIP9DeploymentsArray.Item(NBitcoin.BIP9Deployments)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/BIP9DeploymentsArray.cs/#L14">View Source</a>
-  </span>
-  <a id="NBitcoin_BIP9DeploymentsArray_Item_" data-uid="NBitcoin.BIP9DeploymentsArray.Item*"></a>
-  <h4 id="NBitcoin_BIP9DeploymentsArray_Item_NBitcoin_BIP9Deployments_" data-uid="NBitcoin.BIP9DeploymentsArray.Item(NBitcoin.BIP9Deployments)">Item[BIP9Deployments]</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BIP9DeploymentsParameters this[BIP9Deployments index] { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public BIP9DeploymentsArray(int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,9 +124,77 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.BIP9Deployments.html">BIP9Deployments</a></td>
-        <td><span class="parametername">index</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length of the deployments array to construct.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_BIP9DeploymentsArray_parameters.md&amp;value=---%0Auid%3A%20NBitcoin.BIP9DeploymentsArray.parameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/BIP9DeploymentsArray.cs/#L47">View Source</a>
+  </span>
+  <h4 id="NBitcoin_BIP9DeploymentsArray_parameters" data-uid="NBitcoin.BIP9DeploymentsArray.parameters">parameters</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly BIP9DeploymentsParameters[] parameters</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.BIP9DeploymentsParameters.html">BIP9DeploymentsParameters</a>[]</td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_BIP9DeploymentsArray_Item_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.BIP9DeploymentsArray.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/BIP9DeploymentsArray.cs/#L62">View Source</a>
+  </span>
+  <a id="NBitcoin_BIP9DeploymentsArray_Item_" data-uid="NBitcoin.BIP9DeploymentsArray.Item*"></a>
+  <h4 id="NBitcoin_BIP9DeploymentsArray_Item_System_Int32_" data-uid="NBitcoin.BIP9DeploymentsArray.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the deployment parameters for a deployment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BIP9DeploymentsParameters this[int deployment] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">deployment</span></td>
+        <td><p>The deployment number (element index in array).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -148,10 +209,98 @@
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.BIP9DeploymentsParameters.html">BIP9DeploymentsParameters</a></td>
+        <td><p>The deployment parameters if this is a get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_BIP9DeploymentsArray_Length.md&amp;value=---%0Auid%3A%20NBitcoin.BIP9DeploymentsArray.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/BIP9DeploymentsArray.cs/#L69">View Source</a>
+  </span>
+  <a id="NBitcoin_BIP9DeploymentsArray_Length_" data-uid="NBitcoin.BIP9DeploymentsArray.Length*"></a>
+  <h4 id="NBitcoin_BIP9DeploymentsArray_Length" data-uid="NBitcoin.BIP9DeploymentsArray.Length">Length</h4>
+  <div class="markdown level1 summary"><p>The number of elements/deployments in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_BIP9DeploymentsArray_GetFlags_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.BIP9DeploymentsArray.GetFlags(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/BIP9DeploymentsArray.cs/#L59">View Source</a>
+  </span>
+  <a id="NBitcoin_BIP9DeploymentsArray_GetFlags_" data-uid="NBitcoin.BIP9DeploymentsArray.GetFlags*"></a>
+  <h4 id="NBitcoin_BIP9DeploymentsArray_GetFlags_System_Int32_" data-uid="NBitcoin.BIP9DeploymentsArray.GetFlags(System.Int32)">GetFlags(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the flags to set when the deployment goes active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract BIP9DeploymentFlags GetFlags(int deployment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">deployment</span></td>
+        <td><p>The deployment number (element index in array).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.BIP9DeploymentFlags.html">BIP9DeploymentFlags</a></td>
+        <td><p>The flags to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NBitcoin.IBIP9DeploymentsArray.html">IBIP9DeploymentsArray</a>
+  </div>
 </article>
           </div>
           
@@ -163,7 +312,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_BIP9DeploymentsArray.md&amp;value=---%0Auid%3A%20NBitcoin.BIP9DeploymentsArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/BIP9DeploymentsArray.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/BIP9DeploymentsArray.cs/#L45" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
