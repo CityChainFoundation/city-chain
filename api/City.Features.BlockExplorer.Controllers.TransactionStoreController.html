@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TransactionStoreController
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.40.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -91,18 +91,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_Features_BlockExplorer_Controllers_TransactionStoreController__ctor_NBitcoin_Network_ILoggerFactory_Stratis_Bitcoin_Interfaces_IBlockStore_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Features_BlockStore_IBlockRepository_Stratis_Bitcoin_Base_IChainState_.md&amp;value=---%0Auid%3A%20City.Features.BlockExplorer.Controllers.TransactionStoreController.%23ctor(NBitcoin.Network%2CILoggerFactory%2CStratis.Bitcoin.Interfaces.IBlockStore%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Features.BlockStore.IBlockRepository%2CStratis.Bitcoin.Base.IChainState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_Features_BlockExplorer_Controllers_TransactionStoreController__ctor_NBitcoin_Network_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ILoggerFactory_Stratis_Bitcoin_Interfaces_IBlockStore_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Features_Wallet_Interfaces_IBroadcasterManager_Stratis_Bitcoin_Features_BlockStore_IBlockRepository_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Base_IChainState_.md&amp;value=---%0Auid%3A%20City.Features.BlockExplorer.Controllers.TransactionStoreController.%23ctor(NBitcoin.Network%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager%2CILoggerFactory%2CStratis.Bitcoin.Interfaces.IBlockStore%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager%2CStratis.Bitcoin.Features.BlockStore.IBlockRepository%2CStratis.Bitcoin.Connection.IConnectionManager%2CStratis.Bitcoin.Base.IChainState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Features/BlockExplorer/Controllers/TransactionStoreController.cs/#L45">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Features/BlockExplorer/Controllers/TransactionStoreController.cs/#L58">View Source</a>
   </span>
   <a id="City_Features_BlockExplorer_Controllers_TransactionStoreController__ctor_" data-uid="City.Features.BlockExplorer.Controllers.TransactionStoreController.#ctor*"></a>
-  <h4 id="City_Features_BlockExplorer_Controllers_TransactionStoreController__ctor_NBitcoin_Network_ILoggerFactory_Stratis_Bitcoin_Interfaces_IBlockStore_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Features_BlockStore_IBlockRepository_Stratis_Bitcoin_Base_IChainState_" data-uid="City.Features.BlockExplorer.Controllers.TransactionStoreController.#ctor(NBitcoin.Network,ILoggerFactory,Stratis.Bitcoin.Interfaces.IBlockStore,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Features.BlockStore.IBlockRepository,Stratis.Bitcoin.Base.IChainState)">TransactionStoreController(Network, ILoggerFactory, IBlockStore, ConcurrentChain, IBlockRepository, IChainState)</h4>
+  <h4 id="City_Features_BlockExplorer_Controllers_TransactionStoreController__ctor_NBitcoin_Network_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ILoggerFactory_Stratis_Bitcoin_Interfaces_IBlockStore_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Features_Wallet_Interfaces_IBroadcasterManager_Stratis_Bitcoin_Features_BlockStore_IBlockRepository_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Base_IChainState_" data-uid="City.Features.BlockExplorer.Controllers.TransactionStoreController.#ctor(NBitcoin.Network,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager,ILoggerFactory,Stratis.Bitcoin.Interfaces.IBlockStore,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager,Stratis.Bitcoin.Features.BlockStore.IBlockRepository,Stratis.Bitcoin.Connection.IConnectionManager,Stratis.Bitcoin.Base.IChainState)">TransactionStoreController(Network, IWalletManager, ILoggerFactory, IBlockStore, ConcurrentChain, IBroadcasterManager, IBlockRepository, IConnectionManager, IChainState)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TransactionStoreController(Network network, ILoggerFactory loggerFactory, IBlockStore blockStoreCache, ConcurrentChain chain, IBlockRepository blockRepository, IChainState chainState)</code></pre>
+    <pre><code class="lang-csharp hljs">public TransactionStoreController(Network network, IWalletManager walletManager, ILoggerFactory loggerFactory, IBlockStore blockStoreCache, ConcurrentChain chain, IBroadcasterManager broadcasterManager, IBlockRepository blockRepository, IConnectionManager connectionManager, IChainState chainState)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -117,6 +117,11 @@
       <tr>
         <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
         <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.html">IWalletManager</a></td>
+        <td><span class="parametername">walletManager</span></td>
         <td></td>
       </tr>
       <tr>
@@ -135,8 +140,18 @@
         <td></td>
       </tr>
       <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager.html">IBroadcasterManager</a></td>
+        <td><span class="parametername">broadcasterManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.BlockStore.IBlockRepository.html">IBlockRepository</a></td>
         <td><span class="parametername">blockRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Connection.IConnectionManager.html">IConnectionManager</a></td>
+        <td><span class="parametername">connectionManager</span></td>
         <td></td>
       </tr>
       <tr>
@@ -153,7 +168,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_Features_BlockExplorer_Controllers_TransactionStoreController_GetTransactionAsync_System_String_.md&amp;value=---%0Auid%3A%20City.Features.BlockExplorer.Controllers.TransactionStoreController.GetTransactionAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Features/BlockExplorer/Controllers/TransactionStoreController.cs/#L118">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Features/BlockExplorer/Controllers/TransactionStoreController.cs/#L137">View Source</a>
   </span>
   <a id="City_Features_BlockExplorer_Controllers_TransactionStoreController_GetTransactionAsync_" data-uid="City.Features.BlockExplorer.Controllers.TransactionStoreController.GetTransactionAsync*"></a>
   <h4 id="City_Features_BlockExplorer_Controllers_TransactionStoreController_GetTransactionAsync_System_String_" data-uid="City.Features.BlockExplorer.Controllers.TransactionStoreController.GetTransactionAsync(System.String)">GetTransactionAsync(String)</h4>
@@ -202,7 +217,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_Features_BlockExplorer_Controllers_TransactionStoreController_GetTransactionsAsync.md&amp;value=---%0Auid%3A%20City.Features.BlockExplorer.Controllers.TransactionStoreController.GetTransactionsAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Features/BlockExplorer/Controllers/TransactionStoreController.cs/#L70">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Features/BlockExplorer/Controllers/TransactionStoreController.cs/#L89">View Source</a>
   </span>
   <a id="City_Features_BlockExplorer_Controllers_TransactionStoreController_GetTransactionsAsync_" data-uid="City.Features.BlockExplorer.Controllers.TransactionStoreController.GetTransactionsAsync*"></a>
   <h4 id="City_Features_BlockExplorer_Controllers_TransactionStoreController_GetTransactionsAsync" data-uid="City.Features.BlockExplorer.Controllers.TransactionStoreController.GetTransactionsAsync">GetTransactionsAsync()</h4>
@@ -240,7 +255,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_Features_BlockExplorer_Controllers_TransactionStoreController.md&amp;value=---%0Auid%3A%20City.Features.BlockExplorer.Controllers.TransactionStoreController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Features/BlockExplorer/Controllers/TransactionStoreController.cs/#L23" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Features/BlockExplorer/Controllers/TransactionStoreController.cs/#L30" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
