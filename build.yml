@@ -37,7 +37,6 @@ phases:
       modifyOutputPath: false
       arguments: ${{ format('-c {0} -r {1}-{2} -v m', parameters.configuration, parameters.platform, parameters.arch) }}
 
-
   # Run all unit tests, by applying the "*.Tests.csproj" filter it should avoid IntegrationTests projects.
   # Only run tests on Linux.
   - task: DotNetCoreCLI@2
@@ -100,9 +99,6 @@ phases:
         & $env:warpcmd --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory/$env:filename
       }
 
-      # chmod +x "${download_directory}/${warp}"
-      # "${download_directory}/./${warp}" --arch $warp_runtime --input_dir $publish_directory --exec City.Chain --output ${publish_directory}/City.Chain
-
       Write-Host "Done." -foregroundcolor "green"
     env:
       workdir: $(build.SourcesDirectory)
@@ -128,33 +124,6 @@ phases:
          filename: 'City.Chain'
     displayName: package
     workingDirectory: $(build.SourcesDirectory)
-
-#  - powershell: ./Scripts/package.ps1 -filename 'City.Chain.exe' -output 'City.Chain-wrapped.exe' -runtime 'win-x64' -arch 'windows-x64' -warp 'windows-x64.warp-packer.exe'
-
-  # - task: PowerShell@2
-  #   displayName: package daemon
-  #   inputs:
-  #     targetType: 'filePath'
-  #     filePath: 'Scripts/package.ps1'
-  #   env:
-  #     ${{ if eq(parameters.platform, 'linux') }}:
-  #       filename: 'City.Chain'
-  #       output: 'City.Chain-wrapped'
-  #       runtime: 'linux-x64'
-  #       arch: 'linux-x64'
-  #       warp: 'linux-x64.warp-packer'
-  #     ${{ if eq(parameters.platform, 'osx') }}:
-  #       filename: 'City.Chain'
-  #       output: 'City.Chain-wrapped'
-  #       runtime: 'macos-x64'
-  #       arch: 'linux-x64'
-  #       warp: 'macos-x64.warp-packer'
-  #     ${{ if eq(parameters.platform, 'win') }}:
-  #       filename: 'City.Chain.exe'
-  #       output: 'City.Chain-wrapped.exe'
-  #       runtime: 'win-x64'
-  #       arch: 'windows-x64'
-  #       warp: 'windows-x64.warp-packer.exe'
 
   - task: ArchiveFiles@2
     displayName: archive
