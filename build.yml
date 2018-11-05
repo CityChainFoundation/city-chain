@@ -94,6 +94,7 @@ phases:
         & $warp --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename
       }
       Else {
+        & chmod +x "$env:warpcmd"
         & $env:warpcmd --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename
       }
 
