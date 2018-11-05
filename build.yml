@@ -88,6 +88,9 @@ phases:
       Write-Host "Packaging the daemon..." -foregroundcolor "Magenta"
       & $warp --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename
 
+      # chmod +x "${download_directory}/${warp}"
+      # "${download_directory}/./${warp}" --arch $warp_runtime --input_dir $publish_directory --exec City.Chain --output ${publish_directory}/City.Chain
+
       Write-Host "Done." -foregroundcolor "green"
     env:
       ${{ if eq(parameters.platform, 'win') }}:
@@ -97,11 +100,13 @@ phases:
          filename: 'City.Chain.exe'
       ${{ if eq(parameters.platform, 'linux') }}:
          runtime: 'linux-x64'
+         temp: '/tmp'
          arch: 'linux-x64'
          warpfile: 'linux-x64.warp-packer'
          filename: 'City.Chain'
       ${{ if eq(parameters.platform, 'osx') }}:
          runtime: 'osx-x64'
+         temp: '/tmp'
          arch: 'macos-x64'
          warpfile: 'macos-x64.warp-packer'
          filename: 'City.Chain'
