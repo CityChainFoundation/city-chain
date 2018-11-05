@@ -56,6 +56,9 @@ phases:
     inputs:
       targetType: 'filePath'
       filePath: 'Scripts/city.windows-x64.package.ps1'
+    env:
+      runtime: 'win-x64'
+      warp: 'windows-x64.warp-packer.exe'
 
   - task: ArchiveFiles@2
     displayName: archive
