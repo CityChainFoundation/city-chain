@@ -83,8 +83,8 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IProvenBlockHeaderRepository.html">IProvenBlockHeaderRepository</a></div>
-    <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IProvenBlockHeaderProvider.html">IProvenBlockHeaderProvider</a></div>
+    <div><a class="xref" href="Stratis.Bitcoin.Interfaces.IProvenBlockHeaderRepository.html">IProvenBlockHeaderRepository</a></div>
+    <div><a class="xref" href="Stratis.Bitcoin.Interfaces.IProvenBlockHeaderProvider.html">IProvenBlockHeaderProvider</a></div>
     <div><span class="xref">IDisposable</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.html">Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders</a></h6>
@@ -200,8 +200,7 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderRepository_GetAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderRepository.GetAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderRepository_GetAsync_System_Int32_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderRepository.GetAsync(System.Int32)">GetAsync(Int32)</h4>
-  <div class="markdown level1 summary"><p>Get a <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a> corresponding to a block.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,8 +219,7 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">blockHeight</span></td>
-        <td><p>Height used to retrieve the <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -236,8 +234,7 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a>&gt;</td>
-        <td><p><a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a> retrieved.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -250,8 +247,7 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderRepository_GetAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderRepository.GetAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderRepository_GetAsync_System_Int32_System_Int32_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderRepository.GetAsync(System.Int32,System.Int32)">GetAsync(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Retrieves <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a> items.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -270,14 +266,12 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">fromBlockHeight</span></td>
-        <td><p>Block height to start querying from.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">toBlockHeight</span></td>
-        <td><p>Block height to stop querying to.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -292,8 +286,7 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a>&gt;&gt;</td>
-        <td><p>A dictionary of <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a> items by block height key.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -306,8 +299,7 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderRepository_InitializeAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderRepository.InitializeAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderRepository_InitializeAsync" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderRepository.InitializeAsync">InitializeAsync()</h4>
-  <div class="markdown level1 summary"><p>Initializes <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a> items database.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -337,8 +329,7 @@
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderRepository_PutAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderRepository.PutAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderRepository_PutAsync_List_NBitcoin_ProvenBlockHeader__Stratis_Bitcoin_Utilities_HashHeightPair_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderRepository.PutAsync(List{NBitcoin.ProvenBlockHeader},Stratis.Bitcoin.Utilities.HashHeightPair)">PutAsync(List&lt;ProvenBlockHeader&gt;, HashHeightPair)</h4>
-  <div class="markdown level1 summary"><p>Persists <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a> items to the database.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -362,8 +353,7 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Utilities.HashHeightPair.html">HashHeightPair</a></td>
         <td><span class="parametername">newTip</span></td>
-        <td><p>Block hash and height tip.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -378,17 +368,16 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td><p><code>true</code> when a <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a> is saved to disk, otherwise <code>false</code>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IProvenBlockHeaderRepository.html">IProvenBlockHeaderRepository</a>
+      <a class="xref" href="Stratis.Bitcoin.Interfaces.IProvenBlockHeaderRepository.html">IProvenBlockHeaderRepository</a>
   </div>
   <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IProvenBlockHeaderProvider.html">IProvenBlockHeaderProvider</a>
+      <a class="xref" href="Stratis.Bitcoin.Interfaces.IProvenBlockHeaderProvider.html">IProvenBlockHeaderProvider</a>
   </div>
   <div>
       <span class="xref">IDisposable</span>
