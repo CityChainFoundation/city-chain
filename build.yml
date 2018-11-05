@@ -53,7 +53,16 @@ phases:
 
   - powershell: |
       $configuration="Release"
-      $runtime="win-x64"
+
+      ${{ if eq(parameters.platform, 'linux') }}:
+        $runtime="linux-x64"
+
+      ${{ if eq(parameters.platform, 'win') }}:
+        $runtime="win-x64"
+
+      ${{ if eq(parameters.platform, 'osx') }}:
+        $runtime="osx-x64"
+
       $git_commit=(git log --format=%h --abbrev=7 -n 1)
       $publish_directory="src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\publish"
       $wrapped_directory="src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\wrapped"
@@ -62,7 +71,7 @@ phases:
       $project_path="src\City.Chain\City.Chain.csproj"
 
       # Create the output folder for packaged output.
-      New-Item -ItemType directory -Path $wrapped_directory
+      md -Path $wrapped_directory
 
       Write-Host "Download directory is $download_directory" -foregroundcolor "Magenta"
       Write-Host "Current directory is $PWD" -foregroundcolor "Magenta"
