@@ -8,25 +8,25 @@ trigger:
    exclude:
    - v* #Exclude verions tags
 
-phases:
-- template: build.yml
-  parameters:
-    name: macOS
-    platform: osx
-    queue: Hosted macOS Preview
+# phases:
+# - template: build.yml
+#   parameters:
+#     name: macOS
+#     platform: osx
+#     queue: Hosted macOS Preview
 
-- template: build.yml
-  parameters:
-    name: Linux
-    platform: linux
-    queue: Hosted Linux Preview
+# - template: build.yml
+#   parameters:
+#     name: Linux
+#     platform: linux
+#     queue: Hosted Linux Preview
 
-- template: build.yml
-  parameters:
-    name: Windows_x86
-    platform: win
-    arch: x86
-    queue: Hosted VS2017
+# - template: build.yml
+#   parameters:
+#     name: Windows_x86
+#     platform: win
+#     arch: x86
+#     queue: Hosted VS2017
 
 - template: build.yml
   parameters:
