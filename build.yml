@@ -53,21 +53,12 @@ phases:
 
   - powershell: |
       $configuration="Release"
-
-      ${{ if eq(parameters.platform, 'linux') }}:
-        $runtime="linux-x64"
-
-      ${{ if eq(parameters.platform, 'win') }}:
-        $runtime="win-x64"
-
-      ${{ if eq(parameters.platform, 'osx') }}:
-        $runtime="osx-x64"
-
+      $runtime=$env:runtime
       $git_commit=(git log --format=%h --abbrev=7 -n 1)
       $publish_directory="src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\publish"
       $wrapped_directory="src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\wrapped"
       $download_directory=$env:temp
-      $warp="$download_directory\windows-x64.warp-packer.exe"
+      $warp="$download_directory\$env:warpfile"
       $project_path="src\City.Chain\City.Chain.csproj"
 
       # Create the output folder for packaged output.
@@ -79,7 +70,7 @@ phases:
 
       Write-Host "Downloading warp..." -foregroundcolor "Magenta"
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-      Invoke-WebRequest https://github.com/stratisproject/warp/releases/download/v0.2.1/windows-x64.warp-packer.exe -O $download_directory\windows-x64.warp-packer.exe
+      Invoke-WebRequest https://github.com/stratisproject/warp/releases/download/v0.2.1/$env:warpfile -O $warp
 
       If(Get-ChildItem $warp)
       {
@@ -95,9 +86,25 @@ phases:
       Get-ChildItem -Path $publish_directory
 
       Write-Host "Packaging the daemon..." -foregroundcolor "Magenta"
-      & $warp --arch windows-x64 --input_dir $publish_directory --exec City.Chain.exe --output $wrapped_directory\City.Chain.exe
+      & $warp --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename
 
       Write-Host "Done." -foregroundcolor "green"
+    env:
+      ${{ if eq(parameters.platform, 'win') }}:
+         runtime: 'win-x64'
+         arch: 'windows-x64'
+         warpfile: 'windows-x64.warp-packer.exe'
+         filename: 'City.Chain.exe'
+      ${{ if eq(parameters.platform, 'linux') }}:
+         runtime: 'linux-x64'
+         arch: 'linux-x64'
+         warpfile: 'linux-x64.warp-packer'
+         filename: 'City.Chain'
+      ${{ if eq(parameters.platform, 'osx') }}:
+         runtime: 'osx-x64'
+         arch: 'macos-x64'
+         warpfile: 'macos-x64.warp-packer'
+         filename: 'City.Chain'
     displayName: package
 
 #  - powershell: ./Scripts/package.ps1 -filename 'City.Chain.exe' -output 'City.Chain-wrapped.exe' -runtime 'win-x64' -arch 'windows-x64' -warp 'windows-x64.warp-packer.exe'
