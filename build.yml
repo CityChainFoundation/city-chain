@@ -52,13 +52,13 @@ phases:
       arguments: ${{ format('-c {0} -v m', parameters.configuration) }}
 
   - powershell: |
-      $configuration="release"
+      $configuration="Release"
       $runtime="win-x64"
       $git_commit=(git log --format=%h --abbrev=7 -n 1)
-      $publish_directory="..\src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\publish"
+      $publish_directory="s\src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\publish"
       $download_directory=$env:temp
       $warp="$download_directory\windows-x64.warp-packer.exe"
-      $project_path="..\src\City.Chain\City.Chain.csproj"
+      $project_path="s\src\City.Chain\City.Chain.csproj"
 
       Write-Host "Download directory is $download_directory" -foregroundcolor "Magenta"
       Write-Host "Current directory is $PWD" -foregroundcolor "Magenta"
@@ -78,7 +78,6 @@ phases:
 
       Write-Host "Building the full node..." -foregroundcolor "Magenta"
       dotnet --info
-      dotnet publish $project_path -c $configuration -v m -r $runtime 
 
       Write-Host "List of files to package:" -foregroundcolor "Magenta"
       Get-ChildItem -Path $publish_directory
