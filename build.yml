@@ -123,7 +123,7 @@ phases:
          arch: 'macos-x64'
          warpfile: 'macos-x64.warp-packer'
          warpcmd: '/tmp/macos-x64.warp-packer'
-         filename: 'City.Chain',
+         filename: 'City.Chain'
     displayName: package
     workingDirectory: $(build.SourcesDirectory)
 
