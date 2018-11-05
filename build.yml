@@ -55,10 +55,11 @@ phases:
       $configuration="Release"
       $runtime="win-x64"
       $git_commit=(git log --format=%h --abbrev=7 -n 1)
-      $publish_directory="s\src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\publish"
+      $publish_directory="src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\publish"
+      $wrapped_directory="src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\wrapped"
       $download_directory=$env:temp
       $warp="$download_directory\windows-x64.warp-packer.exe"
-      $project_path="s\src\City.Chain\City.Chain.csproj"
+      $project_path="src\City.Chain\City.Chain.csproj"
 
       Write-Host "Download directory is $download_directory" -foregroundcolor "Magenta"
       Write-Host "Current directory is $PWD" -foregroundcolor "Magenta"
@@ -76,14 +77,13 @@ phases:
           Write-Host "Size is $size" -foregroundcolor "Magenta"
       }
 
-      Write-Host "Building the full node..." -foregroundcolor "Magenta"
       dotnet --info
 
       Write-Host "List of files to package:" -foregroundcolor "Magenta"
       Get-ChildItem -Path $publish_directory
 
       Write-Host "Packaging the daemon..." -foregroundcolor "Magenta"
-      & $warp --arch windows-x64 --input_dir $publish_directory --exec City.Chain.exe --output $publish_directory\City.Chain-$git_commit.exe
+      & $warp --arch windows-x64 --input_dir $publish_directory --exec City.Chain.exe --output $wrapped_directory\City.Chain.exe
 
       Write-Host "Done." -foregroundcolor "green"
     displayName: package
@@ -118,7 +118,7 @@ phases:
   - task: ArchiveFiles@2
     displayName: archive
     inputs:
-      rootFolderOrFile: ${{ format('src/City.Chain/bin/{0}/netcoreapp2.1/{1}-{2}/publish/', parameters.configuration, parameters.platform, parameters.arch) }}
+      rootFolderOrFile: ${{ format('src/City.Chain/bin/{0}/netcoreapp2.1/{1}-{2}/wrapped/', parameters.configuration, parameters.platform, parameters.arch) }}
       includeRootFolder: false
 
       ${{ if eq(parameters.platform, 'linux') }}:
