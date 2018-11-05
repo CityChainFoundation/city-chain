@@ -55,11 +55,11 @@ phases:
       $configuration="Release"
       $runtime=$env:runtime
       $git_commit=(git log --format=%h --abbrev=7 -n 1)
-      $publish_directory="src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\publish"
-      $wrapped_directory="src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\wrapped"
+      $publish_directory="src/City.Chain/bin/$configuration/netcoreapp2.1/$runtime/publish"
+      $wrapped_directory="src/City.Chain/bin/$configuration/netcoreapp2.1/$runtime/wrapped"
       $download_directory=$env:temp
-      $warp="$download_directory\$env:warpfile"
-      $project_path="src\City.Chain\City.Chain.csproj"
+      $warp="$download_directory/$env:warpfile"
+      $project_path="src/City.Chain/City.Chain.csproj"
 
       # Create the output folder for packaged output.
       md -Path $wrapped_directory
@@ -88,14 +88,14 @@ phases:
       Write-Host "Packaging the daemon..." -foregroundcolor "Magenta"
       Write-Host "WARP:" $warp
       Write-Host "WARP-CMD:" $env:warpcmd
-      Write-Host "--arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename"
+      Write-Host "--arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory/$env:filename"
 
       If (-Not $env:warpcmd) {
-        & $warp --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename
+        & $warp --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory/$env:filename
       }
       Else {
         & chmod +x "$env:warpcmd"
-        & $env:warpcmd --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename
+        & $env:warpcmd --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory/$env:filename
       }
 
       # chmod +x "${download_directory}/${warp}"
