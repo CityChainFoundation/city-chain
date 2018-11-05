@@ -86,7 +86,10 @@ phases:
       Get-ChildItem -Path $publish_directory
 
       Write-Host "Packaging the daemon..." -foregroundcolor "Magenta"
-      & $warp --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename
+      Write-Host "WARP:" $warp
+      Write-Host "$env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename"
+
+      & "$warp --arch $env:arch --input_dir $publish_directory --exec $env:filename --output $wrapped_directory\$env:filename"
 
       # chmod +x "${download_directory}/${warp}"
       # "${download_directory}/./${warp}" --arch $warp_runtime --input_dir $publish_directory --exec City.Chain --output ${publish_directory}/City.Chain
