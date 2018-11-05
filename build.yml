@@ -61,6 +61,9 @@ phases:
       $warp="$download_directory\windows-x64.warp-packer.exe"
       $project_path="src\City.Chain\City.Chain.csproj"
 
+      # Create the output folder for packaged output.
+      New-Item -ItemType directory -Path $wrapped_directory
+
       Write-Host "Download directory is $download_directory" -foregroundcolor "Magenta"
       Write-Host "Current directory is $PWD" -foregroundcolor "Magenta"
       Write-Host "Git commit to build: $git_commit" -foregroundcolor "Magenta"
