@@ -8,7 +8,7 @@ trigger:
    exclude:
    - v* #Exclude verions tags
 
-# phases:
+phases:
 # - template: build.yml
 #   parameters:
 #     name: macOS
