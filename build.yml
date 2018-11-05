@@ -62,7 +62,9 @@ phases:
       $project_path="$env:workdir/src/City.Chain/City.Chain.csproj"
 
       # Create the output folder for packaged output.
-      md -Path $wrapped_directory
+      New-Item -ItemType directory -Path $wrapped_directory
+      # Not compatible with Mac.
+      # md -Path $wrapped_directory
 
       Write-Host "Download directory is $download_directory" -foregroundcolor "Magenta"
       Write-Host "Current directory is $PWD" -foregroundcolor "Magenta"
