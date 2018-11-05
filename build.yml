@@ -55,10 +55,26 @@ phases:
     displayName: package daemon
     inputs:
       targetType: 'filePath'
-      filePath: 'Scripts/city.windows-x64.package.ps1'
+      filePath: 'Scripts/package.ps1'
     env:
-      runtime: 'win-x64'
-      warp: 'windows-x64.warp-packer.exe'
+      ${{ if eq(parameters.platform, 'linux') }}:
+        filename: 'City.Chain'
+        output: 'City.Chain-wrapped'
+        runtime: 'linux-x64'
+        arch: 'linux-x64'
+        warp: 'linux-x64.warp-packer'
+      ${{ if eq(parameters.platform, 'osx') }}:
+        filename: 'City.Chain'
+        output: 'City.Chain-wrapped'
+        runtime: 'macos-x64'
+        arch: 'linux-x64'
+        warp: 'macos-x64.warp-packer'
+      ${{ if eq(parameters.platform, 'win') }}:
+        filename: 'City.Chain.exe'
+        output: 'City.Chain-wrapped.exe'
+        runtime: 'win-x64'
+        arch: 'windows-x64'
+        warp: 'windows-x64.warp-packer.exe'
 
   - task: ArchiveFiles@2
     displayName: archive

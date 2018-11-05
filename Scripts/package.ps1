@@ -1,5 +1,8 @@
 $configuration="release"
+$filename="City.Chain.exe"
+$output="City.Chain-wrapped.exe"
 $runtime="win-x64"
+$arch="windows-x64"
 $git_commit=(git log --format=%h --abbrev=7 -n 1)
 $publish_directory="..\src\City.Chain\bin\$configuration\netcoreapp2.1\$runtime\publish"
 $download_directory=$env:temp
@@ -30,7 +33,7 @@ Write-Host "List of files to package:" -foregroundcolor "Magenta"
 Get-ChildItem -Path $publish_directory
 
 Write-Host "Packaging the daemon..." -foregroundcolor "Magenta"
-& $warp --arch windows-x64 --input_dir $publish_directory --exec City.Chain.exe --output $publish_directory\City.Chain.exe
+& $warp --arch $arch --input_dir $publish_directory --exec $filename --output $publish_directory\$output
 
 Write-Host "Done." -foregroundcolor "green"
 Read-Host "Press ENTER"
