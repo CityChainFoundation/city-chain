@@ -40,21 +40,8 @@ namespace Stratis.Bitcoin.Features.RPC
         {
             Guard.NotNull(ip, nameof(ip));
 
-            if (this.AllowIp.Contains(IPAddress.IPv6Any)) 
-            {
-                return true; 
-            }
-
-            if (ip.IsIPv4() && this.AllowIp.Contains(IPAddress.Any)) 
-            {
-                return true; 
-            }
-
             if (this.AllowIp.Count == 0)
-            {
                 return true;
-            }
-
             return this.AllowIp.Any(i => i.AddressFamily == ip.AddressFamily && i.Equals(ip));
         }
     }
