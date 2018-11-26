@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CityPosConsensusOptions
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.3.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -103,9 +103,6 @@
       <a class="xref" href="NBitcoin.PosConsensusOptions.html#NBitcoin_PosConsensusOptions_MaxMerkleProofSerializedSize">PosConsensusOptions.MaxMerkleProofSerializedSize</a>
     </div>
     <div>
-      <a class="xref" href="NBitcoin.PosConsensusOptions.html#NBitcoin_PosConsensusOptions_ProvenHeadersActivationHeight">PosConsensusOptions.ProvenHeadersActivationHeight</a>
-    </div>
-    <div>
       <a class="xref" href="NBitcoin.ConsensusOptions.html#NBitcoin_ConsensusOptions_SerializeTransactionNoWitness">ConsensusOptions.SerializeTransactionNoWitness</a>
     </div>
     <div>
@@ -143,18 +140,35 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_CityPosConsensusOptions__ctor_System_UInt32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20City.CityPosConsensusOptions.%23ctor(System.UInt32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_CityPosConsensusOptions__ctor.md&amp;value=---%0Auid%3A%20City.CityPosConsensusOptions.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Networks/CityPosConsensusOptions.cs/#L13">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Networks/CityPosConsensusOptions.cs/#L16">View Source</a>
   </span>
   <a id="City_CityPosConsensusOptions__ctor_" data-uid="City.CityPosConsensusOptions.#ctor*"></a>
-  <h4 id="City_CityPosConsensusOptions__ctor_System_UInt32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="City.CityPosConsensusOptions.#ctor(System.UInt32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">CityPosConsensusOptions(UInt32, Int32, Int32, Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="City_CityPosConsensusOptions__ctor" data-uid="City.CityPosConsensusOptions.#ctor">CityPosConsensusOptions()</h4>
+  <div class="markdown level1 summary"><p>Initializes the default values.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CityPosConsensusOptions(uint maxBlockBaseSize, int maxStandardVersion, int maxStandardTxWeight, int maxBlockSigopsCost, int maxStandardTxSigopsCost, int provenHeadersActivationHeight)</code></pre>
+    <pre><code class="lang-csharp hljs">public CityPosConsensusOptions()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_CityPosConsensusOptions__ctor_System_UInt32_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20City.CityPosConsensusOptions.%23ctor(System.UInt32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Networks/CityPosConsensusOptions.cs/#L38">View Source</a>
+  </span>
+  <a id="City_CityPosConsensusOptions__ctor_" data-uid="City.CityPosConsensusOptions.#ctor*"></a>
+  <h4 id="City_CityPosConsensusOptions__ctor_System_UInt32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="City.CityPosConsensusOptions.#ctor(System.UInt32,System.Int32,System.Int32,System.Int32,System.Int32)">CityPosConsensusOptions(UInt32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes values for networks that use block size rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CityPosConsensusOptions(uint maxBlockBaseSize, int maxStandardVersion, int maxStandardTxWeight, int maxBlockSigopsCost, int maxStandardTxSigopsCost)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,9 +205,72 @@
         <td><span class="parametername">maxStandardTxSigopsCost</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_CityPosConsensusOptions__ctor_System_UInt32_System_UInt32_System_UInt32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20City.CityPosConsensusOptions.%23ctor(System.UInt32%2CSystem.UInt32%2CSystem.UInt32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Networks/CityPosConsensusOptions.cs/#L23">View Source</a>
+  </span>
+  <a id="City_CityPosConsensusOptions__ctor_" data-uid="City.CityPosConsensusOptions.#ctor*"></a>
+  <h4 id="City_CityPosConsensusOptions__ctor_System_UInt32_System_UInt32_System_UInt32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="City.CityPosConsensusOptions.#ctor(System.UInt32,System.UInt32,System.UInt32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">CityPosConsensusOptions(UInt32, UInt32, UInt32, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes all values. Used by networks that use block weight rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CityPosConsensusOptions(uint maxBlockBaseSize, uint maxBlockWeight, uint maxBlockSerializedSize, int witnessScaleFactor, int maxStandardVersion, int maxStandardTxWeight, int maxBlockSigopsCost, int maxStandardTxSigopsCost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxBlockBaseSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxBlockWeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxBlockSerializedSize</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">provenHeadersActivationHeight</span></td>
+        <td><span class="parametername">witnessScaleFactor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxStandardVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxStandardTxWeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxBlockSigopsCost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxStandardTxSigopsCost</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -267,7 +344,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_CityPosConsensusOptions_GetStakeMinConfirmations_System_Int32_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20City.CityPosConsensusOptions.GetStakeMinConfirmations(System.Int32%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Networks/CityPosConsensusOptions.cs/#L25">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Networks/CityPosConsensusOptions.cs/#L48">View Source</a>
   </span>
   <a id="City_CityPosConsensusOptions_GetStakeMinConfirmations_" data-uid="City.CityPosConsensusOptions.GetStakeMinConfirmations*"></a>
   <h4 id="City_CityPosConsensusOptions_GetStakeMinConfirmations_System_Int32_NBitcoin_Network_" data-uid="City.CityPosConsensusOptions.GetStakeMinConfirmations(System.Int32,NBitcoin.Network)">GetStakeMinConfirmations(Int32, Network)</h4>

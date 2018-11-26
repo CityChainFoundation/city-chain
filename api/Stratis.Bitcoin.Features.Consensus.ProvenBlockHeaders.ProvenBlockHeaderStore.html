@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ProvenBlockHeaderStore
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.3.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -112,19 +112,19 @@ When <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Interfaces_IProvenBlockHeaderRepository_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.%23ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.Interfaces.IProvenBlockHeaderRepository%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Utilities.INodeStats%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Interfaces_IProvenBlockHeaderRepository_Stratis_Bitcoin_Utilities_INodeStats_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.%23ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.Interfaces.IProvenBlockHeaderRepository%2CStratis.Bitcoin.Utilities.INodeStats)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L125">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L104">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore__ctor_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Interfaces_IProvenBlockHeaderRepository_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.#ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.Interfaces.IProvenBlockHeaderRepository,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Utilities.INodeStats,Stratis.Bitcoin.Utilities.IAsyncLoopFactory)">ProvenBlockHeaderStore(IDateTimeProvider, ILoggerFactory, IProvenBlockHeaderRepository, INodeLifetime, INodeStats, IAsyncLoopFactory)</h4>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Interfaces_IProvenBlockHeaderRepository_Stratis_Bitcoin_Utilities_INodeStats_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.#ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.Interfaces.IProvenBlockHeaderRepository,Stratis.Bitcoin.Utilities.INodeStats)">ProvenBlockHeaderStore(IDateTimeProvider, ILoggerFactory, IProvenBlockHeaderRepository, INodeStats)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ProvenBlockHeaderStore(IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, IProvenBlockHeaderRepository provenBlockHeaderRepository, INodeLifetime nodeLifetime, INodeStats nodeStats, IAsyncLoopFactory asyncLoopFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public ProvenBlockHeaderStore(IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, IProvenBlockHeaderRepository provenBlockHeaderRepository, INodeStats nodeStats)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,21 +155,9 @@ When <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeLifetime.html">INodeLifetime</a></td>
-        <td><span class="parametername">nodeLifetime</span></td>
-        <td><p>Allows consumers to perform clean-up during a graceful shutdown.</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeStats.html">INodeStats</a></td>
         <td><span class="parametername">nodeStats</span></td>
         <td><p>Registers an action used to append node stats when collected.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoopFactory.html">IAsyncLoopFactory</a></td>
-        <td><span class="parametername">asyncLoopFactory</span></td>
-        <td><p>Factory for creating and also possibly starting application defined tasks inside async loop.</p>
 </td>
       </tr>
     </tbody>
@@ -181,7 +169,7 @@ When <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_PendingBatch.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.PendingBatch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L106">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L87">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_PendingBatch" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.PendingBatch">PendingBatch</h4>
   <div class="markdown level1 summary"><p>Cache of pending <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a> items.</p>
@@ -189,7 +177,7 @@ When <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;int, ProvenBlockHeader&gt; PendingBatch</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly SortedDictionary&lt;int, ProvenBlockHeader&gt; PendingBatch</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,7 +189,7 @@ When <a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a>&gt;</td>
+        <td><span class="xref">SortedDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -219,7 +207,7 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_Cache.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.Cache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L114">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L95">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_Cache_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.Cache*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_Cache" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.Cache">Cache</h4>
@@ -253,7 +241,7 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_TipHashHeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.TipHashHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L62">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L58">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_TipHashHeight_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.TipHashHeight*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_TipHashHeight" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.TipHashHeight">TipHashHeight</h4>
@@ -286,7 +274,7 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_AddToPendingBatch_NBitcoin_ProvenBlockHeader_Stratis_Bitcoin_Utilities_HashHeightPair_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.AddToPendingBatch(NBitcoin.ProvenBlockHeader%2CStratis.Bitcoin.Utilities.HashHeightPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L282">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L238">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_AddToPendingBatch_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.AddToPendingBatch*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_AddToPendingBatch_NBitcoin_ProvenBlockHeader_Stratis_Bitcoin_Utilities_HashHeightPair_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.AddToPendingBatch(NBitcoin.ProvenBlockHeader,Stratis.Bitcoin.Utilities.HashHeightPair)">AddToPendingBatch(ProvenBlockHeader, HashHeightPair)</h4>
@@ -326,7 +314,7 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L379">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L349">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_Dispose_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_Dispose" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.Dispose">Dispose()</h4>
@@ -341,7 +329,7 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_GetAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.GetAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L189">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L147">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_GetAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.GetAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_GetAsync_System_Int32_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.GetAsync(System.Int32)">GetAsync(Int32)</h4>
@@ -388,7 +376,7 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_GetAsync_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.GetAsync(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L208">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L165">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_GetAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.GetAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_GetAsync_System_Int32_System_Int32_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.GetAsync(System.Int32,System.Int32)">GetAsync(Int32, Int32)</h4>
@@ -440,7 +428,7 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_InitializeAsync_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.InitializeAsync(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L155">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L127">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_InitializeAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.InitializeAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_InitializeAsync_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.InitializeAsync(NBitcoin.ChainedHeader)">InitializeAsync(ChainedHeader)</h4>
@@ -448,7 +436,7 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task InitializeAsync(ChainedHeader chainedHeader)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ChainedHeader&gt; InitializeAsync(ChainedHeader highestHeader)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -462,11 +450,41 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
-        <td><span class="parametername">chainedHeader</span></td>
+        <td><span class="parametername">highestHeader</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_SaveAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.SaveAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L253">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_SaveAsync_" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.SaveAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore_SaveAsync" data-uid="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.SaveAsync">SaveAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SaveAsync()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -503,7 +521,7 @@ All access to these items have to be protected by <span class="xref">Stratis.Bit
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_ProvenBlockHeaders_ProvenBlockHeaderStore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L32" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/ProvenBlockHeaders/ProvenBlockHeaderStore.cs/#L33" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

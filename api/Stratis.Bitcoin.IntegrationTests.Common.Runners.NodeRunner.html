@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class NodeRunner
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.3.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,9 +85,6 @@
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.Runners.StratisBitcoinPosRunner.html">StratisBitcoinPosRunner</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.Runners.StratisBitcoinPowRunner.html">StratisBitcoinPowRunner</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.Runners.StratisXRunner.html">StratisXRunner</a></div>
-      <div class="level2"><a class="xref" href="Stratis.SmartContracts.IntegrationTests.SmartContractPoARunner.html">SmartContractPoARunner</a></div>
-      <div class="level2"><a class="xref" href="Stratis.SmartContracts.IntegrationTests.StratisSmartContractNode.html">StratisSmartContractNode</a></div>
-      <div class="level2"><a class="xref" href="Stratis.SmartContracts.IntegrationTests.StratisSmartContractPosNode.html">StratisSmartContractPosNode</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.IntegrationTests.Common.Runners.html">Stratis.Bitcoin.IntegrationTests.Common.Runners</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.IntegrationTests.Common.dll</h6>
@@ -99,18 +96,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner__ctor_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L27">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L29">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner__ctor_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner__ctor_System_String_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.#ctor(System.String)">NodeRunner(String)</h4>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner__ctor_System_String_System_String_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.#ctor(System.String,System.String)">NodeRunner(String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected NodeRunner(string dataDir)</code></pre>
+    <pre><code class="lang-csharp hljs">protected NodeRunner(string dataDir, string agent = &quot;StratisBitcoin&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,10 +124,44 @@
         <td><span class="parametername">dataDir</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
   </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Agent.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Agent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Agent" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Agent">Agent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string Agent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_DataFolder.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.DataFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -167,7 +198,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_FullNode.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.FullNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L20">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L22">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_FullNode_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.FullNode*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_FullNode" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.FullNode">FullNode</h4>
@@ -197,7 +228,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_InterceptorConnect.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.InterceptorConnect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L22">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L24">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_InterceptorConnect_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.InterceptorConnect*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_InterceptorConnect" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.InterceptorConnect">InterceptorConnect</h4>
@@ -227,7 +258,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_InterceptorDisconnect.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.InterceptorDisconnect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L21">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L23">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_InterceptorDisconnect_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.InterceptorDisconnect*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_InterceptorDisconnect" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.InterceptorDisconnect">InterceptorDisconnect</h4>
@@ -257,7 +288,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_IsDisposed.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.IsDisposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L12">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L14">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_IsDisposed_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.IsDisposed*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_IsDisposed" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.IsDisposed">IsDisposed</h4>
@@ -287,7 +318,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Network.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L23">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L25">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Network_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Network*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Network" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Network">Network</h4>
@@ -317,7 +348,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_OverrideDateTimeProvider.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.OverrideDateTimeProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L24">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L26">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_OverrideDateTimeProvider_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.OverrideDateTimeProvider*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_OverrideDateTimeProvider" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.OverrideDateTimeProvider">OverrideDateTimeProvider</h4>
@@ -347,7 +378,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_ServiceToOverride.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.ServiceToOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L25">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L27">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_ServiceToOverride_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.ServiceToOverride*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_ServiceToOverride" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.ServiceToOverride">ServiceToOverride</h4>
@@ -379,7 +410,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_BuildNode.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.BuildNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L32">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L35">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_BuildNode_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.BuildNode*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_BuildNode" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.BuildNode">BuildNode()</h4>
@@ -394,7 +425,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Start.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L34">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L37">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Start_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Start*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Start" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Start">Start()</h4>
@@ -409,7 +440,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Stop.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L44">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Runners/NodeRunner.cs/#L47">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Stop_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Stop*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_Runners_NodeRunner_Stop" data-uid="Stratis.Bitcoin.IntegrationTests.Common.Runners.NodeRunner.Stop">Stop()</h4>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.3.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -142,6 +142,11 @@ this rule allows a chain to have BIP34 activated as a deployment rule.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinviewRule.html">PosCoinviewRule</a></h4>
       <section><p>Proof of stake override for the coinview rules - BIP68, MaxSigOps and BlockReward checks.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosColdStakingRule.html">PosColdStakingRule</a></h4>
+      <section><p>This rule performs further coldstaking transaction validation when cold staking balances are spent with a
+cold staking &quot;hotPubKey&quot; inside of a cold staking transaction. The cold staking &quot;hotPubKey&quot; is the pubKey
+that allows spending only to the same address.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.html">PosFutureDriftRule</a></h4>
       <section><p>A rule that will verify the block time drift is according to the PoS consensus rules.</p>

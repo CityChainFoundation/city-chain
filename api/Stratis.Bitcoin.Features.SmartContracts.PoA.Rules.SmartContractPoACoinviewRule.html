@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SmartContractPoACoinviewRule
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.3.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -106,6 +106,9 @@
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_RunAsync_Stratis_Bitcoin_Consensus_Rules_RuleContext_">CoinViewRule.RunAsync(RuleContext)</a>
     </div>
     <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_IsTxFinal_NBitcoin_Transaction_Stratis_Bitcoin_Consensus_Rules_RuleContext_">CoinViewRule.IsTxFinal(Transaction, RuleContext)</a>
+    </div>
+    <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_CheckInput_NBitcoin_Transaction_System_Int32_NBitcoin_TxOut_NBitcoin_PrecomputedTransactionData_NBitcoin_TxIn_Stratis_Bitcoin_Base_Deployments_DeploymentFlags_">CoinViewRule.CheckInput(Transaction, Int32, TxOut, PrecomputedTransactionData, TxIn, DeploymentFlags)</a>
     </div>
     <div>
@@ -142,185 +145,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SmartContractPoACoinviewRule : PoACoinviewRule</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_blockTxsProcessed.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.blockTxsProcessed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L23">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_blockTxsProcessed" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.blockTxsProcessed">blockTxsProcessed</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;Transaction&gt; blockTxsProcessed</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">Transaction</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_generatedTransaction.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.generatedTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L24">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_generatedTransaction" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.generatedTransaction">generatedTransaction</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transaction generatedTransaction</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Transaction</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_mutableStateRepository.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.mutableStateRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L27">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_mutableStateRepository" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.mutableStateRepository">mutableStateRepository</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IStateRepositoryRoot mutableStateRepository</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepositoryRoot.html">IStateRepositoryRoot</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_receipts.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.receipts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L25">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_receipts" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.receipts">receipts</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IList&lt;Receipt&gt; receipts</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IList</span>&lt;<a class="xref" href="Stratis.SmartContracts.Core.Receipts.Receipt.html">Receipt</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_refundCounter.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.refundCounter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L26">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_refundCounter" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.refundCounter">refundCounter</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected uint refundCounter</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ContractCoinviewRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ContractCoinviewRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L29">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ContractCoinviewRule_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ContractCoinviewRule*"></a>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ContractCoinviewRule" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ContractCoinviewRule">ContractCoinviewRule</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ISmartContractCoinviewRule ContractCoinviewRule { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.ISmartContractCoinviewRule.html">ISmartContractCoinviewRule</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -328,7 +152,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_CheckInput_Transaction_System_Int32_TxOut_PrecomputedTransactionData_TxIn_DeploymentFlags_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.CheckInput(Transaction%2CSystem.Int32%2CTxOut%2CPrecomputedTransactionData%2CTxIn%2CDeploymentFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L68">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L29">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_CheckInput_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.CheckInput*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_CheckInput_Transaction_System_Int32_TxOut_PrecomputedTransactionData_TxIn_DeploymentFlags_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.CheckInput(Transaction,System.Int32,TxOut,PrecomputedTransactionData,TxIn,DeploymentFlags)">CheckInput(Transaction, Int32, TxOut, PrecomputedTransactionData, TxIn, DeploymentFlags)</h4>
@@ -397,48 +221,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ExecuteContractTransaction_RuleContext_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ExecuteContractTransaction(RuleContext%2CTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L144">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ExecuteContractTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ExecuteContractTransaction*"></a>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ExecuteContractTransaction_RuleContext_Transaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ExecuteContractTransaction(RuleContext,Transaction)">ExecuteContractTransaction(RuleContext, Transaction)</h4>
-  <div class="markdown level1 summary"><p>Executes the smart contract part of a transaction</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void ExecuteContractTransaction(RuleContext context, Transaction transaction)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">RuleContext</span></td>
-        <td><span class="parametername">context</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Transaction</span></td>
-        <td><span class="parametername">transaction</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L32">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L15">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_Initialize_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.Initialize*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_Initialize" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.Initialize">Initialize()</h4>
@@ -458,7 +244,7 @@ The rule can internally initialize its state.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_RunAsync_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.RunAsync(RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L42">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L23">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_RunAsync_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.RunAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_RunAsync_RuleContext_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.RunAsync(RuleContext)">RunAsync(RuleContext)</h4>
@@ -505,7 +291,7 @@ The rule can internally initialize its state.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_UpdateCoinView_RuleContext_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.UpdateCoinView(RuleContext%2CTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L85">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L38">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_UpdateCoinView_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.UpdateCoinView*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_UpdateCoinView_RuleContext_Transaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.UpdateCoinView(RuleContext,Transaction)">UpdateCoinView(RuleContext, Transaction)</h4>
@@ -538,72 +324,6 @@ The rule can internally initialize its state.</p>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ValidateGeneratedTransaction_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ValidateGeneratedTransaction(Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L118">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ValidateGeneratedTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ValidateGeneratedTransaction*"></a>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ValidateGeneratedTransaction_Transaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ValidateGeneratedTransaction(Transaction)">ValidateGeneratedTransaction(Transaction)</h4>
-  <div class="markdown level1 summary"><p>Validates that any condensing transaction matches the transaction generated during execution</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void ValidateGeneratedTransaction(Transaction transaction)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Transaction</span></td>
-        <td><span class="parametername">transaction</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ValidateSubmittedTransaction_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ValidateSubmittedTransaction(Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L132">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ValidateSubmittedTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ValidateSubmittedTransaction*"></a>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule_ValidateSubmittedTransaction_Transaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule.ValidateSubmittedTransaction(Transaction)">ValidateSubmittedTransaction(Transaction)</h4>
-  <div class="markdown level1 summary"><p>Validates that a submitted transacction doesn't contain illegal operations</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void ValidateSubmittedTransaction(Transaction transaction)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Transaction</span></td>
-        <td><span class="parametername">transaction</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           
@@ -615,7 +335,7 @@ The rule can internally initialize its state.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_Rules_SmartContractPoACoinviewRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.SmartContractPoACoinviewRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/Rules/SmartContractPoACoinviewRule.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
