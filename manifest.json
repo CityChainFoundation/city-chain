@@ -9369,7 +9369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.html",
-          "hash": "t8Mj3JT1yv6WURo9Efkdxw=="
+          "hash": "Gog9Q4THRpmZKlSgBpM0+Q=="
         }
       },
       "is_incremental": false,
@@ -10541,6 +10541,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.SmartContractPoARuleEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.SmartContractPoARuleEngine.html",
+          "hash": "E9zToAF2l7cYoXdOsmSfVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.SmartContractPoARuleRegistration.yml",
       "output": {
         ".html": {
@@ -10557,7 +10569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.html",
-          "hash": "e4mRd9sggFM4U/HS72rffA=="
+          "hash": "OYRL1xCR27YSlN658Rf5QQ=="
         }
       },
       "is_incremental": false,
@@ -10665,7 +10677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoS.SmartContractPosConsensusRuleEngine.html",
-          "hash": "0ewD34fj7KU3JP+oejkbDA=="
+          "hash": "3litU8stOhV+x0omqdICDg=="
         }
       },
       "is_incremental": false,
@@ -21288,7 +21300,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "fmACYdAscbWCoAxZ0H+9+g=="
+          "hash": "Bbj143vw//pe98IpD3UpsQ=="
         }
       },
       "is_incremental": false,
@@ -21378,11 +21390,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
