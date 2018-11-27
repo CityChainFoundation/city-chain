@@ -97,19 +97,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature__ctor_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_MinerSettings_Stratis_Bitcoin_Configuration_NodeSettings_ILoggerFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Features_Miner_Interfaces_IPowMining_Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.%23ctor(NBitcoin.Network%2CStratis.Bitcoin.Features.Miner.MinerSettings%2CStratis.Bitcoin.Configuration.NodeSettings%2CILoggerFactory%2CStratis.Bitcoin.Base.ITimeSyncBehaviorState%2CStratis.Bitcoin.Features.Miner.Interfaces.IPowMining%2CStratis.Bitcoin.Features.Miner.Interfaces.IPosMinting)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature__ctor_Stratis_Bitcoin_Configuration_Settings_ConnectionManagerSettings_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_MinerSettings_Stratis_Bitcoin_Configuration_NodeSettings_ILoggerFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Features_Miner_Interfaces_IPowMining_Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.%23ctor(Stratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings%2CNBitcoin.Network%2CStratis.Bitcoin.Features.Miner.MinerSettings%2CStratis.Bitcoin.Configuration.NodeSettings%2CILoggerFactory%2CStratis.Bitcoin.Base.ITimeSyncBehaviorState%2CStratis.Bitcoin.Features.Miner.Interfaces.IPowMining%2CStratis.Bitcoin.Features.Miner.Interfaces.IPosMinting)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L63">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L55">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_MiningFeature__ctor_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature__ctor_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_MinerSettings_Stratis_Bitcoin_Configuration_NodeSettings_ILoggerFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Features_Miner_Interfaces_IPowMining_Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.#ctor(NBitcoin.Network,Stratis.Bitcoin.Features.Miner.MinerSettings,Stratis.Bitcoin.Configuration.NodeSettings,ILoggerFactory,Stratis.Bitcoin.Base.ITimeSyncBehaviorState,Stratis.Bitcoin.Features.Miner.Interfaces.IPowMining,Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting)">MiningFeature(Network, MinerSettings, NodeSettings, ILoggerFactory, ITimeSyncBehaviorState, IPowMining, IPosMinting)</h4>
-  <div class="markdown level1 summary"><p>Initializes the instance of the object.</p>
-</div>
+  <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature__ctor_Stratis_Bitcoin_Configuration_Settings_ConnectionManagerSettings_NBitcoin_Network_Stratis_Bitcoin_Features_Miner_MinerSettings_Stratis_Bitcoin_Configuration_NodeSettings_ILoggerFactory_Stratis_Bitcoin_Base_ITimeSyncBehaviorState_Stratis_Bitcoin_Features_Miner_Interfaces_IPowMining_Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.#ctor(Stratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings,NBitcoin.Network,Stratis.Bitcoin.Features.Miner.MinerSettings,Stratis.Bitcoin.Configuration.NodeSettings,ILoggerFactory,Stratis.Bitcoin.Base.ITimeSyncBehaviorState,Stratis.Bitcoin.Features.Miner.Interfaces.IPowMining,Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting)">MiningFeature(ConnectionManagerSettings, Network, MinerSettings, NodeSettings, ILoggerFactory, ITimeSyncBehaviorState, IPowMining, IPosMinting)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MiningFeature(Network network, MinerSettings minerSettings, NodeSettings nodeSettings, ILoggerFactory loggerFactory, ITimeSyncBehaviorState timeSyncBehaviorState, IPowMining powMining, IPosMinting posMinting = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public MiningFeature(ConnectionManagerSettings connectionManagerSettings, Network network, MinerSettings minerSettings, NodeSettings nodeSettings, ILoggerFactory loggerFactory, ITimeSyncBehaviorState timeSyncBehaviorState, IPowMining powMining, IPosMinting posMinting = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,46 +121,44 @@
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings.html">ConnectionManagerSettings</a></td>
+        <td><span class="parametername">connectionManagerSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
         <td><span class="parametername">network</span></td>
-        <td><p>Specification of the network the node runs on - regtest/testnet/mainnet.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.MinerSettings.html">MinerSettings</a></td>
         <td><span class="parametername">minerSettings</span></td>
-        <td><p>Settings relevant to mining or staking.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
         <td><span class="parametername">nodeSettings</span></td>
-        <td><p>The node's configuration settings.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">ILoggerFactory</span></td>
         <td><span class="parametername">loggerFactory</span></td>
-        <td><p>Factory to be used to create logger for the node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Base.ITimeSyncBehaviorState.html">ITimeSyncBehaviorState</a></td>
         <td><span class="parametername">timeSyncBehaviorState</span></td>
-        <td><p>State of time synchronization feature that stores collected data samples.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.Interfaces.IPowMining.html">IPowMining</a></td>
         <td><span class="parametername">powMining</span></td>
-        <td><p>POW miner.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.html">IPosMinting</a></td>
         <td><span class="parametername">posMinting</span></td>
-        <td><p>POS staker.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -172,7 +169,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature_BuildDefaultConfigurationFile_StringBuilder_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.BuildDefaultConfigurationFile(StringBuilder%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L95">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L89">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_MiningFeature_BuildDefaultConfigurationFile_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.BuildDefaultConfigurationFile*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature_BuildDefaultConfigurationFile_StringBuilder_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.BuildDefaultConfigurationFile(StringBuilder,NBitcoin.Network)">BuildDefaultConfigurationFile(StringBuilder, Network)</h4>
@@ -212,7 +209,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L177">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L174">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_MiningFeature_Dispose_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature_Dispose" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.Dispose">Dispose()</h4>
@@ -229,7 +226,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature_InitializeAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.InitializeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L152">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L146">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_MiningFeature_InitializeAsync_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.InitializeAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature_InitializeAsync" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.InitializeAsync">InitializeAsync()</h4>
@@ -262,7 +259,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature_PrintHelp_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.PrintHelp(NBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L85">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L79">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_MiningFeature_PrintHelp_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.PrintHelp*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature_PrintHelp_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.PrintHelp(NBitcoin.Network)">PrintHelp(Network)</h4>
@@ -296,7 +293,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature_StartStaking_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.StartStaking(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L105">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L99">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_MiningFeature_StartStaking_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.StartStaking*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature_StartStaking_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.StartStaking(System.String,System.String)">StartStaking(String, String)</h4>
@@ -336,7 +333,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature_StopMining.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.StopMining%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L145">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L139">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_MiningFeature_StopMining_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.StopMining*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature_StopMining" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.StopMining">StopMining()</h4>
@@ -352,7 +349,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature_StopStaking.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.StopStaking%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L136">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L130">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_MiningFeature_StopStaking_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.StopStaking*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature_StopStaking" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.StopStaking">StopStaking()</h4>
@@ -368,7 +365,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_MiningFeature_ValidateDependencies_Stratis_Bitcoin_Builder_IFullNodeServiceProvider_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.MiningFeature.ValidateDependencies(Stratis.Bitcoin.Builder.IFullNodeServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L184">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/MiningFeature.cs/#L181">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_MiningFeature_ValidateDependencies_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.ValidateDependencies*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_MiningFeature_ValidateDependencies_Stratis_Bitcoin_Builder_IFullNodeServiceProvider_" data-uid="Stratis.Bitcoin.Features.Miner.MiningFeature.ValidateDependencies(Stratis.Bitcoin.Builder.IFullNodeServiceProvider)">ValidateDependencies(IFullNodeServiceProvider)</h4>
