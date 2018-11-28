@@ -93,11 +93,11 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension_OverrideService__1_Stratis_Bitcoin_Builder_IFullNodeBuilder_Action_IServiceCollection__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension.OverrideService%60%601(Stratis.Bitcoin.Builder.IFullNodeBuilder%2CAction%7BIServiceCollection%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Extensions/OverrideServiceFeatureExtension.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Extensions/OverrideServiceFeatureExtension.cs/#L19">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension_OverrideService_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension.OverrideService*"></a>
   <h4 id="Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension_OverrideService__1_Stratis_Bitcoin_Builder_IFullNodeBuilder_Action_IServiceCollection__" data-uid="Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension.OverrideService``1(Stratis.Bitcoin.Builder.IFullNodeBuilder,Action{IServiceCollection})">OverrideService&lt;T&gt;(IFullNodeBuilder, Action&lt;IServiceCollection&gt;)</h4>
-  <div class="markdown level1 summary"><p>Adds a feature to the node that will allow secertain services to be overridden.</p>
+  <div class="markdown level1 summary"><p>Adds a feature to the node that will allow certain services to be overridden.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -160,6 +160,144 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension_RemoveImplementation__1_Stratis_Bitcoin_Builder_IFullNodeBuilder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension.RemoveImplementation%60%601(Stratis.Bitcoin.Builder.IFullNodeBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Extensions/OverrideServiceFeatureExtension.cs/#L71">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension_RemoveImplementation_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension.RemoveImplementation*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension_RemoveImplementation__1_Stratis_Bitcoin_Builder_IFullNodeBuilder_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension.RemoveImplementation``1(Stratis.Bitcoin.Builder.IFullNodeBuilder)">RemoveImplementation&lt;T&gt;(IFullNodeBuilder)</h4>
+  <div class="markdown level1 summary"><p>Removes an implementation from a given feature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFullNodeBuilder RemoveImplementation&lt;T&gt;(this IFullNodeBuilder fullNodeBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Builder.IFullNodeBuilder.html">IFullNodeBuilder</a></td>
+        <td><span class="parametername">fullNodeBuilder</span></td>
+        <td><p>The object used to build the current node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Builder.IFullNodeBuilder.html">IFullNodeBuilder</a></td>
+        <td><p>The full node builder, with the service removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The service to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension_ReplaceService__1_Stratis_Bitcoin_Builder_IFullNodeBuilder___0_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension.ReplaceService%60%601(Stratis.Bitcoin.Builder.IFullNodeBuilder%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Extensions/OverrideServiceFeatureExtension.cs/#L43">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension_ReplaceService_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension.ReplaceService*"></a>
+  <h4 id="Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension_ReplaceService__1_Stratis_Bitcoin_Builder_IFullNodeBuilder___0_" data-uid="Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension.ReplaceService``1(Stratis.Bitcoin.Builder.IFullNodeBuilder,``0)">ReplaceService&lt;T&gt;(IFullNodeBuilder, T)</h4>
+  <div class="markdown level1 summary"><p>Replaces a service in a given feature with another implementation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFullNodeBuilder ReplaceService&lt;T&gt;(this IFullNodeBuilder fullNodeBuilder, T serviceToOverride)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Builder.IFullNodeBuilder.html">IFullNodeBuilder</a></td>
+        <td><span class="parametername">fullNodeBuilder</span></td>
+        <td><p>The object used to build the current node.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">serviceToOverride</span></td>
+        <td><p>Callback routine that will override a given service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Builder.IFullNodeBuilder.html">IFullNodeBuilder</a></td>
+        <td><p>The full node builder, with the replaced service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The services to be replaced.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -171,7 +309,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_IntegrationTests_Common_OverrideServiceFeatureExtension.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.IntegrationTests.Common.OverrideServiceFeatureExtension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Extensions/OverrideServiceFeatureExtension.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.IntegrationTests.Common/Extensions/OverrideServiceFeatureExtension.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
