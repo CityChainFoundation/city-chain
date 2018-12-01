@@ -220,10 +220,11 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_Outputs.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.Outputs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L58">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L67">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_Outputs" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Outputs">Outputs</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The outputs of a transaction.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -244,6 +245,12 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Stratis_Bitcoin_Utilities_UnspentOutputs_Outputs_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The behaviour of this collection is as following:
+If a UTXO is spent it will be set to null, but the size of the collection will not change.
+If the last item in the collection is spent (and set to null) when storing to disk the size
+of the collection will change and be reduced by the number of last items that are null.</p>
+</div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -251,7 +258,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_Height.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L78">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L87">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_Height_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Height*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_Height" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Height">Height</h4>
@@ -281,7 +288,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_IsCoinbase.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.IsCoinbase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L72">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L81">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsCoinbase_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsCoinbase*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsCoinbase" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsCoinbase">IsCoinbase</h4>
@@ -311,7 +318,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_IsCoinstake.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.IsCoinstake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L74">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L83">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsCoinstake_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsCoinstake*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsCoinstake" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsCoinstake">IsCoinstake</h4>
@@ -341,7 +348,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_IsFull.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.IsFull%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L89">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L98">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsFull_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsFull*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsFull" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsFull">IsFull</h4>
@@ -371,7 +378,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_IsPrunable.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.IsPrunable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L80">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L89">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsPrunable_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsPrunable*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsPrunable" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsPrunable">IsPrunable</h4>
@@ -401,7 +408,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_Time.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.Time%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L76">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L85">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_Time_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Time*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_Time" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Time">Time</h4>
@@ -431,7 +438,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_TransactionId.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.TransactionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L62">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L71">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_TransactionId_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.TransactionId*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_TransactionId" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.TransactionId">TransactionId</h4>
@@ -461,7 +468,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_UnspentCount.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.UnspentCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L97">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L106">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_UnspentCount_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.UnspentCount*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_UnspentCount" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.UnspentCount">UnspentCount</h4>
@@ -491,7 +498,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_Version.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L70">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L79">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_Version_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Version*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_Version" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Version">Version</h4>
@@ -523,7 +530,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_Clone.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L190">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L199">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_Clone_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Clone*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_Clone" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Clone">Clone()</h4>
@@ -553,7 +560,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_IsAvailable_System_UInt32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.IsAvailable(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L105">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L114">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsAvailable_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsAvailable*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_IsAvailable_System_UInt32_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.IsAvailable(System.UInt32)">IsAvailable(UInt32)</h4>
@@ -600,7 +607,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_ReadWrite_NBitcoin_BitcoinStream_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.ReadWrite(NBitcoin.BitcoinStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L155">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L164">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_ReadWrite_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.ReadWrite*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_ReadWrite_NBitcoin_BitcoinStream_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.ReadWrite(NBitcoin.BitcoinStream)">ReadWrite(BitcoinStream)</h4>
@@ -632,7 +639,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_Spend_Stratis_Bitcoin_Utilities_UnspentOutputs_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.Spend(Stratis.Bitcoin.Utilities.UnspentOutputs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L127">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L136">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_Spend_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Spend*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_Spend_Stratis_Bitcoin_Utilities_UnspentOutputs_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Spend(Stratis.Bitcoin.Utilities.UnspentOutputs)">Spend(UnspentOutputs)</h4>
@@ -664,7 +671,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_Spend_System_UInt32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.Spend(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L117">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L126">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_Spend_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Spend*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_Spend_System_UInt32_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.Spend(System.UInt32)">Spend(UInt32)</h4>
@@ -711,7 +718,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_ToCoins.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.ToCoins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L136">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L145">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_ToCoins_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.ToCoins*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_ToCoins" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.ToCoins">ToCoins()</h4>
@@ -741,7 +748,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_ToString.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L171">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L180">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_ToString_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.ToString*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_ToString" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.ToString">ToString()</h4>
@@ -771,7 +778,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_UnspentOutputs_TryGetOutput_System_UInt32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.UnspentOutputs.TryGetOutput(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L110">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/UnspentOutputs.cs/#L119">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_UnspentOutputs_TryGetOutput_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.TryGetOutput*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_UnspentOutputs_TryGetOutput_System_UInt32_" data-uid="Stratis.Bitcoin.Utilities.UnspentOutputs.TryGetOutput(System.UInt32)">TryGetOutput(UInt32)</h4>
