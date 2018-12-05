@@ -4641,7 +4641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Connection.ConnectionManager.html",
-          "hash": "eKbu6gAxcHAGSfN8/AHZ0w=="
+          "hash": "b0bV5xbO020sn/tyJ/Y2Zg=="
         }
       },
       "is_incremental": false,
@@ -4809,7 +4809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Consensus.ChainedHeaderTree.html",
-          "hash": "eqLxFfgiZRk/Xn1YYhiWVg=="
+          "hash": "rVamCoq9aw1JoLQX8z+CJA=="
         }
       },
       "is_incremental": false,
@@ -4857,7 +4857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Consensus.ConnectNewHeadersResult.html",
-          "hash": "tYPzLstwj7QxW2TTDL9DNw=="
+          "hash": "vpL6dki/l3nJdsGHrzsJzg=="
         }
       },
       "is_incremental": false,
@@ -4917,7 +4917,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Consensus.ConsensusManager.html",
-          "hash": "jpuBKZbgyNqYb4uzawkFLQ=="
+          "hash": "AbfeNcc+K/6qX3FIxpZswA=="
         }
       },
       "is_incremental": false,
@@ -4929,7 +4929,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.html",
-          "hash": "iS0xqLyPSciVmCnC3jQfsA=="
+          "hash": "PtUCp36ZUbKFc2PGOpiH9A=="
         }
       },
       "is_incremental": false,
@@ -6537,7 +6537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.Behaviors.ProvenHeadersConsensusManagerBehavior.html",
-          "hash": "T7YJrs8If+k0QKSyE4h1Jw=="
+          "hash": "MQOp8kCYN1ljcDvYCjAhmQ=="
         }
       },
       "is_incremental": false,
@@ -6621,7 +6621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.html",
-          "hash": "WdI+KZqiU0ppZRu1EW1Big=="
+          "hash": "QRRoVx9AxWm6S0DiuWZtOw=="
         }
       },
       "is_incremental": false,
@@ -6905,11 +6905,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IRewindDataIndexStore.yml",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IRewindDataIndexCache.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IRewindDataIndexStore.html",
-          "hash": "yk02wSylpICTrM8hqF3CdA=="
+          "relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IRewindDataIndexCache.html",
+          "hash": "Wwokz7rY8HfI4iuYF9Glbw=="
         }
       },
       "is_incremental": false,
@@ -6953,11 +6953,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.RewindDataIndexStore.yml",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.RewindDataIndexCache.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.RewindDataIndexStore.html",
-          "hash": "eOow9bn48AcyCfl33ZewtQ=="
+          "relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.RewindDataIndexCache.html",
+          "hash": "7mxYj7bBnKah998JbhjjrA=="
         }
       },
       "is_incremental": false,
@@ -6969,7 +6969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.html",
-          "hash": "11jx9rWMYG8BuKdOmjT6uQ=="
+          "hash": "gVTjIwDI5xenl+w85QhRqw=="
         }
       },
       "is_incremental": false,
@@ -7401,7 +7401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.html",
-          "hash": "XiZet3qIYeBLTR05TQ1opw=="
+          "hash": "SDy5+9xpslmpu4M5B2eVgw=="
         }
       },
       "is_incremental": false,
@@ -8109,7 +8109,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.MempoolErrors.html",
-          "hash": "EsmHz7A3MNM4pOtQGj8TdQ=="
+          "hash": "jp2IHJABD4Abpr2xWXnN7A=="
         }
       },
       "is_incremental": false,
@@ -9249,7 +9249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.KeyTool.html",
-          "hash": "ISgo4H2V1Y2jzDkhRybN1g=="
+          "hash": "KhKav0oDby6y3ODexFxhzg=="
         }
       },
       "is_incremental": false,
@@ -10257,7 +10257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ISmartContractCoinviewRule.html",
-          "hash": "+jeyprwbm5z3aJJw49nNdg=="
+          "hash": "oLjsVPDbMuo9AL3Glbgjhg=="
         }
       },
       "is_incremental": false,
@@ -10353,7 +10353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.GetStorageRequest.html",
-          "hash": "0/QpKcjUTKGlo73W5p0MaQ=="
+          "hash": "NSkqAN7v633zKeyyW1qEqQ=="
         }
       },
       "is_incremental": false,
@@ -10545,7 +10545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.SmartContractPoARuleEngine.html",
-          "hash": "E9zToAF2l7cYoXdOsmSfVw=="
+          "hash": "Z7hyK3ZKk9CyS7yd35kxpA=="
         }
       },
       "is_incremental": false,
@@ -10677,7 +10677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoS.SmartContractPosConsensusRuleEngine.html",
-          "hash": "3litU8stOhV+x0omqdICDg=="
+          "hash": "6a06Tg0IPGsEzlxTYYMAzw=="
         }
       },
       "is_incremental": false,
@@ -10809,7 +10809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoW.SmartContractPowConsensusRuleEngine.html",
-          "hash": "Uido5sBvc43tUof41NjmxQ=="
+          "hash": "DgravH808B1b4LyL/UdQOA=="
         }
       },
       "is_incremental": false,
@@ -10845,7 +10845,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Consensus.Rules.SmartContractFormatRule.html",
-          "hash": "RW0zE8QIPdS3WggL7zoBYA=="
+          "hash": "ZKxv1jKCR5eD9Y7d3CgxVg=="
         }
       },
       "is_incremental": false,
@@ -10869,7 +10869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.html",
-          "hash": "00K/oz56H4/EHZP+Dhum0A=="
+          "hash": "Ju/3PRb7ScEIymmjV3/l0Q=="
         }
       },
       "is_incremental": false,
@@ -10893,7 +10893,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.ReflectionVirtualMachineFeature.html",
-          "hash": "WXap8qH6+gr0zr3PaPYxsA=="
+          "hash": "IwvOwqUZ/x9DmPeZIOoUAg=="
         }
       },
       "is_incremental": false,
@@ -11049,7 +11049,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.SmartContractMempoolValidator.html",
-          "hash": "90JNE87CG6ZPd1DaIkbixA=="
+          "hash": "Pj4wk2Yx1C1Xjjf2MngUAw=="
         }
       },
       "is_incremental": false,
@@ -11061,7 +11061,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.SmartContractScriptAddressReader.html",
-          "hash": "no9I7lH25nGDBzScIgH9AA=="
+          "hash": "NkeMSEUKANyMa0i2xGvmJA=="
         }
       },
       "is_incremental": false,
@@ -11145,7 +11145,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Wallet.SmartContractTransactionService.html",
-          "hash": "Grth9LkeRoKX9Nbj591yaA=="
+          "hash": "kjhQoxfb7qXXTpMXIWmudQ=="
         }
       },
       "is_incremental": false,
@@ -11157,7 +11157,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Wallet.SmartContractWalletController.html",
-          "hash": "Scvl9vNhPUUnODrDfModUQ=="
+          "hash": "8y0vSfQ2sE386FBnmw06sw=="
         }
       },
       "is_incremental": false,
@@ -11217,7 +11217,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.html",
-          "hash": "uYjrihuX4Yq6vKPzAhUnUw=="
+          "hash": "57OjEDEm7txjQ4ivTvnBgA=="
         }
       },
       "is_incremental": false,
@@ -13137,7 +13137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.BlockStoreQueueFlushConditionReorgTests.html",
-          "hash": "J1QXet5w5At7kzz39CPqJA=="
+          "hash": "wk1AkvefNv2r6n2s+dmR9g=="
         }
       },
       "is_incremental": false,
@@ -13641,7 +13641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.ConsensusManagerTests.BitcoinMaxReorgOverrideTest.html",
-          "hash": "enc3tILjbb6AGZd5uT0eiQ=="
+          "hash": "zy6lYSmLKye/8oYGRJndrg=="
         }
       },
       "is_incremental": false,
@@ -13653,7 +13653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.ConsensusManagerTests.BitcoinOverrideRegTest.html",
-          "hash": "Y1Ydqdb6IzMxuo6qiS16Hw=="
+          "hash": "Hqifp9DdTb9hV8OmSUuPbw=="
         }
       },
       "is_incremental": false,
@@ -13665,7 +13665,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.ConsensusManagerTests.FailValidation.html",
-          "hash": "GRZqrx901C6TWv/2JC8X2w=="
+          "hash": "QkwnmPYm2EpXd23BMNitzg=="
         }
       },
       "is_incremental": false,
@@ -13677,7 +13677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.ConsensusManagerTests.StratisConsensusOptionsOverrideTest.html",
-          "hash": "+bhRNGoEnilBfG38j506Bw=="
+          "hash": "eeiV0fFayvKppj8v95nhCg=="
         }
       },
       "is_incremental": false,
@@ -13689,7 +13689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.ConsensusManagerTests.html",
-          "hash": "UItJwF9VuNAClVEVjvjekQ=="
+          "hash": "EOIsS0SbeKzwUl0/6U2Yzw=="
         }
       },
       "is_incremental": false,
@@ -14613,7 +14613,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.IPeerConnector.html",
-          "hash": "C+8ljB4mMD0pfUEug1qGtg=="
+          "hash": "1crBiPBqOmmGEuA1eUuxIA=="
         }
       },
       "is_incremental": false,
@@ -14913,7 +14913,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.PeerConnector.html",
-          "hash": "p7M0vteeCI9EImiKCcfiKw=="
+          "hash": "STkBfARLYQhCjWF7KXy5bQ=="
         }
       },
       "is_incremental": false,
@@ -14925,7 +14925,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.PeerConnectorAddNode.html",
-          "hash": "uOvbuM4NH+tB/eL16FFQeQ=="
+          "hash": "xQtR1scny+stzILV7woo0A=="
         }
       },
       "is_incremental": false,
@@ -14937,7 +14937,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.PeerConnectorConnectNode.html",
-          "hash": "3ROxsxUvkUhH1Vx+IuJgQQ=="
+          "hash": "lJi1eWjl1p1Xioep5ULm3g=="
         }
       },
       "is_incremental": false,
@@ -14949,7 +14949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.PeerConnectorDiscovery.html",
-          "hash": "gvCbO3Fru5w/vcMteSd+pQ=="
+          "hash": "lDYK4aduDqhrjGP6blEvQg=="
         }
       },
       "is_incremental": false,
@@ -16988,6 +16988,2430 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.AddressExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.AddressExtensions.html",
+          "hash": "ctodhTKNw8//eSp4uYs4nQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.AddressGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.AddressGenerator.html",
+          "hash": "C0yqwOs9dGmeKSFdZqAIuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ArrayExtensions.html",
+          "hash": "ICRWhXaxvk03Skk3HQv+6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.BalanceState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.BalanceState.html",
+          "hash": "XULdIJUQ+zKHkkGxbh5Ffg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.BaseMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.BaseMessage.html",
+          "hash": "32T3gjBYPaEGlq3DbXeFUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.BasicKeyEncodingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.BasicKeyEncodingStrategy.html",
+          "hash": "20WsLgwKJEezsWJjvZdMhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.CallDataSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.CallDataSerializer.html",
+          "hash": "lePdUM7/aNhFtQHJufYC8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.CallMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.CallMessage.html",
+          "hash": "jOXH/yearONw9ICe72NZpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Compilation.AssemblyResolverExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Compilation.AssemblyResolverExtensions.html",
+          "hash": "yrrchWSIMGWrVT16DMftEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ContractCompilationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ContractCompilationResult.html",
+          "hash": "kTmtiqYI0hV3sWQMCXpSOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ContractCompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ContractCompiler.html",
+          "hash": "4hmhdgIR1O5XUaqxGZe/eA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ContractDecompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ContractDecompiler.html",
+          "hash": "C0JMtcd6/A6nb+JcW6o3dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ContractModuleDefinitionReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ContractModuleDefinitionReader.html",
+          "hash": "ymTf3q6qizi+K4tPImHTQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Compilation.DotNetCoreAssemblyResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Compilation.DotNetCoreAssemblyResolver.html",
+          "hash": "skjLpWJbtxLTVC5ghwX5Tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Compilation.IContractModuleDefinitionReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Compilation.IContractModuleDefinitionReader.html",
+          "hash": "Xyc9tRuU9ksPg6j7WN3zHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ReferencedAssemblyResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Compilation.ReferencedAssemblyResolver.html",
+          "hash": "VO15nYjgkTWJ1oTnpfiKMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Compilation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Compilation.html",
+          "hash": "eaCBx5voEIvVeJ/HdnFLzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Contract.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Contract.html",
+          "hash": "nGKkwQZcwxqP0bai7aZOfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractExecutor.html",
+          "hash": "Msy+XCrtCOsAH1bpDei3jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractInvocationErrorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractInvocationErrorType.html",
+          "hash": "9+aH0vq8IVA0NlLrHd31IQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractInvocationErrors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractInvocationErrors.html",
+          "hash": "0mseDybqkigneIDitCXIPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractInvocationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractInvocationResult.html",
+          "hash": "Vgah8gLi8zqhdjkkNMMKKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.ContractLogHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.ContractLogHolder.html",
+          "hash": "jvHoe/aPfEHnVTLE7YBl3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.IContractLogHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.IContractLogHolder.html",
+          "hash": "1AB6+fXRIX1HQCY5iLj/9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.MeteredContractLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.MeteredContractLogger.html",
+          "hash": "aWEsICMx48JLlEkEIvq8mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.RawLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.RawLog.html",
+          "hash": "a4UKvT3Cdef20/vceseavQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.RawLogExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.RawLogExtensions.html",
+          "hash": "sEL34Q0r7mRyL3z6hoCIrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractLogging.html",
+          "hash": "OvskuSv0Vx3D0nlGM7zQ2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractModuleDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractModuleDefinition.html",
+          "hash": "pbk/yhWj/BhrFvFDUm+dyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractTransferMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractTransferMessage.html",
+          "hash": "rOP9/nTV74BQ5PftfX2EyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ContractTxData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ContractTxData.html",
+          "hash": "GtGQ/Lwbvu4p4xYoo0hr9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.CreateResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.CreateResult.html",
+          "hash": "QlxRLFlmyei8xgyZ8I5M6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Decompilation.CSharpContractDecompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Decompilation.CSharpContractDecompiler.html",
+          "hash": "0VfR9CZsNFveftrgxt/UDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Decompilation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Decompilation.html",
+          "hash": "Y8LwDwysU13/pYHGcFWYXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Exceptions.ContractPrimitiveSerializationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Exceptions.ContractPrimitiveSerializationException.html",
+          "hash": "lVXMOf/FQQGvW2wY6n1pGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Exceptions.OutOfGasException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Exceptions.OutOfGasException.html",
+          "hash": "MJD2w9RY/s8D9gTUdlgemg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Exceptions.SmartContractValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Exceptions.SmartContractValidationException.html",
+          "hash": "FcvaNkhVJ6W97Gbyu7U/MQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Exceptions.html",
+          "hash": "twamjjSJhM5mzhS680mWyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ExternalCallMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ExternalCallMessage.html",
+          "hash": "qHa7S73RaQIiBy2YJU3CJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ExternalCreateMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ExternalCreateMessage.html",
+          "hash": "S3HFkiJDz3/zgZLZVLmYwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.GasMeter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.GasMeter.html",
+          "hash": "z+08HgX+Hongr+IQURERiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.GasPriceList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.GasPriceList.html",
+          "hash": "9N9umDBBtKncRW+2mnA0zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.HashHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.HashHelper.html",
+          "hash": "fC5lGvviqb2rvjx1J+5JZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IAddressGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IAddressGenerator.html",
+          "hash": "RJXqtSgNAfAWPESSjNDFxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ICallDataSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ICallDataSerializer.html",
+          "hash": "H+27tbKKuUQF5sbybIBFSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IContract.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IContract.html",
+          "hash": "vPsT0aDts3glbSBvUDTxYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IContractInvocationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IContractInvocationResult.html",
+          "hash": "hHAm25LCpN9VMfoIR+dC6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IContractModuleDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IContractModuleDefinition.html",
+          "hash": "HxlyLyHK70JYz2OMe69czQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IInternalExecutorFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IInternalExecutorFactory.html",
+          "hash": "0o3KA8O4zeqcsRQoH42a5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IKeyEncodingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IKeyEncodingStrategy.html",
+          "hash": "AcKhjP2PH95h5ls/Ls0/dA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.CecilExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.CecilExtensions.html",
+          "hash": "jc/7KZf7a9mHWCuCYC4y4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.CodeSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.CodeSegment.html",
+          "hash": "T0mwJ4abYu646oNr6jrtgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.GasInjectorRewriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.GasInjectorRewriter.html",
+          "hash": "0pw3rkX9z551+k5KTozWCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.IILRewriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.IILRewriter.html",
+          "hash": "0atm+tOGUOACx60OnrwTjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.IObserverMethodRewriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.IObserverMethodRewriter.html",
+          "hash": "P/ROV10hexcYu+RfLqkSsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.MemoryLimitRewriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.MemoryLimitRewriter.html",
+          "hash": "HJKiDrJYpqncHdn4mgYqmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.ObserverReferences.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.ObserverReferences.html",
+          "hash": "XA4cDJ5xtPZ59O7f4bN1xA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.ObserverRewriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.ObserverRewriter.html",
+          "hash": "jrXyySctolyKZ4SAPedjaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.ObserverRewriterContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.ObserverRewriterContext.html",
+          "hash": "aZOtSW2VUKoAwuuD80j8Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.html",
+          "hash": "AF2YiCpUJHDrXOFgCdB6Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ILocalExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ILocalExecutor.html",
+          "hash": "sAEPentRhz4v41K4T1c3mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IPersistenceStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IPersistenceStrategy.html",
+          "hash": "z32Ay8TYm1qhyQiuFMJYwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ISmartContractStateFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ISmartContractStateFactory.html",
+          "hash": "Ujgw3BwG5WhnuK7kIoZigA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IState.html",
+          "hash": "YBYIO96cn9FcQpRCYjUCpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IStateFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IStateFactory.html",
+          "hash": "ZA3ZohSgB2MufWS95HLcmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IStateProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IStateProcessor.html",
+          "hash": "JfvtFY291zTi/pOiqxN+0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.IVirtualMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.IVirtualMachine.html",
+          "hash": "cq/hpEppieCAyGWQFNxbHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.InternalCallMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.InternalCallMessage.html",
+          "hash": "jAGbInecPJ7YvfUtZOnCuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.InternalCreateMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.InternalCreateMessage.html",
+          "hash": "Bm3MIy+c25JW9aXKcBVUng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.InternalExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.InternalExecutor.html",
+          "hash": "cvnia39364PXG/QZuaxJDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.InternalExecutorFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.InternalExecutorFactory.html",
+          "hash": "gIl0fBpdztrDnrjklaYi8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.InternalHashHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.InternalHashHelper.html",
+          "hash": "UXCYNZyD3oymowqythC2bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.KeyHashingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.KeyHashingStrategy.html",
+          "hash": "b9iOxJHp5c2tFhNjmM2Lkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Loader.ContractAssembly.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Loader.ContractAssembly.html",
+          "hash": "VvOf8j0nE9Ry+QrbJ/UnJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Loader.ContractAssemblyLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Loader.ContractAssemblyLoader.html",
+          "hash": "OUtoB8uYuRG7UAyHIjKyvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Loader.ContractByteCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Loader.ContractByteCode.html",
+          "hash": "yM0/Yx2jbtexPvACNUae9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Loader.IContractAssembly.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Loader.IContractAssembly.html",
+          "hash": "6Dmr41J1LNx7qkOcKg+oZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Loader.ILoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Loader.ILoader.html",
+          "hash": "2dOSZ8snjn4IrqXIpNWddg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Loader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Loader.html",
+          "hash": "MALt0pP0+3SC7VGh3RXkoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Local.ILocalExecutionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Local.ILocalExecutionResult.html",
+          "hash": "DXsuQfsjn4PH923yMsMIjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Local.LocalExecutionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Local.LocalExecutionResult.html",
+          "hash": "rLwkiyizreobiliPrRfq9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Local.LocalExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Local.LocalExecutor.html",
+          "hash": "QTuYYCvo8ToQBXs6I3PyDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Local.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Local.html",
+          "hash": "ZfCL8rA+vEkHBfOLwfw05w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.MeteredPersistenceStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.MeteredPersistenceStrategy.html",
+          "hash": "GBy/Xe2MDfbevuE/jvfCNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.MethodCall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.MethodCall.html",
+          "hash": "czHW+rORzxW+GM/lrKCNaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.NonceGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.NonceGenerator.html",
+          "hash": "pL24oKHrHv5ERT7MYant6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.PersistentState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.PersistentState.html",
+          "hash": "6SMqNuY+2VMvWtO16qr8Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ReflectionExecutorFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ReflectionExecutorFactory.html",
+          "hash": "0Ol3Z0dG7iWO/90xdc6WZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ReflectionVirtualMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ReflectionVirtualMachine.html",
+          "hash": "qLyudEk+hnL+Q42tXQNFqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.ContractRefundProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.ContractRefundProcessor.html",
+          "hash": "VVn4tIyQ4aHVBtsKNZ/58w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.ContractTransferProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.ContractTransferProcessor.html",
+          "hash": "menTKzznc/zUxFpEwHhWPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.IContractRefundProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.IContractRefundProcessor.html",
+          "hash": "KUZEcPSXP6i8rgopwwrKBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.IContractTransferProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.IContractTransferProcessor.html",
+          "hash": "HrKgYb+dCNsKZIsjHwha1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.html",
+          "hash": "UQyqSiUKpv8QUYVKaFMIhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.ContractPrimitiveSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.ContractPrimitiveSerializer.html",
+          "hash": "Mms9CmXPQ238ZGalEb78Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.IContractPrimitiveSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.IContractPrimitiveSerializer.html",
+          "hash": "+wq5j6t3va7Qls+NS+0RUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.IMethodParameterSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.IMethodParameterSerializer.html",
+          "hash": "61LQucKlXhq2hfT98M07xA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.IMethodParameterStringSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.IMethodParameterStringSerializer.html",
+          "hash": "CB//1RlSQbrA08CVWBWI6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.MethodParameterByteSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.MethodParameterByteSerializer.html",
+          "hash": "TWSQJPt+h9KZMjp4pA9yaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.MethodParameterDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.MethodParameterDataType.html",
+          "hash": "YAvYnov4VN0a6MP1X6OFRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.MethodParameterStringSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.MethodParameterStringSerializer.html",
+          "hash": "2T6w7jap739Tt0qhe7DwLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.MethodParameterStringSerializerException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.MethodParameterStringSerializerException.html",
+          "hash": "hzWmeXtLek4jNFnNRtir5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.Prefix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.Prefix.html",
+          "hash": "zUnuFE6lbg38xVNy/t69ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.Serializer.html",
+          "hash": "FQvFMF0dL9qd3+g1fFSlwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Serialization.html",
+          "hash": "TBvsG87eQ5PXwBpOnN+tBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.SmartContractExecutionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.SmartContractExecutionResult.html",
+          "hash": "32gQcgFtYJvMbYnMlySUPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.SmartContractState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.SmartContractState.html",
+          "hash": "w0UVoiTZMaelk9nmxQrP4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.SmartContractStateFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.SmartContractStateFactory.html",
+          "hash": "TyL0lQZNg9PFXCbplz//tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.State.html",
+          "hash": "QA4g+S3YgT4a0dBqBLDPUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.StateFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.StateFactory.html",
+          "hash": "KSjfOlccwohj3FC8d0cplA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.StateProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.StateProcessor.html",
+          "hash": "5xJG0TAUu0Jt4E7i/x/Rdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionError.html",
+          "hash": "qTAJhAzo9LVoVReWtAwv6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionErrorKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionErrorKind.html",
+          "hash": "Gq6Czc2plMNQ9e+mkrVltw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionErrors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionErrors.html",
+          "hash": "MFMdVFKEwDxC6g3iO6ioVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionResult.html",
+          "hash": "TUTT0P+2+XT+fUlezVAKMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionSuccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionSuccess.html",
+          "hash": "NKI5sYucIfXp98z6Cla8mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.TransferResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.TransferResult.html",
+          "hash": "ezNqdNdKE35fgMScnt31ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.DeterminismPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.DeterminismPolicy.html",
+          "hash": "UCyLkbPsuUMsgltY9e0Z+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.FieldDefinitionValidator.FieldDefinitionValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.FieldDefinitionValidator.FieldDefinitionValidationResult.html",
+          "hash": "KqdGZUtG/ATdmhiqv3MByw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.FieldDefinitionValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.FieldDefinitionValidator.html",
+          "hash": "hzyHHg7OOxR8P6bTOxm7ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.FormatPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.FormatPolicy.html",
+          "hash": "8RCoNKrG1GdK+U2Eel+DHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.IFieldDefinitionValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.IFieldDefinitionValidator.html",
+          "hash": "GggOPtfka4Z+Elc2/holhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.IInstructionValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.IInstructionValidator.html",
+          "hash": "fmCJw5w4PKopII1WWJtG5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.IMemberReferenceValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.IMemberReferenceValidator.html",
+          "hash": "FJr4ZNQmiscoPMT5+mFW0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.IMethodDefinitionValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.IMethodDefinitionValidator.html",
+          "hash": "eZ7XEDZ3LNOsozF/waHEsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.IModuleDefinitionValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.IModuleDefinitionValidator.html",
+          "hash": "US5zF7uJjHMcdlQfjUikGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.IParameterDefinitionValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.IParameterDefinitionValidator.html",
+          "hash": "qdE0Qxg7oBporJEMntarDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.ISmartContractValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.ISmartContractValidator.html",
+          "hash": "DiW6J8j1gGXf9pHvUoYKNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.ITypeDefinitionValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.ITypeDefinitionValidator.html",
+          "hash": "/lU5NCOjSsa4dUfHUw8XOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.InheritsSmartContractValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.InheritsSmartContractValidator.html",
+          "hash": "SkZRZLdIAD3J5NoVkip0lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.MethodDefinitionValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.MethodDefinitionValidationResult.html",
+          "hash": "qLKSMtzWptz7RWyJT83qUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.MethodParamValidator.MethodParamValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.MethodParamValidator.MethodParamValidationResult.html",
+          "hash": "iCDnfVQmFfqYZKhcvHo5SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.MethodParamValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.MethodParamValidator.html",
+          "hash": "w9mv6d+g8uOSEjR8WJ8clg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.ModuleDefinitionValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.ModuleDefinitionValidationResult.html",
+          "hash": "BFT9Uh0X77t0aahGEKtQAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.ModulePolicyValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.ModulePolicyValidator.html",
+          "hash": "6ErQ6z7O+/nSiOt7F0BQlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.ModuleValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.ModuleValidator.html",
+          "hash": "33yP7XEDqKqAZX0CWxw5UQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.MultiDimensionalArrayValidator.MethodParamValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.MultiDimensionalArrayValidator.MethodParamValidationResult.html",
+          "hash": "b1rJyBlAPXSUeotd8mTrWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.MultiDimensionalArrayValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.MultiDimensionalArrayValidator.html",
+          "hash": "Krdybd5uwYNm0iRd9Qbn5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.NestedTypePolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.NestedTypePolicy.html",
+          "hash": "xTzRl6N84kN/XOeZsoPCkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.NewObjValidator.NewObjValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.NewObjValidator.NewObjValidationResult.html",
+          "hash": "iumPXdGe61MPc1cN9JZkdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.NewObjValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.NewObjValidator.html",
+          "hash": "aiUfVlyusL33XyKVl9dxaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.AccessPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.AccessPolicy.html",
+          "hash": "SlreH1X53FIiTDbT0MlUkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.MemberPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.MemberPolicy.html",
+          "hash": "ffDBbLBO22YWomfCSVW3wA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.NamespacePolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.NamespacePolicy.html",
+          "hash": "zAgsoPx/g4CQDPjp54Eytw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.TypePolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.TypePolicy.html",
+          "hash": "NdaZgV0QIVGZMvx4NKFZew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.WhitelistPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.WhitelistPolicy.html",
+          "hash": "21OIlZz+uE9SKIZTwYOyLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Policy.html",
+          "hash": "hS4Ywf1IRztoG3eEc14gLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.PolicyValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.PolicyValidationResult.html",
+          "hash": "H27DR/abDIKadaK/y0hybg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.PolicyValidatorResultKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.PolicyValidatorResultKind.html",
+          "hash": "IyYv0zTUdpzWG8B2Z2XAkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Primitives.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Primitives.html",
+          "hash": "ncL8zfGTH0LzqLOVcxwZ5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractDeterminismValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractDeterminismValidator.html",
+          "hash": "4vuDR1wYo1pNUa9ogKDfFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractFormatValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractFormatValidator.html",
+          "hash": "uH/aAE5EmD8TxdP6tBrWeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractValidationResult.html",
+          "hash": "g+C6R+rpIjCZglNJchbsyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractValidator.html",
+          "hash": "MYwahryocRbItSmPjBnvrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractWarningValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.SmartContractWarningValidator.html",
+          "hash": "k/OTYGqoy92oEvufxfH60g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.TryCatchValidator.TryCatchValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.TryCatchValidator.TryCatchValidationResult.html",
+          "hash": "FfY+2dm8DuR1lU1T53SP4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.TryCatchValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.TryCatchValidator.html",
+          "hash": "jCWqnx31XEJJtYVetDmpqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.TypeDefinitionValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.TypeDefinitionValidationResult.html",
+          "hash": "CIWZZNhD3EpKwTVxBGA5xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.TypePolicyValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.TypePolicyValidator.html",
+          "hash": "xTrIh4GBu0kLRsvFnciJYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.TypesToIgnoreUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.TypesToIgnoreUtil.html",
+          "hash": "NMSA0QzZWB2+gsVZ1tC52w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.ValidationPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html",
+          "hash": "cCuwrx8Ra8AeWnY9zdf5Nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.ValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.ValidationResult.html",
+          "hash": "IpuRgadqAofeMO+aS5U6IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Instruction.FloatValidator.FloatValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Instruction.FloatValidator.FloatValidationResult.html",
+          "hash": "ElZqHctDnFF5mMYNcbTMRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Instruction.FloatValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Instruction.FloatValidator.html",
+          "hash": "I60lUnfKTP0b/DEFUAKBqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Instruction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Instruction.html",
+          "hash": "jPENDDa+tH3k/WHPaxM5lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Method.GenericMethodValidator.GenericMethodValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Method.GenericMethodValidator.GenericMethodValidationResult.html",
+          "hash": "ypBtJi8H5xOLWQl31RInKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Method.GenericMethodValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Method.GenericMethodValidator.html",
+          "hash": "R69BXKIUrWdGKPH47+lavQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Method.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Method.html",
+          "hash": "c1jVP7PI4dd5ONTAUtPclA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Module.AssemblyReferenceValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Module.AssemblyReferenceValidator.html",
+          "hash": "8H7zRylrfGfEof9hUxEgSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Module.ContractToDeployValidator.ContractToDeployValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Module.ContractToDeployValidator.ContractToDeployValidationResult.html",
+          "hash": "qEaaHD4acdaZQdLzXE81fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Module.ContractToDeployValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Module.ContractToDeployValidator.html",
+          "hash": "C5Ub4rXYrhvxGWMtaNgQKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Module.html",
+          "hash": "+zJq8GAw+BFTI2I92d5qgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.ConstructorParamValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.ConstructorParamValidator.html",
+          "hash": "B8PGGwjK1ivmTnYmt2quNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.FinalizerValidator.FinalizerValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.FinalizerValidator.FinalizerValidationResult.html",
+          "hash": "jJzp2hFdNW5l2uOrPoh84g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.FinalizerValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.FinalizerValidator.html",
+          "hash": "3u/1BDDtii8/xumf6Nxkig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.GenericTypeValidator.GenericTypeValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.GenericTypeValidator.GenericTypeValidationResult.html",
+          "hash": "sRgBMNxdr0toOzAkV4LRRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.GenericTypeValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.GenericTypeValidator.html",
+          "hash": "Ry0EHbt1N2ls4ldYuLp2mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.NamespaceValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.NamespaceValidator.html",
+          "hash": "CWpy9lqnmX3AmqZShCRRkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.NestedTypesAreValueTypesValidator.NestedTypeIsValueTypeValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.NestedTypesAreValueTypesValidator.NestedTypeIsValueTypeValidationResult.html",
+          "hash": "YJV4PlmRmDW3ORrYMn0PWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.NestedTypesAreValueTypesValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.NestedTypesAreValueTypesValidator.html",
+          "hash": "6C+VBXPFZgS78pUAGC+U7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.NestedValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.NestedValidator.html",
+          "hash": "xP41eUD4UeYkYROEHwAc1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.SingleConstructorValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.SingleConstructorValidator.html",
+          "hash": "/pXQXXykj4U1RJb41+MDGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.StaticConstructorValidator.StaticConstructorValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.StaticConstructorValidator.StaticConstructorValidationResult.html",
+          "hash": "b5ljb1db2ejLP1EkYOisYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.StaticConstructorValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.StaticConstructorValidator.html",
+          "hash": "tqXy8xXrFu8YePj2tpi3vQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.TypeHasMethodsValidator.TypeHasMethodsValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.TypeHasMethodsValidator.TypeHasMethodsValidationResult.html",
+          "hash": "vDBzRP4qz6cOFk+4a+uWnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.TypeHasMethodsValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.TypeHasMethodsValidator.html",
+          "hash": "5OWBvzoeOjdws0dgnRb8qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.TypeHasNestedTypesValidator.TypeHasNestedTypesValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.TypeHasNestedTypesValidator.TypeHasNestedTypesValidationResult.html",
+          "hash": "nkM0kmhms9oGsL5BLUWr6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.TypeHasNestedTypesValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.TypeHasNestedTypesValidator.html",
+          "hash": "rYS+k98vkiBscSJiScmZ/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.Type.html",
+          "hash": "ynlteycNm0gODnIPqAm8uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.DeniedMemberValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.DeniedMemberValidationResult.html",
+          "hash": "kh8GSfUejWF1aMZ3g2U7Mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.DeniedNamespaceValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.DeniedNamespaceValidationResult.html",
+          "hash": "JzFGfYxpdnRLF+CswWL3qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.DeniedTypeValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.DeniedTypeValidationResult.html",
+          "hash": "uko50ojxhIZuKR0JXI6ICQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.WhitelistValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.WhitelistValidationResult.html",
+          "hash": "Pu3pUCXRJs8pz68Lcqn1Aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.WhitelistValidator.html",
+          "hash": "/H/yhguKr4uJmYgqvH2Xew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.Validators.html",
+          "hash": "7+MRC/xAa3rrVzh2k5jc7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.WhitelistPolicyFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.WhitelistPolicyFilter.html",
+          "hash": "lwMV7jBnj/BMapQjxCmQWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.Validation.html",
+          "hash": "QxaxswNORPCgTU7p7W3WsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.VmExecutionError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.VmExecutionError.html",
+          "hash": "9oNhKtgaRvFOpTqdTI8/+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.VmExecutionErrorKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.VmExecutionErrorKind.html",
+          "hash": "1NP2y+eLwLW6ll3dmXlw5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.VmExecutionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.VmExecutionResult.html",
+          "hash": "let9Iranahtm+qdGw7IpXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.VmExecutionSuccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.VmExecutionSuccess.html",
+          "hash": "M31XFB1ByAY5NiszlKsUvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.CLR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.CLR.html",
+          "hash": "FCab2wfBLOltyCQLRtNN3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.SmartContracts.Core.Bloom.yml",
       "output": {
         ".html": {
@@ -17136,7 +19560,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.Core.Exceptions.SmartContractException.html",
-          "hash": "RQRWd4JiqUJLiYZP/K7yRw=="
+          "hash": "msClFCd7nyldpD2OTXGdng=="
         }
       },
       "is_incremental": false,
@@ -17804,966 +20228,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.DeterminismPolicy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.DeterminismPolicy.html",
-          "hash": "fXxPMcq+TnfQA3Wigas1qw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.FieldDefinitionValidator.FieldDefinitionValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.FieldDefinitionValidator.FieldDefinitionValidationResult.html",
-          "hash": "5ZwG2ypsPok5T9ZMSMUGig=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.FieldDefinitionValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.FieldDefinitionValidator.html",
-          "hash": "LnrrVSmH3jm2+Dz7UHFDJA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.FormatPolicy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.FormatPolicy.html",
-          "hash": "8qi0m8nHcEf34Fk5Q+2Ezw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.IFieldDefinitionValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.IFieldDefinitionValidator.html",
-          "hash": "NQbNTbauC9tERaJj+wTc3A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.IInstructionValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.IInstructionValidator.html",
-          "hash": "l1qnjKwt+sfpkztJgIrajw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.IMemberReferenceValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.IMemberReferenceValidator.html",
-          "hash": "DZAjMdXMeeRhUzwxjR9H1g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.IMethodDefinitionValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.IMethodDefinitionValidator.html",
-          "hash": "yAD+qNNmElGYp2aBKV4lXw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.IModuleDefinitionValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.IModuleDefinitionValidator.html",
-          "hash": "wkT88OW8oHO6xNyO30X8tg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.IParameterDefinitionValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.IParameterDefinitionValidator.html",
-          "hash": "tOs5b+q5vDLKU5NRAoiz/A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.ISmartContractValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.ISmartContractValidator.html",
-          "hash": "6cTyserAoyv6MvRX9jgHTQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.ITypeDefinitionValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.ITypeDefinitionValidator.html",
-          "hash": "yTZNqUSU7ivuaS3gjFWWRA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.InheritsSmartContractValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.InheritsSmartContractValidator.html",
-          "hash": "zJEtKFzFhgZ0znCzZoodIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.MethodDefinitionValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.MethodDefinitionValidationResult.html",
-          "hash": "I7Nm8k7hXP2iTVq17wD3SA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.MethodParamValidator.MethodParamValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.MethodParamValidator.MethodParamValidationResult.html",
-          "hash": "8VMC4ksfX+yw1WBnfk2Npg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.MethodParamValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.MethodParamValidator.html",
-          "hash": "ps4WV36kY40mRlaKlPjqaQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.ModuleDefinitionValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.ModuleDefinitionValidationResult.html",
-          "hash": "kbCGUvKksfZSVjoEiilz4Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.ModulePolicyValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.ModulePolicyValidator.html",
-          "hash": "bmkfFesCCTOa6simX4FB1g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.ModuleValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.ModuleValidator.html",
-          "hash": "Y3mpSQbWhxbH91r8x5bUQA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.MultiDimensionalArrayValidator.MethodParamValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.MultiDimensionalArrayValidator.MethodParamValidationResult.html",
-          "hash": "QT5UPaHqp/41cgtH8LNWcw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.MultiDimensionalArrayValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.MultiDimensionalArrayValidator.html",
-          "hash": "c5AoyCmu36tY2/QiA0OLWQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.NestedTypePolicy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.NestedTypePolicy.html",
-          "hash": "2kC8+HldmsLWmyGByVd95A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.NewObjValidator.NewObjValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.NewObjValidator.NewObjValidationResult.html",
-          "hash": "BPiXM1bPOwN/u2SHdg1Ilw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.NewObjValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.NewObjValidator.html",
-          "hash": "QNjzBxICnmU+TH1Ygd38KA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.AccessPolicy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.AccessPolicy.html",
-          "hash": "/qmjrrAunXgBfswZ9EvcUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.MemberPolicy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.MemberPolicy.html",
-          "hash": "1AmyUbiESqTnYbpAtGqklQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.NamespacePolicy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.NamespacePolicy.html",
-          "hash": "iJOQF4O0Y8k5eqLcJjzlTg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.TypePolicy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.TypePolicy.html",
-          "hash": "+mgMTDsTMjWMPH8OkB7gjg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.WhitelistPolicy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.WhitelistPolicy.html",
-          "hash": "ZjWu+G8LdLL7tmpJIHal2g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Policy.html",
-          "hash": "mro1j161LH1vK71YYpu8iA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.PolicyValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.PolicyValidationResult.html",
-          "hash": "vFqoqEyr7aEdwgPrqVgK9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.PolicyValidatorResultKind.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.PolicyValidatorResultKind.html",
-          "hash": "CCCQEj5EuSFE+ziIcXQEcA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Primitives.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Primitives.html",
-          "hash": "UmtGEhBxjw1299M/Cw/0OQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractDeterminismValidator.html",
-          "hash": "cjwgFuliqXHoD/HgEgsIPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractFormatValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractFormatValidator.html",
-          "hash": "hnJI1wpNGHuuIGUE6/BIPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractValidationResult.html",
-          "hash": "NZx4tmi3/SA+DkIIs16mGQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractValidator.html",
-          "hash": "N/eNZ7rVyrxKAdj0cQJSXQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractWarningValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.SmartContractWarningValidator.html",
-          "hash": "Rp6PuXbwvuha+RHumbQF9g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.TryCatchValidator.TryCatchValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.TryCatchValidator.TryCatchValidationResult.html",
-          "hash": "EJ7RIc6K7uhls+nX7C4mCQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.TryCatchValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.TryCatchValidator.html",
-          "hash": "vyVHxQBttHSfJO4oyg8dbA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.TypeDefinitionValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.TypeDefinitionValidationResult.html",
-          "hash": "PgTfjF4iVgyKPImJ+qdkSw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.TypePolicyValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.TypePolicyValidator.html",
-          "hash": "ti96OxzLjVEeMCm0RziOeg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.TypesToIgnoreUtil.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.TypesToIgnoreUtil.html",
-          "hash": "f4QbAhCsixuhnF32iwO1fA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.ValidationPolicy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.ValidationPolicy.html",
-          "hash": "MnV7dfPOyyYt3CIHisy4GA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.ValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.ValidationResult.html",
-          "hash": "XJOu3MCcFg48OhVnDiLg4A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Instruction.FloatValidator.FloatValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Instruction.FloatValidator.FloatValidationResult.html",
-          "hash": "v5oWTixVIhdi0jH4RPhtbA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Instruction.FloatValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Instruction.FloatValidator.html",
-          "hash": "ni7bcD/QNs96jFRqK8UdUA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Instruction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Instruction.html",
-          "hash": "xWalklZ4h+GXZn8NSeRrMA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Method.GenericMethodValidator.GenericMethodValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Method.GenericMethodValidator.GenericMethodValidationResult.html",
-          "hash": "6LtIr63tG3Hm7CYKK5/Q8Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Method.GenericMethodValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Method.GenericMethodValidator.html",
-          "hash": "2vuGWAl/sfCAZQFk3UgAMw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Method.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Method.html",
-          "hash": "qB9CRQwSvEjNcUN9lUUz6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Module.AssemblyReferenceValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Module.AssemblyReferenceValidator.html",
-          "hash": "xUWz0JAJKOaYDpa3C19yIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Module.ContractToDeployValidator.ContractToDeployValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Module.ContractToDeployValidator.ContractToDeployValidationResult.html",
-          "hash": "G91hr07NGi66JNbZr1MYgw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Module.ContractToDeployValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Module.ContractToDeployValidator.html",
-          "hash": "+KVQFPOMlsHJtN3fUeG5Wg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Module.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Module.html",
-          "hash": "hm+tSTOZAdiIo19f142vuw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.ConstructorParamValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.ConstructorParamValidator.html",
-          "hash": "KYHdJMDdGywsZYDxljKIyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.FinalizerValidator.FinalizerValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.FinalizerValidator.FinalizerValidationResult.html",
-          "hash": "LqsSn/g3Fl4fu/jOqATw+A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.FinalizerValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.FinalizerValidator.html",
-          "hash": "7QZEaJmNPrm0M39s+8sERQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.GenericTypeValidator.GenericTypeValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.GenericTypeValidator.GenericTypeValidationResult.html",
-          "hash": "zZedXJAefas/SlgHMeAm1g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.GenericTypeValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.GenericTypeValidator.html",
-          "hash": "5mCT8umOAIAbNl3YDV2ztg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.NamespaceValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.NamespaceValidator.html",
-          "hash": "OLusV//LnwCe5OTF1z4E3Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.NestedTypesAreValueTypesValidator.NestedTypeIsValueTypeValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.NestedTypesAreValueTypesValidator.NestedTypeIsValueTypeValidationResult.html",
-          "hash": "0b1NmJJqDQCV8W7zyGSEqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.NestedTypesAreValueTypesValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.NestedTypesAreValueTypesValidator.html",
-          "hash": "QdjexVe6LAfEjXOCFGtqsA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.NestedValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.NestedValidator.html",
-          "hash": "yvJOoVCcdpsA27vsq0NL7A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.SingleConstructorValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.SingleConstructorValidator.html",
-          "hash": "XXXvE689ibx8/2FbjMoxLw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.StaticConstructorValidator.StaticConstructorValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.StaticConstructorValidator.StaticConstructorValidationResult.html",
-          "hash": "XhXweUBZD/CdMtLeBrWc9w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.StaticConstructorValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.StaticConstructorValidator.html",
-          "hash": "nYVTOrpC+Se7ejWTu37S8Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.TypeHasMethodsValidator.TypeHasMethodsValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.TypeHasMethodsValidator.TypeHasMethodsValidationResult.html",
-          "hash": "D2uZhSdHHKUe/KfIwzF7jg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.TypeHasMethodsValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.TypeHasMethodsValidator.html",
-          "hash": "PK1pB+HcFzLSqGgiO45wIw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.TypeHasNestedTypesValidator.TypeHasNestedTypesValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.TypeHasNestedTypesValidator.TypeHasNestedTypesValidationResult.html",
-          "hash": "qC0ZlVXvOxgeQQcr1Qtd5A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.TypeHasNestedTypesValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.TypeHasNestedTypesValidator.html",
-          "hash": "GbRIc/mTi/IDLWx4F2vISA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.Type.html",
-          "hash": "VVXcFl3bRkfe5Xv9DR6h+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.DeniedMemberValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.DeniedMemberValidationResult.html",
-          "hash": "wdz0SYNiNiGtX8pGLov+EQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.DeniedNamespaceValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.DeniedNamespaceValidationResult.html",
-          "hash": "C4cEVeUcAGtmr75Zopo8AQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.DeniedTypeValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.DeniedTypeValidationResult.html",
-          "hash": "ylWVEIx7Ys0PiKi/9+HGxg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.WhitelistValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.WhitelistValidationResult.html",
-          "hash": "80Ts1hNgn0uxXJNS3DBnzQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.WhitelistValidator.html",
-          "hash": "jtbReEGPIMqhAlQohKghCQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.Validators.html",
-          "hash": "880gIM/oKqhkpRzcccg8tQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.WhitelistPolicyFilter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.WhitelistPolicyFilter.html",
-          "hash": "NTHmt5oZk/orKlLQR3LPUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Core.Validation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Core.Validation.html",
-          "hash": "ksAFn6z7/REHXrHPepWnow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.SmartContracts.Core.yml",
       "output": {
         ".html": {
@@ -18781,1470 +20245,6 @@
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.DeployAttribute.html",
           "hash": "SUTPcS/gYB7zLqFRTAQIog=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.AddressExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.AddressExtensions.html",
-          "hash": "L/h5f9k39FJlk6J228WUVQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.AddressGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.AddressGenerator.html",
-          "hash": "BYF/mlx9b9CXtWDyHTl6kg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ArrayExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ArrayExtensions.html",
-          "hash": "bFsep3m29xU9lahdjMjIIw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.BalanceState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.BalanceState.html",
-          "hash": "eSb4Py62iboIl9cHxqbORA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.BaseMessage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.BaseMessage.html",
-          "hash": "C77DKxYTc8j0u5VymmJp+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.BasicKeyEncodingStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.BasicKeyEncodingStrategy.html",
-          "hash": "hSTaPfMAMtFXxPnBGC/rhg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.CallDataSerializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.CallDataSerializer.html",
-          "hash": "pw+QsXz0aqysLqjZ5Eswog=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.CallMessage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.CallMessage.html",
-          "hash": "Ay3gR7luA8433F7eUUf34g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.AssemblyResolverExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.AssemblyResolverExtensions.html",
-          "hash": "K6IhDRNm9lIWkb7GVjK0iw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ContractCompilationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ContractCompilationResult.html",
-          "hash": "rhNHchDebZmxqUUARNRwzA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ContractCompiler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ContractCompiler.html",
-          "hash": "pVkhob5KSFL9fbWnOLQOeQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ContractDecompiler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ContractDecompiler.html",
-          "hash": "ZpJVqjV9+NtbxJrj7ytTCQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ContractModuleDefinitionReader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ContractModuleDefinitionReader.html",
-          "hash": "w0d7tl2HH4ZSZzxHqxlilw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.DotNetCoreAssemblyResolver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.DotNetCoreAssemblyResolver.html",
-          "hash": "Pu8hOCVSw3Q4EcVTIL9mrQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.IContractModuleDefinitionReader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.IContractModuleDefinitionReader.html",
-          "hash": "etjW2ZosWx0mEEuxco2MAQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ReferencedAssemblyResolver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.ReferencedAssemblyResolver.html",
-          "hash": "Z29VD7L27AMIl7SVPcHCyg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Compilation.html",
-          "hash": "2S97g9Po6q2tHUoiPW3JwA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Contract.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Contract.html",
-          "hash": "4HFo6N4dQ0Wxymq4UZQ7UQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractExecutor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractExecutor.html",
-          "hash": "3qwXpr5yOVDQPiMLZDxwdA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractInvocationErrorType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractInvocationErrorType.html",
-          "hash": "+bg8gIEoBbrnHDyR6QaTKA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractInvocationErrors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractInvocationErrors.html",
-          "hash": "h2W0KS5bw+rsYSyRJaj/ng=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractInvocationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractInvocationResult.html",
-          "hash": "C0Gi+2DF/Q6OnlkYb6rUCQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.ContractLogHolder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.ContractLogHolder.html",
-          "hash": "k3NY5sKefIj9mL6dSOVuiw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.IContractLogHolder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.IContractLogHolder.html",
-          "hash": "+SnTa9/nPGpTbyy4B13eDQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.MeteredContractLogger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.MeteredContractLogger.html",
-          "hash": "4hCbDN4B2ouTw2IXqmyHfg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.RawLog.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.RawLog.html",
-          "hash": "ffUyvtb17wcKtIG1zmDRAw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.RawLogExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.RawLogExtensions.html",
-          "hash": "xIyShchkzLxlLMcsXWGaIw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractLogging.html",
-          "hash": "GQYhmDzfxcPISBKrLJoyAA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractModuleDefinition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractModuleDefinition.html",
-          "hash": "0SymtizKahoTQRXw2hMW0Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractTransferMessage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractTransferMessage.html",
-          "hash": "5Z77Y3sQ5Xo5RyjnRwZ9vQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractTxData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ContractTxData.html",
-          "hash": "prNicXbVhT0A+mipaJ+aJQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.CreateResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.CreateResult.html",
-          "hash": "yYOCjzAP2mVlJyqJYCyGvw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Decompilation.CSharpContractDecompiler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Decompilation.CSharpContractDecompiler.html",
-          "hash": "PEtTYqBvo3qcNZp+pO6ExQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Decompilation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Decompilation.html",
-          "hash": "FEQdFGR4nS925+pY5qPwdw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Exceptions.ContractPrimitiveSerializationException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Exceptions.ContractPrimitiveSerializationException.html",
-          "hash": "HhyZUJKXpqguddmfVIXutA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Exceptions.OutOfGasException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Exceptions.OutOfGasException.html",
-          "hash": "pEHIezEYyI02rbrjPcMdJA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Exceptions.SmartContractValidationException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Exceptions.SmartContractValidationException.html",
-          "hash": "5iEYzN/PjOnEpO+YvhAziA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Exceptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Exceptions.html",
-          "hash": "Vpp8soFPCBkBBu4vt62mYQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ExternalCallMessage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ExternalCallMessage.html",
-          "hash": "3N4yyuz6rwWTEx7FGn8f5A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ExternalCreateMessage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ExternalCreateMessage.html",
-          "hash": "9wElcizddYMwHLX90XviOQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.GasMeter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.GasMeter.html",
-          "hash": "OHV3VgqPF88lIOdA9HppnA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.GasPriceList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.GasPriceList.html",
-          "hash": "wejYDmRK1E+i8lPNloHLtQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.HashHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.HashHelper.html",
-          "hash": "FIcN0BgPLNUDBIbFFpKRVA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IAddressGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IAddressGenerator.html",
-          "hash": "Yd01ynIXuBhZ9A5qVTghgA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ICallDataSerializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ICallDataSerializer.html",
-          "hash": "gIaKwgRE82eNw+N6pksGtQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IContract.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IContract.html",
-          "hash": "s3sry/pnbkVd14sNg5fDPQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IContractInvocationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IContractInvocationResult.html",
-          "hash": "59JQvHx9NIZ4pHKv88rxIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IContractModuleDefinition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IContractModuleDefinition.html",
-          "hash": "5W9Lge/KPkpn38XUZ23vEQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IInternalExecutorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IInternalExecutorFactory.html",
-          "hash": "HYdBR4U5caLxb1RuBbPR6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IKeyEncodingStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IKeyEncodingStrategy.html",
-          "hash": "P4zPuLMve5kISFxxoD0dKw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.CecilExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.CecilExtensions.html",
-          "hash": "KH/qSL7c2PIlmWpwfCH19Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.CodeSegment.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.CodeSegment.html",
-          "hash": "ktdfDsKoWlkQmhPkqNfFUw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.GasInjectorRewriter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.GasInjectorRewriter.html",
-          "hash": "95N1ZI1eJ8TAC4r9s7lwFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.IILRewriter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.IILRewriter.html",
-          "hash": "w+aLQVo0HtMUpY23GXvLFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.IObserverMethodRewriter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.IObserverMethodRewriter.html",
-          "hash": "2S/2f8eHVc7a5PXdN6aeqQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.MemoryLimitRewriter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.MemoryLimitRewriter.html",
-          "hash": "kyel1tIUkw6zj0UG9/h1rA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.ObserverReferences.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.ObserverReferences.html",
-          "hash": "gXMFNmEYrRpopIM5cO6z/g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.ObserverRewriter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.ObserverRewriter.html",
-          "hash": "lVYkFSgzX7AsVs/6ER2BYA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.ObserverRewriterContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.ObserverRewriterContext.html",
-          "hash": "cbhZkfXhAl6xujdcm93MsQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILRewrite.html",
-          "hash": "07ML/sSlSIX7LDYN3mF5fQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILocalExecutor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ILocalExecutor.html",
-          "hash": "uufkTLDcDhQ4BZnXQ0EVcg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IPersistenceStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IPersistenceStrategy.html",
-          "hash": "nex7+FJXdmd1Q2VHKDrGPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ISmartContractStateFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ISmartContractStateFactory.html",
-          "hash": "waS6YdhZKZZ3bCmcfwWokw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IState.html",
-          "hash": "CykTXT71CghmS5Ol16DCLA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IStateFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IStateFactory.html",
-          "hash": "/sM8u5jDbqJrMAmqrgcDqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IStateProcessor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IStateProcessor.html",
-          "hash": "XKuhvrBf8OQwrdTHOuxhlA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IVirtualMachine.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.IVirtualMachine.html",
-          "hash": "P6AJACOHAdrZFmMGMBRJlw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalCallMessage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalCallMessage.html",
-          "hash": "JCbFmkoml5u/W9lKJzjkgA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalCreateMessage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalCreateMessage.html",
-          "hash": "48UMJiKU9SDeNLIb/mRGIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalExecutor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalExecutor.html",
-          "hash": "09PaOSFXWsQU+8H48hsxHw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalExecutorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalExecutorFactory.html",
-          "hash": "ICYD+cb301fMZ+y4H89e3A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalHashHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.InternalHashHelper.html",
-          "hash": "XnoWasiiyelOS6cH1Z7QOw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.KeyHashingStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.KeyHashingStrategy.html",
-          "hash": "lJyYheqY6HXL8BgejaTDpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.ContractAssembly.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.ContractAssembly.html",
-          "hash": "Bai84rh9tSy5bvbBovBZdw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.ContractAssemblyLoader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.ContractAssemblyLoader.html",
-          "hash": "I+K17VXsA6HED3sGvx1gpw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.ContractByteCode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.ContractByteCode.html",
-          "hash": "zNjhiDJxvZWWEtveYtYDpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.IContractAssembly.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.IContractAssembly.html",
-          "hash": "fq7mQXvFe/w9Btnmv7Cdsg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.ILoader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.ILoader.html",
-          "hash": "z6LNWhF7r5HAu8vRuQ6hHw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Loader.html",
-          "hash": "/AO0qL0qcwynmLuskUsEug=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Local.ILocalExecutionResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Local.ILocalExecutionResult.html",
-          "hash": "DMlHIcEs7ggbQTbDdJQSow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Local.LocalExecutionResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Local.LocalExecutionResult.html",
-          "hash": "HhHs4wa+uBkEiQNFFBpRtA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Local.LocalExecutor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Local.LocalExecutor.html",
-          "hash": "UG68it/7zWJ2Q6ENcexJcQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Local.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Local.html",
-          "hash": "BP9oUM0mgFKx0FGq93bU0w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.MeteredPersistenceStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.MeteredPersistenceStrategy.html",
-          "hash": "hUG3tlEw42U31SGDtyEBsg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.MethodCall.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.MethodCall.html",
-          "hash": "e2PGXOy5sHs5dcEidYMsDA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.NonceGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.NonceGenerator.html",
-          "hash": "+SWjr4OjpfhUY9zvudJpmA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.PersistentState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.PersistentState.html",
-          "hash": "QGsvwYkDtNbJSj6mAm6eKQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ReflectionExecutorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ReflectionExecutorFactory.html",
-          "hash": "JQpVPknDtqW5rBM8tbMH7g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ReflectionVirtualMachine.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ReflectionVirtualMachine.html",
-          "hash": "07SADWNnDPguZ8lFhMZ3/A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.ContractRefundProcessor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.ContractRefundProcessor.html",
-          "hash": "mK7KFvN/lMf7kxG8NRld1Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.ContractTransferProcessor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.ContractTransferProcessor.html",
-          "hash": "fxkIJkAOYT6ttpNsImqhCw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.IContractRefundProcessor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.IContractRefundProcessor.html",
-          "hash": "KXltOxNlvwITKPTUzsCqwg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.IContractTransferProcessor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.IContractTransferProcessor.html",
-          "hash": "hBKomiSBXzEFWIPPpLeiYQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.ResultProcessors.html",
-          "hash": "UxcNtWLpGs2DyOGKBnlf3w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.ContractPrimitiveSerializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.ContractPrimitiveSerializer.html",
-          "hash": "zvXP+tPthxE5PEpUrc35lg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.IContractPrimitiveSerializer.html",
-          "hash": "G2KFAqQHWvvbnnwSJmq8Dg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.IMethodParameterSerializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.IMethodParameterSerializer.html",
-          "hash": "kHIRX8/wtl0B464+1uVzMA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.IMethodParameterStringSerializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.IMethodParameterStringSerializer.html",
-          "hash": "cwrA2ekRtvcvcx0Bv3Ms9Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterByteSerializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterByteSerializer.html",
-          "hash": "5VfSvwQ5NofBI1apcv19cA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterDataType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterDataType.html",
-          "hash": "Ovh8VAaoWf2RCycOOXMfDQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterStringSerializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterStringSerializer.html",
-          "hash": "vnc3l9dO/Ve4fHIbUk8ocA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterStringSerializerException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.MethodParameterStringSerializerException.html",
-          "hash": "W/R1YY/TrsYGWyodlqv4fw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.Prefix.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.Prefix.html",
-          "hash": "8J+jCjPvgih4FIj1nx6VwA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.Serializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.Serializer.html",
-          "hash": "NIUSxo0QU506OYaikgIHUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.Serialization.html",
-          "hash": "e5fCYWE8Ollk8qC8hOyyfA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.SmartContractExecutionResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.SmartContractExecutionResult.html",
-          "hash": "xGm1rJIHS1wyYK1l/gtUpQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.SmartContractState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.SmartContractState.html",
-          "hash": "d0mpbAXtPsWXvWvAXUP2bQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.SmartContractStateFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.SmartContractStateFactory.html",
-          "hash": "wGAJHooO7ZGYiD9mDCD6jQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.State.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.State.html",
-          "hash": "NSRfvWIi2w3pglxkovTIVg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateFactory.html",
-          "hash": "viSdA112i2kb0DMqh1nRww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateProcessor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateProcessor.html",
-          "hash": "pOm0Q8mhX31n3tywPyiiXw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionError.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionError.html",
-          "hash": "h+WrvHSYLCa0TreYy3oKEw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionErrorKind.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionErrorKind.html",
-          "hash": "3Os14PKM+bpTgIMFjhoe+Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionErrors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionErrors.html",
-          "hash": "bDtKdGklddH/jw93KZ5fkQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionResult.html",
-          "hash": "HN5G1VWXZ1ZeklD/bxumOg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionSuccess.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.StateTransitionSuccess.html",
-          "hash": "0BsurgNHU8zitZcPaGgRKA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.TransferResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.TransferResult.html",
-          "hash": "nAY5oC7tl+1EhSviDBLiYg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.VmExecutionError.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.VmExecutionError.html",
-          "hash": "pGyuGEFI3CtJ01Ngmo+f8Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.VmExecutionErrorKind.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.VmExecutionErrorKind.html",
-          "hash": "+k76fYmSJGQ8gOjlb3N8Kg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.VmExecutionResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.VmExecutionResult.html",
-          "hash": "+kz72RIFgGap3bxWl8gN2Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.VmExecutionSuccess.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.VmExecutionSuccess.html",
-          "hash": "UwaLq3ZCBH0nQRw9vQrmaA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Executor.Reflection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Executor.Reflection.html",
-          "hash": "9rIXrAH1rH60CyiNiIaSvw=="
         }
       },
       "is_incremental": false,
@@ -20748,7 +20748,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.Standards.IStandardToken.html",
-          "hash": "cRn9l87ufGyGI18MRlj4xg=="
+          "hash": "D8J6BbUExg8zIBXaYv+WrA=="
         }
       },
       "is_incremental": false,
@@ -20761,30 +20761,6 @@
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.Standards.html",
           "hash": "qyQiyR1jZlQLc377YZO0LA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Token.IStandardToken.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Token.IStandardToken.html",
-          "hash": "QK5N+yM5iJKj3Cw0ZW8cPQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.SmartContracts.Token.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.SmartContracts.Token.html",
-          "hash": "I9PjpQRs+03c5clZn+vc8A=="
         }
       },
       "is_incremental": false,
@@ -21084,7 +21060,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.Tools.Sct.SctDeterminismValidator.html",
-          "hash": "TzC9u5N8qm4Adnr2N6R9Ww=="
+          "hash": "f9RNEVLJbBTIJIxSrFlj0A=="
         }
       },
       "is_incremental": false,
@@ -21096,7 +21072,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.Tools.Sct.ValidationServiceResult.html",
-          "hash": "FMjCz4p/KHKpFD7cfpDizg=="
+          "hash": "RYgNvIqJ+VuluKhlNRW5Eg=="
         }
       },
       "is_incremental": false,
@@ -21312,7 +21288,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "lFBZvgTZ18MKWRWu5k4FDQ=="
+          "hash": "gy2KToEGye/aJ0tK2jlcyA=="
         }
       },
       "is_incremental": false,
@@ -21397,22 +21373,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

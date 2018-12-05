@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Stratis.SmartContracts.CLR
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Stratis.SmartContracts.CLR
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.SmartContracts.CLR">
+  
+  <h1 id="Stratis_SmartContracts_CLR" data-uid="Stratis.SmartContracts.CLR" class="text-break">Namespace Stratis.SmartContracts.CLR
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.AddressExtensions.html">AddressExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.AddressGenerator.html">AddressGenerator</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ArrayExtensions.html">ArrayExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.BalanceState.html">BalanceState</a></h4>
+      <section><p>Provides a contract's balance during execution, accounting for transfers generated while executing
+the contract</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.BaseMessage.html">BaseMessage</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.BasicKeyEncodingStrategy.html">BasicKeyEncodingStrategy</a></h4>
+      <section><p>Leaves keys untouched.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.CallDataSerializer.html">CallDataSerializer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.CallMessage.html">CallMessage</a></h4>
+      <section><p>Base class for a call message.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.Contract.html">Contract</a></h4>
+      <section><p>A class representing a contract instance. Manages the lifecycle of a contract object and allows for constructor and method invocations.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ContractExecutor.html">ContractExecutor</a></h4>
+      <section><p>Deserializes raw contract transaction data, creates an external create/call message, and applies the message to the state.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ContractInvocationErrors.html">ContractInvocationErrors</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ContractInvocationResult.html">ContractInvocationResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ContractModuleDefinition.html">ContractModuleDefinition</a></h4>
+      <section><p>Represents a low-level contract module that can be modified (via IL rewriting) and validated.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ContractTransferMessage.html">ContractTransferMessage</a></h4>
+      <section><p>Represents an internal contract transfer message. Occurs when a contract generates a funds transfer using
+its <see cref="!:SmartContract.Transfer"></see> method.  If the recipient is another contract, the recipient's
+receive handler will be invoked. If the recipient is a P2PKH, a UTXO will be generated and included in the
+transaction.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ContractTxData.html">ContractTxData</a></h4>
+      <section><p>Fields that are serialized and sent as data with a smart contract transaction</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.CreateResult.html">CreateResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ExternalCallMessage.html">ExternalCallMessage</a></h4>
+      <section><p>Represents an external contract method call message. Occurs when a transaction is received that contains contract method call data.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ExternalCreateMessage.html">ExternalCreateMessage</a></h4>
+      <section><p>Represents an external contract creation message. Occurs when a transaction is received that contains contract creation data.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.GasMeter.html">GasMeter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.GasPriceList.html">GasPriceList</a></h4>
+      <section><p>Creates gas spend operations with the correct costs</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.HashHelper.html">HashHelper</a></h4>
+      <section><p>Utilities to aid with hashing of data.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.InternalCallMessage.html">InternalCallMessage</a></h4>
+      <section><p>Represents an internal contract method call message. Occurs when a contract generates a method call to another contract
+using its <see cref="!:SmartContract.Call"></see> method.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.InternalCreateMessage.html">InternalCreateMessage</a></h4>
+      <section><p>Represents an internal contract creation message. Occurs when a contract creates another contract
+using its <see cref="!:SmartContract.Create&lt;T>"></see> method.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.InternalExecutor.html">InternalExecutor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.InternalExecutorFactory.html">InternalExecutorFactory</a></h4>
+      <section><p>Factory for creating internal transaction executors</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.InternalHashHelper.html">InternalHashHelper</a></h4>
+      <section><p>This gets injected into the contract to provide implementations for the hashing of data.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.KeyHashingStrategy.html">KeyHashingStrategy</a></h4>
+      <section><p>Encodes keys by applying a Keccak256 hash, returning 32-bytes.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.MeteredPersistenceStrategy.html">MeteredPersistenceStrategy</a></h4>
+      <section><p>Defines a data persistence strategy for a byte[] key value pair belonging to an address.
+Uses a GasMeter to perform accounting</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.MethodCall.html">MethodCall</a></h4>
+      <section><p>Represents a call to a contract method.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.NonceGenerator.html">NonceGenerator</a></h4>
+      <section><p>Generates an sequence of sequential numbers for one-time use.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.PersistentState.html">PersistentState</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ReflectionExecutorFactory.html">ReflectionExecutorFactory</a></h4>
+      <section><p>Spawns SmartContractExecutor instances</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ReflectionVirtualMachine.html">ReflectionVirtualMachine</a></h4>
+      <section><p>Used to instantiate smart contracts using reflection and then execute certain methods and their parameters.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.SmartContractExecutionResult.html">SmartContractExecutionResult</a></h4>
+      <section><p>Carries the output of a smart contract execution.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.SmartContractState.html">SmartContractState</a></h4>
+      <section><p>Smart contract state that gets injected into the smart contract by the <a class="xref" href="Stratis.SmartContracts.CLR.ReflectionVirtualMachine.html">ReflectionVirtualMachine</a>.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.SmartContractStateFactory.html">SmartContractStateFactory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.State.html">State</a></h4>
+      <section><p>Represents the current state of the world during a contract execution.</p>
+<p>
+The state contains several components:
+</p>
+- The state repository, which contains global account, code, and contract data.
+- Internal transfers, which are transfers generated internally by contracts.
+- Balance state, which represents the intermediate state of the balances based on the internal transfers list.
+- The log holder, which contains logs generated by contracts during execution.
+<p>
+When a message is applied to the state, the state is updated if the application was successful. Otherwise, the state
+is rolled back to a previous snapshot. This works equally for nested state transitions generated by internal creates,
+calls and transfers.
+</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.StateFactory.html">StateFactory</a></h4>
+      <section><p>Creates a new <a class="xref" href="Stratis.SmartContracts.CLR.State.html">State</a> object.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.StateProcessor.html">StateProcessor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.StateTransitionError.html">StateTransitionError</a></h4>
+      <section><p>Represents the result of a failed state transition.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.StateTransitionErrors.html">StateTransitionErrors</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.StateTransitionResult.html">StateTransitionResult</a></h4>
+      <section><p>The result of a state transition operation.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.StateTransitionSuccess.html">StateTransitionSuccess</a></h4>
+      <section><p>Represents the result of a successful state transition.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.TransferResult.html">TransferResult</a></h4>
+      <section><p>Returned when making a transfer from a smart contract.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.VmExecutionError.html">VmExecutionError</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.VmExecutionResult.html">VmExecutionResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.VmExecutionSuccess.html">VmExecutionSuccess</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IAddressGenerator.html">IAddressGenerator</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ICallDataSerializer.html">ICallDataSerializer</a></h4>
+      <section><p>Serializer for call data sent with a transaction</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IContract.html">IContract</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IContractInvocationResult.html">IContractInvocationResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IContractModuleDefinition.html">IContractModuleDefinition</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IInternalExecutorFactory.html">IInternalExecutorFactory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IKeyEncodingStrategy.html">IKeyEncodingStrategy</a></h4>
+      <section><p>Provides functionality to encode keys before they're stored in a KV store.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ILocalExecutor.html">ILocalExecutor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IPersistenceStrategy.html">IPersistenceStrategy</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ISmartContractStateFactory.html">ISmartContractStateFactory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IState.html">IState</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IStateFactory.html">IStateFactory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IStateProcessor.html">IStateProcessor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.IVirtualMachine.html">IVirtualMachine</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.ContractInvocationErrorType.html">ContractInvocationErrorType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.StateTransitionErrorKind.html">StateTransitionErrorKind</a></h4>
+      <section><p>Represents the kinds of error that can occur during a state transition.</p>
+</section>
+      <h4><a class="xref" href="Stratis.SmartContracts.CLR.VmExecutionErrorKind.html">VmExecutionErrorKind</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

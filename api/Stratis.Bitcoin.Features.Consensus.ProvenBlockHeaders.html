@@ -85,7 +85,7 @@
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.ProvenBlockHeaderStore.html">ProvenBlockHeaderStore</a></h4>
       <section><p>Manages the persistence of <a class="xref" href="NBitcoin.ProvenBlockHeader.html">ProvenBlockHeader</a> items.</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.RewindDataIndexStore.html">RewindDataIndexStore</a></h4>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.RewindDataIndexCache.html">RewindDataIndexCache</a></h4>
       <section><p>Rewind data index data store, where index structure consists of a key-value storage where key is a TxId + N (N is an index of output in a transaction)
 and value is a rewind data index. This data structure will always contain as many entries as there are rewind data instances in the database (currently
 we do not delete old rewind data that is no longer needed but after the issue #5 (<a href="https://github.com/stratisproject/StratisBitcoinFullNode/issues/5">https://github.com/stratisproject/StratisBitcoinFullNode/issues/5</a>)
@@ -93,7 +93,7 @@ is fixed we should also make sure that old fork point data is deleted as well).<
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IRewindDataIndexStore.html">IRewindDataIndexStore</a></h4>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IRewindDataIndexCache.html">IRewindDataIndexCache</a></h4>
       <section><p>Rewind data index data store, where index structure consists of a key-value storage where key is a TxId + N (N is an index of output in a transaction)
 and value is a rewind data index. This data structure will always contain as many entries as there are rewind data instances in the database (currently
 we do not delete old rewind data that is no longer needed but after the issue #5 (<a href="https://github.com/stratisproject/StratisBitcoinFullNode/issues/5">https://github.com/stratisproject/StratisBitcoinFullNode/issues/5</a>)

@@ -1,0 +1,820 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ValidationPolicy
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ValidationPolicy
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy">
+  
+  
+  <h1 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy" class="text-break">Class ValidationPolicy
+  </h1>
+  <div class="markdown level0 summary"><p>Defines a policy for validating a <see cref="!:ModuleDefinition"></see> and its member hierarchy</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ValidationPolicy</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.SmartContracts.CLR.Validation.html">Stratis.SmartContracts.CLR.Validation</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.SmartContracts.CLR.Validation.dll</h6>
+  <h5 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ValidationPolicy : object</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_FieldDefValidators.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.FieldDefValidators%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L75">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_FieldDefValidators_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.FieldDefValidators*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_FieldDefValidators" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.FieldDefValidators">FieldDefValidators</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IFieldDefinitionValidator&gt; FieldDefValidators { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.SmartContracts.CLR.Validation.IFieldDefinitionValidator.html">IFieldDefinitionValidator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_InstructionValidators.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.InstructionValidators%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L106">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_InstructionValidators_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.InstructionValidators*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_InstructionValidators" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.InstructionValidators">InstructionValidators</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IInstructionValidator&gt; InstructionValidators { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.SmartContracts.CLR.Validation.IInstructionValidator.html">IInstructionValidator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MemberRefValidators.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MemberRefValidators%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L114">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MemberRefValidators_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MemberRefValidators*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MemberRefValidators" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MemberRefValidators">MemberRefValidators</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IMemberReferenceValidator&gt; MemberRefValidators { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.SmartContracts.CLR.Validation.IMemberReferenceValidator.html">IMemberReferenceValidator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MethodDefValidators.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MethodDefValidators%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L83">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MethodDefValidators_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MethodDefValidators*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MethodDefValidators" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MethodDefValidators">MethodDefValidators</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IMethodDefinitionValidator&gt; MethodDefValidators { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.SmartContracts.CLR.Validation.IMethodDefinitionValidator.html">IMethodDefinitionValidator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_ModuleDefValidators.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.ModuleDefValidators%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L52">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_ModuleDefValidators_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.ModuleDefValidators*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_ModuleDefValidators" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.ModuleDefValidators">ModuleDefValidators</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IModuleDefinitionValidator&gt; ModuleDefValidators { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.SmartContracts.CLR.Validation.IModuleDefinitionValidator.html">IModuleDefinitionValidator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_ParameterValidators.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.ParameterValidators%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L91">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_ParameterValidators_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.ParameterValidators*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_ParameterValidators" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.ParameterValidators">ParameterValidators</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IParameterDefinitionValidator&gt; ParameterValidators { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.SmartContracts.CLR.Validation.IParameterDefinitionValidator.html">IParameterDefinitionValidator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_TypeDefValidators.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.TypeDefValidators%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L66">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_TypeDefValidators_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.TypeDefValidators*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_TypeDefValidators" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.TypeDefValidators">TypeDefValidators</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;(NestedTypePolicy, ITypeDefinitionValidator)&gt; TypeDefValidators { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="Stratis.SmartContracts.CLR.Validation.NestedTypePolicy.html">NestedTypePolicy</a>, <a class="xref" href="Stratis.SmartContracts.CLR.Validation.ITypeDefinitionValidator.html">ITypeDefinitionValidator</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_FieldDefValidator_Stratis_SmartContracts_CLR_Validation_IFieldDefinitionValidator_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.FieldDefValidator(Stratis.SmartContracts.CLR.Validation.IFieldDefinitionValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L69">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_FieldDefValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.FieldDefValidator*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_FieldDefValidator_Stratis_SmartContracts_CLR_Validation_IFieldDefinitionValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.FieldDefValidator(Stratis.SmartContracts.CLR.Validation.IFieldDefinitionValidator)">FieldDefValidator(IFieldDefinitionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationPolicy FieldDefValidator(IFieldDefinitionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.IFieldDefinitionValidator.html">IFieldDefinitionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_FromExisting_IEnumerable_Stratis_SmartContracts_CLR_Validation_ValidationPolicy__.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.FromExisting(IEnumerable%7BStratis.SmartContracts.CLR.Validation.ValidationPolicy%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L34">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_FromExisting_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.FromExisting*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_FromExisting_IEnumerable_Stratis_SmartContracts_CLR_Validation_ValidationPolicy__" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.FromExisting(IEnumerable{Stratis.SmartContracts.CLR.Validation.ValidationPolicy})">FromExisting(IEnumerable&lt;ValidationPolicy&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationPolicy FromExisting(IEnumerable&lt;ValidationPolicy&gt; existing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a>&gt;</td>
+        <td><span class="parametername">existing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_InstructionValidator_Stratis_SmartContracts_CLR_Validation_IInstructionValidator_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.InstructionValidator(Stratis.SmartContracts.CLR.Validation.IInstructionValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L100">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_InstructionValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.InstructionValidator*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_InstructionValidator_Stratis_SmartContracts_CLR_Validation_IInstructionValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.InstructionValidator(Stratis.SmartContracts.CLR.Validation.IInstructionValidator)">InstructionValidator(IInstructionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationPolicy InstructionValidator(IInstructionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.IInstructionValidator.html">IInstructionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MemberReferenceValidator_Stratis_SmartContracts_CLR_Validation_IMemberReferenceValidator_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MemberReferenceValidator(Stratis.SmartContracts.CLR.Validation.IMemberReferenceValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L108">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MemberReferenceValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MemberReferenceValidator*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MemberReferenceValidator_Stratis_SmartContracts_CLR_Validation_IMemberReferenceValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MemberReferenceValidator(Stratis.SmartContracts.CLR.Validation.IMemberReferenceValidator)">MemberReferenceValidator(IMemberReferenceValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationPolicy MemberReferenceValidator(IMemberReferenceValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.IMemberReferenceValidator.html">IMemberReferenceValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MethodDefValidator_Stratis_SmartContracts_CLR_Validation_IMethodDefinitionValidator_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MethodDefValidator(Stratis.SmartContracts.CLR.Validation.IMethodDefinitionValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L77">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MethodDefValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MethodDefValidator*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MethodDefValidator_Stratis_SmartContracts_CLR_Validation_IMethodDefinitionValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MethodDefValidator(Stratis.SmartContracts.CLR.Validation.IMethodDefinitionValidator)">MethodDefValidator(IMethodDefinitionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationPolicy MethodDefValidator(IMethodDefinitionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.IMethodDefinitionValidator.html">IMethodDefinitionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MethodParamValidator_Stratis_SmartContracts_CLR_Validation_IParameterDefinitionValidator_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MethodParamValidator(Stratis.SmartContracts.CLR.Validation.IParameterDefinitionValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L85">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MethodParamValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MethodParamValidator*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_MethodParamValidator_Stratis_SmartContracts_CLR_Validation_IParameterDefinitionValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.MethodParamValidator(Stratis.SmartContracts.CLR.Validation.IParameterDefinitionValidator)">MethodParamValidator(IParameterDefinitionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationPolicy MethodParamValidator(IParameterDefinitionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.IParameterDefinitionValidator.html">IParameterDefinitionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_ModuleDefValidator_Stratis_SmartContracts_CLR_Validation_IModuleDefinitionValidator_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.ModuleDefValidator(Stratis.SmartContracts.CLR.Validation.IModuleDefinitionValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L117">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_ModuleDefValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.ModuleDefValidator*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_ModuleDefValidator_Stratis_SmartContracts_CLR_Validation_IModuleDefinitionValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.ModuleDefValidator(Stratis.SmartContracts.CLR.Validation.IModuleDefinitionValidator)">ModuleDefValidator(IModuleDefinitionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationPolicy ModuleDefValidator(IModuleDefinitionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.IModuleDefinitionValidator.html">IModuleDefinitionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_NestedTypeDefValidator_Stratis_SmartContracts_CLR_Validation_ITypeDefinitionValidator_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.NestedTypeDefValidator(Stratis.SmartContracts.CLR.Validation.ITypeDefinitionValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L60">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_NestedTypeDefValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.NestedTypeDefValidator*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_NestedTypeDefValidator_Stratis_SmartContracts_CLR_Validation_ITypeDefinitionValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.NestedTypeDefValidator(Stratis.SmartContracts.CLR.Validation.ITypeDefinitionValidator)">NestedTypeDefValidator(ITypeDefinitionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationPolicy NestedTypeDefValidator(ITypeDefinitionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ITypeDefinitionValidator.html">ITypeDefinitionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_TypeDefValidator_Stratis_SmartContracts_CLR_Validation_ITypeDefinitionValidator_Stratis_SmartContracts_CLR_Validation_NestedTypePolicy_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.TypeDefValidator(Stratis.SmartContracts.CLR.Validation.ITypeDefinitionValidator%2CStratis.SmartContracts.CLR.Validation.NestedTypePolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L54">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_TypeDefValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.TypeDefValidator*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_TypeDefValidator_Stratis_SmartContracts_CLR_Validation_ITypeDefinitionValidator_Stratis_SmartContracts_CLR_Validation_NestedTypePolicy_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.TypeDefValidator(Stratis.SmartContracts.CLR.Validation.ITypeDefinitionValidator,Stratis.SmartContracts.CLR.Validation.NestedTypePolicy)">TypeDefValidator(ITypeDefinitionValidator, NestedTypePolicy)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationPolicy TypeDefValidator(ITypeDefinitionValidator validator, NestedTypePolicy nestedTypePolicy = NestedTypePolicy.Validate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ITypeDefinitionValidator.html">ITypeDefinitionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.NestedTypePolicy.html">NestedTypePolicy</a></td>
+        <td><span class="parametername">nestedTypePolicy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy_WhitelistValidator_Stratis_SmartContracts_CLR_Validation_Policy_WhitelistPolicy_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy.WhitelistValidator(Stratis.SmartContracts.CLR.Validation.Policy.WhitelistPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L93">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_WhitelistValidator_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.WhitelistValidator*"></a>
+  <h4 id="Stratis_SmartContracts_CLR_Validation_ValidationPolicy_WhitelistValidator_Stratis_SmartContracts_CLR_Validation_Policy_WhitelistPolicy_" data-uid="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.WhitelistValidator(Stratis.SmartContracts.CLR.Validation.Policy.WhitelistPolicy)">WhitelistValidator(WhitelistPolicy)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationPolicy WhitelistValidator(WhitelistPolicy policy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.Policy.WhitelistPolicy.html">WhitelistPolicy</a></td>
+        <td><span class="parametername">policy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.Validation.ValidationPolicy.html">ValidationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Validation_ValidationPolicy.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Validation.ValidationPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR.Validation/ValidationPolicy.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
