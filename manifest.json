@@ -4581,7 +4581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Connection.ConnectionManager.html",
-          "hash": "b0bV5xbO020sn/tyJ/Y2Zg=="
+          "hash": "8uelFDKlnQAuBLldpDwZNA=="
         }
       },
       "is_incremental": false,
@@ -5997,7 +5997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.BlockStoreBehavior.html",
-          "hash": "76KE+lM9X+1jDOfJ3rAZKQ=="
+          "hash": "XmmRDfmQSy+PCB5fc7BmQA=="
         }
       },
       "is_incremental": false,
@@ -6477,7 +6477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.Behaviors.ProvenHeadersConsensusManagerBehavior.html",
-          "hash": "bddYOYbG8G9gJvxX9XSmfg=="
+          "hash": "1fSoEWB7UIyvcgffH7yK0g=="
         }
       },
       "is_incremental": false,
@@ -11397,7 +11397,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Controllers.WalletController.html",
-          "hash": "XTxKNrahBagJG5Psq/tfNw=="
+          "hash": "DlBZiv0S0WRVOZNVdypUxw=="
         }
       },
       "is_incremental": false,
@@ -15129,7 +15129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.BitcoinSerializablePayload-1.html",
-          "hash": "YW4aOsEHYvp8/sPsKQqErQ=="
+          "hash": "hE212I3AuqJCJ1JAQh/C6g=="
         }
       },
       "is_incremental": false,
@@ -15149,71 +15149,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.BlockTxnPayload.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.BlockTxnPayload.html",
-          "hash": "IuNexbdWE06KNAS+sWJfeg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.CmpctBlockPayload.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.CmpctBlockPayload.html",
-          "hash": "Qg1FbQotP8FC1u+tUPqeIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.FilterAddPayload.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.FilterAddPayload.html",
-          "hash": "VDIGaAmsb7XJme2rU1f9fg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.FilterLoadPayload.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.FilterLoadPayload.html",
-          "hash": "md70Q1Fs/Pht6jd8kUFvwg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.GetAddrPayload.yml",
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.GetAddrPayload.html",
           "hash": "uUe52Zty5lm0SUJ5Q71jdg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.GetBlockTxnPayload.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.GetBlockTxnPayload.html",
-          "hash": "BRM3M+3sCGRdNto+USqa1A=="
         }
       },
       "is_incremental": false,
@@ -15317,18 +15257,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.MerkleBlockPayload.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.MerkleBlockPayload.html",
-          "hash": "cQU0zvh9LNsxdEhIvXxwxQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.NetworkPeerServices.yml",
       "output": {
         ".html": {
@@ -15357,7 +15285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.Payload.html",
-          "hash": "JRZvrNcwLpv3nGqr3FmKEw=="
+          "hash": "0y1YqXOnpo4zvZmTYB11SQ=="
         }
       },
       "is_incremental": false,
@@ -15413,18 +15341,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.PrefilledTransaction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.PrefilledTransaction.html",
-          "hash": "bGYd/5+qjo5YAO2H1/4Cdg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.ProvenHeadersPayload.yml",
       "output": {
         ".html": {
@@ -15473,18 +15389,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.SendCmpctPayload.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.SendCmpctPayload.html",
-          "hash": "CTwhdffG/+4hsqXKPlaGvA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.SendHeadersPayload.yml",
       "output": {
         ".html": {
@@ -15502,18 +15406,6 @@
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.TxPayload.html",
           "hash": "4DIRUygZXmv+Nm+tCy+RoQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.UTxOutputPayload.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.UTxOutputPayload.html",
-          "hash": "yrm4jT9OKZEopEucCqC3QQ=="
         }
       },
       "is_incremental": false,
@@ -15561,7 +15453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.Protocol.Payloads.html",
-          "hash": "bVKXwbX0g9RQ5cJsycaTLg=="
+          "hash": "RVgxJPTeTAVEq5eNZR3sUA=="
         }
       },
       "is_incremental": false,
@@ -21288,7 +21180,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "znWwtEbhz3vyU1jhguuhuQ=="
+          "hash": "JCrATQCGFYm1jnuKKz8fDQ=="
         }
       },
       "is_incremental": false,
@@ -21378,10 +21270,6 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
@@ -21389,6 +21277,10 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
