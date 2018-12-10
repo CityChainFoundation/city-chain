@@ -95,18 +95,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueueFlushCondition__ctor_Stratis_Bitcoin_Base_IChainState_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueueFlushCondition.%23ctor(Stratis.Bitcoin.Base.IChainState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueueFlushCondition__ctor_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueueFlushCondition.%23ctor(Stratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Interfaces.IInitialBlockDownloadState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueueFlushCondition.cs/#L11">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueueFlushCondition.cs/#L12">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueueFlushCondition__ctor_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueueFlushCondition.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueueFlushCondition__ctor_Stratis_Bitcoin_Base_IChainState_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueueFlushCondition.#ctor(Stratis.Bitcoin.Base.IChainState)">BlockStoreQueueFlushCondition(IChainState)</h4>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueueFlushCondition__ctor_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Interfaces_IInitialBlockDownloadState_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueueFlushCondition.#ctor(Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState)">BlockStoreQueueFlushCondition(IChainState, IInitialBlockDownloadState)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlockStoreQueueFlushCondition(IChainState chainState)</code></pre>
+    <pre><code class="lang-csharp hljs">public BlockStoreQueueFlushCondition(IChainState chainState, IInitialBlockDownloadState blockDownloadState)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -123,6 +123,11 @@
         <td><span class="parametername">chainState</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState.html">IInitialBlockDownloadState</a></td>
+        <td><span class="parametername">blockDownloadState</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
@@ -132,13 +137,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_BlockStoreQueueFlushCondition_ShouldFlush.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.BlockStoreQueueFlushCondition.ShouldFlush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueueFlushCondition.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/BlockStoreQueueFlushCondition.cs/#L19">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueueFlushCondition_ShouldFlush_" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueueFlushCondition.ShouldFlush*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_BlockStoreQueueFlushCondition_ShouldFlush" data-uid="Stratis.Bitcoin.Features.BlockStore.BlockStoreQueueFlushCondition.ShouldFlush">ShouldFlush</h4>
   <div class="markdown level1 summary"><p>Should block store flush to disk.</p>
 <p>
-This is usually performed by checking <a class="xref" href="Stratis.Bitcoin.Base.IChainState.html#Stratis_Bitcoin_Base_IChainState_IsAtBestChainTip">IsAtBestChainTip</a>.
+If consensus tip in IBD or store tip is a distance of more then 5 blocks from consensus tip this will return <code>false</code>.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>

@@ -95,7 +95,7 @@
   <h4 id="Stratis_Bitcoin_Interfaces_IBlockStoreQueueFlushCondition_ShouldFlush" data-uid="Stratis.Bitcoin.Interfaces.IBlockStoreQueueFlushCondition.ShouldFlush">ShouldFlush</h4>
   <div class="markdown level1 summary"><p>Should block store flush to disk.</p>
 <p>
-This is usually performed by checking <a class="xref" href="Stratis.Bitcoin.Base.IChainState.html#Stratis_Bitcoin_Base_IChainState_IsAtBestChainTip">IsAtBestChainTip</a>.
+If consensus tip in IBD or store tip is a distance of more then 5 blocks from consensus tip this will return <code>false</code>.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>

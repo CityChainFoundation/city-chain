@@ -5997,7 +5997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.BlockStoreBehavior.html",
-          "hash": "XmmRDfmQSy+PCB5fc7BmQA=="
+          "hash": "LrBE5FvAfSAruD5g2tqf+Q=="
         }
       },
       "is_incremental": false,
@@ -6033,7 +6033,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.BlockStoreQueue.html",
-          "hash": "pu/bHfQt/zmPAalnudsR1g=="
+          "hash": "n7khOuBReDumFVOo67Xz0w=="
         }
       },
       "is_incremental": false,
@@ -6045,7 +6045,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.BlockStoreQueueFlushCondition.html",
-          "hash": "TnUp8uyTNdTsZ5lX74Q5lQ=="
+          "hash": "86eL6yYhTaJ3+qBMcMCWew=="
         }
       },
       "is_incremental": false,
@@ -6177,7 +6177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.ProvenHeadersBlockStoreBehavior.html",
-          "hash": "VmRsp/Z1v+f3GPOJ/76lUg=="
+          "hash": "7QBbZhNlA3McXtKm2sV7lg=="
         }
       },
       "is_incremental": false,
@@ -8337,7 +8337,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Miner.BlockDefinition.html",
-          "hash": "aD+5oVVBKPVB39kAmFg7rg=="
+          "hash": "yvXkiFEobzo8qK+Q7wHMjw=="
         }
       },
       "is_incremental": false,
@@ -10301,6 +10301,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.html",
+          "hash": "qIVldd5VyBtkQUWRimuy7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.LogResponse.yml",
       "output": {
         ".html": {
@@ -10329,7 +10341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.html",
-          "hash": "PDvv4YPBh31ylALvqE/z2g=="
+          "hash": "4nCguuemxBBDn/YiLNwrmA=="
         }
       },
       "is_incremental": false,
@@ -10809,7 +10821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.html",
-          "hash": "Ju/3PRb7ScEIymmjV3/l0Q=="
+          "hash": "ddsaR8vp9rLQWrMd3FCFpw=="
         }
       },
       "is_incremental": false,
@@ -11073,7 +11085,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Wallet.ISmartContractTransactionService.html",
-          "hash": "TBPLEDYjiOtdSROuuqOe6Q=="
+          "hash": "SvgE17IaIA7jj2WbaCZ2Pg=="
         }
       },
       "is_incremental": false,
@@ -11085,7 +11097,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Wallet.SmartContractTransactionService.html",
-          "hash": "kjhQoxfb7qXXTpMXIWmudQ=="
+          "hash": "7M832f1HKtzZ/620iQ3wRw=="
         }
       },
       "is_incremental": false,
@@ -14217,7 +14229,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Interfaces.IBlockStoreQueue.html",
-          "hash": "8OO3rpH+z8Mn3C/9rlqfHg=="
+          "hash": "hGZKoAF0tNG+maVJJxGHMg=="
         }
       },
       "is_incremental": false,
@@ -14229,7 +14241,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Interfaces.IBlockStoreQueueFlushCondition.html",
-          "hash": "WLiYdK1gNL4ScIEbwGVrXg=="
+          "hash": "SPSjuXyXM6O39n8LXvQ+qw=="
         }
       },
       "is_incremental": false,
@@ -17544,7 +17556,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.ILocalExecutor.html",
-          "hash": "sAEPentRhz4v41K4T1c3mg=="
+          "hash": "TcdJA5FHmg98R8aesepC2w=="
         }
       },
       "is_incremental": false,
@@ -17796,7 +17808,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.Local.LocalExecutor.html",
-          "hash": "QTuYYCvo8ToQBXs6I3PyDg=="
+          "hash": "PrPvRmOnVwGXTuWPtLqJ2A=="
         }
       },
       "is_incremental": false,
@@ -20412,7 +20424,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoW.SmartContractWalletTests.html",
-          "hash": "LSWfPRv/TvLVdcxwY5q87A=="
+          "hash": "6qTYQRJnQKaP1brx5GCnAA=="
         }
       },
       "is_incremental": false,
@@ -21180,7 +21192,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "JCrATQCGFYm1jnuKKz8fDQ=="
+          "hash": "e+oKyuQ4xkACHjzaei3XOg=="
         }
       },
       "is_incremental": false,
@@ -21265,6 +21277,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -21272,11 +21289,6 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
