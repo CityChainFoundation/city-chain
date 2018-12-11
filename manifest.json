@@ -4569,7 +4569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Configuration.TextFileConfiguration.html",
-          "hash": "pw/BInNkOn0MXi0qCq/aQA=="
+          "hash": "V2NbbzZOSM8vOmQMGfQsPg=="
         }
       },
       "is_incremental": false,
@@ -10817,6 +10817,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.AddressJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.AddressJsonConverter.html",
+          "hash": "6cvm6WdktI87qErqDgOipQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Consensus.Rules.SmartContractFormatRule.yml",
       "output": {
         ".html": {
@@ -10841,11 +10853,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.ContractParametersContractResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.ContractParametersContractResolver.html",
+          "hash": "nVesBA3l+E4JF6LaDjGCfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.yml",
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.html",
-          "hash": "ddsaR8vp9rLQWrMd3FCFpw=="
+          "hash": "jTNBtDiYMe30nxOecXfODQ=="
         }
       },
       "is_incremental": false,
@@ -10881,7 +10905,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.html",
-          "hash": "LA4/wtYU8S+3kAI1zdPwzQ=="
+          "hash": "WtC5sg8YjSNooZ45WEX4jw=="
         }
       },
       "is_incremental": false,
@@ -21216,7 +21240,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "zG2mTtuu/tBi10J/Fnkq7w=="
+          "hash": "YyII8fVJV/zgzpfiUE7QVQ=="
         }
       },
       "is_incremental": false,
@@ -21306,17 +21330,17 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
