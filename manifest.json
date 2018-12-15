@@ -4617,7 +4617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Connection.ConnectionManagerBehavior.html",
-          "hash": "rV8TNcLLPhYYpBFpecnJQw=="
+          "hash": "APuH04dsi4GrEVQ2Ix+L+g=="
         }
       },
       "is_incremental": false,
@@ -8121,7 +8121,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.MempoolOrphans.html",
-          "hash": "oZcOWoq0beJJmCOrY2MflA=="
+          "hash": "G0bWBCRDg+iF8WYbUtSk7g=="
         }
       },
       "is_incremental": false,
@@ -8757,7 +8757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Miner.Staking.PosMinting.html",
-          "hash": "k2F4e90MAIiAFHDajZ3INQ=="
+          "hash": "l5NeKXF9kvXjzaOLdawEcg=="
         }
       },
       "is_incremental": false,
@@ -9369,7 +9369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.PoAMiner.html",
-          "hash": "HBBWDtZCrtBq6JykYpQLKQ=="
+          "hash": "GIjKNZCiqx/OZ7iBob9IUw=="
         }
       },
       "is_incremental": false,
@@ -10485,7 +10485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.SmartContractPoABlockDefinition.html",
-          "hash": "r6GvwVn2MGiI/OFdhMHKjg=="
+          "hash": "gzhU/BkzR4Z2rcEF+h/UIA=="
         }
       },
       "is_incremental": false,
@@ -10917,7 +10917,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.AllowedScriptTypeRule.html",
-          "hash": "k5LFTGA+pgtb9duBtTGYtw=="
+          "hash": "q1Yx2oFtkAPZRzm293aFaQ=="
         }
       },
       "is_incremental": false,
@@ -14661,7 +14661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.Peer.INetworkPeer.html",
-          "hash": "822m2Wk55BT2XshHItVbiw=="
+          "hash": "KBu74DZom0LBi96HWBI1vA=="
         }
       },
       "is_incremental": false,
@@ -14697,7 +14697,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.Peer.NetworkPeer.html",
-          "hash": "9kKb4IMFxtYB3CcIS500Kw=="
+          "hash": "cmMGBXnE6HuVcf3XxWZkEw=="
         }
       },
       "is_incremental": false,
