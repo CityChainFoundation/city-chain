@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WalletSettings
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.4.0">
+    <meta name="generator" content="docfx 2.40.6.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -94,7 +94,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSettings__ctor_Stratis_Bitcoin_Configuration_NodeSettings_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSettings.%23ctor(Stratis.Bitcoin.Configuration.NodeSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L34">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L49">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSettings__ctor_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSettings__ctor_Stratis_Bitcoin_Configuration_NodeSettings_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.#ctor(Stratis.Bitcoin.Configuration.NodeSettings)">WalletSettings(NodeSettings)</h4>
@@ -127,10 +127,72 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSettings_IsLightWallet.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSettings.IsLightWallet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSettings_DefaultWallet.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSettings.DefaultWallet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L25">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_WalletSettings_DefaultWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.DefaultWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSettings_DefaultWallet" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.DefaultWallet">DefaultWallet</h4>
+  <div class="markdown level1 summary"><p>A value indicating whether to create a default wallet and unlock it on startup. Wallet password is saved in configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DefaultWallet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSettings_DefaultWalletPassword.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSettings.DefaultWalletPassword%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L30">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_WalletSettings_DefaultWalletPassword_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.DefaultWalletPassword*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSettings_DefaultWalletPassword" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.DefaultWalletPassword">DefaultWalletPassword</h4>
+  <div class="markdown level1 summary"><p>Password for the default wallet if overriding the default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DefaultWalletPassword { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSettings_IsLightWallet.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSettings.IsLightWallet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L35">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSettings_IsLightWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.IsLightWallet*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSettings_IsLightWallet" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.IsLightWallet">IsLightWallet</h4>
@@ -192,7 +254,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSettings_UnusedAddressesBuffer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSettings.UnusedAddressesBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L28">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L38">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSettings_UnusedAddressesBuffer_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.UnusedAddressesBuffer*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSettings_UnusedAddressesBuffer" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.UnusedAddressesBuffer">UnusedAddressesBuffer</h4>
@@ -218,6 +280,37 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSettings_WalletNotify.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSettings.WalletNotify%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L43">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_WalletSettings_WalletNotify_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.WalletNotify*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSettings_WalletNotify" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.WalletNotify">WalletNotify</h4>
+  <div class="markdown level1 summary"><p>Runs the specified shell script when new transactions is discovered in the wallet, also triggers when they are confirmed. Single argument is provided, which contains the transaction ID. The transaction ID is replaced with %s in the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WalletNotify { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -225,7 +318,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSettings_BuildDefaultConfigurationFile_StringBuilder_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSettings.BuildDefaultConfigurationFile(StringBuilder%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L64">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L85">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSettings_BuildDefaultConfigurationFile_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.BuildDefaultConfigurationFile*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSettings_BuildDefaultConfigurationFile_StringBuilder_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.BuildDefaultConfigurationFile(StringBuilder,NBitcoin.Network)">BuildDefaultConfigurationFile(StringBuilder, Network)</h4>
@@ -265,7 +358,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSettings_PrintHelp_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSettings.PrintHelp(NBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L50">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSettings.cs/#L68">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSettings_PrintHelp_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.PrintHelp*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSettings_PrintHelp_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSettings.PrintHelp(NBitcoin.Network)">PrintHelp(Network)</h4>
