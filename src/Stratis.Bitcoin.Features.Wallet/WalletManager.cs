@@ -98,11 +98,11 @@ namespace Stratis.Bitcoin.Features.Wallet
         /// <inheritdoc />
         public List<WalletToUnlock> WalletsToUnlock { get; private set; }
 
-        /// <summary>The shell command to execute, differs depending on the OS.</summary>
+        /// <summary>The shell command to execute.</summary>
         private string shellCommand;
 
-        /// <summary>Flag that indicates the command is executed on Windows or another OS.</summary>
-        private bool shellWindowsOS = false;
+        /// <summary>The shell arguments to send to the shell command.</summary>
+        private string shellArguments;
 
         // In order to allow faster look-ups of transactions affecting the wallets' addresses,
         // we keep a couple of objects in memory:
@@ -160,15 +160,12 @@ namespace Stratis.Bitcoin.Features.Wallet
             this.scriptToAddressLookup = this.CreateAddressFromScriptLookup();
             this.outpointLookup = new Dictionary<OutPoint, TransactionData>();
 
-            if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            if (!string.IsNullOrWhiteSpace(this.walletSettings.WalletNotify))
             {
-                this.shellCommand = "/bin/sh";
-                this.shellWindowsOS = false;
-            }
-            else
-            {
-                this.shellCommand = "cmd";
-                this.shellWindowsOS = true;
+                var cmdArray = this.walletSettings.WalletNotify.Split(' ');
+
+                this.shellCommand = cmdArray.First();
+                this.shellArguments = string.Join(" ", cmdArray.Skip(1));
             }
         }
         
@@ -1030,16 +1027,23 @@ namespace Stratis.Bitcoin.Features.Wallet
 
                         try
                         {
-                            // Whenever a new receiving transaction is found, trigger the -walletnotifynew.
-                            if (!string.IsNullOrWhiteSpace(this.walletSettings.WalletNotifyNew))
+                            // Whenever a new receiving transaction is found, trigger the -walletnotify.
+                            if (!string.IsNullOrWhiteSpace(this.shellCommand))
                             {
-                                var result = ShellHelper.RunCommand(this.shellCommand, this.walletSettings.WalletNotifyNew.Replace("%s", transaction.ToString()), this.shellWindowsOS);
-                                this.logger.LogInformation("-walletnotifynew: " + result);
+                                var arguments = this.shellArguments.Replace("%s", transaction.ToString());
+                                this.logger.LogInformation($"-walletnotify running command: {this.shellCommand} {arguments}");
+
+                                var result = ShellHelper.RunCommand(this.shellCommand, arguments);
+
+                                if (!string.IsNullOrWhiteSpace(result))
+                                {
+                                    this.logger.LogError(result);
+                                }
                             }
                         }
                         catch (Exception ex)
                         {
-                            this.logger.LogError(ex, "Failed to parse and execute on -walletnotifynew.");
+                            this.logger.LogError(ex, "Failed to parse and execute on -walletnotify.");
                         }
                     }
                 }

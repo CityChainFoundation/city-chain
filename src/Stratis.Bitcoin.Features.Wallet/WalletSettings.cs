@@ -38,13 +38,9 @@ namespace Stratis.Bitcoin.Features.Wallet
         public int UnusedAddressesBuffer { get; set; }
 
         /// <summary>
-        /// Runs the specified shell script when new transactions is discovered in the wallet. Single argument is provided, which contains the transaction ID.
+        /// Runs the specified shell script when new transactions is discovered in the wallet, also triggers when they are confirmed. Single argument is provided, which contains the transaction ID. The transaction ID is replaced with %s in the command.
         /// </summary>
-        /// <remarks>
-        /// -walletnotify is currently not supported, which normally should trigger on new transaction and trigger on block confirmation. This is an alternative 
-        /// that only triggers when a new transaction is discovered.
-        /// </remarks>
-        public string WalletNotifyNew { get; set; }
+        public string WalletNotify { get; set; }
 
         /// <summary>
         /// Initializes an instance of the object from the node configuration.
@@ -62,7 +58,7 @@ namespace Stratis.Bitcoin.Features.Wallet
             this.DefaultWallet = config.GetOrDefault<bool>("defaultwallet", false, this.logger);
             this.DefaultWalletPassword = config.GetOrDefault<string>("defaultwalletpassword", "default", this.logger);
             this.UnusedAddressesBuffer = config.GetOrDefault<int>("walletaddressbuffer", 20, this.logger);
-            this.WalletNotifyNew = config.GetOrDefault<string>("walletnotifynew", null, this.logger);
+            this.WalletNotify = config.GetOrDefault<string>("walletnotify", null, this.logger);
         }
 
         /// <summary>
@@ -77,7 +73,7 @@ namespace Stratis.Bitcoin.Features.Wallet
             builder.AppendLine("-savetrxhex=<0 or 1>            Save the hex of transactions in the wallet file. Default: 0.");
             builder.AppendLine("-defaultwallet=<0 or 1>         Creates a default wallet. Default: 0.");
             builder.AppendLine("-defaultwalletpassword=<string> Overrides the default wallet password.");
-            builder.AppendLine("-walletnotifynew=<string>       Execute this command when a transaction is first seen.");
+            builder.AppendLine("-walletnotify=<string>          Execute this command when a transaction is first seen and when it is confirmed.");
             defaults.Logger.LogInformation(builder.ToString());
         }
 
@@ -94,8 +90,8 @@ namespace Stratis.Bitcoin.Features.Wallet
             builder.AppendLine("#Creates a default wallet and unlocks the wallet on startup when set to 1. Default: 0.");
             builder.AppendLine("#defaultwallet=0");
             builder.AppendLine("#defaultwalletpassword=<string>");
-            builder.AppendLine("#Execute this command when a transaction is first seen.");
-            builder.AppendLine("#walletnotifynew=<string>");
+            builder.AppendLine("#Execute this command when a transaction is first seen and when it is confirmed.");
+            builder.AppendLine("#walletnotify=<string>");
         }
     }
 }

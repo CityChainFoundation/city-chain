@@ -7,32 +7,31 @@ namespace Stratis.Bitcoin.Features.Wallet.Shell
 {
     public static class ShellHelper
     {
-        public static string RunCommand(string command, string args, bool windows)
+        public static string RunCommand(string command, string args, bool wait = false, int timeout = 2000)
         {
-            try
+            var startInfo = new ProcessStartInfo
             {
-                var escapedArgs = args.Replace("\"", "\\\"");
-                var flag = windows ? "/c" : "-c";
+                FileName = command,
+                Arguments = args,
+                RedirectStandardOutput = wait,
+                RedirectStandardError = wait,
+                UseShellExecute = false,
+                CreateNoWindow = true,
+            };
 
-                var process = new Process()
-                {
-                    StartInfo = new ProcessStartInfo
-                    {
-                        FileName = command,
-                        Arguments = $"{flag} \"{escapedArgs}\"",
-                        RedirectStandardOutput = true,
-                        RedirectStandardError = true,
-                        UseShellExecute = false,
-                        CreateNoWindow = true,
-                    }
-                };
-
-                process.Start();
+            if (!wait)
+            {
+                Process.Start(startInfo);
+                return string.Empty;
+            }
+            else
+            {
+                var process = Process.Start(startInfo);
 
                 string output = process.StandardOutput.ReadToEnd();
                 string error = process.StandardError.ReadToEnd();
 
-                process.WaitForExit();
+                process.WaitForExit(timeout);
 
                 if (string.IsNullOrEmpty(error))
                 {
@@ -42,10 +41,6 @@ namespace Stratis.Bitcoin.Features.Wallet.Shell
                 {
                     return error;
                 }
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
             }
         }
     }
