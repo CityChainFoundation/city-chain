@@ -40,7 +40,7 @@ namespace Stratis.Bitcoin.Features.Wallet.Interfaces
         /// <summary>
         /// A list of wallets that should be unlocked on startup.
         /// </summary>
-        WalletToUnlock[] WalletsToUnlock { get; }
+        List<WalletToUnlock> WalletsToUnlock { get; }
 
         /// <summary>
         /// Lists all spendable transactions from all accounts in the wallet.
@@ -209,7 +209,7 @@ namespace Stratis.Bitcoin.Features.Wallet.Interfaces
         /// </summary>
         /// <param name="walletName">The name of the wallet.</param>
         /// <returns></returns>
-        List<WalletToUnlock> WalletsToUnlock { get; }
+        Wallet GetWallet(string walletName);
 
         /// <summary>
         /// Gets a list of accounts.
