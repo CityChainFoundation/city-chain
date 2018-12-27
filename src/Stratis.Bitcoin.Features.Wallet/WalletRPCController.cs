@@ -427,7 +427,7 @@ namespace Stratis.Bitcoin.Features.Wallet
             }
             else
             {
-                if (transaction.IsCoinStake.GetValueOrDefault(false))
+                if (transaction.IsCoinStake.GetValueOrDefault(false) || transaction.IsCoinBase.GetValueOrDefault(false))
                 {
                     // Since this is a coin stake output, we'll hard-code to the ProofOfStakeReward. If this is implemented with a variable
                     // output, then this will likely result in invalid responses.
@@ -437,7 +437,7 @@ namespace Stratis.Bitcoin.Features.Wallet
                     {
                         Account = string.Empty, // Can be empty string for default account.
                         Address = accountHistoryHistory.Address.Address,
-                        Category = "stake",
+                        Category = "generated",
                         Amount = amount
                     });
                 }
@@ -460,6 +460,7 @@ namespace Stratis.Bitcoin.Features.Wallet
             {
                 Amount = amount,
                 BlockHash = transaction.BlockHash,
+                BlockIndex = transaction.BlockHeight,
                 TransactionId = transaction.Id,
                 TransactionTime = transaction.CreationTime.ToUnixTimeSeconds(),
                 Confirmations = confirmations,

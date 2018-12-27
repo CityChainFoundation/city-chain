@@ -30,6 +30,9 @@ namespace Stratis.Bitcoin.Features.Wallet.Models
         [JsonProperty("blockhash")]
         public uint256 BlockHash { get; set; }
 
+        [JsonProperty("blockindex")]
+        public int? BlockIndex { get; set; }
+
         [JsonProperty("txid")]
         public uint256 TransactionId { get; set; }
 

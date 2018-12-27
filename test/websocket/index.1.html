@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <script src="signalr.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <div id="messagesList"></div>
+    </div>
+
+
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("http://localhost:4336/node")
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
+
+        connection.on("ReceiveMessage", (user, message) => {
+
+            const encodedMsg = user + " says " + message;
+            const li = document.createElement("li");
+            li.textContent = encodedMsg;
+            document.getElementById("messagesList").appendChild(li);
+
+        });
+
+        var user = "default";
+        var message = "rpc:wallet:getnewaddress";
+
+        
+        connection.start().then(() => {
+            connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
+        });
+
+        // async function start() {
+        //     try {
+        //         await connection.start();
+        //         console.log('connected');
+        //     } catch (err) {
+        //         console.log(err);
+        //         setTimeout(() => start(), 5000);
+        //     }
+        // };
+
+        // connection.onclose(async () => {
+        //     await start();
+        // });
+    </script>
+
+</body>
+
+</html>

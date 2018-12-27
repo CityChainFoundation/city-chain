@@ -14,6 +14,14 @@ namespace Stratis.Bitcoin.Features.WebSocket
             services.AddCors();
             services.AddSignalR();
 
+          //  services.AddCors(options => options.AddPolicy("CorsPolicy",
+          //builder =>
+          //{
+          //    builder.AllowAnyMethod().AllowAnyHeader()
+          //           .WithOrigins("http://localhost:55830")
+          //           .AllowCredentials();
+          //}));
+
             //ServiceProvider provider = services.BuildServiceProvider();
 
             // Hold on to the reference to the connectionManager
@@ -35,6 +43,9 @@ namespace Stratis.Bitcoin.Features.WebSocket
             //todo: this currently always go to DefaultRoute
             var settings = (WebSocketSettings)app.ApplicationServices.GetService(typeof(WebSocketSettings));
 
+            //app.UseCors("CorsPolicy");
+
+            // TODO: ADD CORS, should be configureable with settings!
             app.UseCors(builder => builder
                 .AllowAnyMethod()
                 .AllowAnyHeader()
@@ -43,7 +54,7 @@ namespace Stratis.Bitcoin.Features.WebSocket
 
             app.UseSignalR(routes =>
             {
-                routes.MapHub<FullNodeHub>("/chat");
+                routes.MapHub<FullNodeHub>("/node");
             });
 
 

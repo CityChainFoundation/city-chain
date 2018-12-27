@@ -176,6 +176,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "City.Chain.Tests", "City.Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "City.Chain", "City.Chain\City.Chain.csproj", "{F22ADCE0-CF82-482C-8272-8FCDA4F4DD1D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stratis.Bitcoin.Features.WebSocket", "Stratis.Bitcoin.Features.WebSocket\Stratis.Bitcoin.Features.WebSocket.csproj", "{7D693EEC-5350-4A9A-AFF6-716E21C96662}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -454,6 +456,10 @@ Global
 		{F22ADCE0-CF82-482C-8272-8FCDA4F4DD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F22ADCE0-CF82-482C-8272-8FCDA4F4DD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F22ADCE0-CF82-482C-8272-8FCDA4F4DD1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D693EEC-5350-4A9A-AFF6-716E21C96662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D693EEC-5350-4A9A-AFF6-716E21C96662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D693EEC-5350-4A9A-AFF6-716E21C96662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D693EEC-5350-4A9A-AFF6-716E21C96662}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -528,6 +534,7 @@ Global
 		{BD52D4EA-FD59-4FBD-8402-7594D382BB27} = {8C2C97F4-896B-493F-8E77-DBB4B77E5828}
 		{60B1DC56-CE49-4CB7-B993-2B789C460593} = {8C2C97F4-896B-493F-8E77-DBB4B77E5828}
 		{F22ADCE0-CF82-482C-8272-8FCDA4F4DD1D} = {8C2C97F4-896B-493F-8E77-DBB4B77E5828}
+		{7D693EEC-5350-4A9A-AFF6-716E21C96662} = {8C2C97F4-896B-493F-8E77-DBB4B77E5828}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C780ABA-5872-4B83-AD3F-A5BD423AD907}

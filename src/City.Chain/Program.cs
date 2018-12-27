@@ -20,6 +20,7 @@
     using Stratis.Bitcoin.Features.Miner;
     using Stratis.Bitcoin.Features.RPC;
     using Stratis.Bitcoin.Features.Wallet;
+    using Stratis.Bitcoin.Features.WebSocket;
     using Stratis.Bitcoin.Utilities;
 
     public class Program
@@ -122,6 +123,7 @@
                         .UseApi()
                         .UseApps()
                         .AddRPC()
+                        .UseWebSocket()
                         .Build();
                 }
 

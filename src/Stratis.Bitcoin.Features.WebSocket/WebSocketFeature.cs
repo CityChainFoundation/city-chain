@@ -12,7 +12,8 @@ namespace Stratis.Bitcoin.Features.WebSocket
 
         private readonly WebSocketSettings settings;
 
-        private readonly ILoggerFactory loggerFactory;
+        // private readonly ILoggerFactory loggerFactory;
+        private readonly ILogger logger;
 
         private readonly IFullNodeBuilder fullNodeBuilder;
 
@@ -28,9 +29,10 @@ namespace Stratis.Bitcoin.Features.WebSocket
             this.fullNode = fullNode;
             this.service = service;
             this.settings = settings;
-            this.loggerFactory = loggerFactory;
 
-            this.loggerFactory.AddProvider(new WebSocketLoggingProvider(service, new WebSocketLoggerConfiguration()));
+            this.logger = loggerFactory.CreateLogger(this.GetType().FullName);
+            // this.loggerFactory = loggerFactory;
+            // this.loggerFactory.AddProvider(new WebSocketLoggingProvider(service, new WebSocketLoggerConfiguration()));
         }
 
         public override Task InitializeAsync()
