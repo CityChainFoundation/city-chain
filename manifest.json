@@ -11829,7 +11829,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.GetTransactionDetailsModel.html",
-          "hash": "tmw8HhEQFMzhRxZ6t2GW+w=="
+          "hash": "r6rmx7RulY98RPSxiHnXRQ=="
         }
       },
       "is_incremental": false,
@@ -11841,7 +11841,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.GetTransactionModel.html",
-          "hash": "9h7SLRiOe7XMARyLYK3efQ=="
+          "hash": "zwBn3TFStbor3EIZXCX2ZQ=="
         }
       },
       "is_incremental": false,
@@ -12609,7 +12609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletRPCController.html",
-          "hash": "vJAN2PCn/WKXBuBU49fpww=="
+          "hash": "G7OhqXxP72MoVWTamsWXEw=="
         }
       },
       "is_incremental": false,
@@ -21385,22 +21385,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
