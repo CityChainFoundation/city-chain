@@ -12465,7 +12465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.TransactionBuildContext.html",
-          "hash": "TVzROwOUxYH5ueC7s6Q0GQ=="
+          "hash": "asluCAk79HjXuPSfJ3if3Q=="
         }
       },
       "is_incremental": false,
@@ -12609,7 +12609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletRPCController.html",
-          "hash": "G7OhqXxP72MoVWTamsWXEw=="
+          "hash": "qEQ8kPlLZSXi/1b6+dJOIA=="
         }
       },
       "is_incremental": false,
@@ -12645,7 +12645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.html",
-          "hash": "fjOOlirtUJAaz3miZRbZJw=="
+          "hash": "r+NtBHwjy8l0AKpxOJ4JIw=="
         }
       },
       "is_incremental": false,
