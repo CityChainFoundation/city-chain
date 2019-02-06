@@ -9,6 +9,10 @@ WHITE='\033[01;37m'
 BOLD='\033[1m'
 UNDERLINE='\033[4m'
 
+#### Update for each Coin release
+declare -r COINBIN=https://github.com/CityChainFoundation/city-chain/releases/download/v1.0.16/City.Chain-1.0.16-linux-x64.tar.gz
+#### Update for each Dot Net release
+declare -r DOTNETBIN=https://download.visualstudio.microsoft.com/download/pr/372f18c3-f642-4b73-8255-40a87430a9bb/dd0b412220dc49868b0ba1c58252b6d0/dotnet-runtime-2.2.1-linux-x64.tar.gz
 declare -r NODE_USER=city
 declare -r CONF=release
 declare -r COINGITHUB=https://github.com/CityChainFoundation/city-chain.git
@@ -17,11 +21,7 @@ declare -r COINRPCPORT=4334
 declare -r COINDAEMON=cityd
 declare -r COINCORE=/home/${NODE_USER}/.citychain/city/CityMain
 declare -r COINCONFIG=city.conf
-<<<<<<< HEAD
 declare -r COINRUNCMD='sudo dotnet ./City.Chain.dll -datadir=/home/${NODE_USER}/.citychain' ## additional commands can be used here e.g. -testnet or -stake=1
-=======
-declare -r COINRUNCMD='sudo dotnet ./City.Chain.dll' ## additional commands can be used here e.g. -testnet or -stake=1
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 declare -r COINSTARTUP=/home/${NODE_USER}/cityd
 declare -r COINSRCLOC=/home/${NODE_USER}/city-chain
 declare -r COINDLOC=/home/${NODE_USER}/citynode   
@@ -31,10 +31,7 @@ declare -r COINSERVICENAME=${COINDAEMON}@${NODE_USER}
 declare -r DATE_STAMP="$(date +%y-%m-%d-%s)"
 declare -r SCRIPT_LOGFILE="/tmp/${NODE_USER}_${DATE_STAMP}_output.log"
 declare -r SWAPSIZE="1024" ## =1GB
-<<<<<<< HEAD
 declare -r OS_VER="Ubuntu*"
-=======
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 
 function check_root() {
 if [ "$(id -u)" != "0" ]; then
@@ -64,7 +61,6 @@ function set_permissions() {
     chmod -R g=u ${COINCORE} ${COINSTARTUP} ${COINDLOC} ${COINSERVICELOC} &>> ${SCRIPT_LOGFILE}
 }
 
-<<<<<<< HEAD
 checkOSVersion() {
    echo
    echo "* Checking OS version..."
@@ -72,15 +68,6 @@ checkOSVersion() {
         echo -e "${GREEN}* You are running `cat /etc/issue.net` . Setup will continue.${NONE}";
     else
         echo -e "${RED}* You are not running ${OS_VER}. You are running `cat /etc/issue.net` ${NONE}";
-=======
-checkForUbuntuVersion() {
-   echo
-   echo "* Checking Ubuntu version..."
-    if [[ `cat /etc/issue.net`  == *16.04* ]]; then
-        echo -e "${GREEN}* You are running `cat /etc/issue.net` . Setup will continue.${NONE}";
-    else
-        echo -e "${RED}* You are not running Ubuntu 16.04.X. You are running `cat /etc/issue.net` ${NONE}";
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
         echo && echo "Installation cancelled" && echo;
         exit;
     fi
@@ -129,17 +116,6 @@ installFail2Ban() {
     echo -e "${NONE}${GREEN}* Done${NONE}";
 }
 
-<<<<<<< HEAD
-=======
-setupTmpRAM() {
-    echo
-    echo -e "* Pushing tmp files to RAM for performance. Please wait..."
-    echo 'tmpfs   /tmp            tmpfs   defaults,noatime,nosuid,nodev,noexec,mode=1777,size=512M          0       0' | tee -a /etc/fstab &>> ${SCRIPT_LOGFILE}
-    echo 'tmpfs   /var/tmp        tmpfs   defaults,noatime,mode=1777,size=2M                      0       0' | tee -a /etc/fstab &>> ${SCRIPT_LOGFILE}
-    echo -e "${NONE}${GREEN}* Done${NONE}";
-}
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
-
 installFirewall() {
     echo
     echo -e "* Installing UFW. Please wait..."
@@ -155,11 +131,12 @@ installDependencies() {
     echo
     echo -e "* Installing dependencies. Please wait..."
     sudo apt-get install git nano wget curl software-properties-common -y &>> ${SCRIPT_LOGFILE}
-    sudo wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb &>> ${SCRIPT_LOGFILE}
-    sudo dpkg -i packages-microsoft-prod.deb &>> ${SCRIPT_LOGFILE}
-    sudo apt-get install apt-transport-https -y &>> ${SCRIPT_LOGFILE}
-    sudo apt-get update -y &>> ${SCRIPT_LOGFILE}
-    sudo apt-get install dotnet-sdk-2.1 -y --allow-unauthenticated &>> ${SCRIPT_LOGFILE}
+    curl -sSL -o dotnet.tar.gz ${DOTNETBIN} &>> ${SCRIPT_LOGFILE}
+    sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet &>> ${SCRIPT_LOGFILE}
+    rm dotnet.tar.gz &>> ${SCRIPT_LOGFILE}
+    export DOTNET_ROOT=$HOME/dotnet 
+    export PATH=$PATH:$HOME/dotnet
+    sudo ln -s /opt/dotnet/dotnet /usr/local/bin &>> ${SCRIPT_LOGFILE}
     echo -e "${NONE}${GREEN}* Done${NONE}";
 }
 
@@ -167,13 +144,10 @@ compileWallet() {
     echo
     echo -e "* Compiling wallet. Please wait, this might take a while to complete..."
     cd /home/${NODE_USER}/
-    git clone ${COINGITHUB} &>> ${SCRIPT_LOGFILE}
-    cd ${COINSRCLOC} 
-    git submodule update --init --recursive &>> ${SCRIPT_LOGFILE}
-    cd ${COINDSRC} 
-    dotnet restore &>> ${SCRIPT_LOGFILE}
-    dotnet publish -c ${CONF} -r linux-x64 -v m -o ${COINDLOC} &>> ${SCRIPT_LOGFILE}	   ### compile & publish code 
-    rm -rf ${COINSRCLOC} &>> ${SCRIPT_LOGFILE} 	   ### Remove source
+    curl -sSL -o coinbin.tar.gz ${COINBIN} &>> ${SCRIPT_LOGFILE}
+    sudo mkdir -p ${COINDLOC}
+    sudo tar zxf coinbin.tar.gz -C ${COINDLOC} &>> ${SCRIPT_LOGFILE}
+    rm coinbin.tar.gz &>> ${SCRIPT_LOGFILE}
     echo -e "${NONE}${GREEN}* Done${NONE}";
 }
 
@@ -240,11 +214,7 @@ displayServiceStatus() {
 	on="${GREEN}ACTIVE${NONE}"
 	off="${RED}OFFLINE${NONE}"
 
-<<<<<<< HEAD
 	if systemctl is-active --quiet ${COINSERVICENAME}; then echo -e "Service: ${on}"; else echo -e "Service: ${off}"; fi
-=======
-	if systemctl is-active --quiet cityd@city; then echo -e "City Chain Service: ${on}"; else echo -e "City Chain Service: ${off}"; fi
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 }
 
 clear
@@ -274,16 +244,9 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
 
     check_root
     create_mn_user
-<<<<<<< HEAD
     checkOSVersion
     updateAndUpgrade
     setupSwap
-=======
-    checkForUbuntuVersion
-    updateAndUpgrade
-    setupSwap
-    setupTmpRAM
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
     installFail2Ban
     installFirewall
     installDependencies
