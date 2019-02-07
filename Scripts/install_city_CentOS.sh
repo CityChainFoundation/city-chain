@@ -14,10 +14,7 @@ declare -r CONF=release
 declare -r COINGITHUB=https://github.com/CityChainFoundation/city-chain.git
 declare -r COINPORT=4333
 declare -r COINRPCPORT=4334
-<<<<<<< HEAD
-=======
 declare -r COINAPIPORT=4335
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 declare -r COINDAEMON=cityd
 declare -r COINCORE=/home/${NODE_USER}/.citychain/city/CityMain
 declare -r COINCONFIG=city.conf
@@ -115,10 +112,7 @@ installFirewall() {
     echo "y" | sudo ufw enable &>> ${SCRIPT_LOGFILE}
     sudo ufw allow $COINPORT/tcp &>> ${SCRIPT_LOGFILE}
     sudo ufw allow $COINRPCPORT/tcp &>> ${SCRIPT_LOGFILE}
-<<<<<<< HEAD
-=======
     sudo ufw allow $COINAPIPORT/tcp &>> ${SCRIPT_LOGFILE}
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
     echo -e "${NONE}${GREEN}* Done${NONE}";
 }
 
@@ -158,11 +152,7 @@ EOL
 
 sudo cat > ${COINSERVICELOC}${COINSERVICENAME}.service << EOL
 [Unit]
-<<<<<<< HEAD
 Description=${COINDAEMON} Service
-=======
-Description=City Chain Service
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 After=network-online.target
 
 [Service]
@@ -224,11 +214,7 @@ displayServiceStatus() {
 	on="${GREEN}ACTIVE${NONE}"
 	off="${RED}OFFLINE${NONE}"
 
-<<<<<<< HEAD
 	if systemctl is-active --quiet ${COINSERVICENAME}; then echo -e "Service: ${on}"; else echo -e "Service: ${off}"; fi
-=======
-	if systemctl is-active --quiet cityd@city; then echo -e "City Chain Service: ${on}"; else echo -e "City Chain Service: ${off}"; fi
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 }
 
 clear
@@ -278,7 +264,7 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
     if [[ "$response" =~ ^([uU])+$ ]]; then
         check_root
         stopWallet
-	updateAndUpgrade
+    	updateAndUpgrade
         compileWallet
         startWallet
         displayServiceStatus        

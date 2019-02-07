@@ -9,26 +9,16 @@ WHITE='\033[01;37m'
 BOLD='\033[1m'
 UNDERLINE='\033[4m'
 
-<<<<<<< HEAD
 declare -r DOTNETBIN=https://download.visualstudio.microsoft.com/download/pr/1de01e2e-aa87-4535-af42-8a8a9b4df215/a2fc245f1c26130a2ec22bbf5d0cb3e6/dotnet-sdk-2.2.103-linux-arm.tar.gz
 declare -r NODE_USER=city
 declare -r CONF=release
-=======
-declare -r NODE_USER=city
-declare -r CONF=release
-declare -r DOTNETBIN=https://download.visualstudio.microsoft.com/download/pr/1de01e2e-aa87-4535-af42-8a8a9b4df215/a2fc245f1c26130a2ec22bbf5d0cb3e6/dotnet-sdk-2.2.103-linux-arm.tar.gz
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 declare -r COINGITHUB=https://github.com/CityChainFoundation/city-chain.git
 declare -r COINPORT=4333
 declare -r COINRPCPORT=4334
 declare -r COINDAEMON=cityd
 declare -r COINCORE=/home/${NODE_USER}/.citychain/city/CityMain
 declare -r COINCONFIG=city.conf
-<<<<<<< HEAD
 declare -r COINRUNCMD="sudo dotnet ./City.Chain.dll -maxblkmem=1 -datadir=/home/${NODE_USER}/.citychain" ## additional commands can be used here e.g. -testnet or -stake=1
-=======
-declare -r COINRUNCMD=sudo dotnet ./City.Chain.dll -datadir=/home/${NODE_USER}/.citychain ## additional commands can be used here e.g. -testnet or -stake=1
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 declare -r COINSTARTUP=/home/${NODE_USER}/cityd
 declare -r COINSRCLOC=/home/${NODE_USER}/city-chain
 declare -r COINDLOC=/home/${NODE_USER}/citynode   
@@ -38,10 +28,7 @@ declare -r COINSERVICENAME=${COINDAEMON}@${NODE_USER}
 declare -r DATE_STAMP="$(date +%y-%m-%d-%s)"
 declare -r SCRIPT_LOGFILE="/tmp/${NODE_USER}_${DATE_STAMP}_output.log"
 declare -r SWAPSIZE="1024" ## =1GB
-<<<<<<< HEAD
 declare -r OS_VER="Raspbian GNU/Linux*"
-=======
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 
 function check_root() {
 if [ "$(id -u)" != "0" ]; then
@@ -71,7 +58,6 @@ function set_permissions() {
     chmod -R g=u ${COINCORE} ${COINSTARTUP} ${COINDLOC} ${COINSERVICELOC} &>> ${SCRIPT_LOGFILE}
 }
 
-<<<<<<< HEAD
 checkOSVersion() {
    echo
    echo "* Checking OS version..."
@@ -79,15 +65,6 @@ checkOSVersion() {
         echo -e "${GREEN}* You are running `cat /etc/issue.net` . Setup will continue.${NONE}";
     else
         echo -e "${RED}* You are not running ${OS_VER}. You are running `cat /etc/issue.net` ${NONE}";
-=======
-checkForVersion() {
-   echo
-   echo "* Checking Ubuntu version..."
-    if [[ `cat /etc/issue.net`  == 'Raspbian GNU/Linux 9' ]]; then
-        echo -e "${GREEN}* You are running `cat /etc/issue.net` . Setup will continue.${NONE}";
-    else
-        echo -e "${RED}* You are not running Raspian Distribution. You are running `cat /etc/issue.net` ${NONE}";
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
         echo && echo "Installation cancelled" && echo;
         exit;
     fi
@@ -245,11 +222,7 @@ displayServiceStatus() {
 	on="${GREEN}ACTIVE${NONE}"
 	off="${RED}OFFLINE${NONE}"
 
-<<<<<<< HEAD
 	if systemctl is-active --quiet ${COINSERVICENAME}; then echo -e "Service: ${on}"; else echo -e "Service: ${off}"; fi
-=======
-	if systemctl is-active --quiet cityd@city; then echo -e "City Chain Service: ${on}"; else echo -e "City Chain Service: ${off}"; fi
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
 }
 
 clear
@@ -281,16 +254,9 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
 
     check_root
     create_mn_user
-<<<<<<< HEAD
     checkOSVersion
     updateAndUpgrade
     #setupSwap ### it's not best practise to use a large swap file on RPI, please do this manually if you find it's necessary https://raspberrypi.stackexchange.com/questions/70/how-to-set-up-swap-space 
-=======
-    checkForVersion
-    updateAndUpgrade
-    #setupSwap ### it's not best practise to use a large swap file on RPI, please do this manually if you find it's necessary https://raspberrypi.stackexchange.com/questions/70/how-to-set-up-swap-space 
-    setupTmpRAM
->>>>>>> 0d55acaaf734dd19725ff32d2238c9d0516de587
     installFail2Ban
     installFirewall
     installDependencies
