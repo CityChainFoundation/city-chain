@@ -223,14 +223,19 @@ displayServiceStatus() {
 clear
 cd
 echo && echo
-echo -e ${RED}
-echo -e "${RED}██████╗ ███████╗██████╗ ███████╗████████╗ ██████╗ ███╗   ██╗███████╗${NONE}"  
-echo -e "${RED}██╔══██╗██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔═══██╗████╗  ██║██╔════╝${NONE}"    
-echo -e "${RED}██████╔╝█████╗  ██║  ██║███████╗   ██║   ██║   ██║██╔██╗ ██║█████╗  ${NONE}"    
-echo -e "${RED}██╔══██╗██╔══╝  ██║  ██║╚════██║   ██║   ██║   ██║██║╚██╗██║██╔══╝  ${NONE}"    
-echo -e "${RED}██║  ██║███████╗██████╔╝███████║   ██║   ╚██████╔╝██║ ╚████║███████╗${NONE}"    
-echo -e "${RED}╚═╝  ╚═╝╚══════╝╚═════╝ ╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚══════╝${NONE}"  
-echo -e ${RED}
+echo -e "${YELLOW}        .d8888b.  d8b 888                   .d8888b.  888               d8b${NONE}"          
+echo -e "${YELLOW}       d88P  Y88b Y8P 888                  d88P  Y88b 888               Y8P${NONE}"         
+echo -e "${YELLOW}       888    888     888                  888    888 888${NONE}"                            
+echo -e "${YELLOW}       888        888 888888 888  888      888        88888b.   8888b.  888 88888b.${NONE}"  
+echo -e "${YELLOW}       888        888 888    888  888      888        888 *88b     \"88b 888 888 \"88b${NONE}" 
+echo -e "${YELLOW}       888    888 888 888    888  888      888    888 888  888 .d888888 888 888  888${NONE}" 
+echo -e "${YELLOW}       Y88b  d88P 888 Y88b.  Y88b 888      Y88b  d88P 888  888 888  888 888 888  888${NONE}" 
+echo -e "${YELLOW}        \"Y8888P\"  888  \"Y888  \"Y88888       \"Y8888P\"  888  888 \"Y888888 888 888  888${NONE}" 
+echo -e "${YELLOW}                                  888${NONE}"                                                
+echo -e "${YELLOW}                             Y8b d88P${NONE}"                                                
+echo -e "${YELLOW}                              \"Y88P\"${NONE}"                                                 
+echo -e ${YELLOW}
+echo -e ${YELLOW}
 echo -e "${PURPLE}**********************************************************************${NONE}"
 #echo -e "${PURPLE}*                                                                    *${NONE}"
 echo -e "${PURPLE}*    ${NONE}This script will install and configure your ${NODE_USER} node.      *${NONE}"
