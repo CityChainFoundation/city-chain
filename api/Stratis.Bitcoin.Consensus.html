@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.Consensus
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -79,10 +79,6 @@
   </h3>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.BlockDownloadedForMissingChainedHeaderException.html">BlockDownloadedForMissingChainedHeaderException</a></h4>
       <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ChainedHeaderTree.html">ChainedHeaderTree</a></h4>
-      <section><p>Tree of chained block headers that are being claimed by the connected peers and the node itself.
-It represents all chains we potentially can sync with.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.CheckpointMismatchException.html">CheckpointMismatchException</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.Checkpoints.html">Checkpoints</a></h4>
@@ -92,7 +88,7 @@ already is a consensus on the network. This allows speeding up IBD, especially o
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConnectHeaderException.html">ConnectHeaderException</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConnectNewHeadersResult.html">ConnectNewHeadersResult</a></h4>
-      <section><p>Represents the result of the <a class="xref" href="Stratis.Bitcoin.Consensus.ChainedHeaderTree.html#Stratis_Bitcoin_Consensus_ChainedHeaderTree_ConnectNewHeaders_System_Int32_List_NBitcoin_BlockHeader__">ConnectNewHeaders(Int32, List&lt;BlockHeader&gt;)</a> method.</p>
+      <section><p>Represents the result of the <span class="xref">Stratis.Bitcoin.Consensus.ChainedHeaderTree.ConnectNewHeaders(System.Int32,List{NBitcoin.BlockHeader})</span> method.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusError.html">ConsensusError</a></h4>
       <section><p>A consensus error that is used to specify different types of reasons a block does not confirm to the consensus rules.</p>
@@ -116,6 +112,10 @@ already is a consensus on the network. This allows speeding up IBD, especially o
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleException.html">ConsensusRuleException</a></h4>
       <section><p>An exception that is contains exception coming from the <a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a> execution.</p>
 </section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.DiConsensusRuleEngine.html">DiConsensusRuleEngine</a></h4>
+      <section><p>Creates a ConsensusRuleEngine with the ability to use injected consensus rules.
+Accepts an <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.IRuleRegistration.html">IRuleRegistration</a> which behaves as a rule factory whose dependencies are also injected by the DI container.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.HeaderInvalidException.html">HeaderInvalidException</a></h4>
       <section><p>This throws when the header of a previously block that failed
 partial or full validation and was marked as invalid is passed to the node.</p>
@@ -124,6 +124,10 @@ partial or full validation and was marked as invalid is passed to the node.</p>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.MaxReorgViolationException.html">MaxReorgViolationException</a></h4>
       <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.RateLimitingBehavior.html">RateLimitingBehavior</a></h4>
+      <section><p>Bans and disconnects peers that sends a <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.GetHeadersPayload.html">GetHeadersPayload</a> request, more than <span class="xref">Stratis.Bitcoin.Consensus.RateLimitingBehavior.GetHeaderRequestCountThreshold</span> times,
+within a certain time frame.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.RewindState.html">RewindState</a></h4>
       <section><p>A class that is used to store transitions of state of consensus underline storage.</p>
 </section>
@@ -135,10 +139,6 @@ It is used when a new block is downloaded or mined.</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Stratis.Bitcoin.Consensus.IChainedHeaderTree.html">IChainedHeaderTree</a></h4>
-      <section><p>Tree of chained block headers that are being claimed by the connected peers and the node itself.
-It represents all chains we potentially can sync with.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.ICheckpoints.html">ICheckpoints</a></h4>
       <section><p>Interface of block header hash checkpoint provider.</p>
 </section>
@@ -151,7 +151,7 @@ It represents all chains we potentially can sync with.</p>
     <h3 id="delegates">Delegates
   </h3>
       <h4><a class="xref" href="Stratis.Bitcoin.Consensus.OnBlockDownloadedCallback.html">OnBlockDownloadedCallback</a></h4>
-      <section><p>A delegate that is used to send callbacks when a block is downloaded from the of queued requests to downloading blocks.</p>
+      <section><p>A delegate that is used to send callbacks when a block is downloaded from the queued requests to downloading blocks.</p>
 </section>
 </article>
           </div>

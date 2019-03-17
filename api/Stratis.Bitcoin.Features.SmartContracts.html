@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.Features.SmartContracts
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -92,6 +92,8 @@
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.SmartContractMempoolValidator.html">SmartContractMempoolValidator</a></h4>
       <section><p>Provides the same functionality as the original mempool validator with some extra validation.</p>
 </section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.SmartContractOptions.html">SmartContractOptions</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.SmartContractScriptAddressReader.html">SmartContractScriptAddressReader</a></h4>
       <section><p>Smart contract specific logic to get the contract address from the <a class="xref" href="Stratis.SmartContracts.CLR.ContractTxData.html">ContractTxData</a>.</p>
 </section>
@@ -104,10 +106,12 @@
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.IBlockBufferGenerator.html">IBlockBufferGenerator</a></h4>
-      <section></section>
+      <section><p>Works out how much room needs to be left at the start of the block as a buffer for protocol transactions.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.ISignedCodePubKeyHolder.html">ISignedCodePubKeyHolder</a></h4>
+      <section><p>Marks a smart contract network that has the requirement that contracts must be signed.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.ISmartContractBlockHeader.html">ISmartContractBlockHeader</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.ISmartContractCoinviewRule.html">ISmartContractCoinviewRule</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.ISmartContractMempoolRule.html">ISmartContractMempoolRule</a></h4>
       <section><p>Smart-contract related rule to be checked before transactions are added to the mempool.</p>

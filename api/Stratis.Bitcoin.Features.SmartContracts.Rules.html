@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.Features.SmartContracts.Rules
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -82,11 +82,17 @@
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.CanGetSenderRule.html">CanGetSenderRule</a></h4>
       <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.ContractTransactionValidationRule.html">ContractTransactionValidationRule</a></h4>
+      <section><p>Checks that smart contract transactions are in a valid format and the data is serialized correctly.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.MempoolOpSpendRule.html">MempoolOpSpendRule</a></h4>
       <section><p>Checks that transactions sent to the mempool don't include the OP_SPEND opcode.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.OpSpendRule.html">OpSpendRule</a></h4>
-      <section><p>If OP_SPEND, check that the transaction before is a contract call</p>
+      <section><p>If a transaction's inputs contain an OP_SPEND opcode in the scriptsig, check that the transaction
+that occurs directly before contains OP_CREATE or OP_CALL in its outputs. In conjunction with
+<a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.MempoolOpSpendRule.html">MempoolOpSpendRule</a>, ensures that only a contract execution transaction is able to
+create OP_SPEND inputs.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.P2PKHNotContractRule.html">P2PKHNotContractRule</a></h4>
       <section><p>Used to check that people don't try and send funds to contracts via P2PKH.</p>
@@ -95,6 +101,11 @@
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.TxOutSmartContractExecRule.html">TxOutSmartContractExecRule</a></h4>
       <section><p>Each transaction should have only 1 'SmartContractExec' output.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.IContractTransactionValidationLogic.html">IContractTransactionValidationLogic</a></h4>
+      <section><p>Holds logic for validating a specific property of smart contract transactions.</p>
 </section>
 </article>
           </div>

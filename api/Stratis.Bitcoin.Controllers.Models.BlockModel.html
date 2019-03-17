@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BlockModel
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -94,7 +94,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel__ctor.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L64">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L71">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel__ctor_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel__ctor" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.#ctor">BlockModel()</h4>
@@ -108,18 +108,18 @@ Used for deserializing from Json</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel__ctor_NBitcoin_Block_NBitcoin_ChainBase_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.%23ctor(NBitcoin.Block%2CNBitcoin.ChainBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel__ctor_NBitcoin_Block_NBitcoin_ChainedHeader_NBitcoin_ChainedHeader_NBitcoin_Network_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.%23ctor(NBitcoin.Block%2CNBitcoin.ChainedHeader%2CNBitcoin.ChainedHeader%2CNBitcoin.Network%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L45">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L73">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel__ctor_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel__ctor_NBitcoin_Block_NBitcoin_ChainBase_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.#ctor(NBitcoin.Block,NBitcoin.ChainBase)">BlockModel(Block, ChainBase)</h4>
+  <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel__ctor_NBitcoin_Block_NBitcoin_ChainedHeader_NBitcoin_ChainedHeader_NBitcoin_Network_System_Int32_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.#ctor(NBitcoin.Block,NBitcoin.ChainedHeader,NBitcoin.ChainedHeader,NBitcoin.Network,System.Int32)">BlockModel(Block, ChainedHeader, ChainedHeader, Network, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlockModel(Block block, ChainBase chain)</code></pre>
+    <pre><code class="lang-csharp hljs">public BlockModel(Block block, ChainedHeader chainedHeader, ChainedHeader tip, Network network, int verbosity = 1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,8 +137,23 @@ Used for deserializing from Json</p>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="NBitcoin.ChainBase.html">ChainBase</a></td>
-        <td><span class="parametername">chain</span></td>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainedHeader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">tip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">verbosity</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -150,7 +165,7 @@ Used for deserializing from Json</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Bits.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Bits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L20">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L49">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Bits_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Bits*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Bits" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Bits">Bits</h4>
@@ -177,10 +192,70 @@ Used for deserializing from Json</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_ChainWork.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.ChainWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L55">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_ChainWork_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.ChainWork*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_ChainWork" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.ChainWork">ChainWork</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ChainWork { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Confirmations.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Confirmations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L14">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Confirmations_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Confirmations*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Confirmations" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Confirmations">Confirmations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Confirmations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Difficulty.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Difficulty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L30">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L52">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Difficulty_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Difficulty*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Difficulty" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Difficulty">Difficulty</h4>
@@ -240,7 +315,7 @@ Used for deserializing from Json</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Height.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L42">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L23">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Height_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Height*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Height" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Height">Height</h4>
@@ -267,10 +342,40 @@ Used for deserializing from Json</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_MedianTime.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.MedianTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L42">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_MedianTime_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.MedianTime*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_MedianTime" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.MedianTime">MedianTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset MedianTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_MerkleRoot.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.MerkleRoot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L33">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L32">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_MerkleRoot_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.MerkleRoot*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_MerkleRoot" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.MerkleRoot">MerkleRoot</h4>
@@ -297,10 +402,40 @@ Used for deserializing from Json</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_NextBlockHash.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.NextBlockHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L64">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_NextBlockHash_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.NextBlockHash*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_NextBlockHash" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.NextBlockHash">NextBlockHash</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NextBlockHash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Nonce.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Nonce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L39">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L46">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Nonce_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Nonce*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Nonce" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Nonce">Nonce</h4>
@@ -327,10 +462,40 @@ Used for deserializing from Json</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_NumberOfTransactions.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.NumberOfTransactions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L58">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_NumberOfTransactions_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.NumberOfTransactions*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_NumberOfTransactions" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.NumberOfTransactions">NumberOfTransactions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumberOfTransactions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_PreviousBlockHash.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.PreviousBlockHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L36">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L61">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_PreviousBlockHash_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.PreviousBlockHash*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_PreviousBlockHash" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.PreviousBlockHash">PreviousBlockHash</h4>
@@ -360,7 +525,7 @@ Used for deserializing from Json</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Size.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L14">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L17">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Size_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Size*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Size" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Size">Size</h4>
@@ -390,7 +555,7 @@ Used for deserializing from Json</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Time.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Time%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L23">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L38">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Time_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Time*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Time" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Time">Time</h4>
@@ -420,7 +585,7 @@ Used for deserializing from Json</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Transactions.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Transactions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L27">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L35">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Transactions_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Transactions*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Transactions" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Transactions">Transactions</h4>
@@ -428,7 +593,7 @@ Used for deserializing from Json</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string[] Transactions { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public object[] Transactions { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -440,7 +605,7 @@ Used for deserializing from Json</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="xref">System.Object</span>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -450,7 +615,7 @@ Used for deserializing from Json</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Version.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L26">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Version_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Version*"></a>
   <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Version" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Version">Version</h4>
@@ -471,6 +636,66 @@ Used for deserializing from Json</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_VersionHex.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.VersionHex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L29">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_VersionHex_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.VersionHex*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_VersionHex" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.VersionHex">VersionHex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string VersionHex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Controllers_Models_BlockModel_Weight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Controllers.Models.BlockModel.Weight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Controllers/Models/BlockModel.cs/#L20">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Controllers_Models_BlockModel_Weight_" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Weight*"></a>
+  <h4 id="Stratis_Bitcoin_Controllers_Models_BlockModel_Weight" data-uid="Stratis.Bitcoin.Controllers.Models.BlockModel.Weight">Weight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Weight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Network
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -80,12 +80,12 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Network</span></div>
       <div class="level2"><a class="xref" href="City.Networks.CityMain.html">CityMain</a></div>
-      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Networks.SmartContractPosRegTest.html">SmartContractPosRegTest</a></div>
-      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Networks.SmartContractPosTest.html">SmartContractPosTest</a></div>
-      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Networks.SmartContractsRegTest.html">SmartContractsRegTest</a></div>
-      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Networks.SmartContractsTest.html">SmartContractsTest</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Networks.BitcoinMain.html">BitcoinMain</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Networks.StratisMain.html">StratisMain</a></div>
+      <div class="level2"><a class="xref" href="Stratis.SmartContracts.Networks.SmartContractPosRegTest.html">SmartContractPosRegTest</a></div>
+      <div class="level2"><a class="xref" href="Stratis.SmartContracts.Networks.SmartContractPosTest.html">SmartContractPosTest</a></div>
+      <div class="level2"><a class="xref" href="Stratis.SmartContracts.Networks.SmartContractsRegTest.html">SmartContractsRegTest</a></div>
+      <div class="level2"><a class="xref" href="Stratis.SmartContracts.Networks.SmartContractsTest.html">SmartContractsTest</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="NBitcoin.html">NBitcoin</a></h6>
   <h6><strong>Assembly</strong>: NBitcoin.dll</h6>
@@ -566,7 +566,7 @@ The node considers all transactions and blocks up to these checkpoints as valid 
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GenesisHash.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GenesisHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L634">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L642">View Source</a>
   </span>
   <a id="NBitcoin_Network_GenesisHash_" data-uid="NBitcoin.Network.GenesisHash*"></a>
   <h4 id="NBitcoin_Network_GenesisHash" data-uid="NBitcoin.Network.GenesisHash">GenesisHash</h4>
@@ -1044,6 +1044,40 @@ which will lead to transactions filling the mempool without ever being mined.</p
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_StandardScriptsRegistry.md&amp;value=---%0Auid%3A%20NBitcoin.Network.StandardScriptsRegistry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L245">View Source</a>
+  </span>
+  <a id="NBitcoin_Network_StandardScriptsRegistry_" data-uid="NBitcoin.Network.StandardScriptsRegistry*"></a>
+  <h4 id="NBitcoin_Network_StandardScriptsRegistry" data-uid="NBitcoin.Network.StandardScriptsRegistry">StandardScriptsRegistry</h4>
+  <div class="markdown level1 summary"><p>The list of script templates regarded as standard.
+Standardness is a distinct property from consensus validity.
+A non-standard transaction can still be mined/staked by a willing node and the resulting block will be accepted by the network.
+However, a non-standard transaction will typically not be relayed between nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStandardScriptsRegistry StandardScriptsRegistry { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.IStandardScriptsRegistry.html">IStandardScriptsRegistry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -1051,7 +1085,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Assert_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Assert(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L341">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L349">View Source</a>
   </span>
   <a id="NBitcoin_Network_Assert_" data-uid="NBitcoin.Network.Assert*"></a>
   <h4 id="NBitcoin_Network_Assert_System_Boolean_" data-uid="NBitcoin.Network.Assert(System.Boolean)">Assert(Boolean)</h4>
@@ -1083,7 +1117,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_ConvertToNetworkAddresses_System_String___System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.ConvertToNetworkAddresses(System.String%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L720">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L728">View Source</a>
   </span>
   <a id="NBitcoin_Network_ConvertToNetworkAddresses_" data-uid="NBitcoin.Network.ConvertToNetworkAddresses*"></a>
   <h4 id="NBitcoin_Network_ConvertToNetworkAddresses_System_String___System_Int32_" data-uid="NBitcoin.Network.ConvertToNetworkAddresses(System.String[],System.Int32)">ConvertToNetworkAddresses(String[], Int32)</h4>
@@ -1135,7 +1169,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateAssetId_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateAssetId(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L559">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L567">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateAssetId_" data-uid="NBitcoin.Network.CreateAssetId*"></a>
   <h4 id="NBitcoin_Network_CreateAssetId_System_String_" data-uid="NBitcoin.Network.CreateAssetId(System.String)">CreateAssetId(String)</h4>
@@ -1182,7 +1216,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L361">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L369">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinAddress_" data-uid="NBitcoin.Network.CreateBitcoinAddress*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinAddress_System_String_" data-uid="NBitcoin.Network.CreateBitcoinAddress(System.String)">CreateBitcoinAddress(String)</h4>
@@ -1232,7 +1266,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinExtKey_NBitcoin_ExtKey_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinExtKey(NBitcoin.ExtKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L594">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L602">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinExtKey_" data-uid="NBitcoin.Network.CreateBitcoinExtKey*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinExtKey_NBitcoin_ExtKey_" data-uid="NBitcoin.Network.CreateBitcoinExtKey(NBitcoin.ExtKey)">CreateBitcoinExtKey(ExtKey)</h4>
@@ -1279,7 +1313,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinExtKey_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinExtKey(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L604">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L612">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinExtKey_" data-uid="NBitcoin.Network.CreateBitcoinExtKey*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinExtKey_System_String_" data-uid="NBitcoin.Network.CreateBitcoinExtKey(System.String)">CreateBitcoinExtKey(String)</h4>
@@ -1326,7 +1360,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinExtPubKey_NBitcoin_ExtPubKey_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinExtPubKey(NBitcoin.ExtPubKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L599">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L607">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinExtPubKey_" data-uid="NBitcoin.Network.CreateBitcoinExtPubKey*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinExtPubKey_NBitcoin_ExtPubKey_" data-uid="NBitcoin.Network.CreateBitcoinExtPubKey(NBitcoin.ExtPubKey)">CreateBitcoinExtPubKey(ExtPubKey)</h4>
@@ -1373,7 +1407,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinPubKeyAddress_NBitcoin_KeyId_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinPubKeyAddress(NBitcoin.KeyId)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L614">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L622">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinPubKeyAddress_" data-uid="NBitcoin.Network.CreateBitcoinPubKeyAddress*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinPubKeyAddress_NBitcoin_KeyId_" data-uid="NBitcoin.Network.CreateBitcoinPubKeyAddress(NBitcoin.KeyId)">CreateBitcoinPubKeyAddress(KeyId)</h4>
@@ -1420,7 +1454,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinPubKeyAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinPubKeyAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L619">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L627">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinPubKeyAddress_" data-uid="NBitcoin.Network.CreateBitcoinPubKeyAddress*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinPubKeyAddress_System_String_" data-uid="NBitcoin.Network.CreateBitcoinPubKeyAddress(System.String)">CreateBitcoinPubKeyAddress(String)</h4>
@@ -1467,7 +1501,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinScriptAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinScriptAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L549">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L557">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinScriptAddress_" data-uid="NBitcoin.Network.CreateBitcoinScriptAddress*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinScriptAddress_System_String_" data-uid="NBitcoin.Network.CreateBitcoinScriptAddress(System.String)">CreateBitcoinScriptAddress(String)</h4>
@@ -1514,7 +1548,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinSecret_NBitcoin_Key_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinSecret(NBitcoin.Key)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L609">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L617">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinSecret_" data-uid="NBitcoin.Network.CreateBitcoinSecret*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinSecret_NBitcoin_Key_" data-uid="NBitcoin.Network.CreateBitcoinSecret(NBitcoin.Key)">CreateBitcoinSecret(Key)</h4>
@@ -1561,7 +1595,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBitcoinSecret_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBitcoinSecret(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L350">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L358">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBitcoinSecret_" data-uid="NBitcoin.Network.CreateBitcoinSecret*"></a>
   <h4 id="NBitcoin_Network_CreateBitcoinSecret_System_String_" data-uid="NBitcoin.Network.CreateBitcoinSecret(System.String)">CreateBitcoinSecret(String)</h4>
@@ -1608,7 +1642,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateBlock.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L738">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L746">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateBlock_" data-uid="NBitcoin.Network.CreateBlock*"></a>
   <h4 id="NBitcoin_Network_CreateBlock" data-uid="NBitcoin.Network.CreateBlock">CreateBlock()</h4>
@@ -1638,7 +1672,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateStealthAddress_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateStealthAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L564">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L572">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateStealthAddress_" data-uid="NBitcoin.Network.CreateStealthAddress*"></a>
   <h4 id="NBitcoin_Network_CreateStealthAddress_System_String_" data-uid="NBitcoin.Network.CreateStealthAddress(System.String)">CreateStealthAddress(String)</h4>
@@ -1685,7 +1719,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateTransaction.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L743">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L751">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateTransaction_" data-uid="NBitcoin.Network.CreateTransaction*"></a>
   <h4 id="NBitcoin_Network_CreateTransaction" data-uid="NBitcoin.Network.CreateTransaction">CreateTransaction()</h4>
@@ -1715,7 +1749,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateTransaction_System_Byte___.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateTransaction(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L753">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L761">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateTransaction_" data-uid="NBitcoin.Network.CreateTransaction*"></a>
   <h4 id="NBitcoin_Network_CreateTransaction_System_Byte___" data-uid="NBitcoin.Network.CreateTransaction(System.Byte[])">CreateTransaction(Byte[])</h4>
@@ -1762,7 +1796,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_CreateTransaction_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.CreateTransaction(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L748">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L756">View Source</a>
   </span>
   <a id="NBitcoin_Network_CreateTransaction_" data-uid="NBitcoin.Network.CreateTransaction*"></a>
   <h4 id="NBitcoin_Network_CreateTransaction_System_String_" data-uid="NBitcoin.Network.CreateTransaction(System.String)">CreateTransaction(String)</h4>
@@ -1809,7 +1843,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GetBase58Type_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetBase58Type(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L373">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L381">View Source</a>
   </span>
   <a id="NBitcoin_Network_GetBase58Type_" data-uid="NBitcoin.Network.GetBase58Type*"></a>
   <h4 id="NBitcoin_Network_GetBase58Type_System_String_" data-uid="NBitcoin.Network.GetBase58Type(System.String)">GetBase58Type(String)</h4>
@@ -1856,7 +1890,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GetBech32Encoder_NBitcoin_Bech32Type_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetBech32Encoder(NBitcoin.Bech32Type%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L676">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L684">View Source</a>
   </span>
   <a id="NBitcoin_Network_GetBech32Encoder_" data-uid="NBitcoin.Network.GetBech32Encoder*"></a>
   <h4 id="NBitcoin_Network_GetBech32Encoder_NBitcoin_Bech32Type_System_Boolean_" data-uid="NBitcoin.Network.GetBech32Encoder(NBitcoin.Bech32Type,System.Boolean)">GetBech32Encoder(Bech32Type, Boolean)</h4>
@@ -1908,7 +1942,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GetGenesis.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetGenesis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L629">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L637">View Source</a>
   </span>
   <a id="NBitcoin_Network_GetGenesis_" data-uid="NBitcoin.Network.GetGenesis*"></a>
   <h4 id="NBitcoin_Network_GetGenesis" data-uid="NBitcoin.Network.GetGenesis">GetGenesis()</h4>
@@ -1938,7 +1972,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GetReward_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetReward(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L636">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L644">View Source</a>
   </span>
   <a id="NBitcoin_Network_GetReward_" data-uid="NBitcoin.Network.GetReward*"></a>
   <h4 id="NBitcoin_Network_GetReward_System_Int32_" data-uid="NBitcoin.Network.GetReward(System.Int32)">GetReward(Int32)</h4>
@@ -1985,7 +2019,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_GetVersionBytes_NBitcoin_Base58Type_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.GetVersionBytes(NBitcoin.Base58Type%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L688">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L696">View Source</a>
   </span>
   <a id="NBitcoin_Network_GetVersionBytes_" data-uid="NBitcoin.Network.GetVersionBytes*"></a>
   <h4 id="NBitcoin_Network_GetVersionBytes_NBitcoin_Base58Type_System_Boolean_" data-uid="NBitcoin.Network.GetVersionBytes(NBitcoin.Base58Type,System.Boolean)">GetVersionBytes(Base58Type, Boolean)</h4>
@@ -2037,7 +2071,7 @@ which will lead to transactions filling the mempool without ever being mined.</p
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_MineGenesisBlock_NBitcoin_ConsensusFactory_System_String_NBitcoin_Target_NBitcoin_Money_System_Int32_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.MineGenesisBlock(NBitcoin.ConsensusFactory%2CSystem.String%2CNBitcoin.Target%2CNBitcoin.Money%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L280">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L288">View Source</a>
   </span>
   <a id="NBitcoin_Network_MineGenesisBlock_" data-uid="NBitcoin.Network.MineGenesisBlock*"></a>
   <h4 id="NBitcoin_Network_MineGenesisBlock_NBitcoin_ConsensusFactory_System_String_NBitcoin_Target_NBitcoin_Money_System_Int32_" data-uid="NBitcoin.Network.MineGenesisBlock(NBitcoin.ConsensusFactory,System.String,NBitcoin.Target,NBitcoin.Money,System.Int32)">MineGenesisBlock(ConsensusFactory, String, Target, Money, Int32)</h4>
@@ -2131,7 +2165,7 @@ Console.WriteLine(&quot;merkleroot: &quot; + header.HashMerkleRoot);</code></pre
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L389">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L397">View Source</a>
   </span>
   <a id="NBitcoin_Network_Parse_" data-uid="NBitcoin.Network.Parse*"></a>
   <h4 id="NBitcoin_Network_Parse_System_String_" data-uid="NBitcoin.Network.Parse(System.String)">Parse(String)</h4>
@@ -2178,7 +2212,7 @@ Console.WriteLine(&quot;merkleroot: &quot; + header.HashMerkleRoot);</code></pre
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse_System_String_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse(System.String%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L399">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L407">View Source</a>
   </span>
   <a id="NBitcoin_Network_Parse_" data-uid="NBitcoin.Network.Parse*"></a>
   <h4 id="NBitcoin_Network_Parse_System_String_NBitcoin_Network_" data-uid="NBitcoin.Network.Parse(System.String,NBitcoin.Network)">Parse(String, Network)</h4>
@@ -2230,7 +2264,7 @@ Console.WriteLine(&quot;merkleroot: &quot; + header.HashMerkleRoot);</code></pre
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse__1_System_String_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L394">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L402">View Source</a>
   </span>
   <a id="NBitcoin_Network_Parse_" data-uid="NBitcoin.Network.Parse*"></a>
   <h4 id="NBitcoin_Network_Parse__1_System_String_" data-uid="NBitcoin.Network.Parse``1(System.String)">Parse&lt;T&gt;(String)</h4>
@@ -2293,7 +2327,7 @@ Console.WriteLine(&quot;merkleroot: &quot; + header.HashMerkleRoot);</code></pre
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_Parse__1_System_String_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.Parse%60%601(System.String%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L404">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L412">View Source</a>
   </span>
   <a id="NBitcoin_Network_Parse_" data-uid="NBitcoin.Network.Parse*"></a>
   <h4 id="NBitcoin_Network_Parse__1_System_String_NBitcoin_Network_" data-uid="NBitcoin.Network.Parse``1(System.String,NBitcoin.Network)">Parse&lt;T&gt;(String, Network)</h4>
@@ -2361,7 +2395,7 @@ Console.WriteLine(&quot;merkleroot: &quot; + header.HashMerkleRoot);</code></pre
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_ReadMagic_Stream_CancellationToken_System_Boolean_.md&amp;value=---%0Auid%3A%20NBitcoin.Network.ReadMagic(Stream%2CCancellationToken%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L651">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L659">View Source</a>
   </span>
   <a id="NBitcoin_Network_ReadMagic_" data-uid="NBitcoin.Network.ReadMagic*"></a>
   <h4 id="NBitcoin_Network_ReadMagic_Stream_CancellationToken_System_Boolean_" data-uid="NBitcoin.Network.ReadMagic(Stream,CancellationToken,System.Boolean)">ReadMagic(Stream, CancellationToken, Boolean)</h4>
@@ -2418,7 +2452,7 @@ Console.WriteLine(&quot;merkleroot: &quot; + header.HashMerkleRoot);</code></pre
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=NBitcoin_Network_ToString.md&amp;value=---%0Auid%3A%20NBitcoin.Network.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L624">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/NBitcoin/Network.cs/#L632">View Source</a>
   </span>
   <a id="NBitcoin_Network_ToString_" data-uid="NBitcoin.Network.ToString*"></a>
   <h4 id="NBitcoin_Network_ToString" data-uid="NBitcoin.Network.ToString">ToString()</h4>

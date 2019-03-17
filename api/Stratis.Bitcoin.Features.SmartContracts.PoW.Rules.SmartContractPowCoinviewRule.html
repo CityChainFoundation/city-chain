@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SmartContractPowCoinviewRule
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -124,9 +124,6 @@
       <a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.html#Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ExecuteContractTransaction_RuleContext_Transaction_">SmartContractCoinviewRule.ExecuteContractTransaction(RuleContext, Transaction)</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.html#Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_IsProtocolTransaction_Transaction_">SmartContractCoinviewRule.IsProtocolTransaction(Transaction)</a>
-    </div>
-    <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_ConsensusOptions">CoinViewRule.ConsensusOptions</a>
     </div>
     <div>
@@ -142,9 +139,6 @@
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_UpdateUTXOSet_Stratis_Bitcoin_Consensus_Rules_RuleContext_NBitcoin_Transaction_">CoinViewRule.UpdateUTXOSet(RuleContext, Transaction)</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_IsProtocolTransaction_NBitcoin_Transaction_">CoinViewRule.IsProtocolTransaction(Transaction)</a>
-    </div>
-    <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_UpdateCoinView_Stratis_Bitcoin_Consensus_Rules_RuleContext_NBitcoin_Transaction_">CoinViewRule.UpdateCoinView(RuleContext, Transaction)</a>
     </div>
     <div>
@@ -157,13 +151,13 @@
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_CheckMaturity_Stratis_Bitcoin_Utilities_UnspentOutputs_System_Int32_">CoinViewRule.CheckMaturity(UnspentOutputs, Int32)</a>
     </div>
     <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_CheckInputValidity_NBitcoin_Transaction_Stratis_Bitcoin_Utilities_UnspentOutputs_">CoinViewRule.CheckInputValidity(Transaction, UnspentOutputs)</a>
+    </div>
+    <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_CheckInputs_NBitcoin_Transaction_Stratis_Bitcoin_Features_Consensus_UnspentOutputSet_System_Int32_">CoinViewRule.CheckInputs(Transaction, UnspentOutputSet, Int32)</a>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_GetTransactionSignatureOperationCost_NBitcoin_Transaction_Stratis_Bitcoin_Features_Consensus_UnspentOutputSet_Stratis_Bitcoin_Base_Deployments_DeploymentFlags_">CoinViewRule.GetTransactionSignatureOperationCost(Transaction, UnspentOutputSet, DeploymentFlags)</a>
-    </div>
-    <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_GetBlockWeight_NBitcoin_Block_">CoinViewRule.GetBlockWeight(Block)</a>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_IsPremine_System_Int32_">CoinViewRule.IsPremine(Int32)</a>
@@ -175,6 +169,70 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class SmartContractPowCoinviewRule : SmartContractCoinviewRule</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoW_Rules_SmartContractPowCoinviewRule__ctor_Network_Stratis_SmartContracts_Core_State_IStateRepositoryRoot_Stratis_SmartContracts_Core_IContractExecutorFactory_Stratis_SmartContracts_CLR_ICallDataSerializer_Stratis_SmartContracts_Core_Util_ISenderRetriever_Stratis_SmartContracts_Core_Receipts_IReceiptRepository_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoW.Rules.SmartContractPowCoinviewRule.%23ctor(Network%2CStratis.SmartContracts.Core.State.IStateRepositoryRoot%2CStratis.SmartContracts.Core.IContractExecutorFactory%2CStratis.SmartContracts.CLR.ICallDataSerializer%2CStratis.SmartContracts.Core.Util.ISenderRetriever%2CStratis.SmartContracts.Core.Receipts.IReceiptRepository%2CStratis.Bitcoin.Features.Consensus.CoinViews.ICoinView)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoW/Rules/SmartContractPowCoinviewRule.cs/#L15">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_SmartContracts_PoW_Rules_SmartContractPowCoinviewRule__ctor_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoW.Rules.SmartContractPowCoinviewRule.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoW_Rules_SmartContractPowCoinviewRule__ctor_Network_Stratis_SmartContracts_Core_State_IStateRepositoryRoot_Stratis_SmartContracts_Core_IContractExecutorFactory_Stratis_SmartContracts_CLR_ICallDataSerializer_Stratis_SmartContracts_Core_Util_ISenderRetriever_Stratis_SmartContracts_Core_Receipts_IReceiptRepository_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoW.Rules.SmartContractPowCoinviewRule.#ctor(Network,Stratis.SmartContracts.Core.State.IStateRepositoryRoot,Stratis.SmartContracts.Core.IContractExecutorFactory,Stratis.SmartContracts.CLR.ICallDataSerializer,Stratis.SmartContracts.Core.Util.ISenderRetriever,Stratis.SmartContracts.Core.Receipts.IReceiptRepository,Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView)">SmartContractPowCoinviewRule(Network, IStateRepositoryRoot, IContractExecutorFactory, ICallDataSerializer, ISenderRetriever, IReceiptRepository, ICoinView)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SmartContractPowCoinviewRule(Network network, IStateRepositoryRoot stateRepositoryRoot, IContractExecutorFactory executorFactory, ICallDataSerializer callDataSerializer, ISenderRetriever senderRetriever, IReceiptRepository receiptRepository, ICoinView coinView)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Network</span></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepositoryRoot.html">IStateRepositoryRoot</a></td>
+        <td><span class="parametername">stateRepositoryRoot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.IContractExecutorFactory.html">IContractExecutorFactory</a></td>
+        <td><span class="parametername">executorFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.ICallDataSerializer.html">ICallDataSerializer</a></td>
+        <td><span class="parametername">callDataSerializer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.Util.ISenderRetriever.html">ISenderRetriever</a></td>
+        <td><span class="parametername">senderRetriever</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.Receipts.IReceiptRepository.html">IReceiptRepository</a></td>
+        <td><span class="parametername">receiptRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a></td>
+        <td><span class="parametername">coinView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -186,7 +244,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoW_Rules_SmartContractPowCoinviewRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoW.Rules.SmartContractPowCoinviewRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoW/Rules/SmartContractPowCoinviewRule.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoW/Rules/SmartContractPowCoinviewRule.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

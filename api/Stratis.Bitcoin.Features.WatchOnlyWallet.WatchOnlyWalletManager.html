@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WatchOnlyWalletManager
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -97,18 +97,18 @@ In this implementation, the wallet is saved to the file system.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.%23ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CNBitcoin.Network%2CStratis.Bitcoin.Configuration.DataFolder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Signals_ISignals_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.%23ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CNBitcoin.Network%2CStratis.Bitcoin.Configuration.DataFolder%2CStratis.Bitcoin.Signals.ISignals)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L46">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L50">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager__ctor_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.#ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,NBitcoin.Network,Stratis.Bitcoin.Configuration.DataFolder)">WatchOnlyWalletManager(IDateTimeProvider, ILoggerFactory, Network, DataFolder)</h4>
+  <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Signals_ISignals_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.#ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,NBitcoin.Network,Stratis.Bitcoin.Configuration.DataFolder,Stratis.Bitcoin.Signals.ISignals)">WatchOnlyWalletManager(IDateTimeProvider, ILoggerFactory, Network, DataFolder, ISignals)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WatchOnlyWalletManager(IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, Network network, DataFolder dataFolder)</code></pre>
+    <pre><code class="lang-csharp hljs">public WatchOnlyWalletManager(IDateTimeProvider dateTimeProvider, ILoggerFactory loggerFactory, Network network, DataFolder dataFolder, ISignals signals)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -140,6 +140,11 @@ In this implementation, the wallet is saved to the file system.</p>
         <td><span class="parametername">dataFolder</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Signals.ISignals.html">ISignals</a></td>
+        <td><span class="parametername">signals</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
@@ -149,7 +154,7 @@ In this implementation, the wallet is saved to the file system.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_Wallet.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.Wallet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L24">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L26">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_Wallet_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.Wallet*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_Wallet" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.Wallet">Wallet</h4>
@@ -182,7 +187,7 @@ In this implementation, the wallet is saved to the file system.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L56">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L61">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_Dispose_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_Dispose" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.Dispose">Dispose()</h4>
@@ -197,7 +202,7 @@ In this implementation, the wallet is saved to the file system.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_GetRelativeBalance_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.GetRelativeBalance(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L348">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L369">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_GetRelativeBalance_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.GetRelativeBalance*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_GetRelativeBalance_System_String_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.GetRelativeBalance(System.String)">GetRelativeBalance(String)</h4>
@@ -250,7 +255,7 @@ address first started being watched.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_GetWatchOnlyWallet.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.GetWatchOnlyWallet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L311">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L332">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_GetWatchOnlyWallet_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.GetWatchOnlyWallet*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_GetWatchOnlyWallet" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.GetWatchOnlyWallet">GetWatchOnlyWallet()</h4>
@@ -282,7 +287,7 @@ address first started being watched.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L62">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L70">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_Initialize_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.Initialize*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_Initialize" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.Initialize">Initialize()</h4>
@@ -298,7 +303,7 @@ address first started being watched.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_LoadWatchOnlyWallet.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.LoadWatchOnlyWallet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L289">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L310">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_LoadWatchOnlyWallet_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.LoadWatchOnlyWallet*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_LoadWatchOnlyWallet" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.LoadWatchOnlyWallet">LoadWatchOnlyWallet()</h4>
@@ -330,7 +335,7 @@ address first started being watched.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_ProcessBlock_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.ProcessBlock(NBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L113">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L134">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_ProcessBlock_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.ProcessBlock*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_ProcessBlock_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.ProcessBlock(NBitcoin.Block)">ProcessBlock(Block)</h4>
@@ -364,7 +369,7 @@ address first started being watched.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_ProcessTransaction_NBitcoin_Transaction_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.ProcessTransaction(NBitcoin.Transaction%2CNBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L124">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L145">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_ProcessTransaction_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.ProcessTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_ProcessTransaction_NBitcoin_Transaction_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.ProcessTransaction(NBitcoin.Transaction,NBitcoin.Block)">ProcessTransaction(Transaction, Block)</h4>
@@ -404,7 +409,7 @@ address first started being watched.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_SaveWatchOnlyWallet.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.SaveWatchOnlyWallet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L283">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L304">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_SaveWatchOnlyWallet_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.SaveWatchOnlyWallet*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_SaveWatchOnlyWallet" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.SaveWatchOnlyWallet">SaveWatchOnlyWallet()</h4>
@@ -420,7 +425,7 @@ address first started being watched.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_StoreTransaction_Stratis_Bitcoin_Features_WatchOnlyWallet_TransactionData_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.StoreTransaction(Stratis.Bitcoin.Features.WatchOnlyWallet.TransactionData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L92">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L113">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_StoreTransaction_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.StoreTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_StoreTransaction_Stratis_Bitcoin_Features_WatchOnlyWallet_TransactionData_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.StoreTransaction(Stratis.Bitcoin.Features.WatchOnlyWallet.TransactionData)">StoreTransaction(TransactionData)</h4>
@@ -454,7 +459,7 @@ address first started being watched.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_WatchAddress_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.WatchAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L71">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L92">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_WatchAddress_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.WatchAddress*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_WatchAddress_System_String_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.WatchAddress(System.String)">WatchAddress(String)</h4>
@@ -488,7 +493,7 @@ address first started being watched.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_WatchScriptPubKey_NBitcoin_Script_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.WatchScriptPubKey(NBitcoin.Script)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L322">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L343">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_WatchScriptPubKey_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.WatchScriptPubKey*"></a>
   <h4 id="Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager_WatchScriptPubKey_NBitcoin_Script_" data-uid="Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.WatchScriptPubKey(NBitcoin.Script)">WatchScriptPubKey(Script)</h4>
@@ -540,7 +545,7 @@ Regardless, we need to consolidate them.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_WatchOnlyWallet_WatchOnlyWalletManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.WatchOnlyWallet/WatchOnlyWalletManager.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

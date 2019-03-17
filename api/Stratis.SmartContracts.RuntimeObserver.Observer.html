@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Observer
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -92,18 +92,18 @@ Currently tracking gas and some unit of memory.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_RuntimeObserver_Observer__ctor_Stratis_SmartContracts_IGasMeter_System_Int64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.RuntimeObserver.Observer.%23ctor(Stratis.SmartContracts.IGasMeter%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_RuntimeObserver_Observer__ctor_Stratis_SmartContracts_RuntimeObserver_IGasMeter_Stratis_SmartContracts_RuntimeObserver_IMemoryMeter_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.RuntimeObserver.Observer.%23ctor(Stratis.SmartContracts.RuntimeObserver.IGasMeter%2CStratis.SmartContracts.RuntimeObserver.IMemoryMeter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L27">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L13">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_RuntimeObserver_Observer__ctor_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.#ctor*"></a>
-  <h4 id="Stratis_SmartContracts_RuntimeObserver_Observer__ctor_Stratis_SmartContracts_IGasMeter_System_Int64_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.#ctor(Stratis.SmartContracts.IGasMeter,System.Int64)">Observer(IGasMeter, Int64)</h4>
+  <h4 id="Stratis_SmartContracts_RuntimeObserver_Observer__ctor_Stratis_SmartContracts_RuntimeObserver_IGasMeter_Stratis_SmartContracts_RuntimeObserver_IMemoryMeter_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.#ctor(Stratis.SmartContracts.RuntimeObserver.IGasMeter,Stratis.SmartContracts.RuntimeObserver.IMemoryMeter)">Observer(IGasMeter, IMemoryMeter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Observer(IGasMeter gasMeter, long memoryLimit)</code></pre>
+    <pre><code class="lang-csharp hljs">public Observer(IGasMeter gasMeter, IMemoryMeter memoryMeter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -116,13 +116,13 @@ Currently tracking gas and some unit of memory.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.IGasMeter.html">IGasMeter</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.RuntimeObserver.IGasMeter.html">IGasMeter</a></td>
         <td><span class="parametername">gasMeter</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">memoryLimit</span></td>
+        <td><a class="xref" href="Stratis.SmartContracts.RuntimeObserver.IMemoryMeter.html">IMemoryMeter</a></td>
+        <td><span class="parametername">memoryMeter</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -134,7 +134,7 @@ Currently tracking gas and some unit of memory.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_RuntimeObserver_Observer_GasMeter.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.RuntimeObserver.Observer.GasMeter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L23">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L11">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_RuntimeObserver_Observer_GasMeter_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.GasMeter*"></a>
   <h4 id="Stratis_SmartContracts_RuntimeObserver_Observer_GasMeter" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.GasMeter">GasMeter</h4>
@@ -154,25 +154,25 @@ Currently tracking gas and some unit of memory.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.SmartContracts.IGasMeter.html">IGasMeter</a></td>
+        <td><a class="xref" href="Stratis.SmartContracts.RuntimeObserver.IGasMeter.html">IGasMeter</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_RuntimeObserver_Observer_MemoryConsumed.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.RuntimeObserver.Observer.MemoryConsumed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_RuntimeObserver_Observer_MemoryMeter.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.RuntimeObserver.Observer.MemoryMeter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L25">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L9">View Source</a>
   </span>
-  <a id="Stratis_SmartContracts_RuntimeObserver_Observer_MemoryConsumed_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.MemoryConsumed*"></a>
-  <h4 id="Stratis_SmartContracts_RuntimeObserver_Observer_MemoryConsumed" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.MemoryConsumed">MemoryConsumed</h4>
+  <a id="Stratis_SmartContracts_RuntimeObserver_Observer_MemoryMeter_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.MemoryMeter*"></a>
+  <h4 id="Stratis_SmartContracts_RuntimeObserver_Observer_MemoryMeter" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.MemoryMeter">MemoryMeter</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long MemoryConsumed { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IMemoryMeter MemoryMeter { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -184,7 +184,7 @@ Currently tracking gas and some unit of memory.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><a class="xref" href="Stratis.SmartContracts.RuntimeObserver.IMemoryMeter.html">IMemoryMeter</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -196,7 +196,7 @@ Currently tracking gas and some unit of memory.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_RuntimeObserver_Observer_SpendGas_System_Int64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.RuntimeObserver.Observer.SpendGas(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L36">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L22">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_RuntimeObserver_Observer_SpendGas_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.SpendGas*"></a>
   <h4 id="Stratis_SmartContracts_RuntimeObserver_Observer_SpendGas_System_Int64_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.SpendGas(System.Int64)">SpendGas(Int64)</h4>
@@ -229,11 +229,11 @@ Currently tracking gas and some unit of memory.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_RuntimeObserver_Observer_SpendMemory_System_Int64_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.RuntimeObserver.Observer.SpendMemory(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L44">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.RuntimeObserver/Observer.cs/#L30">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_RuntimeObserver_Observer_SpendMemory_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.SpendMemory*"></a>
   <h4 id="Stratis_SmartContracts_RuntimeObserver_Observer_SpendMemory_System_Int64_" data-uid="Stratis.SmartContracts.RuntimeObserver.Observer.SpendMemory(System.Int64)">SpendMemory(Int64)</h4>
-  <div class="markdown level1 summary"><p>Register that some amount of memory has been reserved. If it goes over the allowed limit, throw an exception.</p>
+  <div class="markdown level1 summary"><p>Register that some amount of memory has been reserved.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

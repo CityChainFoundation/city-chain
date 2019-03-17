@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PoAConsensusRuleEngine
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -82,7 +82,6 @@
     <div class="level1"><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html">ConsensusRuleEngine</a></div>
     <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html">PowConsensusRuleEngine</a></div>
     <div class="level3"><span class="xref">PoAConsensusRuleEngine</span></div>
-      <div class="level4"><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.PoA.SmartContractPoARuleEngine.html">SmartContractPoARuleEngine</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -114,6 +113,9 @@
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_logger">ConsensusRuleEngine.logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_LoggerFactory">ConsensusRuleEngine.LoggerFactory</a>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html#Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Network">ConsensusRuleEngine.Network</a>
@@ -172,18 +174,18 @@ A block  that is not valid will result in the <a class="xref" href="Stratis.Bitc
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine__ctor_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_ConcurrentChain_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Configuration_Settings_ConsensusSettings_Stratis_Bitcoin_Consensus_ICheckpoints_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Base_IInvalidBlockHashStore_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Features_PoA_SlotsManager_Stratis_Bitcoin_Features_PoA_PoABlockHeaderValidator_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.%23ctor(Network%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CConcurrentChain%2CStratis.Bitcoin.Base.Deployments.NodeDeployments%2CStratis.Bitcoin.Configuration.Settings.ConsensusSettings%2CStratis.Bitcoin.Consensus.ICheckpoints%2CStratis.Bitcoin.Features.Consensus.CoinViews.ICoinView%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Base.IInvalidBlockHashStore%2CStratis.Bitcoin.Utilities.INodeStats%2CStratis.Bitcoin.Features.PoA.SlotsManager%2CStratis.Bitcoin.Features.PoA.PoABlockHeaderValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine__ctor_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_ConcurrentChain_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Configuration_Settings_ConsensusSettings_Stratis_Bitcoin_Consensus_ICheckpoints_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Base_IInvalidBlockHashStore_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Features_PoA_SlotsManager_Stratis_Bitcoin_Features_PoA_PoABlockHeaderValidator_Stratis_Bitcoin_Features_PoA_Voting_VotingManager_Stratis_Bitcoin_Features_PoA_FederationManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.%23ctor(Network%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CConcurrentChain%2CStratis.Bitcoin.Base.Deployments.NodeDeployments%2CStratis.Bitcoin.Configuration.Settings.ConsensusSettings%2CStratis.Bitcoin.Consensus.ICheckpoints%2CStratis.Bitcoin.Features.Consensus.CoinViews.ICoinView%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Base.IInvalidBlockHashStore%2CStratis.Bitcoin.Utilities.INodeStats%2CStratis.Bitcoin.Features.PoA.SlotsManager%2CStratis.Bitcoin.Features.PoA.PoABlockHeaderValidator%2CStratis.Bitcoin.Features.PoA.Voting.VotingManager%2CStratis.Bitcoin.Features.PoA.FederationManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L20">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L25">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine__ctor_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine__ctor_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_ConcurrentChain_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Configuration_Settings_ConsensusSettings_Stratis_Bitcoin_Consensus_ICheckpoints_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Base_IInvalidBlockHashStore_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Features_PoA_SlotsManager_Stratis_Bitcoin_Features_PoA_PoABlockHeaderValidator_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.#ctor(Network,ILoggerFactory,Stratis.Bitcoin.Utilities.IDateTimeProvider,ConcurrentChain,Stratis.Bitcoin.Base.Deployments.NodeDeployments,Stratis.Bitcoin.Configuration.Settings.ConsensusSettings,Stratis.Bitcoin.Consensus.ICheckpoints,Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Base.IInvalidBlockHashStore,Stratis.Bitcoin.Utilities.INodeStats,Stratis.Bitcoin.Features.PoA.SlotsManager,Stratis.Bitcoin.Features.PoA.PoABlockHeaderValidator)">PoAConsensusRuleEngine(Network, ILoggerFactory, IDateTimeProvider, ConcurrentChain, NodeDeployments, ConsensusSettings, ICheckpoints, ICoinView, IChainState, IInvalidBlockHashStore, INodeStats, SlotsManager, PoABlockHeaderValidator)</h4>
+  <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine__ctor_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_ConcurrentChain_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Configuration_Settings_ConsensusSettings_Stratis_Bitcoin_Consensus_ICheckpoints_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Base_IInvalidBlockHashStore_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Features_PoA_SlotsManager_Stratis_Bitcoin_Features_PoA_PoABlockHeaderValidator_Stratis_Bitcoin_Features_PoA_Voting_VotingManager_Stratis_Bitcoin_Features_PoA_FederationManager_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.#ctor(Network,ILoggerFactory,Stratis.Bitcoin.Utilities.IDateTimeProvider,ConcurrentChain,Stratis.Bitcoin.Base.Deployments.NodeDeployments,Stratis.Bitcoin.Configuration.Settings.ConsensusSettings,Stratis.Bitcoin.Consensus.ICheckpoints,Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Base.IInvalidBlockHashStore,Stratis.Bitcoin.Utilities.INodeStats,Stratis.Bitcoin.Features.PoA.SlotsManager,Stratis.Bitcoin.Features.PoA.PoABlockHeaderValidator,Stratis.Bitcoin.Features.PoA.Voting.VotingManager,Stratis.Bitcoin.Features.PoA.FederationManager)">PoAConsensusRuleEngine(Network, ILoggerFactory, IDateTimeProvider, ConcurrentChain, NodeDeployments, ConsensusSettings, ICheckpoints, ICoinView, IChainState, IInvalidBlockHashStore, INodeStats, SlotsManager, PoABlockHeaderValidator, VotingManager, FederationManager)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PoAConsensusRuleEngine(Network network, ILoggerFactory loggerFactory, IDateTimeProvider dateTimeProvider, ConcurrentChain chain, NodeDeployments nodeDeployments, ConsensusSettings consensusSettings, ICheckpoints checkpoints, ICoinView utxoSet, IChainState chainState, IInvalidBlockHashStore invalidBlockHashStore, INodeStats nodeStats, SlotsManager slotsManager, PoABlockHeaderValidator poaHeaderValidator)</code></pre>
+    <pre><code class="lang-csharp hljs">public PoAConsensusRuleEngine(Network network, ILoggerFactory loggerFactory, IDateTimeProvider dateTimeProvider, ConcurrentChain chain, NodeDeployments nodeDeployments, ConsensusSettings consensusSettings, ICheckpoints checkpoints, ICoinView utxoSet, IChainState chainState, IInvalidBlockHashStore invalidBlockHashStore, INodeStats nodeStats, SlotsManager slotsManager, PoABlockHeaderValidator poaHeaderValidator, VotingManager votingManager, FederationManager federationManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -260,24 +262,64 @@ A block  that is not valid will result in the <a class="xref" href="Stratis.Bitc
         <td><span class="parametername">poaHeaderValidator</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.Voting.VotingManager.html">VotingManager</a></td>
+        <td><span class="parametername">votingManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManager.html">FederationManager</a></td>
+        <td><span class="parametername">federationManager</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_poaHeaderValidator.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.poaHeaderValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_FederationManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.FederationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L23">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_poaHeaderValidator_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.poaHeaderValidator*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_poaHeaderValidator" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.poaHeaderValidator">poaHeaderValidator</h4>
+  <a id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_FederationManager_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.FederationManager*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_FederationManager" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.FederationManager">FederationManager</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PoABlockHeaderValidator poaHeaderValidator { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public FederationManager FederationManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManager.html">FederationManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_PoaHeaderValidator.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.PoaHeaderValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L19">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_PoaHeaderValidator_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.PoaHeaderValidator*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_PoaHeaderValidator" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.PoaHeaderValidator">PoaHeaderValidator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PoABlockHeaderValidator PoaHeaderValidator { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -299,7 +341,7 @@ A block  that is not valid will result in the <a class="xref" href="Stratis.Bitc
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_SlotsManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.SlotsManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L16">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L17">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_SlotsManager_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.SlotsManager*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_SlotsManager" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.SlotsManager">SlotsManager</h4>
@@ -324,6 +366,36 @@ A block  that is not valid will result in the <a class="xref" href="Stratis.Bitc
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_VotingManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.VotingManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L21">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_VotingManager_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.VotingManager*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine_VotingManager" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.VotingManager">VotingManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VotingManager VotingManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.Voting.VotingManager.html">VotingManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a>
@@ -342,7 +414,7 @@ A block  that is not valid will result in the <a class="xref" href="Stratis.Bitc
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusRuleEngine.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusRuleEngine.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

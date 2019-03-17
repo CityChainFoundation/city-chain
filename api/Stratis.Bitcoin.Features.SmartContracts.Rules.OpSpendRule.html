@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class OpSpendRule
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,10 @@
   
   <h1 id="Stratis_Bitcoin_Features_SmartContracts_Rules_OpSpendRule" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.OpSpendRule" class="text-break">Class OpSpendRule
   </h1>
-  <div class="markdown level0 summary"><p>If OP_SPEND, check that the transaction before is a contract call</p>
+  <div class="markdown level0 summary"><p>If a transaction's inputs contain an OP_SPEND opcode in the scriptsig, check that the transaction
+that occurs directly before contains OP_CREATE or OP_CALL in its outputs. In conjunction with
+<a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Rules.MempoolOpSpendRule.html">MempoolOpSpendRule</a>, ensures that only a contract execution transaction is able to
+create OP_SPEND inputs.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IPeerSelector
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -121,13 +121,13 @@ last 60 seconds and that has had more than 10 failed attempts.
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerSelector_Connected.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerSelector.Connected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerSelector_Connected_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerSelector.Connected(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L52">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L53">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_IPeerSelector_Connected_" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.Connected*"></a>
-  <h4 id="Stratis_Bitcoin_P2P_IPeerSelector_Connected" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.Connected">Connected()</h4>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerSelector_Connected_System_Int32_" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.Connected(System.Int32)">Connected(Int32)</h4>
   <div class="markdown level1 summary"><p>Return peers which have had successful connection attempts.</p>
 <p>
 The result filters out peers which satisfies the above condition within the
@@ -137,8 +137,26 @@ last 60 seconds.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;PeerAddress&gt; Connected()</code></pre>
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;PeerAddress&gt; Connected(int throttlePeriodSeconds = 60)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">throttlePeriodSeconds</span></td>
+        <td><p>Filter results that connected within this time frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -159,7 +177,7 @@ last 60 seconds.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerSelector_FilterBadHandshakedPeers_IEnumerable_Stratis_Bitcoin_P2P_PeerAddress__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerSelector.FilterBadHandshakedPeers(IEnumerable%7BStratis.Bitcoin.P2P.PeerAddress%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L76">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L78">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_IPeerSelector_FilterBadHandshakedPeers_" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.FilterBadHandshakedPeers*"></a>
   <h4 id="Stratis_Bitcoin_P2P_IPeerSelector_FilterBadHandshakedPeers_IEnumerable_Stratis_Bitcoin_P2P_PeerAddress__" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.FilterBadHandshakedPeers(IEnumerable{Stratis.Bitcoin.P2P.PeerAddress})">FilterBadHandshakedPeers(IEnumerable&lt;PeerAddress&gt;)</h4>
@@ -209,7 +227,7 @@ Filter peers by handshake failures.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerSelector_Fresh.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerSelector.Fresh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L60">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L61">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_IPeerSelector_Fresh_" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.Fresh*"></a>
   <h4 id="Stratis_Bitcoin_P2P_IPeerSelector_Fresh" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.Fresh">Fresh()</h4>
@@ -237,13 +255,13 @@ Filter peers by handshake failures.
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerSelector_Handshaked.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerSelector.Handshaked%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerSelector_Handshaked_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerSelector.Handshaked(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L69">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L71">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_IPeerSelector_Handshaked_" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.Handshaked*"></a>
-  <h4 id="Stratis_Bitcoin_P2P_IPeerSelector_Handshaked" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.Handshaked">Handshaked()</h4>
+  <h4 id="Stratis_Bitcoin_P2P_IPeerSelector_Handshaked_System_Int32_" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.Handshaked(System.Int32)">Handshaked(Int32)</h4>
   <div class="markdown level1 summary"><p>Return peers where a successful connection and handshake was achieved.</p>
 <p>
 The result filters out peers which satisfies the above condition within the
@@ -253,8 +271,26 @@ last 60 seconds.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;PeerAddress&gt; Handshaked()</code></pre>
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;PeerAddress&gt; Handshaked(int throttlePeriodSeconds = 60)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">throttlePeriodSeconds</span></td>
+        <td><p>Filter results that hand shaked within this time frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -275,7 +311,7 @@ last 60 seconds.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerSelector_HasAllPeersReachedConnectionThreshold.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerSelector.HasAllPeersReachedConnectionThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L79">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L81">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_IPeerSelector_HasAllPeersReachedConnectionThreshold_" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.HasAllPeersReachedConnectionThreshold*"></a>
   <h4 id="Stratis_Bitcoin_P2P_IPeerSelector_HasAllPeersReachedConnectionThreshold" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.HasAllPeersReachedConnectionThreshold">HasAllPeersReachedConnectionThreshold()</h4>
@@ -306,7 +342,7 @@ last 60 seconds.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerSelector_NotBanned.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerSelector.NotBanned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L55">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L56">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_IPeerSelector_NotBanned_" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.NotBanned*"></a>
   <h4 id="Stratis_Bitcoin_P2P_IPeerSelector_NotBanned" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.NotBanned">NotBanned()</h4>
@@ -337,7 +373,7 @@ last 60 seconds.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_IPeerSelector_ResetConnectionAttemptsOnNotBannedPeers.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.IPeerSelector.ResetConnectionAttemptsOnNotBannedPeers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L82">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerSelector.cs/#L84">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_IPeerSelector_ResetConnectionAttemptsOnNotBannedPeers_" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.ResetConnectionAttemptsOnNotBannedPeers*"></a>
   <h4 id="Stratis_Bitcoin_P2P_IPeerSelector_ResetConnectionAttemptsOnNotBannedPeers" data-uid="Stratis.Bitcoin.P2P.IPeerSelector.ResetConnectionAttemptsOnNotBannedPeers">ResetConnectionAttemptsOnNotBannedPeers()</h4>

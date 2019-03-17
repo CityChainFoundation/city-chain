@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SmartContractCoinviewRule
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.10.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -101,9 +101,6 @@
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_UpdateUTXOSet_Stratis_Bitcoin_Consensus_Rules_RuleContext_NBitcoin_Transaction_">CoinViewRule.UpdateUTXOSet(RuleContext, Transaction)</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_IsProtocolTransaction_NBitcoin_Transaction_">CoinViewRule.IsProtocolTransaction(Transaction)</a>
-    </div>
-    <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_UpdateCoinView_Stratis_Bitcoin_Consensus_Rules_RuleContext_NBitcoin_Transaction_">CoinViewRule.UpdateCoinView(RuleContext, Transaction)</a>
     </div>
     <div>
@@ -116,13 +113,13 @@
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_CheckMaturity_Stratis_Bitcoin_Utilities_UnspentOutputs_System_Int32_">CoinViewRule.CheckMaturity(UnspentOutputs, Int32)</a>
     </div>
     <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_CheckInputValidity_NBitcoin_Transaction_Stratis_Bitcoin_Utilities_UnspentOutputs_">CoinViewRule.CheckInputValidity(Transaction, UnspentOutputs)</a>
+    </div>
+    <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_CheckInputs_NBitcoin_Transaction_Stratis_Bitcoin_Features_Consensus_UnspentOutputSet_System_Int32_">CoinViewRule.CheckInputs(Transaction, UnspentOutputSet, Int32)</a>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_GetTransactionSignatureOperationCost_NBitcoin_Transaction_Stratis_Bitcoin_Features_Consensus_UnspentOutputSet_Stratis_Bitcoin_Base_Deployments_DeploymentFlags_">CoinViewRule.GetTransactionSignatureOperationCost(Transaction, UnspentOutputSet, DeploymentFlags)</a>
-    </div>
-    <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_GetBlockWeight_NBitcoin_Block_">CoinViewRule.GetBlockWeight(Block)</a>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_IsPremine_System_Int32_">CoinViewRule.IsPremine(Int32)</a>
@@ -134,6 +131,70 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class SmartContractCoinviewRule : CoinViewRule</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule__ctor_Network_Stratis_SmartContracts_Core_State_IStateRepositoryRoot_Stratis_SmartContracts_Core_IContractExecutorFactory_Stratis_SmartContracts_CLR_ICallDataSerializer_Stratis_SmartContracts_Core_Util_ISenderRetriever_Stratis_SmartContracts_Core_Receipts_IReceiptRepository_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.%23ctor(Network%2CStratis.SmartContracts.Core.State.IStateRepositoryRoot%2CStratis.SmartContracts.Core.IContractExecutorFactory%2CStratis.SmartContracts.CLR.ICallDataSerializer%2CStratis.SmartContracts.Core.Util.ISenderRetriever%2CStratis.SmartContracts.Core.Receipts.IReceiptRepository%2CStratis.Bitcoin.Features.Consensus.CoinViews.ICoinView)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L37">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule__ctor_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule__ctor_Network_Stratis_SmartContracts_Core_State_IStateRepositoryRoot_Stratis_SmartContracts_Core_IContractExecutorFactory_Stratis_SmartContracts_CLR_ICallDataSerializer_Stratis_SmartContracts_Core_Util_ISenderRetriever_Stratis_SmartContracts_Core_Receipts_IReceiptRepository_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.#ctor(Network,Stratis.SmartContracts.Core.State.IStateRepositoryRoot,Stratis.SmartContracts.Core.IContractExecutorFactory,Stratis.SmartContracts.CLR.ICallDataSerializer,Stratis.SmartContracts.Core.Util.ISenderRetriever,Stratis.SmartContracts.Core.Receipts.IReceiptRepository,Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView)">SmartContractCoinviewRule(Network, IStateRepositoryRoot, IContractExecutorFactory, ICallDataSerializer, ISenderRetriever, IReceiptRepository, ICoinView)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SmartContractCoinviewRule(Network network, IStateRepositoryRoot stateRepositoryRoot, IContractExecutorFactory executorFactory, ICallDataSerializer callDataSerializer, ISenderRetriever senderRetriever, IReceiptRepository receiptRepository, ICoinView coinView)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Network</span></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.IStateRepositoryRoot.html">IStateRepositoryRoot</a></td>
+        <td><span class="parametername">stateRepositoryRoot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.IContractExecutorFactory.html">IContractExecutorFactory</a></td>
+        <td><span class="parametername">executorFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.CLR.ICallDataSerializer.html">ICallDataSerializer</a></td>
+        <td><span class="parametername">callDataSerializer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.Util.ISenderRetriever.html">ISenderRetriever</a></td>
+        <td><span class="parametername">senderRetriever</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.Receipts.IReceiptRepository.html">IReceiptRepository</a></td>
+        <td><span class="parametername">receiptRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html">ICoinView</a></td>
+        <td><span class="parametername">coinView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
@@ -141,7 +202,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_blockTxsProcessed.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.blockTxsProcessed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L16">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L22">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_blockTxsProcessed" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.blockTxsProcessed">blockTxsProcessed</h4>
   <div class="markdown level1 summary"></div>
@@ -170,7 +231,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_generatedTransaction.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.generatedTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L23">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_generatedTransaction" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.generatedTransaction">generatedTransaction</h4>
   <div class="markdown level1 summary"></div>
@@ -199,7 +260,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_refundCounter.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.refundCounter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L24">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_refundCounter" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.refundCounter">refundCounter</h4>
   <div class="markdown level1 summary"></div>
@@ -230,7 +291,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_CheckBlockReward_RuleContext_Money_System_Int32_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.CheckBlockReward(RuleContext%2CMoney%2CSystem.Int32%2CNBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L41">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L75">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_CheckBlockReward_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.CheckBlockReward*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_CheckBlockReward_RuleContext_Money_System_Int32_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.CheckBlockReward(RuleContext,Money,System.Int32,NBitcoin.Block)">CheckBlockReward(RuleContext, Money, Int32, NBitcoin.Block)</h4>
@@ -277,7 +338,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_CheckInput_Transaction_System_Int32_TxOut_PrecomputedTransactionData_TxIn_DeploymentFlags_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.CheckInput(Transaction%2CSystem.Int32%2CTxOut%2CPrecomputedTransactionData%2CTxIn%2CDeploymentFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L35">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L69">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_CheckInput_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.CheckInput*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_CheckInput_Transaction_System_Int32_TxOut_PrecomputedTransactionData_TxIn_DeploymentFlags_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.CheckInput(Transaction,System.Int32,TxOut,PrecomputedTransactionData,TxIn,DeploymentFlags)">CheckInput(Transaction, Int32, TxOut, PrecomputedTransactionData, TxIn, DeploymentFlags)</h4>
@@ -349,7 +410,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_CheckMaturity_UnspentOutputs_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.CheckMaturity(UnspentOutputs%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L52">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L86">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_CheckMaturity_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.CheckMaturity*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_CheckMaturity_UnspentOutputs_System_Int32_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.CheckMaturity(UnspentOutputs,System.Int32)">CheckMaturity(UnspentOutputs, Int32)</h4>
@@ -386,7 +447,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ExecuteContractTransaction_RuleContext_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.ExecuteContractTransaction(RuleContext%2CTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L97">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L131">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ExecuteContractTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.ExecuteContractTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ExecuteContractTransaction_RuleContext_Transaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.ExecuteContractTransaction(RuleContext,Transaction)">ExecuteContractTransaction(RuleContext, Transaction)</h4>
@@ -424,7 +485,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_GetProofOfWorkReward_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.GetProofOfWorkReward(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L59">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L93">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_GetProofOfWorkReward_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.GetProofOfWorkReward*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_GetProofOfWorkReward_System_Int32_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.GetProofOfWorkReward(System.Int32)">GetProofOfWorkReward(Int32)</h4>
@@ -479,7 +540,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L22">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L55">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_Initialize_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.Initialize*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_Initialize" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.Initialize">Initialize()</h4>
@@ -496,57 +557,10 @@ The rule can internally initialize its state.</p>
   <div><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html#Stratis_Bitcoin_Features_Consensus_Rules_CommonRules_CoinViewRule_Initialize">CoinViewRule.Initialize()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_IsProtocolTransaction_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.IsProtocolTransaction(Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L103">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_IsProtocolTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.IsProtocolTransaction*"></a>
-  <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_IsProtocolTransaction_Transaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.IsProtocolTransaction(Transaction)">IsProtocolTransaction(Transaction)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override bool IsProtocolTransaction(Transaction transaction)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Transaction</span></td>
-        <td><span class="parametername">transaction</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_RunAsync_RuleContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.RunAsync(RuleContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L29">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L63">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_RunAsync_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.RunAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_RunAsync_RuleContext_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.RunAsync(RuleContext)">RunAsync(RuleContext)</h4>
@@ -593,7 +607,7 @@ The rule can internally initialize its state.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_UpdateCoinView_RuleContext_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.UpdateCoinView(RuleContext%2CTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L71">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L105">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_UpdateCoinView_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.UpdateCoinView*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_UpdateCoinView_RuleContext_Transaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.UpdateCoinView(RuleContext,Transaction)">UpdateCoinView(RuleContext, Transaction)</h4>
@@ -631,7 +645,7 @@ The rule can internally initialize its state.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ValidateGeneratedTransaction_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.ValidateGeneratedTransaction(Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L80">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L114">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ValidateGeneratedTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.ValidateGeneratedTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ValidateGeneratedTransaction_Transaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.ValidateGeneratedTransaction(Transaction)">ValidateGeneratedTransaction(Transaction)</h4>
@@ -664,7 +678,7 @@ The rule can internally initialize its state.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ValidateSubmittedTransaction_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.ValidateSubmittedTransaction(Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L89">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L123">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ValidateSubmittedTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.ValidateSubmittedTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule_ValidateSubmittedTransaction_Transaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule.ValidateSubmittedTransaction(Transaction)">ValidateSubmittedTransaction(Transaction)</h4>
@@ -703,7 +717,7 @@ The rule can internally initialize its state.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Rules_SmartContractCoinviewRule.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Rules.SmartContractCoinviewRule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Rules/SmartContractCoinviewRule.cs/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
