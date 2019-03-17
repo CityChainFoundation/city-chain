@@ -4,6 +4,7 @@
     using System.Linq;
     using System.Threading.Tasks;
     using City.Features.BlockExplorer;
+    using City.Features.WalletService;
     using City.Networks;
     using NBitcoin;
     using NBitcoin.Protocol;
@@ -118,6 +119,7 @@
                         .UseMempool()
                         //.UseColdStakingWallet()
                         .UseWallet()
+                        .UseWalletService()
                         .AddPowPosMining()
                         .UseApi()
                         .UseApps()

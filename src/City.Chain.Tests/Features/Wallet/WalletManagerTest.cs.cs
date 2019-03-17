@@ -25,6 +25,15 @@ namespace City.Chain.Tests.Features.Wallet
     public class WalletManagerTest : LogsTestBase, IClassFixture<WalletFixture>
     {
         [Fact]
+        public void VerifyWalletEncryption()
+        {
+            var mnemonic = "absurd actress expose library beach siege giggle pave crystal trim dismiss drum";
+            var passphrase = "";
+
+            var extendedKey = HdOperations.GetExtendedKey(mnemonic, passphrase);
+        }
+
+        [Fact]
         public void CreateDefaultWalletAndVerify()
         {
             DataFolder dataFolder = CreateDataFolder(this);
