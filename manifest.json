@@ -12945,7 +12945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletManager.html",
-          "hash": "uJ7BNW2rBzABMamsX7HV/Q=="
+          "hash": "D4402R2Dlg5iJVWEylhtcw=="
         }
       },
       "is_incremental": false,
@@ -12969,7 +12969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletSettings.html",
-          "hash": "AfGw6AF7QXpx9BfIDhihiw=="
+          "hash": "QhNxuU4EGF3bjeKbAsrwJg=="
         }
       },
       "is_incremental": false,
