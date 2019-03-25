@@ -187,11 +187,14 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildAndSendCallSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_BuildCallContractTransactionRequest_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildAndSendCallSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.BuildCallContractTransactionRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L254">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L348">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildAndSendCallSmartContractTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildAndSendCallSmartContractTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildAndSendCallSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_BuildCallContractTransactionRequest_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildAndSendCallSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.BuildCallContractTransactionRequest)">BuildAndSendCallSmartContractTransaction(BuildCallContractTransactionRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Builds a transaction to call a smart contract method and then broadcasts the transaction to the network.
+If the call is successful, any changes to the smart contract balance or persistent data are propagated
+across the network.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -210,7 +213,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Models.BuildCallContractTransactionRequest.html">BuildCallContractTransactionRequest</a></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>An object containing the necessary parameters to build the transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -225,7 +229,9 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>The transaction used to call a smart contract method. The result of the transaction broadcast is not returned
+and you should check for a transaction receipt to see if it was successful.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -234,11 +240,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildAndSendCreateSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_BuildCreateContractTransactionRequest_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildAndSendCreateSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.BuildCreateContractTransactionRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L235">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L319">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildAndSendCreateSmartContractTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildAndSendCreateSmartContractTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildAndSendCreateSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_BuildCreateContractTransactionRequest_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildAndSendCreateSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.BuildCreateContractTransactionRequest)">BuildAndSendCreateSmartContractTransaction(BuildCreateContractTransactionRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Builds a transaction to create a smart contract and then broadcasts the transaction to the network.
+If the deployment is successful, methods on the smart contract can be subsequently called.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -257,7 +265,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Models.BuildCreateContractTransactionRequest.html">BuildCreateContractTransactionRequest</a></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>An object containing the necessary parameters to build the transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -272,7 +281,9 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>The transaction used to create the smart contract. The result of the transaction broadcast is not returned
+and you should check for a transaction receipt to see if it was successful.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -281,11 +292,17 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildCallSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_BuildCallContractTransactionRequest_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildCallSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.BuildCallContractTransactionRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L224">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L300">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildCallSmartContractTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildCallSmartContractTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildCallSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_BuildCallContractTransactionRequest_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildCallSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.BuildCallContractTransactionRequest)">BuildCallSmartContractTransaction(BuildCallContractTransactionRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Builds a transaction to call a smart contract method. Although the transaction is created, the
+call is not made, and no gas or fees are consumed.
+Instead the created transaction is returned as a JSON object.
+Transactions built using this method can be deployed using /api/SmartContractWallet/send-transaction
+However, unless there is a need to closely examine the transaction before deploying it, you should use
+api/SmartContracts/build-and-send-call.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -304,7 +321,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Models.BuildCallContractTransactionRequest.html">BuildCallContractTransactionRequest</a></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>An object containing the necessary parameters to build the transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -319,7 +337,8 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>A transaction ready to call a method on a smart contract.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -328,11 +347,17 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildCreateSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_BuildCreateContractTransactionRequest_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildCreateSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.BuildCreateContractTransactionRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L214">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L278">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildCreateSmartContractTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildCreateSmartContractTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_BuildCreateSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_BuildCreateContractTransactionRequest_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.BuildCreateSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.BuildCreateContractTransactionRequest)">BuildCreateSmartContractTransaction(BuildCreateContractTransactionRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Builds a transaction to create a smart contract. Although the transaction is created, the smart contract is not
+deployed on the network, and no gas or fees are consumed.
+Instead the created transaction is returned as a hexadecimal string within a JSON object.
+Transactions built using this method can be deployed using /api/SmartContractWallet/send-transaction.
+However, unless there is a need to closely examine the transaction before deploying it, you should use
+api/SmartContracts/build-and-send-create.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -351,7 +376,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Models.BuildCreateContractTransactionRequest.html">BuildCreateContractTransactionRequest</a></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>An object containing the necessary parameters to build the transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -366,7 +392,8 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>A transaction ready to create a smart contract.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -375,11 +402,15 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetAddressesWithBalances_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetAddressesWithBalances(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L331">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L447">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetAddressesWithBalances_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetAddressesWithBalances*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetAddressesWithBalances_System_String_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetAddressesWithBalances(System.String)">GetAddressesWithBalances(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all addresses owned by a wallet which have a balance associated with them. This
+method effectively returns the balance of all the UTXOs associated with a wallet.
+In a case where multiple UTXOs are associated with one address, the amounts
+are tallied to give a total for that address.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -398,7 +429,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">walletName</span></td>
-        <td></td>
+        <td><p>The name of the wallet to retrieve the addresses from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -413,7 +445,8 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>The addresses owned by a wallet which have a balance associated with them.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -422,11 +455,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetBalance_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetBalance(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L106">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L122">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetBalance_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetBalance*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetBalance_System_String_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetBalance(System.String)">GetBalance(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the balance of a smart contract in STRAT (or the sidechain coin). This method only works for smart contract addresses.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -445,7 +479,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">address</span></td>
-        <td></td>
+        <td><p>The address of the smart contract to retrieve the balance for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -460,7 +495,8 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>The balance of a smart contract in STRAT (or the sidechain coin).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -469,11 +505,14 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetCode_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetCode(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L81">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L90">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetCode_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetCode*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetCode_System_String_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetCode(System.String)">GetCode(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the bytecode for a smart contract as a hexadecimal string. The bytecode is decompiled to
+C# source, which is returned as well. Be aware, it is the bytecode which is being executed,
+so this is the &quot;source of truth&quot;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -492,7 +531,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">address</span></td>
-        <td></td>
+        <td><p>The address of the smart contract to retrieve as bytecode and C# source.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -507,7 +547,8 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>A response object containing the bytecode and the decompiled C# code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -516,11 +557,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetReceipt_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetReceipt(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L145">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L182">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetReceipt_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetReceipt*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetReceipt_System_String_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetReceipt(System.String)">GetReceipt(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a smart contract transaction receipt. Receipts contain information about how a smart contract transaction was executed.
+This includes the value returned from a smart contract call and how much gas was used.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -539,7 +582,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txHash</span></td>
-        <td></td>
+        <td><p>A hash of the smart contract transaction (the transaction ID).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -554,7 +598,8 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>The receipt for the smart contract.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -563,11 +608,18 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetStorage_Stratis_Bitcoin_Features_SmartContracts_Models_GetStorageRequest_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetStorage(Stratis.Bitcoin.Features.SmartContracts.Models.GetStorageRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L116">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L145">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetStorage_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetStorage*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_GetStorage_Stratis_Bitcoin_Features_SmartContracts_Models_GetStorageRequest_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.GetStorage(Stratis.Bitcoin.Features.SmartContracts.Models.GetStorageRequest)">GetStorage(GetStorageRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a single piece of smart contract data, which was stored as a key–value pair using the
+SmartContract.PersistentState property.
+The method performs a lookup in the smart contract
+state database for the supplied smart contract address and key.
+The value associated with the given key, deserialized for the specified data type, is returned.
+If the key does not exist or deserialization fails, the method returns the default value for
+the specified type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -586,7 +638,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Models.GetStorageRequest.html">GetStorageRequest</a></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>An object containing the necessary parameters to perform a retrieve stored data request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -601,7 +654,8 @@
     <tbody>
       <tr>
         <td><span class="xref">IActionResult</span></td>
-        <td></td>
+        <td><p>A single piece of stored smart contract data.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -610,11 +664,17 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_LocalCallSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.LocalCallSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L272">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L378">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_LocalCallSmartContractTransaction_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.LocalCallSmartContractTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_LocalCallSmartContractTransaction_Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.LocalCallSmartContractTransaction(Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest)">LocalCallSmartContractTransaction(LocalCallContractRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Makes a local call to a method on a smart contract that has been successfully deployed. A transaction
+is not created as the call is never propagated across the network. All persistent data held by the<br>
+smart contract is copied before the call is made. Only this copy is altered by the call
+and the actual data is unaffected. Even if an amount of funds are specified to send with the call,
+no funds are in fact sent.
+The purpose of this function is to query and test methods.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -633,7 +693,8 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.html">LocalCallContractRequest</a></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>An object containing the necessary parameters to build the transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -657,11 +718,18 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_ReceiptSearch_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.ReceiptSearch(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L169">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/ReflectionExecutor/Controllers/SmartContractsController.cs/#L221">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_ReceiptSearch_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.ReceiptSearch*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_ReflectionExecutor_Controllers_SmartContractsController_ReceiptSearch_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.ReceiptSearch(System.String,System.String)">ReceiptSearch(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Searches a smart contract's receipts for those which match a specific event. The SmartContract.Log() function
+is capable of storing C# structs, and structs are used to store information about different events occurring
+on the smart contract. For example, a &quot;TransferLog&quot; struct could contain &quot;From&quot; and &quot;To&quot; fields and be used to log
+when a smart contract makes a transfer of funds from one wallet to another. The log entries are held inside the smart contract,
+indexed using the name of the struct, and are linked to individual transaction receipts.
+Therefore, it is possible to return a smart contract's transaction receipts
+which match a specific event (as defined by the struct name).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -680,12 +748,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">contractAddress</span></td>
-        <td></td>
+        <td><p>The address of the smart contract to retrieve the receipts for.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">eventName</span></td>
-        <td></td>
+        <td><p>The name of the event struct to retrieve matching receipts for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -700,7 +770,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
-        <td></td>
+        <td><p>A list of receipts for transactions relating to a specific smart contract and a specific event in that smart contract.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ILeaderProvider
+    <title>Interface IWhitelistedHashChecker
    | City Chain: Developer Reference </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ILeaderProvider
+    <meta name="title" content="Interface IWhitelistedHashChecker
    | City Chain: Developer Reference ">
     <meta name="generator" content="docfx 2.40.12.0">
     
@@ -68,69 +68,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Stratis.Features.FederatedPeg.ILeaderProvider">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.IWhitelistedHashChecker">
   
   
-  <h1 id="Stratis_Features_FederatedPeg_ILeaderProvider" data-uid="Stratis.Features.FederatedPeg.ILeaderProvider" class="text-break">Interface ILeaderProvider
+  <h1 id="Stratis_Bitcoin_Features_SmartContracts_PoA_IWhitelistedHashChecker" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.IWhitelistedHashChecker" class="text-break">Interface IWhitelistedHashChecker
   </h1>
-  <div class="markdown level0 summary"><p>This class determines which federated member to select as the next leader based on a change in block height.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Features.FederatedPeg.html">Stratis.Features.FederatedPeg</a></h6>
-  <h6><strong>Assembly</strong>: Stratis.Features.FederatedPeg.dll</h6>
-  <h5 id="Stratis_Features_FederatedPeg_ILeaderProvider_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.PoA.html">Stratis.Bitcoin.Features.SmartContracts.PoA</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.SmartContracts.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_SmartContracts_PoA_IWhitelistedHashChecker_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ILeaderProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IWhitelistedHashChecker</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_ILeaderProvider_CurrentLeaderKey.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.ILeaderProvider.CurrentLeaderKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/LeaderProvider.cs/#L16">View Source</a>
-  </span>
-  <a id="Stratis_Features_FederatedPeg_ILeaderProvider_CurrentLeaderKey_" data-uid="Stratis.Features.FederatedPeg.ILeaderProvider.CurrentLeaderKey*"></a>
-  <h4 id="Stratis_Features_FederatedPeg_ILeaderProvider_CurrentLeaderKey" data-uid="Stratis.Features.FederatedPeg.ILeaderProvider.CurrentLeaderKey">CurrentLeaderKey</h4>
-  <div class="markdown level1 summary"><p>Public key of the current leader.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">PubKey CurrentLeaderKey { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PubKey</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_ILeaderProvider_Update_Stratis_Features_FederatedPeg_Models_BlockTipModel_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.ILeaderProvider.Update(Stratis.Features.FederatedPeg.Models.BlockTipModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_IWhitelistedHashChecker_CheckHashWhitelisted_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.IWhitelistedHashChecker.CheckHashWhitelisted(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/LeaderProvider.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/WhitelistedHashChecker.cs/#L43">View Source</a>
   </span>
-  <a id="Stratis_Features_FederatedPeg_ILeaderProvider_Update_" data-uid="Stratis.Features.FederatedPeg.ILeaderProvider.Update*"></a>
-  <h4 id="Stratis_Features_FederatedPeg_ILeaderProvider_Update_Stratis_Features_FederatedPeg_Models_BlockTipModel_" data-uid="Stratis.Features.FederatedPeg.ILeaderProvider.Update(Stratis.Features.FederatedPeg.Models.BlockTipModel)">Update(BlockTipModel)</h4>
+  <a id="Stratis_Bitcoin_Features_SmartContracts_PoA_IWhitelistedHashChecker_CheckHashWhitelisted_" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.IWhitelistedHashChecker.CheckHashWhitelisted*"></a>
+  <h4 id="Stratis_Bitcoin_Features_SmartContracts_PoA_IWhitelistedHashChecker_CheckHashWhitelisted_System_Byte___" data-uid="Stratis.Bitcoin.Features.SmartContracts.PoA.IWhitelistedHashChecker.CheckHashWhitelisted(System.Byte[])">CheckHashWhitelisted(Byte[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Update(BlockTipModel blockTipModel)</code></pre>
+    <pre><code class="lang-csharp hljs">bool CheckHashWhitelisted(byte[] hash)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,8 +109,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Features.FederatedPeg.Models.BlockTipModel.html">BlockTipModel</a></td>
-        <td><span class="parametername">blockTipModel</span></td>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">hash</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -157,10 +138,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_ILeaderProvider.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.ILeaderProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_PoA_IWhitelistedHashChecker.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.PoA.IWhitelistedHashChecker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/LeaderProvider.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/PoA/WhitelistedHashChecker.cs/#L41" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

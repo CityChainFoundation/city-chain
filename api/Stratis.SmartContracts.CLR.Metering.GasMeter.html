@@ -84,24 +84,24 @@
   <h6><strong>Assembly</strong>: Stratis.SmartContracts.CLR.dll</h6>
   <h5 id="Stratis_SmartContracts_CLR_Metering_GasMeter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class GasMeter : IGasMeter</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class GasMeter : RuntimeObserver.IGasMeter</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Metering_GasMeter__ctor_Gas_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Metering.GasMeter.%23ctor(Gas)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Metering_GasMeter__ctor_RuntimeObserver_Gas_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Metering.GasMeter.%23ctor(RuntimeObserver.Gas)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L21">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L20">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_CLR_Metering_GasMeter__ctor_" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.#ctor*"></a>
-  <h4 id="Stratis_SmartContracts_CLR_Metering_GasMeter__ctor_Gas_" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.#ctor(Gas)">GasMeter(Gas)</h4>
+  <h4 id="Stratis_SmartContracts_CLR_Metering_GasMeter__ctor_RuntimeObserver_Gas_" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.#ctor(RuntimeObserver.Gas)">GasMeter(RuntimeObserver.Gas)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GasMeter(Gas gasAvailable)</code></pre>
+    <pre><code class="lang-csharp hljs">public GasMeter(RuntimeObserver.Gas gasAvailable)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -114,7 +114,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Gas</span></td>
+        <td><span class="xref">RuntimeObserver.Gas</span></td>
         <td><span class="parametername">gasAvailable</span></td>
         <td></td>
       </tr>
@@ -127,7 +127,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Metering_GasMeter_GasAvailable.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Metering.GasMeter.GasAvailable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L10">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L9">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_CLR_Metering_GasMeter_GasAvailable_" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.GasAvailable*"></a>
   <h4 id="Stratis_SmartContracts_CLR_Metering_GasMeter_GasAvailable" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.GasAvailable">GasAvailable</h4>
@@ -135,7 +135,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Gas GasAvailable { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public RuntimeObserver.Gas GasAvailable { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,7 +147,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Gas</span></td>
+        <td><span class="xref">RuntimeObserver.Gas</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -157,7 +157,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Metering_GasMeter_GasConsumed.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Metering.GasMeter.GasConsumed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L13">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L12">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_CLR_Metering_GasMeter_GasConsumed_" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.GasConsumed*"></a>
   <h4 id="Stratis_SmartContracts_CLR_Metering_GasMeter_GasConsumed" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.GasConsumed">GasConsumed</h4>
@@ -165,7 +165,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Gas GasConsumed { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public RuntimeObserver.Gas GasConsumed { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,7 +177,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Gas</span></td>
+        <td><span class="xref">RuntimeObserver.Gas</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -187,7 +187,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Metering_GasMeter_GasLimit.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Metering.GasMeter.GasLimit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L19">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L18">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_CLR_Metering_GasMeter_GasLimit_" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.GasLimit*"></a>
   <h4 id="Stratis_SmartContracts_CLR_Metering_GasMeter_GasLimit" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.GasLimit">GasLimit</h4>
@@ -195,7 +195,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Gas GasLimit { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public RuntimeObserver.Gas GasLimit { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,7 +207,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Gas</span></td>
+        <td><span class="xref">RuntimeObserver.Gas</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -216,18 +216,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Metering_GasMeter_Spend_Gas_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Metering.GasMeter.Spend(Gas)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Metering_GasMeter_Spend_RuntimeObserver_Gas_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Metering.GasMeter.Spend(RuntimeObserver.Gas)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L28">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L27">View Source</a>
   </span>
   <a id="Stratis_SmartContracts_CLR_Metering_GasMeter_Spend_" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.Spend*"></a>
-  <h4 id="Stratis_SmartContracts_CLR_Metering_GasMeter_Spend_Gas_" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.Spend(Gas)">Spend(Gas)</h4>
+  <h4 id="Stratis_SmartContracts_CLR_Metering_GasMeter_Spend_RuntimeObserver_Gas_" data-uid="Stratis.SmartContracts.CLR.Metering.GasMeter.Spend(RuntimeObserver.Gas)">Spend(RuntimeObserver.Gas)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Spend(Gas gasToSpend)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Spend(RuntimeObserver.Gas gasToSpend)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -240,7 +240,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Gas</span></td>
+        <td><span class="xref">RuntimeObserver.Gas</span></td>
         <td><span class="parametername">gasToSpend</span></td>
         <td></td>
       </tr>
@@ -257,7 +257,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_CLR_Metering_GasMeter.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.CLR.Metering.GasMeter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.CLR/Metering/GasMeter.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

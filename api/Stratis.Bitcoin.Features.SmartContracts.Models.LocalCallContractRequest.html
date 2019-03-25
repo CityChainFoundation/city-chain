@@ -73,7 +73,8 @@
   
   <h1 id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest" class="text-break">Class LocalCallContractRequest
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A class containing the necessary parameters to perform a local smart contract method call request.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -93,11 +94,14 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_Amount.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.Amount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L31">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_Amount_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.Amount*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_Amount" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.Amount">Amount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The amount of STRAT (or sidechain coin) to send to the smart contract address.
+No funds are actually sent, but the Amount field allows
+certain scenarios, where the funds sent dictates the result, to be checked.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -123,11 +127,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_ContractAddress.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.ContractAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L10">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L16">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_ContractAddress_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.ContractAddress*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_ContractAddress" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.ContractAddress">ContractAddress</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The address of the smart contract containing the method.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -153,11 +158,14 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_GasLimit.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.GasLimit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L22">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L46">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_GasLimit_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.GasLimit*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_GasLimit" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.GasLimit">GasLimit</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The maximum amount of gas that can be spent executing this transaction.
+Although the gas expenditure is theoretical rather than actual,
+this limit cannot be exceeded even when the method is run locally.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,11 +191,14 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_GasPrice.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.GasPrice%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L19">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L38">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_GasPrice_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.GasPrice*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_GasPrice" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.GasPrice">GasPrice</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The gas price to use. This is used to calculate the expected expenditure
+if the method is run by a miner mining a call transaction rather than
+locally.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,11 +224,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_MethodName.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.MethodName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L14">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L23">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_MethodName_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.MethodName*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_MethodName" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.MethodName">MethodName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The name of the method to call.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -243,11 +255,15 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_Parameters.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.Parameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L28">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L66">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_Parameters_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.Parameters*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_Parameters" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.Parameters">Parameters</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An array of encoded strings containing the parameters (and their type) to pass to the smart contract
+method when it is called. More information on the
+format of a parameter string is available
+<a target="_blank" href="https://academy.stratisplatform.com/SmartContracts/working-with-contracts.html#parameter-serialization">here</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -273,11 +289,17 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_Sender.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.Sender%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L25">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L57">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_Sender_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.Sender*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_Sender" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.Sender">Sender</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A wallet address containing the funds to cover transaction fees, gas, and any funds specified in the
+Amount field.
+Note that because the method call is local no funds are spent. However, the concept of the sender address
+is still valid and may need to be checked.
+For example, some methods, such as a withdrawal method on an escrow smart contract, should only be executed
+by the deployer, and in this case, it is the Sender address that identifies the deployer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -305,7 +327,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_ToString.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L30">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L68">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_ToString_" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.ToString*"></a>
   <h4 id="Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest_ToString" data-uid="Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.ToString">ToString()</h4>
@@ -341,7 +363,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_SmartContracts_Models_LocalCallContractRequest.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.SmartContracts/Models/LocalCallContractRequest.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

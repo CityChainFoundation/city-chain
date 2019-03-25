@@ -1737,7 +1737,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NBitcoin.IpExtensions.html",
-          "hash": "YKUfyXmtq35aU3Nuj4VfHA=="
+          "hash": "czhDSE3RDwbq0Lj0LCKVTg=="
         }
       },
       "is_incremental": false,
@@ -3369,7 +3369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NBitcoin.TransactionBuilder.html",
-          "hash": "/sdnIW1iA2mYw98hDvE2SQ=="
+          "hash": "vH/5gzHwdF5OsxrEmDQQfg=="
         }
       },
       "is_incremental": false,
@@ -3837,7 +3837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Base.BaseFeature.html",
-          "hash": "gfC4Dzc8dFA3macD9LxLBg=="
+          "hash": "4D3T1Uh1MoyMqkLw3jO1iw=="
         }
       },
       "is_incremental": false,
@@ -3957,7 +3957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Base.FullNodeBuilderBaseFeatureExtension.html",
-          "hash": "piQ6qAa2qQSrXksQFMWPzg=="
+          "hash": "9szgxO7k9oeM4vrwM5c3cg=="
         }
       },
       "is_incremental": false,
@@ -4557,7 +4557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Configuration.NodeSettings.html",
-          "hash": "O0E93CZhaBX1fkWYE+ZZjQ=="
+          "hash": "3kc44O12IHxUXDETVzsYUg=="
         }
       },
       "is_incremental": false,
@@ -4569,7 +4569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Configuration.Settings.ConnectionManagerSettings.html",
-          "hash": "Vq882O4AaIcqxF7O9k3jnw=="
+          "hash": "BvC5ItjSODmy2rlBjCJN+g=="
         }
       },
       "is_incremental": false,
@@ -4653,7 +4653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Connection.ConnectionManager.html",
-          "hash": "8a9tBM8g4RqSVbahZ/IxPQ=="
+          "hash": "qTo3NvcADdrSQdzNSXI3oQ=="
         }
       },
       "is_incremental": false,
@@ -4713,7 +4713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Connection.IConnectionManager.html",
-          "hash": "RYI8/Rkhx65Rmep2+JHicg=="
+          "hash": "q2HjFIwo6DoutU9Y8s7GQg=="
         }
       },
       "is_incremental": false,
@@ -4917,7 +4917,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Consensus.ConsensusManager.html",
-          "hash": "WA++j/hhUl1SLktyqz9DYg=="
+          "hash": "fWjcxR2ns3o/ZPVlXpElAw=="
         }
       },
       "is_incremental": false,
@@ -4941,7 +4941,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html",
-          "hash": "JtmEJqc839hbnrbVQLdeVA=="
+          "hash": "BQrgTHTfAtmhfk5sGq1dgw=="
         }
       },
       "is_incremental": false,
@@ -4965,7 +4965,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Consensus.DiConsensusRuleEngine.html",
-          "hash": "1ObkJtNYZP32inXU7J5fmA=="
+          "hash": "MDJ1Re82UI7ET15OrxXyAA=="
         }
       },
       "is_incremental": false,
@@ -5013,7 +5013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html",
-          "hash": "NJAWkA1CXFp3i6NxmPv9Lw=="
+          "hash": "Loj5Xpg+WJ28rZIZtWmgBw=="
         }
       },
       "is_incremental": false,
@@ -5169,7 +5169,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Consensus.RewindState.html",
-          "hash": "TWRpH4d6oretShWzWYAmtA=="
+          "hash": "2O7ie2vq5CbouWRoNIVJWQ=="
         }
       },
       "is_incremental": false,
@@ -5565,7 +5565,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Controllers.Models.BlockHeaderModel.html",
-          "hash": "N3hkjr+VtUDKurb5w4quIQ=="
+          "hash": "aJBXZgwgS93n78FN8h/3rA=="
         }
       },
       "is_incremental": false,
@@ -5626,6 +5626,18 @@
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Controllers.Models.GetTxOutModel.html",
           "hash": "uY5O/rB2xLPfR9JI37MhkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Controllers.Models.HexModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Controllers.Models.HexModel.html",
+          "hash": "pCCoqm4sOXaIAMTa5p9UyA=="
         }
       },
       "is_incremental": false,
@@ -5769,7 +5781,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Controllers.Models.html",
-          "hash": "sD+9jIeK+HgPQj+drMEHUg=="
+          "hash": "DiLBrfAy0fpzV8peGAN1pA=="
         }
       },
       "is_incremental": false,
@@ -5806,6 +5818,162 @@
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Controllers.html",
           "hash": "kEzMJfC4v9zHiYW2FIriCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.CoreEvents.BlockConnected.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.CoreEvents.BlockConnected.html",
+          "hash": "qVpbKl5rPlIajnyH1rvjrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.CoreEvents.BlockDisconnected.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.CoreEvents.BlockDisconnected.html",
+          "hash": "yeihpWAUdLERam2m4Co6iA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.CoreEvents.TransactionReceived.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.CoreEvents.TransactionReceived.html",
+          "hash": "n9MSltzWQMmPEBjx7MYmZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.CoreEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.CoreEvents.html",
+          "hash": "/qVkkJfmRY/8VZJCNpzt2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.DefaultSubscriptionErrorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.DefaultSubscriptionErrorHandler.html",
+          "hash": "TG8z1c/nmjikC+MZQEXYkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.EventBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.EventBase.html",
+          "hash": "SmEYxHA1jQTgAn4ocViJZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.GenericEventBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.GenericEventBase-1.html",
+          "hash": "MWIuCEiZig5YIdyRKmob2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.IEventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.IEventBus.html",
+          "hash": "54sIxHRSuf9sD3Aula3HDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.ISubscription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.ISubscription.html",
+          "hash": "wEL+nrZrW25Py0CU5V9sRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.ISubscriptionErrorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.ISubscriptionErrorHandler.html",
+          "hash": "TvWWoNIh8lWSB+jH9QP8CQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.InMemoryEventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.InMemoryEventBus.html",
+          "hash": "RvTiuQTNJW5gCtUXkybm3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.SubscriptionToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.SubscriptionToken.html",
+          "hash": "nwcVZ8caE2JFHyULI6TDLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.EventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.EventBus.html",
+          "hash": "vmyd8hI8dvYf+Yak/SRDXw=="
         }
       },
       "is_incremental": false,
@@ -6153,7 +6321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.BlockStoreFeature.html",
-          "hash": "UE/rDQWce84A+mb5uulgyQ=="
+          "hash": "2Jq74xSXVbvlc3GptK8dug=="
         }
       },
       "is_incremental": false,
@@ -6189,7 +6357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.BlockStoreSignaled.html",
-          "hash": "QJD0dB3xUgEN5El+QyBs3A=="
+          "hash": "RWNCRsZH8KWsIBcuK3LA7Q=="
         }
       },
       "is_incremental": false,
@@ -6225,7 +6393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.FullNodeBuilderBlockStoreExtension.html",
-          "hash": "gN49scZO08+qBEAZclwoFA=="
+          "hash": "PgyXId14Nc5XvCQ4QanmHg=="
         }
       },
       "is_incremental": false,
@@ -6501,7 +6669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.ColdStaking.Controllers.ColdStakingWalletRPCController.html",
-          "hash": "M/NXBysSfocP1xl+NWc5TA=="
+          "hash": "hjUMkFGc8NmTwhP/+9dz4g=="
         }
       },
       "is_incremental": false,
@@ -6765,7 +6933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.CoinViews.CachedCoinView.html",
-          "hash": "fhb6Wt0xVLXUimbIbih4lw=="
+          "hash": "vYSUuU4S65HrCDpDvyjnyg=="
         }
       },
       "is_incremental": false,
@@ -6801,7 +6969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.CoinViews.DBreezeCoinView.html",
-          "hash": "nIMLZtJojPknV4OJvj77gg=="
+          "hash": "lvagOVYEFxEmDwYHBfLPeg=="
         }
       },
       "is_incremental": false,
@@ -6837,7 +7005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView.html",
-          "hash": "HBu1fYOZ3LCDvM4cShU6lw=="
+          "hash": "S3IaFQABnj6cxNkoVwrc2Q=="
         }
       },
       "is_incremental": false,
@@ -6849,7 +7017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.CoinViews.InMemoryCoinView.html",
-          "hash": "MBINotd0PrYYN3S+evIb1A=="
+          "hash": "44VWS+IZd7kWn4CYW7lrww=="
         }
       },
       "is_incremental": false,
@@ -6897,7 +7065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.ConsensusFeature.html",
-          "hash": "bup5MhIYWNrXmOYbvvK6kA=="
+          "hash": "YPzqbGF5Y5VOqWm5gGl86g=="
         }
       },
       "is_incremental": false,
@@ -6957,7 +7125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.IStakeChain.html",
-          "hash": "jTYtw674dHV6lJmZRuVGgw=="
+          "hash": "XFvqwz02VLgVoDoaEn+UDw=="
         }
       },
       "is_incremental": false,
@@ -7005,7 +7173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.PosConsensusFeature.html",
-          "hash": "Kxl4zqs5Uwjr95oatwvNog=="
+          "hash": "4gA5GT1K4xsOb5Nvitwu1A=="
         }
       },
       "is_incremental": false,
@@ -7029,7 +7197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.PowConsensusFeature.html",
-          "hash": "YpuXHFX0w+sY3rDDrGUghg=="
+          "hash": "HsJYHZXss8Z958mWH6+3+Q=="
         }
       },
       "is_incremental": false,
@@ -7053,7 +7221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.IRewindDataIndexCache.html",
-          "hash": "Rlhm1RJg9qVbuoip5nGTXg=="
+          "hash": "ccCJvHAPKqKOqywFQO8Zgw=="
         }
       },
       "is_incremental": false,
@@ -7101,7 +7269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.ProvenBlockHeaders.RewindDataIndexCache.html",
-          "hash": "K0DP9TYE+QTXuHHEjiNagA=="
+          "hash": "9Bb+DZ+L5yBTyOiF7CHC+Q=="
         }
       },
       "is_incremental": false,
@@ -7545,7 +7713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.Rules.PosConsensusRuleEngine.html",
-          "hash": "OE9TFuujCxtDPkUGmAy5SQ=="
+          "hash": "ZyNZcEeVT2Bqx9fATeniwg=="
         }
       },
       "is_incremental": false,
@@ -7557,7 +7725,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html",
-          "hash": "XUcLwmjNBjrDwqcMoaBWtg=="
+          "hash": "uRDqU6Iuc8JS+TwM2g5hKQ=="
         }
       },
       "is_incremental": false,
@@ -7641,7 +7809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.StakeChainStore.html",
-          "hash": "nVkRyIB0heb71Y3uLWUHXQ=="
+          "hash": "9tl/kZOv8BP5Nv+ePf6xEw=="
         }
       },
       "is_incremental": false,
@@ -8013,7 +8181,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.LightWallet.LightWalletSyncManager.html",
-          "hash": "SBuXeBzK9O/oDV+oCWYZTA=="
+          "hash": "5bDVxU4A6SSZ2iKeGOlWlA=="
         }
       },
       "is_incremental": false,
@@ -8037,7 +8205,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.BlocksDisconnectedSignaled.html",
-          "hash": "ll1k6CeKS9R1vId725g7Tg=="
+          "hash": "9wu95s7jOntD431vNrMv+w=="
         }
       },
       "is_incremental": false,
@@ -8193,7 +8361,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.MempoolBehavior.html",
-          "hash": "Uu7dEr1KPLyrrC/CVWQl1Q=="
+          "hash": "twLbEx0rD8UqllBjfTPueA=="
         }
       },
       "is_incremental": false,
@@ -8205,7 +8373,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.MempoolCoinView.html",
-          "hash": "GoNdqUgc7/gGwZeVzIt37w=="
+          "hash": "1IsE4KmxTXnOoPyXRu1iFQ=="
         }
       },
       "is_incremental": false,
@@ -8289,7 +8457,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.MempoolOrphans.OrphanTx.html",
-          "hash": "eSEqdnXlbA/VEn/FW0Rp0w=="
+          "hash": "qPxwoeNo6sXbYp5u1WRUvA=="
         }
       },
       "is_incremental": false,
@@ -8301,7 +8469,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.MempoolOrphans.html",
-          "hash": "RiKL/JVYnTtGwAQj008H2Q=="
+          "hash": "eFP8cssR1eG2pNlNC2864g=="
         }
       },
       "is_incremental": false,
@@ -8361,7 +8529,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.MempoolSignaled.html",
-          "hash": "Ceqw9eV1ZQk0d+/czTT2jw=="
+          "hash": "AOv++ETzxMnC4V6d2QcGIg=="
         }
       },
       "is_incremental": false,
@@ -9129,7 +9297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Notifications.TransactionReceiver.html",
-          "hash": "ESYA47EvQ9nn3t3olZ/HLA=="
+          "hash": "6Iin1aTLsk7qVLTe/SGjMw=="
         }
       },
       "is_incremental": false,
@@ -9221,11 +9389,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.PoA.Events.FedMemberAdded.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.PoA.Events.FedMemberAdded.html",
+          "hash": "fGuaJwufDLHEwvX1f+DDBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.html",
+          "hash": "5JSTzK3PvPJL6ctDZnq2vA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.PoA.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.PoA.Events.html",
+          "hash": "0ttRjap0gHsCxjD12wnB/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.Features.PoA.FederationManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.FederationManager.html",
-          "hash": "iAZd6Aj2MtZTSZvdeP9oeQ=="
+          "hash": "kRsI3pXdJGhtTthnOZl4aw=="
         }
       },
       "is_incremental": false,
@@ -9525,7 +9729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.PoAConsensusRuleEngine.html",
-          "hash": "AIi5lVvBECQXoNz/4EwdiQ=="
+          "hash": "M1aMRgaixaDvCFMRQTkrxQ=="
         }
       },
       "is_incremental": false,
@@ -9549,7 +9753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.PoAFeature.html",
-          "hash": "RD29mCirAA2YZOOUgIIDog=="
+          "hash": "mUvbuo6YJPfpNevoVBWBXg=="
         }
       },
       "is_incremental": false,
@@ -9677,6 +9881,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.PoA.Voting.IWhitelistedHashesRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.PoA.Voting.IWhitelistedHashesRepository.html",
+          "hash": "oejbtCg8Kz5YsgFjw6/odA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.Features.PoA.Voting.Poll.yml",
       "output": {
         ".html": {
@@ -9693,7 +9909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.html",
-          "hash": "qewxKYqD9JdBtO2sYm784w=="
+          "hash": "/ILm9KxE/ZB3fgIC3bIfZg=="
         }
       },
       "is_incremental": false,
@@ -9729,7 +9945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.Voting.VotingController.html",
-          "hash": "UM9Zux8uwWu07qX3FbbWOw=="
+          "hash": "Gj3RdCftS3tmrkXF6UddVA=="
         }
       },
       "is_incremental": false,
@@ -9765,7 +9981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.Voting.VotingManager.html",
-          "hash": "+x8WjZ325y+M1qLfDA9v2Q=="
+          "hash": "G0l/kzI7Z7R0dKDmOblobA=="
         }
       },
       "is_incremental": false,
@@ -9777,7 +9993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.Voting.WhitelistedHashesRepository.html",
-          "hash": "Q5T0pDeT6fpZ7bh79w5T2A=="
+          "hash": "mIUX/79kRQZfGZUCiBSilA=="
         }
       },
       "is_incremental": false,
@@ -9789,7 +10005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.PoA.Voting.html",
-          "hash": "xwqNtailmE7zUkIatNyk3w=="
+          "hash": "lAnXcMrZEhm/mwAAqlv3uQ=="
         }
       },
       "is_incremental": false,
@@ -9861,7 +10077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.RPC.Controllers.FullNodeController.html",
-          "hash": "ZoeuXoPdjjxnAzz+08Q5hg=="
+          "hash": "l999NozS61dNQSyU4bjNwQ=="
         }
       },
       "is_incremental": false,
@@ -10677,7 +10893,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.BuildCallContractTransactionRequest.html",
-          "hash": "iAo5LPggttrr2w01SHy8aw=="
+          "hash": "7GUAhRkB+6GosmaBqqtXPQ=="
         }
       },
       "is_incremental": false,
@@ -10713,7 +10929,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.BuildCreateContractTransactionRequest.html",
-          "hash": "BwJ2QSQ+XqvQaV56dAzg6w=="
+          "hash": "DkN1iXCVyyUb+sDHRbxgTw=="
         }
       },
       "is_incremental": false,
@@ -10749,7 +10965,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.GetStorageRequest.html",
-          "hash": "kt3D5SO6V5nPqOlIwQtQHQ=="
+          "hash": "DvkkXoZIQEK2+Xr7lLuJWA=="
         }
       },
       "is_incremental": false,
@@ -10761,7 +10977,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.LocalCallContractRequest.html",
-          "hash": "kzhOWhjGcAXRRri1oOzqVA=="
+          "hash": "jXlzrkOxVHtxanJrqeVdtA=="
         }
       },
       "is_incremental": false,
@@ -10797,7 +11013,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Models.html",
-          "hash": "wMdJAfLqvFw7mZhtIyCbkg=="
+          "hash": "27RUztR7iYFNwudpolNKDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.IContractCodeHashingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.IContractCodeHashingStrategy.html",
+          "hash": "vFxdEnrA02WkLI+WkPzyVA=="
         }
       },
       "is_incremental": false,
@@ -10809,7 +11037,43 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.IFullNodeBuilderExtensions.html",
-          "hash": "Jj6QkPHyrSw/zwKT3i+aqw=="
+          "hash": "KUt2Ym0xfnQfa+rv5Oog/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.IWhitelistedHashChecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.IWhitelistedHashChecker.html",
+          "hash": "t4yrSUKB14052bwKTt4GLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.Keccak256CodeHashingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.Keccak256CodeHashingStrategy.html",
+          "hash": "w7wHNUAy55ULK2NYSDQbGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.AllowedCodeHashLogic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.AllowedCodeHashLogic.html",
+          "hash": "wG4t6++hkb3uOo2FoXB2+w=="
         }
       },
       "is_incremental": false,
@@ -10821,7 +11085,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.ContractSignedCodeLogic.html",
-          "hash": "vhODjnAXXpBcg6HGbmxvQA=="
+          "hash": "m1eOQWqhBAoh+6Vi+pZg7w=="
         }
       },
       "is_incremental": false,
@@ -10845,7 +11109,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.Rules.html",
-          "hash": "QQurw/SNAiwn3My3FC2njQ=="
+          "hash": "rx06mpDtLHU9RWed07s5aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.SignedContractExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.SignedContractExtensions.html",
+          "hash": "503+oHe1Og0wz9Zae0Lo5A=="
         }
       },
       "is_incremental": false,
@@ -10893,7 +11169,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.SmartContractPoARuleRegistration.html",
-          "hash": "T20liX/U2DCP50WFYteNnA=="
+          "hash": "H2kZBMZ8t6CSNV15FgI0QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.WhitelistedHashChecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.WhitelistedHashChecker.html",
+          "hash": "UaipiKObPdXNsf90VOGRAA=="
         }
       },
       "is_incremental": false,
@@ -10905,7 +11193,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.PoA.html",
-          "hash": "fntRskxTNW2xDW5wmGEmlQ=="
+          "hash": "tOHGAEHYhlg0QmXdQZHwmQ=="
         }
       },
       "is_incremental": false,
@@ -11169,7 +11457,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Consensus.Rules.SmartContractFormatLogic.html",
-          "hash": "CYIg54bU1Kz26/jeIhHE7w=="
+          "hash": "bY3ueM678H5mJ0sOy7KIFw=="
         }
       },
       "is_incremental": false,
@@ -11205,7 +11493,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.ReflectionExecutor.Controllers.SmartContractsController.html",
-          "hash": "ApBjlhbN3ktC6kwD4fAElw=="
+          "hash": "Uz36x4w7fxx2k+0HfJKGwA=="
         }
       },
       "is_incremental": false,
@@ -11261,11 +11549,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.ContractTransactionValidationRule.yml",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.ContractTransactionChecker.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.ContractTransactionValidationRule.html",
-          "hash": "lnGzT3QRxHnR55xtD6pBqA=="
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.ContractTransactionChecker.html",
+          "hash": "TDBN1zO0CHwJesQjqHwS+Q=="
         }
       },
       "is_incremental": false,
@@ -11273,11 +11561,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.IContractTransactionValidationLogic.yml",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.ContractTransactionFullValidationRule.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.IContractTransactionValidationLogic.html",
-          "hash": "3dUuEOxCqSHOg49rhTHBrA=="
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.ContractTransactionFullValidationRule.html",
+          "hash": "BaA9BSnUDymFiwlbdnLdZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.ContractTransactionPartialValidationRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.ContractTransactionPartialValidationRule.html",
+          "hash": "0k8o5n5tbkMQ5QaE9XHlRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.IContractTransactionFullValidationRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.IContractTransactionFullValidationRule.html",
+          "hash": "RXHud8wywGZw4SCz84FcjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.IContractTransactionPartialValidationRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.IContractTransactionPartialValidationRule.html",
+          "hash": "YQE8qpQtV9KMDlqtZrpYnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.IContractTransactionValidationRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.IContractTransactionValidationRule.html",
+          "hash": "Iczz+XDjgGsEu9Pvu7DDsA=="
         }
       },
       "is_incremental": false,
@@ -11349,7 +11685,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Rules.html",
-          "hash": "7o11efCjqbcwMMBbMif7qg=="
+          "hash": "hIufi12kq9/a1aJrplZ96A=="
         }
       },
       "is_incremental": false,
@@ -11397,7 +11733,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.SmartContractMempoolValidator.html",
-          "hash": "RZHCbaPkJGoEjk5s+81QGA=="
+          "hash": "Ooi+huC+xy/mVfXjkfhjGQ=="
         }
       },
       "is_incremental": false,
@@ -11409,7 +11745,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.SmartContractOptions.html",
-          "hash": "PxhbtB1KbzgRcjxWKSvhZg=="
+          "hash": "ndoP/zRQuDx8IY2wg3D07w=="
         }
       },
       "is_incremental": false,
@@ -11505,7 +11841,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Wallet.SmartContractTransactionService.html",
-          "hash": "NXlxBfBsHj70X9nPfe5SJA=="
+          "hash": "zOnLrcJ2tf0WEYjwT6sLKg=="
         }
       },
       "is_incremental": false,
@@ -11517,7 +11853,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Wallet.SmartContractWalletController.html",
-          "hash": "m6r7kc98pizNZ1jqHr2o8w=="
+          "hash": "oQZfv+7KmBvMNyKXPJaavA=="
         }
       },
       "is_incremental": false,
@@ -11613,7 +11949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.AccountRoot.html",
-          "hash": "GZhSnOAXd4O6C87kVOWfkA=="
+          "hash": "Hd4B328WLZ9Vubc8w3twzA=="
         }
       },
       "is_incremental": false,
@@ -11889,7 +12225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.HdAccount.html",
-          "hash": "W800n5s8GxVMIDUk6V9n+w=="
+          "hash": "p2fxZNK/JXYbsgGALyDYjQ=="
         }
       },
       "is_incremental": false,
@@ -11901,7 +12237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.HdAddress.html",
-          "hash": "gYJPIYLVTjvh3nB5LK/9rg=="
+          "hash": "ZuJcbB1+2k/8TE2ibjYX6g=="
         }
       },
       "is_incremental": false,
@@ -12081,7 +12417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.AddressBookEntryRequest.html",
-          "hash": "1y1E1v9Wd6r2/dCWtGO+mA=="
+          "hash": "7NW9G1TmGgfokKhs9rZdNw=="
         }
       },
       "is_incremental": false,
@@ -12141,7 +12477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.GetAllAddressesModel.html",
-          "hash": "S/xU/5cv+eDHsd9CFHOvDA=="
+          "hash": "RnO8d63MIkm9xLE7uvemDA=="
         }
       },
       "is_incremental": false,
@@ -12153,7 +12489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.GetExtPubKeyModel.html",
-          "hash": "TU5gSNKwRFWkiKqZn7fM5w=="
+          "hash": "M0F9tZDSJTQK8P4AaXR6jg=="
         }
       },
       "is_incremental": false,
@@ -12225,7 +12561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.GetUnusedAccountModel.html",
-          "hash": "oXo76rrg/q3ptEvqGejGLA=="
+          "hash": "5cpsTzwtpQCIGqtRScBvQQ=="
         }
       },
       "is_incremental": false,
@@ -12237,7 +12573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.GetUnusedAddressModel.html",
-          "hash": "HShUtw3ABqh4x3oCuYL6Eg=="
+          "hash": "1SKQkJ3f3kPyV+El73t9ug=="
         }
       },
       "is_incremental": false,
@@ -12249,7 +12585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.GetUnusedAddressesModel.html",
-          "hash": "sfCveAI5dwmn5yhGiSpHVw=="
+          "hash": "ppSecoRX/+XaGwbOxew9fg=="
         }
       },
       "is_incremental": false,
@@ -12285,7 +12621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.ListAccountsModel.html",
-          "hash": "HCF5TxsYG5k2jt7KVJB+8Q=="
+          "hash": "mmRWLQgO2D/LSZ0auChwdQ=="
         }
       },
       "is_incremental": false,
@@ -12369,7 +12705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.RemoveTransactionsModel.html",
-          "hash": "UB53F3QB0uhHxtlKDrYa+g=="
+          "hash": "HcL+w2c+IrMq04LfdIf5kg=="
         }
       },
       "is_incremental": false,
@@ -12405,7 +12741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.SendTransactionRequest.html",
-          "hash": "gg+b/KnY2oZL2bnxcoTXEA=="
+          "hash": "hNA/TOqYozJVYeoH7xke+w=="
         }
       },
       "is_incremental": false,
@@ -12441,7 +12777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.SpendableTransactionsRequest.html",
-          "hash": "xiAsMu5BUltQmnHM6z+Riw=="
+          "hash": "67oL9edSQ5z1MXBMbiEV0Q=="
         }
       },
       "is_incremental": false,
@@ -12453,7 +12789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.SplitCoinsRequest.html",
-          "hash": "IQjhkGma9GBNv0edBFT/sA=="
+          "hash": "s+is5LT0jZmsGTsZslsL1w=="
         }
       },
       "is_incremental": false,
@@ -12705,7 +13041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.WalletSyncFromDateRequest.html",
-          "hash": "V/fFcXr8bpms+Vrd6teXUw=="
+          "hash": "Q5bxUyVDkdBMpa5v82bQTg=="
         }
       },
       "is_incremental": false,
@@ -12729,7 +13065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Models.html",
-          "hash": "Vw4HzDUAaQTZGSdxuCbYfw=="
+          "hash": "nFx7XFCu9rAlcsEp9HmFMA=="
         }
       },
       "is_incremental": false,
@@ -12741,7 +13077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.PaymentDetails.html",
-          "hash": "tHNqXbnK9pG8lDHzrGQL0Q=="
+          "hash": "AKb7yoI4efVX9WSn2EoCTg=="
         }
       },
       "is_incremental": false,
@@ -12801,7 +13137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.SpendingDetails.html",
-          "hash": "+BUEDwGL0CjWOsLs0JNvAg=="
+          "hash": "iEl1QMNMYvZaBecpMR+qIQ=="
         }
       },
       "is_incremental": false,
@@ -12825,7 +13161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.TransactionData.html",
-          "hash": "1hRKE/cLcL0LvNPDiuuT6A=="
+          "hash": "VPS4CkBINkw5+SqKTtRF1A=="
         }
       },
       "is_incremental": false,
@@ -12837,7 +13173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.UnspentOutputReference.html",
-          "hash": "jIa0qVdeu3fMTT0RlZ6v4Q=="
+          "hash": "cE9rYR5K0EctewggmeDbqA=="
         }
       },
       "is_incremental": false,
@@ -12873,7 +13209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Wallet.html",
-          "hash": "Q3KjP6bIIixO3MlQbey8lg=="
+          "hash": "Zdw1CRfuAW0exb8gNYuaTw=="
         }
       },
       "is_incremental": false,
@@ -12957,7 +13293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletRPCController.html",
-          "hash": "p1LUFTzz3h2nOQVy37/e5w=="
+          "hash": "+67b4adGpI2oeAUrg9kUGQ=="
         }
       },
       "is_incremental": false,
@@ -12969,7 +13305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletSettings.html",
-          "hash": "QhNxuU4EGF3bjeKbAsrwJg=="
+          "hash": "vQFRqn4e/1LfCs1PAfo5Jw=="
         }
       },
       "is_incremental": false,
@@ -12981,7 +13317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletSyncManager.html",
-          "hash": "htiUC3630Zc3OOVGdtjEtw=="
+          "hash": "DlHQxn3Zi+/KFEYblWP9xA=="
         }
       },
       "is_incremental": false,
@@ -13161,7 +13497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.WatchOnlyWallet.WatchOnlyWalletManager.html",
-          "hash": "CpnWj+t7PGIdj65G3szmqA=="
+          "hash": "GXGqsPvkz8W+aBKL9ZAwCw=="
         }
       },
       "is_incremental": false,
@@ -13605,7 +13941,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html",
-          "hash": "PSDZrUCpHkbSxTjr9uRkyw=="
+          "hash": "7OYa0LLeb1NegUD3UBGYUw=="
         }
       },
       "is_incremental": false,
@@ -13641,7 +13977,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.GenerateCoinsFastDateTimeProvider.html",
-          "hash": "EftCR/dXYlr87dArIDWUxA=="
+          "hash": "Vovj5sWhUBtRrVEDx9IBLg=="
         }
       },
       "is_incremental": false,
@@ -14397,7 +14733,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.RPC.RPCTestsMutable.html",
-          "hash": "j/ZST+ZVaAqN/YQTNY0IuA=="
+          "hash": "YVIFlYL6Fi+Cxdm3oSU2NQ=="
         }
       },
       "is_incremental": false,
@@ -14409,7 +14745,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.RPC.RpcBitcoinImmutableTests.html",
-          "hash": "f2REORNp6bg+TCuoyjBTiw=="
+          "hash": "VXuSfD94d3b8zgo7sfCirQ=="
         }
       },
       "is_incremental": false,
@@ -14445,7 +14781,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.RPC.RpcTestFixtureBitcoin.html",
-          "hash": "U3ga19fuBODCQk0/srXu4A=="
+          "hash": "qRD3YqYr/NdUtr7ivZyKmQ=="
         }
       },
       "is_incremental": false,
@@ -14469,7 +14805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.RPC.RpcTests.html",
-          "hash": "JSg9mb8rEeexiP2rKuazRw=="
+          "hash": "YTsS0wAgrTcdCKoW5kWbRA=="
         }
       },
       "is_incremental": false,
@@ -15993,7 +16329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.P2P.SelfEndpointTracker.html",
-          "hash": "F8fSqlV3+WhVtiJvMSxXoQ=="
+          "hash": "qoqNH27G64WJyul8nb6VOg=="
         }
       },
       "is_incremental": false,
@@ -16037,23 +16373,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Signals.EventNotifier-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Signals.EventNotifier-1.html",
-          "hash": "VfN5qOT5R5048LbgfznMLQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.Signals.ISignals.yml",
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Signals.ISignals.html",
-          "hash": "Vq2RQSCfvUU5iyC3AablEw=="
+          "hash": "fbg1qkn5iBkaPOoSSvFeyg=="
         }
       },
       "is_incremental": false,
@@ -16065,7 +16389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Signals.Signals.html",
-          "hash": "hTY+ahFQCruPMmRZbrDF+g=="
+          "hash": "YYcFQKy1iNvOxGOf9gJPxQ=="
         }
       },
       "is_incremental": false,
@@ -16077,7 +16401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Signals.html",
-          "hash": "+q5YPy180+TDSGj4r4N57A=="
+          "hash": "MbNxVD3T3kQUfUkyfGQaBw=="
         }
       },
       "is_incremental": false,
@@ -17292,7 +17616,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Controllers.FederationGatewayController.html",
-          "hash": "G8YkTLTsFLNSnHSbHZeNDg=="
+          "hash": "K/PfIXNIm8yxEaHqpvxDgA=="
         }
       },
       "is_incremental": false,
@@ -17304,7 +17628,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Controllers.FederationGatewayRouteEndPoint.html",
-          "hash": "ZOdAw52MuE3YaKtEOayCWA=="
+          "hash": "3d3iYebCw5o2rB2tD4HJWQ=="
         }
       },
       "is_incremental": false,
@@ -17352,7 +17676,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.FederatedPegBlockDefinition.html",
-          "hash": "vlm/+9nb6topYZjt2OwrSw=="
+          "hash": "Lz+uYRMbb93n4ygvoywOpA=="
         }
       },
       "is_incremental": false,
@@ -17364,7 +17688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.FederationGatewaySettings.html",
-          "hash": "W/b9R106pdZTdbPcxZSEnA=="
+          "hash": "LQpe7Bldih4OQqS8wQ4SKw=="
         }
       },
       "is_incremental": false,
@@ -17376,7 +17700,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.FullNodeBuilderSidechainRuntimeFeatureExtension.html",
-          "hash": "ePjOZxbaUVyMDnspEKSiLw=="
+          "hash": "74wQ3AVBFPyzf0wJGGHpdQ=="
         }
       },
       "is_incremental": false,
@@ -17388,19 +17712,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.HttpClientFactory.html",
-          "hash": "BO/AdH/ytKqg/2F0AarL5g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Features.FederatedPeg.ILeaderProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Features.FederatedPeg.ILeaderProvider.html",
-          "hash": "kZJQAQHlCGgseb1EydkwDg=="
+          "hash": "cPQjqtj2raNNUL97ymXDeQ=="
         }
       },
       "is_incremental": false,
@@ -17432,18 +17744,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.LeaderTest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.LeaderTest.html",
-          "hash": "yfesNJLrbpERD4l09tuOJQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.MiningTests.yml",
       "output": {
         ".html": {
@@ -17460,7 +17760,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.NodeSetupTests.html",
-          "hash": "Rg7nQv2PwZCpirQxP98ITQ=="
+          "hash": "cXOKMIpxTpUWkbBzHWvYZQ=="
         }
       },
       "is_incremental": false,
@@ -17532,7 +17832,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.Utils.SidechainFederationNodeRunner.html",
-          "hash": "tXL3SxYABmk2bY2lhjgxUA=="
+          "hash": "0XkeeWvE934/xHoXwsNFQA=="
         }
       },
       "is_incremental": false,
@@ -17556,7 +17856,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.Utils.SidechainTestContext.html",
-          "hash": "tkJGCtUwORGUvn9UOIoXrg=="
+          "hash": "UA74sMOiigX13m7kdG5HEg=="
         }
       },
       "is_incremental": false,
@@ -17568,7 +17868,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.Utils.SidechainUserNodeRunner.html",
-          "hash": "LDwvJQsPQEhK79OPIQ3EnQ=="
+          "hash": "z1WxKJSq97RPc+ZIMCH1fQ=="
         }
       },
       "is_incremental": false,
@@ -17604,7 +17904,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.html",
-          "hash": "3ezyJ5E3uy4Y/B+cTlB4vA=="
+          "hash": "R2f0a2Z9Ala2D8FCwEZXGg=="
         }
       },
       "is_incremental": false,
@@ -17617,6 +17917,18 @@
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Interfaces.CrossChainTransferStatus.html",
           "hash": "HwBxiGDB2R+z7GRrb+Yn5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.FederatedPeg.Interfaces.ICoinbaseSplitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.FederatedPeg.Interfaces.ICoinbaseSplitter.html",
+          "hash": "S2M/cB5AnTh5WH7ZYS0djA=="
         }
       },
       "is_incremental": false,
@@ -17736,19 +18048,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Interfaces.html",
-          "hash": "DofBJU7/o6oNh3/6H0w/WQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Features.FederatedPeg.LeaderProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Features.FederatedPeg.LeaderProvider.html",
-          "hash": "etkkOEhMMRf8qRpd6uMmuA=="
+          "hash": "XzMfOMVqfMteSzOI2vSC9w=="
         }
       },
       "is_incremental": false,
@@ -17976,7 +18276,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Notifications.BlockObserver.html",
-          "hash": "Nj3x552jeTAKwWm/n7EPNg=="
+          "hash": "WOmmBAWaEDdL9Lgr3BnDDQ=="
         }
       },
       "is_incremental": false,
@@ -17988,7 +18288,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Notifications.TransactionObserver.html",
-          "hash": "49Qiq+TlyHzEtiX433Hpig=="
+          "hash": "tPVuVYa8h/78toMR2OVKYw=="
         }
       },
       "is_incremental": false,
@@ -18056,11 +18356,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.FederatedPeg.PremineCoinbaseSplitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.FederatedPeg.PremineCoinbaseSplitter.html",
+          "hash": "jISZns9JuYxpVOTIddeRcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Features.FederatedPeg.RestClients.FederationGatewayClient.yml",
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.RestClients.FederationGatewayClient.html",
-          "hash": "WbRDBT6K0Quqlc9qXF9qQw=="
+          "hash": "wY0b8NPLn2r5gQ6MrKF3Ew=="
         }
       },
       "is_incremental": false,
@@ -18072,7 +18384,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.RestClients.IFederationGatewayClient.html",
-          "hash": "u7KebkpLpJTYyUFHPFJrnw=="
+          "hash": "9NvNMoB/MX+stGgCQUMJkQ=="
         }
       },
       "is_incremental": false,
@@ -18120,7 +18432,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.SourceChain.DepositExtractor.html",
-          "hash": "KleH0oVYwu80MQR89dCW3A=="
+          "hash": "FBkegJqGIa1Rzdp5gdaCow=="
         }
       },
       "is_incremental": false,
@@ -18188,18 +18500,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.ILeaderReceiver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.ILeaderReceiver.html",
-          "hash": "RBvGLsULfsvFcncRf1zvfg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.IMaturedBlocksSyncManager.yml",
       "output": {
         ".html": {
@@ -18228,7 +18528,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.ISignedMultisigTransactionBroadcaster.html",
-          "hash": "FcV2ivY3KuVnxJwvszVOUg=="
+          "hash": "nUmOToWu9VMrXsJ9Qu5omg=="
         }
       },
       "is_incremental": false,
@@ -18260,30 +18560,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.IWithdrawalReceiver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.IWithdrawalReceiver.html",
-          "hash": "WNDIZZa65W54Fe0E66VhYw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.LeaderReceiver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.LeaderReceiver.html",
-          "hash": "uGP5VXngP1rU/b7Xwnp6VA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.MaturedBlocksSyncManager.yml",
       "output": {
         ".html": {
@@ -18300,7 +18576,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.PartialTransactionRequester.html",
-          "hash": "ZKuKnCLQww80Exyat3Yr+Q=="
+          "hash": "DxSYrZ/mI1VdzqVwMtZ9oA=="
         }
       },
       "is_incremental": false,
@@ -18312,7 +18588,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.SignedMultisigTransactionBroadcaster.html",
-          "hash": "q8n7jYJcxJByZblgalq+1w=="
+          "hash": "q+QgA/z84vEdmHdZx4QV/A=="
         }
       },
       "is_incremental": false,
@@ -18368,18 +18644,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.WithdrawalReceiver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.WithdrawalReceiver.html",
-          "hash": "GuCS6HfhgMsIrngjCJLveg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.WithdrawalTransactionBuilder.yml",
       "output": {
         ".html": {
@@ -18396,7 +18660,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.TargetChain.html",
-          "hash": "p0j9BDKhpW764SD8Sr5yeA=="
+          "hash": "5n72vCGzF5x13DJUPkg/Xw=="
         }
       },
       "is_incremental": false,
@@ -18444,7 +18708,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Wallet.FederationWalletTransactionBuilder.html",
-          "hash": "v5/NSEpX9tw0B8gmtjjKUQ=="
+          "hash": "8N55jrY+U6tPxQ43dG4WwA=="
         }
       },
       "is_incremental": false,
@@ -18504,7 +18768,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Wallet.Recipient.html",
-          "hash": "leu7tUOLNO9S/zM3WiBvYQ=="
+          "hash": "cQrepJ8mnV78AjXjhkAHcA=="
         }
       },
       "is_incremental": false,
@@ -18528,7 +18792,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Wallet.TransactionBuildContext.html",
-          "hash": "j4uwG84ViT4Bg12GlxRTjg=="
+          "hash": "e0EvpznZ+QBTiW3sMRyvAQ=="
         }
       },
       "is_incremental": false,
@@ -18588,7 +18852,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.html",
-          "hash": "hEoYb3L/6X32JrcGw8+ljA=="
+          "hash": "6JQ8JaZoJ8Lm/CxZD/Kt7g=="
         }
       },
       "is_incremental": false,
@@ -18792,7 +19056,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.BaseMessage.html",
-          "hash": "zuBAIfRz7+QkhnWa134xsg=="
+          "hash": "K7Kh4lL0+srOVPbr+En3AA=="
         }
       },
       "is_incremental": false,
@@ -18816,7 +19080,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.CallDataSerializer.html",
-          "hash": "UMHwvPWHMNPOs6ppXMlJzw=="
+          "hash": "TQDXNMo7a85RzmjgEakdqA=="
         }
       },
       "is_incremental": false,
@@ -18828,7 +19092,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.CallMessage.html",
-          "hash": "OMIVv8pSbWgnRlMdecsRkQ=="
+          "hash": "bvJ8veYMMLkQdfnTbW6bnQ=="
         }
       },
       "is_incremental": false,
@@ -19116,7 +19380,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.ContractTransferMessage.html",
-          "hash": "D1LPrC9EiQ96IyE8eICijw=="
+          "hash": "gv5Ruk+Uf/V+C2Xxv/4okA=="
         }
       },
       "is_incremental": false,
@@ -19128,7 +19392,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.ContractTxData.html",
-          "hash": "vjWMW13YrytF8kdqbGugDg=="
+          "hash": "ka/3wRxXXTZQ5kXJldm+PQ=="
         }
       },
       "is_incremental": false,
@@ -19224,7 +19488,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.ExternalCallMessage.html",
-          "hash": "/fH0iMmHZFMc6Qd8jgYtoQ=="
+          "hash": "maa/7x25uYCCWTwrvQTUwg=="
         }
       },
       "is_incremental": false,
@@ -19236,7 +19500,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.ExternalCreateMessage.html",
-          "hash": "zBLrS47dKGYG8f+6x6b45Q=="
+          "hash": "8YClDpl/LfrJ8w3c7GRhMg=="
         }
       },
       "is_incremental": false,
@@ -19248,7 +19512,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.GasPriceList.html",
-          "hash": "WUitaXXcf8ZLgcOCBMtkiw=="
+          "hash": "84Y10OLxv3pOjhaNIspx3g=="
         }
       },
       "is_incremental": false,
@@ -19356,7 +19620,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.ILRewrite.CodeSegment.html",
-          "hash": "m34HJMaTgsd8JmF4OGB7dA=="
+          "hash": "r5AA/+Tzqm1RuK116JMVug=="
         }
       },
       "is_incremental": false,
@@ -19548,7 +19812,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.InternalCallMessage.html",
-          "hash": "HBgDbH9TaYVJB4oC7AJwfw=="
+          "hash": "9taOIF+nywE8G6kzf8Pk5Q=="
         }
       },
       "is_incremental": false,
@@ -19560,7 +19824,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.InternalCreateMessage.html",
-          "hash": "h2vyIYVFna3ydSgUJnE0pw=="
+          "hash": "+DzOr7br0ozV0VuJgfSeQQ=="
         }
       },
       "is_incremental": false,
@@ -19572,7 +19836,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.InternalExecutor.html",
-          "hash": "6ycZpnO8hytcXCZipVALkw=="
+          "hash": "gjuGriVS3DD3zceeM0bggg=="
         }
       },
       "is_incremental": false,
@@ -19692,7 +19956,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.Local.ILocalExecutionResult.html",
-          "hash": "46LdU11b787rcT3Z4NIK8w=="
+          "hash": "n3ecwUyuq5n67/tL4Zhsow=="
         }
       },
       "is_incremental": false,
@@ -19704,7 +19968,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.Local.LocalExecutionResult.html",
-          "hash": "ErD9nLRBSenEgKabVVrL2Q=="
+          "hash": "GUfIkqjmOU32P77m9efLKw=="
         }
       },
       "is_incremental": false,
@@ -19740,7 +20004,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.MeteredPersistenceStrategy.html",
-          "hash": "Bm4S9oMDcV2pfCCv7z6iVQ=="
+          "hash": "f5XWsj29RwWZ6BbTMBxoVw=="
         }
       },
       "is_incremental": false,
@@ -19752,7 +20016,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.Metering.GasMeter.html",
-          "hash": "H0xP+woEHYgh8viuInfZCg=="
+          "hash": "RU47M6Uhj/N1CEHZK28RsA=="
         }
       },
       "is_incremental": false,
@@ -19848,7 +20112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.ContractRefundProcessor.html",
-          "hash": "PHDdN5SmTCGZYFLS1WxDig=="
+          "hash": "FdSnL9hGflP7NUvAAWL58w=="
         }
       },
       "is_incremental": false,
@@ -19872,7 +20136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.ResultProcessors.IContractRefundProcessor.html",
-          "hash": "V+cdItSGm1C27w/tI+0lPA=="
+          "hash": "58t0GiW6ft049GO/WL909A=="
         }
       },
       "is_incremental": false,
@@ -20040,7 +20304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.SignedCodeCallDataSerializer.html",
-          "hash": "CsQUYfpRhXZz9EN/yUEX6g=="
+          "hash": "77c92YRilZwLTwqTGCrJnw=="
         }
       },
       "is_incremental": false,
@@ -20052,7 +20316,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.SignedCodeContractTxData.html",
-          "hash": "TLyQfQuLnvrSHmMqhdckew=="
+          "hash": "Lbt2atiaSl4/J3oDJl+pwA=="
         }
       },
       "is_incremental": false,
@@ -20076,7 +20340,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.SmartContractState.html",
-          "hash": "Y/x/uDBbdx9GM40KZj3OFw=="
+          "hash": "KLrUO2F78G1RHHGersWhDQ=="
         }
       },
       "is_incremental": false,
@@ -20124,7 +20388,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.StateProcessor.html",
-          "hash": "GmOx6sguh3OtJCcSFYVj2g=="
+          "hash": "DVfNZM81EOoPtp5V5bUg0w=="
         }
       },
       "is_incremental": false,
@@ -20136,7 +20400,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionError.html",
-          "hash": "aDUCDLE5lyw5oH8RwdCDMQ=="
+          "hash": "doxWr+4ntQhiH5AS8aILnA=="
         }
       },
       "is_incremental": false,
@@ -20148,7 +20412,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionErrorKind.html",
-          "hash": "WLoYFqfzbbhQWjfGy+BMbQ=="
+          "hash": "iks4OcnflTgtEsrQ206A/g=="
         }
       },
       "is_incremental": false,
@@ -20172,7 +20436,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionResult.html",
-          "hash": "rZh2Shnuc9S6IWu8mLcRow=="
+          "hash": "1joS3GJLz8Ens6dg/2OV7A=="
         }
       },
       "is_incremental": false,
@@ -20184,7 +20448,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.CLR.StateTransitionSuccess.html",
-          "hash": "EZ5hdhSKtKmffK9Ls5tBow=="
+          "hash": "1gXBKxgomdNVf/J2b6J8sw=="
         }
       },
       "is_incremental": false,
@@ -22032,7 +22296,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.ContractExecutionFailureTests-1.html",
-          "hash": "8GlVXn7cwDZVLOUPOSAzsg=="
+          "hash": "SPqp0REyEfJ3wi/u6XWeqw=="
         }
       },
       "is_incremental": false,
@@ -22068,7 +22332,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoAContractExecutionFailureTests.html",
-          "hash": "o7GFokSQyKzTI4xZoT2E6A=="
+          "hash": "Nu5+Go8j2EuGiELXWXSchg=="
         }
       },
       "is_incremental": false,
@@ -22116,7 +22380,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoW.SmartContractMemoryPoolTests.html",
-          "hash": "xhwoM2pePOXewxC8/35WGQ=="
+          "hash": "EetmB7kvi/Mm1w+GQRqXTg=="
         }
       },
       "is_incremental": false,
@@ -22128,7 +22392,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoW.SmartContractMinerTests.Blockinfo.html",
-          "hash": "ujwvRQfevqZpiYLlYCVD9A=="
+          "hash": "hjn1uI0lNC+h8L3YzZSFJQ=="
         }
       },
       "is_incremental": false,
@@ -22140,7 +22404,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoW.SmartContractMinerTests.TestContext.html",
-          "hash": "h7OXKJoW2eAu3W6V13BiQw=="
+          "hash": "va58LpLu0Evm3pDekN+YBQ=="
         }
       },
       "is_incremental": false,
@@ -22152,7 +22416,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoW.SmartContractMinerTests.html",
-          "hash": "IaYeU/WMN/ck3Ij2KSGggg=="
+          "hash": "XUJ7bwUKmFPoqfgRUkW2fA=="
         }
       },
       "is_incremental": false,
@@ -22176,7 +22440,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoW.SmartContractWalletOnPosNetworkTests.html",
-          "hash": "bw8hv5qg5LzjnH5jsY7MVw=="
+          "hash": "42HLum+JIqWr9PRHs0WTrg=="
         }
       },
       "is_incremental": false,
@@ -22188,7 +22452,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoW.SmartContractWalletTests.html",
-          "hash": "XbwKV7ufvPvuNMPvbFmXSw=="
+          "hash": "QjBZWGlyFS8aeTNKBQ5UCw=="
         }
       },
       "is_incremental": false,
@@ -22224,7 +22488,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoWContractExecutionFailureTests.html",
-          "hash": "Ij1aFsZ5x0HGUsNMR7efsA=="
+          "hash": "A4P2HDdGMxUa51Dy5g+NWQ=="
         }
       },
       "is_incremental": false,
@@ -22260,7 +22524,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.SignedContractTests.html",
-          "hash": "TmbpfJ9OVVOJjTXwmt0bQA=="
+          "hash": "isxHmc+y64Y4jQoGHL6+hQ=="
         }
       },
       "is_incremental": false,
@@ -22280,11 +22544,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.IntegrationTests.WhitelistNodeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.IntegrationTests.WhitelistNodeExtensions.html",
+          "hash": "MSU902iZwDRbBxHgihJUYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.SmartContracts.IntegrationTests.WhitelistedContractTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.SmartContracts.IntegrationTests.WhitelistedContractTests.html",
+          "hash": "/yuSokszn4TKtzdjz7cw2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.SmartContracts.IntegrationTests.yml",
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.html",
-          "hash": "Jyx38dRJGW9UvRLsymsbBQ=="
+          "hash": "5zsCe1jfn2O6vmVb/aK2Rg=="
         }
       },
       "is_incremental": false,
@@ -22584,7 +22872,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "qxtNIjlFSbfH2AdaxEZb9g=="
+          "hash": "l6NmOivttEV7vhnRb5WscQ=="
         }
       },
       "is_incremental": false,
@@ -22679,16 +22967,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 1880,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1904,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
