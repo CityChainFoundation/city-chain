@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LightWalletFeature
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.41.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
       <a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_InitializeBeforeBase">FullNodeFeature.InitializeBeforeBase</a>
     </div>
     <div>
+      <a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_State">FullNodeFeature.State</a>
+    </div>
+    <div>
       <a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_ValidateDependencies_Stratis_Bitcoin_Builder_IFullNodeServiceProvider_">FullNodeFeature.ValidateDependencies(IFullNodeServiceProvider)</a>
     </div>
   </div>
@@ -106,18 +109,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_LightWallet_LightWalletFeature__ctor_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletSyncManager_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stratis_Bitcoin_Connection_IConnectionManager_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletFeePolicy_Stratis_Bitcoin_Features_Wallet_Broadcasting_BroadcasterBehavior_ILoggerFactory_StoreSettings_Stratis_Bitcoin_Features_Wallet_WalletSettings_Stratis_Bitcoin_Utilities_INodeStats_IPruneBlockStoreService_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.LightWallet.LightWalletFeature.%23ctor(Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletSyncManager%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager%2CStratis.Bitcoin.Connection.IConnectionManager%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Base.Deployments.NodeDeployments%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletFeePolicy%2CStratis.Bitcoin.Features.Wallet.Broadcasting.BroadcasterBehavior%2CILoggerFactory%2CStoreSettings%2CStratis.Bitcoin.Features.Wallet.WalletSettings%2CStratis.Bitcoin.Utilities.INodeStats%2CIPruneBlockStoreService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_LightWallet_LightWalletFeature__ctor_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletSyncManager_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stratis_Bitcoin_Connection_IConnectionManager_NBitcoin_ChainIndexer_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletFeePolicy_Stratis_Bitcoin_Features_Wallet_Broadcasting_BroadcasterBehavior_ILoggerFactory_StoreSettings_Stratis_Bitcoin_Features_Wallet_WalletSettings_Stratis_Bitcoin_Utilities_INodeStats_IPruneBlockStoreService_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.LightWallet.LightWalletFeature.%23ctor(Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletSyncManager%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager%2CStratis.Bitcoin.Connection.IConnectionManager%2CNBitcoin.ChainIndexer%2CStratis.Bitcoin.Base.Deployments.NodeDeployments%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletFeePolicy%2CStratis.Bitcoin.Features.Wallet.Broadcasting.BroadcasterBehavior%2CILoggerFactory%2CStoreSettings%2CStratis.Bitcoin.Features.Wallet.WalletSettings%2CStratis.Bitcoin.Utilities.INodeStats%2CIPruneBlockStoreService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.LightWallet/LightWalletFeature.cs/#L71">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_LightWallet_LightWalletFeature__ctor_" data-uid="Stratis.Bitcoin.Features.LightWallet.LightWalletFeature.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_LightWallet_LightWalletFeature__ctor_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletSyncManager_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stratis_Bitcoin_Connection_IConnectionManager_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletFeePolicy_Stratis_Bitcoin_Features_Wallet_Broadcasting_BroadcasterBehavior_ILoggerFactory_StoreSettings_Stratis_Bitcoin_Features_Wallet_WalletSettings_Stratis_Bitcoin_Utilities_INodeStats_IPruneBlockStoreService_" data-uid="Stratis.Bitcoin.Features.LightWallet.LightWalletFeature.#ctor(Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletSyncManager,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager,Stratis.Bitcoin.Connection.IConnectionManager,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Base.Deployments.NodeDeployments,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletFeePolicy,Stratis.Bitcoin.Features.Wallet.Broadcasting.BroadcasterBehavior,ILoggerFactory,StoreSettings,Stratis.Bitcoin.Features.Wallet.WalletSettings,Stratis.Bitcoin.Utilities.INodeStats,IPruneBlockStoreService)">LightWalletFeature(IWalletSyncManager, IWalletManager, IConnectionManager, ConcurrentChain, NodeDeployments, IAsyncLoopFactory, INodeLifetime, IWalletFeePolicy, BroadcasterBehavior, ILoggerFactory, StoreSettings, WalletSettings, INodeStats, IPruneBlockStoreService)</h4>
+  <h4 id="Stratis_Bitcoin_Features_LightWallet_LightWalletFeature__ctor_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletSyncManager_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stratis_Bitcoin_Connection_IConnectionManager_NBitcoin_ChainIndexer_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletFeePolicy_Stratis_Bitcoin_Features_Wallet_Broadcasting_BroadcasterBehavior_ILoggerFactory_StoreSettings_Stratis_Bitcoin_Features_Wallet_WalletSettings_Stratis_Bitcoin_Utilities_INodeStats_IPruneBlockStoreService_" data-uid="Stratis.Bitcoin.Features.LightWallet.LightWalletFeature.#ctor(Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletSyncManager,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager,Stratis.Bitcoin.Connection.IConnectionManager,NBitcoin.ChainIndexer,Stratis.Bitcoin.Base.Deployments.NodeDeployments,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletFeePolicy,Stratis.Bitcoin.Features.Wallet.Broadcasting.BroadcasterBehavior,ILoggerFactory,StoreSettings,Stratis.Bitcoin.Features.Wallet.WalletSettings,Stratis.Bitcoin.Utilities.INodeStats,IPruneBlockStoreService)">LightWalletFeature(IWalletSyncManager, IWalletManager, IConnectionManager, ChainIndexer, NodeDeployments, IAsyncLoopFactory, INodeLifetime, IWalletFeePolicy, BroadcasterBehavior, ILoggerFactory, StoreSettings, WalletSettings, INodeStats, IPruneBlockStoreService)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LightWalletFeature(IWalletSyncManager walletSyncManager, IWalletManager walletManager, IConnectionManager connectionManager, ConcurrentChain chain, NodeDeployments nodeDeployments, IAsyncLoopFactory asyncLoopFactory, INodeLifetime nodeLifetime, IWalletFeePolicy walletFeePolicy, BroadcasterBehavior broadcasterBehavior, ILoggerFactory loggerFactory, StoreSettings storeSettings, WalletSettings walletSettings, INodeStats nodeStats, IPruneBlockStoreService lightWalletBlockStoreService)</code></pre>
+    <pre><code class="lang-csharp hljs">public LightWalletFeature(IWalletSyncManager walletSyncManager, IWalletManager walletManager, IConnectionManager connectionManager, ChainIndexer chainIndexer, NodeDeployments nodeDeployments, IAsyncLoopFactory asyncLoopFactory, INodeLifetime nodeLifetime, IWalletFeePolicy walletFeePolicy, BroadcasterBehavior broadcasterBehavior, ILoggerFactory loggerFactory, StoreSettings storeSettings, WalletSettings walletSettings, INodeStats nodeStats, IPruneBlockStoreService lightWalletBlockStoreService)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,8 +148,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
-        <td><span class="parametername">chain</span></td>
+        <td><a class="xref" href="NBitcoin.ChainIndexer.html">ChainIndexer</a></td>
+        <td><span class="parametername">chainIndexer</span></td>
         <td></td>
       </tr>
       <tr>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AsyncQueue&lt;T&gt;
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.41.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -89,11 +89,18 @@ is finished.
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">AsyncQueue&lt;T&gt;</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Base.AsyncWork.IAsyncQueue-1.html">IAsyncQueue</a>&lt;T&gt;</div>
+    <div><a class="xref" href="Stratis.Bitcoin.Base.AsyncWork.IAsyncDelegateDequeuer-1.html">IAsyncDelegateDequeuer</a>&lt;T&gt;</div>
+    <div><a class="xref" href="Stratis.Bitcoin.Base.AsyncWork.IAsyncDelegateDequeuer.html">IAsyncDelegateDequeuer</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Utilities.html">Stratis.Bitcoin.Utilities</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
   <h5 id="Stratis_Bitcoin_Utilities_AsyncQueue_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AsyncQueue&lt;T&gt; : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class AsyncQueue&lt;T&gt; : IDisposable, IAsyncQueue&lt;T&gt;, IAsyncDelegateDequeuer&lt;T&gt;, IAsyncDelegateDequeuer, IDisposable</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -118,7 +125,7 @@ is finished.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_AsyncQueue_1__ctor_Stratis_Bitcoin_Utilities_AsyncQueue__0__OnEnqueueAsync_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.AsyncQueue%601.%23ctor(Stratis.Bitcoin.Utilities.AsyncQueue%7B%600%7D.OnEnqueueAsync)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/AsyncQueue.cs/#L85">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/AsyncWork/AsyncQueue.cs/#L86">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncQueue_1__ctor_" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncQueue_1__ctor_Stratis_Bitcoin_Utilities_AsyncQueue__0__OnEnqueueAsync_" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.#ctor(Stratis.Bitcoin.Utilities.AsyncQueue{`0}.OnEnqueueAsync)">AsyncQueue(AsyncQueue&lt;T&gt;.OnEnqueueAsync)</h4>
@@ -154,7 +161,7 @@ is finished.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_AsyncQueue_1_Count.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.AsyncQueue%601.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/AsyncQueue.cs/#L114">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/AsyncWork/AsyncQueue.cs/#L115">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncQueue_1_Count_" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.Count*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncQueue_1_Count" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.Count">Count</h4>
@@ -188,7 +195,7 @@ This property should only be used for collecting statistics.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_AsyncQueue_1_DequeueAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.AsyncQueue%601.DequeueAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/AsyncQueue.cs/#L176">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/AsyncWork/AsyncQueue.cs/#L177">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncQueue_1_DequeueAsync_" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.DequeueAsync*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncQueue_1_DequeueAsync_CancellationToken_" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.DequeueAsync(CancellationToken)">DequeueAsync(CancellationToken)</h4>
@@ -239,7 +246,7 @@ If the queue is empty, the method waits until an item is available.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_AsyncQueue_1_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.AsyncQueue%601.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/AsyncQueue.cs/#L239">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/AsyncWork/AsyncQueue.cs/#L240">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncQueue_1_Dispose_" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncQueue_1_Dispose" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.Dispose">Dispose()</h4>
@@ -254,7 +261,7 @@ If the queue is empty, the method waits until an item is available.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_AsyncQueue_1_Enqueue__0_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.AsyncQueue%601.Enqueue(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/AsyncQueue.cs/#L101">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/AsyncWork/AsyncQueue.cs/#L102">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncQueue_1_Enqueue_" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.Enqueue*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncQueue_1_Enqueue__0_" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.Enqueue(`0)">Enqueue(T)</h4>
@@ -288,7 +295,7 @@ If the queue is empty, the method waits until an item is available.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_AsyncQueue_1_TryDequeue__0__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.AsyncQueue%601.TryDequeue(%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/AsyncQueue.cs/#L219">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/AsyncWork/AsyncQueue.cs/#L220">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_AsyncQueue_1_TryDequeue_" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.TryDequeue*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_AsyncQueue_1_TryDequeue__0__" data-uid="Stratis.Bitcoin.Utilities.AsyncQueue`1.TryDequeue(`0@)">TryDequeue(out T)</h4>
@@ -333,6 +340,19 @@ If the queue is empty, the method waits until an item is available.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Base.AsyncWork.IAsyncQueue-1.html">IAsyncQueue&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Base.AsyncWork.IAsyncDelegateDequeuer-1.html">IAsyncDelegateDequeuer&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Base.AsyncWork.IAsyncDelegateDequeuer.html">IAsyncDelegateDequeuer</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
 </article>
           </div>
           
@@ -344,7 +364,7 @@ If the queue is empty, the method waits until an item is available.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_AsyncQueue_1.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.AsyncQueue%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/AsyncQueue.cs/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Base/AsyncWork/AsyncQueue.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

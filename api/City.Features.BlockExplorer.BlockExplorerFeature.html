@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BlockExplorerFeature
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.41.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -92,6 +92,9 @@
       <a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_InitializeBeforeBase">FullNodeFeature.InitializeBeforeBase</a>
     </div>
     <div>
+      <a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_State">FullNodeFeature.State</a>
+    </div>
+    <div>
       <a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_ValidateDependencies_Stratis_Bitcoin_Builder_IFullNodeServiceProvider_">FullNodeFeature.ValidateDependencies(IFullNodeServiceProvider)</a>
     </div>
   </div>
@@ -105,18 +108,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_Features_BlockExplorer_BlockExplorerFeature__ctor_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Features_BlockStore_BlockStoreSignaled_ILoggerFactory_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Interfaces_IBlockStoreQueue_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Consensus_IConsensusManager_.md&amp;value=---%0Auid%3A%20City.Features.BlockExplorer.BlockExplorerFeature.%23ctor(NBitcoin.ConcurrentChain%2CStratis.Bitcoin.Connection.IConnectionManager%2CStratis.Bitcoin.Features.BlockStore.BlockStoreSignaled%2CILoggerFactory%2CStratis.Bitcoin.Features.BlockStore.StoreSettings%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Interfaces.IBlockStoreQueue%2CStratis.Bitcoin.Utilities.INodeStats%2CStratis.Bitcoin.Consensus.IConsensusManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=City_Features_BlockExplorer_BlockExplorerFeature__ctor_NBitcoin_ChainIndexer_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Features_BlockStore_BlockStoreSignaled_ILoggerFactory_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Interfaces_IBlockStoreQueue_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Consensus_IConsensusManager_.md&amp;value=---%0Auid%3A%20City.Features.BlockExplorer.BlockExplorerFeature.%23ctor(NBitcoin.ChainIndexer%2CStratis.Bitcoin.Connection.IConnectionManager%2CStratis.Bitcoin.Features.BlockStore.BlockStoreSignaled%2CILoggerFactory%2CStratis.Bitcoin.Features.BlockStore.StoreSettings%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Interfaces.IBlockStoreQueue%2CStratis.Bitcoin.Utilities.INodeStats%2CStratis.Bitcoin.Consensus.IConsensusManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/City/Features/BlockExplorer/BlockExplorerFeature.cs/#L50">View Source</a>
   </span>
   <a id="City_Features_BlockExplorer_BlockExplorerFeature__ctor_" data-uid="City.Features.BlockExplorer.BlockExplorerFeature.#ctor*"></a>
-  <h4 id="City_Features_BlockExplorer_BlockExplorerFeature__ctor_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Features_BlockStore_BlockStoreSignaled_ILoggerFactory_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Interfaces_IBlockStoreQueue_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Consensus_IConsensusManager_" data-uid="City.Features.BlockExplorer.BlockExplorerFeature.#ctor(NBitcoin.ConcurrentChain,Stratis.Bitcoin.Connection.IConnectionManager,Stratis.Bitcoin.Features.BlockStore.BlockStoreSignaled,ILoggerFactory,Stratis.Bitcoin.Features.BlockStore.StoreSettings,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Interfaces.IBlockStoreQueue,Stratis.Bitcoin.Utilities.INodeStats,Stratis.Bitcoin.Consensus.IConsensusManager)">BlockExplorerFeature(ConcurrentChain, IConnectionManager, BlockStoreSignaled, ILoggerFactory, StoreSettings, IChainState, IBlockStoreQueue, INodeStats, IConsensusManager)</h4>
+  <h4 id="City_Features_BlockExplorer_BlockExplorerFeature__ctor_NBitcoin_ChainIndexer_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Features_BlockStore_BlockStoreSignaled_ILoggerFactory_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Interfaces_IBlockStoreQueue_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Consensus_IConsensusManager_" data-uid="City.Features.BlockExplorer.BlockExplorerFeature.#ctor(NBitcoin.ChainIndexer,Stratis.Bitcoin.Connection.IConnectionManager,Stratis.Bitcoin.Features.BlockStore.BlockStoreSignaled,ILoggerFactory,Stratis.Bitcoin.Features.BlockStore.StoreSettings,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Interfaces.IBlockStoreQueue,Stratis.Bitcoin.Utilities.INodeStats,Stratis.Bitcoin.Consensus.IConsensusManager)">BlockExplorerFeature(ChainIndexer, IConnectionManager, BlockStoreSignaled, ILoggerFactory, StoreSettings, IChainState, IBlockStoreQueue, INodeStats, IConsensusManager)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlockExplorerFeature(ConcurrentChain chain, IConnectionManager connectionManager, BlockStoreSignaled blockStoreSignaled, ILoggerFactory loggerFactory, StoreSettings storeSettings, IChainState chainState, IBlockStoreQueue blockStoreQueue, INodeStats nodeStats, IConsensusManager consensusManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public BlockExplorerFeature(ChainIndexer chain, IConnectionManager connectionManager, BlockStoreSignaled blockStoreSignaled, ILoggerFactory loggerFactory, StoreSettings storeSettings, IChainState chainState, IBlockStoreQueue blockStoreQueue, INodeStats nodeStats, IConsensusManager consensusManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -129,7 +132,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
+        <td><a class="xref" href="NBitcoin.ChainIndexer.html">ChainIndexer</a></td>
         <td><span class="parametername">chain</span></td>
         <td></td>
       </tr>

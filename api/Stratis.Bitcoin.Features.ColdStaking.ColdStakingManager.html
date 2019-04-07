@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ColdStakingManager
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.41.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -104,7 +104,7 @@ which in turn provides the API methods for accessing this functionality.</p>
       <a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletManager.html#Stratis_Bitcoin_Features_Wallet_WalletManager_network">WalletManager.network</a>
     </div>
     <div>
-      <a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletManager.html#Stratis_Bitcoin_Features_Wallet_WalletManager_chain">WalletManager.chain</a>
+      <a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletManager.html#Stratis_Bitcoin_Features_Wallet_WalletManager_ChainIndexer">WalletManager.ChainIndexer</a>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletManager.html#Stratis_Bitcoin_Features_Wallet_WalletManager_WalletTipHash">WalletManager.WalletTipHash</a>
@@ -117,6 +117,12 @@ which in turn provides the API methods for accessing this functionality.</p>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletManager.html#Stratis_Bitcoin_Features_Wallet_WalletManager_CreateWallet_System_String_System_String_System_String_NBitcoin_Mnemonic_">WalletManager.CreateWallet(String, String, String, Mnemonic)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletManager.html#Stratis_Bitcoin_Features_Wallet_WalletManager_SignMessage_System_String_System_String_System_String_System_String_">WalletManager.SignMessage(String, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletManager.html#Stratis_Bitcoin_Features_Wallet_WalletManager_VerifySignedMessage_System_String_System_String_System_String_">WalletManager.VerifySignedMessage(String, String, String)</a>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletManager.html#Stratis_Bitcoin_Features_Wallet_WalletManager_LoadWallet_System_String_System_String_">WalletManager.LoadWallet(String, String)</a>
@@ -272,19 +278,19 @@ addresses are used for generating the cold staking setup.</li><li>Creating a bui
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_ColdStaking_ColdStakingManager__ctor_NBitcoin_Network_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Features_Wallet_WalletSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletFeePolicy_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Interfaces_IScriptAddressReader_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Features_Wallet_Interfaces_IBroadcasterManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.ColdStaking.ColdStakingManager.%23ctor(NBitcoin.Network%2CNBitcoin.ConcurrentChain%2CStratis.Bitcoin.Features.Wallet.WalletSettings%2CStratis.Bitcoin.Configuration.DataFolder%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletFeePolicy%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Interfaces.IScriptAddressReader%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_ColdStaking_ColdStakingManager__ctor_NBitcoin_Network_NBitcoin_ChainIndexer_Stratis_Bitcoin_Features_Wallet_WalletSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletFeePolicy_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Interfaces_IScriptAddressReader_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Features_Wallet_Interfaces_IBroadcasterManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.ColdStaking.ColdStakingManager.%23ctor(NBitcoin.Network%2CNBitcoin.ChainIndexer%2CStratis.Bitcoin.Features.Wallet.WalletSettings%2CStratis.Bitcoin.Configuration.DataFolder%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletFeePolicy%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Interfaces.IScriptAddressReader%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CStratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.ColdStaking/ColdStakingManager.cs/#L70">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_ColdStaking_ColdStakingManager__ctor_" data-uid="Stratis.Bitcoin.Features.ColdStaking.ColdStakingManager.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_ColdStaking_ColdStakingManager__ctor_NBitcoin_Network_NBitcoin_ConcurrentChain_Stratis_Bitcoin_Features_Wallet_WalletSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletFeePolicy_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Interfaces_IScriptAddressReader_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Features_Wallet_Interfaces_IBroadcasterManager_" data-uid="Stratis.Bitcoin.Features.ColdStaking.ColdStakingManager.#ctor(NBitcoin.Network,NBitcoin.ConcurrentChain,Stratis.Bitcoin.Features.Wallet.WalletSettings,Stratis.Bitcoin.Configuration.DataFolder,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletFeePolicy,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Interfaces.IScriptAddressReader,ILoggerFactory,Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager)">ColdStakingManager(Network, ConcurrentChain, WalletSettings, DataFolder, IWalletFeePolicy, IAsyncLoopFactory, INodeLifetime, IScriptAddressReader, ILoggerFactory, IDateTimeProvider, IBroadcasterManager)</h4>
+  <h4 id="Stratis_Bitcoin_Features_ColdStaking_ColdStakingManager__ctor_NBitcoin_Network_NBitcoin_ChainIndexer_Stratis_Bitcoin_Features_Wallet_WalletSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletFeePolicy_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Interfaces_IScriptAddressReader_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_Stratis_Bitcoin_Features_Wallet_Interfaces_IBroadcasterManager_" data-uid="Stratis.Bitcoin.Features.ColdStaking.ColdStakingManager.#ctor(NBitcoin.Network,NBitcoin.ChainIndexer,Stratis.Bitcoin.Features.Wallet.WalletSettings,Stratis.Bitcoin.Configuration.DataFolder,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletFeePolicy,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Interfaces.IScriptAddressReader,ILoggerFactory,Stratis.Bitcoin.Utilities.IDateTimeProvider,Stratis.Bitcoin.Features.Wallet.Interfaces.IBroadcasterManager)">ColdStakingManager(Network, ChainIndexer, WalletSettings, DataFolder, IWalletFeePolicy, IAsyncLoopFactory, INodeLifetime, IScriptAddressReader, ILoggerFactory, IDateTimeProvider, IBroadcasterManager)</h4>
   <div class="markdown level1 summary"><p>Constructs the cold staking manager which is used by the cold staking controller.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ColdStakingManager(Network network, ConcurrentChain chain, WalletSettings walletSettings, DataFolder dataFolder, IWalletFeePolicy walletFeePolicy, IAsyncLoopFactory asyncLoopFactory, INodeLifetime nodeLifeTime, IScriptAddressReader scriptAddressReader, ILoggerFactory loggerFactory, IDateTimeProvider dateTimeProvider, IBroadcasterManager broadcasterManager = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public ColdStakingManager(Network network, ChainIndexer chainIndexer, WalletSettings walletSettings, DataFolder dataFolder, IWalletFeePolicy walletFeePolicy, IAsyncLoopFactory asyncLoopFactory, INodeLifetime nodeLifeTime, IScriptAddressReader scriptAddressReader, ILoggerFactory loggerFactory, IDateTimeProvider dateTimeProvider, IBroadcasterManager broadcasterManager = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -303,8 +309,8 @@ addresses are used for generating the cold staking setup.</li><li>Creating a bui
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="NBitcoin.ConcurrentChain.html">ConcurrentChain</a></td>
-        <td><span class="parametername">chain</span></td>
+        <td><a class="xref" href="NBitcoin.ChainIndexer.html">ChainIndexer</a></td>
+        <td><span class="parametername">chainIndexer</span></td>
         <td><p>Thread safe class representing a chain of headers from genesis.</p>
 </td>
       </tr>
