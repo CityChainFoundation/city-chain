@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ConsensusManagerBehavior
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -82,7 +82,7 @@
     <div class="level1"><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html">NetworkPeerBehavior</a></div>
     <div class="level2"><span class="xref">ConsensusManagerBehavior</span></div>
       <div class="level3"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Behaviors.ProvenHeadersConsensusManagerBehavior.html">ProvenHeadersConsensusManagerBehavior</a></div>
-      <div class="level3"><a class="xref" href="Stratis.Bitcoin.Features.PoA.PoAConsensusManagerBehavior.html">PoAConsensusManagerBehavior</a></div>
+      <div class="level3"><a class="xref" href="Stratis.Bitcoin.Features.PoA.Behaviors.PoAConsensusManagerBehavior.html">PoAConsensusManagerBehavior</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -264,35 +264,6 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ChainIndexer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ChainIndexer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L30">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ChainIndexer" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ChainIndexer">ChainIndexer</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ChainIndexer ChainIndexer</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="NBitcoin.ChainIndexer.html">ChainIndexer</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_MaxItemsPerHeadersMessage.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.MaxItemsPerHeadersMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -391,6 +362,158 @@
   <h5 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_BestSentHeader_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Write access should be protected by <span class="xref">Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.bestSentHeaderLock</span>.</p>
 </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ChainIndexer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ChainIndexer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L30">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ChainIndexer_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ChainIndexer*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ChainIndexer" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ChainIndexer">ChainIndexer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ChainIndexer ChainIndexer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainIndexer.html">ChainIndexer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ConsensusManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ConsensusManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L27">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ConsensusManager_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ConsensusManager*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ConsensusManager" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ConsensusManager">ConsensusManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IConsensusManager ConsensusManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusManager.html">IConsensusManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_InitialBlockDownloadState.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.InitialBlockDownloadState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L24">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_InitialBlockDownloadState_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.InitialBlockDownloadState*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_InitialBlockDownloadState" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.InitialBlockDownloadState">InitialBlockDownloadState</h4>
+  <div class="markdown level1 summary"><p>Provider of IBD state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IInitialBlockDownloadState InitialBlockDownloadState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Interfaces.IInitialBlockDownloadState.html">IInitialBlockDownloadState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_LoggerFactory.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.LoggerFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L36">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_LoggerFactory_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.LoggerFactory*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_LoggerFactory" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.LoggerFactory">LoggerFactory</h4>
+  <div class="markdown level1 summary"><p>Factory for creating loggers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILoggerFactory LoggerFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_PeerBanning.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.PeerBanning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L33">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_PeerBanning_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.PeerBanning*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_PeerBanning" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.PeerBanning">PeerBanning</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IPeerBanning PeerBanning { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Connection.IPeerBanning.html">IPeerBanning</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -398,7 +521,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_AttachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.AttachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L657">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L679">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_AttachCore_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.AttachCore*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_AttachCore" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.AttachCore">AttachCore()</h4>
@@ -415,7 +538,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_BuildGetHeadersPayload.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.BuildGetHeadersPayload%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L595">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L614">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_BuildGetHeadersPayload_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.BuildGetHeadersPayload*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_BuildGetHeadersPayload" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.BuildGetHeadersPayload">BuildGetHeadersPayload()</h4>
@@ -478,7 +601,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_Clone.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L689">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L712">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_Clone_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.Clone*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_Clone" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.Clone">Clone()</h4>
@@ -541,7 +664,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ConstructHeadersPayload_Stratis_Bitcoin_P2P_Protocol_Payloads_GetHeadersPayload_NBitcoin_ChainedHeader__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ConstructHeadersPayload(Stratis.Bitcoin.P2P.Protocol.Payloads.GetHeadersPayload%2CNBitcoin.ChainedHeader%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L242">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L245">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ConstructHeadersPayload_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ConstructHeadersPayload*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ConstructHeadersPayload_Stratis_Bitcoin_P2P_Protocol_Payloads_GetHeadersPayload_NBitcoin_ChainedHeader__" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ConstructHeadersPayload(Stratis.Bitcoin.P2P.Protocol.Payloads.GetHeadersPayload,NBitcoin.ChainedHeader@)">ConstructHeadersPayload(GetHeadersPayload, out ChainedHeader)</h4>
@@ -597,7 +720,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_DetachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.DetachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L674">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L697">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_DetachCore_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.DetachCore*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_DetachCore" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.DetachCore">DetachCore()</h4>
@@ -614,7 +737,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L681">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L704">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_Dispose_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_Dispose" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.Dispose">Dispose()</h4>
@@ -631,7 +754,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_GetLastHeaderToSend_NBitcoin_ChainedHeader_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.GetLastHeaderToSend(NBitcoin.ChainedHeader%2CNBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L214">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L217">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_GetLastHeaderToSend_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.GetLastHeaderToSend*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_GetLastHeaderToSend_NBitcoin_ChainedHeader_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.GetLastHeaderToSend(NBitcoin.ChainedHeader,NBitcoin.uint256)">GetLastHeaderToSend(ChainedHeader, uint256)</h4>
@@ -739,7 +862,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_PresentHeadersLockedAsync_List_NBitcoin_BlockHeader__System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.PresentHeadersLockedAsync(List%7BNBitcoin.BlockHeader%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L434">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L447">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_PresentHeadersLockedAsync_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.PresentHeadersLockedAsync*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_PresentHeadersLockedAsync_List_NBitcoin_BlockHeader__System_Boolean_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.PresentHeadersLockedAsync(List{NBitcoin.BlockHeader},System.Boolean)">PresentHeadersLockedAsync(List&lt;BlockHeader&gt;, Boolean)</h4>
@@ -861,7 +984,7 @@ If the peer is behind/equal to our best height an empty array is sent back.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ProcessHeadersAsync_Stratis_Bitcoin_P2P_Peer_INetworkPeer_List_NBitcoin_BlockHeader__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ProcessHeadersAsync(Stratis.Bitcoin.P2P.Peer.INetworkPeer%2CList%7BNBitcoin.BlockHeader%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L289">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L292">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ProcessHeadersAsync_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ProcessHeadersAsync*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ProcessHeadersAsync_Stratis_Bitcoin_P2P_Peer_INetworkPeer_List_NBitcoin_BlockHeader__" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ProcessHeadersAsync(Stratis.Bitcoin.P2P.Peer.INetworkPeer,List{NBitcoin.BlockHeader})">ProcessHeadersAsync(INetworkPeer, List&lt;BlockHeader&gt;)</h4>
@@ -925,7 +1048,7 @@ the tip of the best chain we think the peer has.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ProcessInvAsync_Stratis_Bitcoin_P2P_Peer_INetworkPeer_List_Stratis_Bitcoin_P2P_Protocol_InventoryVector__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ProcessInvAsync(Stratis.Bitcoin.P2P.Peer.INetworkPeer%2CList%7BStratis.Bitcoin.P2P.Protocol.InventoryVector%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L616">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L635">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ProcessInvAsync_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ProcessInvAsync*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ProcessInvAsync_Stratis_Bitcoin_P2P_Peer_INetworkPeer_List_Stratis_Bitcoin_P2P_Protocol_InventoryVector__" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ProcessInvAsync(Stratis.Bitcoin.P2P.Peer.INetworkPeer,List{Stratis.Bitcoin.P2P.Protocol.InventoryVector})">ProcessInvAsync(INetworkPeer, List&lt;InventoryVector&gt;)</h4>
@@ -987,7 +1110,7 @@ attack by spamming fake inv messages.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ResetPeerTipInformationAndSyncAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ResetPeerTipInformationAndSyncAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L526">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L538">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ResetPeerTipInformationAndSyncAsync_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ResetPeerTipInformationAndSyncAsync*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ResetPeerTipInformationAndSyncAsync" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ResetPeerTipInformationAndSyncAsync">ResetPeerTipInformationAndSyncAsync()</h4>
@@ -1018,7 +1141,7 @@ attack by spamming fake inv messages.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ResyncAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ResyncAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L563">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L576">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ResyncAsync_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ResyncAsync*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ResyncAsync" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ResyncAsync">ResyncAsync()</h4>
@@ -1049,7 +1172,7 @@ attack by spamming fake inv messages.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_UpdateBestSentHeader_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.UpdateBestSentHeader(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L536">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L549">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_UpdateBestSentHeader_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.UpdateBestSentHeader*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_UpdateBestSentHeader_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.UpdateBestSentHeader(NBitcoin.ChainedHeader)">UpdateBestSentHeader(ChainedHeader)</h4>
@@ -1083,7 +1206,7 @@ attack by spamming fake inv messages.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ValidateHeadersFromPayload_Stratis_Bitcoin_P2P_Peer_INetworkPeer_List_NBitcoin_BlockHeader__System_String__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ValidateHeadersFromPayload(Stratis.Bitcoin.P2P.Peer.INetworkPeer%2CList%7BNBitcoin.BlockHeader%7D%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L394">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L407">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ValidateHeadersFromPayload_" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ValidateHeadersFromPayload*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_ValidateHeadersFromPayload_Stratis_Bitcoin_P2P_Peer_INetworkPeer_List_NBitcoin_BlockHeader__System_String__" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.ValidateHeadersFromPayload(Stratis.Bitcoin.P2P.Peer.INetworkPeer,List{NBitcoin.BlockHeader},System.String@)">ValidateHeadersFromPayload(INetworkPeer, List&lt;BlockHeader&gt;, out String)</h4>

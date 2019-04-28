@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PartialValidator
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -95,18 +95,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Validators_PartialValidator__ctor_Stratis_Bitcoin_Consensus_IConsensusRuleEngine_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Validators.PartialValidator.%23ctor(Stratis.Bitcoin.Consensus.IConsensusRuleEngine%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Validators_PartialValidator__ctor_Stratis_Bitcoin_AsyncWork_IAsyncProvider_Stratis_Bitcoin_Consensus_IConsensusRuleEngine_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Validators.PartialValidator.%23ctor(Stratis.Bitcoin.AsyncWork.IAsyncProvider%2CStratis.Bitcoin.Consensus.IConsensusRuleEngine%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L130">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L132">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_Validators_PartialValidator__ctor_" data-uid="Stratis.Bitcoin.Consensus.Validators.PartialValidator.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Consensus_Validators_PartialValidator__ctor_Stratis_Bitcoin_Consensus_IConsensusRuleEngine_ILoggerFactory_" data-uid="Stratis.Bitcoin.Consensus.Validators.PartialValidator.#ctor(Stratis.Bitcoin.Consensus.IConsensusRuleEngine,ILoggerFactory)">PartialValidator(IConsensusRuleEngine, ILoggerFactory)</h4>
+  <h4 id="Stratis_Bitcoin_Consensus_Validators_PartialValidator__ctor_Stratis_Bitcoin_AsyncWork_IAsyncProvider_Stratis_Bitcoin_Consensus_IConsensusRuleEngine_ILoggerFactory_" data-uid="Stratis.Bitcoin.Consensus.Validators.PartialValidator.#ctor(Stratis.Bitcoin.AsyncWork.IAsyncProvider,Stratis.Bitcoin.Consensus.IConsensusRuleEngine,ILoggerFactory)">PartialValidator(IAsyncProvider, IConsensusRuleEngine, ILoggerFactory)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PartialValidator(IConsensusRuleEngine consensusRules, ILoggerFactory loggerFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public PartialValidator(IAsyncProvider asyncProvider, IConsensusRuleEngine consensusRules, ILoggerFactory loggerFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -118,6 +118,11 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsyncProvider.html">IAsyncProvider</a></td>
+        <td><span class="parametername">asyncProvider</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a></td>
         <td><span class="parametername">consensusRules</span></td>
@@ -137,7 +142,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Validators_PartialValidator_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Validators.PartialValidator.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L139">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L142">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_Validators_PartialValidator_Dispose_" data-uid="Stratis.Bitcoin.Consensus.Validators.PartialValidator.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_Validators_PartialValidator_Dispose" data-uid="Stratis.Bitcoin.Consensus.Validators.PartialValidator.Dispose">Dispose()</h4>
@@ -152,7 +157,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Validators_PartialValidator_StartPartialValidation_NBitcoin_ChainedHeader_NBitcoin_Block_Stratis_Bitcoin_Consensus_Validators_OnPartialValidationCompletedAsyncCallback_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Validators.PartialValidator.StartPartialValidation(NBitcoin.ChainedHeader%2CNBitcoin.Block%2CStratis.Bitcoin.Consensus.Validators.OnPartialValidationCompletedAsyncCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L160">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L163">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_Validators_PartialValidator_StartPartialValidation_" data-uid="Stratis.Bitcoin.Consensus.Validators.PartialValidator.StartPartialValidation*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_Validators_PartialValidator_StartPartialValidation_NBitcoin_ChainedHeader_NBitcoin_Block_Stratis_Bitcoin_Consensus_Validators_OnPartialValidationCompletedAsyncCallback_" data-uid="Stratis.Bitcoin.Consensus.Validators.PartialValidator.StartPartialValidation(NBitcoin.ChainedHeader,NBitcoin.Block,Stratis.Bitcoin.Consensus.Validators.OnPartialValidationCompletedAsyncCallback)">StartPartialValidation(ChainedHeader, Block, OnPartialValidationCompletedAsyncCallback)</h4>
@@ -201,7 +206,7 @@ Partial validation doesn&apos;t involve change to the underlying store like rewi
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Validators_PartialValidator_ValidateAsync_NBitcoin_ChainedHeader_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Validators.PartialValidator.ValidateAsync(NBitcoin.ChainedHeader%2CNBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L171">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L174">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_Validators_PartialValidator_ValidateAsync_" data-uid="Stratis.Bitcoin.Consensus.Validators.PartialValidator.ValidateAsync*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_Validators_PartialValidator_ValidateAsync_NBitcoin_ChainedHeader_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Consensus.Validators.PartialValidator.ValidateAsync(NBitcoin.ChainedHeader,NBitcoin.Block)">ValidateAsync(ChainedHeader, Block)</h4>
@@ -273,7 +278,7 @@ Partial validation doesn&apos;t involve change to the underlying store like rewi
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_Validators_PartialValidator.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.Validators.PartialValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L124" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/Validators/BlockValidator.cs/#L125" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WalletSyncManager
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -95,18 +95,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager__ctor_ILoggerFactory_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_NBitcoin_ChainIndexer_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IBlockStore_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Signals_ISignals_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.%23ctor(ILoggerFactory%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager%2CNBitcoin.ChainIndexer%2CNBitcoin.Network%2CStratis.Bitcoin.Interfaces.IBlockStore%2CStratis.Bitcoin.Features.BlockStore.StoreSettings%2CStratis.Bitcoin.Signals.ISignals)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager__ctor_ILoggerFactory_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_NBitcoin_ChainIndexer_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IBlockStore_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Signals_ISignals_Stratis_Bitcoin_AsyncWork_IAsyncProvider_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.%23ctor(ILoggerFactory%2CStratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager%2CNBitcoin.ChainIndexer%2CNBitcoin.Network%2CStratis.Bitcoin.Interfaces.IBlockStore%2CStratis.Bitcoin.Features.BlockStore.StoreSettings%2CStratis.Bitcoin.Signals.ISignals%2CStratis.Bitcoin.AsyncWork.IAsyncProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L53">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L54">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager__ctor_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager__ctor_ILoggerFactory_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_NBitcoin_ChainIndexer_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IBlockStore_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Signals_ISignals_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.#ctor(ILoggerFactory,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager,NBitcoin.ChainIndexer,NBitcoin.Network,Stratis.Bitcoin.Interfaces.IBlockStore,Stratis.Bitcoin.Features.BlockStore.StoreSettings,Stratis.Bitcoin.Signals.ISignals)">WalletSyncManager(ILoggerFactory, IWalletManager, ChainIndexer, Network, IBlockStore, StoreSettings, ISignals)</h4>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager__ctor_ILoggerFactory_Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_NBitcoin_ChainIndexer_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IBlockStore_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Signals_ISignals_Stratis_Bitcoin_AsyncWork_IAsyncProvider_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.#ctor(ILoggerFactory,Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager,NBitcoin.ChainIndexer,NBitcoin.Network,Stratis.Bitcoin.Interfaces.IBlockStore,Stratis.Bitcoin.Features.BlockStore.StoreSettings,Stratis.Bitcoin.Signals.ISignals,Stratis.Bitcoin.AsyncWork.IAsyncProvider)">WalletSyncManager(ILoggerFactory, IWalletManager, ChainIndexer, Network, IBlockStore, StoreSettings, ISignals, IAsyncProvider)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WalletSyncManager(ILoggerFactory loggerFactory, IWalletManager walletManager, ChainIndexer chainIndexer, Network network, IBlockStore blockStore, StoreSettings storeSettings, ISignals signals)</code></pre>
+    <pre><code class="lang-csharp hljs">public WalletSyncManager(ILoggerFactory loggerFactory, IWalletManager walletManager, ChainIndexer chainIndexer, Network network, IBlockStore blockStore, StoreSettings storeSettings, ISignals signals, IAsyncProvider asyncProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,6 +153,11 @@
         <td><span class="parametername">signals</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsyncProvider.html">IAsyncProvider</a></td>
+        <td><span class="parametername">asyncProvider</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
@@ -162,7 +167,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager_walletTip.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.walletTip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L34">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L35">View Source</a>
   </span>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_walletTip" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.walletTip">walletTip</h4>
   <div class="markdown level1 summary"></div>
@@ -193,7 +198,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager_WalletTip.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.WalletTip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L36">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L37">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_WalletTip_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.WalletTip*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_WalletTip" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.WalletTip">WalletTip</h4>
@@ -225,7 +230,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L312">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L315">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Dispose_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Dispose" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Dispose">Dispose()</h4>
@@ -240,7 +245,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessBlock_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessBlock(NBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L253">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L256">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessBlock_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessBlock*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessBlock_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessBlock(NBitcoin.Block)">ProcessBlock(Block)</h4>
@@ -274,7 +279,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessTransaction_NBitcoin_Transaction_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessTransaction(NBitcoin.Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L289">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L292">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessTransaction_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_ProcessTransaction_NBitcoin_Transaction_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.ProcessTransaction(NBitcoin.Transaction)">ProcessTransaction(Transaction)</h4>
@@ -308,7 +313,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Start.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L76">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L79">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Start_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Start*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Start" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Start">Start()</h4>
@@ -324,7 +329,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Stop.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L121">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L124">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Stop_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Stop*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_Stop" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.Stop">Stop()</h4>
@@ -344,7 +349,7 @@ and subsequentlly dispose of it properly.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromDate_DateTime_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromDate(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L297">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L300">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromDate_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromDate*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromDate_DateTime_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromDate(DateTime)">SyncFromDate(DateTime)</h4>
@@ -378,7 +383,7 @@ and subsequentlly dispose of it properly.
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromHeight_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromHeight(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L304">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L307">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromHeight_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromHeight*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletSyncManager_SyncFromHeight_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletSyncManager.SyncFromHeight(System.Int32)">SyncFromHeight(Int32)</h4>
@@ -425,7 +430,7 @@ and subsequentlly dispose of it properly.
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletSyncManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletSyncManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletSyncManager.cs/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

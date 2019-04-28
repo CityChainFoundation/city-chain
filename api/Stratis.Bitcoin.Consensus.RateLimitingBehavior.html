@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RateLimitingBehavior
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,7 @@
   
   <h1 id="Stratis_Bitcoin_Consensus_RateLimitingBehavior" data-uid="Stratis.Bitcoin.Consensus.RateLimitingBehavior" class="text-break">Class RateLimitingBehavior
   </h1>
-  <div class="markdown level0 summary"><p>Bans and disconnects peers that sends a <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.GetHeadersPayload.html">GetHeadersPayload</a> request, more than <span class="xref">Stratis.Bitcoin.Consensus.RateLimitingBehavior.GetHeaderRequestCountThreshold</span> times,
+  <div class="markdown level0 summary"><p>Bans and disconnects peers that sends a <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Payloads.GetHeadersPayload.html">GetHeadersPayload</a> request, more than <span class="xref">Stratis.Bitcoin.Consensus.RateLimitingBehavior.GetHeaderRequestCountThresholdSeconds</span> times,
 within a certain time frame.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -127,7 +127,7 @@ It will be changed in the future once a more in-depth and thorough implementatio
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_RateLimitingBehavior__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Connection_IPeerBanning_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.RateLimitingBehavior.%23ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider%2CILoggerFactory%2CStratis.Bitcoin.Connection.IPeerBanning)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/PeerGetHeaderRequestBehavior.cs/#L54">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/PeerGetHeaderRequestBehavior.cs/#L57">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_RateLimitingBehavior__ctor_" data-uid="Stratis.Bitcoin.Consensus.RateLimitingBehavior.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_RateLimitingBehavior__ctor_Stratis_Bitcoin_Utilities_IDateTimeProvider_ILoggerFactory_Stratis_Bitcoin_Connection_IPeerBanning_" data-uid="Stratis.Bitcoin.Consensus.RateLimitingBehavior.#ctor(Stratis.Bitcoin.Utilities.IDateTimeProvider,ILoggerFactory,Stratis.Bitcoin.Connection.IPeerBanning)">RateLimitingBehavior(IDateTimeProvider, ILoggerFactory, IPeerBanning)</h4>
@@ -171,7 +171,7 @@ It will be changed in the future once a more in-depth and thorough implementatio
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_RateLimitingBehavior_AttachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.RateLimitingBehavior.AttachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/PeerGetHeaderRequestBehavior.cs/#L71">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/PeerGetHeaderRequestBehavior.cs/#L74">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_RateLimitingBehavior_AttachCore_" data-uid="Stratis.Bitcoin.Consensus.RateLimitingBehavior.AttachCore*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_RateLimitingBehavior_AttachCore" data-uid="Stratis.Bitcoin.Consensus.RateLimitingBehavior.AttachCore">AttachCore()</h4>
@@ -188,7 +188,7 @@ It will be changed in the future once a more in-depth and thorough implementatio
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_RateLimitingBehavior_Clone.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.RateLimitingBehavior.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/PeerGetHeaderRequestBehavior.cs/#L65">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/PeerGetHeaderRequestBehavior.cs/#L68">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_RateLimitingBehavior_Clone_" data-uid="Stratis.Bitcoin.Consensus.RateLimitingBehavior.Clone*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_RateLimitingBehavior_Clone" data-uid="Stratis.Bitcoin.Consensus.RateLimitingBehavior.Clone">Clone()</h4>
@@ -220,7 +220,7 @@ It will be changed in the future once a more in-depth and thorough implementatio
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_RateLimitingBehavior_DetachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.RateLimitingBehavior.DetachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/PeerGetHeaderRequestBehavior.cs/#L77">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/PeerGetHeaderRequestBehavior.cs/#L80">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Consensus_RateLimitingBehavior_DetachCore_" data-uid="Stratis.Bitcoin.Consensus.RateLimitingBehavior.DetachCore*"></a>
   <h4 id="Stratis_Bitcoin_Consensus_RateLimitingBehavior_DetachCore" data-uid="Stratis.Bitcoin.Consensus.RateLimitingBehavior.DetachCore">DetachCore()</h4>

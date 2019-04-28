@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AddressIndexer
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,39 +73,40 @@
   
   <h1 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer" class="text-break">Class AddressIndexer
   </h1>
-  <div class="markdown level0 summary"><p>Component that builds an index of all addresses and deposits\withdrawals that happened to\from them.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">AddressIndexer</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.IAddressIndexer.html">IAddressIndexer</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.html">Stratis.Bitcoin.Features.BlockStore.AddressIndexing</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.BlockStore.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AddressIndexer : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class AddressIndexer : object, IAddressIndexer, IDisposable</code></pre>
   </div>
-  <h5 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Disabled by default. Node should be synced from scratch with txindexing enabled to build address index.</p>
-</div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer__ctor_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Signals_ISignals_Stratis_Bitcoin_Configuration_DataFolder_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IBlockStore_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Consensus_IConsensusManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.%23ctor(Stratis.Bitcoin.Features.BlockStore.StoreSettings%2CStratis.Bitcoin.Signals.ISignals%2CStratis.Bitcoin.Configuration.DataFolder%2CILoggerFactory%2CNBitcoin.Network%2CStratis.Bitcoin.Interfaces.IBlockStore%2CStratis.Bitcoin.Utilities.INodeStats%2CStratis.Bitcoin.Consensus.IConsensusManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer__ctor_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Configuration_DataFolder_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IBlockStore_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Consensus_IConsensusManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.%23ctor(Stratis.Bitcoin.Features.BlockStore.StoreSettings%2CStratis.Bitcoin.Configuration.DataFolder%2CILoggerFactory%2CNBitcoin.Network%2CStratis.Bitcoin.Interfaces.IBlockStore%2CStratis.Bitcoin.Utilities.INodeStats%2CStratis.Bitcoin.Consensus.IConsensusManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L58">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L83">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer__ctor_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer__ctor_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Signals_ISignals_Stratis_Bitcoin_Configuration_DataFolder_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IBlockStore_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Consensus_IConsensusManager_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.#ctor(Stratis.Bitcoin.Features.BlockStore.StoreSettings,Stratis.Bitcoin.Signals.ISignals,Stratis.Bitcoin.Configuration.DataFolder,ILoggerFactory,NBitcoin.Network,Stratis.Bitcoin.Interfaces.IBlockStore,Stratis.Bitcoin.Utilities.INodeStats,Stratis.Bitcoin.Consensus.IConsensusManager)">AddressIndexer(StoreSettings, ISignals, DataFolder, ILoggerFactory, Network, IBlockStore, INodeStats, IConsensusManager)</h4>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer__ctor_Stratis_Bitcoin_Features_BlockStore_StoreSettings_Stratis_Bitcoin_Configuration_DataFolder_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_Interfaces_IBlockStore_Stratis_Bitcoin_Utilities_INodeStats_Stratis_Bitcoin_Consensus_IConsensusManager_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.#ctor(Stratis.Bitcoin.Features.BlockStore.StoreSettings,Stratis.Bitcoin.Configuration.DataFolder,ILoggerFactory,NBitcoin.Network,Stratis.Bitcoin.Interfaces.IBlockStore,Stratis.Bitcoin.Utilities.INodeStats,Stratis.Bitcoin.Consensus.IConsensusManager)">AddressIndexer(StoreSettings, DataFolder, ILoggerFactory, Network, IBlockStore, INodeStats, IConsensusManager)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AddressIndexer(StoreSettings storeSettings, ISignals signals, DataFolder dataFolder, ILoggerFactory loggerFactory, Network network, IBlockStore blockStore, INodeStats nodeStats, IConsensusManager consensusManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public AddressIndexer(StoreSettings storeSettings, DataFolder dataFolder, ILoggerFactory loggerFactory, Network network, IBlockStore blockStore, INodeStats nodeStats, IConsensusManager consensusManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -120,11 +121,6 @@
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.BlockStore.StoreSettings.html">StoreSettings</a></td>
         <td><span class="parametername">storeSettings</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Signals.ISignals.html">ISignals</a></td>
-        <td><span class="parametername">signals</span></td>
         <td></td>
       </tr>
       <tr>
@@ -159,6 +155,38 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_IndexerTip.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.IndexerTip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L44">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_IndexerTip_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.IndexerTip*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_IndexerTip" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.IndexerTip">IndexerTip</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChainedHeader IndexerTip { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -166,7 +194,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L276">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L443">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_Dispose_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_Dispose" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.Dispose">Dispose()</h4>
@@ -178,19 +206,19 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetAddressBalance_NBitcoin_BitcoinAddress_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetAddressBalance(NBitcoin.BitcoinAddress%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetAddressBalance_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetAddressBalance(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L257">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L382">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetAddressBalance_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetAddressBalance*"></a>
-  <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetAddressBalance_NBitcoin_BitcoinAddress_System_Int32_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetAddressBalance(NBitcoin.BitcoinAddress,System.Int32)">GetAddressBalance(BitcoinAddress, Int32)</h4>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetAddressBalance_System_String_System_Int32_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetAddressBalance(System.String,System.Int32)">GetAddressBalance(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Returns balance of the given address confirmed with at least <code data-dev-comment-type="paramref" class="paramref">minConfirmations</code> confirmations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Money GetAddressBalance(BitcoinAddress address, int minConfirmations = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public Money GetAddressBalance(string address, int minConfirmations = 1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -203,7 +231,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.BitcoinAddress.html">BitcoinAddress</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">address</span></td>
         <td></td>
       </tr>
@@ -225,26 +253,57 @@
     <tbody>
       <tr>
         <td><a class="xref" href="NBitcoin.Money.html">Money</a></td>
-        <td><p>Balance of a given address or <code>null</code> if address wasn't indexed.</p>
+        <td><p>Balance of a given address or <code>null</code> if address wasn't indexed or doesn't exists.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetReceivedByAddress_NBitcoin_BitcoinAddress_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetReceivedByAddress(NBitcoin.BitcoinAddress%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetAddressIndexCopy.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetAddressIndexCopy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L267">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L434">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetAddressIndexCopy_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetAddressIndexCopy*"></a>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetAddressIndexCopy" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetAddressIndexCopy">GetAddressIndexCopy()</h4>
+  <div class="markdown level1 summary"><p>Provides a collection of all indexed addresses and their changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, List&lt;AddressBalanceChange&gt;&gt; GetAddressIndexCopy()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressBalanceChange.html">AddressBalanceChange</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetReceivedByAddress_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetReceivedByAddress(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L412">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetReceivedByAddress_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetReceivedByAddress*"></a>
-  <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetReceivedByAddress_NBitcoin_BitcoinAddress_System_Int32_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetReceivedByAddress(NBitcoin.BitcoinAddress,System.Int32)">GetReceivedByAddress(BitcoinAddress, Int32)</h4>
+  <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_GetReceivedByAddress_System_String_System_Int32_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.GetReceivedByAddress(System.String,System.Int32)">GetReceivedByAddress(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Returns the total amount received by the given address in transactions with at least <code data-dev-comment-type="paramref" class="paramref">minConfirmations</code> confirmations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Money GetReceivedByAddress(BitcoinAddress address, int minConfirmations = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public Money GetReceivedByAddress(string address, int minConfirmations = 1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -257,7 +316,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="NBitcoin.BitcoinAddress.html">BitcoinAddress</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">address</span></td>
         <td></td>
       </tr>
@@ -289,7 +348,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L72">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L99">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_Initialize_" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.Initialize*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer_Initialize" data-uid="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer.Initialize">Initialize()</h4>
@@ -298,6 +357,13 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.BlockStore.AddressIndexing.IAddressIndexer.html">IAddressIndexer</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
   </div>
 </article>
           </div>
@@ -310,7 +376,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_AddressIndexing_AddressIndexer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.AddressIndexing.AddressIndexer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L26" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/AddressIndexing/AddressIndexer.cs/#L42" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

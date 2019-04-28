@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class FedMemberKicked
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -101,18 +101,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Events_FedMemberKicked__ctor_PubKey_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.%23ctor(PubKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Events_FedMemberKicked__ctor_Stratis_Bitcoin_Features_PoA_IFederationMember_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.%23ctor(Stratis.Bitcoin.Features.PoA.IFederationMember)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Events/FedMemberKicked.cs/#L17">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Events/FedMemberKicked.cs/#L13">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_Events_FedMemberKicked__ctor_" data-uid="Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_Events_FedMemberKicked__ctor_PubKey_" data-uid="Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.#ctor(PubKey)">FedMemberKicked(PubKey)</h4>
+  <h4 id="Stratis_Bitcoin_Features_PoA_Events_FedMemberKicked__ctor_Stratis_Bitcoin_Features_PoA_IFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.#ctor(Stratis.Bitcoin.Features.PoA.IFederationMember)">FedMemberKicked(IFederationMember)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FedMemberKicked(PubKey kickedMember)</code></pre>
+    <pre><code class="lang-csharp hljs">public FedMemberKicked(IFederationMember kickedMember)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -125,7 +125,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PubKey</span></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationMember.html">IFederationMember</a></td>
         <td><span class="parametername">kickedMember</span></td>
         <td></td>
       </tr>
@@ -138,7 +138,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Events_FedMemberKicked_KickedMember.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.KickedMember%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Events/FedMemberKicked.cs/#L15">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Events/FedMemberKicked.cs/#L11">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_Events_FedMemberKicked_KickedMember_" data-uid="Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.KickedMember*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_Events_FedMemberKicked_KickedMember" data-uid="Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked.KickedMember">KickedMember</h4>
@@ -146,7 +146,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PubKey KickedMember { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IFederationMember KickedMember { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -158,7 +158,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PubKey</span></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationMember.html">IFederationMember</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -178,7 +178,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Events_FedMemberKicked.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Events.FedMemberKicked%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Events/FedMemberKicked.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Events/FedMemberKicked.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

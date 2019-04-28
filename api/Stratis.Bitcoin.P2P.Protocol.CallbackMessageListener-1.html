@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CallbackMessageListener&lt;T&gt;
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -112,19 +112,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1__ctor_Stratis_Bitcoin_P2P_Protocol_ProcessMessageAsync__0__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener%601.%23ctor(Stratis.Bitcoin.P2P.Protocol.ProcessMessageAsync%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1__ctor_Stratis_Bitcoin_AsyncWork_IAsyncProvider_Stratis_Bitcoin_P2P_Protocol_ProcessMessageAsync__0__Stratis_Bitcoin_P2P_Peer_INetworkPeer_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener%601.%23ctor(Stratis.Bitcoin.AsyncWork.IAsyncProvider%2CStratis.Bitcoin.P2P.Protocol.ProcessMessageAsync%7B%600%7D%2CStratis.Bitcoin.P2P.Peer.INetworkPeer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/CallbackMessageListener.cs/#L32">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/CallbackMessageListener.cs/#L33">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1__ctor_" data-uid="Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener`1.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1__ctor_Stratis_Bitcoin_P2P_Protocol_ProcessMessageAsync__0__" data-uid="Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener`1.#ctor(Stratis.Bitcoin.P2P.Protocol.ProcessMessageAsync{`0})">CallbackMessageListener(ProcessMessageAsync&lt;T&gt;)</h4>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1__ctor_Stratis_Bitcoin_AsyncWork_IAsyncProvider_Stratis_Bitcoin_P2P_Protocol_ProcessMessageAsync__0__Stratis_Bitcoin_P2P_Peer_INetworkPeer_" data-uid="Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener`1.#ctor(Stratis.Bitcoin.AsyncWork.IAsyncProvider,Stratis.Bitcoin.P2P.Protocol.ProcessMessageAsync{`0},Stratis.Bitcoin.P2P.Peer.INetworkPeer)">CallbackMessageListener(IAsyncProvider, ProcessMessageAsync&lt;T&gt;, INetworkPeer)</h4>
   <div class="markdown level1 summary"><p>Initializes the instance of the object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CallbackMessageListener(ProcessMessageAsync&lt;T&gt; processMessageAsync)</code></pre>
+    <pre><code class="lang-csharp hljs">public CallbackMessageListener(IAsyncProvider asyncProvider, ProcessMessageAsync&lt;T&gt; processMessageAsync, INetworkPeer peer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,10 +137,20 @@
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsyncProvider.html">IAsyncProvider</a></td>
+        <td><span class="parametername">asyncProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.ProcessMessageAsync-1.html">ProcessMessageAsync</a>&lt;T&gt;</td>
         <td><span class="parametername">processMessageAsync</span></td>
         <td><p>User defined callback routine to be executed when a new message arrives to the listener.</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td><span class="parametername">peer</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -151,7 +161,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener%601.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/CallbackMessageListener.cs/#L45">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/CallbackMessageListener.cs/#L47">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1_Dispose_" data-uid="Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener`1.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1_Dispose" data-uid="Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener`1.Dispose">Dispose()</h4>
@@ -166,7 +176,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1_PushMessage__0_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener%601.PushMessage(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/CallbackMessageListener.cs/#L39">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/CallbackMessageListener.cs/#L41">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1_PushMessage_" data-uid="Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener`1.PushMessage*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1_PushMessage__0_" data-uid="Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener`1.PushMessage(`0)">PushMessage(T)</h4>
@@ -214,7 +224,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_CallbackMessageListener_1.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.CallbackMessageListener%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/CallbackMessageListener.cs/#L23" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/CallbackMessageListener.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

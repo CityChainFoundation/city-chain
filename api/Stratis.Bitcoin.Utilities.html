@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.Utilities
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -100,22 +100,8 @@ It is also possible to specify a delay between two executions of the task. And f
 to make the task run only once. Running the task for other than one or infinite number of times is not supported.
 </p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncLoopFactory.html">AsyncLoopFactory</a></h4>
-      <section><p>Factory for creating and also possibly starting application defined tasks inside async loop.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncManualResetEvent.html">AsyncManualResetEvent</a></h4>
       <section><p>An async-compatible manual-reset event.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncQueue-1.html">AsyncQueue&lt;T&gt;</a></h4>
-      <section><p>Async queue is a thread-safe queue that can operate in callback mode or blocking dequeue mode.
-In callback mode it asynchronously executes a user-defined callback when a new item is added to the queue.
-In blocking dequeue mode, <a class="xref" href="Stratis.Bitcoin.Utilities.AsyncQueue-1.html#Stratis_Bitcoin_Utilities_AsyncQueue_1_DequeueAsync_CancellationToken_">DequeueAsync(CancellationToken)</a> is used to wait for and dequeue
-an item from the queue once it becomes available.</p>
-<p>
-In callback mode, the queue guarantees that the user-defined callback is executed only once at the time.
-If another item is added to the queue, the callback is called again after the current execution
-is finished.
-</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AverageCalculator.html">AverageCalculator</a></h4>
       <section><p>Calculates average value of last N added samples every time new sample is added.</p>
@@ -223,12 +209,6 @@ the implementation of <see cref="!:IDisposable"></see> interface.</p>
       <section></section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoop.html">IAsyncLoop</a></h4>
-      <section><p>Allows running application defined in a loop with specific timing.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoopFactory.html">IAsyncLoopFactory</a></h4>
-      <section><p>Factory for creating and also possibly starting application defined tasks inside async loop.</p>
-</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></h4>
       <section><p>Providing date time functionality.</p>
 </section>
@@ -253,9 +233,6 @@ the implementation of <see cref="!:IDisposable"></see> interface.</p>
   </h3>
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncExecutionEventCallback-2.html">AsyncExecutionEventCallback&lt;TSender, TArg&gt;</a></h4>
       <section><p>Asynchronous event handler that can be registered with <a class="xref" href="Stratis.Bitcoin.Utilities.AsyncExecutionEvent-2.html">AsyncExecutionEvent&lt;TSender, TArg&gt;</a>.</p>
-</section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncQueue-1.OnEnqueueAsync.html">AsyncQueue&lt;T&gt;.OnEnqueueAsync</a></h4>
-      <section><p>Represents a callback method to be executed when a new item is added to the queue.</p>
 </section>
 </article>
           </div>

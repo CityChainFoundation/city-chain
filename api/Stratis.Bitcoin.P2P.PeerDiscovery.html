@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PeerDiscovery
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -96,18 +96,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerDiscovery__ctor_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_P2P_Peer_INetworkPeerFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_P2P_IPeerAddressManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerDiscovery.%23ctor(Stratis.Bitcoin.Utilities.IAsyncLoopFactory%2CILoggerFactory%2CNBitcoin.Network%2CStratis.Bitcoin.P2P.Peer.INetworkPeerFactory%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Configuration.NodeSettings%2CStratis.Bitcoin.P2P.IPeerAddressManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerDiscovery__ctor_Stratis_Bitcoin_AsyncWork_IAsyncProvider_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_P2P_Peer_INetworkPeerFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_P2P_IPeerAddressManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerDiscovery.%23ctor(Stratis.Bitcoin.AsyncWork.IAsyncProvider%2CILoggerFactory%2CNBitcoin.Network%2CStratis.Bitcoin.P2P.Peer.INetworkPeerFactory%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Configuration.NodeSettings%2CStratis.Bitcoin.P2P.IPeerAddressManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerDiscoveryLoop.cs/#L67">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerDiscoveryLoop.cs/#L68">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerDiscovery__ctor_" data-uid="Stratis.Bitcoin.P2P.PeerDiscovery.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_P2P_PeerDiscovery__ctor_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_P2P_Peer_INetworkPeerFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_P2P_IPeerAddressManager_" data-uid="Stratis.Bitcoin.P2P.PeerDiscovery.#ctor(Stratis.Bitcoin.Utilities.IAsyncLoopFactory,ILoggerFactory,NBitcoin.Network,Stratis.Bitcoin.P2P.Peer.INetworkPeerFactory,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Configuration.NodeSettings,Stratis.Bitcoin.P2P.IPeerAddressManager)">PeerDiscovery(IAsyncLoopFactory, ILoggerFactory, Network, INetworkPeerFactory, INodeLifetime, NodeSettings, IPeerAddressManager)</h4>
+  <h4 id="Stratis_Bitcoin_P2P_PeerDiscovery__ctor_Stratis_Bitcoin_AsyncWork_IAsyncProvider_ILoggerFactory_NBitcoin_Network_Stratis_Bitcoin_P2P_Peer_INetworkPeerFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_P2P_IPeerAddressManager_" data-uid="Stratis.Bitcoin.P2P.PeerDiscovery.#ctor(Stratis.Bitcoin.AsyncWork.IAsyncProvider,ILoggerFactory,NBitcoin.Network,Stratis.Bitcoin.P2P.Peer.INetworkPeerFactory,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Configuration.NodeSettings,Stratis.Bitcoin.P2P.IPeerAddressManager)">PeerDiscovery(IAsyncProvider, ILoggerFactory, Network, INetworkPeerFactory, INodeLifetime, NodeSettings, IPeerAddressManager)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PeerDiscovery(IAsyncLoopFactory asyncLoopFactory, ILoggerFactory loggerFactory, Network network, INetworkPeerFactory networkPeerFactory, INodeLifetime nodeLifetime, NodeSettings nodeSettings, IPeerAddressManager peerAddressManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public PeerDiscovery(IAsyncProvider asyncProvider, ILoggerFactory loggerFactory, Network network, INetworkPeerFactory networkPeerFactory, INodeLifetime nodeLifetime, NodeSettings nodeSettings, IPeerAddressManager peerAddressManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -120,8 +120,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoopFactory.html">IAsyncLoopFactory</a></td>
-        <td><span class="parametername">asyncLoopFactory</span></td>
+        <td><a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsyncProvider.html">IAsyncProvider</a></td>
+        <td><span class="parametername">asyncProvider</span></td>
         <td></td>
       </tr>
       <tr>
@@ -163,7 +163,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerDiscovery_DiscoverPeers_Stratis_Bitcoin_Connection_IConnectionManager_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerDiscovery.DiscoverPeers(Stratis.Bitcoin.Connection.IConnectionManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerDiscoveryLoop.cs/#L87">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerDiscoveryLoop.cs/#L88">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerDiscovery_DiscoverPeers_" data-uid="Stratis.Bitcoin.P2P.PeerDiscovery.DiscoverPeers*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerDiscovery_DiscoverPeers_Stratis_Bitcoin_Connection_IConnectionManager_" data-uid="Stratis.Bitcoin.P2P.PeerDiscovery.DiscoverPeers(Stratis.Bitcoin.Connection.IConnectionManager)">DiscoverPeers(IConnectionManager)</h4>
@@ -196,7 +196,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerDiscovery_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerDiscovery.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerDiscoveryLoop.cs/#L218">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerDiscoveryLoop.cs/#L219">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_PeerDiscovery_Dispose_" data-uid="Stratis.Bitcoin.P2P.PeerDiscovery.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_P2P_PeerDiscovery_Dispose" data-uid="Stratis.Bitcoin.P2P.PeerDiscovery.Dispose">Dispose()</h4>
@@ -224,7 +224,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_PeerDiscovery.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.PeerDiscovery%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerDiscoveryLoop.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/PeerDiscoveryLoop.cs/#L31" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

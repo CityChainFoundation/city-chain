@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class NetworkPeerListener
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -96,19 +96,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerListener__ctor_Stratis_Bitcoin_P2P_Peer_INetworkPeer_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.%23ctor(Stratis.Bitcoin.P2P.Peer.INetworkPeer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerListener__ctor_Stratis_Bitcoin_P2P_Peer_INetworkPeer_Stratis_Bitcoin_AsyncWork_IAsyncProvider_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.%23ctor(Stratis.Bitcoin.P2P.Peer.INetworkPeer%2CStratis.Bitcoin.AsyncWork.IAsyncProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L28">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L30">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerListener__ctor_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerListener__ctor_Stratis_Bitcoin_P2P_Peer_INetworkPeer_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.#ctor(Stratis.Bitcoin.P2P.Peer.INetworkPeer)">NetworkPeerListener(INetworkPeer)</h4>
+  <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerListener__ctor_Stratis_Bitcoin_P2P_Peer_INetworkPeer_Stratis_Bitcoin_AsyncWork_IAsyncProvider_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.#ctor(Stratis.Bitcoin.P2P.Peer.INetworkPeer,Stratis.Bitcoin.AsyncWork.IAsyncProvider)">NetworkPeerListener(INetworkPeer, IAsyncProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes the instance of the object and subscribes to the peer's message producer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetworkPeerListener(INetworkPeer peer)</code></pre>
+    <pre><code class="lang-csharp hljs">public NetworkPeerListener(INetworkPeer peer, IAsyncProvider asyncProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -126,6 +126,11 @@
         <td><p>Connected network peer that we receive messages from.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsyncProvider.html">IAsyncProvider</a></td>
+        <td><span class="parametername">asyncProvider</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
@@ -135,7 +140,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerListener_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L67">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L71">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerListener_Dispose_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerListener_Dispose" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.Dispose">Dispose()</h4>
@@ -150,7 +155,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerListener_PushMessage_Stratis_Bitcoin_P2P_Protocol_IncomingMessage_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.PushMessage(Stratis.Bitcoin.P2P.Protocol.IncomingMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L37">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L41">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerListener_PushMessage_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.PushMessage*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerListener_PushMessage_Stratis_Bitcoin_P2P_Protocol_IncomingMessage_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.PushMessage(Stratis.Bitcoin.P2P.Protocol.IncomingMessage)">PushMessage(IncomingMessage)</h4>
@@ -185,7 +190,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerListener_ReceivePayloadAsync__1_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.ReceivePayloadAsync%60%601(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L50">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L54">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_P2P_Peer_NetworkPeerListener_ReceivePayloadAsync_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.ReceivePayloadAsync*"></a>
   <h4 id="Stratis_Bitcoin_P2P_Peer_NetworkPeerListener_ReceivePayloadAsync__1_CancellationToken_" data-uid="Stratis.Bitcoin.P2P.Peer.NetworkPeerListener.ReceivePayloadAsync``1(CancellationToken)">ReceivePayloadAsync&lt;TPayload&gt;(CancellationToken)</h4>
@@ -265,7 +270,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Peer_NetworkPeerListener.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Peer.NetworkPeerListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Peer/NetworkPeerListener.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

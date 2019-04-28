@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class FederationManager
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,13 +78,51 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">FederationManager</span></div>
+    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html">FederationManagerBase</a></div>
+    <div class="level2"><span class="xref">FederationManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationManager.html">IFederationManager</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_IsFederationMember">FederationManagerBase.IsFederationMember</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_CurrentFederationKey">FederationManagerBase.CurrentFederationKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_keyValueRepo">FederationManagerBase.keyValueRepo</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_logger">FederationManagerBase.logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_federationMembersDbKey">FederationManagerBase.federationMembersDbKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_federationMembers">FederationManagerBase.federationMembers</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_Initialize">FederationManagerBase.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_GetFederationMembers">FederationManagerBase.GetFederationMembers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_AddFederationMember_Stratis_Bitcoin_Features_PoA_IFederationMember_">FederationManagerBase.AddFederationMember(IFederationMember)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_RemoveFederationMember_Stratis_Bitcoin_Features_PoA_IFederationMember_">FederationManagerBase.RemoveFederationMember(IFederationMember)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.PoA.html">Stratis.Bitcoin.Features.PoA</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.PoA.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_PoA_FederationManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FederationManager : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class FederationManager : FederationManagerBase, IFederationManager</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -93,7 +131,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager__ctor_Stratis_Bitcoin_Configuration_NodeSettings_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IKeyValueRepository_Stratis_Bitcoin_Signals_ISignals_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.%23ctor(Stratis.Bitcoin.Configuration.NodeSettings%2CNetwork%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IKeyValueRepository%2CStratis.Bitcoin.Signals.ISignals)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L40">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L173">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_FederationManager__ctor_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager__ctor_Stratis_Bitcoin_Configuration_NodeSettings_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IKeyValueRepository_Stratis_Bitcoin_Signals_ISignals_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.#ctor(Stratis.Bitcoin.Configuration.NodeSettings,Network,ILoggerFactory,Stratis.Bitcoin.Utilities.IKeyValueRepository,Stratis.Bitcoin.Signals.ISignals)">FederationManager(NodeSettings, Network, ILoggerFactory, IKeyValueRepository, ISignals)</h4>
@@ -140,119 +178,23 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_FederationMemberKey.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.FederationMemberKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L19">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_PoA_FederationManager_FederationMemberKey_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.FederationMemberKey*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_FederationMemberKey" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.FederationMemberKey">FederationMemberKey</h4>
-  <div class="markdown level1 summary"><p>Key of current federation member. <code>null</code> if <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManager.html#Stratis_Bitcoin_Features_PoA_FederationManager_IsFederationMember">IsFederationMember</a> is <code>false</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Key FederationMemberKey { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Key</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_IsFederationMember.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.IsFederationMember%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L16">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_PoA_FederationManager_IsFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.IsFederationMember*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_IsFederationMember" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.IsFederationMember">IsFederationMember</h4>
-  <div class="markdown level1 summary"><p><code>true</code> in case current node is a federation member.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsFederationMember { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_AddFederationMember_PubKey_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.AddFederationMember(PubKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_LoadFederation.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.LoadFederation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L110">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L186">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Features_PoA_FederationManager_AddFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.AddFederationMember*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_AddFederationMember_PubKey_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.AddFederationMember(PubKey)">AddFederationMember(PubKey)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddFederationMember(PubKey pubKey)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PubKey</span></td>
-        <td><span class="parametername">pubKey</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_GetFederationMembers.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.GetFederationMembers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L102">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_PoA_FederationManager_GetFederationMembers_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.GetFederationMembers*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_GetFederationMembers" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.GetFederationMembers">GetFederationMembers()</h4>
-  <div class="markdown level1 summary"><p>Provides up to date list of federation members.</p>
+  <a id="Stratis_Bitcoin_Features_PoA_FederationManager_LoadFederation_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.LoadFederation*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_LoadFederation" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.LoadFederation">LoadFederation()</h4>
+  <div class="markdown level1 summary"><p>Loads saved collection of federation members from the database.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;PubKey&gt; GetFederationMembers()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override List&lt;IFederationMember&gt; LoadFederation()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -264,44 +206,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">PubKey</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationMember.html">IFederationMember</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Stratis_Bitcoin_Features_PoA_FederationManager_GetFederationMembers_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Blocks that are not signed with private keys that correspond
-to public keys from this list are considered to be invalid.</p>
-</div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_LoadFederation">FederationManagerBase.LoadFederation()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_Initialize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_SaveFederation_List_Stratis_Bitcoin_Features_PoA_IFederationMember__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.SaveFederation(List%7BStratis.Bitcoin.Features.PoA.IFederationMember%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L51">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L178">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Features_PoA_FederationManager_Initialize_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.Initialize*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_Initialize" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.Initialize">Initialize()</h4>
+  <a id="Stratis_Bitcoin_Features_PoA_FederationManager_SaveFederation_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.SaveFederation*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_SaveFederation_List_Stratis_Bitcoin_Features_PoA_IFederationMember__" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.SaveFederation(List{Stratis.Bitcoin.Features.PoA.IFederationMember})">SaveFederation(List&lt;IFederationMember&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_RemoveFederationMember_PubKey_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.RemoveFederationMember(PubKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L131">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_PoA_FederationManager_RemoveFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.RemoveFederationMember*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_RemoveFederationMember_PubKey_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.RemoveFederationMember(PubKey)">RemoveFederationMember(PubKey)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveFederationMember(PubKey pubKey)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void SaveFederation(List&lt;IFederationMember&gt; federation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -314,12 +239,18 @@ to public keys from this list are considered to be invalid.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PubKey</span></td>
-        <td><span class="parametername">pubKey</span></td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationMember.html">IFederationMember</a>&gt;</td>
+        <td><span class="parametername">federation</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_SaveFederation_List_Stratis_Bitcoin_Features_PoA_IFederationMember__">FederationManagerBase.SaveFederation(List&lt;IFederationMember&gt;)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationManager.html">IFederationManager</a>
+  </div>
 </article>
           </div>
           
@@ -331,7 +262,7 @@ to public keys from this list are considered to be invalid.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L171" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

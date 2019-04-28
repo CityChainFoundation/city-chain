@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BlockNotification
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -95,18 +95,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Notifications_BlockNotification__ctor_ILoggerFactory_NBitcoin_ChainIndexer_Stratis_Bitcoin_Consensus_IConsensusManager_Stratis_Bitcoin_Signals_ISignals_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Notifications.BlockNotification.%23ctor(ILoggerFactory%2CNBitcoin.ChainIndexer%2CStratis.Bitcoin.Consensus.IConsensusManager%2CStratis.Bitcoin.Signals.ISignals%2CStratis.Bitcoin.Utilities.IAsyncLoopFactory%2CStratis.Bitcoin.Utilities.INodeLifetime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Notifications_BlockNotification__ctor_ILoggerFactory_NBitcoin_ChainIndexer_Stratis_Bitcoin_Consensus_IConsensusManager_Stratis_Bitcoin_Signals_ISignals_Stratis_Bitcoin_AsyncWork_IAsyncProvider_Stratis_Bitcoin_Utilities_INodeLifetime_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Notifications.BlockNotification.%23ctor(ILoggerFactory%2CNBitcoin.ChainIndexer%2CStratis.Bitcoin.Consensus.IConsensusManager%2CStratis.Bitcoin.Signals.ISignals%2CStratis.Bitcoin.AsyncWork.IAsyncProvider%2CStratis.Bitcoin.Utilities.INodeLifetime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L37">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L38">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Notifications_BlockNotification__ctor_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Notifications_BlockNotification__ctor_ILoggerFactory_NBitcoin_ChainIndexer_Stratis_Bitcoin_Consensus_IConsensusManager_Stratis_Bitcoin_Signals_ISignals_Stratis_Bitcoin_Utilities_IAsyncLoopFactory_Stratis_Bitcoin_Utilities_INodeLifetime_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.#ctor(ILoggerFactory,NBitcoin.ChainIndexer,Stratis.Bitcoin.Consensus.IConsensusManager,Stratis.Bitcoin.Signals.ISignals,Stratis.Bitcoin.Utilities.IAsyncLoopFactory,Stratis.Bitcoin.Utilities.INodeLifetime)">BlockNotification(ILoggerFactory, ChainIndexer, IConsensusManager, ISignals, IAsyncLoopFactory, INodeLifetime)</h4>
+  <h4 id="Stratis_Bitcoin_Features_Notifications_BlockNotification__ctor_ILoggerFactory_NBitcoin_ChainIndexer_Stratis_Bitcoin_Consensus_IConsensusManager_Stratis_Bitcoin_Signals_ISignals_Stratis_Bitcoin_AsyncWork_IAsyncProvider_Stratis_Bitcoin_Utilities_INodeLifetime_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.#ctor(ILoggerFactory,NBitcoin.ChainIndexer,Stratis.Bitcoin.Consensus.IConsensusManager,Stratis.Bitcoin.Signals.ISignals,Stratis.Bitcoin.AsyncWork.IAsyncProvider,Stratis.Bitcoin.Utilities.INodeLifetime)">BlockNotification(ILoggerFactory, ChainIndexer, IConsensusManager, ISignals, IAsyncProvider, INodeLifetime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlockNotification(ILoggerFactory loggerFactory, ChainIndexer chainIndexer, IConsensusManager consensusManager, ISignals signals, IAsyncLoopFactory asyncLoopFactory, INodeLifetime nodeLifetime)</code></pre>
+    <pre><code class="lang-csharp hljs">public BlockNotification(ILoggerFactory loggerFactory, ChainIndexer chainIndexer, IConsensusManager consensusManager, ISignals signals, IAsyncProvider asyncProvider, INodeLifetime nodeLifetime)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,8 +139,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IAsyncLoopFactory.html">IAsyncLoopFactory</a></td>
-        <td><span class="parametername">asyncLoopFactory</span></td>
+        <td><a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsyncProvider.html">IAsyncProvider</a></td>
+        <td><span class="parametername">asyncProvider</span></td>
         <td></td>
       </tr>
       <tr>
@@ -157,7 +157,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Notifications_BlockNotification_ChainIndexer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Notifications.BlockNotification.ChainIndexer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L60">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L61">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Notifications_BlockNotification_ChainIndexer_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.ChainIndexer*"></a>
   <h4 id="Stratis_Bitcoin_Features_Notifications_BlockNotification_ChainIndexer" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.ChainIndexer">ChainIndexer</h4>
@@ -187,7 +187,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Notifications_BlockNotification_ReSync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Notifications.BlockNotification.ReSync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L62">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L63">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Notifications_BlockNotification_ReSync_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.ReSync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Notifications_BlockNotification_ReSync" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.ReSync">ReSync</h4>
@@ -217,7 +217,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Notifications_BlockNotification_StartHash.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Notifications.BlockNotification.StartHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L64">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L65">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Notifications_BlockNotification_StartHash_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.StartHash*"></a>
   <h4 id="Stratis_Bitcoin_Features_Notifications_BlockNotification_StartHash" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.StartHash">StartHash</h4>
@@ -249,7 +249,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Notifications_BlockNotification_Start.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Notifications.BlockNotification.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L92">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L93">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Notifications_BlockNotification_Start_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.Start*"></a>
   <h4 id="Stratis_Bitcoin_Features_Notifications_BlockNotification_Start" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.Start">Start()</h4>
@@ -265,7 +265,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Notifications_BlockNotification_Stop.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Notifications.BlockNotification.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L102">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L103">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Notifications_BlockNotification_Stop_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.Stop*"></a>
   <h4 id="Stratis_Bitcoin_Features_Notifications_BlockNotification_Stop" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.Stop">Stop()</h4>
@@ -281,7 +281,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Notifications_BlockNotification_SyncFrom_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Notifications.BlockNotification.SyncFrom(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L67">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L68">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Notifications_BlockNotification_SyncFrom_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.SyncFrom*"></a>
   <h4 id="Stratis_Bitcoin_Features_Notifications_BlockNotification_SyncFrom_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.Notifications.BlockNotification.SyncFrom(NBitcoin.uint256)">SyncFrom(uint256)</h4>
@@ -325,7 +325,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Notifications_BlockNotification.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Notifications.BlockNotification%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Notifications/BlockNotification.cs/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

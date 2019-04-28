@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Features.FederatedPeg.Wallet
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,8 +77,15 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Stratis.Features.FederatedPeg.Wallet.BlockQueueProcessor.html">BlockQueueProcessor</a></h4>
+      <section><p>Queue which contains blocks that are processed by a callback after enqueueing. Limited by a maximum size in bytes. If this size is reached,
+enqueuing new blocks will be unsuccessful.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Features.FederatedPeg.Wallet.DeterministicCoinOrdering.html">DeterministicCoinOrdering</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.Features.FederatedPeg.Wallet.DeterministicCoinSelector.html">DeterministicCoinSelector</a></h4>
-      <section><p>Based on the DefaultCoinSelector but with randomness removed, and GroupByScriptKey set to false.</p>
+      <section><p>Assumes that coins are coming in in the order that we want them, then adds coins until we reach the target.
+Inefficient, but deterministic.</p>
 </section>
       <h4><a class="xref" href="Stratis.Features.FederatedPeg.Wallet.FederationWallet.html">FederationWallet</a></h4>
       <section></section>

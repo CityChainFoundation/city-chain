@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WalletHistoryRequest
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,8 @@
   
   <h1 id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest" class="text-break">Class WalletHistoryRequest
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A class containing the necessary parameters for a wallet history request.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -100,11 +101,13 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_AccountName.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.AccountName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L110">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L173">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_AccountName_" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.AccountName*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_AccountName" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.AccountName">AccountName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Optional. The name of the account to recover the history for. If no account name is specified,
+the entire history of the wallet is recovered.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -130,11 +133,14 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_SearchQuery.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.SearchQuery%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L116">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L194">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_SearchQuery_" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.SearchQuery*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_SearchQuery" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.SearchQuery">SearchQuery</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An optional string that can be used to match different data in the transaction records.
+It is possible to match on the following: the transaction ID, the address at which funds where received,
+and the address to which funds where sent.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -160,11 +166,14 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_Skip.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.Skip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L112">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L180">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_Skip_" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.Skip*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_Skip" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.Skip">Skip</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An optional value allowing (with Take) pagination of the wallet's history. If given,
+the member specifies the numbers of records in the wallet's history to skip before
+beginning record retrieval; otherwise the wallet history records are retrieved starting from 0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -190,11 +199,14 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_Take.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.Take%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L114">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L187">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_Take_" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.Take*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_Take" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.Take">Take</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An optional value allowing (with Skip) pagination of the wallet's history. If given,
+the member specifies the number of records in the wallet's history to retrieve in this call; otherwise all
+wallet history records are retrieved.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,11 +232,12 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_WalletName.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.WalletName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L107">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L166">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_WalletName_" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.WalletName*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest_WalletName" data-uid="Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest.WalletName">WalletName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The name of the wallet to recover the history for.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -256,7 +269,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Models_WalletHistoryRequest.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Models.WalletHistoryRequest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L105" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Models/RequestModels.cs/#L161" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

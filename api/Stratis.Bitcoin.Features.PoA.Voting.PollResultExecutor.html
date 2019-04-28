@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PollResultExecutor
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.42.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -94,18 +94,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor__ctor_Stratis_Bitcoin_Features_PoA_FederationManager_ILoggerFactory_Stratis_Bitcoin_Features_PoA_Voting_IWhitelistedHashesRepository_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.%23ctor(Stratis.Bitcoin.Features.PoA.FederationManager%2CILoggerFactory%2CStratis.Bitcoin.Features.PoA.Voting.IWhitelistedHashesRepository)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor__ctor_Stratis_Bitcoin_Features_PoA_IFederationManager_ILoggerFactory_Stratis_Bitcoin_Features_PoA_Voting_IWhitelistedHashesRepository_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.%23ctor(Stratis.Bitcoin.Features.PoA.IFederationManager%2CILoggerFactory%2CStratis.Bitcoin.Features.PoA.Voting.IWhitelistedHashesRepository%2CNetwork)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Voting/PollResultExecutor.cs/#L24">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Voting/PollResultExecutor.cs/#L26">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor__ctor_" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor__ctor_Stratis_Bitcoin_Features_PoA_FederationManager_ILoggerFactory_Stratis_Bitcoin_Features_PoA_Voting_IWhitelistedHashesRepository_" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.#ctor(Stratis.Bitcoin.Features.PoA.FederationManager,ILoggerFactory,Stratis.Bitcoin.Features.PoA.Voting.IWhitelistedHashesRepository)">PollResultExecutor(FederationManager, ILoggerFactory, IWhitelistedHashesRepository)</h4>
+  <h4 id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor__ctor_Stratis_Bitcoin_Features_PoA_IFederationManager_ILoggerFactory_Stratis_Bitcoin_Features_PoA_Voting_IWhitelistedHashesRepository_Network_" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.#ctor(Stratis.Bitcoin.Features.PoA.IFederationManager,ILoggerFactory,Stratis.Bitcoin.Features.PoA.Voting.IWhitelistedHashesRepository,Network)">PollResultExecutor(IFederationManager, ILoggerFactory, IWhitelistedHashesRepository, Network)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PollResultExecutor(FederationManager federationManager, ILoggerFactory loggerFactory, IWhitelistedHashesRepository whitelistedHashesRepository)</code></pre>
+    <pre><code class="lang-csharp hljs">public PollResultExecutor(IFederationManager federationManager, ILoggerFactory loggerFactory, IWhitelistedHashesRepository whitelistedHashesRepository, Network network)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -118,7 +118,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManager.html">FederationManager</a></td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationManager.html">IFederationManager</a></td>
         <td><span class="parametername">federationManager</span></td>
         <td></td>
       </tr>
@@ -132,16 +132,53 @@
         <td><span class="parametername">whitelistedHashesRepository</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">Network</span></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_AddFederationMember_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.AddFederationMember(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Voting/PollResultExecutor.cs/#L81">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_AddFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.AddFederationMember*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_AddFederationMember_System_Byte___" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.AddFederationMember(System.Byte[])">AddFederationMember(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFederationMember(byte[] federationMemberBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">federationMemberBytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_ApplyChange_Stratis_Bitcoin_Features_PoA_Voting_VotingData_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.ApplyChange(Stratis.Bitcoin.Features.PoA.Voting.VotingData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Voting/PollResultExecutor.cs/#L33">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Voting/PollResultExecutor.cs/#L36">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_ApplyChange_" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.ApplyChange*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_ApplyChange_Stratis_Bitcoin_Features_PoA_Voting_VotingData_" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.ApplyChange(Stratis.Bitcoin.Features.PoA.Voting.VotingData)">ApplyChange(VotingData)</h4>
@@ -171,10 +208,42 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_RemoveFederationMember_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.RemoveFederationMember(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Voting/PollResultExecutor.cs/#L89">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_RemoveFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.RemoveFederationMember*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_RemoveFederationMember_System_Byte___" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.RemoveFederationMember(System.Byte[])">RemoveFederationMember(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFederationMember(byte[] federationMemberBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">federationMemberBytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_RevertChange_Stratis_Bitcoin_Features_PoA_Voting_VotingData_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.RevertChange(Stratis.Bitcoin.Features.PoA.Voting.VotingData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Voting/PollResultExecutor.cs/#L56">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/Voting/PollResultExecutor.cs/#L59">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_RevertChange_" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.RevertChange*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_Voting_PollResultExecutor_RevertChange_Stratis_Bitcoin_Features_PoA_Voting_VotingData_" data-uid="Stratis.Bitcoin.Features.PoA.Voting.PollResultExecutor.RevertChange(Stratis.Bitcoin.Features.PoA.Voting.VotingData)">RevertChange(VotingData)</h4>
