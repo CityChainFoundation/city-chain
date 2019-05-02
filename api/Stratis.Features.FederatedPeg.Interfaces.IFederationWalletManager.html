@@ -548,19 +548,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_Interfaces_IFederationWalletManager_ProcessTransaction_Transaction_System_Nullable_System_Int32__Block_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.Interfaces.IFederationWalletManager.ProcessTransaction(Transaction%2CSystem.Nullable%7BSystem.Int32%7D%2CBlock%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_Interfaces_IFederationWalletManager_ProcessTransaction_Transaction_System_Nullable_System_Int32__Block_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.Interfaces.IFederationWalletManager.ProcessTransaction(Transaction%2CSystem.Nullable%7BSystem.Int32%7D%2CBlock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/Interfaces/IFederationWalletManager.cs/#L61">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_Interfaces_IFederationWalletManager_ProcessTransaction_" data-uid="Stratis.Features.FederatedPeg.Interfaces.IFederationWalletManager.ProcessTransaction*"></a>
-  <h4 id="Stratis_Features_FederatedPeg_Interfaces_IFederationWalletManager_ProcessTransaction_Transaction_System_Nullable_System_Int32__Block_System_Boolean_" data-uid="Stratis.Features.FederatedPeg.Interfaces.IFederationWalletManager.ProcessTransaction(Transaction,System.Nullable{System.Int32},Block,System.Boolean)">ProcessTransaction(Transaction, Nullable&lt;Int32&gt;, Block, Boolean)</h4>
+  <h4 id="Stratis_Features_FederatedPeg_Interfaces_IFederationWalletManager_ProcessTransaction_Transaction_System_Nullable_System_Int32__Block_" data-uid="Stratis.Features.FederatedPeg.Interfaces.IFederationWalletManager.ProcessTransaction(Transaction,System.Nullable{System.Int32},Block)">ProcessTransaction(Transaction, Nullable&lt;Int32&gt;, Block)</h4>
   <div class="markdown level1 summary"><p>Processes a transaction received from the network.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool ProcessTransaction(Transaction transaction, int? blockHeight = null, Block block = null, bool isPropagated = true)</code></pre>
+    <pre><code class="lang-csharp hljs">bool ProcessTransaction(Transaction transaction, int? blockHeight = null, Block block = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -588,12 +588,6 @@
         <td><span class="xref">Block</span></td>
         <td><span class="parametername">block</span></td>
         <td><p>The block in which this transaction was included.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">isPropagated</span></td>
-        <td><p>Transaction propagation state.</p>
 </td>
       </tr>
     </tbody>

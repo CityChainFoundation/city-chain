@@ -191,7 +191,7 @@
   </span>
   <a id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_BlockHash_" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.BlockHash*"></a>
   <h4 id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_BlockHash" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.BlockHash">BlockHash</h4>
-  <div class="markdown level1 summary"><p>The hash of the block where the target deposit has been persisted.</p>
+  <div class="markdown level1 summary"><p>The block hash on the target chain where the withdrawal has been deposited.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -222,7 +222,7 @@
   </span>
   <a id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_BlockNumber_" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.BlockNumber*"></a>
   <h4 id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_BlockNumber" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.BlockNumber">BlockNumber</h4>
-  <div class="markdown level1 summary"><p>The block number where the target deposit has been persisted.</p>
+  <div class="markdown level1 summary"><p>The block number on the target chain where the withdrawal has been deposited.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -253,7 +253,7 @@
   </span>
   <a id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_DepositId_" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.DepositId*"></a>
   <h4 id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_DepositId" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.DepositId">DepositId</h4>
-  <div class="markdown level1 summary"><p>The Id (or hash) of the source transaction that originates the fund transfer.</p>
+  <div class="markdown level1 summary"><p>The hash of the deposit transaction from the source chain.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -284,8 +284,8 @@
   </span>
   <a id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_Id_" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.Id*"></a>
   <h4 id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_Id" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.Id">Id</h4>
-  <div class="markdown level1 summary"><p>The Id (or hash) of the source transaction that originated the fund
-transfer causing this withdrawal.</p>
+  <div class="markdown level1 summary"><p>The hash of the withdrawal transaction to the target chain.
+This can be null until the trx is fully signed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -316,7 +316,7 @@ transfer causing this withdrawal.</p>
   </span>
   <a id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_TargetAddress_" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.TargetAddress*"></a>
   <h4 id="Stratis_Features_FederatedPeg_TargetChain_Withdrawal_TargetAddress" data-uid="Stratis.Features.FederatedPeg.TargetChain.Withdrawal.TargetAddress">TargetAddress</h4>
-  <div class="markdown level1 summary"><p>The target address, on the target chain, for the fund deposited on the multisig.</p>
+  <div class="markdown level1 summary"><p>The target address, on the target chain, for the fund deposited on the multi-sig.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

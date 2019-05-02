@@ -73,20 +73,22 @@
   
   <h1 id="Stratis_Bitcoin_Features_PoA_SlotsManager" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager" class="text-break">Class SlotsManager
   </h1>
-  <div class="markdown level0 summary"><p>Provider of information about which pubkey should be used at which timestamp
-and what is the next timestamp at which current node will be able to mine.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">SlotsManager</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Features.PoA.ISlotsManager.html">ISlotsManager</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.PoA.html">Stratis.Bitcoin.Features.PoA</a></h6>
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.PoA.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_PoA_SlotsManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SlotsManager : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class SlotsManager : object, ISlotsManager</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -95,7 +97,7 @@ and what is the next timestamp at which current node will be able to mine.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_SlotsManager__ctor_Network_Stratis_Bitcoin_Features_PoA_IFederationManager_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.SlotsManager.%23ctor(Network%2CStratis.Bitcoin.Features.PoA.IFederationManager%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L22">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L39">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_SlotsManager__ctor_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_SlotsManager__ctor_Network_Stratis_Bitcoin_Features_PoA_IFederationManager_ILoggerFactory_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.#ctor(Network,Stratis.Bitcoin.Features.PoA.IFederationManager,ILoggerFactory)">SlotsManager(Network, IFederationManager, ILoggerFactory)</h4>
@@ -136,10 +138,80 @@ and what is the next timestamp at which current node will be able to mine.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_SlotsManager_GetFederationMemberForTimestamp_System_UInt32_List_Stratis_Bitcoin_Features_PoA_IFederationMember__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.SlotsManager.GetFederationMemberForTimestamp(System.UInt32%2CList%7BStratis.Bitcoin.Features.PoA.IFederationMember%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L49">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_PoA_SlotsManager_GetFederationMemberForTimestamp_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.GetFederationMemberForTimestamp*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_SlotsManager_GetFederationMemberForTimestamp_System_UInt32_List_Stratis_Bitcoin_Features_PoA_IFederationMember__" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.GetFederationMemberForTimestamp(System.UInt32,List{Stratis.Bitcoin.Features.PoA.IFederationMember})">GetFederationMemberForTimestamp(UInt32, List&lt;IFederationMember&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the federation member for specified timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFederationMember GetFederationMemberForTimestamp(uint headerUnixTimestamp, List&lt;IFederationMember&gt; federationMembers = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">headerUnixTimestamp</span></td>
+        <td><p>Timestamp of a header.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationMember.html">IFederationMember</a>&gt;</td>
+        <td><span class="parametername">federationMembers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationMember.html">IFederationMember</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusErrorException.html">ConsensusErrorException</a></td>
+        <td><p>In case timestamp is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_SlotsManager_GetMiningTimestamp_System_UInt32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.SlotsManager.GetMiningTimestamp(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L55">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L69">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_SlotsManager_GetMiningTimestamp_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.GetMiningTimestamp*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_SlotsManager_GetMiningTimestamp_System_UInt32_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.GetMiningTimestamp(System.UInt32)">GetMiningTimestamp(UInt32)</h4>
@@ -184,80 +256,10 @@ and what is the next timestamp at which current node will be able to mine.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_SlotsManager_GetPubKeyForTimestamp_System_UInt32_List_Stratis_Bitcoin_Features_PoA_IFederationMember__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.SlotsManager.GetPubKeyForTimestamp(System.UInt32%2CList%7BStratis.Bitcoin.Features.PoA.IFederationMember%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L34">View Source</a>
-  </span>
-  <a id="Stratis_Bitcoin_Features_PoA_SlotsManager_GetPubKeyForTimestamp_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.GetPubKeyForTimestamp*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_SlotsManager_GetPubKeyForTimestamp_System_UInt32_List_Stratis_Bitcoin_Features_PoA_IFederationMember__" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.GetPubKeyForTimestamp(System.UInt32,List{Stratis.Bitcoin.Features.PoA.IFederationMember})">GetPubKeyForTimestamp(UInt32, List&lt;IFederationMember&gt;)</h4>
-  <div class="markdown level1 summary"><p>Gets the public key for specified timestamp.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PubKey GetPubKeyForTimestamp(uint headerUnixTimestamp, List&lt;IFederationMember&gt; federationMembers = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">headerUnixTimestamp</span></td>
-        <td><p>Timestamp of a header.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationMember.html">IFederationMember</a>&gt;</td>
-        <td><span class="parametername">federationMembers</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PubKey</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusErrorException.html">ConsensusErrorException</a></td>
-        <td><p>In case timestamp is invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_SlotsManager_GetRoundLengthSeconds_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.SlotsManager.GetRoundLengthSeconds(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L89">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L103">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_SlotsManager_GetRoundLengthSeconds_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.GetRoundLengthSeconds*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_SlotsManager_GetRoundLengthSeconds_System_Int32_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.GetRoundLengthSeconds(System.Int32)">GetRoundLengthSeconds(Int32)</h4>
@@ -304,7 +306,7 @@ and what is the next timestamp at which current node will be able to mine.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_SlotsManager_IsValidTimestamp_System_UInt32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.SlotsManager.IsValidTimestamp(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L84">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L98">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_SlotsManager_IsValidTimestamp_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.IsValidTimestamp*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_SlotsManager_IsValidTimestamp_System_UInt32_" data-uid="Stratis.Bitcoin.Features.PoA.SlotsManager.IsValidTimestamp(System.UInt32)">IsValidTimestamp(UInt32)</h4>
@@ -347,6 +349,10 @@ and what is the next timestamp at which current node will be able to mine.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.ISlotsManager.html">ISlotsManager</a>
+  </div>
 </article>
           </div>
           
@@ -358,7 +364,7 @@ and what is the next timestamp at which current node will be able to mine.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_SlotsManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.SlotsManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/SlotsManager.cs/#L31" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

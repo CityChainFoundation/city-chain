@@ -171,69 +171,6 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_asyncLock.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.asyncLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L71">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_asyncLock" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.asyncLock">asyncLock</h4>
-  <div class="markdown level1 summary"><p>Protects access to <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.html#Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_cachedHeaders">cachedHeaders</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly AsyncLock asyncLock</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stratis.Bitcoin.Utilities.AsyncLock.html">AsyncLock</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_cachedHeaders.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.cachedHeaders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusManagerBehavior.cs/#L68">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_cachedHeaders" data-uid="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.cachedHeaders">cachedHeaders</h4>
-  <div class="markdown level1 summary"><p>List of block headers that were not yet consumed by <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusManager.html">ConsensusManager</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly List&lt;BlockHeader&gt; cachedHeaders</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="NBitcoin.BlockHeader.html">BlockHeader</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_cachedHeaders_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Should be protected by <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.html#Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_asyncLock">asyncLock</a>.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_CacheSyncHeadersThreshold.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.CacheSyncHeadersThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -913,7 +850,7 @@
     </tbody>
   </table>
   <h5 id="Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_PresentHeadersLockedAsync_List_NBitcoin_BlockHeader__System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Have to be locked by <a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.html#Stratis_Bitcoin_Consensus_ConsensusManagerBehavior_asyncLock">asyncLock</a>.</p>
+  <div class="markdown level1 remarks"><p>Have to be locked by <span class="xref">Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.asyncLock</span>.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>

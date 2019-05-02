@@ -79,6 +79,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">PoAConsensusFactory</span></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.PoA.CollateralPoAConsensusFactory.html">CollateralPoAConsensusFactory</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.SmartContracts.PoA.SmartContractPoAConsensusFactory.html">SmartContractPoAConsensusFactory</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.PoA.html">Stratis.Bitcoin.Features.PoA</a></h6>
@@ -151,18 +152,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusFactory_CreateFederationMemberFromBytes_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusFactory.CreateFederationMemberFromBytes(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusFactory_DeserializeFederationMember_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusFactory.DeserializeFederationMember(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusFactory.cs/#L20">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusFactory.cs/#L19">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Features_PoA_PoAConsensusFactory_CreateFederationMemberFromBytes_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusFactory.CreateFederationMemberFromBytes*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusFactory_CreateFederationMemberFromBytes_System_Byte___" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusFactory.CreateFederationMemberFromBytes(System.Byte[])">CreateFederationMemberFromBytes(Byte[])</h4>
+  <a id="Stratis_Bitcoin_Features_PoA_PoAConsensusFactory_DeserializeFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusFactory.DeserializeFederationMember*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusFactory_DeserializeFederationMember_System_Byte___" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusFactory.DeserializeFederationMember(System.Byte[])">DeserializeFederationMember(Byte[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IFederationMember CreateFederationMemberFromBytes(byte[] serializedBytes)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IFederationMember DeserializeFederationMember(byte[] serializedBytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -192,6 +193,53 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationMember.html">IFederationMember</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_PoAConsensusFactory_SerializeFederationMember_Stratis_Bitcoin_Features_PoA_IFederationMember_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.PoAConsensusFactory.SerializeFederationMember(Stratis.Bitcoin.Features.PoA.IFederationMember)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/PoAConsensusFactory.cs/#L28">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_PoA_PoAConsensusFactory_SerializeFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusFactory.SerializeFederationMember*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_PoAConsensusFactory_SerializeFederationMember_Stratis_Bitcoin_Features_PoA_IFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.PoAConsensusFactory.SerializeFederationMember(Stratis.Bitcoin.Features.PoA.IFederationMember)">SerializeFederationMember(IFederationMember)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] SerializeFederationMember(IFederationMember federationMember)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationMember.html">IFederationMember</a></td>
+        <td><span class="parametername">federationMember</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td></td>
       </tr>
     </tbody>

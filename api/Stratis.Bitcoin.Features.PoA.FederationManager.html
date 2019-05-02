@@ -106,6 +106,9 @@
       <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_federationMembers">FederationManagerBase.federationMembers</a>
     </div>
     <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_locker">FederationManagerBase.locker</a>
+    </div>
+    <div>
       <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_Initialize">FederationManagerBase.Initialize()</a>
     </div>
     <div>
@@ -113,6 +116,9 @@
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_AddFederationMember_Stratis_Bitcoin_Features_PoA_IFederationMember_">FederationManagerBase.AddFederationMember(IFederationMember)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_AddFederationMemberLocked_Stratis_Bitcoin_Features_PoA_IFederationMember_">FederationManagerBase.AddFederationMemberLocked(IFederationMember)</a>
     </div>
     <div>
       <a class="xref" href="Stratis.Bitcoin.Features.PoA.FederationManagerBase.html#Stratis_Bitcoin_Features_PoA_FederationManagerBase_RemoveFederationMember_Stratis_Bitcoin_Features_PoA_IFederationMember_">FederationManagerBase.RemoveFederationMember(IFederationMember)</a>
@@ -131,7 +137,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager__ctor_Stratis_Bitcoin_Configuration_NodeSettings_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IKeyValueRepository_Stratis_Bitcoin_Signals_ISignals_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.%23ctor(Stratis.Bitcoin.Configuration.NodeSettings%2CNetwork%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IKeyValueRepository%2CStratis.Bitcoin.Signals.ISignals)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L173">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L179">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_FederationManager__ctor_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager__ctor_Stratis_Bitcoin_Configuration_NodeSettings_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IKeyValueRepository_Stratis_Bitcoin_Signals_ISignals_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.#ctor(Stratis.Bitcoin.Configuration.NodeSettings,Network,ILoggerFactory,Stratis.Bitcoin.Utilities.IKeyValueRepository,Stratis.Bitcoin.Signals.ISignals)">FederationManager(NodeSettings, Network, ILoggerFactory, IKeyValueRepository, ISignals)</h4>
@@ -185,7 +191,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_LoadFederation.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.LoadFederation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L186">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L192">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_FederationManager_LoadFederation_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.LoadFederation*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_LoadFederation" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.LoadFederation">LoadFederation()</h4>
@@ -218,7 +224,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager_SaveFederation_List_Stratis_Bitcoin_Features_PoA_IFederationMember__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager.SaveFederation(List%7BStratis.Bitcoin.Features.PoA.IFederationMember%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L178">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L184">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_FederationManager_SaveFederation_" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.SaveFederation*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_FederationManager_SaveFederation_List_Stratis_Bitcoin_Features_PoA_IFederationMember__" data-uid="Stratis.Bitcoin.Features.PoA.FederationManager.SaveFederation(List{Stratis.Bitcoin.Features.PoA.IFederationMember})">SaveFederation(List&lt;IFederationMember&gt;)</h4>
@@ -262,7 +268,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_FederationManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.FederationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L171" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationManager.cs/#L177" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

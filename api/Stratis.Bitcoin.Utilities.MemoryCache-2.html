@@ -115,7 +115,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2__ctor_IEqualityComparer__0__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.%23ctor(IEqualityComparer%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L57">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L56">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_MemoryCache_2__ctor_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2__ctor_IEqualityComparer__0__" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.#ctor(IEqualityComparer{`0})">MemoryCache(IEqualityComparer&lt;TKey&gt;)</h4>
@@ -144,24 +144,25 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_cache.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.cache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_Cache.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.Cache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L41">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L40">View Source</a>
   </span>
-  <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_cache" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.cache">cache</h4>
+  <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_Cache_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.Cache*"></a>
+  <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_Cache" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.Cache">Cache</h4>
   <div class="markdown level1 summary"><p>Dictionary that contains cached items.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Dictionary&lt;TKey, LinkedListNode&lt;MemoryCache&lt;TKey, TValue&gt;.CacheItem&gt;&gt; cache</code></pre>
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;TKey, LinkedListNode&lt;MemoryCache&lt;TKey, TValue&gt;.CacheItem&gt;&gt; Cache { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -176,110 +177,15 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Stratis_Bitcoin_Utilities_MemoryCache_2_cache_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Should be accessed inside a lock using <a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.html#Stratis_Bitcoin_Utilities_MemoryCache_2_lockObject">lockObject</a>.</p>
+  <h5 id="Stratis_Bitcoin_Utilities_MemoryCache_2_Cache_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Should be accessed inside a lock using <a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.html#Stratis_Bitcoin_Utilities_MemoryCache_2_LockObject">LockObject</a>.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_keys.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.keys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L45">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_keys" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.keys">keys</h4>
-  <div class="markdown level1 summary"><p>Keys sorted by their last access time with most recent ones at the end.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly LinkedList&lt;MemoryCache&lt;TKey, TValue&gt;.CacheItem&gt; keys</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">LinkedList</span>&lt;<a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.CacheItem.html">MemoryCache.CacheItem</a>&lt;&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Stratis_Bitcoin_Utilities_MemoryCache_2_keys_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Should be accessed inside a lock using <a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.html#Stratis_Bitcoin_Utilities_MemoryCache_2_lockObject">lockObject</a>.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_lockObject.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.lockObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L48">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_lockObject" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.lockObject">lockObject</h4>
-  <div class="markdown level1 summary"><p>Lock to protect access to <a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.html#Stratis_Bitcoin_Utilities_MemoryCache_2_keys">keys</a> and <a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.html#Stratis_Bitcoin_Utilities_MemoryCache_2_cache">cache</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly object lockObject</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_totalSize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.totalSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L51">View Source</a>
-  </span>
-  <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_totalSize" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.totalSize">totalSize</h4>
-  <div class="markdown level1 summary"><p>Total size in bytes stored in the cache.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected long totalSize</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_Count.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L79">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L78">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_Count_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.Count*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_Count" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.Count">Count</h4>
@@ -305,6 +211,102 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_Keys.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.Keys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L44">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_Keys_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.Keys*"></a>
+  <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_Keys" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.Keys">Keys</h4>
+  <div class="markdown level1 summary"><p>Keys sorted by their last access time with most recent ones at the end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LinkedList&lt;MemoryCache&lt;TKey, TValue&gt;.CacheItem&gt; Keys { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LinkedList</span>&lt;<a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.CacheItem.html">MemoryCache.CacheItem</a>&lt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Utilities_MemoryCache_2_Keys_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Should be accessed inside a lock using <a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.html#Stratis_Bitcoin_Utilities_MemoryCache_2_LockObject">LockObject</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_LockObject.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.LockObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L47">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_LockObject_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.LockObject*"></a>
+  <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_LockObject" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.LockObject">LockObject</h4>
+  <div class="markdown level1 summary"><p>Lock to protect access to <a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.html#Stratis_Bitcoin_Utilities_MemoryCache_2_Keys">Keys</a> and <a class="xref" href="Stratis.Bitcoin.Utilities.MemoryCache-2.html#Stratis_Bitcoin_Utilities_MemoryCache_2_Cache">Cache</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object LockObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_totalSize.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.totalSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L50">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_totalSize_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.totalSize*"></a>
+  <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_totalSize" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.totalSize">totalSize</h4>
+  <div class="markdown level1 summary"><p>Total size in bytes stored in the cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long totalSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -312,7 +314,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_AddOrUpdate_Stratis_Bitcoin_Utilities_MemoryCache__0__1__CacheItem_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.AddOrUpdate(Stratis.Bitcoin.Utilities.MemoryCache%7B%600%2C%601%7D.CacheItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L92">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L91">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_AddOrUpdate_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.AddOrUpdate*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_AddOrUpdate_Stratis_Bitcoin_Utilities_MemoryCache__0__1__CacheItem_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.AddOrUpdate(Stratis.Bitcoin.Utilities.MemoryCache{`0,`1}.CacheItem)">AddOrUpdate(MemoryCache&lt;TKey, TValue&gt;.CacheItem)</h4>
@@ -346,7 +348,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_ClearCache.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.ClearCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L169">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L168">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_ClearCache_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.ClearCache*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_ClearCache" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.ClearCache">ClearCache()</h4>
@@ -362,7 +364,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_IsCacheFullLocked_Stratis_Bitcoin_Utilities_MemoryCache__0__1__CacheItem_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.IsCacheFullLocked(Stratis.Bitcoin.Utilities.MemoryCache%7B%600%2C%601%7D.CacheItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L66">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L65">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_IsCacheFullLocked_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.IsCacheFullLocked*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_IsCacheFullLocked_Stratis_Bitcoin_Utilities_MemoryCache__0__1__CacheItem_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.IsCacheFullLocked(Stratis.Bitcoin.Utilities.MemoryCache{`0,`1}.CacheItem)">IsCacheFullLocked(MemoryCache&lt;TKey, TValue&gt;.CacheItem)</h4>
@@ -411,7 +413,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_ItemAddedLocked_Stratis_Bitcoin_Utilities_MemoryCache__0__1__CacheItem_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.ItemAddedLocked(Stratis.Bitcoin.Utilities.MemoryCache%7B%600%2C%601%7D.CacheItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L69">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L68">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_ItemAddedLocked_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.ItemAddedLocked*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_ItemAddedLocked_Stratis_Bitcoin_Utilities_MemoryCache__0__1__CacheItem_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.ItemAddedLocked(Stratis.Bitcoin.Utilities.MemoryCache{`0,`1}.CacheItem)">ItemAddedLocked(MemoryCache&lt;TKey, TValue&gt;.CacheItem)</h4>
@@ -444,7 +446,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_ItemRemovedLocked_Stratis_Bitcoin_Utilities_MemoryCache__0__1__CacheItem_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.ItemRemovedLocked(Stratis.Bitcoin.Utilities.MemoryCache%7B%600%2C%601%7D.CacheItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L74">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L73">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_ItemRemovedLocked_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.ItemRemovedLocked*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_ItemRemovedLocked_Stratis_Bitcoin_Utilities_MemoryCache__0__1__CacheItem_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.ItemRemovedLocked(Stratis.Bitcoin.Utilities.MemoryCache{`0,`1}.CacheItem)">ItemRemovedLocked(MemoryCache&lt;TKey, TValue&gt;.CacheItem)</h4>
@@ -477,7 +479,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_Remove__0_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.Remove(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L128">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L127">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_Remove_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.Remove*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_Remove__0_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.Remove(`0)">Remove(TKey)</h4>
@@ -511,7 +513,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2_TryGetValue__0__1__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602.TryGetValue(%600%2C%601%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L147">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L146">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Utilities_MemoryCache_2_TryGetValue_" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.TryGetValue*"></a>
   <h4 id="Stratis_Bitcoin_Utilities_MemoryCache_2_TryGetValue__0__1__" data-uid="Stratis.Bitcoin.Utilities.MemoryCache`2.TryGetValue(`0,`1@)">TryGetValue(TKey, out TValue)</h4>
@@ -573,7 +575,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Utilities_MemoryCache_2.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Utilities.MemoryCache%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Utilities/MemoryCache.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
