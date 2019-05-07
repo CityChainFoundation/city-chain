@@ -178,6 +178,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "City.Chain.Tests", "City.Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "City.Chain", "City.Chain\City.Chain.csproj", "{C4A10169-CDB3-43B1-ACEB-4298AC7B0552}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stratis.Bitcoin.Features.WalletNotify", "Stratis.Bitcoin.Features.WalletNotify\Stratis.Bitcoin.Features.WalletNotify.csproj", "{AE4A5FCB-E375-4D96-AF7A-7E240D89D1E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -456,6 +458,10 @@ Global
 		{C4A10169-CDB3-43B1-ACEB-4298AC7B0552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4A10169-CDB3-43B1-ACEB-4298AC7B0552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4A10169-CDB3-43B1-ACEB-4298AC7B0552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4A5FCB-E375-4D96-AF7A-7E240D89D1E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4A5FCB-E375-4D96-AF7A-7E240D89D1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4A5FCB-E375-4D96-AF7A-7E240D89D1E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4A5FCB-E375-4D96-AF7A-7E240D89D1E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -530,6 +536,7 @@ Global
 		{971094BD-29C4-4CF5-9899-DACDD6591791} = {43CD4EEB-4074-4148-B155-4B0E57D131E2}
 		{895A86B3-3220-4D25-AD99-A84AC87B6BD7} = {43CD4EEB-4074-4148-B155-4B0E57D131E2}
 		{C4A10169-CDB3-43B1-ACEB-4298AC7B0552} = {43CD4EEB-4074-4148-B155-4B0E57D131E2}
+		{AE4A5FCB-E375-4D96-AF7A-7E240D89D1E7} = {15D29FFD-6142-4DC5-AFFD-10BA0CA55C45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C780ABA-5872-4B83-AD3F-A5BD423AD907}
