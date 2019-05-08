@@ -6177,7 +6177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Controllers.RestApiClientBase.html",
-          "hash": "IvFsOrnC97S7lJtPZBgJIg=="
+          "hash": "G7shkVfEWGLymbssYtxJiA=="
         }
       },
       "is_incremental": false,
@@ -6813,7 +6813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.BlockStore.Controllers.BlockStoreClient.html",
-          "hash": "JzKq6ZBEzwwhJywvBGeLwA=="
+          "hash": "e6LDvRtdS6ShGxIyV7BpXw=="
         }
       },
       "is_incremental": false,
@@ -18248,6 +18248,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.CirrusDnsD.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.CirrusDnsD.Program.html",
+          "hash": "G+i/HDvQPjzAJs6FBylDbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.CirrusDnsD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.CirrusDnsD.html",
+          "hash": "nJQoVBKGE9bZ8Kz0f/Tryg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Features.FederatedPeg.CheckCollateralFullValidationRule.yml",
       "output": {
         ".html": {
@@ -18300,7 +18324,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Controllers.FederationGatewayClient.html",
-          "hash": "BXsHQcltqv/KN2fDtPiZ2w=="
+          "hash": "YLLj2D3bVMHe9Jz+0m7GMQ=="
         }
       },
       "is_incremental": false,
@@ -18408,7 +18432,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.FederationGatewaySettings.html",
-          "hash": "ADToQJezy66JELmDWnB87Q=="
+          "hash": "SMxXr+lQ8ZJThJ7vqVtA9Q=="
         }
       },
       "is_incremental": false,
@@ -18672,7 +18696,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Interfaces.ICrossChainTransferStore.html",
-          "hash": "9wEwffYbCBBToA+y7gH9Lw=="
+          "hash": "o2OHl58Fq+VbBVAe+o+myw=="
         }
       },
       "is_incremental": false,
@@ -18708,7 +18732,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Interfaces.IFederationGatewaySettings.html",
-          "hash": "8fT0yZOonadzHOUs/8tFIw=="
+          "hash": "eiSunC1g5YkBwqxitx+PkQ=="
         }
       },
       "is_incremental": false,
@@ -18720,7 +18744,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Interfaces.IFederationWalletManager.html",
-          "hash": "3b9ZddEwRQ5AMnWsbCc8kA=="
+          "hash": "92pMC2/X/DldHwj3iWsKxQ=="
         }
       },
       "is_incremental": false,
@@ -19368,7 +19392,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Wallet.FederationWallet.html",
-          "hash": "jJXSgBuWUWrWoBolr0Remw=="
+          "hash": "WxraTBZLAXwKDp50OPg8gQ=="
         }
       },
       "is_incremental": false,
@@ -19380,7 +19404,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Wallet.FederationWalletManager.html",
-          "hash": "himm8b1cOhgboXEmUqkWVQ=="
+          "hash": "GRmNgaiRyg3bFJ8oJ48HCg=="
         }
       },
       "is_incremental": false,
@@ -19416,7 +19440,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Wallet.FlatHistory.html",
-          "hash": "zsnUT6VA8lFWpMbX0Fx5kA=="
+          "hash": "jxWLePTTS73a7R+KHHvE7A=="
         }
       },
       "is_incremental": false,
@@ -19500,7 +19524,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Wallet.TransactionData.html",
-          "hash": "HJrq9TSVzbnz0FBWLoBM2A=="
+          "hash": "Mtr20QXyku3sa6Ve8xv9Mg=="
         }
       },
       "is_incremental": false,
@@ -19524,7 +19548,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.Wallet.WalletSecret.html",
-          "hash": "2XxyBVAK4S/mkaa4E59ASw=="
+          "hash": "vRgz+eJnp0EUTGKPCaiOLQ=="
         }
       },
       "is_incremental": false,
@@ -23772,7 +23796,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Jp4FF4qqeFlj14evJ3pXoQ=="
+          "hash": "oUsvaRHoApGoBrMOru3C/w=="
         }
       },
       "is_incremental": false,
@@ -23860,10 +23884,11 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 1979,
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
@@ -23872,16 +23897,15 @@
           "total_file_count": 3,
           "skipped_file_count": 0
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1981,
+          "skipped_file_count": 0
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
