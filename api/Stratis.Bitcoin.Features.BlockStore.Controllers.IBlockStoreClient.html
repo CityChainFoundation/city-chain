@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IBlockStoreClient
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.42.2.0">
+    <meta name="generator" content="docfx 2.42.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -89,7 +89,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_Controllers_IBlockStoreClient_GetAddressBalanceAsync_System_String_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.Controllers.IBlockStoreClient.GetAddressBalanceAsync(System.String%2CSystem.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/Controllers/BlockStoreClient.cs/#L15">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/Controllers/BlockStoreClient.cs/#L16">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_Controllers_IBlockStoreClient_GetAddressBalanceAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.Controllers.IBlockStoreClient.GetAddressBalanceAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_Controllers_IBlockStoreClient_GetAddressBalanceAsync_System_String_System_Int32_CancellationToken_" data-uid="Stratis.Bitcoin.Features.BlockStore.Controllers.IBlockStoreClient.GetAddressBalanceAsync(System.String,System.Int32,CancellationToken)">GetAddressBalanceAsync(String, Int32, CancellationToken)</h4>
@@ -147,7 +147,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_Controllers_IBlockStoreClient_GetAddressBalancesAsync_IEnumerable_System_String__System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.Controllers.IBlockStoreClient.GetAddressBalancesAsync(IEnumerable%7BSystem.String%7D%2CSystem.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/Controllers/BlockStoreClient.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/Controllers/BlockStoreClient.cs/#L19">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_BlockStore_Controllers_IBlockStoreClient_GetAddressBalancesAsync_" data-uid="Stratis.Bitcoin.Features.BlockStore.Controllers.IBlockStoreClient.GetAddressBalancesAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_BlockStore_Controllers_IBlockStoreClient_GetAddressBalancesAsync_IEnumerable_System_String__System_Int32_CancellationToken_" data-uid="Stratis.Bitcoin.Features.BlockStore.Controllers.IBlockStoreClient.GetAddressBalancesAsync(IEnumerable{System.String},System.Int32,CancellationToken)">GetAddressBalancesAsync(IEnumerable&lt;String&gt;, Int32, CancellationToken)</h4>
@@ -156,7 +156,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;Dictionary&lt;string, Money&gt;&gt; GetAddressBalancesAsync(IEnumerable&lt;string&gt; addresses, int minConfirmations, CancellationToken cancellation = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AddressBalancesModel&gt; GetAddressBalancesAsync(IEnumerable&lt;string&gt; addresses, int minConfirmations, CancellationToken cancellation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -195,7 +195,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="NBitcoin.Money.html">Money</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.Controllers.Models.AddressBalancesModel.html">AddressBalancesModel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -211,7 +211,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_BlockStore_Controllers_IBlockStoreClient.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.BlockStore.Controllers.IBlockStoreClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/Controllers/BlockStoreClient.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.BlockStore/Controllers/BlockStoreClient.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ApiRequester
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.42.2.0">
+    <meta name="generator" content="docfx 2.42.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,10 +68,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Stratis.FederatedSidechains.AdminDashboard.Rest.ApiRequester">
+            <article class="content wrap" id="_content" data-uid="Stratis.FederatedSidechains.AdminDashboard.Services.ApiRequester">
   
   
-  <h1 id="Stratis_FederatedSidechains_AdminDashboard_Rest_ApiRequester" data-uid="Stratis.FederatedSidechains.AdminDashboard.Rest.ApiRequester" class="text-break">Class ApiRequester
+  <h1 id="Stratis_FederatedSidechains_AdminDashboard_Services_ApiRequester" data-uid="Stratis.FederatedSidechains.AdminDashboard.Services.ApiRequester" class="text-break">Class ApiRequester
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -80,9 +80,9 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ApiRequester</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.FederatedSidechains.AdminDashboard.Rest.html">Stratis.FederatedSidechains.AdminDashboard.Rest</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.FederatedSidechains.AdminDashboard.Services.html">Stratis.FederatedSidechains.AdminDashboard.Services</a></h6>
   <h6><strong>Assembly</strong>: Stratis.FederatedSidechains.AdminDashboard.dll</h6>
-  <h5 id="Stratis_FederatedSidechains_AdminDashboard_Rest_ApiRequester_syntax">Syntax</h5>
+  <h5 id="Stratis_FederatedSidechains_AdminDashboard_Services_ApiRequester_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class ApiRequester : object</code></pre>
   </div>
@@ -90,19 +90,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_FederatedSidechains_AdminDashboard_Rest_ApiRequester_GetRequestAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.FederatedSidechains.AdminDashboard.Rest.ApiRequester.GetRequestAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_FederatedSidechains_AdminDashboard_Services_ApiRequester_GetRequestAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.FederatedSidechains.AdminDashboard.Services.ApiRequester.GetRequestAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.FederatedSidechains.AdminDashboard/Rest/ApiRequester.cs/#L16">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.FederatedSidechains.AdminDashboard/Services/ApiRequester.cs/#L18">View Source</a>
   </span>
-  <a id="Stratis_FederatedSidechains_AdminDashboard_Rest_ApiRequester_GetRequestAsync_" data-uid="Stratis.FederatedSidechains.AdminDashboard.Rest.ApiRequester.GetRequestAsync*"></a>
-  <h4 id="Stratis_FederatedSidechains_AdminDashboard_Rest_ApiRequester_GetRequestAsync_System_String_System_String_" data-uid="Stratis.FederatedSidechains.AdminDashboard.Rest.ApiRequester.GetRequestAsync(System.String,System.String)">GetRequestAsync(String, String)</h4>
+  <a id="Stratis_FederatedSidechains_AdminDashboard_Services_ApiRequester_GetRequestAsync_" data-uid="Stratis.FederatedSidechains.AdminDashboard.Services.ApiRequester.GetRequestAsync*"></a>
+  <h4 id="Stratis_FederatedSidechains_AdminDashboard_Services_ApiRequester_GetRequestAsync_System_String_System_String_System_String_" data-uid="Stratis.FederatedSidechains.AdminDashboard.Services.ApiRequester.GetRequestAsync(System.String,System.String,System.String)">GetRequestAsync(String, String, String)</h4>
   <div class="markdown level1 summary"><p>Make a HTTP request to a specified node</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;ApiResponse&gt; GetRequestAsync(string endpoint, string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;ApiResponse&gt; GetRequestAsync(string endpoint, string path, string query = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -126,6 +126,11 @@
         <td><p>URL</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -138,7 +143,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.FederatedSidechains.AdminDashboard.Rest.ApiResponse.html">ApiResponse</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.FederatedSidechains.AdminDashboard.Services.ApiResponse.html">ApiResponse</a>&gt;</td>
         <td><p>An ApiResponse object</p>
 </td>
       </tr>
@@ -146,13 +151,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_FederatedSidechains_AdminDashboard_Rest_ApiRequester_PostRequestAsync_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Stratis.FederatedSidechains.AdminDashboard.Rest.ApiRequester.PostRequestAsync(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_FederatedSidechains_AdminDashboard_Services_ApiRequester_PostRequestAsync_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Stratis.FederatedSidechains.AdminDashboard.Services.ApiRequester.PostRequestAsync(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.FederatedSidechains.AdminDashboard/Rest/ApiRequester.cs/#L35">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.FederatedSidechains.AdminDashboard/Services/ApiRequester.cs/#L37">View Source</a>
   </span>
-  <a id="Stratis_FederatedSidechains_AdminDashboard_Rest_ApiRequester_PostRequestAsync_" data-uid="Stratis.FederatedSidechains.AdminDashboard.Rest.ApiRequester.PostRequestAsync*"></a>
-  <h4 id="Stratis_FederatedSidechains_AdminDashboard_Rest_ApiRequester_PostRequestAsync_System_String_System_String_System_Object_" data-uid="Stratis.FederatedSidechains.AdminDashboard.Rest.ApiRequester.PostRequestAsync(System.String,System.String,System.Object)">PostRequestAsync(String, String, Object)</h4>
+  <a id="Stratis_FederatedSidechains_AdminDashboard_Services_ApiRequester_PostRequestAsync_" data-uid="Stratis.FederatedSidechains.AdminDashboard.Services.ApiRequester.PostRequestAsync*"></a>
+  <h4 id="Stratis_FederatedSidechains_AdminDashboard_Services_ApiRequester_PostRequestAsync_System_String_System_String_System_Object_" data-uid="Stratis.FederatedSidechains.AdminDashboard.Services.ApiRequester.PostRequestAsync(System.String,System.String,System.Object)">PostRequestAsync(String, String, Object)</h4>
   <div class="markdown level1 summary"><p>Make a HTTP request with POST method</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -200,7 +205,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.FederatedSidechains.AdminDashboard.Rest.ApiResponse.html">ApiResponse</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.FederatedSidechains.AdminDashboard.Services.ApiResponse.html">ApiResponse</a>&gt;</td>
         <td><p>An ApiResponse object</p>
 </td>
       </tr>
@@ -214,10 +219,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_FederatedSidechains_AdminDashboard_Rest_ApiRequester.md&amp;value=---%0Auid%3A%20Stratis.FederatedSidechains.AdminDashboard.Rest.ApiRequester%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_FederatedSidechains_AdminDashboard_Services_ApiRequester.md&amp;value=---%0Auid%3A%20Stratis.FederatedSidechains.AdminDashboard.Services.ApiRequester%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.FederatedSidechains.AdminDashboard/Rest/ApiRequester.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.FederatedSidechains.AdminDashboard/Services/ApiRequester.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

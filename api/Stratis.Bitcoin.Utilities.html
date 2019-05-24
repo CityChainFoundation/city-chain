@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.Utilities
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.42.2.0">
+    <meta name="generator" content="docfx 2.42.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -121,6 +121,8 @@ of items. Once the array is full, adding a new item removes the oldest entry.</p
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.FileStorage-1.html">FileStorage&lt;T&gt;</a></h4>
       <section><p>Class providing methods to save objects as files on the file system.</p>
 </section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.FileStorageOption.html">FileStorageOption</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.FullNodeExtensions.html">FullNodeExtensions</a></h4>
       <section><p>Extension methods for IFullNode interface.</p>
 </section>
@@ -141,6 +143,8 @@ the method being called with invalid set of parameters or object states.
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.LinqExtensions.html">LinqExtensions</a></h4>
       <section><p>Extension methods for IEnumerable interface.</p>
 </section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.LockProtected.html">LockProtected</a></h4>
+      <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.LoggingExtensions.html">LoggingExtensions</a></h4>
       <section><p>Extension methods for classes and interfaces related to logging.</p>
 </section>
@@ -214,6 +218,10 @@ the implementation of <see cref="!:IDisposable"></see> interface.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.IKeyValueRepository.html">IKeyValueRepository</a></h4>
       <section><p>Allows saving and loading single values to and from key-value storage.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Utilities.ILockProtected.html">ILockProtected</a></h4>
+      <section><p>Supports object-level locking and allows external work in the context of the locks.
+Requires &quot;lock (this.lockObject) { ...}&quot; inside all of the object's public methods.</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Utilities.INodeLifetime.html">INodeLifetime</a></h4>
       <section><p>Allows consumers to perform cleanup during a graceful shutdown.</p>
