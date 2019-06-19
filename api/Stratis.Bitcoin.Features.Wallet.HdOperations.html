@@ -1,0 +1,805 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HdOperations
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HdOperations
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.43.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_Wallet_HdOperations" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations" class="text-break">Class HdOperations
+  </h1>
+  <div class="markdown level0 summary"><p>Class providing helper methods for working with Hierarchical Deterministic (HD) wallets.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">HdOperations</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Wallet.html">Stratis.Bitcoin.Features.Wallet</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Wallet.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_HdOperations_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HdOperations : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_CreateHdPath_System_Int32_System_Int32_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.CreateHdPath(System.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L141">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_CreateHdPath_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.CreateHdPath*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_CreateHdPath_System_Int32_System_Int32_System_Boolean_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.CreateHdPath(System.Int32,System.Int32,System.Boolean,System.Int32)">CreateHdPath(Int32, Int32, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates an address' HD path, according to BIP 44.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CreateHdPath(int coinType, int accountIndex, bool isChange, int addressIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">coinType</span></td>
+        <td><p>Type of coin in the HD path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">accountIndex</span></td>
+        <td><p>Index of the account in the HD path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isChange</span></td>
+        <td><p>A value indicating whether the HD path to generate corresponds to a change address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">addressIndex</span></td>
+        <td><p>Index of the address in the HD path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The HD path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_HdOperations_CreateHdPath_System_Int32_System_Int32_System_Boolean_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Refer to <seealso cref="!:https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#path-levels"></seealso> for the format of the HD path.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_DecryptSeed_System_String_System_String_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.DecryptSeed(System.String%2CSystem.String%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L203">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_DecryptSeed_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.DecryptSeed*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_DecryptSeed_System_String_System_String_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.DecryptSeed(System.String,System.String,NBitcoin.Network)">DecryptSeed(String, String, Network)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the encrypted private key (seed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Key DecryptSeed(string encryptedSeed, string password, Network network)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encryptedSeed</span></td>
+        <td><p>The encrypted seed to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The password used to decrypt the encrypted seed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td><p>The network this seed applies to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Key.html">Key</a></td>
+        <td><p>The decrypted private key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_GeneratePublicKey_System_String_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.GeneratePublicKey(System.String%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L23">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_GeneratePublicKey_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GeneratePublicKey*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GeneratePublicKey_System_String_System_Int32_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GeneratePublicKey(System.String,System.Int32,System.Boolean)">GeneratePublicKey(String, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Generates an HD public key derived from an extended public key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PubKey GeneratePublicKey(string accountExtPubKey, int index, bool isChange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accountExtPubKey</span></td>
+        <td><p>The extended public key used to generate child keys.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the child key to generate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isChange</span></td>
+        <td><p>A value indicating whether the public key to generate corresponds to a change address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.PubKey.html">PubKey</a></td>
+        <td><p>An HD public key derived from an extended public key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_GetAccountHdPath_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.GetAccountHdPath(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L99">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetAccountHdPath_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetAccountHdPath*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetAccountHdPath_System_Int32_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetAccountHdPath(System.Int32,System.Int32)">GetAccountHdPath(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the HD path of an account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetAccountHdPath(int coinType, int accountIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">coinType</span></td>
+        <td><p>Type of the coin this account is in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">accountIndex</span></td>
+        <td><p>Index of the account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The HD path of an account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_GetCoinType_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.GetCoinType(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L154">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetCoinType_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetCoinType*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetCoinType_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetCoinType(System.String)">GetCoinType(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the type of coin this HD path is for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCoinType(string hdPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hdPath</span></td>
+        <td><p>The HD path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The type of coin. <seealso cref="!:https://github.com/satoshilabs/slips/blob/master/slip-0044.md"></seealso>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetCoinType_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Refer to <seealso cref="!:https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#path-levels"></seealso> for the format of the HD path.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedKey_NBitcoin_Mnemonic_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedKey(NBitcoin.Mnemonic%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L125">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedKey_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedKey*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedKey_NBitcoin_Mnemonic_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedKey(NBitcoin.Mnemonic,System.String)">GetExtendedKey(Mnemonic, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the extended key generated by this mnemonic and passphrase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ExtKey GetExtendedKey(Mnemonic mnemonic, string passphrase = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Mnemonic.html">Mnemonic</a></td>
+        <td><span class="parametername">mnemonic</span></td>
+        <td><p>The mnemonic used to generate the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">passphrase</span></td>
+        <td><p>The passphrase used in generating the key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ExtKey.html">ExtKey</a></td>
+        <td><p>The extended key generated by this mnemonic and passphrase.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedKey_NBitcoin_Mnemonic_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This key is sometimes referred to as the 'root seed' or the 'master key'.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedKey_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedKey(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L111">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedKey_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedKey*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedKey_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedKey(System.String,System.String)">GetExtendedKey(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the extended key generated by this mnemonic and passphrase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ExtKey GetExtendedKey(string mnemonic, string passphrase = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mnemonic</span></td>
+        <td><p>The mnemonic used to generate the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">passphrase</span></td>
+        <td><p>The passphrase used in generating the key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ExtKey.html">ExtKey</a></td>
+        <td><p>The extended key generated by this mnemonic and passphrase.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedKey_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This key is sometimes referred to as the 'root seed' or the 'master key'.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedPrivateKey_NBitcoin_Key_System_Byte___System_String_NBitcoin_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedPrivateKey(NBitcoin.Key%2CSystem.Byte%5B%5D%2CSystem.String%2CNBitcoin.Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L41">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedPrivateKey_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedPrivateKey*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedPrivateKey_NBitcoin_Key_System_Byte___System_String_NBitcoin_Network_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedPrivateKey(NBitcoin.Key,System.Byte[],System.String,NBitcoin.Network)">GetExtendedPrivateKey(Key, Byte[], String, Network)</h4>
+  <div class="markdown level1 summary"><p>Gets the extended private key for an account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISecret GetExtendedPrivateKey(Key privateKey, byte[] chainCode, string hdPath, Network network)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Key.html">Key</a></td>
+        <td><span class="parametername">privateKey</span></td>
+        <td><p>The private key from which to generate the extended private key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">chainCode</span></td>
+        <td><p>The chain code used in creating the extended private key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hdPath</span></td>
+        <td><p>The HD path of the account for which to get the extended private key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td><p>The network for which to generate this extended private key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ISecret.html">ISecret</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedPublicKey_NBitcoin_Key_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedPublicKey(NBitcoin.Key%2CSystem.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L64">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedPublicKey_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedPublicKey*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedPublicKey_NBitcoin_Key_System_Byte___System_Int32_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedPublicKey(NBitcoin.Key,System.Byte[],System.Int32,System.Int32)">GetExtendedPublicKey(Key, Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the extended public key for an account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ExtPubKey GetExtendedPublicKey(Key privateKey, byte[] chainCode, int coinType, int accountIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Key.html">Key</a></td>
+        <td><span class="parametername">privateKey</span></td>
+        <td><p>The private key from which to generate the extended public key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">chainCode</span></td>
+        <td><p>The chain code used in creating the extended public key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">coinType</span></td>
+        <td><p>Type of the coin of the account for which to generate an extended public key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">accountIndex</span></td>
+        <td><p>Index of the account for which to generate an extended public key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ExtPubKey.html">ExtPubKey</a></td>
+        <td><p>The extended public key for an account, used to derive child keys.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedPublicKey_NBitcoin_Key_System_Byte___System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedPublicKey(NBitcoin.Key%2CSystem.Byte%5B%5D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L80">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedPublicKey_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedPublicKey*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_GetExtendedPublicKey_NBitcoin_Key_System_Byte___System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.GetExtendedPublicKey(NBitcoin.Key,System.Byte[],System.String)">GetExtendedPublicKey(Key, Byte[], String)</h4>
+  <div class="markdown level1 summary"><p>Gets the extended public key corresponding to an HD path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ExtPubKey GetExtendedPublicKey(Key privateKey, byte[] chainCode, string hdPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Key.html">Key</a></td>
+        <td><span class="parametername">privateKey</span></td>
+        <td><p>The private key from which to generate the extended public key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">chainCode</span></td>
+        <td><p>The chain code used in creating the extended public key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hdPath</span></td>
+        <td><p>The HD path for which to get the extended public key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ExtPubKey.html">ExtPubKey</a></td>
+        <td><p>The extended public key, used to derive child keys.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations_IsChangeAddress_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations.IsChangeAddress(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L178">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_HdOperations_IsChangeAddress_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.IsChangeAddress*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_HdOperations_IsChangeAddress_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.HdOperations.IsChangeAddress(System.String)">IsChangeAddress(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the HD path corresponds to a change address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsChangeAddress(string hdPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hdPath</span></td>
+        <td><p>The HD path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>A value indicating if the HD path corresponds to a change address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_HdOperations_IsChangeAddress_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Refer to <seealso cref="!:https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#path-levels"></seealso> for the format of the HD path.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_HdOperations.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.HdOperations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/HdOperations.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

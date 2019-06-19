@@ -1,0 +1,495 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IPosMinting
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IPosMinting
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.43.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting" class="text-break">Interface IPosMinting
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.html">PosMinting</a> is used in order to generate new blocks. It involves a sort of lottery, similar to proof-of-work,
+but the chances of winning this lottery is proportional to how many coins you are staking, not on hashing power.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Miner.Interfaces.html">Stratis.Bitcoin.Features.Miner.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Miner.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPosMinting</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_CreateCoinstakeAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__NBitcoin_Block_NBitcoin_ChainedHeader_System_Int64_System_Int64_Stratis_Bitcoin_Features_Miner_Staking_CoinstakeContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.CreateCoinstakeAsync(List%7BStratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription%7D%2CNBitcoin.Block%2CNBitcoin.ChainedHeader%2CSystem.Int64%2CSystem.Int64%2CStratis.Bitcoin.Features.Miner.Staking.CoinstakeContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Interfaces/IPosMinting.cs/#L25">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_CreateCoinstakeAsync_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.CreateCoinstakeAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_CreateCoinstakeAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__NBitcoin_Block_NBitcoin_ChainedHeader_System_Int64_System_Int64_Stratis_Bitcoin_Features_Miner_Staking_CoinstakeContext_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.CreateCoinstakeAsync(List{Stratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription},NBitcoin.Block,NBitcoin.ChainedHeader,System.Int64,System.Int64,Stratis.Bitcoin.Features.Miner.Staking.CoinstakeContext)">CreateCoinstakeAsync(List&lt;UtxoStakeDescription&gt;, Block, ChainedHeader, Int64, Int64, CoinstakeContext)</h4>
+  <div class="markdown level1 summary"><p>Creates a coinstake transaction with kernel that satisfies POS staking target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; CreateCoinstakeAsync(List&lt;UtxoStakeDescription&gt; utxoStakeDescriptions, Block block, ChainedHeader chainTip, long searchInterval, long fees, CoinstakeContext coinstakeContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription.html">UtxoStakeDescription</a>&gt;</td>
+        <td><span class="parametername">utxoStakeDescriptions</span></td>
+        <td><p>List of UTXOs that are available in the wallet for staking.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>Template of the block that we are trying to mine.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainTip</span></td>
+        <td><p>Tip of the best chain.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">searchInterval</span></td>
+        <td><p>Length of an unexplored block time space in seconds. It only makes sense to look for a solution within this interval.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">fees</span></td>
+        <td><p>Transaction fees from the transactions included in the block if we mine it.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.Staking.CoinstakeContext.html">CoinstakeContext</a></td>
+        <td><span class="parametername">coinstakeContext</span></td>
+        <td><p>Information about coinstake transaction and its private key that is to be filled when the kernel is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the function succeeds, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GenerateBlocksAsync_Stratis_Bitcoin_Features_Miner_Staking_WalletSecret_CancellationToken_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GenerateBlocksAsync(Stratis.Bitcoin.Features.Miner.Staking.WalletSecret%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Interfaces/IPosMinting.cs/#L34">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GenerateBlocksAsync_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GenerateBlocksAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GenerateBlocksAsync_Stratis_Bitcoin_Features_Miner_Staking_WalletSecret_CancellationToken_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GenerateBlocksAsync(Stratis.Bitcoin.Features.Miner.Staking.WalletSecret,CancellationToken)">GenerateBlocksAsync(WalletSecret, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Attempts to stake new blocks in a loop.</p>
+<p>
+Staking is attempted only if the node is fully synchronized and connected to the network.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task GenerateBlocksAsync(WalletSecret walletSecret, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.Staking.WalletSecret.html">WalletSecret</a></td>
+        <td><span class="parametername">walletSecret</span></td>
+        <td><p>Credentials to the wallet with which will be used for staking.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetDifficulty_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetDifficulty(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Interfaces/IPosMinting.cs/#L45">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetDifficulty_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetDifficulty*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetDifficulty_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetDifficulty(NBitcoin.ChainedHeader)">GetDifficulty(ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Calculates staking difficulty for a specific block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double GetDifficulty(ChainedHeader block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>Block at which to calculate the difficulty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Staking difficulty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetDifficulty_NBitcoin_ChainedHeader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The actual idea behind the calculation is a mystery. It was simply ported from
+<see cref="!:https://github.com/stratisproject/stratisX/blob/47851b7337f528f52ec20e86dca7dcead8191cf5/src/rpcblockchain.cpp#L16"></see>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetGetStakingInfoModel.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetGetStakingInfoModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Interfaces/IPosMinting.cs/#L51">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetGetStakingInfoModel_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetGetStakingInfoModel*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetGetStakingInfoModel" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetGetStakingInfoModel">GetGetStakingInfoModel()</h4>
+  <div class="markdown level1 summary"><p>Constructs model for RPC &quot;getstakinginfo&quot; call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GetStakingInfoModel GetGetStakingInfoModel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.Models.GetStakingInfoModel.html">GetStakingInfoModel</a></td>
+        <td><p>Staking information RPC response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetMatureBalanceAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetMatureBalanceAsync(List%7BStratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Interfaces/IPosMinting.cs/#L58">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetMatureBalanceAsync_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetMatureBalanceAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetMatureBalanceAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetMatureBalanceAsync(List{Stratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription})">GetMatureBalanceAsync(List&lt;UtxoStakeDescription&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the total balance from all UTXOs in the wallet that are mature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Money&gt; GetMatureBalanceAsync(List&lt;UtxoStakeDescription&gt; utxoStakeDescriptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription.html">UtxoStakeDescription</a>&gt;</td>
+        <td><span class="parametername">utxoStakeDescriptions</span></td>
+        <td><p>Description of coins in the wallet that will be used for staking.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.Money.html">Money</a>&gt;</td>
+        <td><p>Total balance from all UTXOs in the wallet that are mature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetNetworkWeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetNetworkWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Interfaces/IPosMinting.cs/#L75">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetNetworkWeight_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetNetworkWeight*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetNetworkWeight" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.GetNetworkWeight">GetNetworkWeight()</h4>
+  <div class="markdown level1 summary"><p>Estimates the total staking weight of the network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double GetNetworkWeight()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Estimated amount of money that is used by all stakers on the network.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_GetNetworkWeight_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The idea behind estimating the network staking weight is very similar to estimating
+the total hash power of PoW network. The difficulty retarget algorithm tries to make
+sure of certain distribution of the blocks over a period of time. Base on real distribution
+and using the actual difficulty targets, one is able to compute how much stake was
+presented on the network to generate each block.</p>
+<p>
+The method was ported from
+<see cref="!:https://github.com/stratisproject/stratisX/blob/47851b7337f528f52ec20e86dca7dcead8191cf5/src/rpcblockchain.cpp#L74"></see>.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_Stake_Stratis_Bitcoin_Features_Miner_Staking_WalletSecret_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.Stake(Stratis.Bitcoin.Features.Miner.Staking.WalletSecret)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Interfaces/IPosMinting.cs/#L81">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_Stake_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.Stake*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_Stake_Stratis_Bitcoin_Features_Miner_Staking_WalletSecret_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.Stake(Stratis.Bitcoin.Features.Miner.Staking.WalletSecret)">Stake(WalletSecret)</h4>
+  <div class="markdown level1 summary"><p>Starts the main POS staking loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Stake(WalletSecret walletSecret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Miner.Staking.WalletSecret.html">WalletSecret</a></td>
+        <td><span class="parametername">walletSecret</span></td>
+        <td><p>Credentials to the wallet with which will be used for staking.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_StopStake.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.StopStake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Interfaces/IPosMinting.cs/#L86">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_StopStake_" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.StopStake*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting_StopStake" data-uid="Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting.StopStake">StopStake()</h4>
+  <div class="markdown level1 summary"><p>Stop the main POS staking loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StopStake()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Interfaces_IPosMinting.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Interfaces.IPosMinting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Interfaces/IPosMinting.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

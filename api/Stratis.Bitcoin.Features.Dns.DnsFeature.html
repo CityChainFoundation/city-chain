@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DnsFeature
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DnsFeature
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.43.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_Dns_DnsFeature" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature" class="text-break">Class DnsFeature
+  </h1>
+  <div class="markdown level0 summary"><p>Responsible for managing the DNS feature.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html">FullNodeFeature</a></div>
+    <div class="level2"><span class="xref">DnsFeature</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Builder.Feature.IFullNodeFeature.html">IFullNodeFeature</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_InitializeBeforeBase">FullNodeFeature.InitializeBeforeBase</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_State">FullNodeFeature.State</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_ValidateDependencies_Stratis_Bitcoin_Builder_IFullNodeServiceProvider_">FullNodeFeature.ValidateDependencies(IFullNodeServiceProvider)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Dns.html">Stratis.Bitcoin.Features.Dns</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Dns.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_Dns_DnsFeature_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DnsFeature : FullNodeFeature, IFullNodeFeature, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsFeature__ctor_Stratis_Bitcoin_Features_Dns_IDnsServer_Stratis_Bitcoin_Features_Dns_IWhitelistManager_ILoggerFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Features_Dns_DnsSettings_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_AsyncWork_IAsyncProvider_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Features_Dns_UnreliablePeerBehavior_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsFeature.%23ctor(Stratis.Bitcoin.Features.Dns.IDnsServer%2CStratis.Bitcoin.Features.Dns.IWhitelistManager%2CILoggerFactory%2CStratis.Bitcoin.Utilities.INodeLifetime%2CStratis.Bitcoin.Features.Dns.DnsSettings%2CStratis.Bitcoin.Configuration.NodeSettings%2CStratis.Bitcoin.Configuration.DataFolder%2CStratis.Bitcoin.AsyncWork.IAsyncProvider%2CStratis.Bitcoin.Connection.IConnectionManager%2CStratis.Bitcoin.Features.Dns.UnreliablePeerBehavior)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsFeature.cs/#L108">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Dns_DnsFeature__ctor_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Dns_DnsFeature__ctor_Stratis_Bitcoin_Features_Dns_IDnsServer_Stratis_Bitcoin_Features_Dns_IWhitelistManager_ILoggerFactory_Stratis_Bitcoin_Utilities_INodeLifetime_Stratis_Bitcoin_Features_Dns_DnsSettings_Stratis_Bitcoin_Configuration_NodeSettings_Stratis_Bitcoin_Configuration_DataFolder_Stratis_Bitcoin_AsyncWork_IAsyncProvider_Stratis_Bitcoin_Connection_IConnectionManager_Stratis_Bitcoin_Features_Dns_UnreliablePeerBehavior_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.#ctor(Stratis.Bitcoin.Features.Dns.IDnsServer,Stratis.Bitcoin.Features.Dns.IWhitelistManager,ILoggerFactory,Stratis.Bitcoin.Utilities.INodeLifetime,Stratis.Bitcoin.Features.Dns.DnsSettings,Stratis.Bitcoin.Configuration.NodeSettings,Stratis.Bitcoin.Configuration.DataFolder,Stratis.Bitcoin.AsyncWork.IAsyncProvider,Stratis.Bitcoin.Connection.IConnectionManager,Stratis.Bitcoin.Features.Dns.UnreliablePeerBehavior)">DnsFeature(IDnsServer, IWhitelistManager, ILoggerFactory, INodeLifetime, DnsSettings, NodeSettings, DataFolder, IAsyncProvider, IConnectionManager, UnreliablePeerBehavior)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Stratis.Bitcoin.Features.Dns.DnsFeature.html">DnsFeature</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DnsFeature(IDnsServer dnsServer, IWhitelistManager whitelistManager, ILoggerFactory loggerFactory, INodeLifetime nodeLifetime, DnsSettings dnsSettings, NodeSettings nodeSettings, DataFolder dataFolders, IAsyncProvider asyncProvider, IConnectionManager connectionManager, UnreliablePeerBehavior unreliablePeerBehavior)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Dns.IDnsServer.html">IDnsServer</a></td>
+        <td><span class="parametername">dnsServer</span></td>
+        <td><p>The DNS server.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Dns.IWhitelistManager.html">IWhitelistManager</a></td>
+        <td><span class="parametername">whitelistManager</span></td>
+        <td><p>The whitelist manager.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>The factory to create the logger.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeLifetime.html">INodeLifetime</a></td>
+        <td><span class="parametername">nodeLifetime</span></td>
+        <td><p>The node lifetime object used for graceful shutdown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Dns.DnsSettings.html">DnsSettings</a></td>
+        <td><span class="parametername">dnsSettings</span></td>
+        <td><p>Defines the DNS settings for the node</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.NodeSettings.html">NodeSettings</a></td>
+        <td><span class="parametername">nodeSettings</span></td>
+        <td><p>The node settings object containing node configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.DataFolder.html">DataFolder</a></td>
+        <td><span class="parametername">dataFolders</span></td>
+        <td><p>The data folders of the system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsyncProvider.html">IAsyncProvider</a></td>
+        <td><span class="parametername">asyncProvider</span></td>
+        <td><p>The asynchronous loop factory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Connection.IConnectionManager.html">IConnectionManager</a></td>
+        <td><span class="parametername">connectionManager</span></td>
+        <td><p>Manager of node's network connections.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Dns.UnreliablePeerBehavior.html">UnreliablePeerBehavior</a></td>
+        <td><span class="parametername">unreliablePeerBehavior</span></td>
+        <td><p>Instance of the UnreliablePeerBehavior that will be added to the connectionManager Template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsFeature_DnsMasterFileName.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsFeature.DnsMasterFileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsFeature.cs/#L28">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Dns_DnsFeature_DnsMasterFileName" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.DnsMasterFileName">DnsMasterFileName</h4>
+  <div class="markdown level1 summary"><p>Defines the name of the masterfile on disk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DnsMasterFileName = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsFeature_DnsServerBackoffInterval.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsFeature.DnsServerBackoffInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsFeature.cs/#L23">View Source</a>
+  </span>
+  <h4 id="Stratis_Bitcoin_Features_Dns_DnsFeature_DnsServerBackoffInterval" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.DnsServerBackoffInterval">DnsServerBackoffInterval</h4>
+  <div class="markdown level1 summary"><p>Defines a back-off interval in milliseconds if the DNS server fails whilst operating, before it restarts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DnsServerBackoffInterval = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsFeature_BuildDefaultConfigurationFile_StringBuilder_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsFeature.BuildDefaultConfigurationFile(StringBuilder%2CNetwork)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsFeature.cs/#L206">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Dns_DnsFeature_BuildDefaultConfigurationFile_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.BuildDefaultConfigurationFile*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Dns_DnsFeature_BuildDefaultConfigurationFile_StringBuilder_Network_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.BuildDefaultConfigurationFile(StringBuilder,Network)">BuildDefaultConfigurationFile(StringBuilder, Network)</h4>
+  <div class="markdown level1 summary"><p>Get the default configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BuildDefaultConfigurationFile(StringBuilder builder, Network network)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StringBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The string builder to add the settings to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Network</span></td>
+        <td><span class="parametername">network</span></td>
+        <td><p>The network to base the defaults off.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsFeature_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsFeature.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsFeature.cs/#L214">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Dns_DnsFeature_Dispose_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Dns_DnsFeature_Dispose" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_Dispose">FullNodeFeature.Dispose()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsFeature_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsFeature.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsFeature.cs/#L226">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Dns_DnsFeature_Dispose_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Dns_DnsFeature_Dispose_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Disposes of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p><code>true</code> if the object is being disposed of deterministically, otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsFeature_InitializeAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsFeature.InitializeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsFeature.cs/#L135">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Dns_DnsFeature_InitializeAsync_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.InitializeAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Dns_DnsFeature_InitializeAsync" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.InitializeAsync">InitializeAsync()</h4>
+  <div class="markdown level1 summary"><p>Initializes the DNS feature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task InitializeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html#Stratis_Bitcoin_Builder_Feature_FullNodeFeature_InitializeAsync">FullNodeFeature.InitializeAsync()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsFeature_PrintHelp_Network_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsFeature.PrintHelp(Network)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsFeature.cs/#L196">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Dns_DnsFeature_PrintHelp_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.PrintHelp*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Dns_DnsFeature_PrintHelp_Network_" data-uid="Stratis.Bitcoin.Features.Dns.DnsFeature.PrintHelp(Network)">PrintHelp(Network)</h4>
+  <div class="markdown level1 summary"><p>Prints command-line help.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintHelp(Network network)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Network</span></td>
+        <td><span class="parametername">network</span></td>
+        <td><p>The network to extract values from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Builder.Feature.IFullNodeFeature.html">IFullNodeFeature</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Dns_DnsFeature.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Dns.DnsFeature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Dns/DnsFeature.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

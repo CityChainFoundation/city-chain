@@ -1,0 +1,1003 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConsensusRuleEngine
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConsensusRuleEngine
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.43.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine">
+  
+  
+  <h1 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine" class="text-break">Class ConsensusRuleEngine
+  </h1>
+  <div class="markdown level0 summary"><p>An engine that enforce the execution and validation of consensus rule.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ConsensusRuleEngine</span></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.PowConsensusRuleEngine.html">PowConsensusRuleEngine</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Consensus.html">Stratis.Bitcoin.Consensus</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
+  <h5 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ConsensusRuleEngine : object, IConsensusRuleEngine, IDisposable</code></pre>
+  </div>
+  <h5 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>In order for a block to be valid it has to successfully pass the rules checks.
+A block  that is not valid will result in the <a class="xref" href="Stratis.Bitcoin.Consensus.ValidationContext.html#Stratis_Bitcoin_Consensus_ValidationContext_Error">Error</a> as not <code>null</code>.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine__ctor_NBitcoin_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_NBitcoin_ChainIndexer_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Configuration_Settings_ConsensusSettings_Stratis_Bitcoin_Consensus_ICheckpoints_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Base_IInvalidBlockHashStore_Stratis_Bitcoin_Utilities_INodeStats_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.%23ctor(NBitcoin.Network%2CILoggerFactory%2CStratis.Bitcoin.Utilities.IDateTimeProvider%2CNBitcoin.ChainIndexer%2CStratis.Bitcoin.Base.Deployments.NodeDeployments%2CStratis.Bitcoin.Configuration.Settings.ConsensusSettings%2CStratis.Bitcoin.Consensus.ICheckpoints%2CStratis.Bitcoin.Base.IChainState%2CStratis.Bitcoin.Base.IInvalidBlockHashStore%2CStratis.Bitcoin.Utilities.INodeStats)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L69">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine__ctor_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.#ctor*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine__ctor_NBitcoin_Network_ILoggerFactory_Stratis_Bitcoin_Utilities_IDateTimeProvider_NBitcoin_ChainIndexer_Stratis_Bitcoin_Base_Deployments_NodeDeployments_Stratis_Bitcoin_Configuration_Settings_ConsensusSettings_Stratis_Bitcoin_Consensus_ICheckpoints_Stratis_Bitcoin_Base_IChainState_Stratis_Bitcoin_Base_IInvalidBlockHashStore_Stratis_Bitcoin_Utilities_INodeStats_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.#ctor(NBitcoin.Network,ILoggerFactory,Stratis.Bitcoin.Utilities.IDateTimeProvider,NBitcoin.ChainIndexer,Stratis.Bitcoin.Base.Deployments.NodeDeployments,Stratis.Bitcoin.Configuration.Settings.ConsensusSettings,Stratis.Bitcoin.Consensus.ICheckpoints,Stratis.Bitcoin.Base.IChainState,Stratis.Bitcoin.Base.IInvalidBlockHashStore,Stratis.Bitcoin.Utilities.INodeStats)">ConsensusRuleEngine(Network, ILoggerFactory, IDateTimeProvider, ChainIndexer, NodeDeployments, ConsensusSettings, ICheckpoints, IChainState, IInvalidBlockHashStore, INodeStats)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ConsensusRuleEngine(Network network, ILoggerFactory loggerFactory, IDateTimeProvider dateTimeProvider, ChainIndexer chainIndexer, NodeDeployments nodeDeployments, ConsensusSettings consensusSettings, ICheckpoints checkpoints, IChainState chainState, IInvalidBlockHashStore invalidBlockHashStore, INodeStats nodeStats)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td><span class="parametername">network</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">dateTimeProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainIndexer.html">ChainIndexer</a></td>
+        <td><span class="parametername">chainIndexer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.Deployments.NodeDeployments.html">NodeDeployments</a></td>
+        <td><span class="parametername">nodeDeployments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.Settings.ConsensusSettings.html">ConsensusSettings</a></td>
+        <td><span class="parametername">consensusSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ICheckpoints.html">ICheckpoints</a></td>
+        <td><span class="parametername">checkpoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.IChainState.html">IChainState</a></td>
+        <td><span class="parametername">chainState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.IInvalidBlockHashStore.html">IInvalidBlockHashStore</a></td>
+        <td><span class="parametername">invalidBlockHashStore</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.INodeStats.html">INodeStats</a></td>
+        <td><span class="parametername">nodeStats</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ChainIndexer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ChainIndexer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L34">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ChainIndexer_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ChainIndexer*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ChainIndexer" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ChainIndexer">ChainIndexer</h4>
+  <div class="markdown level1 summary"><p>A chain of the longest block headers all the way to genesis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChainIndexer ChainIndexer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainIndexer.html">ChainIndexer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ChainState.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ChainState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L49">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ChainState_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ChainState*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ChainState" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ChainState">ChainState</h4>
+  <div class="markdown level1 summary"><p>State of the current chain that hold consensus tip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IChainState ChainState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.IChainState.html">IChainState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Checkpoints.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Checkpoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L46">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Checkpoints_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Checkpoints*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Checkpoints" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Checkpoints">Checkpoints</h4>
+  <div class="markdown level1 summary"><p>Provider of block header hash checkpoints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICheckpoints Checkpoints { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ICheckpoints.html">ICheckpoints</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ConsensusParams.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ConsensusParams%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L40">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ConsensusParams_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ConsensusParams*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ConsensusParams" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ConsensusParams">ConsensusParams</h4>
+  <div class="markdown level1 summary"><p>A collection of consensus constants.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConsensus ConsensusParams { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.IConsensus.html">IConsensus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ConsensusSettings.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ConsensusSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L43">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ConsensusSettings_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ConsensusSettings*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_ConsensusSettings" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.ConsensusSettings">ConsensusSettings</h4>
+  <div class="markdown level1 summary"><p>Consensus settings for the full node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConsensusSettings ConsensusSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Configuration.Settings.ConsensusSettings.html">ConsensusSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_DateTimeProvider.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.DateTimeProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L31">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_DateTimeProvider_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.DateTimeProvider*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_DateTimeProvider" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.DateTimeProvider">DateTimeProvider</h4>
+  <div class="markdown level1 summary"><p>A provider of date and time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDateTimeProvider DateTimeProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Utilities.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_LoggerFactory.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.LoggerFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L25">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_LoggerFactory_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.LoggerFactory*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_LoggerFactory" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.LoggerFactory">LoggerFactory</h4>
+  <div class="markdown level1 summary"><p>A factory to creates logger instances for each rule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILoggerFactory LoggerFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Network.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Network%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L28">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Network_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Network*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Network" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Network">Network</h4>
+  <div class="markdown level1 summary"><p>Specification of the network the node runs on - regtest/testnet/mainnet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Network Network { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Network.html">Network</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_NodeDeployments.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.NodeDeployments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L37">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_NodeDeployments_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.NodeDeployments*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_NodeDeployments" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.NodeDeployments">NodeDeployments</h4>
+  <div class="markdown level1 summary"><p>A deployment construction that tracks activation of features on the chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodeDeployments NodeDeployments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Base.Deployments.NodeDeployments.html">NodeDeployments</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_CreateRuleContext_Stratis_Bitcoin_Consensus_ValidationContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.CreateRuleContext(Stratis.Bitcoin.Consensus.ValidationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L295">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_CreateRuleContext_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.CreateRuleContext*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_CreateRuleContext_Stratis_Bitcoin_Consensus_ValidationContext_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.CreateRuleContext(Stratis.Bitcoin.Consensus.ValidationContext)">CreateRuleContext(ValidationContext)</h4>
+  <div class="markdown level1 summary"><p>Create an instance of the <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html">RuleContext</a> to be used by consensus validation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract RuleContext CreateRuleContext(ValidationContext validationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ValidationContext.html">ValidationContext</a></td>
+        <td><span class="parametername">validationContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html">RuleContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_CreateRuleContext_Stratis_Bitcoin_Consensus_ValidationContext__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Each network type can specify it's own <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html">RuleContext</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L121">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Dispose_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Dispose" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_FullValidationAsync_NBitcoin_ChainedHeader_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.FullValidationAsync(NBitcoin.ChainedHeader%2CNBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L194">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_FullValidationAsync_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.FullValidationAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_FullValidationAsync_NBitcoin_ChainedHeader_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.FullValidationAsync(NBitcoin.ChainedHeader,NBitcoin.Block)">FullValidationAsync(ChainedHeader, Block)</h4>
+  <div class="markdown level1 summary"><p>Execute full validation rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ValidationContext&gt; FullValidationAsync(ChainedHeader header, Block block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">header</span></td>
+        <td><p>The chained header that is going to be validated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block that is going to be validated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.Consensus.ValidationContext.html">ValidationContext</a>&gt;</td>
+        <td><p>Context that contains validation result related information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_GetBlockHash.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.GetBlockHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L298">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_GetBlockHash_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.GetBlockHash*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_GetBlockHash" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.GetBlockHash">GetBlockHash()</h4>
+  <div class="markdown level1 summary"><p>Retrieves the block hash of the current tip of the chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract uint256 GetBlockHash()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td><p>Block hash of the current tip of the chain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_GetRule__1.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.GetRule%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L303">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_GetRule_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.GetRule*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_GetRule__1" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.GetRule``1">GetRule&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetRule&lt;T&gt;()
+    where T : ConsensusRuleBase</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_HeaderValidation_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.HeaderValidation(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L167">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_HeaderValidation_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.HeaderValidation*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_HeaderValidation_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.HeaderValidation(NBitcoin.ChainedHeader)">HeaderValidation(ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Execute header validation rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ValidationContext HeaderValidation(ChainedHeader header)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">header</span></td>
+        <td><p>The chained header that is going to be validated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ValidationContext.html">ValidationContext</a></td>
+        <td><p>Context that contains validation result related information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Initialize_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Initialize(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L116">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Initialize_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Initialize*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Initialize_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Initialize(NBitcoin.ChainedHeader)">Initialize(ChainedHeader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(ChainedHeader chainTip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainTip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_IntegrityValidation_NBitcoin_ChainedHeader_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.IntegrityValidation(NBitcoin.ChainedHeader%2CNBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L180">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_IntegrityValidation_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.IntegrityValidation*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_IntegrityValidation_NBitcoin_ChainedHeader_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.IntegrityValidation(NBitcoin.ChainedHeader,NBitcoin.Block)">IntegrityValidation(ChainedHeader, Block)</h4>
+  <div class="markdown level1 summary"><p>Execute integrity validation rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ValidationContext IntegrityValidation(ChainedHeader header, Block block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">header</span></td>
+        <td><p>The chained header that is going to be validated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block that is going to be validated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ValidationContext.html">ValidationContext</a></td>
+        <td><p>Context that contains validation result related information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_PartialValidationAsync_NBitcoin_ChainedHeader_NBitcoin_Block_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.PartialValidationAsync(NBitcoin.ChainedHeader%2CNBitcoin.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L211">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_PartialValidationAsync_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.PartialValidationAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_PartialValidationAsync_NBitcoin_ChainedHeader_NBitcoin_Block_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.PartialValidationAsync(NBitcoin.ChainedHeader,NBitcoin.Block)">PartialValidationAsync(ChainedHeader, Block)</h4>
+  <div class="markdown level1 summary"><p>Execute partial validation rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ValidationContext&gt; PartialValidationAsync(ChainedHeader header, Block block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">header</span></td>
+        <td><p>The chained header that is going to be validated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block that is going to be validated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.Consensus.ValidationContext.html">ValidationContext</a>&gt;</td>
+        <td><p>Context that contains validation result related information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Register.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Register%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L126">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Register_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Register*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_Register" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.Register">Register()</h4>
+  <div class="markdown level1 summary"><p>Register a new rule to the engine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConsensusRuleEngine Register()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.html">ConsensusRuleEngine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_RewindAsync.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.RewindAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L301">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_RewindAsync_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.RewindAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_RewindAsync" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.RewindAsync">RewindAsync()</h4>
+  <div class="markdown level1 summary"><p>Rewinds the chain to the last saved state.</p>
+<p>
+This operation includes removing the recent transactions
+and restoring the chain to an earlier state.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;RewindState&gt; RewindAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.Consensus.RewindState.html">RewindState</a>&gt;</td>
+        <td><p>Hash of the block header which is now the tip of the chain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine_SetErrorHandler_Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine.SetErrorHandler(Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L156">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_SetErrorHandler_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.SetErrorHandler*"></a>
+  <h4 id="Stratis_Bitcoin_Consensus_ConsensusRuleEngine_SetErrorHandler_Stratis_Bitcoin_Consensus_Rules_ConsensusRuleBase_" data-uid="Stratis.Bitcoin.Consensus.ConsensusRuleEngine.SetErrorHandler(Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase)">SetErrorHandler(ConsensusRuleBase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetErrorHandler(ConsensusRuleBase errorHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Consensus.Rules.ConsensusRuleBase.html">ConsensusRuleBase</a></td>
+        <td><span class="parametername">errorHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.Consensus.IConsensusRuleEngine.html">IConsensusRuleEngine</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Consensus_ConsensusRuleEngine.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Consensus.ConsensusRuleEngine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/Consensus/ConsensusRuleEngine.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

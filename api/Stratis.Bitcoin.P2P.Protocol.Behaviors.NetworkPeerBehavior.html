@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NetworkPeerBehavior
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NetworkPeerBehavior
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.43.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior">
+  
+  
+  <h1 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior" class="text-break">Class NetworkPeerBehavior
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NetworkPeerBehavior</span></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Base.TimeSyncBehavior.html">TimeSyncBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPullerBehavior.html">BlockPullerBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Connection.ConnectionManagerBehavior.html">ConnectionManagerBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Connection.DropNodesBehaviour.html">DropNodesBehaviour</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Connection.PeerBanningBehavior.html">PeerBanningBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Consensus.ConsensusManagerBehavior.html">ConsensusManagerBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Consensus.RateLimitingBehavior.html">RateLimitingBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.BlockStore.BlockStoreBehavior.html">BlockStoreBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Behaviors.ProvenHeadersReservedSlotsBehavior.html">ProvenHeadersReservedSlotsBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Dns.UnreliablePeerBehavior.html">UnreliablePeerBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.MempoolBehavior.html">MempoolBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Notifications.TransactionReceiver.html">TransactionReceiver</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Broadcasting.BroadcasterBehavior.html">BroadcasterBehavior</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.P2P.PeerAddressManagerBehaviour.html">PeerAddressManagerBehaviour</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.PingPongBehavior.html">PingPongBehavior</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.INetworkPeerBehavior.html">INetworkPeerBehavior</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.html">Stratis.Bitcoin.P2P.Protocol.Behaviors</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.dll</h6>
+  <h5 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class NetworkPeerBehavior : object, INetworkPeerBehavior, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AttachedPeer.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.AttachedPeer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L23">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AttachedPeer_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.AttachedPeer*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AttachedPeer" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.AttachedPeer">AttachedPeer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public INetworkPeer AttachedPeer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AssertNotAttached.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.AssertNotAttached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L50">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AssertNotAttached_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.AssertNotAttached*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AssertNotAttached" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.AssertNotAttached">AssertNotAttached()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AssertNotAttached()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Attach_Stratis_Bitcoin_P2P_Peer_INetworkPeer_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Attach(Stratis.Bitcoin.P2P.Peer.INetworkPeer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L31">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Attach_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Attach*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Attach_Stratis_Bitcoin_P2P_Peer_INetworkPeer_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Attach(Stratis.Bitcoin.P2P.Peer.INetworkPeer)">Attach(INetworkPeer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Attach(INetworkPeer peer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Peer.INetworkPeer.html">INetworkPeer</a></td>
+        <td><span class="parametername">peer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AttachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.AttachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L25">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AttachCore_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.AttachCore*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_AttachCore" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.AttachCore">AttachCore()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void AttachCore()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Clone.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L29">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Clone_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Clone*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Clone" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Clone">Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract object Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Detach.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Detach%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L63">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Detach_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Detach*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Detach" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Detach">Detach()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Detach()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_DetachCore.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.DetachCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L27">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_DetachCore_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.DetachCore*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_DetachCore" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.DetachCore">DetachCore()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void DetachCore()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L76">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Dispose_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Dispose*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Dispose" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Stratis_Bitcoin_P2P_Protocol_Behaviors_INetworkPeerBehavior_Clone.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Stratis%23Bitcoin%23P2P%23Protocol%23Behaviors%23INetworkPeerBehavior%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L82">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Stratis_Bitcoin_P2P_Protocol_Behaviors_INetworkPeerBehavior_Clone_" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Stratis#Bitcoin#P2P#Protocol#Behaviors#INetworkPeerBehavior#Clone*"></a>
+  <h4 id="Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior_Stratis_Bitcoin_P2P_Protocol_Behaviors_INetworkPeerBehavior_Clone" data-uid="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.Stratis#Bitcoin#P2P#Protocol#Behaviors#INetworkPeerBehavior#Clone">INetworkPeerBehavior.Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INetworkPeerBehavior INetworkPeerBehavior.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.INetworkPeerBehavior.html">INetworkPeerBehavior</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.INetworkPeerBehavior.html">INetworkPeerBehavior</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_P2P_Protocol_Behaviors_NetworkPeerBehavior.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/P2P/Protocol/Behaviors/NetworkPeerBehavior.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

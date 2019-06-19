@@ -1,0 +1,2377 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IWalletManager
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IWalletManager
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.43.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager">
+  
+  
+  <h1 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager" class="text-break">Interface IWalletManager
+  </h1>
+  <div class="markdown level0 summary"><p>Interface for a manager providing operations on wallets.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.Bitcoin.Features.Wallet.Interfaces.html">Stratis.Bitcoin.Features.Wallet.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.Wallet.dll</h6>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IWalletManager</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ContainsWallets.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.ContainsWallets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L321">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ContainsWallets_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.ContainsWallets*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ContainsWallets" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.ContainsWallets">ContainsWallets</h4>
+  <div class="markdown level1 summary"><p>Gets whether there are any wallet files loaded or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ContainsWallets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether any wallet files are loaded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_WalletTipHash.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.WalletTipHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L27">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_WalletTipHash_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.WalletTipHash*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_WalletTipHash" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.WalletTipHash">WalletTipHash</h4>
+  <div class="markdown level1 summary"><p>The last processed block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint256 WalletTipHash { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.uint256.html">uint256</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_WalletTipHeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.WalletTipHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L32">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_WalletTipHeight_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.WalletTipHeight*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_WalletTipHeight" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.WalletTipHeight">WalletTipHeight</h4>
+  <div class="markdown level1 summary"><p>The last processed block height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int WalletTipHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_CreateWallet_System_String_System_String_System_String_NBitcoin_Mnemonic_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.CreateWallet(System.String%2CSystem.String%2CSystem.String%2CNBitcoin.Mnemonic)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L72">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_CreateWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.CreateWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_CreateWallet_System_String_System_String_System_String_NBitcoin_Mnemonic_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.CreateWallet(System.String,System.String,System.String,NBitcoin.Mnemonic)">CreateWallet(String, String, String, Mnemonic)</h4>
+  <div class="markdown level1 summary"><p>Creates a wallet and persist it as a file on the local system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Mnemonic CreateWallet(string password, string name, string passphrase = null, Mnemonic mnemonic = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The password used to encrypt sensitive info.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the wallet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">passphrase</span></td>
+        <td><p>The passphrase used in the seed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Mnemonic.html">Mnemonic</a></td>
+        <td><span class="parametername">mnemonic</span></td>
+        <td><p>The user's mnemonic for the wallet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Mnemonic.html">Mnemonic</a></td>
+        <td><p>A mnemonic defining the wallet's seed used to generate addresses.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_DeleteWallet.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.DeleteWallet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L139">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_DeleteWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.DeleteWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_DeleteWallet" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.DeleteWallet">DeleteWallet()</h4>
+  <div class="markdown level1 summary"><p>Deletes a wallet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteWallet()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetAccounts_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetAccounts(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L232">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetAccounts_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetAccounts*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetAccounts_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetAccounts(System.String)">GetAccounts(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of accounts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;HdAccount&gt; GetAccounts(string walletName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The name of the wallet to look into.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.HdAccount.html">HdAccount</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetAddressBalance_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetAddressBalance(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L218">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetAddressBalance_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetAddressBalance*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetAddressBalance_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetAddressBalance(System.String)">GetAddressBalance(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the balance of transactions for this specific address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AddressBalance GetAddressBalance(string address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>The address to get the balance from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.AddressBalance.html">AddressBalance</a></td>
+        <td><p>The address balance for an address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetBalances_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetBalances(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L211">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetBalances_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetBalances*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetBalances_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetBalances(System.String,System.String)">GetBalances(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the balance of transactions contained in an account.
+If no account name is specified, balances will be returned for all accounts in the wallet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;AccountBalance&gt; GetBalances(string walletName, string accountName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The wallet name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accountName</span></td>
+        <td><p>The account name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.AccountBalance.html">AccountBalance</a>&gt;</td>
+        <td><p>Collection of account balances.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetEarliestWalletHeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetEarliestWalletHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L343">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetEarliestWalletHeight_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetEarliestWalletHeight*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetEarliestWalletHeight" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetEarliestWalletHeight">GetEarliestWalletHeight()</h4>
+  <div class="markdown level1 summary"><p>Gets the lowest LastBlockSyncedHeight of all loaded wallet account roots.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? GetEarliestWalletHeight()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The lowest LastBlockSyncedHeight or null if there are no account roots yet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetExtKey_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetExtKey(Stratis.Bitcoin.Features.Wallet.WalletAccountReference%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L337">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetExtKey_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetExtKey*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetExtKey_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_System_String_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetExtKey(Stratis.Bitcoin.Features.Wallet.WalletAccountReference,System.String,System.Boolean)">GetExtKey(WalletAccountReference, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the extended private key of an account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ExtKey GetExtKey(WalletAccountReference accountReference, string password = &quot;&quot;, bool cache = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletAccountReference.html">WalletAccountReference</a></td>
+        <td><span class="parametername">accountReference</span></td>
+        <td><p>The account.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The password used to decrypt the encrypted seed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cache</span></td>
+        <td><p>whether to cache the private key for future use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ExtKey.html">ExtKey</a></td>
+        <td><p>The private key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetExtPubKey_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetExtPubKey(Stratis.Bitcoin.Features.Wallet.WalletAccountReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L328">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetExtPubKey_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetExtPubKey*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetExtPubKey_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetExtPubKey(Stratis.Bitcoin.Features.Wallet.WalletAccountReference)">GetExtPubKey(WalletAccountReference)</h4>
+  <div class="markdown level1 summary"><p>Gets the extended public key of an account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetExtPubKey(WalletAccountReference accountReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletAccountReference.html">WalletAccountReference</a></td>
+        <td><span class="parametername">accountReference</span></td>
+        <td><p>The account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The extended public key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetFirstWalletBlockLocator.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetFirstWalletBlockLocator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L309">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetFirstWalletBlockLocator_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetFirstWalletBlockLocator*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetFirstWalletBlockLocator" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetFirstWalletBlockLocator">GetFirstWalletBlockLocator()</h4>
+  <div class="markdown level1 summary"><p>Gets the block locator of the first loaded wallet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICollection&lt;uint256&gt; GetFirstWalletBlockLocator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetHistory_Stratis_Bitcoin_Features_Wallet_HdAccount_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetHistory(Stratis.Bitcoin.Features.Wallet.HdAccount)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L202">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetHistory_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetHistory*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetHistory_Stratis_Bitcoin_Features_Wallet_HdAccount_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetHistory(Stratis.Bitcoin.Features.Wallet.HdAccount)">GetHistory(HdAccount)</h4>
+  <div class="markdown level1 summary"><p>Gets the history of the transactions in addresses contained in this account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AccountHistory GetHistory(HdAccount account)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.HdAccount.html">HdAccount</a></td>
+        <td><span class="parametername">account</span></td>
+        <td><p>The account for which to get history.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.AccountHistory.html">AccountHistory</a></td>
+        <td><p>The history for this account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetHistory_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetHistory(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L195">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetHistory_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetHistory*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetHistory_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetHistory(System.String,System.String)">GetHistory(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the history of transactions contained in an account.
+If no account name is specified, history will be returned for all accounts in the wallet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;AccountHistory&gt; GetHistory(string walletName, string accountName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The wallet name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accountName</span></td>
+        <td><p>The account name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.AccountHistory.html">AccountHistory</a>&gt;</td>
+        <td><p>Collection of address history and transaction pairs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetOldestWalletCreationTime.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetOldestWalletCreationTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L349">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetOldestWalletCreationTime_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetOldestWalletCreationTime*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetOldestWalletCreationTime" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetOldestWalletCreationTime">GetOldestWalletCreationTime()</h4>
+  <div class="markdown level1 summary"><p>Gets the oldest wallet creation time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTimeOffset GetOldestWalletCreationTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetSpendableTransactionsInAccount_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetSpendableTransactionsInAccount(Stratis.Bitcoin.Features.Wallet.WalletAccountReference%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L62">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetSpendableTransactionsInAccount_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetSpendableTransactionsInAccount*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetSpendableTransactionsInAccount_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetSpendableTransactionsInAccount(Stratis.Bitcoin.Features.Wallet.WalletAccountReference,System.Int32)">GetSpendableTransactionsInAccount(WalletAccountReference, Int32)</h4>
+  <div class="markdown level1 summary"><p>Lists all spendable transactions from the account specified in <a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletAccountReference.html">WalletAccountReference</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;UnspentOutputReference&gt; GetSpendableTransactionsInAccount(WalletAccountReference walletAccountReference, int confirmations = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletAccountReference.html">WalletAccountReference</a></td>
+        <td><span class="parametername">walletAccountReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">confirmations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.UnspentOutputReference.html">UnspentOutputReference</a>&gt;</td>
+        <td><p>A collection of spendable outputs that belong to the given account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetSpendableTransactionsInWallet_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetSpendableTransactionsInWallet(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L38">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetSpendableTransactionsInWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetSpendableTransactionsInWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetSpendableTransactionsInWallet_System_String_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetSpendableTransactionsInWallet(System.String,System.Int32)">GetSpendableTransactionsInWallet(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Lists all spendable transactions from all accounts in the wallet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;UnspentOutputReference&gt; GetSpendableTransactionsInWallet(string walletName, int confirmations = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">confirmations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.UnspentOutputReference.html">UnspentOutputReference</a>&gt;</td>
+        <td><p>A collection of spendable outputs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetSpendableTransactionsInWalletForStaking_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetSpendableTransactionsInWalletForStaking(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L44">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetSpendableTransactionsInWalletForStaking_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetSpendableTransactionsInWalletForStaking*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetSpendableTransactionsInWalletForStaking_System_String_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetSpendableTransactionsInWalletForStaking(System.String,System.Int32)">GetSpendableTransactionsInWalletForStaking(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Lists all spendable transactions from the accounts in the wallet participating in staking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;UnspentOutputReference&gt; GetSpendableTransactionsInWalletForStaking(string walletName, int confirmations = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">confirmations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.UnspentOutputReference.html">UnspentOutputReference</a>&gt;</td>
+        <td><p>A collection of spendable outputs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetTransactionBuilderExtensionsForStaking.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetTransactionBuilderExtensionsForStaking%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L56">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetTransactionBuilderExtensionsForStaking_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetTransactionBuilderExtensionsForStaking*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetTransactionBuilderExtensionsForStaking" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetTransactionBuilderExtensionsForStaking">GetTransactionBuilderExtensionsForStaking()</h4>
+  <div class="markdown level1 summary"><p>Returns additional transaction builder extensions to use for building staking transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;BuilderExtension&gt; GetTransactionBuilderExtensionsForStaking()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="NBitcoin.BuilderExtensions.BuilderExtension.html">BuilderExtension</a>&gt;</td>
+        <td><p>Transaction builder extensions to use for building staking transactions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAccount_Stratis_Bitcoin_Features_Wallet_Wallet_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAccount(Stratis.Bitcoin.Features.Wallet.Wallet%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L163">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAccount_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAccount*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAccount_Stratis_Bitcoin_Features_Wallet_Wallet_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAccount(Stratis.Bitcoin.Features.Wallet.Wallet,System.String)">GetUnusedAccount(Wallet, String)</h4>
+  <div class="markdown level1 summary"><p>Gets an account that contains no transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HdAccount GetUnusedAccount(Wallet wallet, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Wallet.html">Wallet</a></td>
+        <td><span class="parametername">wallet</span></td>
+        <td><p>The wallet from which to get an account.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The password used to decrypt the private key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.HdAccount.html">HdAccount</a></td>
+        <td><p>An unused account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAccount_Stratis_Bitcoin_Features_Wallet_Wallet_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>According to BIP44, an account at index (i) can only be created when the account
+at index (i - 1) contains transactions.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAccount_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAccount(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L151">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAccount_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAccount*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAccount_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAccount(System.String,System.String)">GetUnusedAccount(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets an account that contains no transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HdAccount GetUnusedAccount(string walletName, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The name of the wallet from which to get an account.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The password used to decrypt the private key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.HdAccount.html">HdAccount</a></td>
+        <td><p>An unused account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAccount_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>According to BIP44, an account at index (i) can only be created when the account
+at index (i - 1) contains transactions.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAddress_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAddress(Stratis.Bitcoin.Features.Wallet.WalletAccountReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L170">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAddress_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAddress*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAddress_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAddress(Stratis.Bitcoin.Features.Wallet.WalletAccountReference)">GetUnusedAddress(WalletAccountReference)</h4>
+  <div class="markdown level1 summary"><p>Gets an address that contains no transaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HdAddress GetUnusedAddress(WalletAccountReference accountReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletAccountReference.html">WalletAccountReference</a></td>
+        <td><span class="parametername">accountReference</span></td>
+        <td><p>The name of the wallet and account</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.HdAddress.html">HdAddress</a></td>
+        <td><p>An unused address or a newly created address, in Base58 format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAddresses_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAddresses(Stratis.Bitcoin.Features.Wallet.WalletAccountReference%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L186">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAddresses_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAddresses*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedAddresses_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_System_Int32_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedAddresses(Stratis.Bitcoin.Features.Wallet.WalletAccountReference,System.Int32,System.Boolean)">GetUnusedAddresses(WalletAccountReference, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of unused receiving or change addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;HdAddress&gt; GetUnusedAddresses(WalletAccountReference accountReference, int count, bool isChange = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletAccountReference.html">WalletAccountReference</a></td>
+        <td><span class="parametername">accountReference</span></td>
+        <td><p>The name of the wallet and account.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of addresses to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isChange</span></td>
+        <td><p>A value indicating whether or not the addresses to get should be receiving or change addresses.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.HdAddress.html">HdAddress</a>&gt;</td>
+        <td><p>A list of unused addresses. New addresses will be created as necessary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedChangeAddress_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedChangeAddress(Stratis.Bitcoin.Features.Wallet.WalletAccountReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L177">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedChangeAddress_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedChangeAddress*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetUnusedChangeAddress_Stratis_Bitcoin_Features_Wallet_WalletAccountReference_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetUnusedChangeAddress(Stratis.Bitcoin.Features.Wallet.WalletAccountReference)">GetUnusedChangeAddress(WalletAccountReference)</h4>
+  <div class="markdown level1 summary"><p>Gets the first change address that contains no transaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HdAddress GetUnusedChangeAddress(WalletAccountReference accountReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.WalletAccountReference.html">WalletAccountReference</a></td>
+        <td><span class="parametername">accountReference</span></td>
+        <td><p>The name of the wallet and account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.HdAddress.html">HdAddress</a></td>
+        <td><p>An unused change address or a newly created change address, in Base58 format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetValidStakingTemplates.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetValidStakingTemplates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L50">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetValidStakingTemplates_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetValidStakingTemplates*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetValidStakingTemplates" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetValidStakingTemplates">GetValidStakingTemplates()</h4>
+  <div class="markdown level1 summary"><p>Helps identify UTXO's that can participate in staking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, ScriptTemplate&gt; GetValidStakingTemplates()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="NBitcoin.ScriptTemplate.html">ScriptTemplate</a>&gt;</td>
+        <td><p>A dictionary containing string and template pairs - e.g. { &quot;P2PK&quot;, PayToPubkeyTemplate.Instance }</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWallet_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWallet(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L225">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWallet_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWallet(System.String)">GetWallet(String)</h4>
+  <div class="markdown level1 summary"><p>Gets some general information about a wallet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Wallet GetWallet(string walletName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The name of the wallet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Wallet.html">Wallet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletByName_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletByName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L303">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletByName_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletByName*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletByName_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletByName(System.String)">GetWalletByName(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a wallet given its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Wallet GetWalletByName(string walletName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The name of the wallet to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Wallet.html">Wallet</a></td>
+        <td><p>A wallet or null if it doesn't exist</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletFileExtension.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletFileExtension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L277">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletFileExtension_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletFileExtension*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletFileExtension" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletFileExtension">GetWalletFileExtension()</h4>
+  <div class="markdown level1 summary"><p>Gets the extension of the wallet files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetWalletFileExtension()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletsFiles.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletsFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L315">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletsFiles_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletsFiles*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletsFiles" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletsFiles">GetWalletsFiles()</h4>
+  <div class="markdown level1 summary"><p>Gets the list of the wallet filenames, along with the folder in which they're contained.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(string folderPath, IEnumerable&lt;string&gt;)GetWalletsFiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>The wallet filenames, along with the folder in which they're contained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletsNames.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletsNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L283">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletsNames_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletsNames*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_GetWalletsNames" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.GetWalletsNames">GetWalletsNames()</h4>
+  <div class="markdown level1 summary"><p>Gets all the wallets' names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetWalletsNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A collection of the wallets' names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_LastBlockHeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.LastBlockHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L238">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_LastBlockHeight_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.LastBlockHeight*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_LastBlockHeight" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.LastBlockHeight">LastBlockHeight()</h4>
+  <div class="markdown level1 summary"><p>Gets the last block height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int LastBlockHeight()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_LoadWallet_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.LoadWallet(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L99">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_LoadWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.LoadWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_LoadWallet_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.LoadWallet(System.String,System.String)">LoadWallet(String, String)</h4>
+  <div class="markdown level1 summary"><p>Loads a wallet from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Wallet LoadWallet(string password, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The user's password.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the wallet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Wallet.html">Wallet</a></td>
+        <td><p>The wallet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_LockWallet_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.LockWallet(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L113">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_LockWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.LockWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_LockWallet_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.LockWallet(System.String)">LockWallet(String)</h4>
+  <div class="markdown level1 summary"><p>Locks the wallet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LockWallet(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the wallet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ProcessBlock_NBitcoin_Block_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.ProcessBlock(NBitcoin.Block%2CNBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L250">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ProcessBlock_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.ProcessBlock*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ProcessBlock_NBitcoin_Block_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.ProcessBlock(NBitcoin.Block,NBitcoin.ChainedHeader)">ProcessBlock(Block, ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Processes a block received from the network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ProcessBlock(Block block, ChainedHeader chainedHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainedHeader</span></td>
+        <td><p>The blocks chain of headers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ProcessTransaction_NBitcoin_Transaction_System_Nullable_System_Int32__NBitcoin_Block_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.ProcessTransaction(NBitcoin.Transaction%2CSystem.Nullable%7BSystem.Int32%7D%2CNBitcoin.Block%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L260">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ProcessTransaction_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.ProcessTransaction*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_ProcessTransaction_NBitcoin_Transaction_System_Nullable_System_Int32__NBitcoin_Block_System_Boolean_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.ProcessTransaction(NBitcoin.Transaction,System.Nullable{System.Int32},NBitcoin.Block,System.Boolean)">ProcessTransaction(Transaction, Nullable&lt;Int32&gt;, Block, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Processes a transaction received from the network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ProcessTransaction(Transaction transaction, int? blockHeight = null, Block block = null, bool isPropagated = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Transaction.html">Transaction</a></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">blockHeight</span></td>
+        <td><p>The height of the block this transaction came from. Null if it was not a transaction included in a block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block in which this transaction was included.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isPropagated</span></td>
+        <td><p>Transaction propagation state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>A value indicating whether this transaction affects the wallet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RecoverWallet_System_String_NBitcoin_ExtPubKey_System_Int32_DateTime_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RecoverWallet(System.String%2CNBitcoin.ExtPubKey%2CSystem.Int32%2CDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L134">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RecoverWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RecoverWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RecoverWallet_System_String_NBitcoin_ExtPubKey_System_Int32_DateTime_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RecoverWallet(System.String,NBitcoin.ExtPubKey,System.Int32,DateTime)">RecoverWallet(String, ExtPubKey, Int32, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Recovers a wallet using extended public key and account index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Wallet RecoverWallet(string name, ExtPubKey extPubKey, int accountIndex, DateTime creationTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the wallet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ExtPubKey.html">ExtPubKey</a></td>
+        <td><span class="parametername">extPubKey</span></td>
+        <td><p>The extended public key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">accountIndex</span></td>
+        <td><p>The account number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">creationTime</span></td>
+        <td><p>The date and time this wallet was created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Wallet.html">Wallet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RecoverWallet_System_String_System_String_System_String_DateTime_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RecoverWallet(System.String%2CSystem.String%2CSystem.String%2CDateTime%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L124">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RecoverWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RecoverWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RecoverWallet_System_String_System_String_System_String_DateTime_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RecoverWallet(System.String,System.String,System.String,DateTime,System.String)">RecoverWallet(String, String, String, DateTime, String)</h4>
+  <div class="markdown level1 summary"><p>Recovers a wallet using mnemonic and password.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Wallet RecoverWallet(string password, string name, string mnemonic, DateTime creationTime, string passphrase = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The user's password.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the wallet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mnemonic</span></td>
+        <td><p>The user's mnemonic for the wallet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">creationTime</span></td>
+        <td><p>The date and time this wallet was created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">passphrase</span></td>
+        <td><p>The passphrase used in the seed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Wallet.html">Wallet</a></td>
+        <td><p>The recovered wallet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveAllTransactions_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveAllTransactions(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L364">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveAllTransactions_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveAllTransactions*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveAllTransactions_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveAllTransactions(System.String)">RemoveAllTransactions(String)</h4>
+  <div class="markdown level1 summary"><p>Removes all the transactions from the wallet and persist it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HashSet&lt;(uint256, DateTimeOffset)&gt; RemoveAllTransactions(string walletName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The name of the wallet to remove transactions from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>, <span class="xref">DateTimeOffset</span>&gt;&gt;</td>
+        <td><p>A list of objects made up of a transactions ID along with the time at which they were created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveBlocks_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveBlocks(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L243">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveBlocks_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveBlocks*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveBlocks_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveBlocks(NBitcoin.ChainedHeader)">RemoveBlocks(ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Remove all the transactions in the wallet that are above this block height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveBlocks(ChainedHeader fork)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">fork</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveTransactionsByIds_System_String_IEnumerable_NBitcoin_uint256__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveTransactionsByIds(System.String%2CIEnumerable%7BNBitcoin.uint256%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L357">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveTransactionsByIds_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveTransactionsByIds*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveTransactionsByIds_System_String_IEnumerable_NBitcoin_uint256__" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveTransactionsByIds(System.String,IEnumerable{NBitcoin.uint256})">RemoveTransactionsByIds(String, IEnumerable&lt;uint256&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified transactions from the wallet and persist it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HashSet&lt;(uint256, DateTimeOffset)&gt; RemoveTransactionsByIds(string walletName, IEnumerable&lt;uint256&gt; transactionsIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The name of the wallet to remove transactions from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>&gt;</td>
+        <td><span class="parametername">transactionsIds</span></td>
+        <td><p>The IDs of transactions to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>, <span class="xref">DateTimeOffset</span>&gt;&gt;</td>
+        <td><p>A list of objects made up of a transactions ID along with the time at which they were created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveTransactionsFromDate_System_String_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveTransactionsFromDate(System.String%2CDateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L372">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveTransactionsFromDate_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveTransactionsFromDate*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_RemoveTransactionsFromDate_System_String_DateTimeOffset_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.RemoveTransactionsFromDate(System.String,DateTimeOffset)">RemoveTransactionsFromDate(String, DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Removes all the transactions that occurred after a certain date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HashSet&lt;(uint256, DateTimeOffset)&gt; RemoveTransactionsFromDate(string walletName, DateTimeOffset fromDate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The name of the wallet to remove transactions from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="parametername">fromDate</span></td>
+        <td><p>The date after which the transactions should be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="NBitcoin.uint256.html">uint256</a>, <span class="xref">DateTimeOffset</span>&gt;&gt;</td>
+        <td><p>A list of objects made up of a transactions ID along with the time at which they were created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_SaveWallet_Stratis_Bitcoin_Features_Wallet_Wallet_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.SaveWallet(Stratis.Bitcoin.Features.Wallet.Wallet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L266">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_SaveWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.SaveWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_SaveWallet_Stratis_Bitcoin_Features_Wallet_Wallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.SaveWallet(Stratis.Bitcoin.Features.Wallet.Wallet)">SaveWallet(Wallet)</h4>
+  <div class="markdown level1 summary"><p>Saves the wallet into the file system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveWallet(Wallet wallet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Wallet.html">Wallet</a></td>
+        <td><span class="parametername">wallet</span></td>
+        <td><p>The wallet to save.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_SaveWallets.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.SaveWallets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L271">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_SaveWallets_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.SaveWallets*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_SaveWallets" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.SaveWallets">SaveWallets()</h4>
+  <div class="markdown level1 summary"><p>Saves all the loaded wallets into the file system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveWallets()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_SignMessage_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.SignMessage(System.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L82">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_SignMessage_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.SignMessage*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_SignMessage_System_String_System_String_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.SignMessage(System.String,System.String,System.String,System.String)">SignMessage(String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Signs a string message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string SignMessage(string password, string walletName, string externalAddress, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The user's password.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">walletName</span></td>
+        <td><p>The name of the wallet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">externalAddress</span></td>
+        <td><p>Address to use to sign.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Message to sign.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The generated signature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Start.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L16">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Start_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.Start*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Start" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.Start">Start()</h4>
+  <div class="markdown level1 summary"><p>Starts this wallet manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Start()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stop.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L22">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stop_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.Stop*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_Stop" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Stops the wallet manager.</p>
+<p>Internally it waits for async loops to complete before saving the wallets to disk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Stop()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_UnlockWallet_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.UnlockWallet(System.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L107">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_UnlockWallet_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.UnlockWallet*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_UnlockWallet_System_String_System_String_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.UnlockWallet(System.String,System.String,System.Int32)">UnlockWallet(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Unlocks a wallet for the specified time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UnlockWallet(string password, string name, int timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The wallet password.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the wallet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>The timeout in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_UpdateLastBlockSyncedHeight_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.UpdateLastBlockSyncedHeight(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L296">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_UpdateLastBlockSyncedHeight_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.UpdateLastBlockSyncedHeight*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_UpdateLastBlockSyncedHeight_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.UpdateLastBlockSyncedHeight(NBitcoin.ChainedHeader)">UpdateLastBlockSyncedHeight(ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Updates all the loaded wallets with the height of the last block synced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateLastBlockSyncedHeight(ChainedHeader chainedHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainedHeader</span></td>
+        <td><p>The height of the last block synced.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_UpdateLastBlockSyncedHeight_Stratis_Bitcoin_Features_Wallet_Wallet_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.UpdateLastBlockSyncedHeight(Stratis.Bitcoin.Features.Wallet.Wallet%2CNBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L290">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_UpdateLastBlockSyncedHeight_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.UpdateLastBlockSyncedHeight*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_UpdateLastBlockSyncedHeight_Stratis_Bitcoin_Features_Wallet_Wallet_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.UpdateLastBlockSyncedHeight(Stratis.Bitcoin.Features.Wallet.Wallet,NBitcoin.ChainedHeader)">UpdateLastBlockSyncedHeight(Wallet, ChainedHeader)</h4>
+  <div class="markdown level1 summary"><p>Updates the wallet with the height of the last block synced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateLastBlockSyncedHeight(Wallet wallet, ChainedHeader chainedHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Wallet.html">Wallet</a></td>
+        <td><span class="parametername">wallet</span></td>
+        <td><p>The wallet to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NBitcoin.ChainedHeader.html">ChainedHeader</a></td>
+        <td><span class="parametername">chainedHeader</span></td>
+        <td><p>The height of the last block synced.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_VerifySignedMessage_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.VerifySignedMessage(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L91">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_VerifySignedMessage_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.VerifySignedMessage*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager_VerifySignedMessage_System_String_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager.VerifySignedMessage(System.String,System.String,System.String)">VerifySignedMessage(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Verifies the signed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool VerifySignedMessage(string externalAddress, string message, string signature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">externalAddress</span></td>
+        <td><p>Address used to sign.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Message to verify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>Message signature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the signature is valid, false if it is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Interfaces_IWalletManager.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Interfaces.IWalletManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Interfaces/IWalletManager.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

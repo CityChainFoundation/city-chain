@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.43.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules">
+  
+  <h1 id="Stratis_Bitcoin_Features_Consensus_Rules_CommonRules" data-uid="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules" class="text-break">Namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.BitcoinActivationRule.html">BitcoinActivationRule</a></h4>
+      <section><p>Check that a <see cref="!:BitcoinMain"></see> network block has the correct version according to the defined active deployments.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.BitcoinHeaderVersionRule.html">BitcoinHeaderVersionRule</a></h4>
+      <section><p>Checks if <see cref="!:BitcoinMain"></see> network block's header has a valid block version.
+<a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.BitcoinActivationRule.html">BitcoinActivationRule</a></p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.BlockMerkleRootRule.html">BlockMerkleRootRule</a></h4>
+      <section><p>This rule will validate that the calculated merkle tree matches the merkle root in the header.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.BlockSizeRule.html">BlockSizeRule</a></h4>
+      <section><p>This rule will validate the block size and weight.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckDifficultyHybridRule.html">CheckDifficultyHybridRule</a></h4>
+      <section><p>Calculate the difficulty of a POS network for both Pow/POS blocks.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckDifficultyPosRule.html">CheckDifficultyPosRule</a></h4>
+      <section><p>Calculate the difficulty for a POS block and check that it is correct.
+This rule is only activated after the POW epoch is finished according to the value in <see cref="!:Consensus.LastPOWBlock"></see>.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckDifficultyPowRule.html">CheckDifficultyPowRule</a></h4>
+      <section><p>Calculate the difficulty for a POW network and check that it is correct.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckPosTransactionRule.html">CheckPosTransactionRule</a></h4>
+      <section><p>Validate a PoS transaction.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckPowTransactionRule.html">CheckPowTransactionRule</a></h4>
+      <section><p>Validate a PoW transaction.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CheckSigOpsRule.html">CheckSigOpsRule</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinbaseHeightActivationRule.html">CoinbaseHeightActivationRule</a></h4>
+      <section><p>With Bitcoin the BIP34 was activated at block 227,835 using the deployment flags,
+this rule allows a chain to have BIP34 activated as a deployment rule.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinbaseHeightRule.html">CoinbaseHeightRule</a></h4>
+      <section><p>According to BIP34 a coinbase transaction must have the block height serialized in the script language,</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.CoinViewRule.html">CoinViewRule</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.EnsureCoinbaseRule.html">EnsureCoinbaseRule</a></h4>
+      <section><p>Ensures a block follows the coinbase rules.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksPosRule.html">HeaderTimeChecksPosRule</a></h4>
+      <section><p>Checks if <a class="xref" href="NBitcoin.PosBlock.html">PosBlock</a> timestamp is greater than previous block timestamp.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderTimeChecksRule.html">HeaderTimeChecksRule</a></h4>
+      <section><p>Checks if <a class="xref" href="NBitcoin.Block.html">Block</a> time stamp is ahead of current consensus and not more then two hours in the future.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.HeaderVersionRule.html">HeaderVersionRule</a></h4>
+      <section><p>A base skeleton class that is implemented by networks to define and verify the version of blocks.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.LoadCoinviewRule.html">LoadCoinviewRule</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosBlockSignatureRepresentationRule.html">PosBlockSignatureRepresentationRule</a></h4>
+      <section><p>Check that the block signature for a POS block is in the canonical format.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosBlockSignatureRule.html">PosBlockSignatureRule</a></h4>
+      <section><p>A rule that will validate the signature of a PoS block.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinstakeRule.html">PosCoinstakeRule</a></h4>
+      <section><p>Context checks on a POS block.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosCoinviewRule.html">PosCoinviewRule</a></h4>
+      <section><p>Proof of stake override for the coinview rules - BIP68, MaxSigOps and BlockReward checks.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosColdStakingRule.html">PosColdStakingRule</a></h4>
+      <section><p>This rule performs further coldstaking transaction validation when cold staking balances are spent with a
+cold staking &quot;hotPubKey&quot; inside of a cold staking transaction. The cold staking &quot;hotPubKey&quot; is the pubKey
+that allows spending only to the same address.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.html">PosFutureDriftRule</a></h4>
+      <section><p>A rule that will verify the block time drift is according to the PoS consensus rules.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosTimeMaskRule.html">PosTimeMaskRule</a></h4>
+      <section><p>Checks if <a class="xref" href="NBitcoin.Block.html">Block</a> has a valid PoS header.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PowCoinviewRule.html">PowCoinviewRule</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.SaveCoinviewRule.html">SaveCoinviewRule</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.SetActivationDeploymentsFullValidationRule.html">SetActivationDeploymentsFullValidationRule</a></h4>
+      <section><p>Set the <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html#Stratis_Bitcoin_Consensus_Rules_RuleContext_Flags">Flags</a> property that defines what deployments have been activated.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.SetActivationDeploymentsPartialValidationRule.html">SetActivationDeploymentsPartialValidationRule</a></h4>
+      <section><p>Set the <a class="xref" href="Stratis.Bitcoin.Consensus.Rules.RuleContext.html#Stratis_Bitcoin_Consensus_Rules_RuleContext_Flags">Flags</a> property that defines what deployments have been activated.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.StratisBugFixPosFutureDriftRule.html">StratisBugFixPosFutureDriftRule</a></h4>
+      <section><p>A rule that will verify the block time drift is according to the PoS consensus rules for the <see cref="!:StratisMain"></see> network (and its test networks).
+New networks must use the <a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.PosFutureDriftRule.html">PosFutureDriftRule</a>.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.StratisHeaderVersionRule.html">StratisHeaderVersionRule</a></h4>
+      <section><p>Checks if <see cref="!:StratisMain"></see> network block's header has a valid block version.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.TransactionDuplicationActivationRule.html">TransactionDuplicationActivationRule</a></h4>
+      <section><p>Prevent duplicate transactions in the coinbase.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.TransactionLocktimeActivationRule.html">TransactionLocktimeActivationRule</a></h4>
+      <section><p>Transaction lock-time calculations are checked using the median of the last 11 blocks instead of the block's time stamp.</p>
+</section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.Rules.CommonRules.WitnessCommitmentsRule.html">WitnessCommitmentsRule</a></h4>
+      <section><p>A rule that validates witness commitments.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

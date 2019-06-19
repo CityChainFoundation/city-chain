@@ -1,0 +1,703 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WriteCache&lt;Value&gt;
+   | City Chain: Developer Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WriteCache&lt;Value&gt;
+   | City Chain: Developer Reference ">
+    <meta name="generator" content="docfx 2.43.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1">
+  
+  
+  <h1 id="Stratis_SmartContracts_Core_State_WriteCache_1" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1" class="text-break">Class WriteCache&lt;Value&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Adapted from EthereumJ.</p>
+<p>Caches values in memory and flushes to another source.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html">AbstractChainedSource</a>&lt;<span class="xref">System.Byte</span>[], Value, <span class="xref">System.Byte</span>[], Value&gt;</div>
+    <div class="level2"><a class="xref" href="Stratis.SmartContracts.Core.State.AbstractCachedSource-2.html">AbstractCachedSource</a>&lt;<span class="xref">System.Byte</span>[], Value&gt;</div>
+    <div class="level3"><span class="xref">WriteCache&lt;Value&gt;</span></div>
+      <div class="level4"><a class="xref" href="Stratis.SmartContracts.Core.State.StorageCache.html">StorageCache</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stratis.SmartContracts.Core.State.ICachedSource-2.html">ICachedSource</a>&lt;<span class="xref">System.Byte</span>[], Value&gt;</div>
+    <div><span class="xref">ISource</span>&lt;<span class="xref">System.Byte</span>[], Value&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractCachedSource-2.html#Stratis_SmartContracts_Core_State_AbstractCachedSource_2_GetCached__0_">AbstractCachedSource&lt;Byte[], Value&gt;.GetCached(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractCachedSource-2.html#Stratis_SmartContracts_Core_State_AbstractCachedSource_2_GetModified">AbstractCachedSource&lt;Byte[], Value&gt;.GetModified()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractCachedSource-2.html#Stratis_SmartContracts_Core_State_AbstractCachedSource_2_HasModified">AbstractCachedSource&lt;Byte[], Value&gt;.HasModified()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Source">AbstractChainedSource&lt;Byte[], Value, Byte[], Value&gt;.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_flushSource">AbstractChainedSource&lt;Byte[], Value, Byte[], Value&gt;.flushSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_SetFlushSource_System_Boolean_">AbstractChainedSource&lt;Byte[], Value, Byte[], Value&gt;.SetFlushSource(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Flush">AbstractChainedSource&lt;Byte[], Value, Byte[], Value&gt;.Flush()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_FlushImpl">AbstractChainedSource&lt;Byte[], Value, Byte[], Value&gt;.FlushImpl()</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Put__0__1_">AbstractChainedSource&lt;Byte[], Value, Byte[], Value&gt;.Put(Byte[], Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Get__0_">AbstractChainedSource&lt;Byte[], Value, Byte[], Value&gt;.Get(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.AbstractChainedSource-4.html#Stratis_SmartContracts_Core_State_AbstractChainedSource_4_Delete__0_">AbstractChainedSource&lt;Byte[], Value, Byte[], Value&gt;.Delete(Byte[])</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stratis.SmartContracts.Core.State.html">Stratis.SmartContracts.Core.State</a></h6>
+  <h6><strong>Assembly</strong>: Stratis.SmartContracts.Core.dll</h6>
+  <h5 id="Stratis_SmartContracts_Core_State_WriteCache_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WriteCache&lt;Value&gt; : AbstractCachedSource&lt;byte[], Value&gt;, ICachedSource&lt;byte[], Value&gt;, ISource&lt;byte[], Value&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1__ctor_ISource_System_Byte____0__Stratis_SmartContracts_Core_State_WriteCache__0__CacheType_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.%23ctor(ISource%7BSystem.Byte%5B%5D%2C%600%7D%2CStratis.SmartContracts.Core.State.WriteCache%7B%600%7D.CacheType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L96">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1__ctor_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.#ctor*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1__ctor_ISource_System_Byte____0__Stratis_SmartContracts_Core_State_WriteCache__0__CacheType_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.#ctor(ISource{System.Byte[],`0},Stratis.SmartContracts.Core.State.WriteCache{`0}.CacheType)">WriteCache(ISource&lt;Byte[], Value&gt;, WriteCache&lt;Value&gt;.CacheType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WriteCache(ISource&lt;byte[], Value&gt; src, WriteCache&lt;Value&gt;.CacheType cacheType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISource</span>&lt;<span class="xref">System.Byte</span>[], Value&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.CacheType.html">WriteCache.CacheType</a>&lt;&gt;</td>
+        <td><span class="parametername">cacheType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_cache.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.cache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L90">View Source</a>
+  </span>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_cache" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.cache">cache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected volatile Dictionary&lt;byte[], WriteCache&lt;Value&gt;.CacheEntry&lt;Value&gt;&gt; cache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Byte</span>[], <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.CacheEntry-1.html">WriteCache.CacheEntry</a>&lt;Value&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_readLock.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.readLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L92">View Source</a>
+  </span>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_readLock" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.readLock">readLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object readLock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_updateLock.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.updateLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L94">View Source</a>
+  </span>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_updateLock" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.updateLock">updateLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object updateLock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_writeLock.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.writeLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L93">View Source</a>
+  </span>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_writeLock" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.writeLock">writeLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object writeLock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_Delete_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.Delete(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L187">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1_Delete_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.Delete*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_Delete_System_Byte___" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.Delete(System.Byte[])">Delete(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Delete(byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Stratis.SmartContracts.Core.State.AbstractChainedSource&lt;System.Byte[], Value, System.Byte[], Value&gt;.Delete(System.Byte[])</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_Flush.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.Flush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L206">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1_Flush_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.Flush*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_Flush" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.Flush">Flush()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Flush()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Stratis.SmartContracts.Core.State.AbstractChainedSource&lt;System.Byte[], Value, System.Byte[], Value&gt;.Flush()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_FlushImpl.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.FlushImpl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L242">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1_FlushImpl_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.FlushImpl*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_FlushImpl" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.FlushImpl">FlushImpl()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool FlushImpl()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Stratis.SmartContracts.Core.State.AbstractChainedSource&lt;System.Byte[], Value, System.Byte[], Value&gt;.FlushImpl()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_Get_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.Get(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L160">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1_Get_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.Get*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_Get_System_Byte___" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.Get(System.Byte[])">Get(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Value Get(byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Stratis.SmartContracts.Core.State.AbstractChainedSource&lt;System.Byte[], Value, System.Byte[], Value&gt;.Get(System.Byte[])</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_GetCached_System_Byte___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.GetCached(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L247">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1_GetCached_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.GetCached*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_GetCached_System_Byte___" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.GetCached(System.Byte[])">GetCached(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AbstractCachedSource&lt;byte[], Value&gt;.IEntry&lt;Value&gt; GetCached(byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.AbstractCachedSource-2.IEntry-1.html">AbstractCachedSource.IEntry</a>&lt;Value&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Stratis.SmartContracts.Core.State.AbstractCachedSource&lt;System.Byte[], Value&gt;.GetCached(System.Byte[])</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_GetModified.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.GetModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L107">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1_GetModified_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.GetModified*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_GetModified" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.GetModified">GetModified()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ICollection&lt;byte[]&gt; GetModified()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Stratis.SmartContracts.Core.State.AbstractCachedSource&lt;System.Byte[], Value&gt;.GetModified()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_HasModified.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.HasModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L116">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1_HasModified_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.HasModified*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_HasModified" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.HasModified">HasModified()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasModified()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Stratis.SmartContracts.Core.State.AbstractCachedSource&lt;System.Byte[], Value&gt;.HasModified()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_Put_System_Byte____0_.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.Put(System.Byte%5B%5D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L133">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1_Put_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.Put*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_Put_System_Byte____0_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.Put(System.Byte[],`0)">Put(Byte[], Value)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Put(byte[] key, Value val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Value</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Stratis.SmartContracts.Core.State.AbstractChainedSource&lt;System.Byte[], Value, System.Byte[], Value&gt;.Put(System.Byte[], Value)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1_WithCache_Dictionary_System_Byte___Stratis_SmartContracts_Core_State_WriteCache__0__CacheEntry__0___.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601.WithCache(Dictionary%7BSystem.Byte%5B%5D%2CStratis.SmartContracts.Core.State.WriteCache%7B%600%7D.CacheEntry%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L101">View Source</a>
+  </span>
+  <a id="Stratis_SmartContracts_Core_State_WriteCache_1_WithCache_" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.WithCache*"></a>
+  <h4 id="Stratis_SmartContracts_Core_State_WriteCache_1_WithCache_Dictionary_System_Byte___Stratis_SmartContracts_Core_State_WriteCache__0__CacheEntry__0___" data-uid="Stratis.SmartContracts.Core.State.WriteCache`1.WithCache(Dictionary{System.Byte[],Stratis.SmartContracts.Core.State.WriteCache{`0}.CacheEntry{`0}})">WithCache(Dictionary&lt;Byte[], WriteCache&lt;Value&gt;.CacheEntry&lt;Value&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WriteCache&lt;Value&gt; WithCache(Dictionary&lt;byte[], WriteCache&lt;Value&gt;.CacheEntry&lt;Value&gt;&gt; cache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Byte</span>[], <a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.CacheEntry-1.html">WriteCache.CacheEntry</a>&lt;Value&gt;&gt;</td>
+        <td><span class="parametername">cache</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.SmartContracts.Core.State.WriteCache-1.html">WriteCache</a>&lt;Value&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stratis.SmartContracts.Core.State.ICachedSource-2.html">ICachedSource&lt;Key, Value&gt;</a>
+  </div>
+  <div>
+      <span class="xref">ISource&lt;, &gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_SmartContracts_Core_State_WriteCache_1.md&amp;value=---%0Auid%3A%20Stratis.SmartContracts.Core.State.WriteCache%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.SmartContracts.Core/State/WriteCache.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a href='https://city-chain.org'>city-chain.org</a> | <a href='https://citychain.foundation'>citychain.foundation</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
