@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: btc-live
+spec:
+  selector:
+    matchLabels:
+      app: btc-live
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: btc-live
+    spec:
+      containers:
+        - name: btc-live
+          image: test-btc-img
+          imagePullPolicy: Never
+          ports:
+          - containerPort: 8333
+            hostPort: 8333
+            protocol: TCP
+            name: btc-live
+          - containerPort: 8332
+            name: btc-json-rpc
+          volumeMounts:
+          - name: btc-live-data
+            mountPath: /app/data
+          resources:
+            requests:
+              memory: "1024M"
+              cpu: "750m"
+            limits:
+              memory: "2048M"
+              cpu: "1000m"
+      volumes:
+        - name: btc-live-data
+          hostPath:
+            path: /data/btc-live
+            type: Directory

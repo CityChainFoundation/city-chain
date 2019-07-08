@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: btc-live-svc
+spec:
+  selector:
+    app: btc-live
+  ports:
+    - protocol: TCP
+      port: 8333
+      targetPort: 8333
+      name: btc-live-net
+    - protocol: TCP
+      port: 30001
+      targetPort: 8332
+      name: btc-live-jsonrpc

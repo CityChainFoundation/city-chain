@@ -1,0 +1,7 @@
+name: docker-compose-explorer
+description: A generated Helm Chart for docker-compose-explorer from Skippbox Kompose
+version: 0.0.1
+keywords:
+  - docker-compose-explorer
+sources:
+home:

@@ -1,0 +1,40 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose --file docker-compose-explorer.yml convert -c
+    kompose.version: 1.18.0 (06a2e56)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: client
+  name: client
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: client
+    spec:
+      containers:
+      - args:
+        - dotnet
+        - run
+        - --
+        - -server=1
+        - -rpcallowip=172.16.11.100
+        - -rpcbind=172.16.11.101
+        - -rpcport=5000
+        - -rpcuser=rpcuser
+        - -rpcpassword=rpcpassword
+        - -rpcthreads=300
+        - -txindex=1
+        image: stratisplatform/fullnode:StratisMain
+        name: stratis-client
+        ports:
+        - containerPort: 5000
+        - containerPort: 16178
+        resources: {}
+      restartPolicy: Always
+status: {}

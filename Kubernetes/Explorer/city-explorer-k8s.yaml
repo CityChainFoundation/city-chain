@@ -1,0 +1,147 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose --file docker-compose-explorer.yml convert
+    kompose.version: 1.18.0 (06a2e56)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: client
+  name: client
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: client
+    spec:
+      containers:
+      - args:
+        - dotnet
+        - run
+        - --
+        - -server=1
+        - -rpcallowip=172.16.11.100
+        - -rpcbind=172.16.11.101
+        - -rpcport=5000
+        - -rpcuser=rpcuser
+        - -rpcpassword=rpcpassword
+        - -rpcthreads=300
+        - -txindex=1
+        image: stratisplatform/fullnode:StratisMain
+        name: stratis-client
+        ports:
+        - containerPort: 5000
+        - containerPort: 16178
+        resources: {}
+      restartPolicy: Always
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose --file docker-compose-explorer.yml convert
+    kompose.version: 1.18.0 (06a2e56)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: client
+  name: client
+spec:
+  ports:
+  - name: "5030"
+    port: 5030
+    targetPort: 5000
+  - name: "16178"
+    port: 16178
+    targetPort: 16178
+  selector:
+    io.kompose.service: client
+status:
+  loadBalancer: {}
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose --file docker-compose-explorer.yml convert
+    kompose.version: 1.18.0 (06a2e56)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mongo
+  name: mongo
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: mongo
+    spec:
+      containers:
+      - image: mongo:3.2
+        name: stratis-mongo
+        resources: {}
+      restartPolicy: Always
+status: {}
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose --file docker-compose-explorer.yml convert
+    kompose.version: 1.18.0 (06a2e56)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: nako
+  name: nako
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: nako
+    spec:
+      containers:
+      - args:
+        - stratis
+        image: coinvault/nako:core
+        name: stratis-nako
+        ports:
+        - containerPort: 9000
+        - containerPort: 9000
+        - containerPort: 9000
+        resources: {}
+      restartPolicy: Always
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose --file docker-compose-explorer.yml convert
+    kompose.version: 1.18.0 (06a2e56)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: nako
+  name: nako
+spec:
+  ports:
+  - name: "80"
+    port: 80
+    targetPort: 9000
+  - name: "443"
+    port: 443
+    targetPort: 9000
+  - name: "9030"
+    port: 9030
+    targetPort: 9000
+  selector:
+    io.kompose.service: nako
+status:
+  loadBalancer: {}

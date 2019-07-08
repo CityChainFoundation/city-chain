@@ -1,0 +1,49 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: bitcoin-core-deployment
+  labels:
+    app: bitcoin-core-app
+    tier: bitcoin
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: bitcoin-core-app
+        tier: bitcoin
+    spec:
+      volumes:
+      - name: bitcoin-core-pv-storage
+        persistentVolumeClaim:
+          claimName: bitcoin-core-pv-claim
+      containers:
+      - name: bitcoin-core
+        image: "ruimarinho/bitcoin-core:latest"
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - name: bitcoin-core-pv-storage
+          mountPath: "/home/bitcoin/.bitcoin"
+        resources:
+          requests:
+            memory: "1024M"
+            cpu: "750m"
+          limits:
+            memory: "2048M"
+            cpu: "1000m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bitcoin-core-service
+  labels:
+    tier: bitcoin
+spec:
+  selector:
+    app: bitcoin-core-app
+    tier: bitcoin
+  ports:
+  - port: 80
+    targetPort: 8332
+    protocol: TCP
+    name: bitcoin-core-port
