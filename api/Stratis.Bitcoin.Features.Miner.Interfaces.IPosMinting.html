@@ -322,7 +322,7 @@ Staking is attempted only if the node is fully synchronized and connected to the
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;Money&gt; GetMatureBalanceAsync(List&lt;UtxoStakeDescription&gt; utxoStakeDescriptions)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;(Money balance, Money immature)&gt; GetMatureBalanceAsync(List&lt;UtxoStakeDescription&gt; utxoStakeDescriptions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -352,8 +352,8 @@ Staking is attempted only if the node is fully synchronized and connected to the
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="NBitcoin.Money.html">Money</a>&gt;</td>
-        <td><p>Total balance from all UTXOs in the wallet that are mature.</p>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="NBitcoin.Money.html">Money</a>, <a class="xref" href="NBitcoin.Money.html">Money</a>&gt;&gt;</td>
+        <td><p>Total balance from all UTXOs in the wallet that are mature, and the total immature balance.</p>
 </td>
       </tr>
     </tbody>
