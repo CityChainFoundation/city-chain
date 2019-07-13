@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using System.Timers;
 using Microsoft.Extensions.Logging;
 using NBitcoin;
@@ -19,9 +18,6 @@ namespace BlockCore.Features.WebSocket
         /// <summary>Port of node's API interface.</summary>
         public int WsPort { get; set; }
 
-        /// <summary>URI to node's API interface.</summary>
-        public Timer KeepaliveTimer { get; private set; }
-
         /// <summary>
         /// Initializes an instance of the object from the node configuration.
         /// </summary>
@@ -36,17 +32,6 @@ namespace BlockCore.Features.WebSocket
 
             // Find out which port should be used for the web socket. // nodeSettings.Network must be extended with additional default ws port.
             this.WsPort = config.GetOrDefault("wsport", 4336, this.logger);
-
-            // Set the keepalive interval (set in seconds).
-            int keepAlive = config.GetOrDefault("keepalive", 0, this.logger);
-            if (keepAlive > 0)
-            {
-                this.KeepaliveTimer = new Timer
-                {
-                    AutoReset = false,
-                    Interval = keepAlive * 1000
-                };
-            }
         }
 
         /// <summary>Prints the help information on how to configure the web socket settings to the logger.</summary>
@@ -54,9 +39,7 @@ namespace BlockCore.Features.WebSocket
         public static void PrintHelp(Network network)
         {
             var builder = new StringBuilder();
-
             builder.AppendLine($"-wsport=<0-65535>                 Port of node's web socket interface. Defaults to 4336.");
-
             NodeSettings.Default(network).Logger.LogInformation(builder.ToString());
         }
 

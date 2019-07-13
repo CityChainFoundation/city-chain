@@ -10,10 +10,10 @@ namespace BlockCore.Features.WebSocket
 {
     public class Program
     {
-        public static IWebHost Initialize(string[] args, IEnumerable<ServiceDescriptor> services, FullNode fullNode)
+        public static IWebHost Initialize(string[] args, IEnumerable<ServiceDescriptor> services, WebSocketSettings settings, FullNode fullNode)
         {
             IWebHost host = WebHost.CreateDefaultBuilder(args)
-                .UseUrls(urls: "http://localhost:4337")
+                .UseUrls(urls: $"http://localhost:{settings.WsPort}")
                 .ConfigureServices(collection =>
                 {
                     if (services == null)

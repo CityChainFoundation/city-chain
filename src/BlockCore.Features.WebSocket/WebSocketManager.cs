@@ -37,7 +37,7 @@ namespace BlockCore.Features.WebSocket
         {
             if (this.context == null)
             {
-                this.context = this.connector.Context; //.Core.GetService<IHubContext<NodeHub>>();
+                this.context = this.connector.Context;
             }
         }
 
@@ -45,9 +45,7 @@ namespace BlockCore.Features.WebSocket
         {
             Initialize();
 
-            // this.walletManager.ProcessTransaction(transaction);
             this.context.Clients.Group(nameof(TransactionReceived)).SendAsync(nameof(TransactionReceived), transactionReceived.ReceivedTransaction.ToHex(this.network));
-            //this.context.Clients.All.SendAsync("txs", "new transaction!");
         }
 
         private void OnBlockConnected(BlockConnected blockConnected)
@@ -55,9 +53,6 @@ namespace BlockCore.Features.WebSocket
             Initialize();
 
             this.context.Clients.Group(nameof(BlockConnected)).SendAsync(nameof(BlockConnected), blockConnected.ConnectedBlock.Block.ToHex(this.network));
-
-            //this.context.Clients.All.SendAsync("txs", blockConnected.ConnectedBlock.Block.ToHex(this.network));
-            // this.ProcessBlock(blockConnected.ConnectedBlock.Block);
         }
 
         public void Start()

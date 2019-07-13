@@ -8,8 +8,6 @@ using NBitcoin;
 using Stratis.Bitcoin;
 using Stratis.Bitcoin.Builder;
 using Stratis.Bitcoin.Builder.Feature;
-using Stratis.Bitcoin.Configuration;
-using Stratis.Bitcoin.Features.Notifications;
 
 namespace BlockCore.Features.WebSocket
 {
@@ -54,7 +52,7 @@ namespace BlockCore.Features.WebSocket
         public override Task InitializeAsync()
         {
             this.logger.LogInformation("Web Socket starting on URL '{0}:{1}'.", "http://localhost", this.settings.WsPort);
-            this.webHost = Program.Initialize(new string[] { }, this.fullNodeBuilder.Services, this.fullNode);
+            this.webHost = Program.Initialize(new string[] { }, this.fullNodeBuilder.Services, this.settings, this.fullNode);
 
             return Task.CompletedTask;
         }
