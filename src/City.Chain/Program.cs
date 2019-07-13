@@ -3,6 +3,7 @@
     using System;
     using System.Linq;
     using System.Threading.Tasks;
+    using BlockCore.Features.WebSocket;
     using City.Features.BlockExplorer;
     using City.Networks;
     using NBitcoin;
@@ -124,6 +125,7 @@
                         .UseApi()
                         .UseApps()
                         .AddRPC()
+                        .UseWebSocket()
                         .Build();
                 }
 
