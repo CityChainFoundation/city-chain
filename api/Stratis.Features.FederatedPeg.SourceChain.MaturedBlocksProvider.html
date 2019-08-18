@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class MaturedBlocksProvider
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,24 +88,24 @@
   <h6><strong>Assembly</strong>: Stratis.Features.FederatedPeg.dll</h6>
   <h5 id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MaturedBlocksProvider : object, IMaturedBlocksProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class MaturedBlocksProvider : object, IMaturedBlocksProvider</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider__ctor_ILoggerFactory_Stratis_Features_FederatedPeg_Interfaces_IDepositExtractor_IConsensusManager_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.%23ctor(ILoggerFactory%2CStratis.Features.FederatedPeg.Interfaces.IDepositExtractor%2CIConsensusManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider__ctor_IConsensusManager_Stratis_Features_FederatedPeg_Interfaces_IDepositExtractor_ILoggerFactory_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.%23ctor(IConsensusManager%2CStratis.Features.FederatedPeg.Interfaces.IDepositExtractor%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/SourceChain/MaturedBlocksProvider.cs/#L35">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/SourceChain/MaturedBlocksProvider.cs/#L40">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider__ctor_" data-uid="Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.#ctor*"></a>
-  <h4 id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider__ctor_ILoggerFactory_Stratis_Features_FederatedPeg_Interfaces_IDepositExtractor_IConsensusManager_" data-uid="Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.#ctor(ILoggerFactory,Stratis.Features.FederatedPeg.Interfaces.IDepositExtractor,IConsensusManager)">MaturedBlocksProvider(ILoggerFactory, IDepositExtractor, IConsensusManager)</h4>
+  <h4 id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider__ctor_IConsensusManager_Stratis_Features_FederatedPeg_Interfaces_IDepositExtractor_ILoggerFactory_" data-uid="Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.#ctor(IConsensusManager,Stratis.Features.FederatedPeg.Interfaces.IDepositExtractor,ILoggerFactory)">MaturedBlocksProvider(IConsensusManager, IDepositExtractor, ILoggerFactory)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MaturedBlocksProvider(ILoggerFactory loggerFactory, IDepositExtractor depositExtractor, IConsensusManager consensusManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public MaturedBlocksProvider(IConsensusManager consensusManager, IDepositExtractor depositExtractor, ILoggerFactory loggerFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -118,8 +118,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILoggerFactory</span></td>
-        <td><span class="parametername">loggerFactory</span></td>
+        <td><span class="xref">IConsensusManager</span></td>
+        <td><span class="parametername">consensusManager</span></td>
         <td></td>
       </tr>
       <tr>
@@ -128,8 +128,68 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IConsensusManager</span></td>
-        <td><span class="parametername">consensusManager</span></td>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_RetrieveBlockHeightHigherThanMaturedTipMessage.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.RetrieveBlockHeightHigherThanMaturedTipMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/SourceChain/MaturedBlocksProvider.cs/#L30">View Source</a>
+  </span>
+  <h4 id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_RetrieveBlockHeightHigherThanMaturedTipMessage" data-uid="Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.RetrieveBlockHeightHigherThanMaturedTipMessage">RetrieveBlockHeightHigherThanMaturedTipMessage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string RetrieveBlockHeightHigherThanMaturedTipMessage = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_UnableToRetrieveBlockDataFromConsensusMessage.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.UnableToRetrieveBlockDataFromConsensusMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/SourceChain/MaturedBlocksProvider.cs/#L32">View Source</a>
+  </span>
+  <h4 id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_UnableToRetrieveBlockDataFromConsensusMessage" data-uid="Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.UnableToRetrieveBlockDataFromConsensusMessage">UnableToRetrieveBlockDataFromConsensusMessage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string UnableToRetrieveBlockDataFromConsensusMessage = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -138,19 +198,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_GetMaturedDepositsAsync_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.GetMaturedDepositsAsync(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_GetMaturedDeposits_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.GetMaturedDeposits(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/SourceChain/MaturedBlocksProvider.cs/#L44">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/SourceChain/MaturedBlocksProvider.cs/#L49">View Source</a>
   </span>
-  <a id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_GetMaturedDepositsAsync_" data-uid="Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.GetMaturedDepositsAsync*"></a>
-  <h4 id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_GetMaturedDepositsAsync_System_Int32_System_Int32_" data-uid="Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.GetMaturedDepositsAsync(System.Int32,System.Int32)">GetMaturedDepositsAsync(Int32, Int32)</h4>
+  <a id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_GetMaturedDeposits_" data-uid="Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.GetMaturedDeposits*"></a>
+  <h4 id="Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider_GetMaturedDeposits_System_Int32_System_Int32_System_Int32_" data-uid="Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider.GetMaturedDeposits(System.Int32,System.Int32,System.Int32)">GetMaturedDeposits(Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Retrieves deposits for the indicated blocks from the block repository and throws an error if the blocks are not mature enough.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Result&lt;List&lt;MaturedBlockDepositsModel&gt;&gt;&gt; GetMaturedDepositsAsync(int blockHeight, int maxBlocks)</code></pre>
+    <pre><code class="lang-csharp hljs">public SerializableResult&lt;List&lt;MaturedBlockDepositsModel&gt;&gt; GetMaturedDeposits(int retrieveFromHeight, int maxBlocks, int maxDeposits = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -164,14 +224,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">blockHeight</span></td>
-        <td><p>The block height at which to start retrieving blocks.</p>
-</td>
+        <td><span class="parametername">retrieveFromHeight</span></td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">maxBlocks</span></td>
         <td><p>The number of blocks to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxDeposits</span></td>
+        <td><p>The number of deposits to retrieve.</p>
 </td>
       </tr>
     </tbody>
@@ -186,7 +251,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Features.FederatedPeg.SourceChain.Result-1.html">Result</a>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Stratis.Features.FederatedPeg.Models.MaturedBlockDepositsModel.html">MaturedBlockDepositsModel</a>&gt;&gt;&gt;</td>
+        <td><span class="xref">SerializableResult</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Stratis.Features.FederatedPeg.Models.MaturedBlockDepositsModel.html">MaturedBlockDepositsModel</a>&gt;&gt;</td>
         <td><p>A list of mature block deposits.</p>
 </td>
       </tr>
@@ -207,7 +272,7 @@
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_SourceChain_MaturedBlocksProvider.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.SourceChain.MaturedBlocksProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/SourceChain/MaturedBlocksProvider.cs/#L27" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/SourceChain/MaturedBlocksProvider.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

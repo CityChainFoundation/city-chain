@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class FederatedPegSettings
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -95,18 +95,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings__ctor_NodeSettings_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.%23ctor(NodeSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings__ctor_NodeSettings_Stratis_Features_FederatedPeg_IFederatedPegOptions_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.%23ctor(NodeSettings%2CStratis.Features.FederatedPeg.IFederatedPegOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L70">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L90">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings__ctor_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.#ctor*"></a>
-  <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings__ctor_NodeSettings_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.#ctor(NodeSettings)">FederatedPegSettings(NodeSettings)</h4>
+  <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings__ctor_NodeSettings_Stratis_Features_FederatedPeg_IFederatedPegOptions_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.#ctor(NodeSettings,Stratis.Features.FederatedPeg.IFederatedPegOptions)">FederatedPegSettings(NodeSettings, IFederatedPegOptions)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FederatedPegSettings(NodeSettings nodeSettings)</code></pre>
+    <pre><code class="lang-csharp hljs">public FederatedPegSettings(NodeSettings nodeSettings, IFederatedPegOptions federatedPegOptions = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -123,6 +123,11 @@
         <td><span class="parametername">nodeSettings</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Stratis.Features.FederatedPeg.IFederatedPegOptions.html">IFederatedPegOptions</a></td>
+        <td><span class="parametername">federatedPegOptions</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
@@ -132,7 +137,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_BaseTransactionFee.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.BaseTransactionFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L46">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L66">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_BaseTransactionFee" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.BaseTransactionFee">BaseTransactionFee</h4>
   <div class="markdown level1 summary"><p>The fee always given to a withdrawal transaction.</p>
@@ -162,10 +167,10 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_ConsolidationFee.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.ConsolidationFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L56">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L76">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_ConsolidationFee" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.ConsolidationFee">ConsolidationFee</h4>
-  <div class="markdown level1 summary"><p>Fee applied to consolidating transactions. Roughly the same as the fee for withdrawals.</p>
+  <div class="markdown level1 summary"><p>Fee applied to consolidating transactions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -192,7 +197,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_CounterChainDepositBlock.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.CounterChainDepositBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L22">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L42">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_CounterChainDepositBlock" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.CounterChainDepositBlock">CounterChainDepositBlock</h4>
   <div class="markdown level1 summary"></div>
@@ -221,7 +226,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_CrossChainTransferFee.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.CrossChainTransferFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L36">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L56">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_CrossChainTransferFee" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.CrossChainTransferFee">CrossChainTransferFee</h4>
   <div class="markdown level1 summary"><p>The fee taken by the federation to build withdrawal transactions. The federation will keep most of this.</p>
@@ -257,7 +262,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_CrossChainTransferMinimum.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.CrossChainTransferMinimum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L41">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L61">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_CrossChainTransferMinimum" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.CrossChainTransferMinimum">CrossChainTransferMinimum</h4>
   <div class="markdown level1 summary"><p>Only look for deposits above a certain value. This avoids issues with dust lingering around or fees not being covered.</p>
@@ -287,7 +292,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_FederationIpsParam.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.FederationIpsParam%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L20">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L40">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_FederationIpsParam" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.FederationIpsParam">FederationIpsParam</h4>
   <div class="markdown level1 summary"></div>
@@ -316,7 +321,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_InputTransactionFee.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.InputTransactionFee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L51">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L71">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_InputTransactionFee" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.InputTransactionFee">InputTransactionFee</h4>
   <div class="markdown level1 summary"><p>The extra fee given to a withdrawal transaction per input it spends. This number should be high enough such that the built transactions are always valid, yet low enough such that the federation can turn a profit.</p>
@@ -346,7 +351,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_MaxInputs.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.MaxInputs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L61">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L81">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_MaxInputs" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MaxInputs">MaxInputs</h4>
   <div class="markdown level1 summary"><p>The maximum number of inputs we want our built withdrawal transactions to have. We don't want them to get too big for Standardness reasons.</p>
@@ -376,7 +381,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_PublicKeyParam.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.PublicKeyParam%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L18">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L38">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_PublicKeyParam" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.PublicKeyParam">PublicKeyParam</h4>
   <div class="markdown level1 summary"></div>
@@ -405,7 +410,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_RedeemScriptParam.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.RedeemScriptParam%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L16">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L36">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_RedeemScriptParam" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.RedeemScriptParam">RedeemScriptParam</h4>
   <div class="markdown level1 summary"></div>
@@ -434,7 +439,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_StratisMainDepositStartBlock.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.StratisMainDepositStartBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L68">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L88">View Source</a>
   </span>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_StratisMainDepositStartBlock" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.StratisMainDepositStartBlock">StratisMainDepositStartBlock</h4>
   <div class="markdown level1 summary"><p>Sidechains to STRAT don't need to check for deposits for the whole main chain. Only from when they begun.</p>
@@ -460,6 +465,35 @@ cover the withdrawal fee on the other chain.</p>
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_WalletSyncFromHeightParam.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.WalletSyncFromHeightParam%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L34">View Source</a>
+  </span>
+  <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_WalletSyncFromHeightParam" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.WalletSyncFromHeightParam">WalletSyncFromHeightParam</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string WalletSyncFromHeightParam = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -467,7 +501,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_CounterChainDepositStartBlock.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.CounterChainDepositStartBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L139">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L167">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_CounterChainDepositStartBlock_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.CounterChainDepositStartBlock*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_CounterChainDepositStartBlock" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.CounterChainDepositStartBlock">CounterChainDepositStartBlock</h4>
@@ -495,14 +529,47 @@ cover the withdrawal fee on the other chain.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_FederationNodeIpAddresses.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.FederationNodeIpAddresses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L143">View Source</a>
+  </span>
+  <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_FederationNodeIpAddresses_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.FederationNodeIpAddresses*"></a>
+  <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_FederationNodeIpAddresses" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.FederationNodeIpAddresses">FederationNodeIpAddresses</h4>
+  <div class="markdown level1 summary"><p>Ip addresses for the other nodes in the federation. Useful for checking whether a node is
+a federation member.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HashSet&lt;IPAddress&gt; FederationNodeIpAddresses { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">IPAddress</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_FederationNodeIpEndPoints.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.FederationNodeIpEndPoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L118">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L140">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_FederationNodeIpEndPoints_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.FederationNodeIpEndPoints*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_FederationNodeIpEndPoints" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.FederationNodeIpEndPoints">FederationNodeIpEndPoints</h4>
-  <div class="markdown level1 summary"><p>Ip Endpoints for the other nodes in the federation.</p>
+  <div class="markdown level1 summary"><p>Ip Endpoints for the other nodes in the federation. Useful for connecting to nodes but
+not accurate for checking whether a node is a federation member.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -529,7 +596,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_FederationPublicKeys.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.FederationPublicKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L124">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L149">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_FederationPublicKeys_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.FederationPublicKeys*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_FederationPublicKeys" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.FederationPublicKeys">FederationPublicKeys</h4>
@@ -560,7 +627,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_IsMainChain.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.IsMainChain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L115">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L137">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_IsMainChain_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.IsMainChain*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_IsMainChain" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.IsMainChain">IsMainChain</h4>
@@ -591,7 +658,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_MinimumDepositConfirmations.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.MinimumDepositConfirmations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L148">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L176">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_MinimumDepositConfirmations_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MinimumDepositConfirmations*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_MinimumDepositConfirmations" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MinimumDepositConfirmations">MinimumDepositConfirmations</h4>
@@ -622,7 +689,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigAddress.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L142">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L170">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigAddress_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigAddress*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigAddress" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigAddress">MultiSigAddress</h4>
@@ -653,7 +720,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigM.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigM%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L127">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L155">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigM_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigM*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigM" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigM">MultiSigM</h4>
@@ -684,7 +751,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigN.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L130">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L158">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigN_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigN*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigN" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigN">MultiSigN</h4>
@@ -715,7 +782,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigRedeemScript.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigRedeemScript%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L145">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L173">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigRedeemScript_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigRedeemScript*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_MultiSigRedeemScript" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.MultiSigRedeemScript">MultiSigRedeemScript</h4>
@@ -746,7 +813,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_PublicKey.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.PublicKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L121">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L146">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_PublicKey_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.PublicKey*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_PublicKey" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.PublicKey">PublicKey</h4>
@@ -772,6 +839,37 @@ cover the withdrawal fee on the other chain.</p>
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_WalletSyncFromHeight.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.WalletSyncFromHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L152">View Source</a>
+  </span>
+  <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_WalletSyncFromHeight_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.WalletSyncFromHeight*"></a>
+  <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_WalletSyncFromHeight" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.WalletSyncFromHeight">WalletSyncFromHeight</h4>
+  <div class="markdown level1 summary"><p>The block number to start syncing the federation wallet from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WalletSyncFromHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -779,7 +877,7 @@ cover the withdrawal fee on the other chain.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings_GetWithdrawalTransactionFee_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings.GetWithdrawalTransactionFee(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L133">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L161">View Source</a>
   </span>
   <a id="Stratis_Features_FederatedPeg_FederatedPegSettings_GetWithdrawalTransactionFee_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.GetWithdrawalTransactionFee*"></a>
   <h4 id="Stratis_Features_FederatedPeg_FederatedPegSettings_GetWithdrawalTransactionFee_System_Int32_" data-uid="Stratis.Features.FederatedPeg.FederatedPegSettings.GetWithdrawalTransactionFee(System.Int32)">GetWithdrawalTransactionFee(Int32)</h4>
@@ -837,7 +935,7 @@ cover the withdrawal fee on the other chain.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Features_FederatedPeg_FederatedPegSettings.md&amp;value=---%0Auid%3A%20Stratis.Features.FederatedPeg.FederatedPegSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Features.FederatedPeg/FederatedPegSettings.cs/#L32" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

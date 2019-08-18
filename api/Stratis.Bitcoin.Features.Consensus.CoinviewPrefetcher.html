@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CoinviewPrefetcher
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,10 @@
   
   <h1 id="Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher" data-uid="Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher" class="text-break">Class CoinviewPrefetcher
   </h1>
-  <div class="markdown level0 summary"><p>Fetches coins for blocks that are likely to be validated in the near future to speed-up full validation.</p>
+  <div class="markdown level0 summary"><p>Pre-fetches coins (UTXOs) for blocks that are likely to be validated in the near future.</p>
+<p>
+This speeds up full block validation.
+</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -94,7 +97,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_NBitcoin_ChainIndexer_ILoggerFactory_Stratis_Bitcoin_AsyncWork_IAsyncProvider_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.%23ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView%2CNBitcoin.ChainIndexer%2CILoggerFactory%2CStratis.Bitcoin.AsyncWork.IAsyncProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinviewPrefetcher.cs/#L39">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinviewPrefetcher.cs/#L44">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher__ctor_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.#ctor*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher__ctor_Stratis_Bitcoin_Features_Consensus_CoinViews_ICoinView_NBitcoin_ChainIndexer_ILoggerFactory_Stratis_Bitcoin_AsyncWork_IAsyncProvider_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.#ctor(Stratis.Bitcoin.Features.Consensus.CoinViews.ICoinView,NBitcoin.ChainIndexer,ILoggerFactory,Stratis.Bitcoin.AsyncWork.IAsyncProvider)">CoinviewPrefetcher(ICoinView, ChainIndexer, ILoggerFactory, IAsyncProvider)</h4>
@@ -143,7 +146,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher_Dispose.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinviewPrefetcher.cs/#L118">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinviewPrefetcher.cs/#L129">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher_Dispose_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.Dispose*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher_Dispose" data-uid="Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.Dispose">Dispose()</h4>
@@ -158,12 +161,14 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher_Prefetch_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.Prefetch(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinviewPrefetcher.cs/#L113">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinviewPrefetcher.cs/#L124">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher_Prefetch_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.Prefetch*"></a>
   <h4 id="Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher_Prefetch_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.Prefetch(NBitcoin.ChainedHeader)">Prefetch(ChainedHeader)</h4>
-  <div class="markdown level1 summary"><p>Pre-fetches UTXOs for a block and some blocks with higher height.
-Pre-fetching is done on the background.</p>
+  <div class="markdown level1 summary"><p>Pre-fetches UTXOs for a block and some blocks with higher height.</p>
+<p>
+Pre-fetching is done in the background.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -199,7 +204,7 @@ Pre-fetching is done on the background.</p>
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Consensus_CoinviewPrefetcher.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinviewPrefetcher.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Consensus/CoinviewPrefetcher.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

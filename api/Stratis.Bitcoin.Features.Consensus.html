@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.Features.Consensus
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,7 +78,10 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.CoinviewPrefetcher.html">CoinviewPrefetcher</a></h4>
-      <section><p>Fetches coins for blocks that are likely to be validated in the near future to speed-up full validation.</p>
+      <section><p>Pre-fetches coins (UTXOs) for blocks that are likely to be validated in the near future.</p>
+<p>
+This speeds up full block validation.
+</p>
 </section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.ConsensusController.html">ConsensusController</a></h4>
       <section><p>A <a class="xref" href="Stratis.Bitcoin.Controllers.FeatureController.html">FeatureController</a> that provides API and RPC methods from the consensus loop.</p>
@@ -91,10 +94,6 @@
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNodeBuilderConsensusExtension.html">FullNodeBuilderConsensusExtension</a></h4>
       <section><p>A class providing extension methods for <a class="xref" href="Stratis.Bitcoin.Builder.IFullNodeBuilder.html">IFullNodeBuilder</a>.</p>
 </section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNodeBuilderConsensusExtension.PosConsensusRulesRegistration.html">FullNodeBuilderConsensusExtension.PosConsensusRulesRegistration</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.FullNodeBuilderConsensusExtension.PowConsensusRulesRegistration.html">FullNodeBuilderConsensusExtension.PowConsensusRulesRegistration</a></h4>
-      <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.PosBlockValidator.html">PosBlockValidator</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.Consensus.PosConsensusFeature.html">PosConsensusFeature</a></h4>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WalletRPCController
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -320,20 +320,20 @@ Uses the first wallet and account.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetTransactionAsync_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetTransactionAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetTransaction_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetTransaction(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L242">View Source</a>
   </span>
-  <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetTransactionAsync_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetTransactionAsync*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetTransactionAsync_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetTransactionAsync(System.String)">GetTransactionAsync(String)</h4>
+  <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetTransaction_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetTransaction*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetTransaction_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetTransaction(System.String)">GetTransaction(String)</h4>
   <div class="markdown level1 summary"><p>RPC method to return transaction info from the wallet. Will only work fully if 'txindex' is set.
 Uses the default wallet if specified, or the first wallet found.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;GetTransactionModel&gt; GetTransactionAsync(string txid)</code></pre>
+    <pre><code class="lang-csharp hljs">public GetTransactionModel GetTransaction(string txid)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -363,7 +363,7 @@ Uses the default wallet if specified, or the first wallet found.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.Models.GetTransactionModel.html">GetTransactionModel</a>&gt;</td>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Models.GetTransactionModel.html">GetTransactionModel</a></td>
         <td><p>Transaction information.</p>
 </td>
       </tr>

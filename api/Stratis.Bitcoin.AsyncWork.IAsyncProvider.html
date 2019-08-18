@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IAsyncProvider
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,6 +81,43 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IAsyncProvider</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_Signals.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.Signals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L128">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_Signals_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.Signals*"></a>
+  <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_Signals" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.Signals">Signals</h4>
+  <div class="markdown level1 summary"><p>temporary hack to expose signals to most of the components (every component currently using asyncprovider), while we decide if we should introduce a component
+that references common services/components used almost in every other features.
+This has to be removed once the &quot;ICoreComponents&quot; has been created and injected everywhere or when we decide that we still have to inject single services where needed.
+In favor of ICoreComponents, everytime we need a new core service around, we spend lot of time refactoring every test and many legacy component.
+Having a single entry point for COMMON SERVICES allows us to speed up changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISignals Signals { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Signals.ISignals.html">ISignals</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -88,7 +125,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAndRunAsyncDelegateDequeuer__1_System_String_Func___0_CancellationToken_Task__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAndRunAsyncDelegateDequeuer%60%601(System.String%2CFunc%7B%60%600%2CCancellationToken%2CTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L25">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L26">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAndRunAsyncDelegateDequeuer_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAndRunAsyncDelegateDequeuer*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAndRunAsyncDelegateDequeuer__1_System_String_Func___0_CancellationToken_Task__" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAndRunAsyncDelegateDequeuer``1(System.String,Func{``0,CancellationToken,Task})">CreateAndRunAsyncDelegateDequeuer&lt;T&gt;(String, Func&lt;T, CancellationToken, Task&gt;)</h4>
@@ -159,7 +196,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAndRunAsyncLoop_System_String_Func_CancellationToken_Task__CancellationToken_System_Nullable_TimeSpan__System_Nullable_TimeSpan__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAndRunAsyncLoop(System.String%2CFunc%7BCancellationToken%2CTask%7D%2CCancellationToken%2CSystem.Nullable%7BTimeSpan%7D%2CSystem.Nullable%7BTimeSpan%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L38">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L39">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAndRunAsyncLoop_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAndRunAsyncLoop*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAndRunAsyncLoop_System_String_Func_CancellationToken_Task__CancellationToken_System_Nullable_TimeSpan__System_Nullable_TimeSpan__" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAndRunAsyncLoop(System.String,Func{CancellationToken,Task},CancellationToken,System.Nullable{TimeSpan},System.Nullable{TimeSpan})">CreateAndRunAsyncLoop(String, Func&lt;CancellationToken, Task&gt;, CancellationToken, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;)</h4>
@@ -234,7 +271,7 @@ If this is null, the task is repeated every 1 second by default.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAndRunAsyncLoopUntil_System_String_CancellationToken_Func_System_Boolean__Action_Action_Exception__System_Nullable_TimeSpan__System_Nullable_TimeSpan__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAndRunAsyncLoopUntil(System.String%2CCancellationToken%2CFunc%7BSystem.Boolean%7D%2CAction%2CAction%7BException%7D%2CSystem.Nullable%7BTimeSpan%7D%2CSystem.Nullable%7BTimeSpan%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L53">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L54">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAndRunAsyncLoopUntil_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAndRunAsyncLoopUntil*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAndRunAsyncLoopUntil_System_String_CancellationToken_Func_System_Boolean__Action_Action_Exception__System_Nullable_TimeSpan__System_Nullable_TimeSpan__" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAndRunAsyncLoopUntil(System.String,CancellationToken,Func{System.Boolean},Action,Action{Exception},System.Nullable{TimeSpan},System.Nullable{TimeSpan})">CreateAndRunAsyncLoopUntil(String, CancellationToken, Func&lt;Boolean&gt;, Action, Action&lt;Exception&gt;, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;)</h4>
@@ -321,7 +358,7 @@ If this is null, the task is repeated every 1 second by default.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAsyncQueue__1.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAsyncQueue%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L16">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L17">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAsyncQueue_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAsyncQueue*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_CreateAsyncQueue__1" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.CreateAsyncQueue``1">CreateAsyncQueue&lt;T&gt;()</h4>
@@ -368,7 +405,7 @@ If this is null, the task is repeated every 1 second by default.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_GetAll.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.GetAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L123">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L133">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_GetAll_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.GetAll*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_GetAll" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.GetAll">GetAll()</h4>
@@ -399,7 +436,7 @@ If this is null, the task is repeated every 1 second by default.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_GetStatistics_System_Boolean_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.GetStatistics(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L118">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L119">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_GetStatistics_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.GetStatistics*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_GetStatistics_System_Boolean_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.GetStatistics(System.Boolean)">GetStatistics(Boolean)</h4>
@@ -448,7 +485,7 @@ If this is null, the task is repeated every 1 second by default.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsAsyncDelegateDequeuerRunning_Stratis_Bitcoin_AsyncWork_IAsyncDelegate_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsAsyncDelegateDequeuerRunning(Stratis.Bitcoin.AsyncWork.IAsyncDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L100">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L101">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsAsyncDelegateDequeuerRunning_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsAsyncDelegateDequeuerRunning*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsAsyncDelegateDequeuerRunning_Stratis_Bitcoin_AsyncWork_IAsyncDelegate_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsAsyncDelegateDequeuerRunning(Stratis.Bitcoin.AsyncWork.IAsyncDelegate)">IsAsyncDelegateDequeuerRunning(IAsyncDelegate)</h4>
@@ -503,7 +540,7 @@ state can be either of type <a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsy
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsAsyncDelegateDequeuerRunning_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsAsyncDelegateDequeuerRunning(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L74">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L75">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsAsyncDelegateDequeuerRunning_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsAsyncDelegateDequeuerRunning*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsAsyncDelegateDequeuerRunning_System_String_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsAsyncDelegateDequeuerRunning(System.String)">IsAsyncDelegateDequeuerRunning(String)</h4>
@@ -556,7 +593,7 @@ state can be either of type <a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsy
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsAsyncLoopRunning_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsAsyncLoopRunning(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L86">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L87">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsAsyncLoopRunning_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsAsyncLoopRunning*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsAsyncLoopRunning_System_String_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsAsyncLoopRunning(System.String)">IsAsyncLoopRunning(String)</h4>
@@ -609,7 +646,7 @@ state can be either of type <a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsy
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsRegisteredTaskRunning_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsRegisteredTaskRunning(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L112">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L113">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsRegisteredTaskRunning_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsRegisteredTaskRunning*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_IsRegisteredTaskRunning_System_String_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.IsRegisteredTaskRunning(System.String)">IsRegisteredTaskRunning(String)</h4>
@@ -662,7 +699,7 @@ state can be either of type <a class="xref" href="Stratis.Bitcoin.AsyncWork.IAsy
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider_RegisterTask_System_String_Task_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider.RegisterTask(System.String%2CTask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L62">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L63">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_RegisterTask_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.RegisterTask*"></a>
   <h4 id="Stratis_Bitcoin_AsyncWork_IAsyncProvider_RegisterTask_System_String_Task_" data-uid="Stratis.Bitcoin.AsyncWork.IAsyncProvider.RegisterTask(System.String,Task)">RegisterTask(String, Task)</h4>
@@ -725,7 +762,7 @@ It doesn't perform any schedule on the task, it's all up to the caller to handle
                     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_AsyncWork_IAsyncProvider.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.AsyncWork.IAsyncProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin/AsyncWork/IAsyncProvider.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
