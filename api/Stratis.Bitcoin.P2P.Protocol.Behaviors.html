@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Stratis.Bitcoin.P2P.Protocol.Behaviors
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.45.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,6 +77,11 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.EnforcePeerVersionCheckBehavior.html">EnforcePeerVersionCheckBehavior</a></h4>
+      <section><p>Sets the minimum supported client version <see cref="!:this.NodeSettings.MinProtocolVersion"></see> to <see cref="!:this.Network.Consensus.Options.EnforcedMinProtocolVersion"></see>
+based on the predefined block height <see cref="!:this.Network.Consensus.Options.EnforceMinProtocolVersionAtBlockHeight"></see>.
+Once the new minimum supported client version is changed all existing peer connections will be dropped upon the first received message from outdated client.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.NetworkPeerBehavior.html">NetworkPeerBehavior</a></h4>
       <section></section>
       <h4><a class="xref" href="Stratis.Bitcoin.P2P.Protocol.Behaviors.PingPongBehavior.html">PingPongBehavior</a></h4>

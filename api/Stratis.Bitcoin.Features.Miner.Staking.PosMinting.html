@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PosMinting
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.45.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -475,19 +475,19 @@ to generate a block anyway.
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Staking_PosMinting_CreateCoinstakeAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__NBitcoin_Block_NBitcoin_ChainedHeader_System_Int64_System_Int64_Stratis_Bitcoin_Features_Miner_Staking_CoinstakeContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Staking.PosMinting.CreateCoinstakeAsync(List%7BStratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription%7D%2CNBitcoin.Block%2CNBitcoin.ChainedHeader%2CSystem.Int64%2CSystem.Int64%2CStratis.Bitcoin.Features.Miner.Staking.CoinstakeContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Staking_PosMinting_CreateCoinstakeAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__Stratis_Bitcoin_Mining_BlockTemplate_NBitcoin_ChainedHeader_System_Int64_System_Int64_Stratis_Bitcoin_Features_Miner_Staking_CoinstakeContext_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Staking.PosMinting.CreateCoinstakeAsync(List%7BStratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription%7D%2CStratis.Bitcoin.Mining.BlockTemplate%2CNBitcoin.ChainedHeader%2CSystem.Int64%2CSystem.Int64%2CStratis.Bitcoin.Features.Miner.Staking.CoinstakeContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L602">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L591">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_CreateCoinstakeAsync_" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.CreateCoinstakeAsync*"></a>
-  <h4 id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_CreateCoinstakeAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__NBitcoin_Block_NBitcoin_ChainedHeader_System_Int64_System_Int64_Stratis_Bitcoin_Features_Miner_Staking_CoinstakeContext_" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.CreateCoinstakeAsync(List{Stratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription},NBitcoin.Block,NBitcoin.ChainedHeader,System.Int64,System.Int64,Stratis.Bitcoin.Features.Miner.Staking.CoinstakeContext)">CreateCoinstakeAsync(List&lt;UtxoStakeDescription&gt;, Block, ChainedHeader, Int64, Int64, CoinstakeContext)</h4>
+  <h4 id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_CreateCoinstakeAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__Stratis_Bitcoin_Mining_BlockTemplate_NBitcoin_ChainedHeader_System_Int64_System_Int64_Stratis_Bitcoin_Features_Miner_Staking_CoinstakeContext_" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.CreateCoinstakeAsync(List{Stratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription},Stratis.Bitcoin.Mining.BlockTemplate,NBitcoin.ChainedHeader,System.Int64,System.Int64,Stratis.Bitcoin.Features.Miner.Staking.CoinstakeContext)">CreateCoinstakeAsync(List&lt;UtxoStakeDescription&gt;, BlockTemplate, ChainedHeader, Int64, Int64, CoinstakeContext)</h4>
   <div class="markdown level1 summary"><p>Creates a coinstake transaction with kernel that satisfies POS staking target.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; CreateCoinstakeAsync(List&lt;UtxoStakeDescription&gt; utxoStakeDescriptions, Block block, ChainedHeader chainTip, long searchInterval, long fees, CoinstakeContext coinstakeContext)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; CreateCoinstakeAsync(List&lt;UtxoStakeDescription&gt; utxoStakeDescriptions, BlockTemplate blockTemplate, ChainedHeader chainTip, long searchInterval, long fees, CoinstakeContext coinstakeContext)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -506,9 +506,9 @@ to generate a block anyway.
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="NBitcoin.Block.html">Block</a></td>
-        <td><span class="parametername">block</span></td>
-        <td><p>Template of the block that we are trying to mine.</p>
+        <td><a class="xref" href="Stratis.Bitcoin.Mining.BlockTemplate.html">BlockTemplate</a></td>
+        <td><span class="parametername">blockTemplate</span></td>
+        <td><p>Template of the block that we are trying to stake.</p>
 </td>
       </tr>
       <tr>
@@ -526,7 +526,7 @@ to generate a block anyway.
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">fees</span></td>
-        <td><p>Transaction fees from the transactions included in the block if we mine it.</p>
+        <td><p>Transaction fees from the transactions included in the block if we stake it.</p>
 </td>
       </tr>
       <tr>
@@ -615,7 +615,7 @@ Staking is attempted only if the node is fully synchronized and connected to the
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetDifficulty_NBitcoin_ChainedHeader_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetDifficulty(NBitcoin.ChainedHeader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L1037">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L1041">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetDifficulty_" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetDifficulty*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetDifficulty_NBitcoin_ChainedHeader_" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetDifficulty(NBitcoin.ChainedHeader)">GetDifficulty(ChainedHeader)</h4>
@@ -669,7 +669,7 @@ Staking is attempted only if the node is fully synchronized and connected to the
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetGetStakingInfoModel.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetGetStakingInfoModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L1117">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L1121">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetGetStakingInfoModel_" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetGetStakingInfoModel*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetGetStakingInfoModel" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetGetStakingInfoModel">GetGetStakingInfoModel()</h4>
@@ -701,7 +701,7 @@ Staking is attempted only if the node is fully synchronized and connected to the
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetMatureBalanceAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetMatureBalanceAsync(List%7BStratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L924">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L928">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetMatureBalanceAsync_" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetMatureBalanceAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetMatureBalanceAsync_List_Stratis_Bitcoin_Features_Miner_Staking_UtxoStakeDescription__" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetMatureBalanceAsync(List{Stratis.Bitcoin.Features.Miner.Staking.UtxoStakeDescription})">GetMatureBalanceAsync(List&lt;UtxoStakeDescription&gt;)</h4>
@@ -751,7 +751,7 @@ Staking is attempted only if the node is fully synchronized and connected to the
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetNetworkWeight.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetNetworkWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L1078">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Miner/Staking/PosMinting.cs/#L1082">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetNetworkWeight_" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetNetworkWeight*"></a>
   <h4 id="Stratis_Bitcoin_Features_Miner_Staking_PosMinting_GetNetworkWeight" data-uid="Stratis.Bitcoin.Features.Miner.Staking.PosMinting.GetNetworkWeight">GetNetworkWeight()</h4>
