@@ -87,6 +87,7 @@
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Rules.CheckRateLimitMempoolRule.html">CheckRateLimitMempoolRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Rules.CheckReplacementMempoolRule.html">CheckReplacementMempoolRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Rules.CheckSigOpsMempoolRule.html">CheckSigOpsMempoolRule</a></div>
+      <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Rules.CheckTxOutDustRule.html">CheckTxOutDustRule</a></div>
       <div class="level2"><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Rules.CreateMempoolEntryMempoolRule.html">CreateMempoolEntryMempoolRule</a></div>
   </div>
   <div classs="implements">
@@ -97,7 +98,7 @@
   <h6><strong>Assembly</strong>: Stratis.Bitcoin.Features.MemoryPool.dll</h6>
   <h5 id="Stratis_Bitcoin_Features_MemoryPool_MempoolRule_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MempoolRule : object, IMempoolRule</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class MempoolRule : object, IMempoolRule</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -114,7 +115,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MempoolRule(Network network, ITxMempool mempool, MempoolSettings settings, ChainIndexer chainIndexer, ILoggerFactory loggerFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">protected MempoolRule(Network network, ITxMempool mempool, MempoolSettings settings, ChainIndexer chainIndexer, ILoggerFactory loggerFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -317,7 +318,7 @@ If it doesn't, a <see cref="!:ConsensusErrorException"></see> will be thrown.</p
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void CheckTransaction(MempoolValidationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void CheckTransaction(MempoolValidationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

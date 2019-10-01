@@ -1617,7 +1617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NBitcoin.IBitcoinSerializable.html",
-          "hash": "3VhlW9hqAo/loMutWsFfRA=="
+          "hash": "NG/bSkEPYnlXO0yyVvo6jw=="
         }
       },
       "is_incremental": false,
@@ -2637,7 +2637,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NBitcoin.Policy.StandardTransactionPolicy.html",
-          "hash": "7JaHQlXYe3nhS/376fNd4Q=="
+          "hash": "UuGhxEX1sPUVrO/SaSMMVA=="
         }
       },
       "is_incremental": false,
@@ -2733,7 +2733,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NBitcoin.PosTransaction.html",
-          "hash": "nx5CZH4DSTQd16ilG16U4g=="
+          "hash": "XITVCh1ZpbW1atDheHzN4A=="
         }
       },
       "is_incremental": false,
@@ -3465,7 +3465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NBitcoin.Transaction.html",
-          "hash": "79w38X6stUY/HoRRao2fbA=="
+          "hash": "MiGugS76c1EIDFgiMrP4bQ=="
         }
       },
       "is_incremental": false,
@@ -4689,7 +4689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html",
-          "hash": "42yL86jFFuJIYjcHJcRX8w=="
+          "hash": "Iz/eGrczUorg7WauLuvvxQ=="
         }
       },
       "is_incremental": false,
@@ -4821,7 +4821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Builder.IFullNodeBuilder.html",
-          "hash": "1BKgMlm97S0rDCDTvZwkGw=="
+          "hash": "VOziScyfEDGjf1XbwMVKBA=="
         }
       },
       "is_incremental": false,
@@ -9237,7 +9237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.MempoolErrors.html",
-          "hash": "jHDFc83UUDFy2GGQef97Bg=="
+          "hash": "Xz2f2pX2wGtdC0oL6fG+yw=="
         }
       },
       "is_incremental": false,
@@ -9321,7 +9321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.MempoolRule.html",
-          "hash": "jO4wFFUvFgjG9iRRsraaAg=="
+          "hash": "YdYqv2cibwgUf7pmY2AacQ=="
         }
       },
       "is_incremental": false,
@@ -9497,6 +9497,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.Rules.CheckTxOutDustRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.Rules.CheckTxOutDustRule.html",
+          "hash": "vwC2f2wUBcaFxVKNnSfkLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.Rules.CreateMempoolEntryMempoolRule.yml",
       "output": {
         ".html": {
@@ -9513,7 +9525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.MemoryPool.Rules.html",
-          "hash": "5+cpSw1vbse3X/QErJ3n9g=="
+          "hash": "FFUZZ6GgUxj7jP6w3Y37GA=="
         }
       },
       "is_incremental": false,
@@ -13401,7 +13413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.SmartContractTransactionPolicy.html",
-          "hash": "c6AWN7BzpOfRCtmdevIYJw=="
+          "hash": "exrRvVY88KrIaGJCOXy7nA=="
         }
       },
       "is_incremental": false,
@@ -13473,7 +13485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.SmartContracts.Wallet.SmartContractTransactionService.html",
-          "hash": "Arj+duEEGg5Y9fSSjlnKhA=="
+          "hash": "5d5jUgmvzWAx1ijsfeSKzA=="
         }
       },
       "is_incremental": false,
@@ -14889,7 +14901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.TransactionBuildContext.html",
-          "hash": "2cTZwC1RyknHEVGJ7NuE+Q=="
+          "hash": "y1S39/fCiOM4viTjX+nUsw=="
         }
       },
       "is_incremental": false,
@@ -15069,7 +15081,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletTransactionHandler.html",
-          "hash": "y+QsPiDpJQeSEbYNEAOUgA=="
+          "hash": "5uoSMLZTOaj7t52tCx2E6A=="
         }
       },
       "is_incremental": false,
@@ -15693,7 +15705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.IntegrationTests.Common.EnvironmentMockUpHelpers.CoreNode.html",
-          "hash": "zcjz9/HRB6raNwnosykKMQ=="
+          "hash": "AWwUJGsHbiBoiPt6fN5Nrw=="
         }
       },
       "is_incremental": false,
@@ -17025,7 +17037,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Networks.BitcoinMain.html",
-          "hash": "YQr7RSEOVjoQv78JBJbYLA=="
+          "hash": "BNeFW1693vLW/7DYcuS6LQ=="
         }
       },
       "is_incremental": false,
@@ -17145,7 +17157,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Networks.StratisMain.html",
-          "hash": "umD6uwDoB4iox+5gUdXDTw=="
+          "hash": "4k+DsJCSiMTZVOpZR6EHMA=="
         }
       },
       "is_incremental": false,
@@ -20156,18 +20168,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.CirrusSingleCollateralRegTest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.CirrusSingleCollateralRegTest.html",
-          "hash": "SuHQF7rbTBQYBzn3UQ7hCw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.ContractExecutionTests.yml",
       "output": {
         ".html": {
@@ -20208,7 +20208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.NodeInitialisationTests.html",
-          "hash": "Z6WSBydEmmTmhsl8ESsW/g=="
+          "hash": "VMfjfzfNlVEXdWRyfEyvFQ=="
         }
       },
       "is_incremental": false,
@@ -20364,7 +20364,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Features.FederatedPeg.IntegrationTests.html",
-          "hash": "2PIPj5Lne/DiwrOFFaEvhA=="
+          "hash": "fZakc7BEHHmq1eIw2jlBnw=="
         }
       },
       "is_incremental": false,
@@ -21428,6 +21428,270 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.DBConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.DBConnection.html",
+          "hash": "RGG8SC8l0c6AV9L51AUExw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.Extensions.ChainedHeaderExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.Extensions.ChainedHeaderExt.html",
+          "hash": "nwyHqQSxBgaVdmaNZQ0jag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.Extensions.html",
+          "hash": "kh3bfH75I+3HSdnzYhGtyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.AddressIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.AddressIdentifier.html",
+          "hash": "/CVf4bCNUv6rf2e7W0Z4kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IScriptDestinationReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IScriptDestinationReader.html",
+          "hash": "t7//RoeprO4ijHGtFQCJ3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.ITopUpTracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.ITopUpTracker.html",
+          "hash": "xceS84+r8Yu2PskL/yRGgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.ITransactionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.ITransactionContext.html",
+          "hash": "aQ9yZOVNGXy/elOtfrYwdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.ITransactionsToLists.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.ITransactionsToLists.html",
+          "hash": "iBCuPcsRWQQoJNC5R47ntA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IWalletAddressLookup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IWalletAddressLookup.html",
+          "hash": "Wdo1qxyKEqAEr+jS8l2ehQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IWalletAddressReadOnlyLookup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IWalletAddressReadOnlyLookup.html",
+          "hash": "hGfVem3R/MIKoxpitHOdwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IWalletTransactionLookup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IWalletTransactionLookup.html",
+          "hash": "1vA11JiYXR+OWXrg7AJX/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IWalletTransactionReadOnlyLookup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.IWalletTransactionReadOnlyLookup.html",
+          "hash": "69mAgxsR2UOaa+eXxG8ayA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.ScriptDestinationReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.ScriptDestinationReader.html",
+          "hash": "1xfrL89c3TVmA5HySfBI1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.TransactionsToListsBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.TransactionsToListsBase.html",
+          "hash": "Xj5badhrE9H9Gh4dvmCmEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.External.html",
+          "hash": "M2SHV3zYIltQk2yG+sHTvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.FullNodeBuilderSQLiteWalletRepositoryExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.FullNodeBuilderSQLiteWalletRepositoryExtension.html",
+          "hash": "b7if+ufDy9FUXQPz8deCEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.IWalletRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.IWalletRepository.html",
+          "hash": "XszUuhE1OgJ3YpBOkzyVoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.SQLiteWalletRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.SQLiteWalletRepository.html",
+          "hash": "M6O7E8FzgQVvpGhP1qIAMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.SQLiteWalletRepositoryFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.SQLiteWalletRepositoryFeature.html",
+          "hash": "mBW8W+EqJBI31UkWcemScg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.TransactionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.TransactionContext.html",
+          "hash": "Fm7Qr4T801r9qKY1mp121Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.TransactionsToLists.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.TransactionsToLists.html",
+          "hash": "oYDlCQymTUQKxC3i0JWa8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Features.SQLiteWalletRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Features.SQLiteWalletRepository.html",
+          "hash": "H6MsiNQk2cLabsXDSduJSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Sidechains.Networks.CirrusMain.yml",
       "output": {
         ".html": {
@@ -21456,7 +21720,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Sidechains.Networks.CirrusRegTest.html",
-          "hash": "7k4coya4Ib6EcshRYlStfw=="
+          "hash": "iERUbQOd7W3LPtqh9NQfwg=="
         }
       },
       "is_incremental": false,
@@ -24768,7 +25032,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.ContractInternalTransferTests-1.html",
-          "hash": "33QSz0PxJ+wRJWPEtAvx7w=="
+          "hash": "+Dsv5/jaixqdHQb4r9qFfg=="
         }
       },
       "is_incremental": false,
@@ -24816,7 +25080,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoAContractInternalTransferTests.html",
-          "hash": "tVWtTbxWGU6imQwv9tH5FQ=="
+          "hash": "0yIhjCKKaLKYYaU7ntlACA=="
         }
       },
       "is_incremental": false,
@@ -24972,7 +25236,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.SmartContracts.IntegrationTests.PoWContractInternalTransferTests.html",
-          "hash": "nXnWgxVKYTwbg7cBdOA3fQ=="
+          "hash": "2sB9pLYQjoIdtk+8F6yGWA=="
         }
       },
       "is_incremental": false,
@@ -25356,7 +25620,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ktXjhcZOzbt0wGXs3/WHNA=="
+          "hash": "bmUn7e9UFiOj68OVqlg4ew=="
         }
       },
       "is_incremental": false,
@@ -25444,16 +25708,11 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 2111,
-          "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
@@ -25463,11 +25722,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2133,
           "skipped_file_count": 0
         }
       }

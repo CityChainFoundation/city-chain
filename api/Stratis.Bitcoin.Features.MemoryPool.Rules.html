@@ -113,6 +113,9 @@ The new transaction must have sufficient fees to pay for it's bandwidth.</p>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Rules.CheckSigOpsMempoolRule.html">CheckSigOpsMempoolRule</a></h4>
       <section><p>Check that the transaction doesn't have an excessive number of sigops.</p>
 </section>
+      <h4><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Rules.CheckTxOutDustRule.html">CheckTxOutDustRule</a></h4>
+      <section><p>This rule ensures that the transaction does not contain any outputs which are considered dust.</p>
+</section>
       <h4><a class="xref" href="Stratis.Bitcoin.Features.MemoryPool.Rules.CreateMempoolEntryMempoolRule.html">CreateMempoolEntryMempoolRule</a></h4>
       <section><p>Creates a memory pool entry in the validation context.
 Validates the transactions can be mined, and the pay to script hashs are standard.
