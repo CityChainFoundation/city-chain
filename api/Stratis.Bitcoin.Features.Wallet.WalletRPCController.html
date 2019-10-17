@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WalletRPCController
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.46.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -208,7 +208,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetBalance_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetBalance(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L224">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L254">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetBalance_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetBalance*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetBalance_System_String_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetBalance(System.String,System.Int32)">GetBalance(String, Int32)</h4>
@@ -276,7 +276,7 @@ Uses the first wallet and account.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NewAddressModel GetNewAddress(string account, string addressType)</code></pre>
+    <pre><code class="lang-csharp hljs">public NewAddressModel GetNewAddress(string account = &quot;&quot;, string addressType = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -323,7 +323,7 @@ Uses the first wallet and account.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetTransaction_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetTransaction(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L243">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L348">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetTransaction_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetTransaction*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetTransaction_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetTransaction(System.String)">GetTransaction(String)</h4>
@@ -371,6 +371,63 @@ Uses the default wallet if specified, or the first wallet found.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetUnusedAddress_System_String_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetUnusedAddress(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L226">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetUnusedAddress_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetUnusedAddress*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetUnusedAddress_System_String_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetUnusedAddress(System.String,System.String)">GetUnusedAddress(String, String)</h4>
+  <div class="markdown level1 summary"><p>RPC method that gets the last unused address for receiving payments.
+Uses the first wallet and account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NewAddressModel GetUnusedAddress(string account, string addressType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">account</span></td>
+        <td><p>Parameter is deprecated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">addressType</span></td>
+        <td><p>Address type, currently only 'legacy' is supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stratis.Bitcoin.Features.Wallet.Models.NewAddressModel.html">NewAddressModel</a></td>
+        <td><p>The new address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_GetWalletInfo.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.GetWalletInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -404,7 +461,7 @@ Uses the default wallet if specified, or the first wallet found.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_ListAddressGroupings.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.ListAddressGroupings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L382">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L487">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_ListAddressGroupings_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.ListAddressGroupings*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_ListAddressGroupings" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.ListAddressGroupings">ListAddressGroupings()</h4>
@@ -431,10 +488,62 @@ Uses the default wallet if specified, or the first wallet found.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_ListSinceBlockAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.ListSinceBlockAsync(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L267">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_ListSinceBlockAsync_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.ListSinceBlockAsync*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_ListSinceBlockAsync_System_String_System_Int32_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.ListSinceBlockAsync(System.String,System.Int32)">ListSinceBlockAsync(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListSinceBlockModel&gt; ListSinceBlockAsync(string blockHash, int targetConfirmations = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blockHash</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetConfirmations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.Models.ListSinceBlockModel.html">ListSinceBlockModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_ListUnspent_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.ListUnspent(System.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L584">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L689">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_ListUnspent_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.ListUnspent*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_ListUnspent_System_Int32_System_Int32_System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.ListUnspent(System.Int32,System.Int32,System.String)">ListUnspent(Int32, Int32, String)</h4>
@@ -521,7 +630,7 @@ Uses the default wallet if specified, or the first wallet found.</p>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_WalletRPCController_SendManyAsync_System_String_System_String_System_Int32_System_String_System_String_System_Boolean_System_Nullable_System_Int32__System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.WalletRPCController.SendManyAsync(System.String%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L624">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/WalletRPCController.cs/#L729">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_SendManyAsync_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.SendManyAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_WalletRPCController_SendManyAsync_System_String_System_String_System_Int32_System_String_System_String_System_Boolean_System_Nullable_System_Int32__System_String_" data-uid="Stratis.Bitcoin.Features.Wallet.WalletRPCController.SendManyAsync(System.String,System.String,System.Int32,System.String,System.String,System.Boolean,System.Nullable{System.Int32},System.String)">SendManyAsync(String, String, Int32, String, String, Boolean, Nullable&lt;Int32&gt;, String)</h4>

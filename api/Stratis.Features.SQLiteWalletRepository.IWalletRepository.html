@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IWalletRepository
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.46.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -613,7 +613,7 @@ IScriptAddressReader (or IScriptDestinationReader)</li>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">(Money totalAmount, Money confirmedAmount, Money spendableAmount)GetAccountBalance(WalletAccountReference walletAccountReference, int currentChainHeight, int confirmations = 0, int? coinBaseMaturity = null)</code></pre>
+    <pre><code class="lang-csharp hljs">(Money totalAmount, Money confirmedAmount, Money spendableAmount) GetAccountBalance(WalletAccountReference walletAccountReference, int currentChainHeight, int confirmations = 0, int? coinBaseMaturity = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1730,7 +1730,7 @@ address containing transactions.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">(bool, IEnumerable&lt;(uint256, DateTimeOffset)&gt;)RewindWallet(string walletName, ChainedHeader lastBlockSynced)</code></pre>
+    <pre><code class="lang-csharp hljs">(bool, IEnumerable&lt;(uint256, DateTimeOffset)&gt;) RewindWallet(string walletName, ChainedHeader lastBlockSynced)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
