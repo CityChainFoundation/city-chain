@@ -4689,7 +4689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html",
-          "hash": "iwPyjPkGRTMPGoYRoAdGEg=="
+          "hash": "eU/nds9WnDyCIjT8+JzTBw=="
         }
       },
       "is_incremental": false,
@@ -4821,7 +4821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Builder.IFullNodeBuilder.html",
-          "hash": "CQRXLXR9UIcMQ09xZZGMBA=="
+          "hash": "LhCsrx/UH6td5yY3Konb9A=="
         }
       },
       "is_incremental": false,
@@ -6634,6 +6634,186 @@
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.EventBus.html",
           "hash": "tAaxqA+KBbb0QMCu05f01g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeature.html",
+          "hash": "BdyqGDZpkDeaYa86n74eSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeatureExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeatureExtension.html",
+          "hash": "v0CXtfszmJ3hbdJCHCjZ4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeatureOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeatureOptions.html",
+          "hash": "nzo/i6VRq63RGPZUeLR13Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ApiSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.ApiSettings.html",
+          "hash": "h6pJyEeFCOosVX8xoB66pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.CertificateStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.CertificateStore.html",
+          "hash": "CTcED/9uAWFWEDFAu4ECLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ConfigureSwaggerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.ConfigureSwaggerOptions.html",
+          "hash": "26ZTnUwNyEkhWK23CSAFTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ICertificateStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.ICertificateStore.html",
+          "hash": "eAWIG15xY0YY9IxFxO2L0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.KeepaliveActionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.KeepaliveActionFilter.html",
+          "hash": "UY2i6J8Ko5ONdy/N5OO8Dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.LoggingActionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.LoggingActionFilter.html",
+          "hash": "eYwx995Mszv3KkHGeYkJug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.MvcBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.MvcBuilderExtensions.html",
+          "hash": "RL5qAa+xRWARMOfN6t7/UA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.NoCacheMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.NoCacheMiddleware.html",
+          "hash": "TrOVQ8Dx0jAGU2G/LfwvnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.Program.html",
+          "hash": "Jm8i0ekr9MNJhs8MEbev5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.Startup.html",
+          "hash": "utXFNX/g4Tm6VTLyMX3Kyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.SwaggerDefaultValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.SwaggerDefaultValues.html",
+          "hash": "hxQuQ5rzsSUuye0UJwlMpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Api.html",
+          "hash": "Eu7QTF/oRA3MnVMo3Dht7Q=="
         }
       },
       "is_incremental": false,
@@ -25524,7 +25704,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "5Gz5E1/cshrMfIiCxGbjKA=="
+          "hash": "ymvdj0EPgHx5VtGrrny8hQ=="
         }
       },
       "is_incremental": false,
@@ -25619,16 +25799,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2140,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 2125,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
