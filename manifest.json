@@ -5,6 +5,42 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Blockcore.Features.WalletNotify.FullNodeBuilderWalletNotifyExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blockcore.Features.WalletNotify.FullNodeBuilderWalletNotifyExtension.html",
+          "hash": "Q1CUiCdvRyb6nVUYNtfaaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blockcore.Features.WalletNotify.WalletNotifyFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blockcore.Features.WalletNotify.WalletNotifyFeature.html",
+          "hash": "eFTNZmW+UHt7l8l2lJbOaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blockcore.Features.WalletNotify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blockcore.Features.WalletNotify.html",
+          "hash": "a2cYxOJVnsgJu1thGDLx+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/City.Chain.NodeInfo.yml",
       "output": {
         ".html": {
@@ -33,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/City.Chain.Program.html",
-          "hash": "pRFVi84i14DCXhKPWPz9uQ=="
+          "hash": "jHGa84ASf1efLFDYDaN07A=="
         }
       },
       "is_incremental": false,
@@ -4689,7 +4725,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html",
-          "hash": "eU/nds9WnDyCIjT8+JzTBw=="
+          "hash": "8yjYnxr6zN8cYTCNzUzuyg=="
         }
       },
       "is_incremental": false,
@@ -4821,7 +4857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Builder.IFullNodeBuilder.html",
-          "hash": "LhCsrx/UH6td5yY3Konb9A=="
+          "hash": "WbIBYR4eEfUpGZ2tu+WrGA=="
         }
       },
       "is_incremental": false,
@@ -6549,7 +6585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.EventBus.EventBase.html",
-          "hash": "XaNRwv/jn7fW2ZUT8vZhyA=="
+          "hash": "APu8N4QNJFCpF0tsoKF4Yw=="
         }
       },
       "is_incremental": false,
@@ -7449,7 +7485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.ColdStaking.ColdStakingManager.html",
-          "hash": "I5Ed0zZo0EDeEClvt6D2Pg=="
+          "hash": "arXd4Yn8ZCi4oz30TQRmDQ=="
         }
       },
       "is_incremental": false,
@@ -13877,6 +13913,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Wallet.Events.TransactionFound.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Events.TransactionFound.html",
+          "hash": "cZMe5J+ILFKqICcTs8ipnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stratis.Bitcoin.Features.Wallet.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Events.html",
+          "hash": "WfmIFezcLwqfEzG1i0DbDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stratis.Bitcoin.Features.Wallet.FeeParser.yml",
       "output": {
         ".html": {
@@ -15129,7 +15189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletManager.html",
-          "hash": "xXZoGnN4hbXovWOMoqARoA=="
+          "hash": "b/06kuo7/IioqnfiDYrJmg=="
         }
       },
       "is_incremental": false,
@@ -25704,7 +25764,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ymvdj0EPgHx5VtGrrny8hQ=="
+          "hash": "moz9Ij6h/uHh1c99iAtNVw=="
         }
       },
       "is_incremental": false,
@@ -25792,9 +25852,9 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
@@ -25805,17 +25865,17 @@
           "total_file_count": 3,
           "skipped_file_count": 0
         },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2140,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 2145,
           "skipped_file_count": 0
         }
       }
