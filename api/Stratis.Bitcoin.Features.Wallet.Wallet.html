@@ -742,7 +742,7 @@ According to BIP44, an account at index (i) can only be created when the account
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Wallet_GetAddress_System_String_Func_Stratis_Bitcoin_Features_Wallet_HdAccount_System_Boolean__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Wallet.GetAddress(System.String%2CFunc%7BStratis.Bitcoin.Features.Wallet.HdAccount%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Wallet.cs/#L328">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Wallet.cs/#L344">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_Wallet_GetAddress_" data-uid="Stratis.Bitcoin.Features.Wallet.Wallet.GetAddress*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_Wallet_GetAddress_System_String_Func_Stratis_Bitcoin_Features_Wallet_HdAccount_System_Boolean__" data-uid="Stratis.Bitcoin.Features.Wallet.Wallet.GetAddress(System.String,Func{Stratis.Bitcoin.Features.Wallet.HdAccount,System.Boolean})">GetAddress(String, Func&lt;HdAccount, Boolean&gt;)</h4>
@@ -974,6 +974,69 @@ According to BIP44, an account at index (i) can only be created when the account
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Wallet_GetAllUnspentTransactions_System_Int32_System_Int32_Func_Stratis_Bitcoin_Features_Wallet_HdAccount_System_Boolean__.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Wallet.GetAllUnspentTransactions(System.Int32%2CSystem.Int32%2CFunc%7BStratis.Bitcoin.Features.Wallet.HdAccount%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Wallet.cs/#L297">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_Wallet_Wallet_GetAllUnspentTransactions_" data-uid="Stratis.Bitcoin.Features.Wallet.Wallet.GetAllUnspentTransactions*"></a>
+  <h4 id="Stratis_Bitcoin_Features_Wallet_Wallet_GetAllUnspentTransactions_System_Int32_System_Int32_Func_Stratis_Bitcoin_Features_Wallet_HdAccount_System_Boolean__" data-uid="Stratis.Bitcoin.Features.Wallet.Wallet.GetAllUnspentTransactions(System.Int32,System.Int32,Func{Stratis.Bitcoin.Features.Wallet.HdAccount,System.Boolean})">GetAllUnspentTransactions(Int32, Int32, Func&lt;HdAccount, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Lists all unspent transactions from all accounts in the wallet.
+This is distinct from the list of spendable transactions. A transaction can be unspent but not yet spendable due to coinbase/stake maturity, for example.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;UnspentOutputReference&gt; GetAllUnspentTransactions(int currentChainHeight, int confirmations = 0, Func&lt;HdAccount, bool&gt; accountFilter = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">currentChainHeight</span></td>
+        <td><p>Height of the current chain, used in calculating the number of confirmations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">confirmations</span></td>
+        <td><p>The number of confirmations required to consider a transaction spendable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.HdAccount.html">HdAccount</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">accountFilter</span></td>
+        <td><p>An optional filter for filtering the accounts being returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Stratis.Bitcoin.Features.Wallet.UnspentOutputReference.html">UnspentOutputReference</a>&gt;</td>
+        <td><p>A collection of spendable outputs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Wallet_GetExtendedPrivateKeyForAddress_System_String_Stratis_Bitcoin_Features_Wallet_HdAddress_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Wallet.GetExtendedPrivateKeyForAddress(System.String%2CStratis.Bitcoin.Features.Wallet.HdAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -1065,7 +1128,7 @@ According to BIP44, an account at index (i) can only be created when the account
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_Wallet_Wallet_GetSentTransactionFee_NBitcoin_uint256_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.Wallet.Wallet.GetSentTransactionFee(NBitcoin.uint256)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Wallet.cs/#L294">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.Wallet/Wallet.cs/#L310">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_Wallet_Wallet_GetSentTransactionFee_" data-uid="Stratis.Bitcoin.Features.Wallet.Wallet.GetSentTransactionFee*"></a>
   <h4 id="Stratis_Bitcoin_Features_Wallet_Wallet_GetSentTransactionFee_NBitcoin_uint256_" data-uid="Stratis.Bitcoin.Features.Wallet.Wallet.GetSentTransactionFee(NBitcoin.uint256)">GetSentTransactionFee(uint256)</h4>
