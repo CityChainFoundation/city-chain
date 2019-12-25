@@ -4629,7 +4629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Builder.Feature.FullNodeFeature.html",
-          "hash": "zHiryF5m2tOKA7Jt7MKbGw=="
+          "hash": "wHHzj5vxKAZi+G/prErSzw=="
         }
       },
       "is_incremental": false,
@@ -4761,7 +4761,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Builder.IFullNodeBuilder.html",
-          "hash": "HcyN2z7qPj5rdVT6+3sz+g=="
+          "hash": "bedJwJ2bQ4X6ed9IzM/DqA=="
         }
       },
       "is_incremental": false,
@@ -6574,186 +6574,6 @@
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.EventBus.html",
           "hash": "cUV20Qk7W3LnjiPTkbQT1A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeature.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeature.html",
-          "hash": "bg9TMW8v1SyL5QAC4fOrhw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeatureExtension.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeatureExtension.html",
-          "hash": "BXj2QVqJ+EeTBKIzCUBaMA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeatureOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.ApiFeatureOptions.html",
-          "hash": "Q4ijHZ09TV5kIAFlmoCuFw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ApiSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.ApiSettings.html",
-          "hash": "Tfpnrz6YhTzXdco7xg4HGg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.CertificateStore.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.CertificateStore.html",
-          "hash": "hZvdEZlEh3P0vy4Qr5QLYA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ConfigureSwaggerOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.ConfigureSwaggerOptions.html",
-          "hash": "xZ4CkvBePyaKb1rOFg3h+Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.ICertificateStore.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.ICertificateStore.html",
-          "hash": "tJFHA6Nb+cTCBH0c0XZKHg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.KeepaliveActionFilter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.KeepaliveActionFilter.html",
-          "hash": "Ir7cZ7SrpD+yUY3RyjI6BA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.LoggingActionFilter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.LoggingActionFilter.html",
-          "hash": "gW2kKcpQiQTrlAegUmwtkw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.MvcBuilderExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.MvcBuilderExtensions.html",
-          "hash": "mXfzoo7goipdQnc57Imj/Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.NoCacheMiddleware.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.NoCacheMiddleware.html",
-          "hash": "1NIAea/vHB+yUyrr4SWQlA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.Program.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.Program.html",
-          "hash": "YKqHzFnIpaCGSeHMPnR4Vw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.Startup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.Startup.html",
-          "hash": "kpryp5BxagNvn8Ndb/iozQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.SwaggerDefaultValues.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.SwaggerDefaultValues.html",
-          "hash": "2cS3D0vTHT89GbD5A9jQ2w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Stratis.Bitcoin.Features.Api.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Stratis.Bitcoin.Features.Api.html",
-          "hash": "qWz0DnpiZFoBYBm1BG/IMQ=="
         }
       },
       "is_incremental": false,
@@ -25620,7 +25440,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "lPG0MMTRCextuH5c3L2chA=="
+          "hash": "QxjrruobtyexePELqHhm0A=="
         }
       },
       "is_incremental": false,
@@ -25708,11 +25528,10 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 2118,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
@@ -25721,15 +25540,16 @@
           "total_file_count": 3,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 2133,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
