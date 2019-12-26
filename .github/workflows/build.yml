@@ -7,58 +7,93 @@ on:
 
 jobs:
   
-  buildAndUnitTest:
+  buildTestRelease:
 
     strategy:
       matrix:
         os: [ windows-latest, ubuntu-latest, macos-latest ]
         node_version: [12.x]
+        dotnet_version: ['2.1.607']
       fail-fast: false
 
     runs-on: ${{ matrix.os }}
     
     env:
+      PROJECT_NAME: 'City.Chain'
       SOLUTION_PATH: 'src/City.Chain.sln'
+      PROJECT_PATH: 'src/City.Chain/City.Chain.csproj'
       BUILD_CONFIGURATION: 'Release'
 
     steps:
 
     - uses: actions/checkout@v1
+      name: Checkout
 
-    - name: Set Node.js version ${{ matrix.node_version }}
+    - name: Setup Node.js (${{ matrix.node_version }})
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node_version }}
 
-    - name: Get Version
+    - name: Version
+      id: setversion
       run: |
-        echo node -p "require('./package.json').version"
-        echo "::set-env name=VERSION::1.0"
-        echo "::set-env name=VERSION1::$(node -p \"require('./package.json').version\")"
-#        echo "::set-env name=VERSION2::$(node -p '"'require('./package.json').version'"')"
-#        echo "::set-env VERSION=$(<.version/version.txt)
-      
-    - name: Setup .NET Core
+        echo "::set-env name=VERSION::$(npm run version --silent)"
+
+
+    # TODO: Improve this, doesn't need to be separate steps, can be simpliefied, did not have time bother learning that as well at this moment in human history.
+    - name: Configuration
+      if: matrix.os == 'windows-latest'
+      run: echo "::set-env name=RELEASE_CONFIGURATION::win-x64"
+
+    - name: Configuration
+      if: matrix.os == 'ubuntu-latest'
+      run: echo "::set-env name=RELEASE_CONFIGURATION::linux-x64"
+
+    - name: Configuration
+      if: matrix.os == 'macos-latest'
+      run: echo "::set-env name=RELEASE_CONFIGURATION::osx-x64"
+
+    - name: Variables
+      if: matrix.os == 'ubuntu-latest'
+      run: echo "::set-env name=RELEASE_NAME::${{env.PROJECT_NAME}}-${{env.VERSION}}-${{env.RELEASE_CONFIGURATION}}.tar.gz"
+
+    - name: Variables
+      if: matrix.os != 'ubuntu-latest'
+      run: echo "::set-env name=RELEASE_NAME::${{env.PROJECT_NAME}}-${{env.VERSION}}-${{env.RELEASE_CONFIGURATION}}.zip"
+
+    - name: Setup .NET Core (${{ matrix.dotnet_version }})
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '2.1.607' 
-                                    
+        dotnet-version: ${{ matrix.dotnet_version }}
+
     - name: Restore
       run: dotnet restore ${{env.SOLUTION_PATH}}
-      
-    - name: Build
-      run: dotnet build --configuration ${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_PATH}}
-      
-#    - name: Unit Test
-#      run: dotnet test -v=normal --no-build --filter FullyQualifiedName!~IntegrationTests --configuration ${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_PATH}}
 
-    - uses: "marvinpinto/action-automatic-releases@latest"
-      name: "Release"
+    - name: Build
+      run: dotnet build -c ${{env.BUILD_CONFIGURATION}} -r ${{env.RELEASE_CONFIGURATION}} -v m ${{env.SOLUTION_PATH}}
+
+    - name: Publish
+      run: dotnet publish -c ${{env.BUILD_CONFIGURATION}} -r ${{env.RELEASE_CONFIGURATION}} -v m -o ./bin/publish ${{env.PROJECT_PATH}}
+
+    - name: Package (Linux)
+      if: matrix.os == 'ubuntu-latest'
+      run: tar cfz ${{env.RELEASE_NAME}} ./src/${{env.PROJECT_NAME}}/bin/publish/
+
+    - name: Package (Win)
+      if: matrix.os == 'windows-latest'
+      run: Compress-Archive -Path .\src\${{env.PROJECT_NAME}}\bin\publish\ -DestinationPath .\${{env.RELEASE_NAME}}
+
+    - name: Package (Mac)
+      if: matrix.os == 'macos-latest'
+      run: zip -r ${{env.RELEASE_NAME}} ./src/${{env.PROJECT_NAME}}/bin/publish/
+
+    - name: Release
+      uses: sondreb/action-release@master
       with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
+        token: ${{ secrets.GITHUB_TOKEN }}
+        files: "${{env.RELEASE_NAME}}"
+        draft: true
         prerelease: true
-        title: "Development Build"
-        files: |
-          LICENSE
-          package.json
+        body: ''
+        name: "City Chain (Release ${{env.VERSION}})"
+        tag: v${{env.VERSION}}
