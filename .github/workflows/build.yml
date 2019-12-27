@@ -14,15 +14,12 @@ jobs:
         os: [ windows-latest, ubuntu-latest, macos-latest ]
         include:
           - os: windows-latest
-            zip: ""
             extension: ".zip"
             runtime: "win-x64"
           - os: ubuntu-latest
-            zip: "tar cfz -C"
             extension: ".tar.gz"
             runtime: "linux-x64"
           - os: macos-latest
-            zip: "zip -j -r"
             runtime: "osx-x64"
             extension: ".zip"
         node_version: [12.x]
@@ -51,7 +48,6 @@ jobs:
       run: |
         echo "::set-env name=VERSION::$(npm run version --silent)"
         echo "::set-env name=RELEASE_CONFIGURATION::${{ matrix.runtime }}"
-        echo "::set-env name=RELEASE_NAME::${{ env.PROJECT_NAME }}-${{ env.VERSION }}-${{ env.RELEASE_CONFIGURATION }}${{ matrix.extension }}"
 
     - name: Setup .NET Core (${{ matrix.dotnet_version }})
       uses: actions/setup-dotnet@v1
@@ -67,13 +63,22 @@ jobs:
     - name: Publish
       run: dotnet publish -c ${{env.BUILD_CONFIGURATION}} -r ${{env.RELEASE_CONFIGURATION}} -v m -o ./bin/publish ${{env.PROJECT_PATH}}
 
-    - name: Package (Linux/Mac)
-      if: matrix.os != 'windows-latest'
-      run: ${{ matrix.zip }} ${{env.RELEASE_NAME}} ./src/${{env.PROJECT_NAME}}/bin/publish/
+    - name: Package Name
+      run: echo "::set-env name=RELEASE_NAME::${{ env.PROJECT_NAME }}-${{ env.VERSION }}-${{ env.RELEASE_CONFIGURATION }}${{ matrix.extension }}"
+
+    - name: Package (Linux)
+      if: matrix.os == 'windows-latest'
+      run: |
+        cd ./src/${{env.PROJECT_NAME}}/bin/publish/
+        tar cvzf ~/${{env.RELEASE_NAME}} *
 
     - name: Package (Windows)
       if: matrix.os == 'windows-latest'
       run: Compress-Archive -Path .\src\${{env.PROJECT_NAME}}\bin\publish\* -DestinationPath .\${{env.RELEASE_NAME}}
+
+    - name: Package (Mac)
+      if: matrix.os == 'windows-latest'
+      run: zip -j -r ${{env.RELEASE_NAME}} ./src/${{env.PROJECT_NAME}}/bin/publish/
 
     - name: Release
       uses: sondreb/action-release@master
