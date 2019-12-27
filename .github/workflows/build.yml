@@ -12,6 +12,19 @@ jobs:
     strategy:
       matrix:
         os: [ windows-latest, ubuntu-latest, macos-latest ]
+        include:
+          - os: windows-latest
+            zip: ""
+            extension: ".zip"
+            runtime: "win-x64"
+          - os: ubuntu-latest
+            zip: "tar cfz -C"
+            extension: ".tar.gz"
+            runtime: "linux-x64"
+          - os: macos-latest
+            zip: "zip -j -r"
+            runtime: "osx-x64"
+            extension: ".zip"
         node_version: [12.x]
         dotnet_version: ['2.1.607']
       fail-fast: false
@@ -34,32 +47,11 @@ jobs:
       with:
         node-version: ${{ matrix.node_version }}
 
-    - name: Version
-      id: setversion
+    - name: Variables
       run: |
         echo "::set-env name=VERSION::$(npm run version --silent)"
-
-
-    # TODO: Improve this, doesn't need to be separate steps, can be simpliefied, did not have time bother learning that as well at this moment in human history.
-    - name: Configuration
-      if: matrix.os == 'windows-latest'
-      run: echo "::set-env name=RELEASE_CONFIGURATION::win-x64"
-
-    - name: Configuration
-      if: matrix.os == 'ubuntu-latest'
-      run: echo "::set-env name=RELEASE_CONFIGURATION::linux-x64"
-
-    - name: Configuration
-      if: matrix.os == 'macos-latest'
-      run: echo "::set-env name=RELEASE_CONFIGURATION::osx-x64"
-
-    - name: Variables
-      if: matrix.os == 'ubuntu-latest'
-      run: echo "::set-env name=RELEASE_NAME::${{env.PROJECT_NAME}}-${{env.VERSION}}-${{env.RELEASE_CONFIGURATION}}.tar.gz"
-
-    - name: Variables
-      if: matrix.os != 'ubuntu-latest'
-      run: echo "::set-env name=RELEASE_NAME::${{env.PROJECT_NAME}}-${{env.VERSION}}-${{env.RELEASE_CONFIGURATION}}.zip"
+        echo "::set-env name=RELEASE_CONFIGURATION::${{ matrix.runtime }}"
+        echo "::set-env name=RELEASE_NAME::${{ env.PROJECT_NAME }}-${{ env.VERSION }}-${{ env.RELEASE_CONFIGURATION }}${{ matrix.extension }}"
 
     - name: Setup .NET Core (${{ matrix.dotnet_version }})
       uses: actions/setup-dotnet@v1
@@ -75,17 +67,13 @@ jobs:
     - name: Publish
       run: dotnet publish -c ${{env.BUILD_CONFIGURATION}} -r ${{env.RELEASE_CONFIGURATION}} -v m -o ./bin/publish ${{env.PROJECT_PATH}}
 
-    - name: Package (Linux)
-      if: matrix.os == 'ubuntu-latest'
-      run: tar cfz ${{env.RELEASE_NAME}} -C ./src/${{env.PROJECT_NAME}}/bin/publish/
+    - name: Package (Linux/Mac)
+      if: matrix.os != 'windows-latest'
+      run: ${{ matrix.zip }} ${{env.RELEASE_NAME}} ./src/${{env.PROJECT_NAME}}/bin/publish/
 
-    - name: Package (Win)
+    - name: Package (Windows)
       if: matrix.os == 'windows-latest'
       run: Compress-Archive -Path .\src\${{env.PROJECT_NAME}}\bin\publish\* -DestinationPath .\${{env.RELEASE_NAME}}
-
-    - name: Package (Mac)
-      if: matrix.os == 'macos-latest'
-      run: zip -j -r ${{env.RELEASE_NAME}} ./src/${{env.PROJECT_NAME}}/bin/publish/
 
     - name: Release
       uses: sondreb/action-release@master
