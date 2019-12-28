@@ -73,7 +73,7 @@ jobs:
       run: |
         cd ./src/${{env.PROJECT_NAME}}/bin/publish/
         tar cvzf ${{env.RELEASE_NAME}} *
-        run: echo "::set-env name=RELEASE_PATH::./src/${{env.PROJECT_NAME}}/bin/publish/{{env.RELEASE_NAME}}"
+        run: echo "::set-env name=RELEASE_PATH::./src/${{env.PROJECT_NAME}}/bin/publish/${{env.RELEASE_NAME}}"
 
     - name: Package (Windows)
       if: matrix.os == 'windows-latest'
