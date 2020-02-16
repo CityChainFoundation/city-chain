@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CollateralFederationMember
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.48.0.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -102,18 +102,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember__ctor_PubKey_Money_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.%23ctor(PubKey%2CMoney%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember__ctor_PubKey_System_Boolean_Money_System_String_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.%23ctor(PubKey%2CSystem.Boolean%2CMoney%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L68">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember__ctor_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.#ctor*"></a>
-  <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember__ctor_PubKey_Money_System_String_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.#ctor(PubKey,Money,System.String)">CollateralFederationMember(PubKey, Money, String)</h4>
+  <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember__ctor_PubKey_System_Boolean_Money_System_String_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.#ctor(PubKey,System.Boolean,Money,System.String)">CollateralFederationMember(PubKey, Boolean, Money, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CollateralFederationMember(PubKey pubKey, Money collateralAmount, string collateralMainchainAddress)</code></pre>
+    <pre><code class="lang-csharp hljs">public CollateralFederationMember(PubKey pubKey, bool isMultiSigMember, Money collateralAmount, string collateralMainchainAddress)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,6 +128,11 @@
       <tr>
         <td><span class="xref">PubKey</span></td>
         <td><span class="parametername">pubKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isMultiSigMember</span></td>
         <td></td>
       </tr>
       <tr>
@@ -149,7 +154,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember_CollateralAmount.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.CollateralAmount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L75">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L79">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_CollateralAmount_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.CollateralAmount*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_CollateralAmount" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.CollateralAmount">CollateralAmount</h4>
@@ -180,7 +185,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember_CollateralMainchainAddress.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.CollateralMainchainAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L78">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L82">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_CollateralMainchainAddress_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.CollateralMainchainAddress*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_CollateralMainchainAddress" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.CollateralMainchainAddress">CollateralMainchainAddress</h4>
@@ -206,6 +211,37 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember_IsMultisigMember.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.IsMultisigMember%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L76">View Source</a>
+  </span>
+  <a id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_IsMultisigMember_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.IsMultisigMember*"></a>
+  <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_IsMultisigMember" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.IsMultisigMember">IsMultisigMember</h4>
+  <div class="markdown level1 summary"><p>Set if this is a multisig member.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMultisigMember { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -213,7 +249,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L81">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L85">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_Equals_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.Equals*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_Equals_System_Object_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.Equals(System.Object)">Equals(Object)</h4>
@@ -262,7 +298,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember_GetHashCode.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L91">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L95">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_GetHashCode_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.GetHashCode*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_GetHashCode" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.GetHashCode">GetHashCode()</h4>
@@ -294,7 +330,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember_ToString.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L113">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L117">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_ToString_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.ToString*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_ToString" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.ToString">ToString()</h4>
@@ -328,7 +364,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember_op_Equality_Stratis_Bitcoin_Features_PoA_CollateralFederationMember_Stratis_Bitcoin_Features_PoA_CollateralFederationMember_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.op_Equality(Stratis.Bitcoin.Features.PoA.CollateralFederationMember%2CStratis.Bitcoin.Features.PoA.CollateralFederationMember)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L96">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L100">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_op_Equality_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.op_Equality*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_op_Equality_Stratis_Bitcoin_Features_PoA_CollateralFederationMember_Stratis_Bitcoin_Features_PoA_CollateralFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.op_Equality(Stratis.Bitcoin.Features.PoA.CollateralFederationMember,Stratis.Bitcoin.Features.PoA.CollateralFederationMember)">Equality(CollateralFederationMember, CollateralFederationMember)</h4>
@@ -380,7 +416,7 @@
     <a href="https://github.com/CityChainFoundation/city-chain/new/master/docs-ref-overwrite/new?filename=Stratis_Bitcoin_Features_PoA_CollateralFederationMember_op_Inequality_Stratis_Bitcoin_Features_PoA_CollateralFederationMember_Stratis_Bitcoin_Features_PoA_CollateralFederationMember_.md&amp;value=---%0Auid%3A%20Stratis.Bitcoin.Features.PoA.CollateralFederationMember.op_Inequality(Stratis.Bitcoin.Features.PoA.CollateralFederationMember%2CStratis.Bitcoin.Features.PoA.CollateralFederationMember)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L107">View Source</a>
+    <a href="https://github.com/CityChainFoundation/city-chain/blob/master/src/Stratis.Bitcoin.Features.PoA/FederationMember.cs/#L111">View Source</a>
   </span>
   <a id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_op_Inequality_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.op_Inequality*"></a>
   <h4 id="Stratis_Bitcoin_Features_PoA_CollateralFederationMember_op_Inequality_Stratis_Bitcoin_Features_PoA_CollateralFederationMember_Stratis_Bitcoin_Features_PoA_CollateralFederationMember_" data-uid="Stratis.Bitcoin.Features.PoA.CollateralFederationMember.op_Inequality(Stratis.Bitcoin.Features.PoA.CollateralFederationMember,Stratis.Bitcoin.Features.PoA.CollateralFederationMember)">Inequality(CollateralFederationMember, CollateralFederationMember)</h4>
