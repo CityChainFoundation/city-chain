@@ -14,22 +14,13 @@ https://www.city-chain.org
 Blockchain for the Smart City Platform
 ----------------------------
 
-### Azure DevOps
-
-[1]: https://dev.azure.com/citychain/city-chain/_apis/build/status/CityChainFoundation.city-chain
-[2]: https://dev.azure.com/citychain/city-chain/_build/latest?definitionId=7
-[3]: https://ci.appveyor.com/api/projects/status/xs9789ye8ulu29j3/branch/master?svg=true
-[4]: https://ci.appveyor.com/project/citychain/city-chain
-
-[![Documentation build status][3]][4] [![VSTS build status][1]][2]
-
-### GitHub Actions
+### DevOps Status
 
 [5]: https://github.com/CityChainFoundation/city-chain/actions
 [6]: https://github.com/CityChainFoundation/city-chain/workflows/Build/badge.svg
 [7]: https://github.com/CityChainFoundation/city-chain/workflows/Test/badge.svg
 [8]: https://github.com/CityChainFoundation/city-chain/workflows/Release/badge.svg
-[9]: https://github.com/CityChainFoundation/city-chain/workflows/Publish/badge.svg
+[9]: https://github.com/CityChainFoundation/city-chain/workflows/Publish%20Packages/badge.svg
 
 [![Build Status][6]][5] [![Test Status][7]][5] [![Release Status][8]][5] [![Publish Packages Status][9]][5]
 
