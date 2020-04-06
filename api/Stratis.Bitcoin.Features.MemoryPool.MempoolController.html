@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class MempoolController
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -224,7 +224,8 @@
   </span>
   <a id="Stratis_Bitcoin_Features_MemoryPool_MempoolController_GetRawMempoolAsync_" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolController.GetRawMempoolAsync*"></a>
   <h4 id="Stratis_Bitcoin_Features_MemoryPool_MempoolController_GetRawMempoolAsync" data-uid="Stratis.Bitcoin.Features.MemoryPool.MempoolController.GetRawMempoolAsync">GetRawMempoolAsync()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a hash of each transaction in the memory pool. In other words, a list of the TX IDs for all the transactions in the mempool are retrieved.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,7 +242,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
-        <td></td>
+        <td><p>Json formatted <see cref="!:List&lt;uint256>"></see> containing the memory pool contents. Returns <see cref="!:IActionResult"></see> formatted error if fails.</p>
+</td>
       </tr>
     </tbody>
   </table>

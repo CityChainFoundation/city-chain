@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BlockPullerBehavior
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,9 @@
   
   <h1 id="Stratis_Bitcoin_BlockPulling_BlockPullerBehavior" data-uid="Stratis.Bitcoin.BlockPulling.BlockPullerBehavior" class="text-break">Class BlockPullerBehavior
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Relation of the node's puller to a network peer node.
+Keeps all peer-related values that <a class="xref" href="Stratis.Bitcoin.BlockPulling.BlockPuller.html">BlockPuller</a> needs to know about a peer.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -114,6 +116,9 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class BlockPullerBehavior : NetworkPeerBehavior, IBlockPullerBehavior, INetworkPeerBehavior, IDisposable</code></pre>
   </div>
+  <h5 id="Stratis_Bitcoin_BlockPulling_BlockPullerBehavior_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The component is not thread safe and it is supposed to be protected by the caller.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">

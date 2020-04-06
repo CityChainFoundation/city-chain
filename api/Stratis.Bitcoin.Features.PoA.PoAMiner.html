@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PoAMiner
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,9 @@
   
   <h1 id="Stratis_Bitcoin_Features_PoA_PoAMiner" data-uid="Stratis.Bitcoin.Features.PoA.PoAMiner" class="text-break">Class PoAMiner
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Mines blocks for PoA network.
+Mining can happen only in case this node is a federation member.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,6 +94,12 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PoAMiner : object, IPoAMiner, IDisposable</code></pre>
   </div>
+  <h5 id="Stratis_Bitcoin_Features_PoA_PoAMiner_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Blocks can be created only for particular timestamps- once per round.
+Round length in seconds is equal to amount of fed members multiplied by target spacing.
+Miner's slot in each round is the same and is determined by the index
+of current key in <a class="xref" href="Stratis.Bitcoin.Features.PoA.IFederationManager.html#Stratis_Bitcoin_Features_PoA_IFederationManager_GetFederationMembers">GetFederationMembers()</a></p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
