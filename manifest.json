@@ -7113,7 +7113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.ColdStaking.Controllers.ColdStakingWalletRPCController.html",
-          "hash": "fieKw/M0wCDQdBeoX7pqtA=="
+          "hash": "qPQl9Uhydq6F/WBMgBju3A=="
         }
       },
       "is_incremental": false,
@@ -14817,7 +14817,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletRPCController.html",
-          "hash": "pyPHmSuRUX5a5PEsocIvtA=="
+          "hash": "ioJjjwR91AyE5jG20ybycg=="
         }
       },
       "is_incremental": false,
