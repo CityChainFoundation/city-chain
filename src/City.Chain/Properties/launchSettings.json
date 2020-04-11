@@ -12,6 +12,10 @@
       "commandName": "Project",
       "commandLineArgs": "-server -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser -txindex=1"
     },
+    "MAIN (LOCAL+RPC)": {
+      "commandName": "Project",
+      "commandLineArgs": "-datadir=citynode -walletnotify=\"curl -X POST -d txid=%s http://localhost:5000/\" -server -rpcpassword=rpcpassword -rpcuser=rpcuser -txindex=1"
+    },
     "MAIN (LOCAL+RPC+DEFAULT)": {
       "commandName": "Project",
       "commandLineArgs": "-datadir=citynode -walletnotify=\"curl -X POST -d txid=%s http://localhost:5000/\" -server -rpcpassword=rpcpassword -rpcuser=rpcuser -txindex=1 -defaultwalletname=default -defaultwalletpassword=default -unlockdefaultwallet"
