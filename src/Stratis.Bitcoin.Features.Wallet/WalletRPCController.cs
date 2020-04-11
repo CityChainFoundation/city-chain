@@ -124,7 +124,7 @@ namespace Stratis.Bitcoin.Features.Wallet
 											.Where(i => i.Name.Equals(accountReference.AccountName))
 											.Single();
 
-			(Money confirmedAmount, Money unconfirmedAmount) = account.GetBalances();
+			(Money confirmedAmount, Money unconfirmedAmount) = account.GetBalances(account.IsNormalAccount());
 
 			var balance = Money.Coins(GetBalance(string.Empty));
 			var immature = Money.Coins(balance.ToDecimal(MoneyUnit.BTC) - GetBalance(string.Empty, (int)this.FullNode.Network.Consensus.CoinbaseMaturity)); // Balance - Balance(AtHeight)

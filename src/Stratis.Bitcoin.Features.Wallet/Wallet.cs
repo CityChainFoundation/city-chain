@@ -627,6 +627,15 @@ namespace Stratis.Bitcoin.Features.Wallet
         }
 
         /// <summary>
+        /// Check if the current account is a normal or special purpose one.
+        /// </summary>
+        /// <returns>True if this is a normal account (index below the SpecialPurposeAccountIndexesStart).</returns>
+        public bool IsNormalAccount()
+        {
+            return this.Index < Wallet.SpecialPurposeAccountIndexesStart;
+        }
+
+        /// <summary>
         /// Gets the first receiving address that contains no transaction.
         /// </summary>
         /// <returns>An unused address</returns>
@@ -685,15 +694,26 @@ namespace Stratis.Bitcoin.Features.Wallet
         /// <summary>
         /// Get the accounts total spendable value for both confirmed and unconfirmed UTXO.
         /// </summary>
-        public (Money ConfirmedAmount, Money UnConfirmedAmount) GetBalances()
+        public (Money ConfirmedAmount, Money UnConfirmedAmount) GetBalances(bool excludeColdStakeUtxo)
         {
             List<TransactionData> allTransactions = this.ExternalAddresses.SelectMany(a => a.Transactions)
                 .Concat(this.InternalAddresses.SelectMany(i => i.Transactions)).ToList();
 
-            long confirmed = allTransactions.Sum(t => t.GetUnspentAmount(true));
-            long total = allTransactions.Sum(t => t.GetUnspentAmount(false));
+            if (excludeColdStakeUtxo)
+            {
+                // If this is a normal account, we must exclude the cold coin stake data.
+                long confirmed = allTransactions.Where(t => t.IsColdCoinStake != true).Sum(t => t.GetUnspentAmount(true));
+                long total = allTransactions.Where(t => t.IsColdCoinStake != true).Sum(t => t.GetUnspentAmount(false));
 
-            return (confirmed, total - confirmed);
+                return (confirmed, total - confirmed);
+            }
+            else
+            {
+                long confirmed = allTransactions.Sum(t => t.GetUnspentAmount(true));
+                long total = allTransactions.Sum(t => t.GetUnspentAmount(false));
+
+                return (confirmed, total - confirmed);
+            }
         }
 
         /// <summary>
@@ -790,6 +810,8 @@ namespace Stratis.Bitcoin.Features.Wallet
             return addressesCreated;
         }
 
+        private DateTime walletUpdateDate = new DateTime(2020, 5, 1);
+
         /// <summary>
         /// Lists all spendable transactions in the current account.
         /// </summary>
@@ -812,17 +834,34 @@ namespace Stratis.Bitcoin.Features.Wallet
                 foreach (TransactionData transactionData in address.UnspentTransactions())
                 {
                     int? confirmationCount = 0;
+
                     if (transactionData.BlockHeight != null)
+                    {
                         confirmationCount = countFrom >= transactionData.BlockHeight ? countFrom - transactionData.BlockHeight : 0;
+                    }
 
                     if (confirmationCount < confirmations)
+                    {
                         continue;
+                    }
 
                     bool isCoinBase = transactionData.IsCoinBase ?? false;
                     bool isCoinStake = transactionData.IsCoinStake ?? false;
 
+                    // Check if this wallet is a normal purpose wallet (not cold staking, etc).
+                    if (this.IsNormalAccount())
+                    {
+                        bool isColdCoinStake = transactionData.IsColdCoinStake ?? false;
+
+                        // Skip listing the UTXO if this is a normal wallet, and the UTXO is marked as an cold coin stake.
+                        if (isColdCoinStake)
+                        {
+                            continue;
+                        }
+                    }
+
                     // This output can unconditionally be included in the results.
-                    // Or this output is a CoinBase or CoinStake and has reached maturity.
+                    // Or this output is a ColdStake, CoinBase or CoinStake and has reached maturity.
                     if ((!isCoinBase && !isCoinStake) || (confirmationCount > coinbaseMaturity))
                     {
                         yield return new UnspentOutputReference
@@ -922,9 +961,9 @@ namespace Stratis.Bitcoin.Features.Wallet
         /// <summary>
         /// Get the address total spendable value for both confirmed and unconfirmed UTXO.
         /// </summary>
-        public (Money confirmedAmount, Money unConfirmedAmount) GetBalances()
+        public (Money confirmedAmount, Money unConfirmedAmount) GetBalances(bool excludeColdStakeUtxo)
         {
-            List<TransactionData> allTransactions = this.Transactions.ToList();
+            List<TransactionData> allTransactions = excludeColdStakeUtxo ? this.Transactions.Where(t => t.IsColdCoinStake != true).ToList() : this.Transactions.ToList();
 
             long confirmed = allTransactions.Sum(t => t.GetUnspentAmount(true));
             long total = allTransactions.Sum(t => t.GetUnspentAmount(false));
@@ -963,6 +1002,12 @@ namespace Stratis.Bitcoin.Features.Wallet
         /// </summary>
         [JsonProperty(PropertyName = "isCoinStake", NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsCoinStake { get; set; }
+
+        /// <summary>
+        /// A value indicating whether this is a coldstake transaction or not.
+        /// </summary>
+        [JsonProperty(PropertyName = "isColdCoinStake", NullValueHandling = NullValueHandling.Ignore)]
+        public bool? IsColdCoinStake { get; set; }
 
         /// <summary>
         /// The index of this scriptPubKey in the transaction it is contained.

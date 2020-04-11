@@ -740,7 +740,7 @@ namespace Stratis.Bitcoin.Features.Wallet
                     }
 
                     // Get the total balances.
-                    (Money amountConfirmed, Money amountUnconfirmed) result = account.GetBalances();
+                    (Money amountConfirmed, Money amountUnconfirmed) result = account.GetBalances(account.IsNormalAccount());
 
                     balances.Add(new AccountBalance
                     {
@@ -775,7 +775,8 @@ namespace Stratis.Bitcoin.Features.Wallet
                     hdAddress = wallet.GetAllAddresses().FirstOrDefault(a => a.Address == address);
                     if (hdAddress == null) continue;
 
-                    (Money amountConfirmed, Money amountUnconfirmed) result = hdAddress.GetBalances();
+                    // When this query to get balance on specific address, we will exclude the cold staking UTXOs.
+                    (Money amountConfirmed, Money amountUnconfirmed) result = hdAddress.GetBalances(true);
 
                     Money spendableAmount = wallet
                         .GetAllSpendableTransactions(this.ChainIndexer.Tip.Height)
@@ -1133,6 +1134,10 @@ namespace Stratis.Bitcoin.Features.Wallet
 
             uint256 transactionHash = transaction.GetHash();
 
+            // Get the ColdStaking script template if available.
+            Dictionary<string, ScriptTemplate> templates = this.GetValidStakingTemplates();
+            ScriptTemplate coldStakingTemplate = templates.ContainsKey("ColdStaking") ? templates["ColdStaking"] : null;
+
             // Get the collection of transactions to add to.
             Script script = utxo.ScriptPubKey;
             this.scriptToAddressLookup.TryGetValue(script, out HdAddress address);
@@ -1151,6 +1156,7 @@ namespace Stratis.Bitcoin.Features.Wallet
                     Amount = amount,
                     IsCoinBase = transaction.IsCoinBase == false ? (bool?)null : true,
                     IsCoinStake = transaction.IsCoinStake == false ? (bool?)null : true,
+                    IsColdCoinStake = (coldStakingTemplate != null && coldStakingTemplate.CheckScriptPubKey(script)) == false ? (bool?)null : true,
                     BlockHeight = blockHeight,
                     BlockHash = block?.GetHash(),
                     BlockIndex = block?.Transactions.FindIndex(t => t.GetHash() == transactionHash),
