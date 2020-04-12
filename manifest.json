@@ -13485,7 +13485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Controllers.WalletController.html",
-          "hash": "kAtAGxawYgfnphLkwg1Ynw=="
+          "hash": "vmz9BuMMPFBqHLK4nuBoRQ=="
         }
       },
       "is_incremental": false,
@@ -14805,7 +14805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.WalletManager.html",
-          "hash": "zHcTrmy+sKM7C1iM9D6P+w=="
+          "hash": "sp6XQH8N0GcI2LYp83MuTg=="
         }
       },
       "is_incremental": false,
