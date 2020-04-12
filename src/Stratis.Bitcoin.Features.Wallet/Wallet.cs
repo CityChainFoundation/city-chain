@@ -23,6 +23,9 @@ namespace Stratis.Bitcoin.Features.Wallet
         /// <summary>Filter for identifying normal wallet accounts.</summary>
         public static Func<HdAccount, bool> NormalAccounts = a => a.Index < SpecialPurposeAccountIndexesStart;
 
+        /// <summary>Filter for all wallet accounts.</summary>
+        public static Func<HdAccount, bool> AllAccounts = a => true;
+
         /// <summary>
         /// Initializes a new instance of the wallet.
         /// </summary>

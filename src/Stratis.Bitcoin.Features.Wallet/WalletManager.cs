@@ -1766,7 +1766,7 @@ namespace Stratis.Bitcoin.Features.Wallet
 
             lock (this.lockObject)
             {
-                IEnumerable<HdAccount> accounts = wallet.GetAccounts();
+                IEnumerable<HdAccount> accounts = wallet.GetAccounts(Wallet.AllAccounts);
                 foreach (HdAccount account in accounts)
                 {
                     foreach (HdAddress address in account.GetCombinedAddresses())
