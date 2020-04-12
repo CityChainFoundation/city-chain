@@ -545,12 +545,6 @@ namespace Stratis.Bitcoin.Features.Wallet.Controllers
                         TransactionData transaction = item.Transaction;
                         HdAddress address = item.Address;
 
-                        // We don't show in history transactions that are outputs of cold staking type (This must run early to avoid showing both "received" and "sent").
-                        if (transaction.IsColdCoinStake != null && transaction.IsColdCoinStake.Value)
-                        {
-                            continue;
-                        }
-
                         // First we look for staking transaction as they require special attention.
                         // A staking transaction spends one of our inputs into 2 outputs or more, paid to the same address.
                         if (transaction.SpendingDetails?.IsCoinStake != null && transaction.SpendingDetails.IsCoinStake.Value)
