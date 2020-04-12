@@ -13281,7 +13281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.AccountRoot.html",
-          "hash": "IZz90xo3MuEuvIDYgr+C/Q=="
+          "hash": "h5ECP5W6XclVsielPEqdww=="
         }
       },
       "is_incremental": false,
@@ -13581,7 +13581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.HdAccount.html",
-          "hash": "H3j+JgKSql+RXN89z7gPtg=="
+          "hash": "YYzftxuuHFLvc6utrwDxZg=="
         }
       },
       "is_incremental": false,
@@ -13593,7 +13593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.HdAddress.html",
-          "hash": "yAB8S8WeU4esHHxiWR3oYw=="
+          "hash": "7C+Mvsbhng756JVedQjSYA=="
         }
       },
       "is_incremental": false,
@@ -14601,7 +14601,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.PaymentDetails.html",
-          "hash": "rm5avh+kBysHzs9kO9HNxw=="
+          "hash": "48Y23O9LHPURkep40TH+BQ=="
         }
       },
       "is_incremental": false,
@@ -14661,7 +14661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.SpendingDetails.html",
-          "hash": "S1VOnX4cXTkyIvARjM1lGw=="
+          "hash": "IyM88yGOZjQY+DfdrjH5jQ=="
         }
       },
       "is_incremental": false,
@@ -14685,7 +14685,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.TransactionData.html",
-          "hash": "W21oIDBKvlIx52FQ/+Ygig=="
+          "hash": "loKSgaVqh7FMJ7ursMxtZg=="
         }
       },
       "is_incremental": false,
@@ -14697,7 +14697,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.UnspentOutputReference.html",
-          "hash": "DeCJCOOcEyo//vBqJRvqaQ=="
+          "hash": "1QsiEZrQaZhlta1GjljYFw=="
         }
       },
       "is_incremental": false,
@@ -14733,7 +14733,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Wallet.Wallet.html",
-          "hash": "qyKW7HfSdgdnTymEc8CJLQ=="
+          "hash": "Wm1L7MyrI5nbWmJ35Jrq4g=="
         }
       },
       "is_incremental": false,
