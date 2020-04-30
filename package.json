@@ -19,11 +19,15 @@
   "main": "main.js",
   "scripts": {
     "version": "node -p \"require('./package.json').version\"",
-    "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "private": true,
   "dependencies": {
-    "conventional-changelog-cli": "^2.0.31"
+    "conventional-changelog-cli": "^2.0.31",
+    "snyk": "^1.316.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
