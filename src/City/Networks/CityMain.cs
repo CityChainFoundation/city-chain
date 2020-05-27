@@ -71,6 +71,14 @@ namespace City.Networks
                 maxStandardTxSigopsCost: 20_000 / 5
             );
 
+            var bip9Deployments = new CityBIP9Deployments()
+            {
+                [CityBIP9Deployments.ColdStaking] = new BIP9DeploymentsParameters("ColdStaking", 2,
+                   new DateTime(2018, 12, 1, 0, 0, 0, DateTimeKind.Utc),
+                   new DateTime(2019, 12, 1, 0, 0, 0, DateTimeKind.Utc),
+                   BIP9DeploymentsParameters.DefaultMainnetThreshold)
+            };
+
             this.Consensus = new Consensus(
                 consensusFactory: consensusFactory,
                 consensusOptions: consensusOptions,
@@ -86,7 +94,7 @@ namespace City.Networks
                     [BuriedDeployments.BIP65] = 0,
                     [BuriedDeployments.BIP66] = 0
                 },
-                bip9Deployments: new NoBIP9Deployments(),
+                bip9Deployments: bip9Deployments,
                 bip34Hash: new uint256("0x00000b0517068e602ed5279c20168cfa1e69884ee4e784909652da34c361bff2"),
                 // ruleChangeActivationThreshold: 1916, // 95% of 2016
                 minerConfirmationWindow: 2016, // nPowTargetTimespan / nPowTargetSpacing

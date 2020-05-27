@@ -13,11 +13,11 @@ namespace City.Networks
         public CityRegTest()
         {
             this.Name = "CityRegTest";
-			this.NetworkType = NetworkType.Regtest;
-			this.Magic = 0x43525901; // .CRT
+            this.NetworkType = NetworkType.Regtest;
+            this.Magic = 0x43525901; // .CRT
             this.DefaultPort = 14333;
             this.DefaultRPCPort = 14334;
-			this.DefaultAPIPort = 14335;
+            this.DefaultAPIPort = 14335;
             this.DefaultSignalRPort = 14336;
             this.MinTxFee = 0;
             this.FallbackFee = 0;
@@ -63,6 +63,14 @@ namespace City.Networks
                 [BuriedDeployments.BIP66] = 0
             };
 
+            var bip9Deployments = new CityBIP9Deployments()
+            {
+                [CityBIP9Deployments.ColdStaking] = new BIP9DeploymentsParameters("ColdStaking", 2,
+               new DateTime(2018, 12, 1, 0, 0, 0, DateTimeKind.Utc),
+               new DateTime(2019, 12, 1, 0, 0, 0, DateTimeKind.Utc),
+               BIP9DeploymentsParameters.DefaultMainnetThreshold)
+            };
+
             this.Consensus = new Consensus(
                 consensusFactory: consensusFactory,
                 consensusOptions: consensusOptions,
@@ -73,7 +81,7 @@ namespace City.Networks
                 majorityRejectBlockOutdated: 950,
                 majorityWindow: 1000,
                 buriedDeployments: buriedDeployments,
-                bip9Deployments: new NoBIP9Deployments(),
+                bip9Deployments: bip9Deployments,
                 bip34Hash: new uint256("0x0000da5d40883d6c8aade797d8d6dcbf5cbc8e6428569170da39d2f01e8290e5"),
                 minerConfirmationWindow: 2016, // nPowTargetTimespan / nPowTargetSpacing
                 maxReorgLength: 500,
@@ -86,7 +94,7 @@ namespace City.Networks
                 powTargetTimespan: TimeSpan.FromSeconds(14 * 24 * 60 * 60), // two weeks
                 powTargetSpacing: TimeSpan.FromSeconds(10 * 60),
                 powAllowMinDifficultyBlocks: true,
-				posNoRetargeting: false,
+                posNoRetargeting: false,
                 powNoRetargeting: true,
                 powLimit: powLimit,
                 minimumChainWork: null,
