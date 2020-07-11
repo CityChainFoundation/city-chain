@@ -28,6 +28,7 @@ declare -r DATE_STAMP="$(date +%y-%m-%d-%s)"
 declare -r SCRIPT_LOGFILE="/tmp/${NODE_USER}_${DATE_STAMP}_output.log"
 declare -r SWAPSIZE="1024" ## =1GB
 declare -r OS_VER="Ubuntu*"
+declare -r VER=$(lsb_release -sr)
 
 function check_root() {
 if [ "$(id -u)" != "0" ]; then
@@ -127,12 +128,14 @@ installDependencies() {
     echo
     echo -e "* Installing dependencies. Please wait..."
     sudo apt-get install git nano wget curl software-properties-common -y &>> ${SCRIPT_LOGFILE}
-    sudo wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb &>> ${SCRIPT_LOGFILE}
+    sudo wget https://packages.microsoft.com/config/ubuntu/${VER}/packages-microsoft-prod.deb &>> ${SCRIPT_LOGFILE}
     sudo dpkg -i packages-microsoft-prod.deb &>> ${SCRIPT_LOGFILE}
     sudo apt-get install apt-transport-https -y &>> ${SCRIPT_LOGFILE}
     sudo apt-get update -y &>> ${SCRIPT_LOGFILE}
     sudo apt-get install dotnet-sdk-2.1 -y --allow-unauthenticated &>> ${SCRIPT_LOGFILE}
-    echo -e "${NONE}${GREEN}* Done${NONE}";
+    sudo wget https://dot.net/v1/dotnet-install.sh &>> ${SCRIPT_LOGFILE}
+	sudo bash dotnet-install.sh --install-dir /usr/share/dotnet --channel 2.1 --version 2.1.607 &>> ${SCRIPT_LOGFILE}
+	echo -e "${NONE}${GREEN}* Done${NONE}";
 }
 
 compileWallet() {
