@@ -28,13 +28,13 @@ namespace City.Networks
         public CityMain()
         {
             this.Name = "CityMain";
-			this.NetworkType = NetworkType.Mainnet;
-			this.Magic = 0x43545901; // .CTY
+            this.NetworkType = NetworkType.Mainnet;
+            this.Magic = 0x43545901; // .CTY
             this.DefaultMaxOutboundConnections = 16;
             this.DefaultMaxInboundConnections = 109;
             this.DefaultPort = 4333;
             this.DefaultRPCPort = 4334;
-			this.DefaultAPIPort = 4335;
+            this.DefaultAPIPort = 4335;
             this.DefaultSignalRPort = 4336;
             this.MaxTipAge = 2 * 60 * 60;
             this.MinTxFee = 10000;
@@ -71,14 +71,6 @@ namespace City.Networks
                 maxStandardTxSigopsCost: 20_000 / 5
             );
 
-            var bip9Deployments = new CityBIP9Deployments()
-            {
-                [CityBIP9Deployments.ColdStaking] = new BIP9DeploymentsParameters("ColdStaking", 2,
-                   new DateTime(2018, 12, 1, 0, 0, 0, DateTimeKind.Utc),
-                   new DateTime(2019, 12, 1, 0, 0, 0, DateTimeKind.Utc),
-                   BIP9DeploymentsParameters.DefaultMainnetThreshold)
-            };
-
             this.Consensus = new Consensus(
                 consensusFactory: consensusFactory,
                 consensusOptions: consensusOptions,
@@ -94,7 +86,7 @@ namespace City.Networks
                     [BuriedDeployments.BIP65] = 0,
                     [BuriedDeployments.BIP66] = 0
                 },
-                bip9Deployments: bip9Deployments,
+                bip9Deployments: new NoBIP9Deployments(),
                 bip34Hash: new uint256("0x00000b0517068e602ed5279c20168cfa1e69884ee4e784909652da34c361bff2"),
                 // ruleChangeActivationThreshold: 1916, // 95% of 2016
                 minerConfirmationWindow: 2016, // nPowTargetTimespan / nPowTargetSpacing
@@ -108,8 +100,8 @@ namespace City.Networks
                 powTargetTimespan: TimeSpan.FromSeconds(14 * 24 * 60 * 60), // two weeks
                 powTargetSpacing: TimeSpan.FromSeconds(10 * 60),
                 powAllowMinDifficultyBlocks: false,
-				posNoRetargeting: false,
-				powNoRetargeting: false,
+                posNoRetargeting: false,
+                powNoRetargeting: false,
                 powLimit: new Target(new uint256("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")),
                 minimumChainWork: null,
                 isProofOfStake: true,
@@ -151,6 +143,7 @@ namespace City.Networks
                 { 400000, new CheckpointInfo(new uint256("0x6a3503d4e1c2d3353abc5eff5f9fade16a8c88f7424877178605f52e3809114f"), new uint256("0x8c9fb0439c272bd71390fe95a3991b84c450be17ecc10dffa4b9de189798af17")) },
                 { 470000, new CheckpointInfo(new uint256("0xe3bcd65fe121a112019b4bb8cd077536ee195d84e66f3bf1b7d00a0cdfda331d"), new uint256("0xeee34e8c50a761ecf2c73636842c9da4b5c5a6473890608c30f1702ef225f346")) },
                 { 595000, new CheckpointInfo(new uint256("0x689594927784e5e47b761f85c0906c29579ceb5c8edf922d113b4cdf9ac2a304"), new uint256("0xccd513fd35197b34d63741bb95923621856766ad0161b86e25493c28e21572a5")) },
+                { 800000, new CheckpointInfo(new uint256("0xaf94ebd59507829e82d2e98e75f8777224bf54e2f4ad76ff7bdc2ebebc634cb9"), new uint256("0xbe19a177b90653ee3a654e7fd307e93410db3478dbc28225e24aea9d2087d04b")) },
             };
 
             this.Bech32Encoders = new Bech32Encoder[2];
@@ -174,10 +167,11 @@ namespace City.Networks
                 new NetworkAddress(IPAddress.Parse("23.97.234.230"), this.DefaultPort),
                 new NetworkAddress(IPAddress.Parse("13.73.143.193"), this.DefaultPort),
                 new NetworkAddress(IPAddress.Parse("94.177.215.201"), this.DefaultPort),
+                new NetworkAddress(IPAddress.Parse("89.36.213.152"), this.DefaultPort),
                 new NetworkAddress(IPAddress.Parse("96.126.122.213"), this.DefaultPort),
             };
 
-			this.StandardScriptsRegistry = new CityStandardScriptsRegistry();
+            this.StandardScriptsRegistry = new CityStandardScriptsRegistry();
 
             // 64 below should be changed to TargetSpacingSeconds when we move that field.
             Assert(this.DefaultBanTimeSeconds <= this.Consensus.MaxReorgLength * 64 / 2);
