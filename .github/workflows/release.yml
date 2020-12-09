@@ -13,7 +13,8 @@ jobs:
 
       - name: Variables
         run: |
-          echo "::set-env name=VERSION::$(npm run version --silent)"
+          echo VERSION=$(npm run version --silent) >> $GITHUB_ENV
+        shell: bash
 
       - uses: docker/build-push-action@v1
         with:
