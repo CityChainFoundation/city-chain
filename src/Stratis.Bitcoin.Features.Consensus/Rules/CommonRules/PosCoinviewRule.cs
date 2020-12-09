@@ -23,6 +23,8 @@ namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
         /// <summary>The consensus of the parent Network.</summary>
         private IConsensus consensus;
 
+        private static readonly int REDUCTIONHEIGHT = 1111111;
+
         /// <inheritdoc />
         public override void Initialize()
         {
@@ -203,6 +205,11 @@ namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
         {
             if (this.IsPremine(height))
                 return this.consensus.PremineReward;
+
+            if (height > REDUCTIONHEIGHT)
+            {
+                return this.consensus.ProofOfStakeReward / 10;
+            }
 
             return this.consensus.ProofOfStakeReward;
         }
