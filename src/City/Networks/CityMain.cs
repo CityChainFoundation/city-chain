@@ -63,6 +63,13 @@ namespace City.Networks
 
             this.Genesis = genesisBlock;
 
+            var bip9Deployments = new CityBIP9Deployments
+            {
+                [CityBIP9Deployments.ColdStaking] = new BIP9DeploymentsParameters("ColdStaking", 2, BIP9DeploymentsParameters.AlwaysActive, 999999999, BIP9DeploymentsParameters.AlwaysActive),
+                [CityBIP9Deployments.CSV] = new BIP9DeploymentsParameters("CSV", 0, BIP9DeploymentsParameters.AlwaysActive, 999999999, BIP9DeploymentsParameters.AlwaysActive),
+                [CityBIP9Deployments.Segwit] = new BIP9DeploymentsParameters("Segwit", 1, BIP9DeploymentsParameters.AlwaysActive, 999999999, BIP9DeploymentsParameters.AlwaysActive)
+            };
+
             var consensusOptions = new CityPosConsensusOptions(
                 maxBlockBaseSize: 1_000_000,
                 maxStandardVersion: 2,
@@ -86,7 +93,7 @@ namespace City.Networks
                     [BuriedDeployments.BIP65] = 0,
                     [BuriedDeployments.BIP66] = 0
                 },
-                bip9Deployments: new NoBIP9Deployments(),
+                bip9Deployments: bip9Deployments,
                 bip34Hash: new uint256("0x00000b0517068e602ed5279c20168cfa1e69884ee4e784909652da34c361bff2"),
                 // ruleChangeActivationThreshold: 1916, // 95% of 2016
                 minerConfirmationWindow: 2016, // nPowTargetTimespan / nPowTargetSpacing
