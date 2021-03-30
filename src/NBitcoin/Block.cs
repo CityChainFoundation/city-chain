@@ -86,35 +86,34 @@ namespace NBitcoin
         /// <returns>A new block with only the options wanted.</returns>
         public Block WithOptions(ConsensusFactory consensusFactory, TransactionOptions options)
         {
-            if (this.Transactions.Count == 0)
-                return this;
-
-            if ((options == TransactionOptions.Witness) && this.Transactions[0].HasWitness)
-                return this;
-
-            if ((options == TransactionOptions.None) && !this.Transactions[0].HasWitness)
-                return this;
-
-            Block instance = consensusFactory.CreateBlock();
-            using (var ms = new MemoryStream())
+            // If the peer does not support witness, then strip it off.
+            if (this.Transactions.Count > 0 && this.Transactions[0].HasWitness && options == TransactionOptions.None)
             {
-                var bms = new BitcoinStream(ms, true)
+                Block instance = consensusFactory.CreateBlock();
+                using (var ms = new MemoryStream())
                 {
-                    TransactionOptions = options,
-                    ConsensusFactory = consensusFactory
-                };
+                    var bms = new BitcoinStream(ms, true)
+                    {
+                        TransactionOptions = options,
+                        ConsensusFactory = consensusFactory
+                    };
 
-                this.ReadWrite(bms);
-                ms.Position = 0;
-                bms = new BitcoinStream(ms, false)
-                {
-                    TransactionOptions = options,
-                    ConsensusFactory = consensusFactory
-                };
+                    this.ReadWrite(bms);
+                    ms.Position = 0;
+                    bms = new BitcoinStream(ms, false)
+                    {
+                        TransactionOptions = options,
+                        ConsensusFactory = consensusFactory
+                    };
 
-                instance.ReadWrite(bms);
+                    instance.ReadWrite(bms);
+                }
+                return instance;
             }
-            return instance;
+            else
+            {
+                return this;
+            }
         }
 
         public void UpdateMerkleRoot()
