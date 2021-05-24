@@ -38,8 +38,8 @@ namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
             bool fHaveWitness = false;
             if (deploymentFlags.ScriptFlags.HasFlag(ScriptVerify.Witness))
             {
-                int commitpos = this.GetWitnessCommitmentIndex(block);
-                if (commitpos != -1)
+                Script commitment = GetWitnessCommitment(this.Parent.Network, block);
+                if (commitment != null)
                 {
                     uint256 hashWitness = this.BlockWitnessMerkleRoot(block, out bool malleated);
 
@@ -61,7 +61,7 @@ namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
                     Buffer.BlockCopy(witness.Pushes.First(), 0, hashed, 32, 32);
                     hashWitness = Hashes.Hash256(hashed);
 
-                    if (!this.EqualsArray(hashWitness.ToBytes(), block.Transactions[0].Outputs[commitpos].ScriptPubKey.ToBytes(true).Skip(6).ToArray(), 32))
+                    if (!this.EqualsArray(hashWitness.ToBytes(), commitment.ToBytes(true).Skip(6).ToArray(), 32))
                     {
                         this.Logger.LogTrace("(-)[WITNESS_MERKLE_MISMATCH]");
                         ConsensusErrors.BadWitnessMerkleMatch.Throw();
@@ -103,38 +103,98 @@ namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
             return true;
         }
 
+        ///// <summary>
+        ///// Gets index of the last coinbase transaction output with SegWit flag.
+        ///// </summary>
+        ///// <param name="block">Block which coinbase transaction's outputs will be checked for SegWit flags.</param>
+        ///// <returns>
+        ///// <c>-1</c> if no SegWit flags were found.
+        ///// If SegWit flag is found index of the last transaction's output that has SegWit flag is returned.
+        ///// </returns>
+        //private int GetWitnessCommitmentIndex(Block block)
+        //{
+        //    int commitpos = -1;
+        //    for (int i = 0; i < block.Transactions[0].Outputs.Count; i++)
+        //    {
+        //        Script scriptPubKey = block.Transactions[0].Outputs[i].ScriptPubKey;
+
+        //        if (scriptPubKey.Length >= 38)
+        //        {
+        //            byte[] scriptBytes = scriptPubKey.ToBytes(true);
+
+        //            if ((scriptBytes[0] == (byte)OpcodeType.OP_RETURN) &&
+        //                (scriptBytes[1] == 0x24) &&
+        //                (scriptBytes[2] == 0xaa) &&
+        //                (scriptBytes[3] == 0x21) &&
+        //                (scriptBytes[4] == 0xa9) &&
+        //                (scriptBytes[5] == 0xed))
+        //            {
+        //                commitpos = i;
+        //            }
+        //        }
+        //    }
+
+        //    return commitpos;
+        //}
+
         /// <summary>
-        /// Gets index of the last coinbase transaction output with SegWit flag.
+        /// Gets commitment in the last coinbase transaction output with SegWit flag.
         /// </summary>
         /// <param name="block">Block which coinbase transaction's outputs will be checked for SegWit flags.</param>
         /// <returns>
-        /// <c>-1</c> if no SegWit flags were found.
-        /// If SegWit flag is found index of the last transaction's output that has SegWit flag is returned.
+        /// <c>null</c> if no SegWit flags were found.
+        /// If SegWit flag is found the commitment of the last transaction's output that has SegWit flag is returned.
         /// </returns>
-        private int GetWitnessCommitmentIndex(Block block)
+        public static Script GetWitnessCommitment(Network network, Block block)
         {
-            int commitpos = -1;
-            for (int i = 0; i < block.Transactions[0].Outputs.Count; i++)
+            Script commitScriptPubKey = null;
+
+            if (network.Consensus.IsProofOfStake)
             {
-                Script scriptPubKey = block.Transactions[0].Outputs[i].ScriptPubKey;
+                Script scriptSig = block.Transactions[0].Inputs[0].ScriptSig;
 
-                if (scriptPubKey.Length >= 38)
+                var ops = scriptSig.ToOps();
+
+                if (ops.Count > 2 && IsWitnessScript(new Script(ops.Skip(2))))
                 {
-                    byte[] scriptBytes = scriptPubKey.ToBytes(true);
+                    // We assume the first two ops are the BIP34 coinbase height.
+                    commitScriptPubKey = new Script(ops.Skip(2));
+                }
+            }
+            else
+            {
+                for (int i = 0; i < block.Transactions[0].Outputs.Count; i++)
+                {
+                    Script scriptPubKey = block.Transactions[0].Outputs[i].ScriptPubKey;
 
-                    if ((scriptBytes[0] == (byte)OpcodeType.OP_RETURN) &&
-                        (scriptBytes[1] == 0x24) &&
-                        (scriptBytes[2] == 0xaa) &&
-                        (scriptBytes[3] == 0x21) &&
-                        (scriptBytes[4] == 0xa9) &&
-                        (scriptBytes[5] == 0xed))
+                    if (IsWitnessScript(scriptPubKey))
                     {
-                        commitpos = i;
+                        commitScriptPubKey = scriptPubKey;
                     }
                 }
             }
 
-            return commitpos;
+            return commitScriptPubKey;
+        }
+
+        private static bool IsWitnessScript(Script script)
+        {
+            if (script.Length >= 38)
+            {
+                byte[] scriptBytes = script.ToBytes(true);
+
+                if ((scriptBytes[0] == (byte)OpcodeType.OP_RETURN) &&
+                    (scriptBytes[1] == 0x24) &&
+                    (scriptBytes[2] == 0xaa) &&
+                    (scriptBytes[3] == 0x21) &&
+                    (scriptBytes[4] == 0xa9) &&
+                    (scriptBytes[5] == 0xed))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         /// <summary>
