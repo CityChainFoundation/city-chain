@@ -146,8 +146,15 @@ namespace Stratis.Bitcoin.Features.LightWallet
                 // if segwit is active signal to only connect to
                 // nodes that also signal they are segwit nodes
                 DeploymentFlags flags = this.nodeDeployments.GetFlags(this.walletSyncManager.WalletTip);
+
                 if (flags.ScriptFlags.HasFlag(ScriptVerify.Witness))
+                {
+                    // Add witness discovery as a requirement if witness is activated.
                     this.connectionManager.AddDiscoveredNodesRequirement(NetworkPeerServices.NODE_WITNESS);
+                }
+
+                // Always announce that the node supports WITNESS even if witness is not activated yet.
+                this.connectionManager.Parameters.Services |= NetworkPeerServices.NODE_WITNESS;
 
                 // done checking
                 loopToken.Cancel();
