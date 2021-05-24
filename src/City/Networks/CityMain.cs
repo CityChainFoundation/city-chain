@@ -152,6 +152,7 @@ namespace City.Networks
                 { 595000, new CheckpointInfo(new uint256("0x689594927784e5e47b761f85c0906c29579ceb5c8edf922d113b4cdf9ac2a304"), new uint256("0xccd513fd35197b34d63741bb95923621856766ad0161b86e25493c28e21572a5")) },
                 { 800000, new CheckpointInfo(new uint256("0xaf94ebd59507829e82d2e98e75f8777224bf54e2f4ad76ff7bdc2ebebc634cb9"), new uint256("0xbe19a177b90653ee3a654e7fd307e93410db3478dbc28225e24aea9d2087d04b")) },
                 { 1125570, new CheckpointInfo(new uint256("0x1295cd37612f19ad8847531f84489f25fa1612a0cb91e95bff44b566a0de2cfa"), new uint256("0xa62070bd16f609f33b724e2de7bd555fcef28161a6146e6270dfcaf784b21d61")) },
+                { 1196280, new CheckpointInfo(new uint256("0xa42ba7735f2bf202f218d932008c039f4f97f90710c0a77c27c15b66c1ed48cd"), new uint256("0x3a7ccae05cc65f9b3e325a606ef1fe690820e2fbe0b1bbdadb2a57be97c8cf18")) },
             };
 
             this.Bech32Encoders = new Bech32Encoder[2];
