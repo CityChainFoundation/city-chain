@@ -7521,7 +7521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.ConsensusFeature.html",
-          "hash": "ARtAiyvZeAYUPPnJs0WaVYb7vXGbaNmh8XQxprz+G1M="
+          "hash": "ph71fkjFspmdGeunBUkklr5ldT2EMcREDLxSy9esBUA="
         }
       },
       "is_incremental": false,
@@ -7629,7 +7629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.Consensus.PowConsensusFeature.html",
-          "hash": "BHBhDxoalbpQVDkQyA2oyXhB/WIVeZGxEZ84GEOwInM="
+          "hash": "tW8kIyBJxPCtMinUSOF7r6NutiPUPfdYylzWBudSUQ0="
         }
       },
       "is_incremental": false,
@@ -8553,7 +8553,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.LightWallet.FullNodeBuilderLightWalletExtension.html",
-          "hash": "RXSBLhtt3+j/YNAi5B6/7gofwHDBYfriwRgp6d/23C0="
+          "hash": "nyPxOHjrdVpnm1EftrEB9lDnBMEsHuvMlY4utKeWMio="
         }
       },
       "is_incremental": false,
@@ -8577,7 +8577,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stratis.Bitcoin.Features.LightWallet.LightWalletFeature.html",
-          "hash": "I+ZM1VmosY32qT7GE1f+neuiLQTPHNK2PmJsdjN6TYQ="
+          "hash": "NlJAJhi8ut655Ae/bkCXeKmOvIyfI14PIMvf8Jatt3c="
         }
       },
       "is_incremental": false,
