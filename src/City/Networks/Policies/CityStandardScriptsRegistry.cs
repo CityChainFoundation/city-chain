@@ -10,7 +10,7 @@ namespace City.Networks
     /// </summary>
     public class CityStandardScriptsRegistry : StandardScriptsRegistry
     {
-        public const int MaxOpReturnRelay = 40;
+        public const int MaxOpReturnRelay = 83;
 
         // Need a network-specific version of the template list
         private readonly List<ScriptTemplate> standardTemplates = new List<ScriptTemplate>
