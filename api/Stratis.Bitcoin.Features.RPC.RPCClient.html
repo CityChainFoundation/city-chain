@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RPCClient
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -360,7 +360,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task AddNodeAsync(EndPoint nodeEndPoint, bool onetry = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task AddNodeAsync(EndPoint nodeEndPoint, bool onetry = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -444,7 +444,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task BackupWalletAsync(string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task BackupWalletAsync(string path)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -648,7 +648,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Transaction&gt; DecodeRawTransactionAsync(string rawHex)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Transaction&gt; DecodeRawTransactionAsync(string rawHex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -742,7 +742,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;BitcoinSecret&gt; DumpPrivKeyAsync(BitcoinAddress address)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;BitcoinSecret&gt; DumpPrivKeyAsync(BitcoinAddress address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -838,7 +838,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Money&gt; EstimateFeeAsync(int nblock)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Money&gt; EstimateFeeAsync(int nblock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -952,7 +952,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;FeeRate&gt; EstimateFeeRateAsync(int nblock)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;FeeRate&gt; EstimateFeeRateAsync(int nblock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1064,7 +1064,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;decimal&gt; EstimatePriorityAsync(int nblock)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;decimal&gt; EstimatePriorityAsync(int nblock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1163,7 +1163,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;FundRawTransactionResponse&gt; FundRawTransactionAsync(Transaction transaction, FundRawTransactionOptions options = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;FundRawTransactionResponse&gt; FundRawTransactionAsync(Transaction transaction, FundRawTransactionOptions options = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1262,7 +1262,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256[]&gt; GenerateAsync(int nBlocks)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;uint256[]&gt; GenerateAsync(int nBlocks)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1361,7 +1361,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256[]&gt; GenerateToAddressAsync(int nBlocks, BitcoinAddress address)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;uint256[]&gt; GenerateToAddressAsync(int nBlocks, BitcoinAddress address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1460,7 +1460,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;BitcoinAddress&gt; GetAccountAddressAsync(string account)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;BitcoinAddress&gt; GetAccountAddressAsync(string account)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1554,7 +1554,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;BitcoinSecret&gt; GetAccountSecretAsync(string account)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;BitcoinSecret&gt; GetAccountSecretAsync(string account)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1700,7 +1700,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;AddedNodeInfo[]&gt; GetAddedNodeInfoAsync(bool detailed)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;AddedNodeInfo[]&gt; GetAddedNodeInfoAsync(bool detailed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1747,7 +1747,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;AddedNodeInfo&gt; GetAddedNodeInfoAsync(bool detailed, EndPoint nodeEndPoint)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;AddedNodeInfo&gt; GetAddedNodeInfoAsync(bool detailed, EndPoint nodeEndPoint)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1933,7 +1933,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Money&gt; GetBalanceAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Money&gt; GetBalanceAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1963,7 +1963,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Money&gt; GetBalanceAsync(int minConf, bool includeWatchOnly)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Money&gt; GetBalanceAsync(int minConf, bool includeWatchOnly)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2045,7 +2045,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; GetBestBlockHashAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;uint256&gt; GetBestBlockHashAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2171,7 +2171,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Block&gt; GetBlockAsync(uint256 blockId)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Block&gt; GetBlockAsync(uint256 blockId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2218,7 +2218,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Block&gt; GetBlockAsync(int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Block&gt; GetBlockAsync(int height)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2295,7 +2295,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetBlockCountAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;int&gt; GetBlockCountAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2372,7 +2372,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; GetBlockHashAsync(int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;uint256&gt; GetBlockHashAsync(int height)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2513,7 +2513,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;BlockHeader&gt; GetBlockHeaderAsync(uint256 blockHash)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;BlockHeader&gt; GetBlockHeaderAsync(uint256 blockHash)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2560,7 +2560,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;BlockHeader&gt; GetBlockHeaderAsync(int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;BlockHeader&gt; GetBlockHeaderAsync(int height)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2684,7 +2684,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;BitcoinAddress&gt; GetNewAddressAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;BitcoinAddress&gt; GetNewAddressAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2744,7 +2744,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;PeerInfo[]&gt; GetPeersInfoAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;PeerInfo[]&gt; GetPeersInfoAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2804,7 +2804,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;BitcoinAddress&gt; GetRawChangeAddressAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;BitcoinAddress&gt; GetRawChangeAddressAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2864,7 +2864,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256[]&gt; GetRawMempoolAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;uint256[]&gt; GetRawMempoolAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2956,7 +2956,7 @@ If the account has no addresses, the collection will be empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Transaction&gt; GetRawTransactionAsync(uint256 txid, uint256 blockHash = null, bool throwIfNotFound = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Transaction&gt; GetRawTransactionAsync(uint256 txid, uint256 blockHash = null, bool throwIfNotFound = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3125,7 +3125,7 @@ Default is 1.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;RPCBlock&gt; GetRPCBlockAsync(uint256 blockId)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;RPCBlock&gt; GetRPCBlockAsync(uint256 blockId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3172,7 +3172,7 @@ Default is 1.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;PeerInfo[]&gt; GetStratisPeersInfoAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;PeerInfo[]&gt; GetStratisPeersInfoAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3354,7 +3354,7 @@ Default is 1.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;UnspentTransaction&gt; GetTxOutAsync(uint256 txid, uint vout, bool includeMemPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;UnspentTransaction&gt; GetTxOutAsync(uint256 txid, uint vout, bool includeMemPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3559,7 +3559,7 @@ Default is 1.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ImportAddressAsync(BitcoinAddress address)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ImportAddressAsync(BitcoinAddress address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3606,7 +3606,7 @@ Default is 1.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ImportAddressAsync(BitcoinAddress address, string label, bool rescan)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ImportAddressAsync(BitcoinAddress address, string label, bool rescan)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3663,7 +3663,7 @@ Default is 1.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ImportAddressAsync(Script scriptPubKey)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ImportAddressAsync(Script scriptPubKey)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3710,7 +3710,7 @@ Default is 1.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ImportAddressAsync(Script scriptPubKey, string label, bool rescan)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ImportAddressAsync(Script scriptPubKey, string label, bool rescan)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3841,7 +3841,7 @@ Default is 1.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ImportPrivKeyAsync(BitcoinSecret secret)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ImportPrivKeyAsync(BitcoinSecret secret)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3888,7 +3888,7 @@ Default is 1.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ImportPrivKeyAsync(BitcoinSecret secret, string label, bool rescan)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ImportPrivKeyAsync(BitcoinSecret secret, string label, bool rescan)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4154,7 +4154,7 @@ addresses as if they didn’t belong to this wallet.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;OutPoint[]&gt; ListLockUnspentAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;OutPoint[]&gt; ListLockUnspentAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4312,7 +4312,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;UnspentCoin[]&gt; ListUnspentAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;UnspentCoin[]&gt; ListUnspentAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4345,7 +4345,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;UnspentCoin[]&gt; ListUnspentAsync(int minconf, int maxconf, params BitcoinAddress[] addresses)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;UnspentCoin[]&gt; ListUnspentAsync(int minconf, int maxconf, params BitcoinAddress[] addresses)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4580,7 +4580,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task RemoveNodeAsync(EndPoint nodeEndPoint)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task RemoveNodeAsync(EndPoint nodeEndPoint)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4660,7 +4660,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;RPCCapabilities&gt; ScanRPCCapabilitiesAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;RPCCapabilities&gt; ScanRPCCapabilitiesAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4708,7 +4708,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task SendBatchAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task SendBatchAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4948,7 +4948,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;RPCResponse&gt; SendCommandAsync(RPCRequest request, bool throwIfRPCError = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;RPCResponse&gt; SendCommandAsync(RPCRequest request, bool throwIfRPCError = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5279,7 +5279,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; SendToAddressAsync(BitcoinAddress address, Money amount, string commentTx = null, string commentDest = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;uint256&gt; SendToAddressAsync(BitcoinAddress address, Money amount, string commentTx = null, string commentDest = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5444,7 +5444,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Transaction&gt; SignRawTransactionAsync(Transaction tx)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Transaction&gt; SignRawTransactionAsync(Transaction tx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5544,7 +5544,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;FeeRate&gt; TryEstimateFeeRateAsync(int nblock)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;FeeRate&gt; TryEstimateFeeRateAsync(int nblock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5810,7 +5810,7 @@ and the list of addresses to include.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task WalletPassphraseAsync(string passphrase, int timeout)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task WalletPassphraseAsync(string passphrase, int timeout)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

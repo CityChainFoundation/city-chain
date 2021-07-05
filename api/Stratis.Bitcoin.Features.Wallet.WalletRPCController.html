@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WalletRPCController
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -499,7 +499,7 @@ Uses the first wallet and account.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ListSinceBlockModel&gt; ListSinceBlockAsync(string blockHash, int targetConfirmations = 1)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;ListSinceBlockModel&gt; ListSinceBlockAsync(string blockHash, int targetConfirmations = 1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -638,7 +638,7 @@ Uses the first wallet and account.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; SendManyAsync(string fromAccount, string addressesJson, int minConf = 1, string comment = null, string subtractFeeFromJson = null, bool isReplaceable = false, int? confTarget = null, string estimateMode = &quot;UNSET&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;uint256&gt; SendManyAsync(string fromAccount, string addressesJson, int minConf = 1, string comment = null, string subtractFeeFromJson = null, bool isReplaceable = false, int? confTarget = null, string estimateMode = &quot;UNSET&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -720,7 +720,7 @@ Uses the first wallet and account.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; SendToAddressAsync(BitcoinAddress address, decimal amount, string commentTx, string commentDest)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;uint256&gt; SendToAddressAsync(BitcoinAddress address, decimal amount, string commentTx, string commentDest)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -783,7 +783,7 @@ Uses the first wallet and account.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;uint256&gt; SendTransactionAsync(string hex)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;uint256&gt; SendTransactionAsync(string hex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

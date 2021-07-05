@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class NetworkPeer
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -1055,7 +1055,7 @@ have the same functionality and the disconnecting method is provided only for be
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ConnectAsync(CancellationToken cancellation = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ConnectAsync(CancellationToken cancellation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1215,7 +1215,7 @@ have the same functionality and the disconnecting method is provided only for be
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task RespondToHandShakeAsync(CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task RespondToHandShakeAsync(CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1314,7 +1314,7 @@ have the same functionality and the disconnecting method is provided only for be
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task SendMessageAsync(Payload payload, CancellationToken cancellation = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task SendMessageAsync(Payload payload, CancellationToken cancellation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1371,7 +1371,7 @@ as well as to acknowledge that they are happy with the other party&apos;s &quot;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task VersionHandshakeAsync(CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task VersionHandshakeAsync(CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1438,7 +1438,7 @@ as well as to acknowledge that they are happy with the other party&apos;s &quot;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task VersionHandshakeAsync(NetworkPeerRequirement requirements, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task VersionHandshakeAsync(NetworkPeerRequirement requirements, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RestApiClientBase
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -291,7 +291,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;HttpResponseMessage&gt; SendGetRequestAsync(string apiMethodName, string arguments = null, CancellationToken cancellation = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task&lt;HttpResponseMessage&gt; SendGetRequestAsync(string apiMethodName, string arguments = null, CancellationToken cancellation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -348,7 +348,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; SendGetRequestAsync&lt;Response&gt;(string apiMethodName, string arguments = null, CancellationToken cancellation = null)
+    <pre><code class="lang-csharp hljs">public async Task&lt;Response&gt; SendGetRequestAsync&lt;Response&gt;(string apiMethodName, string arguments = null, CancellationToken cancellation = null)
     where Response : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -421,7 +421,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;HttpResponseMessage&gt; SendPostRequestAsync&lt;Model&gt;(Model requestModel, string apiMethodName, CancellationToken cancellation)
+    <pre><code class="lang-csharp hljs">protected async Task&lt;HttpResponseMessage&gt; SendPostRequestAsync&lt;Model&gt;(Model requestModel, string apiMethodName, CancellationToken cancellation)
     where Model : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -494,7 +494,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;Response&gt; SendPostRequestAsync&lt;Model, Response&gt;(Model requestModel, string apiMethodName, CancellationToken cancellation)
+    <pre><code class="lang-csharp hljs">protected async Task&lt;Response&gt; SendPostRequestAsync&lt;Model, Response&gt;(Model requestModel, string apiMethodName, CancellationToken cancellation)
     where Model : class where Response : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

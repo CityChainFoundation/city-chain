@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ConsensusManagerBehavior
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -585,7 +585,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ConnectNewHeadersResult&gt; ConsensusTipChangedAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;ConnectNewHeadersResult&gt; ConsensusTipChangedAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -759,7 +759,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task OnMessageReceivedAsync(INetworkPeer peer, IncomingMessage message)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual async Task OnMessageReceivedAsync(INetworkPeer peer, IncomingMessage message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -814,7 +814,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;ConnectNewHeadersResult&gt; PresentHeadersLockedAsync(List&lt;BlockHeader&gt; headers, bool triggerDownload = true)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task&lt;ConnectNewHeadersResult&gt; PresentHeadersLockedAsync(List&lt;BlockHeader&gt; headers, bool triggerDownload = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -872,7 +872,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task ProcessGetHeadersAsync(INetworkPeer peer, GetHeadersPayload getHeadersPayload)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task ProcessGetHeadersAsync(INetworkPeer peer, GetHeadersPayload getHeadersPayload)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -936,7 +936,7 @@ If the peer is behind/equal to our best height an empty array is sent back.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task ProcessHeadersAsync(INetworkPeer peer, List&lt;BlockHeader&gt; headers)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual async Task ProcessHeadersAsync(INetworkPeer peer, List&lt;BlockHeader&gt; headers)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1000,7 +1000,7 @@ the tip of the best chain we think the peer has.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task ProcessInvAsync(INetworkPeer peer, List&lt;InventoryVector&gt; inventory)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task ProcessInvAsync(INetworkPeer peer, List&lt;InventoryVector&gt; inventory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1062,7 +1062,7 @@ attack by spamming fake inv messages.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ResetPeerTipInformationAndSyncAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ResetPeerTipInformationAndSyncAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1093,7 +1093,7 @@ attack by spamming fake inv messages.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ResyncAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ResyncAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">

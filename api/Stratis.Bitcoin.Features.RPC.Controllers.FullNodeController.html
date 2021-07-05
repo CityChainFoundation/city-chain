@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class FullNodeController
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -524,7 +524,7 @@ Supports Json format by default, and optionally raw (hex) format by supplying <c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TransactionModel&gt; GetRawTransactionAsync(string txid, bool verbose = false, string blockHash = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;TransactionModel&gt; GetRawTransactionAsync(string txid, bool verbose = false, string blockHash = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -590,7 +590,7 @@ When called without a blockhash argument, getrawtransaction will return the tran
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;GetTxOutModel&gt; GetTxOutAsync(string txid, uint vout, bool includeMemPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;GetTxOutModel&gt; GetTxOutAsync(string txid, uint vout, bool includeMemPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CoreNode
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -743,7 +743,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task BroadcastBlocksAsync(Block[] blocks, INetworkPeer peer)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task BroadcastBlocksAsync(Block[] blocks, INetworkPeer peer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -955,7 +955,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Block[]&gt; GenerateAsync(int blockCount, bool includeUnbroadcasted = true, bool broadcast = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Block[]&gt; GenerateAsync(int blockCount, bool includeUnbroadcasted = true, bool broadcast = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1235,7 +1235,7 @@ This is primarily used where we want to mine coins in the past used for staking.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TimeSpan&gt; PingPongAsync(INetworkPeer peer, CancellationToken cancellation = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;TimeSpan&gt; PingPongAsync(INetworkPeer peer, CancellationToken cancellation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

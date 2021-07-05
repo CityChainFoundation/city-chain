@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RestClient
    | City Chain: Developer Reference ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -199,7 +199,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Block&gt; GetBlockAsync(uint256 blockId)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Block&gt; GetBlockAsync(uint256 blockId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -305,7 +305,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;BlockHeader&gt;&gt; GetBlockHeadersAsync(uint256 blockId, int count)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;IEnumerable&lt;BlockHeader&gt;&gt; GetBlockHeadersAsync(uint256 blockId, int count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -361,7 +361,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ChainInfo&gt; GetChainInfoAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;ChainInfo&gt; GetChainInfoAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -442,7 +442,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Transaction&gt; GetTransactionAsync(uint256 txId)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Transaction&gt; GetTransactionAsync(uint256 txId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -492,7 +492,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;UnspentTransaction&gt; GetTxOutAsync(uint256 txid, uint vout, bool includeMemPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;UnspentTransaction&gt; GetTxOutAsync(uint256 txid, uint vout, bool includeMemPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -554,7 +554,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;UTxOutputs&gt; GetUnspentOutputsAsync(IEnumerable&lt;OutPoint&gt; outPoints, bool checkMempool)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;UTxOutputs&gt; GetUnspentOutputsAsync(IEnumerable&lt;OutPoint&gt; outPoints, bool checkMempool)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -609,7 +609,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;byte[]&gt; SendRequestAsync(string resource, RestResponseFormat format, params string[] parms)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;byte[]&gt; SendRequestAsync(string resource, RestResponseFormat format, params string[] parms)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
