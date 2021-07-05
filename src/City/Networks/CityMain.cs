@@ -153,6 +153,7 @@ namespace City.Networks
                 { 800000, new CheckpointInfo(new uint256("0xaf94ebd59507829e82d2e98e75f8777224bf54e2f4ad76ff7bdc2ebebc634cb9"), new uint256("0xbe19a177b90653ee3a654e7fd307e93410db3478dbc28225e24aea9d2087d04b")) },
                 { 1125570, new CheckpointInfo(new uint256("0x1295cd37612f19ad8847531f84489f25fa1612a0cb91e95bff44b566a0de2cfa"), new uint256("0xa62070bd16f609f33b724e2de7bd555fcef28161a6146e6270dfcaf784b21d61")) },
                 { 1196280, new CheckpointInfo(new uint256("0xa42ba7735f2bf202f218d932008c039f4f97f90710c0a77c27c15b66c1ed48cd"), new uint256("0x3a7ccae05cc65f9b3e325a606ef1fe690820e2fbe0b1bbdadb2a57be97c8cf18")) },
+                { 1250000, new CheckpointInfo(new uint256("0xfcbfa827fce703d50f72b5b6f0ee1e5a5d46c7a469bc972c4d4839137998e5a5"), new uint256("0xaa163ed85712405b4623683259c947fa4fc2fe56eb9ee3c7eded2b5492b58dd1")) },
             };
 
             this.Bech32Encoders = new Bech32Encoder[2];
@@ -167,17 +168,18 @@ namespace City.Networks
             {
                 new DNSSeedData("city-chain.org", "seed.city-chain.org"),
                 new DNSSeedData("city-coin.org", "seed.city-coin.org"),
-                new DNSSeedData("citychain.foundation", "seed.citychain.foundation"),
-                new DNSSeedData("liberstad.com", "seed.liberstad.com")
+                //new DNSSeedData("citychain.foundation", "seed.citychain.foundation"),
+                //new DNSSeedData("liberstad.com", "seed.liberstad.com")
             };
 
             this.SeedNodes = new List<NetworkAddress>
             {
                 new NetworkAddress(IPAddress.Parse("23.97.234.230"), this.DefaultPort),
                 new NetworkAddress(IPAddress.Parse("13.73.143.193"), this.DefaultPort),
-                new NetworkAddress(IPAddress.Parse("94.177.215.201"), this.DefaultPort),
+                // new NetworkAddress(IPAddress.Parse("94.177.215.201"), this.DefaultPort),
                 new NetworkAddress(IPAddress.Parse("89.36.213.152"), this.DefaultPort),
-                new NetworkAddress(IPAddress.Parse("96.126.122.213"), this.DefaultPort),
+                new NetworkAddress(IPAddress.Parse("89.10.229.203"), this.DefaultPort),
+                // new NetworkAddress(IPAddress.Parse("96.126.122.213"), this.DefaultPort),
             };
 
             this.StandardScriptsRegistry = new CityStandardScriptsRegistry();
