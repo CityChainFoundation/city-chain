@@ -3,6 +3,7 @@ name: Release
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   buildAndPublish:
@@ -16,9 +17,17 @@ jobs:
           echo VERSION=$(npm run version --silent) >> $GITHUB_ENV
         shell: bash
 
-      - uses: docker/build-push-action@v1
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: citychain/citychain
-          tags: latest,${{env.VERSION}}
+      - name: Build the Docker container image
+        run: docker build -f "Dockerfile" -t citychain/citychain:latest -t citychain/citychain:${{env.VERSION}} "."
+
+      - name: Login and Push to Docker Registry
+        run: |
+          docker login -u "${{ secrets.DOCKER_USERNAME }}" -p "${{ secrets.DOCKER_PASSWORD }}"
+          docker push --all-tags citychain/citychain
+
+      # - uses: docker/build-push-action@v1
+      #   with:
+      #     username: ${{ secrets.DOCKER_USERNAME }}
+      #     password: ${{ secrets.DOCKER_PASSWORD }}
+      #     repository: citychain/citychain
+      #     tags: latest,${{env.VERSION}}
