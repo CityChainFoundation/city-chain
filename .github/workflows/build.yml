@@ -95,6 +95,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         files: "${{env.RELEASE_PATH}}"
         draft: true
+        commit: "master"
         prerelease: false
         body: ''
         name: "City Chain (Release ${{env.VERSION}})"
