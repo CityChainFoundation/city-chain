@@ -177,10 +177,8 @@ namespace City.Networks
             {
                 new NetworkAddress(IPAddress.Parse("23.97.234.230"), this.DefaultPort),
                 new NetworkAddress(IPAddress.Parse("13.73.143.193"), this.DefaultPort),
-                // new NetworkAddress(IPAddress.Parse("94.177.215.201"), this.DefaultPort),
-                new NetworkAddress(IPAddress.Parse("89.36.213.152"), this.DefaultPort),
-                new NetworkAddress(IPAddress.Parse("89.10.229.203"), this.DefaultPort),
-                // new NetworkAddress(IPAddress.Parse("96.126.122.213"), this.DefaultPort),
+                new NetworkAddress(IPAddress.Parse("89.10.224.54"), this.DefaultPort),
+                new NetworkAddress(IPAddress.Parse("95.217.210.139"), this.DefaultPort),
             };
 
             this.StandardScriptsRegistry = new CityStandardScriptsRegistry();
