@@ -1,10 +1,123 @@
-## <small>1.0.22 (2019-12-25)</small>
+## <small>1.0.35 (2022-09-08)</small>
 
+* The older docker image is no longer available on docker hub ([d7d355e](https://github.com/CityChainFoundation/city-chain/commit/d7d355e))
+* Update DNS and IP seed nodes ([009fa50](https://github.com/CityChainFoundation/city-chain/commit/009fa50))
+* Update the Docker release workflow ([6680479](https://github.com/CityChainFoundation/city-chain/commit/6680479))
+* Update version ([b242214](https://github.com/CityChainFoundation/city-chain/commit/b242214))
+
+
+
+## <small>1.0.34 (2022-08-10)</small>
+
+* Add an updated checkpoint to speed up IBD ([9da2293](https://github.com/CityChainFoundation/city-chain/commit/9da2293))
+* Delete publish.yml ([44505b6](https://github.com/CityChainFoundation/city-chain/commit/44505b6))
+* Specify the commit to be master branch ([d8812f5](https://github.com/CityChainFoundation/city-chain/commit/d8812f5))
+* Update build.yml ([c078538](https://github.com/CityChainFoundation/city-chain/commit/c078538))
+* Update the seed IPs ([7799277](https://github.com/CityChainFoundation/city-chain/commit/7799277))
+* Update version ([1e44aae](https://github.com/CityChainFoundation/city-chain/commit/1e44aae))
+
+
+
+## <small>1.0.33 (2021-07-05)</small>
+
+* Update seed node information ([8d6322b](https://github.com/CityChainFoundation/city-chain/commit/8d6322b))
+
+
+
+## <small>1.0.32 (2021-06-07)</small>
+
+* Increase the OP_RETURN from 40 to 83. ([f229f50](https://github.com/CityChainFoundation/city-chain/commit/f229f50))
+
+
+
+## <small>1.0.31 (2021-05-24)</small>
+
+* Fix issue with GetWitnessCommitment for PoSv3 network on City Chain ([102718b](https://github.com/CityChainFoundation/city-chain/commit/102718b))
+
+
+
+## <small>1.0.30 (2021-05-24)</small>
+
+* Add a fix from Blockcore/Stratis ([580b418](https://github.com/CityChainFoundation/city-chain/commit/580b418))
+* Add latest checkpoint height which comes after Segwit activation ([ac40169](https://github.com/CityChainFoundation/city-chain/commit/ac40169))
+* Make sure that City Chain nodes signal that they support segwit ([71ee8d4](https://github.com/CityChainFoundation/city-chain/commit/71ee8d4))
+
+
+
+## <small>1.0.29 (2021-04-24)</small>
+
+* Activate the beginning of activation the 12th of April ([d7cf25d](https://github.com/CityChainFoundation/city-chain/commit/d7cf25d))
+* Add witness service always ([01f28a7](https://github.com/CityChainFoundation/city-chain/commit/01f28a7))
+* Delay activation until May 18th. ([046721b](https://github.com/CityChainFoundation/city-chain/commit/046721b))
+* Prepare ColdStaking and CSV activation from April 1st 2021 ([bb0f3fb](https://github.com/CityChainFoundation/city-chain/commit/bb0f3fb))
+* Update checkpoint above last hardfork ([f94f125](https://github.com/CityChainFoundation/city-chain/commit/f94f125))
+* Update CityMain.cs ([a8924a2](https://github.com/CityChainFoundation/city-chain/commit/a8924a2))
+* Update the BIP9 deployments for City Chain ([e189b77](https://github.com/CityChainFoundation/city-chain/commit/e189b77))
+* Update version used for network agent ([a19038b](https://github.com/CityChainFoundation/city-chain/commit/a19038b))
+
+
+
+## <small>1.0.28 (2020-12-13)</small>
+
+* Update assembly version to reflect correct network agent ([0d97c35](https://github.com/CityChainFoundation/city-chain/commit/0d97c35))
+
+
+
+## <small>1.0.27 (2020-12-10)</small>
+
+* Update version for docker template ([9faa9a8](https://github.com/CityChainFoundation/city-chain/commit/9faa9a8))
+
+
+
+## <small>1.0.26 (2020-12-09)</small>
+
+* [Snyk] Security upgrade conventional-changelog-cli from 2.0.31 to 2.0.33 (#66) ([0c35795](https://github.com/CityChainFoundation/city-chain/commit/0c35795)), closes [#66](https://github.com/CityChainFoundation/city-chain/issues/66)
+* Fix install of dotnet version (#67) ([1b0d50c](https://github.com/CityChainFoundation/city-chain/commit/1b0d50c)), closes [#67](https://github.com/CityChainFoundation/city-chain/issues/67)
+* Update consensus rules for coinbase reward ([0b42430](https://github.com/CityChainFoundation/city-chain/commit/0b42430))
+* Update GitHub Actions ([41a1fcd](https://github.com/CityChainFoundation/city-chain/commit/41a1fcd))
+* Update seed node IP and update checkpoint ([646c1b0](https://github.com/CityChainFoundation/city-chain/commit/646c1b0))
+
+
+
+## <small>1.0.25 (2020-05-27)</small>
+
+* Add the BIP9 deployments that was removed late last year ([2be00c3](https://github.com/CityChainFoundation/city-chain/commit/2be00c3))
+
+
+
+## <small>1.0.24 (2020-04-12)</small>
+
+* Add check if account is normal (or special) ([87b5082](https://github.com/CityChainFoundation/city-chain/commit/87b5082))
+* Add filter in the WalletManager for normal accounts ([ae62e7b](https://github.com/CityChainFoundation/city-chain/commit/ae62e7b))
+* Change how "remove-transactions" finds starting height ([2cb3f3f](https://github.com/CityChainFoundation/city-chain/commit/2cb3f3f))
+* Fix list of RPC in unit test ([713456f](https://github.com/CityChainFoundation/city-chain/commit/713456f))
+* Return all accounts when using remove-transaction API ([e5bfd94](https://github.com/CityChainFoundation/city-chain/commit/e5bfd94))
+* Update City Chain Unit Tests ([ddd9ec5](https://github.com/CityChainFoundation/city-chain/commit/ddd9ec5))
+
+
+
+## <small>1.0.23 (2020-04-09)</small>
+
+* Add support for setting active wallet in RPC and more ([2c10cd6](https://github.com/CityChainFoundation/city-chain/commit/2c10cd6))
+* Auto kick (#4124) ([00e0306](https://github.com/CityChainFoundation/city-chain/commit/00e0306)), closes [#4124](https://github.com/CityChainFoundation/city-chain/issues/4124)
+* Code cleanup, fixed xml comments, redundant usings (#4136) ([8185679](https://github.com/CityChainFoundation/city-chain/commit/8185679)), closes [#4136](https://github.com/CityChainFoundation/city-chain/issues/4136)
+* Remove Azure DevOps from README ([915f34c](https://github.com/CityChainFoundation/city-chain/commit/915f34c))
+* Update package.json ([7122e92](https://github.com/CityChainFoundation/city-chain/commit/7122e92))
+* Web API V1 documentation (#4113) ([a2ae281](https://github.com/CityChainFoundation/city-chain/commit/a2ae281)), closes [#4113](https://github.com/CityChainFoundation/city-chain/issues/4113)
+
+
+
+## <small>1.0.22 (2020-02-16)</small>
+
+* [FN] Add generatetoaddress RPC (#4117) ([a5a568f](https://github.com/CityChainFoundation/city-chain/commit/a5a568f)), closes [#4117](https://github.com/CityChainFoundation/city-chain/issues/4117)
 * [FN] Introduce variable thresholds for BIP9 (#3912) ([96b06ec](https://github.com/CityChainFoundation/city-chain/commit/96b06ec)), closes [#3912](https://github.com/CityChainFoundation/city-chain/issues/3912)
 * [RPC] Changed error message for GetBlockHash when block not found (#4055) ([a3aedaf](https://github.com/CityChainFoundation/city-chain/commit/a3aedaf)), closes [#4055](https://github.com/CityChainFoundation/city-chain/issues/4055)
 * [RPC] Fix for decode rpc (#4064) ([3e0f4eb](https://github.com/CityChainFoundation/city-chain/commit/3e0f4eb)), closes [#4064](https://github.com/CityChainFoundation/city-chain/issues/4064)
 * [SC] Caching rewritten contracts  (#3976) ([59bf2dc](https://github.com/CityChainFoundation/city-chain/commit/59bf2dc)), closes [#3976](https://github.com/CityChainFoundation/city-chain/issues/3976)
 * Add ban time and ban reason to reconnection result. (#4074) ([2913a73](https://github.com/CityChainFoundation/city-chain/commit/2913a73)), closes [#4074](https://github.com/CityChainFoundation/city-chain/issues/4074)
+* Add CHANGELOG script ([2f29059](https://github.com/CityChainFoundation/city-chain/commit/2f29059))
+* Add empty jobs for publish and release ([3a344d9](https://github.com/CityChainFoundation/city-chain/commit/3a344d9))
+* Add Node install and Version variable setting ([ded6d4a](https://github.com/CityChainFoundation/city-chain/commit/ded6d4a))
 * Add release to build ([ecc8c8c](https://github.com/CityChainFoundation/city-chain/commit/ecc8c8c))
 * Add sample for docker with default wallet ([4cb40d1](https://github.com/CityChainFoundation/city-chain/commit/4cb40d1))
 * Add test and publish actions ([0489d01](https://github.com/CityChainFoundation/city-chain/commit/0489d01))
@@ -12,19 +125,41 @@
 * Added changes from 3.0.6-rc (#4100) ([2b46d88](https://github.com/CityChainFoundation/city-chain/commit/2b46d88)), closes [#4100](https://github.com/CityChainFoundation/city-chain/issues/4100)
 * Create build.yml ([ad967cf](https://github.com/CityChainFoundation/city-chain/commit/ad967cf))
 * Define new cold staking activation period (#4103) ([6dd74d3](https://github.com/CityChainFoundation/city-chain/commit/6dd74d3)), closes [#4103](https://github.com/CityChainFoundation/city-chain/issues/4103)
+* Disable azure pipelines ([1e8d463](https://github.com/CityChainFoundation/city-chain/commit/1e8d463))
 * Distribute utxo (#3909) ([cd9367f](https://github.com/CityChainFoundation/city-chain/commit/cd9367f)), closes [#3909](https://github.com/CityChainFoundation/city-chain/issues/3909)
+* Don't allow multisig members to be voted on (#4123) ([fb5ece7](https://github.com/CityChainFoundation/city-chain/commit/fb5ece7)), closes [#4123](https://github.com/CityChainFoundation/city-chain/issues/4123)
+* Feature/GitHub actions (#64) ([88a8fc0](https://github.com/CityChainFoundation/city-chain/commit/88a8fc0)), closes [#64](https://github.com/CityChainFoundation/city-chain/issues/64)
+* Fix build templates ([fde07af](https://github.com/CityChainFoundation/city-chain/commit/fde07af))
+* Fix filter issue on BUILD ([bd0c7a4](https://github.com/CityChainFoundation/city-chain/commit/bd0c7a4))
 * Fix for circular dependency bug (#4097) ([74c9dc1](https://github.com/CityChainFoundation/city-chain/commit/74c9dc1)), closes [#4097](https://github.com/CityChainFoundation/city-chain/issues/4097)
 * Fix for immature coin balance (#4051) ([884dbae](https://github.com/CityChainFoundation/city-chain/commit/884dbae)), closes [#4051](https://github.com/CityChainFoundation/city-chain/issues/4051)
 * Fix for IO Exception (#4073) (#4076) ([b4c2454](https://github.com/CityChainFoundation/city-chain/commit/b4c2454)), closes [#4073](https://github.com/CityChainFoundation/city-chain/issues/4073) [#4076](https://github.com/CityChainFoundation/city-chain/issues/4076)
+* Fix the node blocking inbounds after an inordinate amount of disconnects due to a peer being banned  ([9f5efaf](https://github.com/CityChainFoundation/city-chain/commit/9f5efaf)), closes [#4119](https://github.com/CityChainFoundation/city-chain/issues/4119)
 * Merge PR 4067 (#4084) ([ce0f19a](https://github.com/CityChainFoundation/city-chain/commit/ce0f19a)), closes [#4084](https://github.com/CityChainFoundation/city-chain/issues/4084)
 * Only build on master branch ([46fe6ab](https://github.com/CityChainFoundation/city-chain/commit/46fe6ab))
 * PoAMiner mines for most of turn rather than only once (#4007) ([35ed37c](https://github.com/CityChainFoundation/city-chain/commit/35ed37c)), closes [#4007](https://github.com/CityChainFoundation/city-chain/issues/4007)
 * Removed demo controller (#4069) ([b6a0b7e](https://github.com/CityChainFoundation/city-chain/commit/b6a0b7e)), closes [#4069](https://github.com/CityChainFoundation/city-chain/issues/4069)
+* Save package in same directory ([720b791](https://github.com/CityChainFoundation/city-chain/commit/720b791))
+* Specify full path for Linux ([78e3ea9](https://github.com/CityChainFoundation/city-chain/commit/78e3ea9))
+* Update build.yml ([36b8bf7](https://github.com/CityChainFoundation/city-chain/commit/36b8bf7))
+* Update build.yml ([5938bf7](https://github.com/CityChainFoundation/city-chain/commit/5938bf7))
+* Update build.yml ([e8ff54d](https://github.com/CityChainFoundation/city-chain/commit/e8ff54d))
+* Update build.yml ([3dfc467](https://github.com/CityChainFoundation/city-chain/commit/3dfc467))
+* Update build.yml ([06806df](https://github.com/CityChainFoundation/city-chain/commit/06806df))
+* Update build.yml ([bf3663a](https://github.com/CityChainFoundation/city-chain/commit/bf3663a))
+* Update build.yml ([e6cca56](https://github.com/CityChainFoundation/city-chain/commit/e6cca56))
+* Update build.yml ([6bdb670](https://github.com/CityChainFoundation/city-chain/commit/6bdb670))
+* Update build.yml ([6a3cdfe](https://github.com/CityChainFoundation/city-chain/commit/6a3cdfe))
+* Update build.yml ([1210ab6](https://github.com/CityChainFoundation/city-chain/commit/1210ab6))
+* Update build.yml ([502e7df](https://github.com/CityChainFoundation/city-chain/commit/502e7df))
+* Update checkpoints ([c9078f4](https://github.com/CityChainFoundation/city-chain/commit/c9078f4))
 * Update docker-compose for Explorer ([96e1161](https://github.com/CityChainFoundation/city-chain/commit/96e1161))
 * Update dotnet version ([8333635](https://github.com/CityChainFoundation/city-chain/commit/8333635))
 * Update NetworkTests.cs ([f9d527c](https://github.com/CityChainFoundation/city-chain/commit/f9d527c))
 * Update project and network code ([c70f76a](https://github.com/CityChainFoundation/city-chain/commit/c70f76a))
+* Update Seeders and Seeds & Increase Checkpoint Heights (#4112) ([c072c21](https://github.com/CityChainFoundation/city-chain/commit/c072c21)), closes [#4112](https://github.com/CityChainFoundation/city-chain/issues/4112)
 * Update URL links ([eb63ae7](https://github.com/CityChainFoundation/city-chain/commit/eb63ae7))
+* Update workflow to avoid "publish" folder ([5ed6ff4](https://github.com/CityChainFoundation/city-chain/commit/5ed6ff4))
 
 
 
@@ -70,28 +205,15 @@
 
 ## <small>1.0.19 (2019-10-17)</small>
 
-* [FN] Fix for transaction build verification (#3962) ([2ed9548](https://github.com/CityChainFoundation/city-chain/commit/2ed9548)), closes [#3962](https://github.com/CityChainFoundation/city-chain/issues/3962)
-* [SC] Bloom filter improvements (#3934) ([68e218b](https://github.com/CityChainFoundation/city-chain/commit/68e218b)), closes [#3934](https://github.com/CityChainFoundation/city-chain/issues/3934)
-* [SC] Destination address fixes (#3966) ([a2fef51](https://github.com/CityChainFoundation/city-chain/commit/a2fef51)), closes [#3966](https://github.com/CityChainFoundation/city-chain/issues/3966)
-* [Wallet] Transaction building improvement (#3930) ([9f627ef](https://github.com/CityChainFoundation/city-chain/commit/9f627ef)), closes [#3930](https://github.com/CityChainFoundation/city-chain/issues/3930)
-* Allow Dust Transaction Building + Mempool Rule To Reject (#3961) ([f39a529](https://github.com/CityChainFoundation/city-chain/commit/f39a529)), closes [#3961](https://github.com/CityChainFoundation/city-chain/issues/3961)
-* API Versioning (#3882) ([9aededc](https://github.com/CityChainFoundation/city-chain/commit/9aededc)), closes [#3882](https://github.com/CityChainFoundation/city-chain/issues/3882)
-* Fix issue with missing version rule ([6fd3009](https://github.com/CityChainFoundation/city-chain/commit/6fd3009))
-* Implement Network Rule Registration for Cirrus/Smart Contracts (#3917) ([aa4fe51](https://github.com/CityChainFoundation/city-chain/commit/aa4fe51)), closes [#3917](https://github.com/CityChainFoundation/city-chain/issues/3917)
 * RPC add method listsinceblock,getunusedaddress and change getnewaddress (#63) ([81081b1](https://github.com/CityChainFoundation/city-chain/commit/81081b1)), closes [#63](https://github.com/CityChainFoundation/city-chain/issues/63)
-* SQLiteWalletRepository (#3891) ([0b35d2d](https://github.com/CityChainFoundation/city-chain/commit/0b35d2d)), closes [#3891](https://github.com/CityChainFoundation/city-chain/issues/3891)
 * Update docker-compose.yml ([caac3bf](https://github.com/CityChainFoundation/city-chain/commit/caac3bf))
 * Update docker-compose.yml ([eddbee2](https://github.com/CityChainFoundation/city-chain/commit/eddbee2))
-* Update docker-compose.yml ([d6e42b6](https://github.com/CityChainFoundation/city-chain/commit/d6e42b6))
-* Update docker-compose.yml ([66ee36e](https://github.com/CityChainFoundation/city-chain/commit/66ee36e))
-* Update docker-compose.yml ([da6cbb3](https://github.com/CityChainFoundation/city-chain/commit/da6cbb3))
-* Update NodeInitialisationTests.cs (#3971) ([efc7867](https://github.com/CityChainFoundation/city-chain/commit/efc7867)), closes [#3971](https://github.com/CityChainFoundation/city-chain/issues/3971)
 * Update the daemon used in docker image ([1645aaf](https://github.com/CityChainFoundation/city-chain/commit/1645aaf))
 * Update version ([21d2ce7](https://github.com/CityChainFoundation/city-chain/commit/21d2ce7))
 
 
 
-## <small>1.0.18 (2019-09-21)</small>
+## <small>1.0.18 (2019-10-03)</small>
 
 *  ColdStaking feature no longer needs to print wallet help (#3863) ([ba23b01](https://github.com/CityChainFoundation/city-chain/commit/ba23b01)), closes [#3863](https://github.com/CityChainFoundation/city-chain/issues/3863)
 * - relaxed the node.txt rule to include any log that belongs to Stratis.* namespace and not Stratis.B ([f219019](https://github.com/CityChainFoundation/city-chain/commit/f219019)), closes [#3576](https://github.com/CityChainFoundation/city-chain/issues/3576)
@@ -123,6 +245,7 @@
 * [FN] Delete ProvenHeaderConsensusFactory  (#3656) ([96b95f9](https://github.com/CityChainFoundation/city-chain/commit/96b95f9)), closes [#3656](https://github.com/CityChainFoundation/city-chain/issues/3656)
 * [FN] Exclude transactions with too-new timestamps from block template (#3889) ([c23760f](https://github.com/CityChainFoundation/city-chain/commit/c23760f)), closes [#3889](https://github.com/CityChainFoundation/city-chain/issues/3889)
 * [FN] Fix "Coins awaiting maturity" balance while staking (#3778) ([3d5bceb](https://github.com/CityChainFoundation/city-chain/commit/3d5bceb)), closes [#3778](https://github.com/CityChainFoundation/city-chain/issues/3778)
+* [FN] Fix for transaction build verification (#3962) ([2ed9548](https://github.com/CityChainFoundation/city-chain/commit/2ed9548)), closes [#3962](https://github.com/CityChainFoundation/city-chain/issues/3962)
 * [FN] Handshaking improvement (#3732) ([3c52b7f](https://github.com/CityChainFoundation/city-chain/commit/3c52b7f)), closes [#3732](https://github.com/CityChainFoundation/city-chain/issues/3732)
 * [FN] Inject consensus rules (part 1) (#3497) ([46d0766](https://github.com/CityChainFoundation/city-chain/commit/46d0766)), closes [#3497](https://github.com/CityChainFoundation/city-chain/issues/3497)
 * [FN] Make address indexer use script address reader (#3620) ([624200a](https://github.com/CityChainFoundation/city-chain/commit/624200a)), closes [#3620](https://github.com/CityChainFoundation/city-chain/issues/3620)
@@ -320,6 +443,7 @@
 * [SC] Add whitelisting docs (#3401) ([2ea7f73](https://github.com/CityChainFoundation/city-chain/commit/2ea7f73)), closes [#3401](https://github.com/CityChainFoundation/city-chain/issues/3401)
 * [SC] AddressIndexer should return a result if it is not yet queryable (#3676) ([746e24d](https://github.com/CityChainFoundation/city-chain/commit/746e24d)), closes [#3676](https://github.com/CityChainFoundation/city-chain/issues/3676)
 * [SC] Allow deployment of future Stratis.SmartContracts assembly versions (#3545) ([8bf176c](https://github.com/CityChainFoundation/city-chain/commit/8bf176c)), closes [#3545](https://github.com/CityChainFoundation/city-chain/issues/3545)
+* [SC] Bloom filter improvements (#3934) ([68e218b](https://github.com/CityChainFoundation/city-chain/commit/68e218b)), closes [#3934](https://github.com/CityChainFoundation/city-chain/issues/3934)
 * [SC] Build transfer transactions (#3870) ([9e43e2e](https://github.com/CityChainFoundation/city-chain/commit/9e43e2e)), closes [#3870](https://github.com/CityChainFoundation/city-chain/issues/3870)
 * [SC] CALL stress test (#3904) ([1f68862](https://github.com/CityChainFoundation/city-chain/commit/1f68862)), closes [#3904](https://github.com/CityChainFoundation/city-chain/issues/3904)
 * [SC] Camel case local call API response (#3787) ([ef30b80](https://github.com/CityChainFoundation/city-chain/commit/ef30b80)), closes [#3787](https://github.com/CityChainFoundation/city-chain/issues/3787)
@@ -327,6 +451,7 @@
 * [SC] Clean usings (#3276) ([b4cac28](https://github.com/CityChainFoundation/city-chain/commit/b4cac28)), closes [#3276](https://github.com/CityChainFoundation/city-chain/issues/3276)
 * [SC] Cleaning tests (#3133) ([8f12081](https://github.com/CityChainFoundation/city-chain/commit/8f12081)), closes [#3133](https://github.com/CityChainFoundation/city-chain/issues/3133)
 * [SC] Contract balance returned in STRAT (#3237) ([f1b44aa](https://github.com/CityChainFoundation/city-chain/commit/f1b44aa)), closes [#3237](https://github.com/CityChainFoundation/city-chain/issues/3237)
+* [SC] Destination address fixes (#3966) ([a2fef51](https://github.com/CityChainFoundation/city-chain/commit/a2fef51)), closes [#3966](https://github.com/CityChainFoundation/city-chain/issues/3966)
 * [SC] DI Smart Contract Consensus Rules (#3346) ([6b4d318](https://github.com/CityChainFoundation/city-chain/commit/6b4d318)), closes [#3346](https://github.com/CityChainFoundation/city-chain/issues/3346)
 * [SC] Don't reuse keccak256 instance (#3098) ([3d6417b](https://github.com/CityChainFoundation/city-chain/commit/3d6417b)), closes [#3098](https://github.com/CityChainFoundation/city-chain/issues/3098)
 * [SC] Fix API error response (#3772) ([ba34382](https://github.com/CityChainFoundation/city-chain/commit/ba34382)), closes [#3772](https://github.com/CityChainFoundation/city-chain/issues/3772)
@@ -378,6 +503,7 @@
 * [wallet] Fixes for staking transaction balance and history (#3269) ([a984a31](https://github.com/CityChainFoundation/city-chain/commit/a984a31)), closes [#3269](https://github.com/CityChainFoundation/city-chain/issues/3269)
 * [Wallet] Make account param optional in API with consts and passing tests (#3831) ([3aa2372](https://github.com/CityChainFoundation/city-chain/commit/3aa2372)), closes [#3831](https://github.com/CityChainFoundation/city-chain/issues/3831) [#3283](https://github.com/CityChainFoundation/city-chain/issues/3283) [#3286](https://github.com/CityChainFoundation/city-chain/issues/3286)
 * [Wallet] Remove support for multiple account roots - part 1 (#3419) ([0d2ee32](https://github.com/CityChainFoundation/city-chain/commit/0d2ee32)), closes [#3419](https://github.com/CityChainFoundation/city-chain/issues/3419)
+* [Wallet] Transaction building improvement (#3930) ([9f627ef](https://github.com/CityChainFoundation/city-chain/commit/9f627ef)), closes [#3930](https://github.com/CityChainFoundation/city-chain/issues/3930)
 * [WIP] Traffic monitoring stats (#3193) ([ce95d9d](https://github.com/CityChainFoundation/city-chain/commit/ce95d9d)), closes [#3193](https://github.com/CityChainFoundation/city-chain/issues/3193)
 * [WIP] Update Tracer.Fody and fix tracing (#3871) ([6d1eb27](https://github.com/CityChainFoundation/city-chain/commit/6d1eb27)), closes [#3871](https://github.com/CityChainFoundation/city-chain/issues/3871)
 * #2430 StakeValidator tests (#2929) ([946dbf4](https://github.com/CityChainFoundation/city-chain/commit/946dbf4)), closes [#2430](https://github.com/CityChainFoundation/city-chain/issues/2430) [#2929](https://github.com/CityChainFoundation/city-chain/issues/2929)
@@ -527,11 +653,13 @@
 * Adds the SynchronizeAsync method and a test case (#165) ([f2bf39a](https://github.com/CityChainFoundation/city-chain/commit/f2bf39a)), closes [#165](https://github.com/CityChainFoundation/city-chain/issues/165)
 * Adjust log levels (#3699) ([30ed69b](https://github.com/CityChainFoundation/city-chain/commit/30ed69b)), closes [#3699](https://github.com/CityChainFoundation/city-chain/issues/3699)
 * Adjusting MaxReorg (#3424) ([7c0349c](https://github.com/CityChainFoundation/city-chain/commit/7c0349c)), closes [#3424](https://github.com/CityChainFoundation/city-chain/issues/3424)
+* Allow Dust Transaction Building + Mempool Rule To Reject (#3961) ([f39a529](https://github.com/CityChainFoundation/city-chain/commit/f39a529)), closes [#3961](https://github.com/CityChainFoundation/city-chain/issues/3961)
 * Allow minimum deposit confirmations to be changed from config param (for testing) (#206) ([2e88e2f](https://github.com/CityChainFoundation/city-chain/commit/2e88e2f)), closes [#206](https://github.com/CityChainFoundation/city-chain/issues/206)
 * Allow minimum deposit confirmations to be changed from config param (for testing) (#206) ([1a9f019](https://github.com/CityChainFoundation/city-chain/commit/1a9f019)), closes [#206](https://github.com/CityChainFoundation/city-chain/issues/206)
 * alternative implementation of "Cancel CheckInputs in CoinViewRule #3313" (#3355) ([c193d29](https://github.com/CityChainFoundation/city-chain/commit/c193d29)), closes [#3313](https://github.com/CityChainFoundation/city-chain/issues/3313) [#3355](https://github.com/CityChainFoundation/city-chain/issues/3355)
 * Api clients error handling (#3687) ([0b43225](https://github.com/CityChainFoundation/city-chain/commit/0b43225)), closes [#3687](https://github.com/CityChainFoundation/city-chain/issues/3687)
 * api names (#3443) ([ef895c1](https://github.com/CityChainFoundation/city-chain/commit/ef895c1)), closes [#3443](https://github.com/CityChainFoundation/city-chain/issues/3443)
+* API Versioning (#3882) ([9aededc](https://github.com/CityChainFoundation/city-chain/commit/9aededc)), closes [#3882](https://github.com/CityChainFoundation/city-chain/issues/3882)
 * Attempt to fix ConsensusManager_Fork_Occurs_When_Stake_Coins_Are_Spent_And_Found_In_Rewind_Data (#38 ([f1505aa](https://github.com/CityChainFoundation/city-chain/commit/f1505aa)), closes [#3861](https://github.com/CityChainFoundation/city-chain/issues/3861)
 * Attempt to merge Enigma and EnigmaChain ([c351b85](https://github.com/CityChainFoundation/city-chain/commit/c351b85))
 * Attempt to merge Enigma and EnigmaChain ([0a2f4ba](https://github.com/CityChainFoundation/city-chain/commit/0a2f4ba))
@@ -711,6 +839,7 @@
 * Fix incorrect locking order in CleanMempoolAsync (#3840) ([3630f8a](https://github.com/CityChainFoundation/city-chain/commit/3630f8a)), closes [#3840](https://github.com/CityChainFoundation/city-chain/issues/3840)
 * Fix incorrect logic for whitebind flag (#3247) ([497323d](https://github.com/CityChainFoundation/city-chain/commit/497323d)), closes [#3247](https://github.com/CityChainFoundation/city-chain/issues/3247)
 * Fix insideCallback inconsistency in NetworkPeer (#3858) ([931bc0a](https://github.com/CityChainFoundation/city-chain/commit/931bc0a)), closes [#3858](https://github.com/CityChainFoundation/city-chain/issues/3858)
+* Fix issue with missing version rule ([6fd3009](https://github.com/CityChainFoundation/city-chain/commit/6fd3009))
 * Fix memory leak in memcache (#3022) ([0b99c45](https://github.com/CityChainFoundation/city-chain/commit/0b99c45)), closes [#3022](https://github.com/CityChainFoundation/city-chain/issues/3022)
 * fix methods in opreturn reader (#261) ([45b650a](https://github.com/CityChainFoundation/city-chain/commit/45b650a)), closes [#261](https://github.com/CityChainFoundation/city-chain/issues/261)
 * fix missing consensusSettings parameter (#3085) ([e5be7aa](https://github.com/CityChainFoundation/city-chain/commit/e5be7aa)), closes [#3085](https://github.com/CityChainFoundation/city-chain/issues/3085)
@@ -785,6 +914,7 @@
 * Ignore OP_RETURN outputs for address indexing (#3613) ([557803e](https://github.com/CityChainFoundation/city-chain/commit/557803e)), closes [#3613](https://github.com/CityChainFoundation/city-chain/issues/3613)
 * Implement BanDurationSeconds behavior (#3231) ([7d5bf9b](https://github.com/CityChainFoundation/city-chain/commit/7d5bf9b)), closes [#3231](https://github.com/CityChainFoundation/city-chain/issues/3231)
 * Implement corrective fixes to whitebind functionality with test support [UPD] (#2752) ([e8a8174](https://github.com/CityChainFoundation/city-chain/commit/e8a8174)), closes [#2752](https://github.com/CityChainFoundation/city-chain/issues/2752)
+* Implement Network Rule Registration for Cirrus/Smart Contracts (#3917) ([aa4fe51](https://github.com/CityChainFoundation/city-chain/commit/aa4fe51)), closes [#3917](https://github.com/CityChainFoundation/city-chain/issues/3917)
 * Implement PartialTransactionRequester (#186) ([391dccb](https://github.com/CityChainFoundation/city-chain/commit/391dccb)), closes [#186](https://github.com/CityChainFoundation/city-chain/issues/186)
 * Implemented a simple functional Event Bus (#3348) ([75e8888](https://github.com/CityChainFoundation/city-chain/commit/75e8888)), closes [#3348](https://github.com/CityChainFoundation/city-chain/issues/3348)
 * Implemented the generation of the debugging dashboard for ps1 script (#324) ([ec43048](https://github.com/CityChainFoundation/city-chain/commit/ec43048)), closes [#324](https://github.com/CityChainFoundation/city-chain/issues/324)
@@ -1057,6 +1187,7 @@
 * Some additonal changes to ChainIndexer (#3439) ([b71abd8](https://github.com/CityChainFoundation/city-chain/commit/b71abd8)), closes [#3439](https://github.com/CityChainFoundation/city-chain/issues/3439)
 * Speed up the history call by using linq distinct (#3362) ([d966ec3](https://github.com/CityChainFoundation/city-chain/commit/d966ec3)), closes [#3362](https://github.com/CityChainFoundation/city-chain/issues/3362)
 * Speedup address indexer (#3625) ([1b25295](https://github.com/CityChainFoundation/city-chain/commit/1b25295)), closes [#3625](https://github.com/CityChainFoundation/city-chain/issues/3625)
+* SQLiteWalletRepository (#3891) ([0b35d2d](https://github.com/CityChainFoundation/city-chain/commit/0b35d2d)), closes [#3891](https://github.com/CityChainFoundation/city-chain/issues/3891)
 * Start test mockchains from same time (#3253) ([6da7737](https://github.com/CityChainFoundation/city-chain/commit/6da7737)), closes [#3253](https://github.com/CityChainFoundation/city-chain/issues/3253)
 * Stop node initialization in case data folder is being used by another instance of the application (# ([5c10d08](https://github.com/CityChainFoundation/city-chain/commit/5c10d08)), closes [#3678](https://github.com/CityChainFoundation/city-chain/issues/3678)
 * Stratis packages upgrade 1.2.4 to 1.2.5 (#193) ([fd90dcd](https://github.com/CityChainFoundation/city-chain/commit/fd90dcd)), closes [#193](https://github.com/CityChainFoundation/city-chain/issues/193)
@@ -1097,9 +1228,13 @@
 * Update CirrusTest.cs (#3679) ([e6916b6](https://github.com/CityChainFoundation/city-chain/commit/e6916b6)), closes [#3679](https://github.com/CityChainFoundation/city-chain/issues/3679)
 * Update consensus manager tests (#3155) ([7e85c24](https://github.com/CityChainFoundation/city-chain/commit/7e85c24)), closes [#3155](https://github.com/CityChainFoundation/city-chain/issues/3155)
 * Update doc ([99628f1](https://github.com/CityChainFoundation/city-chain/commit/99628f1))
+* Update docker-compose.yml ([d6e42b6](https://github.com/CityChainFoundation/city-chain/commit/d6e42b6))
+* Update docker-compose.yml ([66ee36e](https://github.com/CityChainFoundation/city-chain/commit/66ee36e))
+* Update docker-compose.yml ([da6cbb3](https://github.com/CityChainFoundation/city-chain/commit/da6cbb3))
 * Update GPW with mnemonic and HD multisig capability (#7) ([236edbb](https://github.com/CityChainFoundation/city-chain/commit/236edbb)), closes [#7](https://github.com/CityChainFoundation/city-chain/issues/7)
 * Update GPW with mnemonic and HD multisig capability (#7) ([4cb9cd5](https://github.com/CityChainFoundation/city-chain/commit/4cb9cd5)), closes [#7](https://github.com/CityChainFoundation/city-chain/issues/7)
 * Update NetworkPeerServer.cs (#3939) ([2afb985](https://github.com/CityChainFoundation/city-chain/commit/2afb985)), closes [#3939](https://github.com/CityChainFoundation/city-chain/issues/3939)
+* Update NodeInitialisationTests.cs (#3971) ([efc7867](https://github.com/CityChainFoundation/city-chain/commit/efc7867)), closes [#3971](https://github.com/CityChainFoundation/city-chain/issues/3971)
 * Update PosMinting.cs (#3285) ([36797dc](https://github.com/CityChainFoundation/city-chain/commit/36797dc)), closes [#3285](https://github.com/CityChainFoundation/city-chain/issues/3285)
 * Update PosMinting.cs (#3331) ([2dc4c6f](https://github.com/CityChainFoundation/city-chain/commit/2dc4c6f)), closes [#3331](https://github.com/CityChainFoundation/city-chain/issues/3331)
 * Update PowerShellScriptGeneratorAsTests.cs (#207) ([3e7ec4f](https://github.com/CityChainFoundation/city-chain/commit/3e7ec4f)), closes [#207](https://github.com/CityChainFoundation/city-chain/issues/207)
