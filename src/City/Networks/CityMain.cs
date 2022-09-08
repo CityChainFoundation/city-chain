@@ -169,16 +169,15 @@ namespace City.Networks
             {
                 new DNSSeedData("city-chain.org", "seed.city-chain.org"),
                 new DNSSeedData("city-coin.org", "seed.city-coin.org"),
-                //new DNSSeedData("citychain.foundation", "seed.citychain.foundation"),
-                //new DNSSeedData("liberstad.com", "seed.liberstad.com")
+                new DNSSeedData("liberstad.com", "seed.liberstad.com"),
+                new DNSSeedData("blockcore.net", "city.seed.blockcore.net")
             };
 
             this.SeedNodes = new List<NetworkAddress>
             {
-                new NetworkAddress(IPAddress.Parse("23.97.234.230"), this.DefaultPort),
-                new NetworkAddress(IPAddress.Parse("13.73.143.193"), this.DefaultPort),
-                new NetworkAddress(IPAddress.Parse("89.10.224.54"), this.DefaultPort),
                 new NetworkAddress(IPAddress.Parse("95.217.210.139"), this.DefaultPort),
+                new NetworkAddress(IPAddress.Parse("195.201.16.145"), this.DefaultPort),
+                new NetworkAddress(IPAddress.Parse("89.10.224.54"), this.DefaultPort),
             };
 
             this.StandardScriptsRegistry = new CityStandardScriptsRegistry();
