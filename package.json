@@ -23,7 +23,7 @@
   },
   "private": true,
   "dependencies": {
-    "conventional-changelog-cli": "^2.0.33"
+    "conventional-changelog-cli": "^2.1.1"
   },
   "devDependencies": {}
 }
