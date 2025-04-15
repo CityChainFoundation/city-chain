@@ -55,7 +55,7 @@ jobs:
         dotnet-version: ${{ matrix.dotnet_version }}
 
     # - name: Install OpenSSL 1.1
-    #   if: matrix.os == 'ubuntu-latest'
+    #   if: matrix.os == 'ubuntu-20.04'
     #   run: |
     #     wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
     #     sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
@@ -81,7 +81,7 @@ jobs:
 #        echo "::set-env name=RELEASE_PATH::${{ env.PROJECT_NAME }}-${{ env.VERSION }}-${{ matrix.runtime }}${{ matrix.extension }}"
 
     - name: Package (Linux)
-      if: matrix.os == 'ubuntu-latest'
+      if: matrix.os == 'ubuntu-20.04'
       run: |
         echo RELEASE_PATH=./src/${{env.PROJECT_NAME}}/bin/publish/${{env.RELEASE_NAME}} >> $GITHUB_ENV
         cd ./src/${{env.PROJECT_NAME}}/bin/publish/
