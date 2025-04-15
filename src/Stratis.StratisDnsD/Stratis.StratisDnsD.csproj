@@ -5,7 +5,7 @@
     <AssemblyName>Stratis.StratisDnsD</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>Stratis.StratisDnsD</PackageId>
-    <RuntimeFrameworkVersion>2.1.1</RuntimeFrameworkVersion>
+    <RuntimeFrameworkVersion>2.1.30</RuntimeFrameworkVersion>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
       <TargetFramework>netcoreapp2.1</TargetFramework>
-      <RuntimeFrameworkVersion>2.1.1</RuntimeFrameworkVersion>
+      <RuntimeFrameworkVersion>2.1.30</RuntimeFrameworkVersion>
       <Version>3.0.6.0-beta</Version>
       <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>

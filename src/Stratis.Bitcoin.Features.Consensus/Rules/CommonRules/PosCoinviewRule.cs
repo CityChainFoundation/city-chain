@@ -25,6 +25,8 @@ namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
 
         private static readonly int REDUCTIONHEIGHT = 1111111;
 
+        private static readonly int NOREWARDHEIGHT = 3000000;
+
         /// <inheritdoc />
         public override void Initialize()
         {
@@ -205,6 +207,11 @@ namespace Stratis.Bitcoin.Features.Consensus.Rules.CommonRules
         {
             if (this.IsPremine(height))
                 return this.consensus.PremineReward;
+
+            if (height > NOREWARDHEIGHT)
+            {
+                return Money.Zero;
+            }
 
             if (height > REDUCTIONHEIGHT)
             {
