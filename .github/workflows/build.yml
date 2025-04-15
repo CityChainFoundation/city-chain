@@ -11,12 +11,12 @@ jobs:
 
     strategy:
       matrix:
-        os: [ windows-latest, ubuntu-latest, macos-latest ]
+        os: [ windows-latest, ubuntu-20.04, macos-latest ]
         include:
           - os: windows-latest
             extension: ".zip"
             runtime: "win-x64"
-          - os: ubuntu-latest
+          - os: ubuntu-20.04
             extension: ".tar.gz"
             runtime: "linux-x64"
           - os: macos-latest
@@ -54,11 +54,11 @@ jobs:
       with:
         dotnet-version: ${{ matrix.dotnet_version }}
 
-    - name: Install OpenSSL 1.1
-      if: matrix.os == 'ubuntu-latest'
-      run: |
-        wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
-        sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
+    # - name: Install OpenSSL 1.1
+    #   if: matrix.os == 'ubuntu-latest'
+    #   run: |
+    #     wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
+    #     sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
         
     - name: Restore
       run: dotnet restore ${{env.SOLUTION_PATH}}
