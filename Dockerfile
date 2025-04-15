@@ -1,11 +1,17 @@
 FROM mcr.microsoft.com/dotnet/aspnet:2.1
 
+# Set environment variables for non-interactive apt installation
+ENV DEBIAN_FRONTEND=noninteractive
+
 VOLUME /root/.citychain
 
 WORKDIR /usr/local/app/
 
-RUN apt-get update \
-    && apt-get install -y curl \
+# Update apt sources to use archive.debian.org instead
+RUN echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.list \
+    && echo "deb http://archive.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list \
+    && apt-get -o Acquire::Check-Valid-Until=false update \
+    && apt-get install -y --no-install-recommends curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
