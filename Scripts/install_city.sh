@@ -134,7 +134,7 @@ installDependencies() {
     sudo apt-get update -y &>> ${SCRIPT_LOGFILE}
     sudo apt-get install dotnet-sdk-2.1 -y --allow-unauthenticated &>> ${SCRIPT_LOGFILE}
     sudo wget https://dot.net/v1/dotnet-install.sh &>> ${SCRIPT_LOGFILE}
-	sudo bash dotnet-install.sh --install-dir /usr/share/dotnet --channel 2.1 --version 2.1.607 &>> ${SCRIPT_LOGFILE}
+	sudo bash dotnet-install.sh --install-dir /usr/share/dotnet --channel 2.1 --version 2.1.818 &>> ${SCRIPT_LOGFILE}
 	echo -e "${NONE}${GREEN}* Done${NONE}";
 }
 
