@@ -155,6 +155,7 @@ namespace City.Networks
                 { 1196280, new CheckpointInfo(new uint256("0xa42ba7735f2bf202f218d932008c039f4f97f90710c0a77c27c15b66c1ed48cd"), new uint256("0x3a7ccae05cc65f9b3e325a606ef1fe690820e2fbe0b1bbdadb2a57be97c8cf18")) },
                 { 1250000, new CheckpointInfo(new uint256("0xfcbfa827fce703d50f72b5b6f0ee1e5a5d46c7a469bc972c4d4839137998e5a5"), new uint256("0xaa163ed85712405b4623683259c947fa4fc2fe56eb9ee3c7eded2b5492b58dd1")) },
                 { 1764800, new CheckpointInfo(new uint256("0xbec401a33c003c5949658afa253f73369ed3b2b8c9d9b067c589befaf33ec727"), new uint256("0xf0f969a1ab26187c01fd71e9b5955d5923d6b4f7dece270c1f3d1705d330210b")) },
+                { 2976200, new CheckpointInfo(new uint256("0x2f74deb133333fc374b18dba3a8cc76ccbd8d878e4f3b6a9afcdf7d631842ccd"), new uint256("0x271a01a87ca473ddf3d4622d3a748415e387cab0bfee2ba554df61931f00572c")) },
             };
 
             this.Bech32Encoders = new Bech32Encoder[2];
@@ -168,16 +169,14 @@ namespace City.Networks
             this.DNSSeeds = new List<DNSSeedData>
             {
                 new DNSSeedData("city-chain.org", "seed.city-chain.org"),
-                new DNSSeedData("city-coin.org", "seed.city-coin.org"),
                 new DNSSeedData("liberstad.com", "seed.liberstad.com"),
                 new DNSSeedData("blockcore.net", "city.seed.blockcore.net")
             };
 
             this.SeedNodes = new List<NetworkAddress>
             {
+                new NetworkAddress(IPAddress.Parse("185.252.79.75"), this.DefaultPort),
                 new NetworkAddress(IPAddress.Parse("95.217.210.139"), this.DefaultPort),
-                new NetworkAddress(IPAddress.Parse("195.201.16.145"), this.DefaultPort),
-                new NetworkAddress(IPAddress.Parse("89.10.224.54"), this.DefaultPort),
             };
 
             this.StandardScriptsRegistry = new CityStandardScriptsRegistry();

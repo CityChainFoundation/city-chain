@@ -15,7 +15,7 @@ RUN echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -Ls https://github.com/CityChainFoundation/city-chain/releases/download/v1.0.36/City.Chain-1.0.36-linux-x64.tar.gz \
+RUN curl -Ls https://github.com/CityChainFoundation/city-chain/releases/download/v1.0.37/City.Chain-1.0.37-linux-x64.tar.gz \
     | tar -xvz -C .
 
 COPY city.conf.docker /root/.citychain/city/CityMain/city.conf
